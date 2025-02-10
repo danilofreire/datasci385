@@ -109,7 +109,7 @@ Weekly suggested readings:
 Weekly suggested readings:
 
 - Bowers, J. [10 Things to Know About Cluster Randomization](https://egap.org/resource/10-things-to-know-about-cluster-randomization/).
-- Blair, G., Coppock, A., & Humphreys, M. (2023). [Research Design in the Social Sciences](https://book.declaredesign.org/library/experimental-causal.html#block-randomized-experiments). Cambridge University Press. Sections 18.2 and 18.3.
+- Blair, G., Coppock, A., & Humphreys, M. (2023). [Research Design in the Social Sciences](https://book.declaredesign.org/library/experimental-causal.html#block-randomized-experiments). Princeton University Press. Sections 18.2 and 18.3.
 - R Psychology. (2023). [Understanding Statistical Power and Significance Testing](https://rpsychologist.com/d3/nhst/). A comprehensive guide to power analysis in `R`.
 - EGAP: [Power Calculator](https://egap.shinyapps.io/power-app/). An interactive tool to calculate power for your experiments.
 - Pek, J., Hoisington-Shaw, K. J., & Wegener, D. T. (2024). [Uses of uncertain statistical power: Designing future studies, not evaluating completed studies](https://psycnet.apa.org/doi/10.1037/met0000577). Psychological Methods.
