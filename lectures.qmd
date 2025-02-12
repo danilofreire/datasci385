@@ -98,9 +98,9 @@ Weekly suggested readings:
 - FEDAI: Section 3.6: Sampling Distributions for Experiments That Use Block or Cluster Random Assignment.
 - FEDAI: Chapter 04: Using Covariates in Experimental Design and Analysis.
 
-### Lecture 08: Statistical Power and Sample Size Calculations (February 12)
+### Lecture 08: Blocking and Clustering (Cont.), Statistical Power, and Sample Calculations (February 12)
 
-- Lecture slides: Statistical Power and Sample Size Calculations.
+- Lecture slides: [Blocking and Clustering (Cont.), Statistical Power, and Sample Calculations](https://raw.githack.com/danilofreire/qtm385/main/lectures/lecture-08/08-power.html).
 - FEDAI Appendix 3.1 on Power
 - [EGAP Methods Guide on Power Calculations](https://egap.org/resource/10-things-to-know-about-statistical-power/).
 - Problem Set 03 due.
