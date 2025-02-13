@@ -17,6 +17,7 @@ You will find the questions in the `assignments` folder on [the course repositor
 | 1          | Theory | 29 Jan | [Assignment 1](https://github.com/danilofreire/qtm385/blob/main/assignments/01-assignment) |
 | 2          | Potential Outcomes | 5 Feb | [Assignment 2](https://github.com/danilofreire/qtm385/blob/main/assignments/02-assignment) |
 | 3          | Sampling Distributions | 12 Feb | [Assignment 3](https://github.com/danilofreire/qtm385/blob/main/assignments/03-assignment) |
+| 4          | RI, Blocking, Clustering, and Power | 19 Feb | [Assignment 4](https://github.com/danilofreire/qtm385/blob/main/assignments/04-assignment) |
 
 ## Pre-Analysis Plan
 

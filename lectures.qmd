@@ -104,7 +104,7 @@ Weekly suggested readings:
 - FEDAI Appendix 3.1 on Power
 - [EGAP Methods Guide on Power Calculations](https://egap.org/resource/10-things-to-know-about-statistical-power/).
 - Problem Set 03 due.
-- Problem Set 04 assigned.
+- [Problem Set 04 assigned](https://github.com/danilofreire/qtm385/tree/main/assignments/04-assignment).
   
 Weekly suggested readings:
 
