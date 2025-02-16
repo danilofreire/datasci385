@@ -130,6 +130,7 @@ Weekly suggested readings:
 - FEDAI: Chapter 06: Two-Sided Non-Compliance.
 - Problem Set 04 due.
 - Problem Set 05 assigned.
+- Two paragraphs (maximum) summarising an experiment that you wish to develop in this course. At a minimum, your summary should include a research question, why the question is important, and a rough outline of how you plan to answer the question. Please send me an email by Wednesday with this information.
 
 Weekly suggested readings:
 
