@@ -120,7 +120,7 @@ Weekly suggested readings:
 
 ### Lecture 09: Non-Compliance I (February 17)
 
-- Lecture slides: Non-Compliance I
+- Lecture slides: [Non-Compliance I](https://raw.githack.com/danilofreire/qtm385/main/lectures/lecture-09/09-non-compliance1.html).
 - FEDAI: Chapter 05: One-Sided Non-Compliance.
 - [Kahoot Quiz](https://play.kahoot.it/v2/?quizId=a6f1c5fa-f06d-41d1-ab82-f5db73b6d18f&hostId=05eb977d-4f8a-440e-9e45-95212b29d103)
 
