@@ -126,10 +126,11 @@ Weekly suggested readings:
 
 ### Lecture 10: Non-Compliance II (February 19)
 
-- Lecture slides: Non-Compliance II.
+- Lecture slides: [Non-Compliance II](https://raw.githack.com/danilofreire/qtm385/main/lectures/lecture-10/10-non-compliance2.html).
 - FEDAI: Chapter 06: Two-Sided Non-Compliance.
 - Problem Set 04 due.
-- Problem Set 05 assigned.
+- [Problem Set 05 assigned](https://github.com/danilofreire/qtm385/tree/main/assignments/05-assignment).
+- [KaHoot Quiz](https://play.kahoot.it/v2/?quizId=93cf500f-015b-4dd6-9c11-b3142b06f905&hostId=05eb977d-4f8a-440e-9e45-95212b29d103)
 - Two paragraphs (maximum) summarising an experiment that you wish to develop in this course. At a minimum, your summary should include a research question, why the question is important, and a rough outline of how you plan to answer the question. Please send me an email by Wednesday with this information.
 
 Weekly suggested readings:
