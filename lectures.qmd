@@ -141,9 +141,9 @@ Weekly suggested readings:
 - Kane, J. V. (2025). [More than meets the ITT: A guide for anticipating and investigating nonsignificant results in survey experiments](https://doi.org/10.1017/XPS.2024.1). Journal of Experimental Political Science, 12(1), 110–125.
 - Gerber, A. S., Green, D. P., Kaplan, E. H., & Kern, H. L. (2010). [Baseline, placebo, and treatment: Efficient estimation for three-group experiments](https://www.cambridge.org/core/journals/political-analysis/article/abs/baseline-placebo-and-treatment-efficient-estimation-for-threegroup-experiments/F9B246F9645C925BE49E98DFFE600A65). Political Analysis, 18(3), 297-315.
 
-## Week 07: Attrition Experimental Research
+## Week 07: Attrition in Experimental Research
 
-### Lecture 11: Attrition and Missing Data (February 24)
+### Lecture 11: Attrition and Missing Outcomes (February 24)
 
 - Lecture slides: [Attrition](https://raw.githack.com/danilofreire/qtm385/main/lectures/lecture-11/11-attrition.html).
 - FEDAI: Chapter 07: Attrition.
