@@ -152,18 +152,22 @@ Weekly suggested readings:
 
 ### Lecture 12: Ethical Considerations in Experimental Research (February 26)
 
+- Lecture slides: [Ethical Considerations in Experimental Research](https://raw.githack.com/danilofreire/qtm385/main/lectures/lecture-12/12-ethics.html).
+- [Problem Set 06 assigned](https://github.com/danilofreire/qtm385/tree/main/assignments/06-assignment)
+
 Required readings:
 
 - Humphreys, M. (2015). [Reflections on the ethics of social experimentation](https://doi.org/10.1515/jgd-2014-0016). Journal of Globalization and Development, 6(1), 87-112.
 - Cronin-Furman, K., & Lake, M. (2018). [Ethics abroad: Fieldwork in fragile and violent contexts](https://doi.org/10.1017/S1049096518000379). PS: Political Science & Politics, 51(3), 607-614.
+- Poverty Action Lab (2022). [Ethical conduct of randomized evaluations](https://www.povertyactionlab.org/resource/ethical-conduct-randomized-evaluations). J-PAL.
 - Problem Set 05 due.
-- Problem Set 06 assigned.
-  
+
 Weekly suggested readings:
 
 - Zhou, H., & Fishbach, A. (2016). [The pitfall of experimenting on the web: How unattended selective attrition leads to surprising (yet false) research conclusions](https://psycnet.apa.org/record/2016-29224-001). Journal of personality and social psychology, 111(4), 493.
 - Coppock, A., Gerber, A. S., Green, D. P., & Kern, H. L. (2017). [Combining double sampling and bounds to address nonignorable missing outcomes in randomized experiments](https://www.cambridge.org/core/journals/political-analysis/article/abs/combining-double-sampling-and-bounds-to-address-nonignorable-missing-outcomes-in-randomized-experiments/76D6DB70466C906123D9842528C9A861). Political Analysis, 25(2), 188-206.
 - Ghanem, D., Hirshleifer, S., & Ortiz-Becerra, K. (2019). [Testing Attrition Bias in Field Experiments](http://dx.doi.org/10.26085/C38C76). UC Berkeley: Center for Effective Global Action.
+- Pallmann, P., Bedding, A.W., Choodari-Oskooei, B. et al. (2018). [Adaptive designs in clinical trials: why use them, and how to run and report them](https://bmcmedicine.biomedcentral.com/articles/10.1186/s12916-018-1017-7). BMC Med 16(29).
 - Asiedu, E., Dean, E., Karlan, D., & Osei, R. (2021). [Ethics and society review: Ethics reflection as a precondition to research funding](https://doi.org/10.1073/pnas.2117261118). Proceedings of the National Academy of Sciences, 118(52), e2117261118.
 - ASAB Ethical Committee/ABS Animal Care Committee. (2024). [Guidelines for the ethical treatment of nonhuman animals in behavioural research and teaching](https://www.sciencedirect.com/science/article/pii/S0003347223003172). Animal Behaviour, 207, I-XI.
 
