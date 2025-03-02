@@ -175,7 +175,7 @@ Weekly suggested readings:
 
 ### Lecture 13: Introduction to Quarto and DeclareDesign (March 03)
 
-- Lecture slides: Introduction to Quarto and DeclareDesign.
+- Lecture slides: [Introduction to Quarto and DeclareDesign](https://raw.githack.com/danilofreire/qtm385/main/lectures/lecture-13/13-quarto.html).
 - Quarto official website: <https://quarto.org/>.
 - DeclareDesign official website: <https://declaredesign.org/>.
 
