@@ -37,7 +37,7 @@ $$
 
 - `id`: Unique participant identifier. 
 - `assignment`: Treatment assignment (0 = control group, 1 = treatment group). Participants assigned to the treatment group were offered access to the programme. 
-- `programme_Usage`: Actual usage of the Financial Literacy Programme (0 = no usage, 1 = used the programme). This indicates whether participants in either group actually used the programme (treatment). Note that control group members could theoretically access similar resources outside the study, leading to potential two-sided non-compliance aspects, though we will primarily focus on IV analysis suitable for non-compliance scenarios discussed in lectures.
+- `programme_usage`: Actual usage of the Financial Literacy Programme (0 = no usage, 1 = used the programme). This indicates whether participants in either group actually used the programme (treatment). Note that control group members could theoretically access similar resources outside the study, leading to potential two-sided non-compliance aspects, though we will primarily focus on IV analysis suitable for non-compliance scenarios discussed in lectures.
 - `financial_knowledge_score`: Score on a financial knowledge test post-experiment (outcome variable). Higher scores indicate better financial knowledge.
 
 Estimate the intent-to-treat (ITT) effect of `assignment` on `financial_knowledge_score` using robust linear regression. Interpret, in detail, the ITT effect in the context of the Financial Literacy Programme.
