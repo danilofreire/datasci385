@@ -138,14 +138,14 @@ Ulysses/Odysseus and the Sirens
   - [They are inflexible]{.alert} and limit the scope for breakthroughs
   - [PAPs force researchers to run sub-optimal analyses]{.alert} to avoid deviations, thus creating boring and uninformative research
   - [People can steal your work]{.alert} and publish it before you do
-  - Finally, [PAPs don't actually work]{.alert}, as they require constant policing and this is something academia does not reward
+  - Finally, some say that [PAPs don't even work]{.alert}, as they require constant policing and this is something academia does not reward
 :::
 
 :::{.column width="50%"}
 :::{style="margin-top: -30px; text-align: center;"}
 ![](figures/ofosu.png){width=90%}
 
-More than 50 hypothesis specified? How can this prevent data mining?
+More than 50 hypothesis specified? Really? How can this prevent data mining?
 
 Source: [Ofosu and Posner (2021)](https://www.cambridge.org/core/journals/perspectives-on-politics/article/preanalysis-plans-an-early-stocktaking/94E7FAE76001C45A04E8F5E272C773CE){target="_blank"}
 :::
@@ -208,11 +208,17 @@ Source: [Lin et al (2016)](https://alexandercoppock.com/Green-Lab-SOP/Green_Lab_
 ## Group activity
 ### How would you organise your PAP?
 
-:::{style="margin-top: 30px; font-size: 22px;"}
-- With the members of your group, try to fill out the following sections
-- You don't need to fill out all the details, just a brief summary of each section
-- You have a few minutes to discuss each part of the template with your colleages, then we can discuss them together
+:::{style="margin-top: 30px; font-size: 25px;"}
+- Together with your group members, you will work on the EGAP template
+- The idea is to discuss how you would organise your PAP and fill out the template
+- You don't need to complete all of it, just a brief summary of each section
+- You have a few minutes to discuss each section with your group, then we will share our thoughts with the class
+- Let's start! 🚀
+:::
 
+## Section 01 - Introduction
+
+:::{style="margin-top: 30px; font-size: 22px;"}
 +-------------------+--------------------------------------------------+
 | **Section 1:      |                                                  |
 | Introduction**    |                                                  |
@@ -247,7 +253,7 @@ Source: [Lin et al (2016)](https://alexandercoppock.com/Green-Lab-SOP/Green_Lab_
 
 ## Hypotheses
 
-:::{style="margin-top: 30px; font-size: 21px;"}
+:::{style="margin-top: 30px; font-size: 22px;"}
 +-------------------+--------------------------------------------------+
 | **Section 1:      |                                                  |
 | Introduction**    |                                                  |
@@ -359,7 +365,7 @@ Source: [Lin et al (2016)](https://alexandercoppock.com/Green-Lab-SOP/Green_Lab_
 
 ## Threats to Validity
 
-:::{style="margin-top: 30px; font-size: 23px;"}
+:::{style="margin-top: 30px; font-size: 24px;"}
 +-------------------+--------------------------------------------------+
 | **Section 3:      |                                                  |
 | Intervention**    |                                                  |
@@ -466,7 +472,7 @@ Source: [Lin et al (2016)](https://alexandercoppock.com/Green-Lab-SOP/Green_Lab_
 
 ## Analysis
 
-:::{style="margin-top: 30px; font-size: 23px;"}
+:::{style="margin-top: 30px; font-size: 24px;"}
 +-------------------+--------------------------------------------------+
 | **Section 6:      |                                                  |
 | Analysis**        |                                                  |
@@ -495,7 +501,7 @@ Source: [Lin et al (2016)](https://alexandercoppock.com/Green-Lab-SOP/Green_Lab_
 
 ## Implementation
 
-:::{style="margin-top: 30px; font-size: 21px;"}
+:::{style="margin-top: 30px; font-size: 24px;"}
 +-------------------+--------------------------------------------------+
 | **Section 7:      |                                                  |
 | Implementation**  |                                                  |
@@ -518,7 +524,7 @@ Source: [Lin et al (2016)](https://alexandercoppock.com/Green-Lab-SOP/Green_Lab_
 +-------------------+--------------------------------------------------+
 :::
 
-# Examples of PAPs 📊 {background-color="#2d4563"}
+# PAP examples you can use 📝 {background-color="#2d4563"}
 
 ## Some examples
 
@@ -541,11 +547,11 @@ Source: [Lin et al (2016)](https://alexandercoppock.com/Green-Lab-SOP/Green_Lab_
 ## Important dates
 
 :::{style="margin-top: 30px; font-size: 30px;"}
-- Wednesday, March 26: PAP draft due (about 10 pages)
-- Monday, March 31: You will receive feedback on your PAP
-- Monday, April 7: Final version of your PAP due
-- Monday, April 14: You will receive your dataset
-- Wednesday, April 24 and Monday, April 28: You will present your results in class (about 15 minutes) and submit your final report (about 15 pages)
+- [Wednesday, March 26]{.alert}: PAP draft due (10-15 pages)
+- [Monday, March 31]{.alert}: You will receive feedback on your PAP
+- [Monday, April 7]{.alert}: Final version of your PAP due
+- [Monday, April 14]{.alert}: You will receive your dataset
+- [Wednesday, April 24 and Monday, April 28]{.alert}: You will present your results in class (about 15 minutes) and submit your final report (about 15 pages)
 :::
 
 # And that's all for today! 🎉 {background-color="#2d4563"}
