@@ -181,11 +181,11 @@ Weekly suggested readings:
 
 ### Lecture 14: Writing Pre-Analysis Plans (March 05)
 
-- Lecture slides: How to Write a Pre-Analysis Plan.
+- Lecture slides: [How to Write a Pre-Analysis Plan](https://raw.githack.com/danilofreire/qtm385/main/lectures/lecture-14/14-pap.html).
 - EGAP: [Pre-Analysis Plans](https://egap.org/resource/10-things-to-know-about-pre-analysis-plans/).
 - Olken, B. A. (2015). [Promises and perils of pre-analysis plans](https://www.aeaweb.org/articles?id=10.1257/jep.29.3.61). Journal of Economic Perspectives, 29(3), 61-80.
 - Problem Set 06 due.
-- Problem Set 07 assigned.
+- [Kahoot Quiz](https://play.kahoot.it/v2/?quizId=da50f0e5-b3a6-450e-ad99-95ed2be461d3&hostId=05eb977d-4f8a-440e-9e45-95212b29d103)
 
 Weekly suggested readings:
 
