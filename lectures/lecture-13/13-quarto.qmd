@@ -888,7 +888,7 @@ cluster_sampling_design
 
 ## Today we learned...
 
-:::{style="margin-top: 30px; font-size: 25px;"}
+:::{style="margin-top: 30px; font-size: 27px;"}
 - The basics of [Quarto](https://quarto.org/){.alert} and [DeclareDesign](https://declaredesign.org/){.alert}
 - How to write a [Quarto document]{.alert} that includes text, code, and visualisations
 - The importance of [literate programming]{.alert} for reproducible research
@@ -899,13 +899,29 @@ cluster_sampling_design
 
 ## Further readings
 
-:::{style="margin-top: 30px; font-size: 25px;"}
+:::{style="margin-top: 30px; font-size: 28px;"}
 - You can find more information about Quarto at <https://quarto.org/>
 - Many templates are available in the Quarto Gallery: <https://quarto.org/gallery/>
 - I have a personal collection of PDF templates available at <https://github.com/danilofreire/quarto-templates>
 - Familiarise yourself with `fabricatr` at <https://declaredesign.org/r/fabricatr/>
 - If you want to dive deeper on the MIDA framework, please read chapters 5-13 here: <https://book.declaredesign.org/declaration-diagnosis-redesign/declaring-designs.html>
 - And if you want to learn more about the DesignLibrary, please visit <https://declaredesign.org/r/designlibrary/>
+:::
+
+## Quarto cheat sheet
+
+:::{style="margin-top: 30px; font-size: 22px; text-align: center;"}
+![](figures/quarto-cheat-sheet.png){width=90%}
+
+Source: <https://raw.githubusercontent.com/rstudio/cheatsheets/master/quarto.pdf>
+:::
+
+## DeclareDesign cheat sheet
+
+:::{style="margin-top: 30px; font-size: 22px; text-align: center;"}
+![](figures/dd-cheat-sheet.png){width=90%}
+
+Source: <https://raw.githubusercontent.com/rstudio/cheatsheets/master/declaredesign.pdf>
 :::
 
 # And that's all for today! 🎉 {background-color="#2d4563"}
