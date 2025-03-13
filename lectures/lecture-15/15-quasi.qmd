@@ -97,9 +97,7 @@ Source: <https://egap.org/resource/10-things-to-know-about-pre-analysis-plans/>
 
 :::{.column width="50%"}
 :::{style="text-align: center;"}
-![](figures/natural.jpg){width=50%}
-
-Source: <https://doi.org/10.1017/CBO9781139084444>
+![](figures/koreas.jpg){width=80%}
 :::
 :::
 :::
@@ -322,13 +320,13 @@ Source: <https://doi.org/10.1017/S1537592716002863>
     - [Matching Methods]{.alert}
 :::
 
-## Regression Discontinuity Design (RDD)
+## Regression discontinuity design (RDD)
 
 :::{style="margin-top: 30px; font-size: 26px;"}
 - RDD exploits sharp discontinuities in treatment assignment based on a [threshold or cutoff score]{.alert}
 - Units are assigned to treatment or control based on whether they fall above or below a specific cutoff point on a [continuous assignment variable (running variable)]{.alert}
 - Compares units [just above the threshold to units just below]{.alert}
-  - Formally, 
+  - For the linear case, $Y = \beta_{0} + \beta_{1}X + \beta_{2}(X > X_{0}) + \epsilon$
 - Logic: Units very close to the cutoff are likely to be [very similar in all other respects]{.alert}, except for treatment status
 - Cutoff creates a [local "as-if" randomisation]{.alert} around the threshold
 - RDD estimates the [treatment effect at the discontinuity point]{.alert}
@@ -363,7 +361,153 @@ Source: [Nick Huntington-Klein](https://www.nickchk.com/causalgraphs.html)
 :::
 :::
 
+## Example 03: Mignozzetti et al. (2024)
 
+:::{style="font-size: 21px; margin-top: 30px; text-align: center;"}
+![](figures/mignozzetti.png){width=70%}
+
+Source: [Mignozzetti, U., & al. (2024). Legislature size and welfare: Evidence from Brazil, American Journal of Political Science](https://doi.org/10.1111/ajps.12843)
+:::
+
+## Mignozzetti et al. (2024)
+
+:::{style="font-size: 21px; margin-top: 30px; text-align: center;"}
+![](figures/mignozzetti-rdd.png){width=100%}
+:::
+
+## Mignozzetti et al. (2024)
+
+:::{style="font-size: 21px; margin-top: 30px; text-align: center;"}
+![](figures/mignozzetti-results.png){width=100%}
+:::
+
+## Difference-in-Differences (DID): Leveraging policy changes
+
+:::{style="margin-top: 30px; font-size: 26px;"}
+- Core Idea: Compare changes in outcomes [over time between a treatment group and a control group]{.alert}
+- Exploits naturally occurring events or policy changes that affect one group but not another
+- Relies on comparing the [difference in changes]{.alert} (hence "difference-in-differences")
+    - Change in outcome for treatment group - Change in outcome for control group
+- Aims to isolate the treatment effect from:
+    - [Pre-existing differences]{.alert} between groups (captured by baseline differences)
+    - [Common trends over time]{.alert} (assumed to affect both groups similarly)
+- Key Assumption: [Parallel Trends]{.alert}
+    - In the absence of treatment, the treatment and control groups would have followed similar trends in outcomes
+:::
+
+
+## DID: Visualising the parallel trends
+
+:::{style="margin-top: 30px; font-size: 23px;"}
+:::{.columns}
+:::{.column width="50%"}
+:::{style="text-align: center;"}
+![](figures/did.gif){width=80%}
+
+Source: [Nick Huntington-Klein](https://www.nickchk.com/causalgraphs.html)
+:::
+:::
+
+:::{.column width="50%"}
+- [Equation]{.alert}: $Y_{it} = \alpha + \beta T_{i} + \gamma D_{t} + \delta (T_{i} \times D_{t}) + \epsilon_{it}$
+    - $Y_{it}$: Outcome for unit *i* at time *t*
+    - $T_{i}$: Treatment indicator (1 if treated, 0 otherwise)
+    - $D_{t}$: Time indicator (1 if post-treatment, 0 otherwise)
+    - $\delta$: DID estimator (difference-in-differences)
+  
+- [Many extensions]{.alert} to the basic DID design:
+    - [Multiple time periods]{.alert}
+    - [Multiple treatment groups]{.alert}
+    - [Difference-in-Difference-in-Differences (DDD)]{.alert}
+    - [Synthetic Control Methods]{.alert}
+:::
+:::
+:::
+
+## Example 04: Card and Krueger (1994)
+
+:::{style="font-size: 21px; margin-top: 30px; text-align: center;"}
+![](figures/card.png){width=70%}
+
+Source: [Card, D., & Krueger, A. B. (1994). Minimum Wages and Employment: A Case Study of the Fast-Food Industry in New Jersey and Pennsylvania. The American Economic Review, 84(4), 772-793.](https://doi.org/10.1257/aer.84.4.772)
+:::
+
+## Card and Krueger (1994)
+
+:::{style="font-size: 21px; margin-top: 30px; text-align: center;"}
+![](figures/card-results.png){width=80%}
+:::
+
+# Threats to validity and mitigation strategies {background-color="#2d4563"}
+
+##  Major threats to validity in quasi-experiments
+
+:::{style="margin-top: 30px; font-size: 26px;"}
+- [Confounding (selection bias):]{.alert}
+    - Pre-existing differences between treatment and control groups that are related to both treatment and outcome
+    - Can bias estimates in any quasi-experimental design
+- [Violation of key assumptions:]{.alert}
+    - Parallel trends assumption in DID may not hold
+    - Continuity assumption in RDD may be violated
+    - Instrument validity assumptions (relevance and exclusion) in IV may be questionable
+    - Selection on observables assumption in Matching may be false
+- [Measurement error:]{.alert} Can attenuate or bias estimates in any design
+- [Spillover effects/interference:]{.alert} Treatment effects in one group can affect outcomes in the control group, violating stable unit treatment value assumption (SUTVA)
+- [Attrition and missing data:]{.alert} Differential attrition between treatment and control groups can introduce bias
+:::
+
+## Strategies for strengthening validity
+
+:::{style="margin-top: 30px; font-size: 26px;"}
+- [Careful design choice:]{.alert} Select the most appropriate quasi-experimental design given the research question and context
+- [Robustness checks and sensitivity analyses:]{.alert}
+    - Test the sensitivity of findings to violations of key assumptions
+    - Conduct placebo tests, falsification tests, and alternative specifications
+- [Control variables:]{.alert} Include relevant covariates to control for observable confounding
+- [Assumption checks and justification:]{.alert}
+    - Clearly state and justify the assumptions of the chosen design
+    - Provide evidence to support the plausibility of assumptions (e.g., pre-treatment trends for DID, density tests for RDD, instrument relevance tests for IV)
+- [Triangulation:]{.alert} Use multiple methods and data sources to corroborate findings
+- [Transparency:]{.alert} Be transparent about design limitations and assumptions in reporting results
+:::
+
+## Ethics beyond randomisation
+
+:::{style="margin-top: 30px; font-size: 26px;"}
+- While quasi-experiments often arise from ethical constraints on randomisation, ethical considerations remain important
+- Be transparent about the [limitations of the design and assumptions]{.alert} being made
+- Quasi-experimental findings may be [more easily misinterpreted]{.alert} than RCT results - emphasize responsible communication
+- Consequences:** Consider potential [unintended consequences]{.alert} of studying natural events or policy changes, especially if findings inform future interventions
+- Maintain ethical standards in data collection, storage, and analysis, especially when using sensitive data
+- Even in observational settings, consider ethical guidelines for data collection and participant interaction
+- Ethical review boards may still be involved in quasi-experimental research, especially if it involves human subjects data
+:::
+
+# Conclusion 🌟 {background-color="#2d4563"}
+
+## Key takeaways
+
+:::{style="font-size: 22px; margin-top: 30px;"}
+:::{.columns}
+:::{.column width="50%"}
+- [Natural and quasi-experiments]{.alert} are valuable tools for causal inference when RCTs are not feasible
+- [Natural experiments]{.alert} use natural assignment mechanisms to mimic randomisation
+- [Quasi-experiments]{.alert} encompass a broader range of designs that lack full random assignment
+- [RDD, DID, IV, and Matching]{.alert} are common quasi-experimental designs
+- [Validity threats]{.alert} in quasi-experiments include confounding, assumption violations, measurement error, and attrition
+- [Strategies for strengthening validity]{.alert} include careful design choice, robustness checks, control variables, assumption checks, triangulation, and transparency
+- [Ethical considerations]{.alert} remain important in quasi-experimental research
+:::
+
+:::{.column width="50%"}
+:::{style="text-align: center;"}
+![](figures/natural.jpg){width=50%}
+
+Source: <https://doi.org/10.1017/CBO9781139084444>
+:::
+:::
+:::
+:::
 
 # Thanks very much! 😊 {background-color="#2d4563"}
 
