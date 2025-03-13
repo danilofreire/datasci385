@@ -316,8 +316,8 @@ Source: <https://doi.org/10.1017/S1537592716002863>
 - Includes natural experiments as a subset, but also encompasses designs where researchers [actively construct comparison groups]{.alert}
 - Key feature: [strategic use of design and statistical techniques]{.alert} to address confounding and selection bias
 - Examples of Quasi-Experimental Designs:
-    - [Difference-in-Differences (DID)]{.alert}
     - [Regression Discontinuity Design (RDD)]{.alert}
+    - [Difference-in-Differences (DID)]{.alert}
     - [Instrumental Variables (IV)]{.alert}
     - [Matching Methods]{.alert}
 :::
