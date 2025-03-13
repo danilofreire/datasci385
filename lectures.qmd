@@ -197,6 +197,7 @@ Weekly suggested readings:
 - Blair, G., Coppock, A., & Humphreys, M. (2023). [Introduction to design declaration with DeclareDesign](https://macartan.github.io/dd_bootcamp/dd.html#/title-slide). A series of presentation slides on DeclareDesign by the authors of the book. Strongly recommended.
 - [DeclareDesign official website](https://declaredesign.org/).
 - Nosek, B.A., Alter, G., Banks, G.C., Borsboom, D., Bowman, S.D., Breckler, S.J., Buck, S., Chambers, C.D., Chin, G., Christensen, G. and Contestabile, M., 2015. [Promoting an open research culture](https://www.science.org/doi/10.1126/science.aab2374). Science, 348(6242), pp.1422-1425.
+- [A Gentle Introduction to DeclareDesign (YouTube)](https://youtu.be/8Y0p_ar59tQ/). Video tutorial by the authors of the book.
 
 ## Week 09: Interference
 
