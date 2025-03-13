@@ -194,6 +194,8 @@ Weekly suggested readings:
 - Awesome Quarto: <https://github.com/mcanouil/awesome-quarto>. Note: this repository contains dozens of tutorials, examples, and resources. 
 - Çetinkaya-Rundel, M. & Lowndes, J. S. (2022) [Keynote talk: Hello Quarto: Share • Collaborate • Teach • Reimagine](https://www.youtube.com/watch?v=p7Hxu4coDl8). [Slides](https://mine.quarto.pub/hello-quarto/#/hello-quarto-title) and [source code](https://github.com/mine-cetinkaya-rundel/hello-quarto). This is one of the nicest Quarto presentations I have seen.
 - [Getting Started with Quarto (YouTube)](https://www.youtube.com/watch?v=_f3latmOhew&t=2s). Note: Posit (formerly RStudio) has a series of tutorials on Quarto on their YouTube channel. You can find their playlist [here](https://www.youtube.com/playlist?list=PL9HYL-VRX0oQI8fVioFxMTBrViFnRX_Df).
+- Blair, G., Coppock, A., & Humphreys, M. (2023). [Introduction to design declaration with DeclareDesign](https://macartan.github.io/dd_bootcamp/dd.html#/title-slide). A series of presentation slides on DeclareDesign by the authors of the book. Strongly recommended.
+- [DeclareDesign official website](https://declaredesign.org/).
 - Nosek, B.A., Alter, G., Banks, G.C., Borsboom, D., Bowman, S.D., Breckler, S.J., Buck, S., Chambers, C.D., Chin, G., Christensen, G. and Contestabile, M., 2015. [Promoting an open research culture](https://www.science.org/doi/10.1126/science.aab2374). Science, 348(6242), pp.1422-1425.
 
 ## Week 09: Interference
