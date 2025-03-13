@@ -285,6 +285,8 @@ Weekly suggested readings:
 - Blair, G., Imai, K., & Zhou, Y. Y. (2015). [Design and Analysis of the Randomized Response Technique.](https://www.tandfonline.com/doi/abs/10.1080/01621459.2015.1050028) Journal of the American Statistical Association, 110(511), 1304-1319.
 - Blair, G., & Imai, K. (2012). [Statistical Analysis of List Experiments.](https://www.cambridge.org/core/journals/political-analysis/article/statistical-analysis-of-list-experiments/6AEE6C9D3AB6DA410D602CB035D5959A) Political Analysis, 20(1), 47-77.
 
+## Week 13: Meta-Analysis and Integration of Research Findings
+
 ### Lecture 23: Texts for discussion (related to survey experiments) (April 14)
 
 - Druckman, J. N., Gilli, M., Klar, S., & Robison, J. (2015). [Measuring drug and alcohol use among college student‐athletes.](https://onlinelibrary.wiley.com/doi/abs/10.1111/ssqu.12135) Social Science Quarterly, 96(2), 369-380.
@@ -304,6 +306,8 @@ Weekly suggested readings:
 - Hansen, C., Steinmetz, H., & Block, J. (2022). [How to Conduct a Meta-Analysis in Eight Steps: A Practical Guide.](https://link.springer.com/article/10.1007/s11301-021-00247-4) Management Review Quarterly, 1-19.
 - Moher, D., Shamseer, L., Clarke, M., Ghersi, D., Liberati, A., Petticrew, M., ... & Prisma-P Group. (2015). [Preferred reporting items for systematic review and meta-analysis protocols (PRISMA-P) 2015 statement.](https://link.springer.com/article/10.1186/2046-4053-4-1) Systematic reviews, 4, 1-9.
 
+## Week 14: Final Review and Presentations
+
 ### Lecture 25: Final Review (April 21)
 
 - Lecture slides: Final Review.
@@ -311,6 +315,8 @@ Weekly suggested readings:
 ### Presentations (April 23)
 
 - Presentations of final projects.
+
+## Week 15: Final Presentations
 
 ### Presentations (Continued) (April 28)
 
