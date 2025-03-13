@@ -15,8 +15,9 @@ Required readings:
 - Lecture slides: [Welcome to QTM 385: Introduction / Why Experiments?](https://raw.githack.com/danilofreire/qtm385/main/lectures/lecture-01/01-introduction.html)
 - FEDAI: Chapter 01: Introduction.
 
-Weekly suggested readings:
+Suggested readings:
 
+- Humphreys, M. (2021). [I saw your RCT and I have some worries! FAQs](https://macartan.github.io/i/notes/rct_faqs.html). An informal collection of questions and answers about RCTs.
 - Druckman, J. N., Green, D. P., Kuklinski, J. H., & Lupia, A. (2011). [Experiments: An Introduction to Core Concepts](https://www.cambridge.org/core/books/cambridge-handbook-of-experimental-political-science/CCEA698DB2EB4FF270D988F84EA903772). In J. N. Druckman, D. P. Green, J. H. Kuklinski, & A. Lupia (Eds.), Cambridge Handbook of Experimental Political Science (pp. 19-41). Cambridge University Press.
 - Hernán, M. A. (2018). [The C-Word: Scientific Euphemisms Do Not Improve Causal Inference from Observational Data](https://ajph.aphapublications.org/doi/full/10.2105/AJPH.2018.304337). American Journal of Public Health, 108(5), 616-619.
 - Mize, T. D., & Manago, B. (2022). [The Past, Present, and Future of Experimental Methods in the Social Sciences](https://doi.org/10.1016/j.ssresearch.2022.102799). Social Science Research, 108, 1-24. 
@@ -31,8 +32,8 @@ Weekly suggested readings:
 Required readings:
 
 - Lecture slides: [The Research Design Process: Testing Theories with Experiments](https://raw.githack.com/danilofreire/qtm385/main/lectures/lecture-02/02-design.html).
-- Blair, G., Cooper, J., Coppock, A., & Humphreys, M. (2019). [Declaring and Diagnosing Research Designs](https://doi.org/10.1017/S0003055419000194). American Political Science Review, 113(3), 838-859.
 - Card, D., DellaVigna, S., & Malmendier, U. (2011). [The Role of Theory in Field Experiments](https://pubs.aeaweb.org/doi/pdf/10.1257%2Fjep.25.3.39). Journal of Economic Perspectives, 25(3), 39-62.
+- Blair, G., Cooper, J., Coppock, A., & Humphreys, M. (2019). [Declaring and Diagnosing Research Designs](https://doi.org/10.1017/S0003055419000194). American Political Science Review, 113(3), 838-859.
 - [Problem Set 01 assigned](https://github.com/danilofreire/qtm385/blob/main/assignments/01-assignment).
 
 ## Week 03: Potential Outcomes Framework
@@ -199,7 +200,7 @@ Weekly suggested readings:
 
 ### Lecture 15: When Experiments are Not Possible (March 17)
 
-- Lecture slides: Natural and Quasi-Experiments.
+- Lecture slides: [Natural and Quasi-Experiments](https://raw.githack.com/danilofreire/qtm385/main/lectures/lecture-15/15-quasi.html).
 - Dunning, T. (2012). [Natural Experiments in the Social Sciences: A Design-Based Approach](https://www.cambridge.org/core/books/natural-experiments-in-the-social-sciences/96A64CBDC2A2952DC1C68AF77DE675AF). Cambridge University Press. Chapter 01: Introduction.
 - Petticrew, M., Cummins, S., Ferrell, C., Findlay, A., Higgins, C., Hoy, C., ... & Sparks, L. (2005). [Natural Experiments: An Underused Tool for Public Health?](https://www.sciencedirect.com/science/article/abs/pii/S0033350605000296). Public Health, 119(9), 751-757.
 
@@ -208,8 +209,7 @@ Weekly suggested readings:
 - Lecture slides: Interference in Experiments.
 - FEDAI: Chapter 08: Interference between Experimental Units.
 - EGAP: [Spillovers](https://egap.org/resource/10-things-to-know-about-spillovers/).
-- Problem Set 07 due.
-- Problem Set 08 assigned.
+- Problem Set 07 assigned.
 
 Weekly suggested readings:
 
@@ -231,8 +231,9 @@ Weekly suggested readings:
 
 - Lecture slides: Heterogeneous Treatment Effects.
 - FEDAI: Chapter 09: Heterogeneous Treatment Effects.
-- Problem Set 08 due.
-- Problem Set 09 assigned.
+- Problem Set 07 due.
+- Problem Set 08 assigned.
+- Pre-Analysis Plan due.
 
 Weekly suggested readings:
 
@@ -243,36 +244,74 @@ Weekly suggested readings:
 
 ## Week 11: Heterogeneous Treatment Effects (Continued) and Mediation
 
-### Lecture 19: Texts for discussion
+### Lecture 19: Texts for discussion (related to heterogeneous treatment effects) (March 31)
 
 - Munshi, K. (2003). [Networks in the modern economy: Mexican migrants in the US labor market.](https://academic.oup.com/qje/article-abstract/118/2/549/1899587?login=false) The Quarterly Journal of Economics, 118(2), 549-599.
 - Miguel, E., & Kremer, M. (2004). [Worms: identifying impacts on education and health in the presence of treatment externalities.](https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1468-0262.2004.00481.x) Econometrica, 72(1), 159-217.
 - TBD
 
-### Lecture 20: Mediation Analysis
+### Lecture 20: Mediation Analysis (April 02)
 
 - Lecture slides: Mediation Analysis.
 - FEDAI: Chapter 10: Mediation.
-- Problem Set 09 due.
-- Problem Set 10 assigned.
-
-## Week 12: Survey Experiments
-
-### Lecture 21: Survey Experiments
-
-- Lecture slides: Survey Experiments.
-- EGAP: [Survey Experiments](https://egap.org/resource/10-things-to-know-about-survey-experiments/).
-- Sniderman, P. M. (2018). [Some advances in the design of survey experiments.](https://www.annualreviews.org/content/journals/10.1146/annurev-polisci-042716-115726) Annual Review of Political Science, 21(1), 259-275.
+- Problem Set 08 due.
+- Problem Set 09 assigned.
 
 Weekly suggested readings:
 
 - VanderWeele, T. J. (2016). [Mediation analysis: a practitioner's guide.](https://www.annualreviews.org/content/journals/10.1146/annurev-publhealth-032315-021402) Annual review of public health, 37(1), 17-32.
 - MacKinnon, D. P., Fairchild, A. J., & Fritz, M. S. (2007). [Mediation analysis.](https://www.annualreviews.org/content/journals/10.1146/annurev.psych.58.110405.085542) Annu. Rev. Psychol., 58(1), 593-614.
 - Zhao, X., Lynch Jr, J. G., & Chen, Q. (2010). [Reconsidering Baron and Kenny: Myths and truths about mediation analysis.](https://academic.oup.com/jcr/article-abstract/37/2/197/1813998?login=false) Journal of consumer research, 37(2), 197-206.
+
+## Week 12: Survey Experiments
+
+### Lecture 21: Survey Experiments (April 07)
+
+- Lecture slides: Survey Experiments.
+- EGAP: [Survey Experiments](https://egap.org/resource/10-things-to-know-about-survey-experiments/).
+- Sniderman, P. M. (2018). [Some advances in the design of survey experiments.](https://www.annualreviews.org/content/journals/10.1146/annurev-polisci-042716-115726) Annual Review of Political Science, 21(1), 259-275.
+
+### Lecture 22: Survey Methods for Sensitive Topics (April 09)
+
+- Lecture slides: Survey Methods for Sensitive Topics.
+- Problem Set 09 due.
+- Problem Set 10 assigned.
+
+Weekly suggested readings:
+
 - Kane, J. V. (2024). [More than meets the ITT: A guide for anticipating and investigating nonsignificant results in survey experiments.](https://www.cambridge.org/core/journals/journal-of-experimental-political-science/article/more-than-meets-the-itt-a-guide-for-anticipating-and-investigating-nonsignificant-results-in-survey-experiments/C01250EB50598D6328B6065F1DF86BA7) Journal of Experimental Political Science, 1-16.
 - Schneider, D., & Harknett, K. (2022). [What’s to like? Facebook as a tool for survey data collection.](https://journals.sagepub.com/doi/full/10.1177/0049124119882477) Sociological Methods & Research, 51(1), 108-140.
+- Rosenfeld, B., Imai, K. & Shapiro, J. (2016). [An Empirical Validation Study of Popular Survey Methodologies for Sensitive Questions.](https://onlinelibrary.wiley.com/doi/abs/10.1111/ajps.12205) American Journal of Political Science, Vol. 60, No. 3 (July), pp. 783-802. 
+- Blair, G., Imai, K., & Zhou, Y. Y. (2015). [Design and Analysis of the Randomized Response Technique.](https://www.tandfonline.com/doi/abs/10.1080/01621459.2015.1050028) Journal of the American Statistical Association, 110(511), 1304-1319.
+- Blair, G., & Imai, K. (2012). [Statistical Analysis of List Experiments.](https://www.cambridge.org/core/journals/political-analysis/article/statistical-analysis-of-list-experiments/6AEE6C9D3AB6DA410D602CB035D5959A) Political Analysis, 20(1), 47-77.
 
-### Lecture 22: Texts for discussion
+### Lecture 23: Texts for discussion (related to survey experiments) (April 14)
 
 - Druckman, J. N., Gilli, M., Klar, S., & Robison, J. (2015). [Measuring drug and alcohol use among college student‐athletes.](https://onlinelibrary.wiley.com/doi/abs/10.1111/ssqu.12135) Social Science Quarterly, 96(2), 369-380.
-- Freire, D., & Skarbek, D. (2023). [Vigilantism and institutions: Understanding attitudes toward lynching in Brazil.](https://journals.sagepub.com/doi/full/10.1177/20531680
+- Blair, G., Imai, K., & Lyall, J. (2014). [Comparing and Combining List and Endorsement Experiments: Evidence from Afghanistan.](https://onlinelibrary.wiley.com/doi/abs/10.1111/ajps.12086) American Journal of Political Science, Vol. 58, No. 4 (October), pp. 1043-1063. 
+- Freire, D., & Skarbek, D. (2023). [Vigilantism and Institutions: Understanding Attitudes Toward Lynching in Brazil.](https://journals.sagepub.com/doi/full/10.1177/20531680)
+
+### Lecture 24: Meta-Analysis and Integration of Research Findings (April 16)
+
+- Lecture slides: Meta-Analysis and Integration of Research Findings.
+- FEDAI: Chapter 11: Integration of Research Findings.
+- Problem Set 10 due.
+
+Weekly suggested readings:
+
+- Borenstein, M., Hedges, L. V., Higgins, J. P., & Rothstein, H. R. (2011). [Introduction to meta-analysis.](https://www.wiley.com/en-us/Introduction+to+Meta+Analysis%2C+2nd+Edition-p-9780470057247) John Wiley & Sons. A whole book dedicated to the topic. A bit technical but very good.
+- Harrer, M., Cuijpers, P., Furukawa, T., & Ebert, D. (2021). [Doing Meta-Analysis with R: A Hands-On Guide.](https://doi.org/10.1201/9781003107347) Chapman and Hall/CRC.
+- Hansen, C., Steinmetz, H., & Block, J. (2022). [How to Conduct a Meta-Analysis in Eight Steps: A Practical Guide.](https://link.springer.com/article/10.1007/s11301-021-00247-4) Management Review Quarterly, 1-19.
+- Moher, D., Shamseer, L., Clarke, M., Ghersi, D., Liberati, A., Petticrew, M., ... & Prisma-P Group. (2015). [Preferred reporting items for systematic review and meta-analysis protocols (PRISMA-P) 2015 statement.](https://link.springer.com/article/10.1186/2046-4053-4-1) Systematic reviews, 4, 1-9.
+
+### Lecture 25: Final Review (April 21)
+
+- Lecture slides: Final Review.
+
+### Presentations (April 23)
+
+- Presentations of final projects.
+
+### Presentations (Continued) (April 28)
+
+- Presentations of final projects.
