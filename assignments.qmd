@@ -20,6 +20,7 @@ You will find the questions in the `assignments` folder on [the course repositor
 | 4          | RI, Blocking, Clustering, and Power | 19 Feb | [Assignment 4](https://github.com/danilofreire/qtm385/blob/main/assignments/04-assignment) |
 | 5          | Non-Compliance | 26 Feb | [Assignment 5](https://github.com/danilofreire/qtm385/blob/main/assignments/05-assignment) |
 | 6          | Attrition | 5 Mar | [Assignment 6](https://github.com/danilofreire/qtm385/blob/main/assignments/06-assignment) |
+| 7          | Attrition | 27 Mar | [Assignment 7](https://github.com/danilofreire/qtm385/blob/main/assignments/07-assignment) |
 
 ## Pre-Analysis Plan
 

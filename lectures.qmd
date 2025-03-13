@@ -211,7 +211,7 @@ Weekly suggested readings:
 - Lecture slides: Interference in Experiments.
 - FEDAI: Chapter 08: Interference between Experimental Units.
 - EGAP: [Spillovers](https://egap.org/resource/10-things-to-know-about-spillovers/).
-- Problem Set 07 assigned.
+- [Problem Set 07 assigned.](https://github.com/danilofreire/qtm385/tree/main/assignments/07-assignment)
 
 Weekly suggested readings:
 
