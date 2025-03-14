@@ -272,7 +272,7 @@ Weekly suggested readings:
 
 - Lecture slides: [Survey Experiments.](https://raw.githack.com/danilofreire/qtm385/main/lectures/lecture-21/21-survey.html)
 - EGAP: [Survey Experiments](https://egap.org/resource/10-things-to-know-about-survey-experiments/).
-- Sniderman, P. M. (2018). [Some advances in the design of survey experiments.](https://www.annualreviews.org/content/journals/10.1146/annurev-polisci-042716-115726) Annual Review of Political Science, 21(1), 259-275.
+- Stantcheva, S. (2023). [How to run surveys: A guide to creating your own identifying variation and revealing the invisible](https://www.annualreviews.org/content/journals/10.1146/annurev-economics-091622-010157). Annual Review of Economics, 15(1), 205-234.
 
 ### Lecture 22: Survey Methods for Sensitive Topics (April 09)
 
@@ -282,9 +282,11 @@ Weekly suggested readings:
 
 Weekly suggested readings:
 
-- Kane, J. V. (2024). [More than meets the ITT: A guide for anticipating and investigating nonsignificant results in survey experiments.](https://www.cambridge.org/core/journals/journal-of-experimental-political-science/article/more-than-meets-the-itt-a-guide-for-anticipating-and-investigating-nonsignificant-results-in-survey-experiments/C01250EB50598D6328B6065F1DF86BA7) Journal of Experimental Political Science, 1-16.
+- Sniderman, P. M. (2018). [Some advances in the design of survey experiments.](https://www.annualreviews.org/content/journals/10.1146/annurev-polisci-042716-115726) Annual Review of Political Science, 21(1), 259-275.
 - Schneider, D., & Harknett, K. (2022). [What’s to like? Facebook as a tool for survey data collection.](https://journals.sagepub.com/doi/full/10.1177/0049124119882477) Sociological Methods & Research, 51(1), 108-140.
 - Rosenfeld, B., Imai, K. & Shapiro, J. (2016). [An Empirical Validation Study of Popular Survey Methodologies for Sensitive Questions.](https://onlinelibrary.wiley.com/doi/abs/10.1111/ajps.12205) American Journal of Political Science, Vol. 60, No. 3 (July), pp. 783-802. 
+- Clifford, S., Sheagley, G., & Piston, S. (2021). [Increasing precision without altering treatment effects: Repeated measures designs in survey experiments](https://doi.org/10.1017/S0003055421000241). American Political Science Review, 115(3), 1048-1065.
+- Kane, J. V. (2024). [More than meets the ITT: A guide for anticipating and investigating nonsignificant results in survey experiments.](https://www.cambridge.org/core/journals/journal-of-experimental-political-science/article/more-than-meets-the-itt-a-guide-for-anticipating-and-investigating-nonsignificant-results-in-survey-experiments/C01250EB50598D6328B6065F1DF86BA7) Journal of Experimental Political Science, 1-16.
 - Blair, G., Imai, K., & Zhou, Y. Y. (2015). [Design and Analysis of the Randomized Response Technique.](https://www.tandfonline.com/doi/abs/10.1080/01621459.2015.1050028) Journal of the American Statistical Association, 110(511), 1304-1319.
 - Blair, G., & Imai, K. (2012). [Statistical Analysis of List Experiments.](https://www.cambridge.org/core/journals/political-analysis/article/statistical-analysis-of-list-experiments/6AEE6C9D3AB6DA410D602CB035D5959A) Political Analysis, 20(1), 47-77.
 - Mullinix, K. J., Leeper, T. J., Druckman, J. N., & Freese, J. (2015). [The Generalizability of Survey Experiments.](https://doi.org/10.1017/XPS.2015.19) Journal of Experimental Political Science, 2(2), 109–138. doi:10.1017/XPS.2015.19 
