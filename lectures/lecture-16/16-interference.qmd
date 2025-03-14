@@ -1,0 +1,93 @@
+---
+title: QTM 385 - Experimental Methods
+subtitle: Lecture 16 - Interference and Spillovers
+author:
+  - name: Danilo Freire
+    email: danilo.freire@emory.edu
+    affiliations: Emory University
+format:
+  clean-revealjs:
+    self-contained: true
+    code-overflow: wrap
+    footer: "[Interference](https://raw.githack.com/danilofreire/qtm385/main/lectures/lecture-16/16-interference.html)"
+transition: slide
+transition-speed: default
+scrollable: true
+engine: knitr
+revealjs-plugins:
+  - multimodal
+editor:
+  render-on-save: true
+---
+
+# How are you doing? 😊 {background-color="#2d4563"}
+
+# Brief recap 📚 {background-color="#2d4563"}
+
+## Pre-analysis plans
+### Core Components
+:::{style="font-size: 24px; margin-top: 30px;"}
+:::{.columns}
+:::{.column width="50%"}
+
+:::
+
+:::{.column width="50%"}
+
+:::
+:::
+:::
+
+## Implementation challenges
+
+:::{style="font-size: 23px; margin-top: 30px;"}
+:::{.columns}
+:::{.column width="40%"}
+- [PAPs are not perfect]{.alert}: 50% of researchers spend more than 2 weeks writing them
+- Common pitfalls:
+  - [Over-specification]{.alert} of analysis paths
+  - [Underpowered designs]{.alert} due to sample constraints
+  - [Non-compliance]{.alert} with treatment protocols
+- Solutions:
+  - [Pre-registered flexibility]{.alert} for exploratory analysis
+  - [Sensitivity analyses]{.alert} for robustness checks
+  - Clear [attrition management]{.alert} strategies
+:::
+
+:::{.column width="60%"}
+:::{style="margin-top: -30px; text-align: center;"}
+![](figures/pap.png){width=80%}
+
+Source: <https://egap.org/resource/10-things-to-know-about-pre-analysis-plans/>
+:::
+:::
+:::
+:::
+
+# Today's plan 📅 {background-color="#2d4563"}
+
+## When experiments are not possible
+
+:::{style="font-size: 20px; margin-top: 30px;"}
+:::{.columns}
+:::{.column width="50%"}
+- The [experimental ideal]{.alert} is not always feasible
+  - [Ethical constraints]{.alert}, [logistical challenges]{.alert}, [political barriers]{.alert}
+- [Natural experiments]{.alert}: When "nature" (broadly speaking) does the randomisation
+  - [Examples]{.alert}: Earthquakes, hurricanes, pandemics
+  - [More examples]{.alert}: Political transitions, policy changes, civil wars
+- [Quasi-experiments]{.alert}: Broader term than natural experiments, sometimes we can control the treatment but not the assignment
+  - [Examples]{.alert}: School vouchers, minimum wage laws, health interventions
+  - [Methods to estimate causal effects]{.alert}: Difference-in-differences, regression discontinuity, instrumental variables
+- They are [somewhere between observational and experimental studies]{.alert}, and have received increased attention in the last decades
+:::
+
+:::{.column width="50%"}
+:::{style="text-align: center;"}
+![](figures/koreas.jpg){width=80%}
+:::
+:::
+:::
+:::
+
+# The experimental ideal and its limits 🌟 {background-color="#2d4563"}
