@@ -24,70 +24,87 @@ editor:
 
 # Brief recap 📚 {background-color="#2d4563"}
 
-## Pre-analysis plans
-### Core Components
-:::{style="font-size: 24px; margin-top: 30px;"}
+## Brief recap 📚
+
+:::{style="margin-top: 20px; font-size: 22px;"}
 :::{.columns}
 :::{.column width="50%"}
+- [Natural experiments framework]{.alert}:
+  - [True vs "as-if" randomness]{.alert} in treatment assignment
+  - Core assumption: [exogeneity of assignment mechanism]{.alert}
+  - Examples: [Lottery-based charter school studies]{.alert}, [border discontinuity designs]{.alert}
 
+- [Quasi-experimental approaches]{.alert}:
+  - [Regression discontinuity (RDD)]{.alert}: Leveraging threshold-based assignment
+  - [Difference-in-differences (DID)]{.alert}: Utilising parallel trends assumption
+
+- [Methodological challenges]{.alert}:
+  - [Selection bias]{.alert} in observational data
+  - [SUTVA violations]{.alert} from treatment spillovers
+  - [Power limitations]{.alert} in natural variation contexts
 :::
 
-:::{.column width="50%"}
+::: {.column width="50%"}
+- [Empirical examples]{.alert}:
+  - Angrist et al. (2013): [School lottery IV analysis]{.alert}
+  - Card & Krueger (1994): [Minimum wage DID study]{.alert}
+  - Mignozzetti et al. (2024): [RDD in legislative analysis]{.alert}
 
-:::
-:::
-:::
+- [Validation strategies]{.alert}:
+  - [Placebo tests]{.alert} for assumption verification
+  - [Pre-treatment trend analysis]{.alert} for DID
+  - [Robustness checks]{.alert} for sensitivity assessments
 
-## Implementation challenges
-
-:::{style="font-size: 23px; margin-top: 30px;"}
-:::{.columns}
-:::{.column width="40%"}
-- [PAPs are not perfect]{.alert}: 50% of researchers spend more than 2 weeks writing them
-- Common pitfalls:
-  - [Over-specification]{.alert} of analysis paths
-  - [Underpowered designs]{.alert} due to sample constraints
-  - [Non-compliance]{.alert} with treatment protocols
-- Solutions:
-  - [Pre-registered flexibility]{.alert} for exploratory analysis
-  - [Sensitivity analyses]{.alert} for robustness checks
-  - Clear [attrition management]{.alert} strategies
-:::
-
-:::{.column width="60%"}
-:::{style="margin-top: -30px; text-align: center;"}
-![](figures/pap.png){width=80%}
-
-Source: <https://egap.org/resource/10-things-to-know-about-pre-analysis-plans/>
-:::
+- [Ethical considerations]{.alert}:
+  - [Responsible communication]{.alert} of limitations
+  - [Secondary data ethics]{.alert} compliance
+  - [Policy impact assessments]{.alert} for natural experiments
 :::
 :::
 :::
 
 # Today's plan 📅 {background-color="#2d4563"}
 
-## When experiments are not possible
+## Interference and spillovers
 
 :::{style="font-size: 20px; margin-top: 30px;"}
 :::{.columns}
 :::{.column width="50%"}
-- The [experimental ideal]{.alert} is not always feasible
-  - [Ethical constraints]{.alert}, [logistical challenges]{.alert}, [political barriers]{.alert}
-- [Natural experiments]{.alert}: When "nature" (broadly speaking) does the randomisation
-  - [Examples]{.alert}: Earthquakes, hurricanes, pandemics
-  - [More examples]{.alert}: Political transitions, policy changes, civil wars
-- [Quasi-experiments]{.alert}: Broader term than natural experiments, sometimes we can control the treatment but not the assignment
-  - [Examples]{.alert}: School vouchers, minimum wage laws, health interventions
-  - [Methods to estimate causal effects]{.alert}: Difference-in-differences, regression discontinuity, instrumental variables
-- They are [somewhere between observational and experimental studies]{.alert}, and have received increased attention in the last decades
+- 
 :::
 
 :::{.column width="50%"}
 :::{style="text-align: center;"}
-![](figures/koreas.jpg){width=80%}
+![](figures/hotspots.jpg){width=100%}
+
+Source: <https://www.caliper.com/Maptitude/Crime/default.htm>
 :::
 :::
 :::
 :::
 
-# The experimental ideal and its limits 🌟 {background-color="#2d4563"}
+# Interference {background-color="#2d4563"}
+
+## Interference 
+### When treatment effects spill over
+
+:::{style="margin-top: 20px; font-size: 26px;"}
+:::{.columns}
+:::{.column width="50%"}
+- Remember [SUTVA]{.alert}?
+  - [Stable unit treatment value assumption]{.alert}
+- The [stable]{.alert} part means that [potential outcomes should be independent of the treatment]{.alert}
+- As you can imagine, this [poses risks to causal identification]{.alert}
+- This happens quite often in [social and public health interventions]{.alert}:
+  - [Peer effects]{.alert} in education
+  - [Contagion]{.alert} in public health
+  - [Spillovers]{.alert} in policy evaluations
+  - [Network effects]{.alert} in marketing and technology
+:::
+
+:::{.column width="50%"}
+![](figures/interference.png){width=100%}
+:::
+:::
+:::
+:::
