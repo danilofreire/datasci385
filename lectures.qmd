@@ -209,7 +209,7 @@ Weekly suggested readings:
 
 ### Lecture 16: Interference in Experiments (March 19)
 
-- Lecture slides: Interference in Experiments.
+- Lecture slides: [Interference in Experiments](https://raw.githack.com/danilofreire/qtm385/main/lectures/lecture-16/16-interference.html).
 - FEDAI: Chapter 08: Interference between Experimental Units.
 - EGAP: [Spillovers](https://egap.org/resource/10-things-to-know-about-spillovers/).
 - [Problem Set 07 assigned.](https://github.com/danilofreire/qtm385/tree/main/assignments/07-assignment)
