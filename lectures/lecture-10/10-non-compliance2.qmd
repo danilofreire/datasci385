@@ -375,7 +375,7 @@ ITT <- coef(itt_model)[2]
   - Estimate: 0.41818
   - The intercept is the predicted value of `Y` (opinion change) when `ASSIGNED = 0` (control group)
   - This is approximately the [average rate of opinion change in the control group]{.alert}
-  - Looking back at our table, the "% Reporting change (total N)" in the control group was 41.8% or 0.418. Very close!
+  - Looking back at our table, the "% Reporting change (total N)" in the control group was 41.8% or 0.418. Pretty good!
 :::
 
 :::{.column width=50%}
@@ -420,7 +420,7 @@ ITT_D <- coef(itt_d_model)[2]
 - `(Intercept)`: 
   - Estimate: 0.1625
   - The intercept is the predicted value of `TREATED` when `ASSIGNED = 0` (control group)
-  - This is approximately the [average rate of opinion change in the control group]{.alert}
+  - This is approximately the [average rate of watching the debate in the control group]{.alert}
   - Looking back at our table, the "% Reporting change (total N)" in the control group was 16.2% or 0.162 indeed!
 :::
 
