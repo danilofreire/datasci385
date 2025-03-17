@@ -87,10 +87,9 @@ Source: <https://egap.org/resource/10-things-to-know-about-pre-analysis-plans/>
 - The [experimental ideal]{.alert} is not always feasible
   - [Ethical constraints]{.alert}, [logistical challenges]{.alert}, [political barriers]{.alert}
 - [Natural experiments]{.alert}: When "nature" (broadly speaking) does the randomisation
-  - [Examples]{.alert}: Earthquakes, hurricanes, pandemics
-  - [More examples]{.alert}: Political transitions, policy changes, civil wars
+  - [Examples]{.alert}: Earthquakes, hurricanes, pandemics, lottery wins
 - [Quasi-experiments]{.alert}: Broader term than natural experiments, sometimes we can control the treatment but not the assignment
-  - [Examples]{.alert}: School vouchers, minimum wage laws, health interventions
+  - [Examples]{.alert}: School vouchers, minimum wage laws, health interventions, politicy changes
   - [Methods to estimate causal effects]{.alert}: Difference-in-differences, regression discontinuity, instrumental variables
 - They are [somewhere between observational and experimental studies]{.alert}, and have received increased attention in the last decades
 :::
@@ -241,7 +240,7 @@ $S_{igt} = \alpha_{1t} + \beta_{1g} + \sum_{j} \kappa_{ij} d_{ij} + X_{i}' \mu +
 ##  "As-If" randomness: The core assumption of natural experiments
 
 :::{style="margin-top: 30px; font-size: 25px;"}
-- The validity of natural experiments hinges on the assumption of ["as-if" randomness]{.alert}
+- The validity of most natural/quasi experiments hinges on the assumption of ["as-if" randomness]{.alert}
 - We need to argue for the [plausibility that the natural assignment mechanism is exogenous]{.alert}
     - Independent of other factors that influence the outcome
 - Consider:
