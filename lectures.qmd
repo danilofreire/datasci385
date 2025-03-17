@@ -204,6 +204,7 @@ Weekly suggested readings:
 ### Lecture 15: When Experiments are Not Possible (March 17)
 
 - Lecture slides: [Natural and Quasi-Experiments](https://raw.githack.com/danilofreire/qtm385/main/lectures/lecture-15/15-quasi.html).
+- [Kahoot Quiz](https://play.kahoot.it/v2/?quizId=438409d4-2db5-4641-b210-1f9aede6db5b&hostId=05eb977d-4f8a-440e-9e45-95212b29d103)
 - Dunning, T. (2012). [Natural Experiments in the Social Sciences: A Design-Based Approach](https://www.cambridge.org/core/books/natural-experiments-in-the-social-sciences/96A64CBDC2A2952DC1C68AF77DE675AF). Cambridge University Press. Chapter 01: Introduction.
 - Petticrew, M., Cummins, S., Ferrell, C., Findlay, A., Higgins, C., Hoy, C., ... & Sparks, L. (2005). [Natural Experiments: An Underused Tool for Public Health?](https://www.sciencedirect.com/science/article/abs/pii/S0033350605000296). Public Health, 119(9), 751-757.
 
