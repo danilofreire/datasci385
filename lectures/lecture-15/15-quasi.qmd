@@ -476,7 +476,7 @@ Source: [Card, D., & Krueger, A. B. (1994). Minimum Wages and Employment: A Case
 - While quasi-experiments often arise from ethical constraints on randomisation, ethical considerations remain important
 - Be transparent about the [limitations of the design and assumptions]{.alert} being made
 - Quasi-experimental findings may be [more easily misinterpreted]{.alert} than RCT results - emphasize responsible communication
-- Consequences:** Consider potential [unintended consequences]{.alert} of studying natural events or policy changes, especially if findings inform future interventions
+- Consequences: Consider potential [unintended consequences]{.alert} of studying natural events or policy changes, especially if findings inform future interventions
 - Maintain ethical standards in data collection, storage, and analysis, especially when using sensitive data
 - Even in observational settings, consider ethical guidelines for data collection and participant interaction
 - Ethical review boards may still be involved in quasi-experimental research, especially if it involves human subjects data
