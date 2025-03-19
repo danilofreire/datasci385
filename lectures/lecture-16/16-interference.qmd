@@ -120,7 +120,7 @@ Source: [Arronow et al. (2021)](https://arxiv.org/pdf/2001.05444)
 
 :::{style="margin-top: 20px; font-size: 26px;"}
 - Imagine you are trying to improve school grades
-- You think that [awaring a prize to students]{.alert} will help motivate them
+- You think that [awarding a prize to students]{.alert} will help motivate them
 - You randomly assign students to treatment and control groups
 - You find a [positive effect]{.alert} of the program on test scores
 - But you also find that [depending on who gets the treatment]{.alert}, the [effect varies]{.alert}
@@ -176,7 +176,7 @@ Source: [Arronow et al. (2021)](https://arxiv.org/pdf/2001.05444)
 
 :::{.column width="50%"}
 :::{style="text-align: center;"}
-![](figures/collazos.png){width=80%}
+![](figures/collazos.png){width=90%}
 
 Source: [Collazos et al. (2021)](https://link.springer.com/article/10.1007/s11292-019-09390-1)
 :::
@@ -209,7 +209,10 @@ Source: [Collazos et al. (2021)](https://link.springer.com/article/10.1007/s1129
 - For example, in a [school-based intervention]{.alert}:
   - Schools are randomised to treatment or control
   - Within schools, students are also randomised
-- We need to [expand our potential outcomes notation]{.alert} to account for this...
+- Political interventions can also be nested:
+  - We randomise the treatment at the district level
+  - Then we randomise the treatment again at the voter level
+- But we need to [expand our potential outcomes notation]{.alert} to account for this...
 :::
 
 ## An example
@@ -339,7 +342,7 @@ Source: [Collazos et al. (2021)](https://link.springer.com/article/10.1007/s1129
 - Imagine you want to improve healthcare in five villages
 - Assume also that the proper distance between villages is known, so this is not a spatial problem
 - Subjects reside in villages A, B, C, D and F, and E is unoccupied
-- Only one village will receive the treatment, which is a new healthcare facility
+- [Only one village will receive the treatment]{.alert}, which is a new healthcare facility
 - There are [three types of potential outcomes:]{.alert}
   - $Y_{01}$: Healthcare level of village X if it receives the treatment
   - $Y_{10}$: Healthcare level of village X if the adjacent village receives the treatment
@@ -363,13 +366,11 @@ Source: [Collazos et al. (2021)](https://link.springer.com/article/10.1007/s1129
 | F | 6 | NA | 3 |
 :::
 
-- NA indicates that [Village F can never be adjacent to a treated village]{.alert}
-- [Village E is unoccupied]{.alert}, so it is not included in the analysis
 - Notice that [some villages can never have some outcomes]{.alert}
-- In this case, the subject at location F can never manifest a $Y_{10}$ outcome because it can never be adjacent to a
-treated unit 
+- [Village E is unoccupied]{.alert}, so it is not included in the analysis
+- NA indicates that [Village F can never be adjacent to a treated village]{.alert}
+- In this case, location F can never manifest a $Y_{10}$ outcome 
 - As this potential outcome can never be observed, we exclude F from the definition of the average treatment effect $E[Y_{10} - Y_{00}]$
-- It becomes the ATE amongst villages that could express the potential outcomes $Y_{10}$ and $Y_{00}$ (no missingness)
 :::
 
 ## Potential outcomes
@@ -382,7 +383,7 @@ from one observation to the next]{.alert}
 
 
 :::{style="margin-top: 20px; text-align: center;"}
-| Village | A ($Y_{01}$) | B ($Y_{10}$) | C ($Y_{00}$) | D ($Y_{10}$) | F ($Y_{00}$) | Pr(assignment to control) | Pr(assignment to spillover) | Pr(assignment to treatment) |
+| Village | A | B  | C | D | F | Pr(assignment to control) | Pr(assignment to spillover) | Pr(assignment to treatment) |
 |---|---|---|---|---|---|---|---|---|
 | 1 | $Y_{01}$ | $Y_{10}$ | $Y_{00}$ | $Y_{00}$ | $Y_{00}$ | 0.6 | 0.2 | 0.2 |
 | 2 | $Y_{10}$ | $Y_{01}$ | $Y_{10}$ | $Y_{00}$ | $Y_{00}$ | 0.4 | 0.4 | 0.2 |
@@ -392,15 +393,15 @@ from one observation to the next]{.alert}
 :::
 :::
 
-## Calculating $Y_{01} - Y_{00}$
-### Average treatment effects
+## Calculating $Y_{01} - Y_{00}$ and $Y_{10} - Y_{00}$
+### Average and spillover effects
 
 :::{style="margin-top: 20px; font-size: 21px;"}
 :::{.columns}
 :::{.column width="50%"}
 - Now we can calculate the average treatment effect in the presence of spillovers
 - We need to [weight the observations]{.alert} by the inverse probability of assignment to the treatment condition
-- Imagine that Village D is treated
+- Imagine that [Village D is treated]{.alert}
 - Villages A, B and F have $Y_{00}$ as the potential outcome, as they are not directly affected by spillovers
 - Village C, in contrast, is not included in the calculation because it does not have a $Y_{00}$ potential outcome (untreated), but expresses a $Y_{10}$ potential outcome instead (spillover effect)
 - The weighted difference-in-means estimator of $E[Y_{01} - Y_{00}]$ adjusts for the fact that the probabilities of being untreated are 0.60, 0.40, and 0.80 for Villages 1, 2, and 5, respectively
@@ -413,7 +414,7 @@ $$
 \hat{E}[Y_{01} - Y_{00}] = \frac{\frac{6}{0.2}}{\frac{1}{0.2}} - \frac{\frac{0}{0.6} + \frac{6}{0.4} + \frac{6}{0.8}}{\frac{1}{0.6} + \frac{1}{0.4} + \frac{1}{0.8}} = 1.85.
 $$
 
-- If we wanted to estimate the spillover effect, we would calculate $E[Y_{10} - Y_{00}]$ instead
+- If we wanted to [estimate the spillover effect]{.alert}, we would calculate $E[Y_{10} - Y_{00}]$ instead
 - Village D is treated, so we would exclude it from the calculation
 - Village F is also excluded as it cannot be adjacent to a treated village
 
@@ -441,7 +442,7 @@ $$
 
 :::{.column width="50%"}
 :::{style="text-align: center;"}
-![](figures/its.png){width=100%}
+![](figures/its.png){width=90%}
 
 Source: <https://ds4ps.org/pe4ps-textbook/docs/p-020-time-series.html>
 :::
@@ -527,7 +528,7 @@ Source: [Clifford et al (2021)](https://doi.org/10.1017/S0003055421000241)
 ## Waitlist designs
 
 :::{style="margin-top: 20px; font-size: 23px; text-align: center;"}
-![](figures/sw.jpg){width=80%}
+![](figures/sw.png){width=80%}
 
 Source: [Hemming et al (2014)](https://doi.org/10.1136/bmj.h391)
 :::
@@ -537,17 +538,17 @@ Source: [Hemming et al (2014)](https://doi.org/10.1136/bmj.h391)
 :::{style="margin-top: 20px; font-size: 23px;"}
 :::{.columns}
 :::{.column width="50%"}
-- Imagine you are a political consultant and you want to test the effect of TV advertising on candidate support
-- Ads are aired during three weeks, and outcomes (support for the gubernatorial candidate as gauged by opinion polls) are assessed at the end of each week
-- Eight media markets are randomly assigned to one of four conditions:
-  - Two media markets are randomly assigned to air ads for three weeks starting in week 1
-  - Two markets air ads for two weeks starting in week 2
-  - Two markets air ads for one week starting in week 3
-  - And two media markets air no ads at all
+- Imagine you are a political consultant and you want to test the [effect of TV advertising on candidate support]{.alert}
+- Ads are aired during [three weeks]{.alert}, and outcomes (support for the gubernatorial candidate as gauged by opinion polls) are [assessed at the end of each week]{.alert}
+- Eight media markets are randomly assigned to [one of four conditions]{.alert}:
+  - [Two media markets]{.alert} are randomly assigned to air ads for three weeks starting in [week 1]{.alert}
+  - [Two markets]{.alert} air ads for two weeks starting in [week 2]{.alert}
+  - [Two markets]{.alert} air ads for one week starting in [week 3]{.alert}
+  - And [two markets air no ads at all]{.alert}
 :::
 
 :::{.column width="50%"}
-- There are just three relevant potential outcomes: 
+- There are just [three relevant potential outcomes]{.alert}: 
   - $Y_{00}$: untreated during preceding and current periods
   - $Y_{01}$: untreated during the preceding period but treated during the current period
   - $Y_{11}$: treated in both the preceding and current periods
@@ -634,7 +635,7 @@ $$
 
 ## Conclusion
 
-:::{style="margin-top: 20px; font-size: 26px;"}
+:::{style="margin-top: 20px; font-size: 28px;"}
 - [Spillovers]{.alert} are a common problem in social science research
 - They can be [positive or negative]{.alert}, and they can be [modelled explicitly]{.alert} in our analysis
 - There are several methods to deal with spillovers, such as [multi-level designs]{.alert}, [within-subject designs]{.alert}, [repeated-measures experiments]{.alert}, and [waitlist designs]{.alert}
