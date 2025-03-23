@@ -635,3 +635,4 @@ $RECYCLE.BIN/
 
 ### Quarto ###
 .quarto
+.aider*

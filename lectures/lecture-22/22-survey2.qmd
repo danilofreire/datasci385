@@ -1,0 +1,240 @@
+---
+title: QTM 385 - Experimental Methods
+subtitle: Lecture 22 - Survey Experiments for Sensitive Topics
+author:
+  - name: Danilo Freire
+    email: danilo.freire@emory.edu
+    affiliations: Emory University
+format:
+  clean-revealjs:
+    self-contained: true
+    code-overflow: wrap
+    footer: "[Surveys](https://raw.githack.com/danilofreire/qtm385/main/lectures/lecture-22/22-survey2.html)"
+transition: slide
+transition-speed: default
+scrollable: true
+engine: knitr
+revealjs-plugins:
+  - multimodal
+editor:
+  render-on-save: true
+---
+
+# Hello, everyone! 😉 {background-color="#2d4563"}
+
+# Brief recap 📚 {background-color="#2d4563"}
+
+## Survey experiments
+### Core components
+
+:::{style="font-size: 26px; margin-top: 30px;"}
+:::{.columns}
+:::{.column width="50%"}
+- [Survey experiments]{.alert} combine random assignment with survey methods to study attitudes
+- Main applications: [behavioural economics]{.alert}, [psychology]{.alert}, [marketing]{.alert}, [political behaviour]{.alert}, and [public opinion]{.alert}
+- Core design variations:
+  - [Presence/absence]{.alert} of stimuli
+  - [Dosage levels]{.alert} of treatment intensity
+  - [Qualitative variations]{.alert} in treatment content
+:::
+
+:::{.column width="50%"}
+- Validation methods:
+  - [Manipulation checks]{.alert} post-treatment
+  - [Placebo treatments]{.alert} for specificity testing
+  - [Non-equivalent outcomes]{.alert} for effect containment
+- Common implementations:
+  - [Question wording]{.alert} manipulations
+  - [Vignette designs]{.alert} with randomised attributes
+  - [Audio or video]{.alert} stimuli
+:::
+:::
+:::
+
+# Today's plan 📅 {background-color="#2d4563"}
+
+## Survey experiments with a twist
+
+:::{style="font-size: 26px; margin-top: 30px;"}
+:::{.columns}
+:::{.column width="50%"}
+- What to do when [subjects have an incentive to lie?]{.alert}
+- [Sensitive topics]{.alert} are often difficult to study
+- [Social desirability bias]{.alert} is a common problem in survey research
+- We need [special techniques]{.alert} to study these problems
+- [List experiments]{.alert}, [randomised response technique]{.alert}, [endorsement experiments]{.alert}, and [conjoint experiments]{.alert} are possible solutions
+- Maintains [plausible deniability]{.alert} for respondents
+:::
+
+:::{.column width="50%"}
+- [List experiments]{.alert} measure prevalence indirectly through item counts
+- [Randomised response]{.alert} techniques use probability models for anonymity
+- [Endorsement experiments]{.alert} assess support without direct attribution
+- [Conjoint analysis]{.alert} measures preferences through trade-off scenarios
+- Sometimes requires careful [probability weighting]{.alert} in analysis
+:::
+:::
+:::
+
+# Social desirability bias {background-color="#2d4563"}
+
+## Social desirability bias
+
+:::{style="font-size: 26px; margin-top: 30px;"}
+:::{.columns}
+:::{.column width="50%"}
+- [Social desirability bias]{.alert} occurs when respondents provide answers they believe are more socially acceptable
+- This can lead to [underreporting]{.alert} of sensitive behaviours or attitudes
+- Common examples include:
+  - [Political beliefs]{.alert}
+  - [Criminal behaviour]{.alert}
+  - [Discrimination]{.alert}
+  - [Substance use]{.alert}
+  - [Sexual behaviour]{.alert}
+- [Self-censorship]{.alert} can also occur when respondents fear judgement
+:::
+
+:::{.column width="50%"}
+- [Social desirability bias]{.alert} can occur even in anonymous surveys, so it is important to use techniques that reduce bias
+- Researchers have developed various methods to mitigate this bias
+- Today we will see four of them:
+  - [List experiments]{.alert}
+  - [Randomised response techniques]{.alert}
+  - [Endorsement experiments]{.alert}
+  - [Conjoint analysis]{.alert}
+- All of them are well-established methods in survey research and have `R` packages available
+:::
+:::
+:::
+
+# List experiments 📋 {background-color="#2d4563"}
+
+## What is a list experiment?
+
+:::{style="font-size: 23px; margin-top: 30px;"}
+:::{.columns}
+:::{.column width="50%"}
+- The logic of list experiments is simple
+- Respondents are presented with [a list of items and asked how many they agree with]{.alert}
+  - Just [how many]{.alert} items, not which ones
+- The list includes a [sensitive item]{.alert} (e.g., "I have committed a crime") and several non-sensitive items
+- The [sensitive item is randomly assigned]{.alert} to a subset of respondents
+- The key is to compare the average number of items agreed with between the treatment group (who sees the sensitive item) and the control group (who does not)
+- The difference in means provides an estimate of the prevalence of the sensitive item
+- This method is also known as the [item count technique]{.alert}
+:::
+
+:::{.column width="50%"}
+:::{style="text-align: center;"}
+![](figures/imai.png){width=100%}
+
+Source: [Blair and Imai (2012)](https://imai.fas.harvard.edu/research/files/listP.pdf)
+:::
+:::
+:::
+:::
+
+## Example 
+### Measuring prejudice
+
+:::{style="font-size: 32px; margin-top: 30px; "}
+
+> Now I’m going to read you three things that sometimes make people
+angry or upset. After I read all three, just tell me HOW MANY of
+them upset you. (I don’t want to know which ones, just how many.)
+>
+> (1) the federal government increasing the tax on gasoline
+> (2) professional athletes getting million-dollar-plus salaries
+> (3) large corporations polluting the environment
+>
+> How many, if any, of these things upset you?
+:::
+
+## Example of a list experiment
+### Measuring prejudice
+
+:::{style="font-size: 32px; margin-top: 30px;"}
+
+> Now I’m going to read you four things that sometimes make people
+angry or upset. After I read all four, just tell me HOW MANY of
+them upset you. (I don’t want to know which ones, just how many.)
+>
+> (1) the federal government increasing the tax on gasoline
+> (2) professional athletes getting million-dollar-plus salaries
+> (3) large corporations polluting the environment
+> (4) a Muslim family moving next door to you
+>
+> How many, if any, of these things upset you?
+:::
+
+## Some notation 
+
+:::{style="font-size: 27px; margin-top: 30px;"}
+- Sample of respondents $N$, where $T_i = 1$ if respondent $i$ is in the treatment group and $T_i = 0$ if in the control group
+- $J$ is the number of items in the control list, $J + 1$ is the number of items in the treatment list
+- $Z_{ij}(t)$ a binary variable denoting respondent $i$'s preference for the $j$th control item for $j = 1, \dots , J$ under the treatment status $t = 0, 1$
+- $Y_{i}(0) = \sum_{j=1}^{J} Z_{ij}(0)$ is the potential answer $i$ would give if asked about the control list
+- $Y_{i}(1) = \sum_{j=1}^{J+1} Z_{ij}(1)$ is the number of items in the treatment list that respondent $i$ agrees with
+- The observed response is $Y_i = Y_i(T_i)$, where $Y_i(0)$ is in the range of $\{0,1, \dots, J\}$ and $Y_i(1)$ is in the range of $\{0,1, \dots J + 1\}$
+- Now let's discuss the assumptions...
+:::
+
+## Assumptions
+### No design effects
+
+:::{style="font-size: 27px; margin-top: 30px;"}
+- First, we need to assume that the [addition of the sensitive item does not change the sum of affirmative answers to the control items]{.alert}
+- It is [not necessary]{.alert} that respondents answer the control items truthfully, but the average number of affirmative answers must be the same in both groups
+- This is the [no design effects]{.alert} assumption
+- Formally, for each respondent $i = 1, \dots, N$, we assume:
+
+$$
+\sum_{j=1}^{J} Z_{ij}(0) = \sum_{j=1}^{J} Z_{ij}(1) \text{ or equivalently } Y_i(0) = Y_i(1) + Z_{i,J+1}(1).
+$$
+
+:::
+
+## No liars
+
+:::{style="font-size: 25px; margin-top: 30px;"}
+- Second, we need to assume that the [sensitive item is not a lie]{.alert}
+- That is, [all respondents give truthful answers for the sensitive item]{.alert}
+- This is a [strong assumption]{.alert}, as you can imagine
+- Formally, we assume that:
+
+$$
+Z_{i,J+1}(1) = Z^*_{i,J+1} 
+$$
+
+where $Z^*_{i,J+1}$ represents a truthful answer to the sensitive item. The treatment effect is
+
+$$\hat{\tau} = \frac{1}{N_1} \sum_{i=1}^{N} T_i Y_i - \frac{1}{N_0} \sum_{i=1}^{N} (1 - T_i) Y_i,$$
+
+where $N_1 = \sum_{i=1}^{N} T_i$ is the size of the treatment group and $N_0 = N - N_1$ is the size of the control group
+:::
+
+## More about list experiments
+### Notes about the design
+
+:::{style="font-size: 24px; margin-top: 30px;"}
+:::{.columns}
+:::{.column width="50%"}
+- List experiements have several advantages, as they are [easy to implement]{.alert} and [clear to respondents]{.alert}
+- But they have some issues as well:
+  - [Limited power]{.alert} to detect small effects
+  - [Floor effects]{.alert}: If many respondents [disagree with all or most items]{.alert}, it is hard to estimate the prevalence of the sensitive item
+  - [Ceiling effects]{.alert}: If someone agrees with all items, [we know for sure they agree with the sensitive item]{.alert}
+  - [Sample homogeneity]{.alert}: If the sample is too homogeneous, it may be hard to detect differences
+:::
+
+:::{.column width="50%"}
+- But there are some solutions for these problems
+- [Use items that contradict each other]{.alert} to reduce ceiling and floor effects
+  - Example: ask about [pro-gun]{.alert} and [pro-choice]{.alert} items 
+- A [weakly informative Bayesian prior]{.alert} can also be used to reduce ceiling and floor effects, 
+- [Pre-treatment covariates]{.alert} can be used to improve power and precision
+- And there are more ways to improve the design too...
+:::
+:::
+:::
+
