@@ -508,14 +508,14 @@ Source: [Gerber and Green (2000)](https://doi.org/10.2307/2585837)
 - [Cost-Effectiveness Analysis]{.alert}:
     - Personal canvassing: ~$8 per *additional* vote
     - Direct mail (3 mailings): ~$40 per *additional* vote
-    - Face-to-face mobilization significantly more cost-effective
+    - Face-to-face mobilisation significantly more cost-effective
 :::
 
 ## Interpretation
 
 :::{style="margin-top: 20px; font-size: 29px;"}
 - [Supports Hypothesis]{.alert}: Personal canvassing > impersonal methods for turnout
-    - Decline in face-to-face mobilization may contribute to turnout decline
+    - Decline in face-to-face mobilisation may contribute to turnout decline
 - [Unexpected Finding]{.alert}: Ineffectiveness of telephone calls
     - Despite professional execution & mirroring canvassing messages
     - Possible reasons: Routinized/scripted nature, out-of-state callers
@@ -530,7 +530,7 @@ Source: [Gerber and Green (2000)](https://doi.org/10.2307/2585837)
 - [Personal canvassing is a valuable GOTV tool]{.alert}
     - More effective & cost-effective than mail/phone
 - [Challenges conventional wisdom?]{.alert} -  Heavy reliance on mail/phone in modern campaigns
-- [Highlights importance of *personal* connection]{.alert} in political mobilization
+- [Highlights importance of *personal* connection]{.alert} in political mobilisation
 - [Methodological Contribution]{.alert}:
     - Rigorous field experiment in political science
     - Addresses non-compliance with IV approach
