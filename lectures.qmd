@@ -222,16 +222,18 @@ Weekly suggested readings:
 - Banerjee, A. V., & Duflo, E. (2009). [The Experimental Approach to Development Economics](https://www.annualreviews.org/content/journals/10.1146/annurev.economics.050708.143235). Annual Review of Economics 1(1), 151-178.
 - Bonell, C., Fletcher, A., Morton, M., Lorenc, T., & Moore, L. (2012). [Realist Randomised Controlled Trials: A New Approach to Evaluating Complex Public Health Interventions](https://www.sciencedirect.com/science/article/abs/pii/S0277953612006399). Social Science & Medicine, 75(12), 2299-2306.
 - Aronow, P. M., Eckles, D., Samii, C., & Zonszein, S. (2020). [Spillover effects in experimental data](https://arxiv.org/abs/2001.05444). arXiv preprint arXiv:2001.05444.
-- Bowers, Jake, Mark M. Fredrickson, and Costas Panagopoulos (2013). [Reasoning about Interference Between Units: A General Framework.](https://www.cambridge.org/core/journals/political-analysis/article/abs/reasoning-about-interference-between-units-a-general-framework/0E2410C1A5666EE5ACA4CBE29AFFFAE7) Political Analysis 21: 97–124.
+- Bowers, Jake, Mark M. Fredrickson, and Costas Panagopoulos (2013). [Reasoning about Interference Between Units: A General Framework](https://www.cambridge.org/core/journals/political-analysis/article/abs/reasoning-about-interference-between-units-a-general-framework/0E2410C1A5666EE5ACA4CBE29AFFFAE7). Political Analysis 21: 97–124.
+- Imbens, G. (2024). [Interference and Spillovers in Randomized Experiments](https://www.youtube.com/watch?v=i5kyzT_CpwQ) (Video). A short lecture on recent advances and new designs to deal with interference in experiments. A little technical.
 
 ## Week 10: Heterogeneous Treatment Effects
 
 ### Lecture 17: Texts for discussion (related to spillovers) (March 24)
 
+- Lecture slides: [Texts for Discussion](https://raw.githack.com/danilofreire/qtm385/main/lectures/lecture-17/17-discussion.html).
+- [Kahoot Quiz](https://play.kahoot.it/v2/?quizId=008403a1-cea0-48f8-b9fb-3c0b60214da9&hostId=05eb977d-4f8a-440e-9e45-95212b29d103).
 - Centola, D. (2010). [The spread of behavior in an online social network experiment](https://www.science.org/doi/abs/10.1126/science.1185231). Science, 329(5996), 1194-1197.
 - Paluck, B. L., Shepherd, H., and Aronow, P. 2016. [Changing climates of conflict: A social network experiment in 56 schools.](https://www.pnas.org/doi/abs/10.1073/pnas.1514483113) Proceedings of the National Academy of Sciences, 113(3): 566-571
 - Gerber, A. S., & Green, D. P. (2000). [The effects of canvassing, telephone calls, and direct mail on voter turnout: A field experiment](https://doi.org/10.2307/2585837). American Political Science Review, 94(3), 653-663.
-- [Kahoot Quiz](https://play.kahoot.it/v2/?quizId=008403a1-cea0-48f8-b9fb-3c0b60214da9&hostId=05eb977d-4f8a-440e-9e45-95212b29d103).
 
 ### Lecture 18: Heterogeneous Treatment Effects (March 26)
 
@@ -300,7 +302,7 @@ Weekly suggested readings:
 
 - Druckman, J. N., Gilli, M., Klar, S., & Robison, J. (2015). [Measuring drug and alcohol use among college student‐athletes.](https://onlinelibrary.wiley.com/doi/abs/10.1111/ssqu.12135) Social Science Quarterly, 96(2), 369-380.
 - Blair, G., Imai, K., & Lyall, J. (2014). [Comparing and Combining List and Endorsement Experiments: Evidence from Afghanistan.](https://onlinelibrary.wiley.com/doi/abs/10.1111/ajps.12086) American Journal of Political Science, Vol. 58, No. 4 (October), pp. 1043-1063. 
-- Freire, D., & Skarbek, D. (2023). [Vigilantism and Institutions: Understanding Attitudes Toward Lynching in Brazil.](https://journals.sagepub.com/doi/full/10.1177/20531680)
+- Freire, D., & Skarbek, D. (2023). [Vigilantism and Institutions: Understanding Attitudes Toward Lynching in Brazil.](https://journals.sagepub.com/doi/full/10.1177/20531680221150389) Research & Politics, 10(1), 1-8.
 
 ### Lecture 24: Meta-Analysis and Integration of Research Findings (April 16)
 
