@@ -240,7 +240,7 @@ Weekly suggested readings:
 - Lecture slides: Heterogeneous Treatment Effects.
 - FEDAI: Chapter 09: Heterogeneous Treatment Effects.
 - Problem Set 07 due.
-- Problem Set 08 assigned.
+- [Problem Set 08 assigned](https://github.com/danilofreire/qtm385/tree/main/assignments/08-assignment).
 - Pre-Analysis Plan due.
 
 Weekly suggested readings:
