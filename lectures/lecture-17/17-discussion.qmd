@@ -56,7 +56,7 @@ Source: [Forbes (2022)](https://www.forbes.com/councils/forbesbusinesscouncil/20
 :::{.column width="50%"}
 - Three readings for today:
   - [Centola (2010)](https://www.science.org/doi/abs/10.1126/science.1185231): "The Spread of Behavior in an Online Social Network Experiment"
-  - [Paluk et al (2021)](https://www.pnas.org/doi/abs/10.1073/pnas.1514483113): "Changing climates of conflict: A social network experiment in 56 schools"
+  - [Paluk et al (2016)](https://www.pnas.org/doi/abs/10.1073/pnas.1514483113): "Changing climates of conflict: A social network experiment in 56 schools"
   - [Gerber and Green (2000)](https://doi.org/10.2307/2585837): "The Effects of Canvassing, Telephone Calls, and Direct Mail on Voter Turnout: A Field Experiment"
 :::
 
@@ -160,7 +160,7 @@ health buddies
 - [Can you think of policy implications?]{.alert}
 :::
 
-## Paluk et al (2021)
+## Paluk et al (2016)
 ### Changing climates of conflict: A social network experiment in 56 schools
 
 :::{style="margin-top: 20px; font-size: 22px;"}
