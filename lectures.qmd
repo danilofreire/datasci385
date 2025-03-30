@@ -261,7 +261,7 @@ Weekly suggested readings:
 
 ### Lecture 20: Mediation Analysis (April 02)
 
-- Lecture slides: Mediation Analysis.
+- Lecture slides: [Mediation Analysis](https://raw.githack.com/danilofreire/qtm385/main/lectures/lecture-20/20-mediation.html).
 - FEDAI: Chapter 10: Mediation.
 - Problem Set 08 due.
 - Problem Set 09 assigned.
@@ -276,13 +276,13 @@ Weekly suggested readings:
 
 ### Lecture 21: Survey Experiments (April 07)
 
-- Lecture slides: [Survey Experiments.](https://raw.githack.com/danilofreire/qtm385/main/lectures/lecture-21/21-survey.html)
+- Lecture slides: [Survey Experiments](https://raw.githack.com/danilofreire/qtm385/main/lectures/lecture-21/21-survey.html).
 - EGAP: [Survey Experiments](https://egap.org/resource/10-things-to-know-about-survey-experiments/).
 - Stantcheva, S. (2023). [How to run surveys: A guide to creating your own identifying variation and revealing the invisible](https://www.annualreviews.org/content/journals/10.1146/annurev-economics-091622-010157). Annual Review of Economics, 15(1), 205-234.
 
 ### Lecture 22: Survey Methods for Sensitive Topics (April 09)
 
-- Lecture slides: Survey Methods for Sensitive Topics.
+- Lecture slides: [Survey Methods for Sensitive Topics](https://raw.githack.com/danilofreire/qtm385/main/lectures/lecture-22/22-survey2.html).
 - Problem Set 09 due.
 - Problem Set 10 assigned.
 
