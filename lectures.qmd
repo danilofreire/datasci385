@@ -269,6 +269,7 @@ Weekly suggested readings:
 Weekly suggested readings:
 
 - VanderWeele, T. J. (2016). [Mediation analysis: a practitioner's guide.](https://www.annualreviews.org/content/journals/10.1146/annurev-publhealth-032315-021402) Annual review of public health, 37(1), 17-32.
+- Acharya, A., Blackwell, M., & Sen, M. (2018). [Analyzing Causal Mechanisms in Survey Experiments](https://doi.org/10.1017/pan.2018.19). Political Analysis, 26(4), 357–378.
 - MacKinnon, D. P., Fairchild, A. J., & Fritz, M. S. (2007). [Mediation analysis.](https://www.annualreviews.org/content/journals/10.1146/annurev.psych.58.110405.085542) Annu. Rev. Psychol., 58(1), 593-614.
 - Zhao, X., Lynch Jr, J. G., & Chen, Q. (2010). [Reconsidering Baron and Kenny: Myths and truths about mediation analysis.](https://academic.oup.com/jcr/article-abstract/37/2/197/1813998?login=false) Journal of consumer research, 37(2), 197-206.
 
