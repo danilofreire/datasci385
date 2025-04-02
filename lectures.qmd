@@ -250,6 +250,8 @@ Weekly suggested readings:
 - Wager, S., & Athey, S. (2018). [Estimation and inference of heterogeneous treatment effects using random forests.](https://www.tandfonline.com/doi/abs/10.1080/01621459.2017.1319839) Journal of the American Statistical Association, 113(523), 1228-1242.
 - Susan Athey and Stefan Wager: [Estimating Heterogeneous Treatment Effects in R](https://www.youtube.com/watch?v=YBbnCDRCcAI). A one-hour video on how to use the `grf` package in R to estimate heterogeneous treatment effects.
 - [Generalised Random Forests](https://grf-labs.github.io/grf/) (R package).
+- Coppock, A. (2015). [10 Things to Know about Multiple Comparisons](https://egap.org/resource/10-things-to-know-about-multiple-comparisons/). EGAP Methods Guide.
+- Frandsen, B. (2025). [Machine Learning and Heterogeneous Treatment Effects](https://github.com/Mixtape-Sessions/Heterogeneous-Effects/tree/main). Slides and coding labs from a workshop on this topic. Available on GitHub.
 
 ## Week 11: Heterogeneous Treatment Effects (Continued) and Mediation
 
