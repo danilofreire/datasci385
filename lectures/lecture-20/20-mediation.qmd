@@ -67,7 +67,6 @@ editor:
 - A more pragmatic approach: [Implicit mediation analysis]{.alert}
   - Adding/subtracting treatment components
 - Examples: Conditional cash transfers, voter turnout mailers
-- [Manipulation checks]{.alert}
 - Strengths and limitations of different approaches
 - Moving beyond simple ATEs to *how* effects happen
 :::
