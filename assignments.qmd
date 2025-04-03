@@ -14,13 +14,15 @@ You will find the questions in the `assignments` folder on [the course repositor
 
 | Assignment | Topic | Due Date | Link |
 |------------|-------|----------|------|
-| 1          | Theory | 29 Jan | [Assignment 1](https://github.com/danilofreire/qtm385/blob/main/assignments/01-assignment) |
-| 2          | Potential Outcomes | 5 Feb | [Assignment 2](https://github.com/danilofreire/qtm385/blob/main/assignments/02-assignment) |
-| 3          | Sampling Distributions | 12 Feb | [Assignment 3](https://github.com/danilofreire/qtm385/blob/main/assignments/03-assignment) |
-| 4          | RI, Blocking, Clustering, and Power | 19 Feb | [Assignment 4](https://github.com/danilofreire/qtm385/blob/main/assignments/04-assignment) |
-| 5          | Non-Compliance | 26 Feb | [Assignment 5](https://github.com/danilofreire/qtm385/blob/main/assignments/05-assignment) |
-| 6          | Attrition | 5 Mar | [Assignment 6](https://github.com/danilofreire/qtm385/blob/main/assignments/06-assignment) |
-| 7          | Attrition | 27 Mar | [Assignment 7](https://github.com/danilofreire/qtm385/blob/main/assignments/07-assignment) |
+| 1          | Theory | 29 Jan | [Assignment 01](https://github.com/danilofreire/qtm385/blob/main/assignments/01-assignment) |
+| 2          | Potential Outcomes | 5 Feb | [Assignment 02](https://github.com/danilofreire/qtm385/blob/main/assignments/02-assignment) |
+| 3          | Sampling Distributions | 12 Feb | [Assignment 03](https://github.com/danilofreire/qtm385/blob/main/assignments/03-assignment) |
+| 4          | RI, Blocking, Clustering, and Power | 19 Feb | [Assignment 04](https://github.com/danilofreire/qtm385/blob/main/assignments/04-assignment) |
+| 5          | Non-Compliance | 26 Feb | [Assignment 05](https://github.com/danilofreire/qtm385/blob/main/assignments/05-assignment) |
+| 6          | Attrition | 5 Mar | [Assignment 06](https://github.com/danilofreire/qtm385/blob/main/assignments/06-assignment) |
+| 7          | Quarto, DeclareDesign, and Natural Experiments | 27 Mar | [Assignment 07](https://github.com/danilofreire/qtm385/blob/main/assignments/07-assignment) |
+| 8          | Interference and Spillovers | 02 Apr | [Assignment 08](https://github.com/danilofreire/qtm385/blob/main/assignments/08-assignment) |
+| 9          | Heterogeneous Effects | 09 Apr | [Assignment 09](https://github.com/danilofreire/qtm385/blob/main/assignments/09-assignment) |
 
 ## Pre-Analysis Plan
 
