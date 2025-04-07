@@ -42,15 +42,15 @@ Table: Probability of receiving treatment, spillover, and control
 
 Using these data, calculate the following quantities:
 
-1. Estimate $E[Y_{01} - Y_{00}]$ for the random assignment that places the treatment at location A.
+2. Estimate $E[Y_{01} - Y_{00}]$ for the random assignment that places the treatment at location A.
 
-2. Estimate $E[Y_{10} - Y_{00}]$ for the random assignment that places the treatment at location A, restricting the sample to the set of villages that have a non-zero probability of expressing both of these potential outcomes.
+3. Estimate $E[Y_{10} - Y_{00}]$ for the random assignment that places the treatment at location A, restricting the sample to the set of villages that have a non-zero probability of expressing both of these potential outcomes.
 
-3. In order to make a more direct comparison between these two treatment effects, estimate $E[Y_{01} - Y_{00}]$, restricting the sample to the same set of villages as in question 3.
+4. In order to make a more direct comparison between these two treatment effects, estimate $E[Y_{01} - Y_{00}]$, restricting the sample to the same set of villages as in question 3.
 
-4. Compare and contrast the advantages and disadvantages of using buffer rows versus clustered randomization in field experiments. Using the villages experiment as an example, discuss how each approach would affect: (1) the ability to estimate direct treatment effects, (2) the ability to study spillover effects, and (3) the complexity of statistical analysis required. What factors should researchers consider when choosing between these approaches?
+5. Compare and contrast the advantages and disadvantages of using buffer rows versus clustered randomization in field experiments. Using the villages experiment as an example, discuss how each approach would affect: (1) the ability to estimate direct treatment effects, (2) the ability to study spillover effects, and (3) the complexity of statistical analysis required. What factors should researchers consider when choosing between these approaches?
 
-5. In class, we also examined a waitlist experiment that analyses the impact of TV campaigns on politicians' approval ratings. It is described in the slides and on pages 276 to 281. The tables related to the experiment are shown below and on page 279. Estimate $E[Y_{01} - Y_{00}]$ by restricting your attention to weeks 2 and 3. How does this estimate compare to the estimate of $E[Y_{11} - Y_{00}]$ presented in the text, which is also identified using observations from weeks 2 and 3?
+6. In class, we also examined a waitlist experiment that analyses the impact of TV campaigns on politicians' approval ratings. It is described in the slides and on pages 276 to 281. The tables related to the experiment are shown below and on page 279. Estimate $E[Y_{01} - Y_{00}]$ by restricting your attention to weeks 2 and 3. How does this estimate compare to the estimate of $E[Y_{11} - Y_{00}]$ presented in the text, which is also identified using observations from weeks 2 and 3?
 
 Table: Assigned treatment condition
 

@@ -9,7 +9,7 @@ format:
   clean-revealjs:
     self-contained: true
     code-overflow: wrap
-    footer: "[Survey](https://raw.githack.com/danilofreire/qtm385/main/lectures/lecture-21/21-survey.html)"
+    footer: "[Survey Experiments](https://raw.githack.com/danilofreire/qtm385/main/lectures/lecture-21/21-survey.html)"
 transition: slide
 transition-speed: default
 scrollable: true
@@ -48,6 +48,111 @@ editor:
 :::
 :::
 :::
+
+## Last assignment
+
+:::{style="font-size: 23px; margin-top: 30px;"}
+
+| Village   | Untreated ($Y_{00}$) | Adjacent village treated ($Y_{10}$) | Treated ($Y_{01}$) |
+|-----------|----------------------|-------------------------------------|--------------------|
+| A         | 0                    | 2                                   | 0                  |
+| B         | 6                    | 2                                   | 10                 |
+| C         | 0                    | 4                                   | 4                  |
+| D         | 6                    | 6                                   | 6                  |
+| F         | 6                    | NA                                  | 3                  |
+
+Table: Probability of receiving treatment, spillover, and control
+
+| Village | A         | B         | C         | D         | F         | Pr(control) | Pr(spillover) | Pr(treatment) |
+|---------|-----------|-----------|-----------|-----------|-----------|-------------|---------------|---------------|
+| 1       | $Y_{01}$  | $Y_{10}$  | $Y_{00}$  | $Y_{00}$  | $Y_{00}$  | 0.6         | 0.2           | 0.2           |
+| 2       | $Y_{10}$  | $Y_{01}$  | $Y_{10}$  | $Y_{00}$  | $Y_{00}$  | 0.4         | 0.4           | 0.2           |
+| 3       | $Y_{00}$  | $Y_{10}$  | $Y_{01}$  | $Y_{10}$  | $Y_{00}$  | 0.4         | 0.4           | 0.2           |
+| 4       | $Y_{00}$  | $Y_{00}$  | $Y_{00}$  | $Y_{10}$  | $Y_{01}$  | 0.6         | 0.2           | 0.2           |
+| 5       | $Y_{00}$  | $Y_{00}$  | $Y_{00}$  | $Y_{00}$  | $Y_{01}$  | 0.8         | 0             | 0.2           |
+
+Using these data, calculate the following quantities:
+:::
+
+## Questions
+
+:::{style="font-size: 15px; margin-top: 30px;"}
+:::{.columns}
+:::{.column width="50%"}
+### Question 02
+
+- Estimate $E[Y_{01} - Y_{00}]$ for the random assignment that places the treatment at location A
+- Village A is treated. So we have this (from the table): 
+  - $Y_{01}^{(A)} = 0$ and $Pr(treat) = 0.2$
+- Treated part of the equation: $$ \frac{0 / 0.2}{1 / 0.2} = \frac{0}{5} = 0 $$
+- Villages C, D, and F are untreated and not next to A ($Y_{00}$. So:
+  - $Y_{00}^{(C)} = 0, \quad Pr(control) = 0.4$
+  - $Y_{00}^{(D)} = 6, \quad Pr(control) = 0.6$ 
+  - $Y_{00}^{(F)} = 6, \quad Pr(control) = 0.8$
+$$
+\frac{0/0.4 + 6/0.6 + 6/0.8}{1/0.4 + 1/0.6 + 1/0.8} = \frac{0 + 10 + 7.5}{2.5 + 1.667 + 1.25} = \frac{17.5}{5.417} \approx 3.23
+$$
+
+- And the result is:
+
+$$
+\hat{E}[Y_{01} - Y_{00}] = 0 - 3.23 = -3.23
+$$
+:::
+
+:::{.column width="50%"}
+### Question 03
+
+- Estimate $E[Y_{10} - Y_{00}]$ for the random assignment that places the treatment at location A, restricting the sample to the set of villages that have a non-zero probability of expressing both of these potential outcomes.
+- Village B is the only with spillovers ($Y_{10}$)
+  - $Y_{10}^{(B)} = 2$, $Pr(spillover) = 0.4$
+  - $\frac{2/0.4}{1/0.4} = \frac{5}{2.5} = 2.0$
+- Villages C and D are neither treated nor next to A ($Y_{00}$) 
+  - $Y_{00}^{(C)} = 0$, $Pr(control) = 0.4$  
+  - $Y_{00}^{(D)} = 6$, $Pr(control) = 0.6$
+
+- Thus, for the control part of the equation:
+$$
+\frac{0/0.4 + 6/0.6}{1/0.4 + 1/0.6} = \frac{0 + 10}{2.5 + 1.667} = \frac{10}{4.167} \approx 2.4
+$$
+
+- Final result: 
+
+$$
+\hat{E}[Y_{10} - Y_{00}] = 2.0 - 2.4 = -0.40
+$$
+:::
+:::
+:::
+
+## Questions
+
+:::{style="font-size: 17px; margin-top: 30px;"}
+### Question 04
+
+- Estimate $E[Y_{01} - Y_{00}]$ restricting the sample to the same set of villages as in question 3.
+- Village F cannot express $Y_{01}$ because we're limiting the analysis to villages as in question 3.
+- Village A: 
+  - $Y_{01}^{(A)} = 0$, $Pr(treat) = 0.2$ 
+  - $\frac{0/0.2}{1/0.2} = \frac{0}{5} = 0$
+
+- Villages C and D (controls): 
+  - $Y_{00}^{(C)} = 0$, $Pr(control) = 0.4$  
+  - $Y_{00}^{(D)} = 6$, $Pr(control) = 0.6$
+
+- Control part of the equation:
+
+$$
+\frac{0/0.4 + 6/0.6}{1/0.4 + 1/0.6} = \frac{0 + 10}{2.5 + 1.667} = \frac{10}{4.167} \approx 2.4
+$$
+
+- Result:
+
+$$
+\hat{E}[Y_{01} - Y_{00}] = 0 - 2.4 = -2.4
+$$
+:::
+
 
 # Today's plan 📅 {background-color="#2d4563"}
 
@@ -89,9 +194,11 @@ Source: [Bailenson et al (2006)](https://onlinelibrary.wiley.com/doi/abs/10.1111
 :::{.columns}
 :::{.column width="50%"}
 Think about whether the population
-of London is more or less than
-500,000 people. What do you think
-the population of London is?
+of Madrid is more or less than
+500,000 people. 
+
+What do you think
+the population of Madrid is?
 :::
 
 :::{.column width="50%"}
@@ -120,9 +227,11 @@ the population of London is?
 :::{.columns}
 :::{.column width="50%"}
 Think about whether the population
-of London is more or less than
-20,000,000 people. What do you think
-the population of London is?
+of Madrid is more or less than
+20,000,000 people. 
+
+What do you think
+the population of Madrid is?
 :::
 
 :::{.column width="50%"}
@@ -140,7 +249,6 @@ the population of London is?
 :::{style="font-size: 30px; margin-top: 30px;"}
 :::{.columns}
 :::{.column width="50%"}
-- [Population of London]{.alert}: 9.4 million
 - What did you guess? (See Responses)
 - What’s going on here?  
   - A survey experiment!  
@@ -291,8 +399,8 @@ The "Hitler effect" is 9%!
 :::{style="font-size: 24px; margin-top: 30px;"}
 :::{.columns}
 :::{.column width="50%"}
-- Outcomes are affected consistent with theory
-- Before the study using [pilot testing]{.alert} (or pre-testing)
+- Outcomes affected are consistent with theory
+- Before the study, using [pilot testing]{.alert} (or pre-testing)
 - During the study, using [manipulation checks]{.alert}
 - During the study, using [placebos]{.alert}
 - During the study, using [non-equivalent outcomes]{.alert}
@@ -356,7 +464,7 @@ The "Hitler effect" is 9%!
 - Example: 
   - Assess effect of some treatment on attitudes toward group A 
   - Focal outcome: attitudes toward group A 
-  - Non-equivalent outcome: attitudes toward group 
+  - Non-equivalent outcome: attitudes toward group B
 :::
 :::
 :::
@@ -430,7 +538,7 @@ Concealed handgun laws have recently received national attention. [Some people h
   - Manipulate by asking different questions: 
   - Battery of 5 “rights” questions, or 
   - Battery of 5 “life” questions 
-  - Measure support for legalized abortion 
+  - Measure support for legalised abortion 
   - If answers to manipulated questions matter, can measure rest post-outcome
 :::
 
@@ -528,7 +636,7 @@ Imagine that you were living in a village in another district in Uttar Pradesh a
 :::{style="margin-top: 30px; font-size: 28px;"}
 :::{.columns}
 :::{.column width="30%"}
-- [Images can also work well]
+- [Images can also work well]{.alert}
 - Subliminal primes possible, depending on software
 - Lots of recent examples of facial manipulation
 - Example:
@@ -595,7 +703,7 @@ These days, Democrats and Republicans differ from one another considerably. The 
 
 ## Concluding remarks
 
-:::{style="font-size: 24px; margin-top: 30px;"}
+:::{style="font-size: 27px; margin-top: 30px;"}
 - [Survey experiments are great!]{.alert}
 - They are easy to implement and analyse, and there are an [almost infinite number of ways to design them]{.alert}
 - However, they require [careful design and implementation]{.alert} to ensure that the manipulation is successful and that the results are valid
