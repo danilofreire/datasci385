@@ -22,16 +22,12 @@ Good luck!
 
 3. For questions 3 to 5, consider the following table and data. In their 2004 study of racial discrimination in employment markets, Bertrand and Mullainathan sent resumes with varying characteristics to firms advertising job openings. Some firms were sent resumes with putative African American names, while other firms received resumes with putatively Caucasian names. The researchers also varied other attributes of the resume, such as whether the resume was judged to be of high or low quality (based on labor market experience, career profile, gaps in employment, and skills listed). The table below shows the rate at which applicants were called back by employers, by the city in which the experiment took place and by the randomly assigned attributes of their applications.
 
-| City    | Resume Quality | Race  | % Received call | (N)   |
-| :------ | :------------- | :---- | :-------------- | :---- |
-| Boston  | Low-quality    | Black | 7.01            | (542) |
-| Boston  | Low-quality    | White | 10.15           | (542) |
-| Boston  | High-quality   | Black | 8.50            | (541) |
-| Boston  | High-quality   | White | 13.12           | (541) |
-| Chicago | Low-quality    | Black | 5.52            | (670) |
-| Chicago | Low-quality    | White | 7.16            | (670) |
-| Chicago | High-quality   | Black | 5.28            | (682) |
-| Chicago | High-quality   | White | 8.94            | (682) |
+|                     | Boston                               | Chicago                              |
+| :------------------ | :----------------------------------- | :----------------------------------- |
+|                     | Low-quality resume | High-quality resume | Low-quality resume | High-quality resume |
+|                     | Black    | White   | Black    | White    | Black    | White   | Black    | White    |
+| % Received call     | 7.01     | 10.15   | 8.50     | 13.12    | 5.52     | 7.16    | 5.28     | 8.94     |
+| (N)                 | (542)    | (542)   | (541)    | (541)    | (670)    | (670)   | (682)    | (682)    |
 
 For each city, interpret the apparent treatment effects of a black name and a low-quality resume on the probability of receiving a follow-up call.
 

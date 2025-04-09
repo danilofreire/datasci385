@@ -9,7 +9,7 @@ format:
   clean-revealjs:
     self-contained: true
     code-overflow: wrap
-    footer: "[Surveys](https://raw.githack.com/danilofreire/qtm385/main/lectures/lecture-22/22-survey2.html)"
+    footer: "[Sensitive Topics](https://raw.githack.com/danilofreire/qtm385/main/lectures/lecture-22/22-survey2.html)"
 transition: slide
 transition-speed: default
 scrollable: true
@@ -21,6 +21,45 @@ editor:
 ---
 
 # Hello, everyone! 😉 {background-color="#2d4563"}
+
+# Notes about assignment 09 and group project {background-color="#2d4563"}
+
+## Notes
+
+:::{style="font-size: 21px; margin-top: 30px;"}
+:::{.columns}
+:::{.column width=50%}
+### Assignment 09
+
+- Some of you reported issues with the table in [question 03 in assignment 09]()
+- The table was coded correctly, but it does not render properly in RStudio Visual Mode
+- It has been fixed 🤓
+
+| City    | Resume Quality | Race  | % Received call | (N)   |
+| :------ | :------------- | :---- | :-------------- | :---- |
+| Boston  | Low-quality    | Black | 7.01            | (542) |
+| Boston  | Low-quality    | White | 10.15           | (542) |
+| Boston  | High-quality   | Black | 8.50            | (541) |
+| Boston  | High-quality   | White | 13.12           | (541) |
+| Chicago | Low-quality    | Black | 5.52            | (670) |
+| Chicago | Low-quality    | White | 7.16            | (670) |
+| Chicago | High-quality   | Black | 5.28            | (682) |
+| Chicago | High-quality   | White | 8.94            | (682) |
+:::
+
+:::{.column width=50%}
+### Group project
+
+- The simulated datasets and codebooks are available on our GitHub repository
+- <https://github.com/danilofreire/qtm385/tree/main/simulated-data>
+- Each folder contains a file with the codebook and a description of the dataset, and the data in `.csv` format
+- The order of the presentations has also been randomised:
+- Wednesday, the 23rd of April: Groups 1, 4, 5 and 6
+- Monday, the 28th of April: Groups 2, 3, 7 and 8
+- Each group will have about 10 minutes to present their projects, with about 5 minutes for questions
+:::
+:::
+:::
 
 # Brief recap 📚 {background-color="#2d4563"}
 
@@ -64,6 +103,7 @@ editor:
 - We need [special techniques]{.alert} to study these problems
 - [List experiments]{.alert}, [randomised response technique]{.alert}, [endorsement experiments]{.alert}, and [conjoint experiments]{.alert} are possible solutions
 - Maintains [plausible deniability]{.alert} for respondents
+- Software to estimate these models: <http://sensitivequestions.org/>
 :::
 
 :::{.column width="50%"}
@@ -72,37 +112,6 @@ editor:
 - [Endorsement experiments]{.alert} assess support without direct attribution
 - [Conjoint analysis]{.alert} measures preferences through trade-off scenarios
 - Sometimes requires careful [probability weighting]{.alert} in analysis
-:::
-:::
-:::
-
-# Social desirability bias {background-color="#2d4563"}
-
-## Social desirability bias
-
-:::{style="font-size: 26px; margin-top: 30px;"}
-:::{.columns}
-:::{.column width="50%"}
-- [Social desirability bias]{.alert} occurs when respondents provide answers they believe are more socially acceptable
-- This can lead to [underreporting]{.alert} of sensitive behaviours or attitudes
-- Common examples include:
-  - [Political beliefs]{.alert}
-  - [Criminal behaviour]{.alert}
-  - [Discrimination]{.alert}
-  - [Substance use]{.alert}
-  - [Sexual behaviour]{.alert}
-- [Self-censorship]{.alert} can also occur when respondents fear judgement
-:::
-
-:::{.column width="50%"}
-- [Social desirability bias]{.alert} can occur even in anonymous surveys, so it is important to use techniques that reduce bias
-- Researchers have developed various methods to mitigate this bias
-- Today we will see four of them:
-  - [List experiments]{.alert}
-  - [Randomised response techniques]{.alert}
-  - [Endorsement experiments]{.alert}
-  - [Conjoint analysis]{.alert}
-- All of them are well-established methods in survey research and have `R` packages available
 :::
 :::
 :::
@@ -180,27 +189,28 @@ them upset you. (I don’t want to know which ones, just how many.)
 :::
 
 ## Assumptions
+
+:::{style="font-size: 21px; margin-top: 30px;"}
+:::{.columns}
+:::{.column width="50%"}
 ### No design effects
 
-:::{style="font-size: 27px; margin-top: 30px;"}
 - First, we need to assume that the [addition of the sensitive item does not change the sum of affirmative answers to the control items]{.alert}
 - It is [not necessary]{.alert} that respondents answer the control items truthfully, but the average number of affirmative answers must be the same in both groups
 - This is the [no design effects]{.alert} assumption
 - Formally, for each respondent $i = 1, \dots, N$, we assume:
 
 $$
-\sum_{j=1}^{J} Z_{ij}(0) = \sum_{j=1}^{J} Z_{ij}(1) \text{ or equivalently } Y_i(0) = Y_i(1) + Z_{i,J+1}(1).
+\sum_{j=1}^{J} Z_{ij}(0) = \sum_{j=1}^{J} Z_{ij}(1)
 $$
-
 :::
 
-## No liars
+:::{.column width="50%"}
+### No liars
 
-:::{style="font-size: 25px; margin-top: 30px;"}
 - Second, we need to assume that the [sensitive item is not a lie]{.alert}
 - That is, [all respondents give truthful answers for the sensitive item]{.alert}
 - This is a [strong assumption]{.alert}, as you can imagine
-- Formally, we assume that:
 
 $$
 Z_{i,J+1}(1) = Z^*_{i,J+1} 
@@ -212,11 +222,13 @@ $$\hat{\tau} = \frac{1}{N_1} \sum_{i=1}^{N} T_i Y_i - \frac{1}{N_0} \sum_{i=1}^{
 
 where $N_1 = \sum_{i=1}^{N} T_i$ is the size of the treatment group and $N_0 = N - N_1$ is the size of the control group
 :::
+:::
+:::
 
 ## More about list experiments
 ### Notes about the design
 
-:::{style="font-size: 24px; margin-top: 30px;"}
+:::{style="font-size: 20px; margin-top: 30px;"}
 :::{.columns}
 :::{.column width="50%"}
 - List experiements have several advantages, as they are [easy to implement]{.alert} and [clear to respondents]{.alert}
@@ -231,10 +243,325 @@ where $N_1 = \sum_{i=1}^{N} T_i$ is the size of the treatment group and $N_0 = N
 - But there are some solutions for these problems
 - [Use items that contradict each other]{.alert} to reduce ceiling and floor effects
   - Example: ask about [pro-gun]{.alert} and [pro-choice]{.alert} items 
-- A [weakly informative Bayesian prior]{.alert} can also be used to reduce ceiling and floor effects, 
-- [Pre-treatment covariates]{.alert} can be used to improve power and precision
-- And there are more ways to improve the design too...
+- A [weakly informative Bayesian prior]{.alert} and [covariates]{.alert} can also be used to reduce ceiling and floor effects
+- You can also add [direct questions]{.alert} to the experiment and use a [weighted average of the direct question estimate and the list experiment estimate among those who answer “No” to the direct question]{.alert} ([Arrow et al. 2015](https://doi.org/10.1093/jssam/smu023))
+- You can also include [multiple sensitive items]{.alert} in the list experiment
+- The main issue is to [interpret the results]{.alert} correctly, so we usually see [what explains the sensitive item]{.alert} in the list experiment
 :::
 :::
 :::
 
+## R example
+
+:::{style="font-size: 24px; margin-top: 30px;"}
+
+- More information at <https://list.sensitivequestions.org/articles/getting-started.html>
+
+```{r}
+#| echo: true
+#| eval: true
+library(list)
+data(race)
+
+lm.results <- ictreg(y ~ south + age + male + college, data = race,
+treat = "treat", J=3, method = "ml")
+summary(lm.results)
+```
+:::
+
+# Did hidden Trump voters exist? {background-color="#2d4563"}
+
+## Did hidden Trump voters exist?
+
+:::{style="font-size: 24px; margin-top: 30px; text-align: center;"}
+:::{.columns}
+:::{.column width="50%"}
+![](figures/trump-abstract.png){width=100%}
+:::
+
+:::{.column width="50%"}
+:::{style="margin-top: 50px;"}
+![](figures/trump-list.png){width=100%}
+:::
+:::
+:::
+
+Source: [Coppock (2017)](https://alexandercoppock.com/coppock_2017a.pdf)
+:::
+
+## Did hidden Trump voters exist?
+
+:::{style="font-size: 24px; margin-top: 30px; text-align: center;"}
+![](figures/trump-results.png){width=100%}
+:::
+
+# Do Russians support the war in Ukraine? {background-color="#2d4563"}
+
+## Do Russians support the war in Ukraine?
+
+:::{style="font-size: 24px; margin-top: 30px; text-align: center;"}
+![](figures/russia-list.png){width=100%}
+
+Source: [Chapovski (2022)](https://journals.sagepub.com/doi/full/10.1177/20531680221108328)
+:::
+
+## Do Russians support the war in Ukraine?
+
+:::{style="font-size: 24px; margin-top: 30px; text-align: center;"}
+![](figures/russia-results01.png){width=100%}
+:::
+
+## Do Russians support the war in Ukraine?
+
+:::{style="font-size: 24px; margin-top: 30px; text-align: center;"}
+![](figures/russia-results.png){width=100%}
+:::
+
+# Endorsement experiments {background-color="#2d4563"}
+
+## What is an endorsement experiment?
+
+:::{style="font-size: 23px; margin-top: 30px;"}
+:::{.columns}
+:::{.column width="50%"}
+- Endorsement experiments are a type of survey experiment that measure [support for a policy or candidate]{.alert}
+- They are a variation of the [vignette experiment]{.alert}, where respondents are presented with a scenario and asked to evaluate it
+- Here, the scenario includes an endorsement from a [prominent figure]{.alert} or [group]{.alert}
+- These experiments are often used to study [partisan bias]{.alert}, [group identity]{.alert}, or [framing effects]{.alert}
+- The main advantage of endorsement experiments is that they can [elicit preferences]{.alert} without directly asking about them
+:::
+
+:::{.column width="50%"}
+- While it is easy to estimate them when there [one group is involved]{.alert}, it is more difficult when there are [multiple groups]{.alert}
+- It is a little hard to combine the items, but it is possible
+- A solution is to use [Bayesian hierarchical models]{.alert}, which is described in this (very technical) paper: [Bullock et al (2011)](https://imai.fas.harvard.edu/research/files/support.pdf)
+- We can also use conjoint experiments, as we'll see in a bit!
+:::
+:::
+:::
+
+## Example
+### Measuring Support for Militant Groups in Pakistan
+
+:::{style="font-size: 21px; margin-top: 30px;"}
+:::{.columns}
+:::{.column width="50%"}
+- Militant violence in Pakistan is a serious international problem, yet little is known about who supports militant organisations and why
+- There is a strong incentives for locals to [falsify information to avoid repercussions]{.alert}
+- Also, [asking respondents directly poses safety risks]{.alert} for researchers and participants alike 
+- Unlike a direct measure, nonresponse and social desirability biases are minimised since [respondents are reacting to the policy and not directly to the group itself]{.alert} (or so it seems! 😅)
+- The authors asked respondents about their level of support for polio vaccinations, curriculum reforms, crime regulations, and border disputes
+:::
+
+:::{.column width="50%"}
+- Control group:
+
+```{verbatim}
+The World Health Organization recently announced 
+a plan to introduce universal polio vaccination 
+across Pakistan. How much do you support
+such a plan?
+(1) A great deal; (2) A lot; (3) A moderate amount; 
+(4) A little; (5) Not at all.
+```
+
+- Treatment group:
+
+```{verbatim}
+The World Health Organization recently announced 
+a plan to introduce universal polio vaccination 
+across Pakistan. Pakistani militant groups 
+fighting in Kashmir have voiced support for 
+this program. How much do you support such a plan?
+(1) A great deal; (2) A lot; (3) A moderate amount; 
+(4) A little; (5) Not at all.
+```
+:::
+:::
+:::
+
+## Results
+
+:::{style="font-size: 24px; margin-top: 30px; text-align: center;"}
+![](figures/endorsement-results.png){width=100%}
+:::
+
+# Did political endorsement influence mass opinion during COVID-19? {background-color="#2d4563"}
+
+## Did political endorsement influence mass opinion during COVID-19?
+
+:::{style="font-size: 24px; margin-top: 30px; text-align: center;"}
+:::{.columns}
+:::{.column width="50%"}
+![](figures/covid-abstract.png){width=100%}
+:::
+
+:::{.column width="50%"}
+![](figures/covid-experiment.png){width=100%}
+:::
+:::
+
+Source: [Gadarian et al (2021)](https://doi.org/10.1080/17457289.2021.1924727)
+:::
+
+## Did political endorsement influence mass opinion during COVID-19?
+
+:::{style="font-size: 24px; margin-top: 30px; text-align: center;"}
+![](figures/covid-results01.png){width=100%}
+:::
+
+## Did political endorsement influence mass opinion during COVID-19?
+
+:::{style="font-size: 24px; margin-top: 30px; text-align: center;"}
+![](figures/covid-results02.png){width=100%}
+:::
+
+# Randomised response techniques 🎲 {background-color="#2d4563"}
+
+## Randomised response
+
+:::{style="font-size: 23px; margin-top: 30px;"}
+:::{.columns}
+:::{.column width="50%"}
+- This is a old technique (Werner 1965, Boruch 1971) that is used to [reduce social desirability bias]{.alert}
+- The main idea is the following:
+  - The respondent roll a die or other randomising device out of view of the enumerator
+  - The enumerator does not know the outcome of the randomisation
+  - For instance, if 1 shows in the die, the respondent says no
+  - If 6 shows, the respondent says yes
+  - If any other number shows, the respondent answers truthfully
+  - The enumerator sees the answer, but does not know if it is true or random
+:::
+
+:::{.column width="50%"}
+- The methods works because [the probabilities are known]{.alert} so we can estimate the true proportion of respondents who agree with the sensitive item
+- However, the method is [a little confusing to respondents]{.alert} and it is important to either [run the experiment in person]{.alert} or [provide clear instructions]{.alert} if running it online
+- Believe it or not, this is [the most effective]{.alert} method to reduce social desirability bias!
+:::
+:::
+:::
+
+## Xenophobia and anti-semitism in Germany
+
+:::{style="font-size: 23px; margin-top: 30px; text-align: center;"}
+:::{.columns}
+:::{.column width="50%"}
+![](figures/germany-abstract.png){width=100%}
+:::
+
+:::{.column width="50%"}
+![](figures/germany-experiment.png){width=100%}
+:::
+:::
+
+Source: [Krumpal (2012)](https://www.sciencedirect.com/science/article/abs/pii/S0049089X12001172)
+:::
+
+## Xenophobia and anti-semitism in Germany
+
+:::{style="font-size: 24px; margin-top: 30px; text-align: center;"}
+![](figures/germany-results.png){width=100%}
+:::
+
+# Conjoint analysis {background-color="#2d4563"}
+
+## Conjoint experiments
+
+:::{style="font-size: 23px; margin-top: 30px;"}
+:::{.columns}
+:::{.column width="50%"}
+- Conjoint analysis measures preferences for [multiple attributes]{.alert} of a product, service, or policy
+- The method aims to understand how different factors influence decision-making
+- It is also used to study [trade-offs]{.alert} between different attributes
+- As the other experiments we discussed, conjoint analysis [provides a plausible deniability]{.alert} for respondents
+- Why is that? Because [respondents are not asked about their preferences directly]{.alert}
+- Instead, they are presented with a series of hypothetical scenarios and asked to choose their preferred option
+:::
+
+:::{.column width="50%"}
+- The main advantage of conjoint analysis is that it allows researchers to [study complex preferences]{.alert} in a more realistic way
+- Another advantage is that the method is very robust, flexible, and adaptable to various research contexts
+- It also [increases sample size significantly]{.alert} as respondents are presented with several scenarios
+- However, it can be [time-consuming]{.alert} to design and analyse, but that's pretty much the only con 😉
+- Ah, software to implement it is [quite difficult to use as well!]{.alert}
+- See [my own experiment](https://github.com/danilofreire/lynching-experiment-brazil) for an example
+:::
+:::
+:::
+
+## Hainmueller et al (2014)
+
+:::{style="font-size: 23px; margin-top: 30px; text-align: center;"}
+:::{.columns}
+:::{.column width="40%"}
+- Assumptions:
+  - No carryover effects
+  - No profile-order effects
+  - Randomisation of profiles
+  - Need to cluster errors because answers are not independent (a single individual chooses many profiles)
+
+- [Survey design tool](https://github.com/astrezhnev/conjointsdt)
+- [`cregg` R package](https://github.com/leeper/cregg)
+:::
+
+:::{.column width="60%"}
+:::{style="text-align: center;"}
+![](figures/hainmueller-abstract.png){width=100%}
+:::
+:::
+
+Source [Hainmueller et al (2014)](https://www.researchgate.net/profile/Jens-Hainmueller/publication/256051925_Causal_Inference_in_Conjoint_Analysis_Understanding_Multidimensional_Choices_Via_Stated_Preference_Experiments/links/59c2f834aca272295a0df9fd/Causal-Inference-in-Conjoint-Analysis-Understanding-Multidimensional-Choices-Via-Stated-Preference-Experiments.pdf?_sg%5B0%5D=started_experiment_milestone&origin=journalDetail)
+:::
+:::
+
+## Example: Immigration applicants (US)
+
+:::{style="font-size: 23px; margin-top: 30px; text-align: center;"}
+![](figures/hainmueller-experiment.png){width=100%}
+:::
+
+## Example: Immigration applicants (US)
+
+:::{style="font-size: 23px; margin-top: 30px; text-align: center;"}
+![](figures/hainmueller-results.png){width=100%}
+:::
+
+## Example: Presidential candidates (US)
+
+:::{style="font-size: 23px; margin-top: 30px; text-align: center;"}
+![](figures/hainmueller-results02.png){width=100%}
+:::
+
+# Conclusion {background-color="#2d4563"}
+
+## Conclusion
+
+:::{style="font-size: 23px; margin-top: 30px;"}
+:::{.columns}
+:::{.column width="50%"}
+- [How cool are these methods?!]{.alert} 🤓
+- There are many other methods to study sensitive topics
+- Today we saw four of them: 
+  - [List experiments]{.alert}
+  - [Endorsement experiments]{.alert}
+  - [Randomised response techniques]{.alert}
+  - [Conjoint analysis]{.alert}
+- Please remember that these methods are not perfect, and that they have several assumptions
+- They are also areas of [active research]{.alert}, so please be mindful that something new may come up 😉
+:::
+
+:::{.column width="50%"}
+- If you are interested in learning more about these methods, please check the following `R` packages:
+- [`list`](https://cran.r-project.org/web/packages/list/index.html)
+- [`endorse`](https://cran.r-project.org/web/packages/endorse/index.html)
+- [`rr`](https://cran.r-project.org/web/packages/rr/index.html)
+- [`cregg`](https://github.com/leeper/cregg)
+- Visit the website <http://sensitivequestions.org/> for more information
+- And let me know if you'd like to learn more about these methods! 🤓
+:::
+:::
+:::
+
+# ...And that's all for today! 🎉 {background-color="#2d4563"}
+
+# Thank you for your attention! 🙏 {background-color="#2d4563"}
