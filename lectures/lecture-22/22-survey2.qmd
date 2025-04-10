@@ -51,7 +51,7 @@ editor:
 ### Group project
 
 - The simulated datasets and codebooks are available on our GitHub repository
-- <https://github.com/danilofreire/qtm385/tree/main/simulated-data>
+- <https://github.com/danilofreire/qtm385/tree/main/simulated-pap-data>
 - Each folder contains a file with the codebook and a description of the dataset, and the data in `.csv` format
 - The order of the presentations has also been randomised:
 - Wednesday, the 23rd of April: Groups 1, 4, 5 and 6
