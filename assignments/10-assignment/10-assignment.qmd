@@ -6,7 +6,7 @@ fig-cap-location: top
 
 # Instructions
 
-This assignment trata das lectures 21 e 22, que discutem experimentos de survey e técnicas para medir questões sensíveis. O objetivo é aplicar os conceitos discutidos nas aulas em um exercício prático. If you have any questions about the assignment, feel free to email me at <danilo.freire@emory.edu>.
+This assignment covers lectures 21 and 22, which discuss survey experiments and techniques for measuring sensitive questions. The objective is to apply the concepts discussed in the lectures in a practical exercise. If you have any questions about the assignment, feel free to email me at <danilo.freire@emory.edu>.
 
 Good luck!
 
