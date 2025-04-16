@@ -84,7 +84,7 @@ editor:
 :::{.column width="50%"}
 - All four papers are about sensitive topics and use the methods we discussed in class
 - The first uses a [list experiment]{.alert} to measure underreporting of drug and alcohol use amongst atheletes (a major problem in athletics!)
-- The second paper is a more sophisticated one: the authors use two methods to measure support for the Taliban in Afghanistan (a sensitive topic indeed!)
+- The second paper is a more sophisticated one: the authors use two methods to measure support for NATO forces in Afghanistan (a sensitive topic indeed!)
 - The third paper uses a clever design, leveraging a referendum in the US to see which method is better to measure sensitive topics (spoiler: randomised response is the best one!)
 - The last one, by yours truly, addresses a major problem in developing countries: support for extralegal violence
 - And I can say that the issue seems not to be that sensitive to a lot of respondents 😅
