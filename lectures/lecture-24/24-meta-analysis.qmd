@@ -9,7 +9,7 @@ format:
   clean-revealjs:
     self-contained: true
     code-overflow: wrap
-    footer: "[Integration of Research Findings](https://raw.githack.com/danilofreire/qtm385/main/lectures/lecture-23/24-meta-analysis.html)"
+    footer: "[Integration of Research Findings](https://raw.githack.com/danilofreire/qtm385/main/lectures/lecture-24/24-meta-analysis.html)"
 transition: slide
 transition-speed: default
 scrollable: true
