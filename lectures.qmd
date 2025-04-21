@@ -328,7 +328,7 @@ Weekly suggested readings:
 
 ### Lecture 25: Final Review (April 21)
 
-- Lecture slides: Final Review.
+- Lecture slides: [Course Revision](https://raw.githack.com/danilofreire/qtm385/main/lectures/lecture-25/25-revision.html).
 
 ### Presentations (April 23)
 
