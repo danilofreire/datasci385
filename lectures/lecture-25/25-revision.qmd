@@ -459,7 +459,7 @@ Source: [DeclareDesign](https://declaredesign.org/)
 
 ## Heterogeneous treatment effects (HTE) (Lec 18)
 
-:::{style="font-size: 23px; margin-top: 20px;"}
+:::{style="font-size: 23px; margin-top: 19px;"}
 :::{.columns}
 :::{.column width="55%"}
 - Effects often vary; ATE is just the average; understanding variability is key
