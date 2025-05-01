@@ -6,7 +6,7 @@ Please find below the schedule of our lectures. Each lecture includes a brief de
 
 ## Week 01: Introduction and Course Overview
 
-### Lecture 01: Introduction to Experimental Design (January 15)
+### Lecture 01: Introduction to Experimental Design
 
 Required readings:
 
@@ -27,7 +27,7 @@ Suggested readings:
 
 ## Week 02: The Research Design Process
 
-### Lecture 02: Theories and Experiments (January 22)
+### Lecture 02: Theories and Experiments
 
 Required readings:
 
@@ -38,7 +38,7 @@ Required readings:
 
 ## Week 03: Potential Outcomes Framework
 
-### Lecture 03: Causal Inference and Potential Outcomes (January 27)
+### Lecture 03: Causal Inference and Potential Outcomes
 
 Required readings:
 
@@ -47,7 +47,7 @@ Required readings:
 - Rubin, D. B. (2005). [Causal Inference using Potential Outcomes: Design, Modeling, Decisions](https://www.tandfonline.com/doi/abs/10.1198/016214504000001880). Journal of the American Statistical Association, 100(469), 322-331.
 - [Kahoot Quiz](https://play.kahoot.it/v2/?quizId=c6a69c01-0bb4-4e2a-aca1-60e0f11fdb5b&hostId=05eb977d-4f8a-440e-9e45-95212b29d103)
 
-### Lecture 04: Selection Bias and Randomisation (January 29)
+### Lecture 04: Selection Bias and Randomisation
 
 Required readings:
 
@@ -68,14 +68,14 @@ Weekly suggested readings:
 
 ## Week 04: Sampling Distribution and Randomisation Inference 
 
-### Lecture 05: Statistical Inference for Randomised Experiments (February 03)
+### Lecture 05: Statistical Inference for Randomised Experiments
 
 - Lecture slides: [Sampling Distributions, Statistical Inference, and Hypothesis Testing](https://raw.githack.com/danilofreire/qtm385/main/lectures/lecture-05/05-hypothesis-testing.html).
 - FEDAI: Chapter 03: Sampling Distributions, Statistical Inference, and Hypothesis Testing (up to section 3.5).
 - EGAP Methods Guides: [Hypothesis Testing](https://egap.org/resource/10-things-to-know-about-hypothesis-testing/), [Randomisation Inference](https://egap.org/resource/10-things-to-know-about-randomization-inference/), and [Cluster Randomisation](https://egap.org/resource/10-things-to-know-about-cluster-randomization/). These short guides provide a good overview of the topics we will cover in class, as well as example code in `R`.
 - [Kahoot Quiz](https://play.kahoot.it/v2/?quizId=2ff88efc-8164-446d-a088-bcd4d4fe5313&hostId=05eb977d-4f8a-440e-9e45-95212b29d103).
 
-### Lecture 06: Texts for discussion (February 05)
+### Lecture 06: Texts for discussion
 
 - Lecture slides: [Texts for Discussion](https://raw.githack.com/danilofreire/qtm385/main/lectures/lecture-06/06-discussion.html).
 - Kalla, J. & D. Broockman. 2016. [Campaign Contributions Facilitate Access to Congressional Officials: A Randomized Field Experiment](https://onlinelibrary.wiley.com/doi/full/10.1111/ajps.12180). American Journal of Political Science, 60(3): 545–558
@@ -93,7 +93,7 @@ Weekly suggested readings:
 
 ## Week 05: Blocking, Covariate Adjustment, and Statistical Power
 
-### Lecture 07: Blocking, Clustering, and Covariate Adjustment (February 10)
+### Lecture 07: Blocking, Clustering, and Covariate Adjustment
 
 - Lecture slides: [Blocking and Clustering](https://raw.githack.com/danilofreire/qtm385/main/lectures/lecture-07/07-blocking.html).
 - FEDAI: Section 3.6: Sampling Distributions for Experiments That Use Block or Cluster Random Assignment.
@@ -119,13 +119,13 @@ Weekly suggested readings:
 
 ## Week 06: Non-Compliance and Attrition
 
-### Lecture 09: Non-Compliance I (February 17)
+### Lecture 09: Non-Compliance I
 
 - Lecture slides: [Non-Compliance I](https://raw.githack.com/danilofreire/qtm385/main/lectures/lecture-09/09-non-compliance1.html).
 - FEDAI: Chapter 05: One-Sided Non-Compliance.
 - [Kahoot Quiz](https://play.kahoot.it/v2/?quizId=a6f1c5fa-f06d-41d1-ab82-f5db73b6d18f&hostId=05eb977d-4f8a-440e-9e45-95212b29d103)
 
-### Lecture 10: Non-Compliance II (February 19)
+### Lecture 10: Non-Compliance II
 
 - Lecture slides: [Non-Compliance II](https://raw.githack.com/danilofreire/qtm385/main/lectures/lecture-10/10-non-compliance2.html).
 - FEDAI: Chapter 06: Two-Sided Non-Compliance.
@@ -144,7 +144,7 @@ Weekly suggested readings:
 
 ## Week 07: Attrition in Experimental Research
 
-### Lecture 11: Attrition and Missing Outcomes (February 24)
+### Lecture 11: Attrition and Missing Outcomes
 
 - Lecture slides: [Attrition](https://raw.githack.com/danilofreire/qtm385/main/lectures/lecture-11/11-attrition.html).
 - FEDAI: Chapter 07: Attrition.
@@ -154,6 +154,7 @@ Weekly suggested readings:
 ### Lecture 12: Ethical Considerations in Experimental Research (February 26)
 
 - Lecture slides: [Ethical Considerations in Experimental Research](https://raw.githack.com/danilofreire/qtm385/main/lectures/lecture-12/12-ethics.html).
+- Problem Set 05 due.
 - [Problem Set 06 assigned](https://github.com/danilofreire/qtm385/tree/main/assignments/06-assignment)
 
 Required readings:
@@ -161,7 +162,6 @@ Required readings:
 - Humphreys, M. (2015). [Reflections on the ethics of social experimentation](https://doi.org/10.1515/jgd-2014-0016). Journal of Globalization and Development, 6(1), 87-112.
 - Cronin-Furman, K., & Lake, M. (2018). [Ethics abroad: Fieldwork in fragile and violent contexts](https://doi.org/10.1017/S1049096518000379). PS: Political Science & Politics, 51(3), 607-614.
 - Poverty Action Lab (2022). [Ethical conduct of randomized evaluations](https://www.povertyactionlab.org/resource/ethical-conduct-randomized-evaluations). J-PAL.
-- Problem Set 05 due.
 
 Weekly suggested readings:
 
@@ -201,14 +201,14 @@ Weekly suggested readings:
 
 ## Week 09: Interference
 
-### Lecture 15: When Experiments are Not Possible (March 17)
+### Lecture 15: When Experiments are Not Possible 
 
 - Lecture slides: [Natural and Quasi-Experiments](https://raw.githack.com/danilofreire/qtm385/main/lectures/lecture-15/15-quasi.html).
 - [Kahoot Quiz](https://play.kahoot.it/v2/?quizId=438409d4-2db5-4641-b210-1f9aede6db5b&hostId=05eb977d-4f8a-440e-9e45-95212b29d103).
 - Dunning, T. (2012). [Natural Experiments in the Social Sciences: A Design-Based Approach](https://www.cambridge.org/core/books/natural-experiments-in-the-social-sciences/96A64CBDC2A2952DC1C68AF77DE675AF). Cambridge University Press. Chapter 01: Introduction.
 - Petticrew, M., Cummins, S., Ferrell, C., Findlay, A., Higgins, C., Hoy, C., ... & Sparks, L. (2005). [Natural Experiments: An Underused Tool for Public Health?](https://www.sciencedirect.com/science/article/abs/pii/S0033350605000296). Public Health, 119(9), 751-757.
 
-### Lecture 16: Interference in Experiments (March 19)
+### Lecture 16: Interference in Experiments
 
 - Lecture slides: [Interference in Experiments](https://raw.githack.com/danilofreire/qtm385/main/lectures/lecture-16/16-interference.html).
 - FEDAI: Chapter 08: Interference between Experimental Units.
@@ -227,7 +227,7 @@ Weekly suggested readings:
 
 ## Week 10: Heterogeneous Treatment Effects
 
-### Lecture 17: Texts for discussion (March 24)
+### Lecture 17: Texts for Discussion
 
 - Lecture slides: [Texts for Discussion](https://raw.githack.com/danilofreire/qtm385/main/lectures/lecture-17/17-discussion.html).
 - [Kahoot Quiz](https://play.kahoot.it/v2/?quizId=008403a1-cea0-48f8-b9fb-3c0b60214da9&hostId=05eb977d-4f8a-440e-9e45-95212b29d103).
@@ -235,7 +235,7 @@ Weekly suggested readings:
 - Paluck, B. L., Shepherd, H., and Aronow, P. 2016. [Changing climates of conflict: A social network experiment in 56 schools.](https://www.pnas.org/doi/abs/10.1073/pnas.1514483113) Proceedings of the National Academy of Sciences, 113(3): 566-571
 - Gerber, A. S., & Green, D. P. (2000). [The effects of canvassing, telephone calls, and direct mail on voter turnout: A field experiment](https://doi.org/10.2307/2585837). American Political Science Review, 94(3), 653-663.
 
-### Lecture 18: Heterogeneous Treatment Effects (March 26)
+### Lecture 18: Heterogeneous Treatment Effects
 
 - Lecture slides: [Heterogeneous Treatment Effects](https://raw.githack.com/danilofreire/qtm385/main/lectures/lecture-18/18-hte.html).
 - FEDAI: Chapter 09: Heterogeneous Treatment Effects.
@@ -255,13 +255,13 @@ Weekly suggested readings:
 
 ## Week 11: Heterogeneous Treatment Effects (Continued) and Mediation
 
-### Lecture 19: Texts for discussion (March 31)
+### Lecture 19: Texts for Discussion
 
 - Lecture slides: [Texts for Discussion](https://raw.githack.com/danilofreire/qtm385/main/lectures/lecture-19/19-discussion.html).
 - Munshi, K. (2003). [Networks in the modern economy: Mexican migrants in the US labor market.](https://academic.oup.com/qje/article-abstract/118/2/549/1899587?login=false) The Quarterly Journal of Economics, 118(2), 549-599.
 - Miguel, E., & Kremer, M. (2004). [Worms: identifying impacts on education and health in the presence of treatment externalities.](https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1468-0262.2004.00481.x) Econometrica, 72(1), 159-217.
 
-### Lecture 20: Mediation Analysis (April 02)
+### Lecture 20: Mediation Analysis
 
 - Lecture slides: [Mediation Analysis](https://raw.githack.com/danilofreire/qtm385/main/lectures/lecture-20/20-mediation.html).
 - FEDAI: Chapter 10: Mediation.
@@ -278,17 +278,17 @@ Weekly suggested readings:
 
 ## Week 12: Survey Experiments
 
-### Lecture 21: Survey Experiments (April 07)
+### Lecture 21: Survey Experiments
 
 - Lecture slides: [Survey Experiments](https://raw.githack.com/danilofreire/qtm385/main/lectures/lecture-21/21-survey.html).
 - EGAP: [Survey Experiments](https://egap.org/resource/10-things-to-know-about-survey-experiments/).
 - Stantcheva, S. (2023). [How to run surveys: A guide to creating your own identifying variation and revealing the invisible](https://www.annualreviews.org/content/journals/10.1146/annurev-economics-091622-010157). Annual Review of Economics, 15(1), 205-234.
 
-### Lecture 22: Survey Methods for Sensitive Topics (April 09)
+### Lecture 22: Survey Methods for Sensitive Topics
 
 - Lecture slides: [Survey Methods for Sensitive Topics](https://raw.githack.com/danilofreire/qtm385/main/lectures/lecture-22/22-survey2.html).
 - Problem Set 09 due.
-- Problem Set 10 assigned.
+- [Problem Set 10 assigned.](https://github.com/danilofreire/qtm385/tree/main/assignments/10-assignment)
 
 Weekly suggested readings:
 
@@ -303,7 +303,7 @@ Weekly suggested readings:
 
 ## Week 13: Meta-Analysis and Integration of Research Findings
 
-### Lecture 23: Texts for discussion (related to survey experiments) (April 14)
+### Lecture 23: Texts for Discussion (Related to Survey Experiments)
 
 - Lecture slides: [Texts for Discussion](https://raw.githack.com/danilofreire/qtm385/main/lectures/lecture-23/23-discussion.html).
 - Druckman, J. N., Gilli, M., Klar, S., & Robison, J. (2015). [Measuring drug and alcohol use among college student‐athletes.](https://onlinelibrary.wiley.com/doi/abs/10.1111/ssqu.12135) Social Science Quarterly, 96(2), 369-380.
@@ -311,7 +311,7 @@ Weekly suggested readings:
 - Rosenfeld, B, Imai, K., & Shapiro, J. (2016). [An Empirical Validation Study of Popular Survey Methodologies for Sensitive Questions.](https://onlinelibrary.wiley.com/doi/abs/10.1111/ajps.12205) American Journal of Political Science, 60(3), 783-802.
 - Freire, D., & Skarbek, D. (2023). [Vigilantism and Institutions: Understanding Attitudes Toward Lynching in Brazil.](https://journals.sagepub.com/doi/full/10.1177/20531680221150389) Research & Politics, 10(1), 1-8.
 
-### Lecture 24: Meta-Analysis and Integration of Research Findings (April 16)
+### Lecture 24: Meta-Analysis and Integration of Research Findings
 
 - Lecture slides: [Meta-Analysis and Integration of Research Findings.](https://raw.githack.com/danilofreire/qtm385/main/lectures/lecture-24/24-meta-analysis.html)
 - FEDAI: Chapter 11: Integration of Research Findings.
@@ -326,16 +326,16 @@ Weekly suggested readings:
 
 ## Week 14: Final Review and Presentations
 
-### Lecture 25: Final Review (April 21)
+### Lecture 25: Final Review
 
 - Lecture slides: [Course Revision](https://raw.githack.com/danilofreire/qtm385/main/lectures/lecture-25/25-revision.html).
 
-### Presentations (April 23)
+### Presentations
 
 - Presentations of final projects.
 
 ## Week 15: Presentations
 
-### Presentations (Continued) (April 28)
+### Presentations (Continued)
 
 - Presentations of final projects.
