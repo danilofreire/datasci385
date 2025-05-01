@@ -96,9 +96,9 @@ Source: [Data Science Discovery - University of Illinois](https://discovery.cs.i
 :::
 :::
 
-# Group work 👥 {background-color="#2d4563"}
+# Group project 👥 {background-color="#2d4563"}
 
-## Group work
+## Group project
 ### The list is ready!
 
 :::{style="margin-top: 30px; font-size: 28px;"}
@@ -110,121 +110,9 @@ Source: [Data Science Discovery - University of Illinois](https://discovery.cs.i
 - If you are happy with your group, that's great! If not, please let me know and I will try to accommodate your request 🥳
 :::
 
-## Group 1
-### Pre-formed
-
-:::{style="margin-top: 30px; font-size: 28px;"}
-
-| Name                  | Login ID | SIS ID  | Email              |
-|-----------------------|----------|---------|--------------------|
-| Elizabeth Shin        | EJSHIN6  | 2520422 | elizabeth.shin@emory.edu  |
-| Emily Choi            | ECHOI73  | 2492522 | emily.choi@emory.edu (?)  |
-| Esther Yang           | QYANG68  | 2487073 | esther.yang2@emory.edu (?)  |
-| Zhiyi Li (Yolanda Li) | ZLIT23   | 2513881 | zhiyi.li@emory.edu   |
-| Angela Xie            | JXIE82   | 2515217 | angela.xie@emory.edu   |
-
-:::
-
-## Group 2
-### Originally Anushka Basu & Annie Cao, now topped up to 4
-
-:::{style="margin-top: 30px; font-size: 28px;"}
-
-| Name                  | Login ID | SIS ID  | Email             |
-|-----------------------|----------|---------|-------------------|
-| Anushka Basu          | ABASU9   | 2551669 | anushka.basu@emory.edu  |
-| Annie Cao             | JCAO66   | 2599315 | annie.cao@emory.edu  |
-| Courtney Fitzgerald   | CFITZG4  | 2484240 | courtney.fitzgerald@emory.edu |
-| Harris Wang           | MWAN467  | 2551003 | harris.wang@emory.edu |
-
-:::
-
-## Group 3
-### Pre-formed
-
-:::{style="margin-top: 30px; font-size: 28px;"}
-
-| Name           | Login ID | SIS ID  | Email              |
-|----------------|----------|---------|--------------------|
-| Maura Dianno   | MDIANNO  | 2481848 | maura.dianno@emory.edu  |
-| Kush Bhatia    | KBHATI7  | 2492303 | kush.bhatia@emory.edu  |
-| Shriya Iyer    | SAIYER4  | 2493146 | shriya.iyer@emory.edu  |
-
-:::
-
-## Group 4
-### Pre-formed
-
-:::{style="margin-top: 30px; font-size: 28px;"}
-
-| Name        | Login ID | SIS ID  | Email            |
-|-------------|----------|---------|------------------|
-| Sylvia Xing | JXING8   | 2549831 | sylvia.xing@emory.edu |
-| Lucy Liu    | CLIU452  | 2561533 | lucy.liu@emory.edu|
-| Jessie Hao  | JHAO23   | 2513298 | jessie.hao@emory.edu |
-| Zoe Liu     | SLIU547  | 2583239 | zoe.liu@emory.edu|
-
-:::
-
-## Group 5
-### Dhwani + Anita, now topped up to 4
-
-:::{style="margin-top: 30px; font-size: 28px;"}
-
-| Name                   | Login ID | SIS ID  | Email                        |
-|------------------------|----------|---------|------------------------------|
-| Dhwani Venkatarangan   | DAVENKA  | 2554493 | dhwani.venkatarangan@emory.edu |
-| Anita Osuri            | AOSURI2  | 2557540 | anita.osuri@emory.edu         |
-| Ahshar Brown           | AOBROW2  | 2575182 | ahshar.brown@emory.edu        |
-| Adam Pastor            | AMPASTO  | 2565464 | adam.pastor@emory.edu         |
-
-:::
-
-## Group 6
-### Randomly assigned
-
-:::{style="margin-top: 30px; font-size: 28px;"}
-
-| Name         | Login ID | SIS ID  | Email                         |
-|--------------|----------|---------|-------------------------------|
-| Daniel Nickas| DNICKAS  | 2549711 | daniel.nickas@emory.edu       |
-| Shuyang Yu   | SYU1025  | 2610436 | shuyang.yu@emory.edu          |
-| Phoebe Pan   | ZPAN66   | 2630423 | ziwen.pan@emory.edu           |
-| Xinyi Wang   | XWAN878  | 2549813 | xinyi.wang@emory.edu          |
-
-:::
-
-## Group 7
-### Randomly assigned
-
-:::{style="margin-top: 30px; font-size: 28px;"}
-
-| Name            | Login ID | SIS ID  | Email                         |
-|-----------------|----------|---------|-------------------------------|
-| Davis Boor      | DBOOR    | 2556176 | davis.boor@emory.edu          |
-| Xipu Wang       | XWAN884  | 2551008 | xipu.wang@emory.edu           |
-| Miracle Ephraim | MEPHRAI  | 2492732 | miracle.ephraim@emory.edu     |
-| Zihan Liang     | ZLIAN57  | 2609381 | zihan.liang@emory.edu         |
-
-:::
-
-## Group 8
-### Randomly assigned
-
-:::{style="margin-top: 30px; font-size: 28px;"}
-
-| Name           | Login ID | SIS ID  | Email                         |
-|----------------|----------|---------|-------------------------------|
-| Evelyn Shi     | CSHI59   | 2609525 | evelyn.shi2@emory.edu         |
-| Howie Brown    | HJBROW5  | 2585210 | howie.brown@emory.edu         |
-| Maxwell Troilo | MTROILO  | 2520874 | max.troilo@emory.edu          |
-| Lingxiao Chen  | LCHE462  | 2562583 | lingxiao.chen@emory.edu (?)   |
-
-:::
-
 # Questions? <br> Did I miss anyone? 😅 {background-color="#2d4563"}
 
-## Group Work 🤝
+## Group project 🤝
 ### Next steps (from our previous lecture)
 
 :::{style="margin-top: 30px; font-size: 24px;"}

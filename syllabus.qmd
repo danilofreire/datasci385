@@ -1,6 +1,6 @@
 ---
 title: "QTM 385 - Experimental Methods"
-date: "Spring 2025"
+date: "Summer 2025"
 lang: en-GB
 author: 
   - Danilo Freire\thanks{Visiting Assistant Professor, Department of Quantitative Theory and Methods, Emory University, \url{danilo.freire@emory.edu}, \url{https://danilofreire.github.io}.}
@@ -148,9 +148,13 @@ While I will try to adhere to the course schedule as much as possible, I also wa
 
 It is important to read the required materials before class. Please feel free to engage in critical discussions and express your views openly. Bringing notes to class is recommended so we can discuss the topics you find most interesting together. The weekly suggested readings are optional and recommended for those who want to deepen their understanding of the course topics. They are usually more theoretical and maths-intensive than the required readings, but do not feel intimidated by them. They are there to provide a broader perspective on the topics we will cover in class.
 
+## Course Schedule
+
+Please find below the schedule of our lectures. Each lecture includes a brief description, required readings, and suggested readings for further exploration. The lecture slides and additional resources will be posted [on the course website](https://danilofreire.github.io/qtm385/lectures.html) and [GitHub repository](https://github.com/danilofreire/qtm385). Please remember that the schedule may change during the course. If you have any questions or need further assistance, please let me know!
+
 ## Week 01: Introduction and Course Overview
 
-### Lecture 01: Introduction to Experimental Design (January 15)
+### Lecture 01: Introduction to Experimental Design
 
 Required readings:
 
@@ -171,7 +175,7 @@ Suggested readings:
 
 ## Week 02: The Research Design Process
 
-### Lecture 02: Theories and Experiments (January 22)
+### Lecture 02: Theories and Experiments
 
 Required readings:
 
@@ -182,7 +186,7 @@ Required readings:
 
 ## Week 03: Potential Outcomes Framework
 
-### Lecture 03: Causal Inference and Potential Outcomes (January 27)
+### Lecture 03: Causal Inference and Potential Outcomes
 
 Required readings:
 
@@ -191,7 +195,7 @@ Required readings:
 - Rubin, D. B. (2005). [Causal Inference using Potential Outcomes: Design, Modeling, Decisions](https://www.tandfonline.com/doi/abs/10.1198/016214504000001880). Journal of the American Statistical Association, 100(469), 322-331.
 - [Kahoot Quiz](https://play.kahoot.it/v2/?quizId=c6a69c01-0bb4-4e2a-aca1-60e0f11fdb5b&hostId=05eb977d-4f8a-440e-9e45-95212b29d103)
 
-### Lecture 04: Selection Bias and Randomisation (January 29)
+### Lecture 04: Selection Bias and Randomisation
 
 Required readings:
 
@@ -212,14 +216,14 @@ Weekly suggested readings:
 
 ## Week 04: Sampling Distribution and Randomisation Inference 
 
-### Lecture 05: Statistical Inference for Randomised Experiments (February 03)
+### Lecture 05: Statistical Inference for Randomised Experiments
 
 - Lecture slides: [Sampling Distributions, Statistical Inference, and Hypothesis Testing](https://raw.githack.com/danilofreire/qtm385/main/lectures/lecture-05/05-hypothesis-testing.html).
 - FEDAI: Chapter 03: Sampling Distributions, Statistical Inference, and Hypothesis Testing (up to section 3.5).
 - EGAP Methods Guides: [Hypothesis Testing](https://egap.org/resource/10-things-to-know-about-hypothesis-testing/), [Randomisation Inference](https://egap.org/resource/10-things-to-know-about-randomization-inference/), and [Cluster Randomisation](https://egap.org/resource/10-things-to-know-about-cluster-randomization/). These short guides provide a good overview of the topics we will cover in class, as well as example code in `R`.
 - [Kahoot Quiz](https://play.kahoot.it/v2/?quizId=2ff88efc-8164-446d-a088-bcd4d4fe5313&hostId=05eb977d-4f8a-440e-9e45-95212b29d103).
 
-### Lecture 06: Texts for discussion (February 05)
+### Lecture 06: Texts for discussion
 
 - Lecture slides: [Texts for Discussion](https://raw.githack.com/danilofreire/qtm385/main/lectures/lecture-06/06-discussion.html).
 - Kalla, J. & D. Broockman. 2016. [Campaign Contributions Facilitate Access to Congressional Officials: A Randomized Field Experiment](https://onlinelibrary.wiley.com/doi/full/10.1111/ajps.12180). American Journal of Political Science, 60(3): 545–558
@@ -237,7 +241,7 @@ Weekly suggested readings:
 
 ## Week 05: Blocking, Covariate Adjustment, and Statistical Power
 
-### Lecture 07: Blocking, Clustering, and Covariate Adjustment (February 10)
+### Lecture 07: Blocking, Clustering, and Covariate Adjustment
 
 - Lecture slides: [Blocking and Clustering](https://raw.githack.com/danilofreire/qtm385/main/lectures/lecture-07/07-blocking.html).
 - FEDAI: Section 3.6: Sampling Distributions for Experiments That Use Block or Cluster Random Assignment.
@@ -263,13 +267,13 @@ Weekly suggested readings:
 
 ## Week 06: Non-Compliance and Attrition
 
-### Lecture 09: Non-Compliance I (February 17)
+### Lecture 09: Non-Compliance I
 
 - Lecture slides: [Non-Compliance I](https://raw.githack.com/danilofreire/qtm385/main/lectures/lecture-09/09-non-compliance1.html).
 - FEDAI: Chapter 05: One-Sided Non-Compliance.
 - [Kahoot Quiz](https://play.kahoot.it/v2/?quizId=a6f1c5fa-f06d-41d1-ab82-f5db73b6d18f&hostId=05eb977d-4f8a-440e-9e45-95212b29d103)
 
-### Lecture 10: Non-Compliance II (February 19)
+### Lecture 10: Non-Compliance II
 
 - Lecture slides: [Non-Compliance II](https://raw.githack.com/danilofreire/qtm385/main/lectures/lecture-10/10-non-compliance2.html).
 - FEDAI: Chapter 06: Two-Sided Non-Compliance.
@@ -288,14 +292,14 @@ Weekly suggested readings:
 
 ## Week 07: Attrition in Experimental Research
 
-### Lecture 11: Attrition and Missing Outcomes (February 24)
+### Lecture 11: Attrition and Missing Outcomes
 
 - Lecture slides: [Attrition](https://raw.githack.com/danilofreire/qtm385/main/lectures/lecture-11/11-attrition.html).
 - FEDAI: Chapter 07: Attrition.
 - Lo, A., Renshon, J., & Bassan-Nygate, L. (2024). [A Practical Guide to Dealing with Attrition in Political Science Experiments](https://www.cambridge.org/core/journals/journal-of-experimental-political-science/article/practical-guide-to-dealing-with-attrition-in-political-science-experiments/0E2B475CE9B082EE5AF8680E6BB1E985). Journal of Experimental Political Science, 11(2), 147-161. 
 - [Kahoot quiz](https://play.kahoot.it/v2/?quizId=64c27dc8-89cb-4d27-8062-11054deb7849&hostId=05eb977d-4f8a-440e-9e45-95212b29d103)
 
-### Lecture 12: Ethical Considerations in Experimental Research (February 26)
+### Lecture 12: Ethical Considerations in Experimental Research
 
 - Lecture slides: [Ethical Considerations in Experimental Research](https://raw.githack.com/danilofreire/qtm385/main/lectures/lecture-12/12-ethics.html).
 - [Problem Set 06 assigned](https://github.com/danilofreire/qtm385/tree/main/assignments/06-assignment)
@@ -318,13 +322,13 @@ Weekly suggested readings:
 
 ## Week 08: Quarto and Pre-Analysis Plans
 
-### Lecture 13: Introduction to Quarto and DeclareDesign (March 03)
+### Lecture 13: Introduction to Quarto and DeclareDesign
 
 - Lecture slides: [Introduction to Quarto and DeclareDesign](https://raw.githack.com/danilofreire/qtm385/main/lectures/lecture-13/13-quarto.html).
 - Quarto official website: <https://quarto.org/>.
 - DeclareDesign official website: <https://declaredesign.org/>.
 
-### Lecture 14: Writing Pre-Analysis Plans (March 05)
+### Lecture 14: Writing Pre-Analysis Plans
 
 - Lecture slides: [How to Write a Pre-Analysis Plan](https://raw.githack.com/danilofreire/qtm385/main/lectures/lecture-14/14-pap.html).
 - EGAP: [Pre-Analysis Plans](https://egap.org/resource/10-things-to-know-about-pre-analysis-plans/).
@@ -341,21 +345,24 @@ Weekly suggested readings:
 - Blair, G., Coppock, A., & Humphreys, M. (2023). [Introduction to design declaration with DeclareDesign](https://macartan.github.io/dd_bootcamp/dd.html#/title-slide). A series of presentation slides on DeclareDesign by the authors of the book. Strongly recommended.
 - [DeclareDesign official website](https://declaredesign.org/).
 - Nosek, B.A., Alter, G., Banks, G.C., Borsboom, D., Bowman, S.D., Breckler, S.J., Buck, S., Chambers, C.D., Chin, G., Christensen, G. and Contestabile, M., 2015. [Promoting an open research culture](https://www.science.org/doi/10.1126/science.aab2374). Science, 348(6242), pp.1422-1425.
+- [A Gentle Introduction to DeclareDesign (YouTube)](https://youtu.be/8Y0p_ar59tQ/). Video tutorial by the authors of the book.
 
 ## Week 09: Interference
 
-### Lecture 15: When Experiments are Not Possible (March 17)
+### Lecture 15: When Experiments are Not Possible
 
 - Lecture slides: [Natural and Quasi-Experiments](https://raw.githack.com/danilofreire/qtm385/main/lectures/lecture-15/15-quasi.html).
+- [Kahoot Quiz](https://play.kahoot.it/v2/?quizId=438409d4-2db5-4641-b210-1f9aede6db5b&hostId=05eb977d-4f8a-440e-9e45-95212b29d103).
 - Dunning, T. (2012). [Natural Experiments in the Social Sciences: A Design-Based Approach](https://www.cambridge.org/core/books/natural-experiments-in-the-social-sciences/96A64CBDC2A2952DC1C68AF77DE675AF). Cambridge University Press. Chapter 01: Introduction.
 - Petticrew, M., Cummins, S., Ferrell, C., Findlay, A., Higgins, C., Hoy, C., ... & Sparks, L. (2005). [Natural Experiments: An Underused Tool for Public Health?](https://www.sciencedirect.com/science/article/abs/pii/S0033350605000296). Public Health, 119(9), 751-757.
 
 ### Lecture 16: Interference in Experiments (March 19)
 
-- Lecture slides: Interference in Experiments.
+- Lecture slides: [Interference in Experiments](https://raw.githack.com/danilofreire/qtm385/main/lectures/lecture-16/16-interference.html).
 - FEDAI: Chapter 08: Interference between Experimental Units.
 - EGAP: [Spillovers](https://egap.org/resource/10-things-to-know-about-spillovers/).
-- Problem Set 07 assigned.
+- [Kahoot Quiz](https://play.kahoot.it/v2/?quizId=aa1d54d4-1501-4fee-9f91-a21c1bbf962f&hostId=05eb977d-4f8a-440e-9e45-95212b29d103).
+- [Problem Set 07 assigned.](https://github.com/danilofreire/qtm385/tree/main/assignments/07-assignment)
 
 Weekly suggested readings:
 
@@ -363,85 +370,98 @@ Weekly suggested readings:
 - Banerjee, A. V., & Duflo, E. (2009). [The Experimental Approach to Development Economics](https://www.annualreviews.org/content/journals/10.1146/annurev.economics.050708.143235). Annual Review of Economics 1(1), 151-178.
 - Bonell, C., Fletcher, A., Morton, M., Lorenc, T., & Moore, L. (2012). [Realist Randomised Controlled Trials: A New Approach to Evaluating Complex Public Health Interventions](https://www.sciencedirect.com/science/article/abs/pii/S0277953612006399). Social Science & Medicine, 75(12), 2299-2306.
 - Aronow, P. M., Eckles, D., Samii, C., & Zonszein, S. (2020). [Spillover effects in experimental data](https://arxiv.org/abs/2001.05444). arXiv preprint arXiv:2001.05444.
-- Bowers, Jake, Mark M. Fredrickson, and Costas Panagopoulos (2013). [Reasoning about Interference Between Units: A General Framework.](https://www.cambridge.org/core/journals/political-analysis/article/abs/reasoning-about-interference-between-units-a-general-framework/0E2410C1A5666EE5ACA4CBE29AFFFAE7) Political Analysis 21: 97–124.
+- Bowers, Jake, Mark M. Fredrickson, and Costas Panagopoulos (2013). [Reasoning about Interference Between Units: A General Framework](https://www.cambridge.org/core/journals/political-analysis/article/abs/reasoning-about-interference-between-units-a-general-framework/0E2410C1A5666EE5ACA4CBE29AFFFAE7). Political Analysis 21: 97–124.
+- Imbens, G. (2024). [Interference and Spillovers in Randomized Experiments](https://www.youtube.com/watch?v=i5kyzT_CpwQ) (Video). A short lecture on recent advances and new designs to deal with interference in experiments. A little technical.
 
 ## Week 10: Heterogeneous Treatment Effects
 
-### Lecture 17: Texts for discussion (related to spillovers) (March 24)
+### Lecture 17: Texts for Discussion
 
+- Lecture slides: [Texts for Discussion](https://raw.githack.com/danilofreire/qtm385/main/lectures/lecture-17/17-discussion.html).
+- [Kahoot Quiz](https://play.kahoot.it/v2/?quizId=008403a1-cea0-48f8-b9fb-3c0b60214da9&hostId=05eb977d-4f8a-440e-9e45-95212b29d103).
 - Centola, D. (2010). [The spread of behavior in an online social network experiment](https://www.science.org/doi/abs/10.1126/science.1185231). Science, 329(5996), 1194-1197.
 - Paluck, B. L., Shepherd, H., and Aronow, P. 2016. [Changing climates of conflict: A social network experiment in 56 schools.](https://www.pnas.org/doi/abs/10.1073/pnas.1514483113) Proceedings of the National Academy of Sciences, 113(3): 566-571
-- Gerber, A. S., & Green, D. P. (2000). [The effects of canvassing, telephone calls, and direct mail on voter turnout: A field experiment](https://www.jstor.org/stable/2991720). American Political Science Review, 94(3), 653-663.
+- Gerber, A. S., & Green, D. P. (2000). [The effects of canvassing, telephone calls, and direct mail on voter turnout: A field experiment](https://doi.org/10.2307/2585837). American Political Science Review, 94(3), 653-663.
 
-### Lecture 18: Heterogeneous Treatment Effects (March 26)
+### Lecture 18: Heterogeneous Treatment Effects
 
-- Lecture slides: Heterogeneous Treatment Effects.
+- Lecture slides: [Heterogeneous Treatment Effects](https://raw.githack.com/danilofreire/qtm385/main/lectures/lecture-18/18-hte.html).
 - FEDAI: Chapter 09: Heterogeneous Treatment Effects.
 - Problem Set 07 due.
-- Problem Set 08 assigned.
+- [Problem Set 08 assigned](https://github.com/danilofreire/qtm385/tree/main/assignments/08-assignment).
 - Pre-Analysis Plan due.
 
 Weekly suggested readings:
 
-- Athey, Susan, and Guido W. Imbens (2017a). [The Econometrics of Randomized Experiments.](http://arxiv.org/abs/1607.00698) In Handbook of Economic Field Experiments, vol. 1 (E. Duflo and A. Banerjee, eds.)
 - Ding, P., Feller, A., & Miratrix, L. (2016). [Randomization inference for treatment effect variation.](https://academic.oup.com/jrsssb/article/78/3/655/7040906?login=false) Journal of the Royal Statistical Society Series B: Statistical Methodology, 78(3), 655-671.
 - Imai, K., & Ratkovic, M. (2013). [Estimating treatment effect heterogeneity in randomized program evaluation.](https://projecteuclid.org/journals/annals-of-applied-statistics/volume-7/issue-1/Estimating-treatment-effect-heterogeneity-in-randomized-program-evaluation/10.1214/12-AOAS593.full) Annals of Applied Statistics, 7(1), 443-470.
 - Wager, S., & Athey, S. (2018). [Estimation and inference of heterogeneous treatment effects using random forests.](https://www.tandfonline.com/doi/abs/10.1080/01621459.2017.1319839) Journal of the American Statistical Association, 113(523), 1228-1242.
+- Susan Athey and Stefan Wager: [Estimating Heterogeneous Treatment Effects in R](https://www.youtube.com/watch?v=YBbnCDRCcAI). A one-hour video on how to use the `grf` package in R to estimate heterogeneous treatment effects.
+- [Generalised Random Forests](https://grf-labs.github.io/grf/) (R package).
+- Coppock, A. (2015). [10 Things to Know about Multiple Comparisons](https://egap.org/resource/10-things-to-know-about-multiple-comparisons/). EGAP Methods Guide.
+- Frandsen, B. (2025). [Machine Learning and Heterogeneous Treatment Effects](https://github.com/Mixtape-Sessions/Heterogeneous-Effects/tree/main). Slides and coding labs from a workshop on this topic. Available on GitHub.
 
 ## Week 11: Heterogeneous Treatment Effects (Continued) and Mediation
 
-### Lecture 19: Texts for discussion (related to heterogeneous treatment effects) (March 31)
+### Lecture 19: Texts for Discussion
 
+- Lecture slides: [Texts for Discussion](https://raw.githack.com/danilofreire/qtm385/main/lectures/lecture-19/19-discussion.html).
 - Munshi, K. (2003). [Networks in the modern economy: Mexican migrants in the US labor market.](https://academic.oup.com/qje/article-abstract/118/2/549/1899587?login=false) The Quarterly Journal of Economics, 118(2), 549-599.
 - Miguel, E., & Kremer, M. (2004). [Worms: identifying impacts on education and health in the presence of treatment externalities.](https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1468-0262.2004.00481.x) Econometrica, 72(1), 159-217.
-- TBD
 
-### Lecture 20: Mediation Analysis (April 02)
+### Lecture 20: Mediation Analysis
 
-- Lecture slides: Mediation Analysis.
+- Lecture slides: [Mediation Analysis](https://raw.githack.com/danilofreire/qtm385/main/lectures/lecture-20/20-mediation.html).
 - FEDAI: Chapter 10: Mediation.
 - Problem Set 08 due.
-- Problem Set 09 assigned.
+- [Problem Set 09 assigned.](https://github.com/danilofreire/qtm385/tree/main/assignments/09-assignment)
+- [KaHoot Quiz](https://play.kahoot.it/v2/?quizId=e02f1d98-9af7-449f-8a32-dddb6cc94575&hostId=05eb977d-4f8a-440e-9e45-95212b29d103)
 
 Weekly suggested readings:
 
 - VanderWeele, T. J. (2016). [Mediation analysis: a practitioner's guide.](https://www.annualreviews.org/content/journals/10.1146/annurev-publhealth-032315-021402) Annual review of public health, 37(1), 17-32.
+- Acharya, A., Blackwell, M., & Sen, M. (2018). [Analyzing Causal Mechanisms in Survey Experiments](https://doi.org/10.1017/pan.2018.19). Political Analysis, 26(4), 357–378.
 - MacKinnon, D. P., Fairchild, A. J., & Fritz, M. S. (2007). [Mediation analysis.](https://www.annualreviews.org/content/journals/10.1146/annurev.psych.58.110405.085542) Annu. Rev. Psychol., 58(1), 593-614.
 - Zhao, X., Lynch Jr, J. G., & Chen, Q. (2010). [Reconsidering Baron and Kenny: Myths and truths about mediation analysis.](https://academic.oup.com/jcr/article-abstract/37/2/197/1813998?login=false) Journal of consumer research, 37(2), 197-206.
 
 ## Week 12: Survey Experiments
 
-### Lecture 21: Survey Experiments (April 07)
+### Lecture 21: Survey Experiments
 
-- Lecture slides: Survey Experiments.
+- Lecture slides: [Survey Experiments](https://raw.githack.com/danilofreire/qtm385/main/lectures/lecture-21/21-survey.html).
 - EGAP: [Survey Experiments](https://egap.org/resource/10-things-to-know-about-survey-experiments/).
-- Sniderman, P. M. (2018). [Some advances in the design of survey experiments.](https://www.annualreviews.org/content/journals/10.1146/annurev-polisci-042716-115726) Annual Review of Political Science, 21(1), 259-275.
+- Stantcheva, S. (2023). [How to run surveys: A guide to creating your own identifying variation and revealing the invisible](https://www.annualreviews.org/content/journals/10.1146/annurev-economics-091622-010157). Annual Review of Economics, 15(1), 205-234.
 
-### Lecture 22: Survey Methods for Sensitive Topics (April 09)
+### Lecture 22: Survey Methods for Sensitive Topics
 
-- Lecture slides: Survey Methods for Sensitive Topics.
+- Lecture slides: [Survey Methods for Sensitive Topics](https://raw.githack.com/danilofreire/qtm385/main/lectures/lecture-22/22-survey2.html).
 - Problem Set 09 due.
 - Problem Set 10 assigned.
 
 Weekly suggested readings:
 
-- Kane, J. V. (2024). [More than meets the ITT: A guide for anticipating and investigating nonsignificant results in survey experiments.](https://www.cambridge.org/core/journals/journal-of-experimental-political-science/article/more-than-meets-the-itt-a-guide-for-anticipating-and-investigating-nonsignificant-results-in-survey-experiments/C01250EB50598D6328B6065F1DF86BA7) Journal of Experimental Political Science, 1-16.
+- Sniderman, P. M. (2018). [Some advances in the design of survey experiments.](https://www.annualreviews.org/content/journals/10.1146/annurev-polisci-042716-115726) Annual Review of Political Science, 21(1), 259-275.
 - Schneider, D., & Harknett, K. (2022). [What’s to like? Facebook as a tool for survey data collection.](https://journals.sagepub.com/doi/full/10.1177/0049124119882477) Sociological Methods & Research, 51(1), 108-140.
 - Rosenfeld, B., Imai, K. & Shapiro, J. (2016). [An Empirical Validation Study of Popular Survey Methodologies for Sensitive Questions.](https://onlinelibrary.wiley.com/doi/abs/10.1111/ajps.12205) American Journal of Political Science, Vol. 60, No. 3 (July), pp. 783-802. 
+- Clifford, S., Sheagley, G., & Piston, S. (2021). [Increasing precision without altering treatment effects: Repeated measures designs in survey experiments](https://doi.org/10.1017/S0003055421000241). American Political Science Review, 115(3), 1048-1065.
+- Kane, J. V. (2024). [More than meets the ITT: A guide for anticipating and investigating nonsignificant results in survey experiments.](https://www.cambridge.org/core/journals/journal-of-experimental-political-science/article/more-than-meets-the-itt-a-guide-for-anticipating-and-investigating-nonsignificant-results-in-survey-experiments/C01250EB50598D6328B6065F1DF86BA7) Journal of Experimental Political Science, 1-16.
 - Blair, G., Imai, K., & Zhou, Y. Y. (2015). [Design and Analysis of the Randomized Response Technique.](https://www.tandfonline.com/doi/abs/10.1080/01621459.2015.1050028) Journal of the American Statistical Association, 110(511), 1304-1319.
 - Blair, G., & Imai, K. (2012). [Statistical Analysis of List Experiments.](https://www.cambridge.org/core/journals/political-analysis/article/statistical-analysis-of-list-experiments/6AEE6C9D3AB6DA410D602CB035D5959A) Political Analysis, 20(1), 47-77.
+- Mullinix, K. J., Leeper, T. J., Druckman, J. N., & Freese, J. (2015). [The Generalizability of Survey Experiments.](https://doi.org/10.1017/XPS.2015.19) Journal of Experimental Political Science, 2(2), 109–138. doi:10.1017/XPS.2015.19 
 
 ## Week 13: Meta-Analysis and Integration of Research Findings
 
-### Lecture 23: Texts for discussion (related to survey experiments) (April 14)
+### Lecture 23: Texts for Discussion (Related to Survey Experiments)
 
+- Lecture slides: [Texts for Discussion](https://raw.githack.com/danilofreire/qtm385/main/lectures/lecture-23/23-discussion.html).
 - Druckman, J. N., Gilli, M., Klar, S., & Robison, J. (2015). [Measuring drug and alcohol use among college student‐athletes.](https://onlinelibrary.wiley.com/doi/abs/10.1111/ssqu.12135) Social Science Quarterly, 96(2), 369-380.
 - Blair, G., Imai, K., & Lyall, J. (2014). [Comparing and Combining List and Endorsement Experiments: Evidence from Afghanistan.](https://onlinelibrary.wiley.com/doi/abs/10.1111/ajps.12086) American Journal of Political Science, Vol. 58, No. 4 (October), pp. 1043-1063. 
-- Freire, D., & Skarbek, D. (2023). [Vigilantism and Institutions: Understanding Attitudes Toward Lynching in Brazil.](https://journals.sagepub.com/doi/full/10.1177/20531680)
+- Rosenfeld, B, Imai, K., & Shapiro, J. (2016). [An Empirical Validation Study of Popular Survey Methodologies for Sensitive Questions.](https://onlinelibrary.wiley.com/doi/abs/10.1111/ajps.12205) American Journal of Political Science, 60(3), 783-802.
+- Freire, D., & Skarbek, D. (2023). [Vigilantism and Institutions: Understanding Attitudes Toward Lynching in Brazil.](https://journals.sagepub.com/doi/full/10.1177/20531680221150389) Research & Politics, 10(1), 1-8.
 
-### Lecture 24: Meta-Analysis and Integration of Research Findings (April 16)
+### Lecture 24: Meta-Analysis and Integration of Research Findings
 
-- Lecture slides: Meta-Analysis and Integration of Research Findings.
+- Lecture slides: [Meta-Analysis and Integration of Research Findings.](https://raw.githack.com/danilofreire/qtm385/main/lectures/lecture-24/24-meta-analysis.html)
 - FEDAI: Chapter 11: Integration of Research Findings.
 - Problem Set 10 due.
 
@@ -452,18 +472,18 @@ Weekly suggested readings:
 - Hansen, C., Steinmetz, H., & Block, J. (2022). [How to Conduct a Meta-Analysis in Eight Steps: A Practical Guide.](https://link.springer.com/article/10.1007/s11301-021-00247-4) Management Review Quarterly, 1-19.
 - Moher, D., Shamseer, L., Clarke, M., Ghersi, D., Liberati, A., Petticrew, M., ... & Prisma-P Group. (2015). [Preferred reporting items for systematic review and meta-analysis protocols (PRISMA-P) 2015 statement.](https://link.springer.com/article/10.1186/2046-4053-4-1) Systematic reviews, 4, 1-9.
 
-## Week 14: Final Review and Presentations
+## Week 14: Course Revision and Presentations
 
-### Lecture 25: Final Review (April 21)
+### Lecture 25: Course Revision
 
-- Lecture slides: Final Review.
+- Lecture slides: [Course Revision](https://raw.githack.com/danilofreire/qtm385/main/lectures/lecture-25/25-revision.html).
 
-### Presentations (April 23)
+### Presentations
 
 - Presentations of final projects.
 
-## Week 15: Final Presentations
+## Week 15: Presentations
 
-### Presentations (Continued) (April 28)
+### Presentations (Continued)
 
 - Presentations of final projects.

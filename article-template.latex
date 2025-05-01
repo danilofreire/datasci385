@@ -239,7 +239,7 @@ $if(author)$
 $endif$
 
 % Date
-\date{Spring 2025}
+\date{Summer 2025}
 
 % Tightlist
 \providecommand{\tightlist}{%

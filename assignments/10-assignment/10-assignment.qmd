@@ -1,7 +1,6 @@
 ---
 title: "QTM 385 - Experimental Methods"
 subtitle: Assignment 10
-fig-cap-location: top
 ---
 
 # Instructions
