@@ -23,7 +23,7 @@ highlight-style: arrow
 pdf-engine: pdflatex
 format: 
     pdf:
-      template: article-template.latex
+      template: syllabus-template.latex
       toc: false
       toc-depth: 3
       number-sections: true
@@ -436,7 +436,7 @@ Weekly suggested readings:
 
 - Lecture slides: [Survey Methods for Sensitive Topics](https://raw.githack.com/danilofreire/qtm385/main/lectures/lecture-22/22-survey2.html).
 - Problem Set 09 due.
-- Problem Set 10 assigned.
+- [Problem Set 10 assigned.](https://github.com/danilofreire/qtm385/tree/main/assignments/10-assignment)
 
 Weekly suggested readings:
 
