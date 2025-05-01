@@ -166,11 +166,10 @@ Required readings:
 Suggested readings:
 
 - Humphreys, M. (2021). [I saw your RCT and I have some worries! FAQs](https://macartan.github.io/i/notes/rct_faqs.html). An informal collection of questions and answers about RCTs.
-- Druckman, J. N., Green, D. P., Kuklinski, J. H., & Lupia, A. (2011). [Experiments: An Introduction to Core Concepts](https://www.cambridge.org/core/books/cambridge-handbook-of-experimental-political-science/CCEA698DB2EB4FF270D988F84EA903772). In J. N. Druckman, D. P. Green, J. H. Kuklinski, & A. Lupia (Eds.), Cambridge Handbook of Experimental Political Science (pp. 19-41). Cambridge University Press.
-- Hernán, M. A. (2018). [The C-Word: Scientific Euphemisms Do Not Improve Causal Inference from Observational Data](https://ajph.aphapublications.org/doi/full/10.2105/AJPH.2018.304337). American Journal of Public Health, 108(5), 616-619.
 - Mize, T. D., & Manago, B. (2022). [The Past, Present, and Future of Experimental Methods in the Social Sciences](https://doi.org/10.1016/j.ssresearch.2022.102799). Social Science Research, 108, 1-24. 
+- Jackson, M., & Cox, D. R. (2013). [The Principles of Experimental Design and Their Application in Sociology](https://doi.org/10.1146/annurev-soc-071811-145443). Annual Review of Sociology, 39(1), 27-49.
+- Hernán, M. A. (2018). [The C-Word: Scientific Euphemisms Do Not Improve Causal Inference from Observational Data](https://ajph.aphapublications.org/doi/full/10.2105/AJPH.2018.304337). American Journal of Public Health, 108(5), 616-619.
 - Bothwell, L. E., Greene, J. A., Podolsky, S. H., & Jones, D. S. (2016). [Assessing the Gold Standard — Lessons from the History of RCTs](https://www.nejm.org/doi/full/10.1056/nejmms1604593). New England Journal of Medicine, 374(22), 2175-2181.
-- Bhatt, A. (2010). [Evolution of Clinical Research: A History Before and Beyond James Lind](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3149409/). Perspectives in Clinical Research, 1(1), 6-10.
 - Deaton, A., & Cartwright, N. (2018). [Understanding and Misunderstanding Randomized Controlled Trials](https://www.sciencedirect.com/science/article/pii/S0277953617307359). Social Science & Medicine 210, 2-21.
 
 ## Week 02: The Research Design Process
@@ -200,7 +199,7 @@ Required readings:
 Required readings:
 
 - Lecture slides: [Potential Outcomes Continued and Regression Analysis](https://raw.githack.com/danilofreire/qtm385/main/lectures/lecture-04/04-selection-bias.html).
-- Angrist, J. D., & Pischke, J. S. (2014). [Mastering 'Metrics: The Path from Cause to Effect](https://assets.press.princeton.edu/chapters/s10363.pdf). Princeton University Press. Chapter 01: Randomized Trials. The appendix is worth reading as well.
+- Angrist, J. D., & Pischke, J. S. (2014). [Mastering 'Metrics: The Path from Cause to Effect](https://assets.press.princeton.edu/chapters/s10363.pdf). Princeton University Press. Chapter 01: Randomized Trials. The appendix is also worth reading.
 - [Kahoot Quiz](https://play.kahoot.it/v2/?quizId=8fba8529-e672-4116-8a74-23f78df26cb1&hostId=05eb977d-4f8a-440e-9e45-95212b29d103)
 - Problem Set 01 due.
 - [Problem Set 02 assigned](https://github.com/danilofreire/qtm385/blob/main/assignments/02-assignment).
@@ -208,11 +207,9 @@ Required readings:
 Weekly suggested readings:
 
 - Imbens, G. W., & Rubin, D. B. (2015). [Causal Inference for Statistics, Social, and Biomedical Sciences: An Introduction](https://www.cambridge.org/core/books/causal-inference-for-statistics-social-and-biomedical-sciences/71126BE90C58F1A431FE9B2DD07938AB). Cambridge University Press. Part I - Introduction.
-- Elwert, F., & Winship, C. (2014). [Endogenous Selection Bias: The Problem of Conditioning on a Collider Variable](https://www.jstor.org/stable/24571264). Annual Review of Sociology, 40, 31-53.
-- Hernán, M. A., Hernández-Díaz, S., & Robins, J. M. (2004). [A Structural Approach to Selection Bias](https://journals.lww.com/epidem/fulltext/2004/09000/Causation_of_Bias__The_Episcope.00020.aspx). Epidemiology, 15(5), 615-625.
-- Hernán M.A. & Robins J.M. (2020). [Causal Inference: What If](https://www.hsph.harvard.edu/miguel-hernan/causal-inference-book/). Boca Raton: Chapman & Hall/CRC. Chapters 6-10. Maths-heavy but very insightful.
+- Hernán, M. A., Hernández-Díaz, S., & Robins, J. M. (2004). [A Structural Approach to Selection Bias](https://pubmed.ncbi.nlm.nih.gov/15308962/). Epidemiology, 15(5), 615-625.
+- Hernán M.A. & Robins J.M. (2020). [Causal Inference: What If](https://miguelhernan.org/whatifbook). Boca Raton: Chapman & Hall/CRC. Chapters 6-10. Maths-heavy but very insightful.
 - Morgan, S. L., & Winship, C. (2015). [Counterfactuals and Causal Inference: Methods and Principles for Social Research](https://www.cambridge.org/core/books/counterfactuals-and-causal-inference/5CC81E6DF63C5E5A8B88F79D45E1D1B7). Cambridge University Press. Chapter 02: Counterfactuals and Potential Outcomes Model.
-- Holland, P. W. (1986). [Statistics and Causal Inference](https://www.jstor.org/stable/2289064). Journal of the American Statistical Association, 81(396), 945-960.
 
 ## Week 04: Sampling Distribution and Randomisation Inference 
 
@@ -227,17 +224,18 @@ Weekly suggested readings:
 
 - Lecture slides: [Texts for Discussion](https://raw.githack.com/danilofreire/qtm385/main/lectures/lecture-06/06-discussion.html).
 - Kalla, J. & D. Broockman. 2016. [Campaign Contributions Facilitate Access to Congressional Officials: A Randomized Field Experiment](https://onlinelibrary.wiley.com/doi/full/10.1111/ajps.12180). American Journal of Political Science, 60(3): 545–558
-- Bertrand, M., & Mullainathan, S. (2004). [Are Emily and Greg more employable than Lakisha and Jamal? A field experiment on labor market discrimination](https://www.aeaweb.org/articles?id=10.1257%2F0002828042002561&ref=exo-insight). American Economic Review, 94(4), 991-1013.
-- Chattopadhyay, R., & Duflo, E. (2004). [Women as policy makers: Evidence from a randomized policy experiment in India](https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1468-0262.2004.00539.x). Econometrica, 72(5), 1409-1443. (_if time allows_)
+- Bertrand, M., & Mullainathan, S. (2004). [Are Emily and Greg More Employable than Lakisha and Jamal? A Field Experiment on Labor Market Discrimination](https://www.aeaweb.org/articles?id=10.1257%2F0002828042002561&ref=exo-insight). American Economic Review, 94(4), 991-1013.
+- Chattopadhyay, R., & Duflo, E. (2004). [Women as Policy Makers: Evidence from a Randomized Policy Experiment in India](https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1468-0262.2004.00539.x). Econometrica, 72(5), 1409-1443. (_if time allows_)
 - Problem Set 02 due.
 - [Problem Set 03 assigned](https://github.com/danilofreire/qtm385/tree/main/assignments/03-assignment).
 
 Weekly suggested readings:
 
 - Imbens, G. W., & Rubin, D. B. (2015). [Causal Inference for Statistics, Social, and Biomedical Sciences: An Introduction](https://www.cambridge.org/core/books/causal-inference-for-statistics-social-and-biomedical-sciences/71126BE90C58F1A431FE9B2DD07938AB). Cambridge University Press. Part II - Randomised Experiments.
-- Casella, G., & Berger, R. (2024). [Statistical inference](https://books.google.com.br/books?id=cqUIEQAAQBAJ&lpg=PP1&ots=BSdrJEABLZ&dq=Sampling%20Distributions%2C%20Statistical%20Inference%2C%20and%20Hypothesis%20Testing.&lr&pg=PP1#v=onepage&q&f=false). CRC Press. More advanced but very comprehensive.
-- Berry, C. R., & Fowler, A. (2021). [Leadership or luck? Randomization inference for leader effects in politics, business, and sports](https://www.science.org/doi/full/10.1126/sciadv.abe3404). Science advances, 7(4), eabe3404.
-- Caughey, D., Dafoe, A., Li, X., & Miratrix, L. (2023). [Randomisation inference beyond the sharp null: bounded null hypotheses and quantiles of individual treatment effects](https://academic.oup.com/jrsssb/article-abstract/85/5/1471/7246293?login=false). Journal of the Royal Statistical Society Series B: Statistical Methodology, 85(5), 1471-1491.
+- Athey, S., & Imbens, G. W. (2017). [The Econometrics of Randomized Experiments](https://arxiv.org/pdf/1607.00698). In Handbook of economic field experiments (Vol. 1, pp. 73-140). North-Holland. Read section 4, although the entire chapter is worth reading.
+- Berry, C. R., & Fowler, A. (2021). [Leadership or Luck? Randomization Inference for Leader Effects in Politics, Business, and Sports](https://www.science.org/doi/full/10.1126/sciadv.abe3404). Science Advances, 7(4), eabe3404.
+- Caughey, D., Dafoe, A., Li, X., & Miratrix, L. (2023). [Randomisation Inference Beyond the Sharp Null: Bounded Null Hypotheses and Quantiles of Individual Treatment Effects](https://academic.oup.com/jrsssb/article-abstract/85/5/1471/7246293?login=false). Journal of the Royal Statistical Society Series B: Statistical Methodology, 85(5), 1471-1491.
+- Ritzwoller, D. M., Romano, J. P., & Shaikh, A. M. (2025). [Randomization Inference: Theory and Applications](https://arxiv.org/abs/2406.09521). arXiv preprint arXiv:2406.09521. _Very technical_, recommended for maths or statistics enthusiasts.
 
 ## Week 05: Blocking, Covariate Adjustment, and Statistical Power
 
@@ -257,13 +255,14 @@ Weekly suggested readings:
   
 Weekly suggested readings:
 
-- Bowers, J. [10 Things to Know About Cluster Randomization](https://egap.org/resource/10-things-to-know-about-cluster-randomization/).
 - Blair, G., Coppock, A., & Humphreys, M. (2023). [Research Design in the Social Sciences](https://book.declaredesign.org/library/experimental-causal.html#block-randomized-experiments). Princeton University Press. Sections 18.2 and 18.3.
+- Bowers, J. [10 Things to Know About Cluster Randomization](https://egap.org/resource/10-things-to-know-about-cluster-randomization/).
+- Kaltenbach, H-M. (2021). [Statistical Design and Analysis of Biological Experiments](https://n.ethz.ch/~kahans/doe2021/). Chapter 7: Improving Precision and Power: Blocked Designs. 
 - Imai, K., King, G., & Nall, C. (2009). [The Essential Role of Pair Matching in Cluster-Randomized Experiments, with Application to the Mexican Universal Health Insurance Evaluation](https://projecteuclid.org/journalArticle/Download?urlId=10.1214%2F08-STS274). Statistical Science, 29-53.
 - R Psychology. (2023). [Understanding Statistical Power and Significance Testing](https://rpsychologist.com/d3/nhst/). A comprehensive guide to power analysis in `R`.
 - EGAP: [Power Calculator](https://egap.shinyapps.io/power-app/). An interactive tool to calculate power for your experiments.
-- Pek, J., Hoisington-Shaw, K. J., & Wegener, D. T. (2024). [Uses of uncertain statistical power: Designing future studies, not evaluating completed studies](https://psycnet.apa.org/doi/10.1037/met0000577). Psychological Methods.
-- Li, X., & Ding, P. (2020). [Rerandomization and regression adjustment](https://doi.org/10.1111/rssb.12353). Journal of the Royal Statistical Society Series B: Statistical Methodology, 82(1), 241-268.
+- Pek, J., Hoisington-Shaw, K. J., & Wegener, D. T. (2024). [Uses of Uncertain Statistical Power: Designing Future Studies, Not Evaluating Completed Studies](https://psycnet.apa.org/doi/10.1037/met0000577). Psychological Methods.
+- Li, X., & Ding, P. (2020). [Rerandomization and Regression Adjustment](https://doi.org/10.1111/rssb.12353). Journal of the Royal Statistical Society Series B: Statistical Methodology, 82(1), 241-268.
 
 ## Week 06: Non-Compliance and Attrition
 
@@ -284,11 +283,11 @@ Weekly suggested readings:
 
 Weekly suggested readings:
 
-- Angrist, J. D., Imbens, G. W., & Rubin, D. B. (1996). [Identification of Causal Effects Using Instrumental Variables](https://www.jstor.org/stable/2291629). Journal of the American Statistical Association, 91(434), 444-455.
 - Angrist, J. D., & Pischke, J. S. (2009). [Mostly Harmless Econometrics: An Empiricist's Companion](https://link.springer.com/article/10.1057/be.2009.37). Princeton University Press. Chapter 4: Instrumental Variables Estimation.
-- Baryakova, T.H., Pogostin, B.H., Langer, R. et al. [Overcoming barriers to patient adherence: the case for developing innovative drug delivery systems](https://www.nature.com/articles/s41573-023-00670-0). Nature Reviews Drug Discovery 22, 387–409 (2023).
-- Kane, J. V. (2025). [More than meets the ITT: A guide for anticipating and investigating nonsignificant results in survey experiments](https://doi.org/10.1017/XPS.2024.1). Journal of Experimental Political Science, 12(1), 110–125.
-- Gerber, A. S., Green, D. P., Kaplan, E. H., & Kern, H. L. (2010). [Baseline, placebo, and treatment: Efficient estimation for three-group experiments](https://www.cambridge.org/core/journals/political-analysis/article/abs/baseline-placebo-and-treatment-efficient-estimation-for-threegroup-experiments/F9B246F9645C925BE49E98DFFE600A65). Political Analysis, 18(3), 297-315.
+- Baryakova, T.H., Pogostin, B.H., Langer, R. et al. [Overcoming Barriers to Patient Adherence: The Case for Developing Innovative Drug Delivery Systems](https://www.nature.com/articles/s41573-023-00670-0). Nature Reviews Drug Discovery 22, 387–409 (2023).
+- Kane, J. V. (2025). [More than Meets the ITT: A Guide for Anticipating and Investigating Nonsignificant Results in Survey Experiments](https://doi.org/10.1017/XPS.2024.1). Journal of Experimental Political Science, 12(1), 110–125.
+- Hartman, E., & Huang, M. (2024). [Improving Precision through Design and Analysis in Experiments with Noncompliance](https://doi.org/10.1017/psrm.2023.38). Political Science Research and Methods, 12(3), 557-572.
+- Gerber, A. S., Green, D. P., Kaplan, E. H., & Kern, H. L. (2010). [Baseline, Placebo, and Treatment: Efficient Estimation for Three-Group Experiments](https://www.cambridge.org/core/journals/political-analysis/article/abs/baseline-placebo-and-treatment-efficient-estimation-for-threegroup-experiments/F9B246F9645C925BE49E98DFFE600A65). Political Analysis, 18(3), 297-315.
 
 ## Week 07: Attrition in Experimental Research
 
@@ -306,19 +305,19 @@ Weekly suggested readings:
 
 Required readings:
 
-- Humphreys, M. (2015). [Reflections on the ethics of social experimentation](https://doi.org/10.1515/jgd-2014-0016). Journal of Globalization and Development, 6(1), 87-112.
-- Cronin-Furman, K., & Lake, M. (2018). [Ethics abroad: Fieldwork in fragile and violent contexts](https://doi.org/10.1017/S1049096518000379). PS: Political Science & Politics, 51(3), 607-614.
-- Poverty Action Lab (2022). [Ethical conduct of randomized evaluations](https://www.povertyactionlab.org/resource/ethical-conduct-randomized-evaluations). J-PAL.
+- Humphreys, M. (2015). [Reflections on the Ethics of Social Experimentation](https://doi.org/10.1515/jgd-2014-0016). Journal of Globalization and Development, 6(1), 87-112.
+- Cronin-Furman, K., & Lake, M. (2018). [Ethics Abroad: Fieldwork in Fragile and Violent Contexts](https://doi.org/10.1017/S1049096518000379). PS: Political Science & Politics, 51(3), 607-614.
+- Poverty Action Lab (2022). [Ethical Conduct of Randomized Evaluations](https://www.povertyactionlab.org/resource/ethical-conduct-randomized-evaluations). J-PAL.
 - Problem Set 05 due.
 
 Weekly suggested readings:
 
-- Zhou, H., & Fishbach, A. (2016). [The pitfall of experimenting on the web: How unattended selective attrition leads to surprising (yet false) research conclusions](https://psycnet.apa.org/record/2016-29224-001). Journal of personality and social psychology, 111(4), 493.
-- Coppock, A., Gerber, A. S., Green, D. P., & Kern, H. L. (2017). [Combining double sampling and bounds to address nonignorable missing outcomes in randomized experiments](https://www.cambridge.org/core/journals/political-analysis/article/abs/combining-double-sampling-and-bounds-to-address-nonignorable-missing-outcomes-in-randomized-experiments/76D6DB70466C906123D9842528C9A861). Political Analysis, 25(2), 188-206.
+- Zhou, H., & Fishbach, A. (2016). [The Pitfall of Experimenting on the Web: How Unattended Selective Attrition Leads to Surprising (Yet False) Research Conclusions](https://psycnet.apa.org/record/2016-29224-001). Journal of Personality and Social Psychology, 111(4), 493.
+- Coppock, A., Gerber, A. S., Green, D. P., & Kern, H. L. (2017). [Combining Double Sampling and Bounds to Address Nonignorable Missing Outcomes in Randomized Experiments](https://www.cambridge.org/core/journals/political-analysis/article/abs/combining-double-sampling-and-bounds-to-address-nonignorable-missing-outcomes-in-randomized-experiments/76D6DB70466C906123D9842528C9A861). Political Analysis, 25(2), 188-206.
 - Ghanem, D., Hirshleifer, S., & Ortiz-Becerra, K. (2019). [Testing Attrition Bias in Field Experiments](http://dx.doi.org/10.26085/C38C76). UC Berkeley: Center for Effective Global Action.
-- Pallmann, P., Bedding, A.W., Choodari-Oskooei, B. et al. (2018). [Adaptive designs in clinical trials: why use them, and how to run and report them](https://bmcmedicine.biomedcentral.com/articles/10.1186/s12916-018-1017-7). BMC Med 16(29).
-- Asiedu, E., Dean, E., Karlan, D., & Osei, R. (2021). [Ethics and society review: Ethics reflection as a precondition to research funding](https://doi.org/10.1073/pnas.2117261118). Proceedings of the National Academy of Sciences, 118(52), e2117261118.
-- ASAB Ethical Committee/ABS Animal Care Committee. (2024). [Guidelines for the ethical treatment of nonhuman animals in behavioural research and teaching](https://www.sciencedirect.com/science/article/pii/S0003347223003172). Animal Behaviour, 207, I-XI.
+- Pallmann, P., Bedding, A.W., Choodari-Oskooei, B. et al. (2018). [Adaptive Designs in Clinical Trials: Why Use Them, and How to Run and Report Them](https://bmcmedicine.biomedcentral.com/articles/10.1186/s12916-018-1017-7). BMC Med 16(29).
+- Asiedu, E., Dean, E., Karlan, D., & Osei, R. (2021). [Ethics and Society Review: Ethics Reflection as a Precondition to Research Funding](https://doi.org/10.1073/pnas.2117261118). Proceedings of the National Academy of Sciences, 118(52), e2117261118.
+- ASAB Ethical Committee/ABS Animal Care Committee. (2024). [Guidelines for the Ethical Treatment of Nonhuman Animals in Behavioural Research and Teaching](https://www.sciencedirect.com/science/article/pii/S0003347223003172). Animal Behaviour, 207, I-XI.
 
 ## Week 08: Quarto and Pre-Analysis Plans
 
@@ -354,7 +353,6 @@ Weekly suggested readings:
 - Lecture slides: [Natural and Quasi-Experiments](https://raw.githack.com/danilofreire/qtm385/main/lectures/lecture-15/15-quasi.html).
 - [Kahoot Quiz](https://play.kahoot.it/v2/?quizId=438409d4-2db5-4641-b210-1f9aede6db5b&hostId=05eb977d-4f8a-440e-9e45-95212b29d103).
 - Dunning, T. (2012). [Natural Experiments in the Social Sciences: A Design-Based Approach](https://www.cambridge.org/core/books/natural-experiments-in-the-social-sciences/96A64CBDC2A2952DC1C68AF77DE675AF). Cambridge University Press. Chapter 01: Introduction.
-- Petticrew, M., Cummins, S., Ferrell, C., Findlay, A., Higgins, C., Hoy, C., ... & Sparks, L. (2005). [Natural Experiments: An Underused Tool for Public Health?](https://www.sciencedirect.com/science/article/abs/pii/S0033350605000296). Public Health, 119(9), 751-757.
 
 ### Lecture 16: Interference in Experiments (March 19)
 
@@ -366,11 +364,11 @@ Weekly suggested readings:
 
 Weekly suggested readings:
 
+- Diener, E., Northcott, R., Zyphur, M. J., & West, S. G. (2022). [Beyond Experiments](https://journals.sagepub.com/doi/full/10.1177/17456916211037670). Perspectives on Psychological Science, 17(4), 1101-1119.
 - Dunning, T. (2016). [Transparency, Replication, and Cumulative Learning: What Experiments Alone Cannot Achieve](https://www.annualreviews.org/content/journals/10.1146/annurev-polisci-072516-014127). Annual Review of Political Science, 19(1), 541-563.
-- Banerjee, A. V., & Duflo, E. (2009). [The Experimental Approach to Development Economics](https://www.annualreviews.org/content/journals/10.1146/annurev.economics.050708.143235). Annual Review of Economics 1(1), 151-178.
-- Bonell, C., Fletcher, A., Morton, M., Lorenc, T., & Moore, L. (2012). [Realist Randomised Controlled Trials: A New Approach to Evaluating Complex Public Health Interventions](https://www.sciencedirect.com/science/article/abs/pii/S0277953612006399). Social Science & Medicine, 75(12), 2299-2306.
-- Aronow, P. M., Eckles, D., Samii, C., & Zonszein, S. (2020). [Spillover effects in experimental data](https://arxiv.org/abs/2001.05444). arXiv preprint arXiv:2001.05444.
-- Bowers, Jake, Mark M. Fredrickson, and Costas Panagopoulos (2013). [Reasoning about Interference Between Units: A General Framework](https://www.cambridge.org/core/journals/political-analysis/article/abs/reasoning-about-interference-between-units-a-general-framework/0E2410C1A5666EE5ACA4CBE29AFFFAE7). Political Analysis 21: 97–124.
+- Petticrew, M., Cummins, S., Ferrell, C., Findlay, A., Higgins, C., Hoy, C., ... & Sparks, L. (2005). [Natural Experiments: An Underused Tool for Public Health?](https://www.sciencedirect.com/science/article/abs/pii/S0033350605000296). Public Health, 119(9), 751-757.
+- Grosz, M. P., Ayaita, A., Arslan, R. C., Buecker, S., Ebert, T., Hünermund, P., ... & Rohrer, J. M. (2024). [Natural Experiments: Missed Opportunities for Causal Inference in Psychology](https://journals.sagepub.com/doi/full/10.1177/25152459231218610). Advances in Methods and Practices in Psychological Science, 7(1), 25152459231218610.
+- Aronow, P. M., Eckles, D., Samii, C., & Zonszein, S. (2020). [Spillover Effects in Experimental Data](https://arxiv.org/abs/2001.05444). arXiv preprint arXiv:2001.05444. _Quite technical too_.
 - Imbens, G. (2024). [Interference and Spillovers in Randomized Experiments](https://www.youtube.com/watch?v=i5kyzT_CpwQ) (Video). A short lecture on recent advances and new designs to deal with interference in experiments. A little technical.
 
 ## Week 10: Heterogeneous Treatment Effects
@@ -393,9 +391,9 @@ Weekly suggested readings:
 
 Weekly suggested readings:
 
-- Ding, P., Feller, A., & Miratrix, L. (2016). [Randomization inference for treatment effect variation.](https://academic.oup.com/jrsssb/article/78/3/655/7040906?login=false) Journal of the Royal Statistical Society Series B: Statistical Methodology, 78(3), 655-671.
-- Imai, K., & Ratkovic, M. (2013). [Estimating treatment effect heterogeneity in randomized program evaluation.](https://projecteuclid.org/journals/annals-of-applied-statistics/volume-7/issue-1/Estimating-treatment-effect-heterogeneity-in-randomized-program-evaluation/10.1214/12-AOAS593.full) Annals of Applied Statistics, 7(1), 443-470.
-- Wager, S., & Athey, S. (2018). [Estimation and inference of heterogeneous treatment effects using random forests.](https://www.tandfonline.com/doi/abs/10.1080/01621459.2017.1319839) Journal of the American Statistical Association, 113(523), 1228-1242.
+- Holzmeister, F., Johannesson, M., Böhm, R., Dreber, A., Huber, J., & Kirchler, M. (2024). [Heterogeneity in Effect Size Estimates](https://doi.org/10.1073/pnas.2403490121). Proceedings of the National Academy of Sciences, 121(32), e2403490121.
+- Ding, P., Feller, A., & Miratrix, L. (2016). [Randomization Inference for Treatment Effect Variation.](https://academic.oup.com/jrsssb/article/78/3/655/7040906?login=false) Journal of the Royal Statistical Society Series B: Statistical Methodology, 78(3), 655-671.
+- Wager, S., & Athey, S. (2018). [Estimation and Inference of Heterogeneous Treatment Effects using Random Forests.](https://www.tandfonline.com/doi/abs/10.1080/01621459.2017.1319839) Journal of the American Statistical Association, 113(523), 1228-1242.
 - Susan Athey and Stefan Wager: [Estimating Heterogeneous Treatment Effects in R](https://www.youtube.com/watch?v=YBbnCDRCcAI). A one-hour video on how to use the `grf` package in R to estimate heterogeneous treatment effects.
 - [Generalised Random Forests](https://grf-labs.github.io/grf/) (R package).
 - Coppock, A. (2015). [10 Things to Know about Multiple Comparisons](https://egap.org/resource/10-things-to-know-about-multiple-comparisons/). EGAP Methods Guide.
@@ -419,10 +417,10 @@ Weekly suggested readings:
 
 Weekly suggested readings:
 
-- VanderWeele, T. J. (2016). [Mediation analysis: a practitioner's guide.](https://www.annualreviews.org/content/journals/10.1146/annurev-publhealth-032315-021402) Annual review of public health, 37(1), 17-32.
+- Bullock, J. G., & Green, D. P. (2021). [The Failings of Conventional Mediation Analysis and a Design-Based Alternative](https://doi.org/10.1177/25152459211047227). Advances in Methods and Practices in Psychological Science, 4(4), 25152459211047227.
+- VanderWeele, T. J. (2016). [Mediation Analysis: A Practitioner's Guide.](https://www.annualreviews.org/content/journals/10.1146/annurev-publhealth-032315-021402) Annual Review of Public Health, 37(1), 17-32.
 - Acharya, A., Blackwell, M., & Sen, M. (2018). [Analyzing Causal Mechanisms in Survey Experiments](https://doi.org/10.1017/pan.2018.19). Political Analysis, 26(4), 357–378.
-- MacKinnon, D. P., Fairchild, A. J., & Fritz, M. S. (2007). [Mediation analysis.](https://www.annualreviews.org/content/journals/10.1146/annurev.psych.58.110405.085542) Annu. Rev. Psychol., 58(1), 593-614.
-- Zhao, X., Lynch Jr, J. G., & Chen, Q. (2010). [Reconsidering Baron and Kenny: Myths and truths about mediation analysis.](https://academic.oup.com/jcr/article-abstract/37/2/197/1813998?login=false) Journal of consumer research, 37(2), 197-206.
+- MacKinnon, D. P., Fairchild, A. J., & Fritz, M. S. (2007). [Mediation Analysis.](https://www.annualreviews.org/content/journals/10.1146/annurev.psych.58.110405.085542) Annual Review of Psychology, 58(1), 593-614.
 
 ## Week 12: Survey Experiments
 
@@ -440,14 +438,13 @@ Weekly suggested readings:
 
 Weekly suggested readings:
 
-- Sniderman, P. M. (2018). [Some advances in the design of survey experiments.](https://www.annualreviews.org/content/journals/10.1146/annurev-polisci-042716-115726) Annual Review of Political Science, 21(1), 259-275.
-- Schneider, D., & Harknett, K. (2022). [What’s to like? Facebook as a tool for survey data collection.](https://journals.sagepub.com/doi/full/10.1177/0049124119882477) Sociological Methods & Research, 51(1), 108-140.
-- Rosenfeld, B., Imai, K. & Shapiro, J. (2016). [An Empirical Validation Study of Popular Survey Methodologies for Sensitive Questions.](https://onlinelibrary.wiley.com/doi/abs/10.1111/ajps.12205) American Journal of Political Science, Vol. 60, No. 3 (July), pp. 783-802. 
-- Clifford, S., Sheagley, G., & Piston, S. (2021). [Increasing precision without altering treatment effects: Repeated measures designs in survey experiments](https://doi.org/10.1017/S0003055421000241). American Political Science Review, 115(3), 1048-1065.
-- Kane, J. V. (2024). [More than meets the ITT: A guide for anticipating and investigating nonsignificant results in survey experiments.](https://www.cambridge.org/core/journals/journal-of-experimental-political-science/article/more-than-meets-the-itt-a-guide-for-anticipating-and-investigating-nonsignificant-results-in-survey-experiments/C01250EB50598D6328B6065F1DF86BA7) Journal of Experimental Political Science, 1-16.
+- Sniderman, P. M. (2018). [Some Advances in the Design of Survey Experiments.](https://www.annualreviews.org/content/journals/10.1146/annurev-polisci-042716-115726) Annual Review of Political Science, 21(1), 259-275.
+- Schneider, D., & Harknett, K. (2022). [What’s to Like? Facebook as a Tool for Survey Data Collection.](https://journals.sagepub.com/doi/full/10.1177/0049124119882477) Sociological Methods & Research, 51(1), 108-140.
+- Clifford, S., Sheagley, G., & Piston, S. (2021). [Increasing Precision Without Altering Treatment Effects: Repeated Measures Designs in Survey Experiments](https://doi.org/10.1017/S0003055421000241). American Political Science Review, 115(3), 1048-1065.
+- Kane, J. V. (2024). [More Than Meets the ITT: A Guide for Anticipating and Investigating Nonsignificant Results in Survey Experiments.](https://www.cambridge.org/core/journals/journal-of-experimental-political-science/article/more-than-meets-the-itt-a-guide-for-anticipating-and-investigating-nonsignificant-results-in-survey-experiments/C01250EB50598D6328B6065F1DF86BA7) Journal of Experimental Political Science, 1-16.
 - Blair, G., Imai, K., & Zhou, Y. Y. (2015). [Design and Analysis of the Randomized Response Technique.](https://www.tandfonline.com/doi/abs/10.1080/01621459.2015.1050028) Journal of the American Statistical Association, 110(511), 1304-1319.
 - Blair, G., & Imai, K. (2012). [Statistical Analysis of List Experiments.](https://www.cambridge.org/core/journals/political-analysis/article/statistical-analysis-of-list-experiments/6AEE6C9D3AB6DA410D602CB035D5959A) Political Analysis, 20(1), 47-77.
-- Mullinix, K. J., Leeper, T. J., Druckman, J. N., & Freese, J. (2015). [The Generalizability of Survey Experiments.](https://doi.org/10.1017/XPS.2015.19) Journal of Experimental Political Science, 2(2), 109–138. doi:10.1017/XPS.2015.19 
+- Riambau, G., & Ostwald, K. (2021). [Placebo Statements in List Experiments: Evidence from a Face-to-Face Survey in Singapore](https://doi.org/10.1017/psrm.2020.18). Political Science Research and Methods, 9(1), 172-179.
 
 ## Week 13: Meta-Analysis and Integration of Research Findings
 
