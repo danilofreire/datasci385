@@ -150,7 +150,7 @@ More on the [Tuskegee Syphilis Study](https://en.wikipedia.org/wiki/Tuskegee_Syp
 
 ## The Belmont Report (1979)
 
-:::{style="margin-top: 30px; font-size: 23px;"}
+:::{style="margin-top: 30px; font-size: 22px;"}
 :::{.columns}
 :::{.column width="50%"}
 - The [Belmont Report]{.alert} was written by the National Commission for the Protection of Human Subjects of Biomedical and Behavioral Research
@@ -178,7 +178,7 @@ Full text of the [Belmont Report](https://www.hhs.gov/ohrp/sites/default/files/t
 
 ## Ethical research is good research
 
-:::{style="margin-top: 30px; font-size: 27px;"}
+:::{style="margin-top: 30px; font-size: 30px;"}
 - Ethical considerations are [strongly linked to the quality of research]{.alert}
 - More specifically, ethical practices [reduce attrition]{.alert} and [improve data quality]{.alert}
 - How so? 
@@ -288,9 +288,9 @@ By signing below, you are confirming that:
   - Example: elite interviews
 - But bear in mind that promises of confidentiality from researchers to subjects can be [overridden by court orders]{.alert}
 
-- For example: Boston College and oral history tapes of Northern Ireland's Troubles (https://www.bbc.com/news/uk-northern-ireland-27238797).
+- For example: Boston College and oral history tapes of Northern Ireland's Troubles (<https://www.bbc.com/news/uk-northern-ireland-27238797>).
 
-- What would you do in this situation?
+- [What would you do in this situation?]{.alert}
 :::
 
 :::{.column width="50%"}
@@ -342,7 +342,7 @@ Members of the Irish Republican Army (IRA) in Northern Ireland
 ### Facebook's emotional contagion study
 
 :::{style="margin-top: 30px; font-size: 27px; text-align: center;"}
-![](figures/facebook.png){width=80%}
+![](figures/facebook.png){width=70%}
 
 Source: [Kramer et al. (2014)](https://www.pnas.org/doi/10.1073/pnas.1320040111)
 :::
@@ -358,7 +358,7 @@ Source: [Bursztyn et al. (2021)](https://www.aeaweb.org/articles?id=10.1257/aeri
 
 ## Beneficence: "Do no harm, maximise benefit"
 
-:::{style="margin-top: 30px; font-size: 27px;"}
+:::{style="margin-top: 30px; font-size: 30px;"}
 - Two key points: 
   - [Do no harm]{.alert} (non-maleficence) 
   - [Maximise benefits, minimise risks]{.alert} (beneficence)
@@ -382,13 +382,27 @@ Source: [Yeh et al. (2018)](https://www.bmj.com/content/363/bmj.k5094)
 
 ## Adaptive randomisation
 
-:::{style="margin-top: 30px; font-size: 27px;"}
+:::{style="margin-top: 30px; font-size: 24px;"}
+:::{.columns}
+:::{.column width="50%"}
 - [Adaptive randomisation]{.alert} is a technique that allows researchers to adjust the allocation of participants to different treatment groups based on interim results
 - That is, the [randomisation probabilities]{.alert} can be adjusted during the study, usually to include [more people in the group that is performing better]{.alert}
 - No more 50/50 randomisation!
 - This procedure is quite popular [in clinical trials]{.alert} and can be used to [maximise the benefits]{.alert} of the research
 - But it requires that the [best solution is found quickly]{.alert} and that the [researchers are able to adapt]{.alert} to the new information
 :::
+
+:::{.column width="50%"}
+::::{style="text-align: center; margin-top: -30px;"}
+![](figures/vac-02.png){width=100%}
+![](figures/vac-03.png){width=100%}
+
+Source: [Dr Neil Stone (X)](https://x.com/DrNeilStone)
+:::
+:::
+:::
+:::
+
 
 ## Adaptive randomisation
 ### An example
