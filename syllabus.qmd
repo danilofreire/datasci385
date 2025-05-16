@@ -170,6 +170,7 @@ Suggested readings:
 - Jackson, M., & Cox, D. R. (2013). [The Principles of Experimental Design and Their Application in Sociology](https://doi.org/10.1146/annurev-soc-071811-145443). Annual Review of Sociology, 39(1), 27-49.
 - Hernán, M. A. (2018). [The C-Word: Scientific Euphemisms Do Not Improve Causal Inference from Observational Data](https://ajph.aphapublications.org/doi/full/10.2105/AJPH.2018.304337). American Journal of Public Health, 108(5), 616-619.
 - Bothwell, L. E., Greene, J. A., Podolsky, S. H., & Jones, D. S. (2016). [Assessing the Gold Standard — Lessons from the History of RCTs](https://www.nejm.org/doi/full/10.1056/nejmms1604593). New England Journal of Medicine, 374(22), 2175-2181.
+- de Kadt, D. & Grzysmala-Busse, A. (2025). [Good Description](https://github.com/ddekadt/good_description/tree/main). Working paper.
 - Deaton, A., & Cartwright, N. (2018). [Understanding and Misunderstanding Randomized Controlled Trials](https://www.sciencedirect.com/science/article/pii/S0277953617307359). Social Science & Medicine 210, 2-21.
 
 ## Week 02: The Research Design Process
