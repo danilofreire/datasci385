@@ -286,12 +286,12 @@ Weekly suggested readings:
 ### Lecture 22: Survey Methods for Sensitive Topics
 
 - Lecture slides: [Survey Methods for Sensitive Topics](https://raw.githack.com/danilofreire/qtm385/main/lectures/lecture-22/22-survey2.html).
+- Bursztyn, L., Haaland, I. K., Röver, N., & Roth, C. (2025). [The Social Desirability Atlas](https://www.nber.org/papers/w33920). NBER Working Paper No. 33920.
 - Problem Set 09 due.
 - [Problem Set 10 assigned.](https://github.com/danilofreire/qtm385/tree/main/assignments/10-assignment)
 
 Weekly suggested readings:
 
-- Bursztyn, L., Haaland, I. K., Röver, N., & Roth, C. (2025). [The Social Desirability Atlas](https://www.nber.org/papers/w33920). NBER Working Paper No. 33920.
 - Sniderman, P. M. (2018). [Some Advances in the Design of Survey Experiments.](https://www.annualreviews.org/content/journals/10.1146/annurev-polisci-042716-115726) Annual Review of Political Science, 21(1), 259-275.
 - Schneider, D., & Harknett, K. (2022). [What’s to Like? Facebook as a Tool for Survey Data Collection.](https://journals.sagepub.com/doi/full/10.1177/0049124119882477) Sociological Methods & Research, 51(1), 108-140.
 - Clifford, S., Sheagley, G., & Piston, S. (2021). [Increasing Precision Without Altering Treatment Effects: Repeated Measures Designs in Survey Experiments](https://doi.org/10.1017/S0003055421000241). American Political Science Review, 115(3), 1048-1065.
