@@ -27,7 +27,7 @@ website:
       - href: LICENSE.html
         text: " "
   page-footer: 
-    left: "Copyright 2024, Danilo Freire. The content of this site is licensed under the [MIT License](LICENSE.qmd)." 
+    left: "The content of this site is licensed under the [MIT License](LICENSE.qmd)." 
     right: 
       - icon: github
         href: https://github.com/danilofreire/qtm385
