@@ -316,19 +316,23 @@ Suggested readings:
 
 Suggested readings:
 
-- Borenstein, M., Hedges, L. V., Higgins, J. P., & Rothstein, H. R. (2011). [Introduction to meta-analysis.](https://www.wiley.com/en-us/Introduction+to+Meta+Analysis%2C+2nd+Edition-p-9780470057247) John Wiley & Sons. A whole book dedicated to the topic. A bit technical but very good.
+- Borenstein, M., Hedges, L. V., Higgins, J. P., & Rothstein, H. R. (2011). [Introduction to Meta-analysis.](https://www.wiley.com/en-us/Introduction+to+Meta+Analysis%2C+2nd+Edition-p-9780470057247) John Wiley & Sons. A whole book dedicated to the topic. A bit technical but very good.
 - Harrer, M., Cuijpers, P., Furukawa, T., & Ebert, D. (2021). [Doing Meta-Analysis with R: A Hands-On Guide.](https://doi.org/10.1201/9781003107347) Chapman and Hall/CRC.
 - Hansen, C., Steinmetz, H., & Block, J. (2022). [How to Conduct a Meta-Analysis in Eight Steps: A Practical Guide.](https://link.springer.com/article/10.1007/s11301-021-00247-4) Management Review Quarterly, 1-19.
-- Moher, D., Shamseer, L., Clarke, M., Ghersi, D., Liberati, A., Petticrew, M., ... & Prisma-P Group. (2015). [Preferred Reporting Items for Systematic Review and Meta-Analysis Protocols (PRISMA-P) 2015 Statement.](https://link.springer.com/article/10.1186/2046-4053-4-1) Systematic reviews, 4, 1-9.
+- Moher, D., Shamseer, L., Clarke, M., Ghersi, D., Liberati, A., Petticrew, M., ... & Prisma-P Group. (2015). [Preferred Reporting Items for Systematic Review and Meta-Analysis Protocols (PRISMA-P) 2015 Statement.](https://link.springer.com/article/10.1186/2046-4053-4-1) Systematic Reviews, 4, 1-9.
 
-## Lecture 25: Course Revision (December 1, 2025)
+## Lecture 25: Course Revision (November 24, 2025)
 
 - Lecture slides: [Course Revision](https://raw.githack.com/danilofreire/qtm385/main/lectures/lecture-25/25-revision.html).
 
-## Lecture 26: Presentations (December 3, 2025)
+## Lecture 26: Drop-In Session (December 1, 2025)
+
+- No specific agenda; students can drop in for help with their projects.
+
+## Lecture 27: Presentations (December 3, 2025)
 
 - Presentations of final projects.
 
-## Lecture 27: Final Presentations (December 8, 2025)
+## Lecture 28: Final Presentations (December 8, 2025)
 
 - Final presentations of experimental projects.
