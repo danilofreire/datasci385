@@ -10,28 +10,7 @@ The `_quarto.yml` file contains the configuration for the website, including the
 
 I then built the website with `quarto render` and pushed the changes to the `gh-pages` branch using `git push origin gh-pages`. On GitHub, I went to the `Pages` tab and deployed the website from the `docs` folder in the `gh-pages` branch.
 
-## Building JupyterLite pages with Pyodide
-
-I have created a simple JupyterLite page using Pyodide for this website. The
-idea is that students can run Python code in the browser without needing to
-install Python on their own machines. The page is available at
-<https://danilofreire.github.io/qtm30/jupyter>. The code for the page is
-available below:
-
-```bash
-mkdir -p docs/jupyter
-cp -r jupyter/* docs/jupyter
-cd docs/jupyter
-pip install -r requirements.txt
-jupyter lite build
-mv _output/* ./
-git add ../../docs/jupyter -f
-git commit -m "update JupyterLite page"
-git push
-```
-
-For further information on how to build a website with Quarto, please refer to
-<https://quarto.org/docs/websites/>.
+For further information on how to build a website with Quarto, please refer to <https://quarto.org/docs/websites/>.
 
 If you have any questions, please feel free to [open an issue](https://github.com/danilofreire/qtm385/issues) or [create a pull request](https://github.com/danilofreire/qtm385/pulls).
 
