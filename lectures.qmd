@@ -196,6 +196,7 @@ Suggested readings:
 - Ofosu, G. K., & Posner, D. N. (2023). [Pre-Analysis Plans: An Early Stocktaking](https://doi.org/10.1017/S1537592721000931). Perspectives on Politics, 21(1), 174-190.
 - Rubenson, D. (2021). [Tie My Hands Loosely: Pre-Analysis Plans in Political Science](https://doi.org/10.1017/pls.2021.23). Politics and the Life Sciences, 40(2), 142-151.
 - Coffman, L. C., & Niederle, M. (2015). [Pre-Analysis Plans Have Limited Upside, Especially where Replications Are Feasible](https://www.aeaweb.org/articles?id=10.1257/jep.29.3.81). Journal of Economic Perspectives, 29(3), 81-98.
+- Even-Tov, Omri and Valentine, K. (2025). [The Research Paper Playbook: A PhD Student's Guide to Writing and Presenting](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5379056). 
 
 ## Lecture 15: When Experiments are Not Possible (October 20, 2025)
 
