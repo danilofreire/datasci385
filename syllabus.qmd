@@ -254,6 +254,7 @@ Suggested readings:
 Suggested readings:
 
 - Blair, G., Coppock, A., & Humphreys, M. (2023). [Research Design in the Social Sciences](https://book.declaredesign.org/library/experimental-causal.html#block-randomized-experiments). Princeton University Press. Sections 18.2 and 18.3.
+- Rainey, C. (2025). [Power Rules: Practical Advice for Computing Power  (and Automating with Pilot Data)](https://doi.org/10.31219/osf.io/5am9q_v2). OSF Preprints. Note: This is a useful guide for power calculations without the need for complex maths. Not peer-reviewed yet.
 - Bowers, J. [10 Things to Know About Cluster Randomization](https://egap.org/resource/10-things-to-know-about-cluster-randomization/).
 - Kaltenbach, H-M. (2021). [Statistical Design and Analysis of Biological Experiments](https://n.ethz.ch/~kahans/doe2021/). Chapter 7: Improving Precision and Power: Blocked Designs. 
 - Imai, K., King, G., & Nall, C. (2009). [The Essential Role of Pair Matching in Cluster-Randomized Experiments, with Application to the Mexican Universal Health Insurance Evaluation](https://projecteuclid.org/journalArticle/Download?urlId=10.1214%2F08-STS274). Statistical Science, 29-53.
