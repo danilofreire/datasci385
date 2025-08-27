@@ -5,7 +5,7 @@ author:
   - name: Danilo Freire
     orcid: 0000-0002-4712-6810
     email: danilo.freire@emory.edu
-    affiliations: "Department of Quantitative Theory and Methods <br> Emory University"
+    affiliations: "Department of Data and Decision Sciences <br> Emory University"
 format:
   clean-revealjs:
     self-contained: true
@@ -73,7 +73,7 @@ if (!require("fontawesome", character.only = TRUE)) {
 
 `r fa('globe')` Course website: <https://danilofreire.github.io/qtm385>
 
-All course materials, including lectures, code, discussions, assignments, and project guidelines, are available on our [GitHub repository](https://github.com/danilofreire/qtm350)
+All course materials, including lectures, code, discussions, assignments, and project guidelines, are available on our [GitHub repository](https://github.com/danilofreire/qtm385).
 
 We will use Canvas for course administration, including submitting assignments, accessing grades, and receiving announcements
 
@@ -104,7 +104,7 @@ Please remember to check the course repository regularly for updates and announc
 
 ::: {.column}
 ::: {style="font-size: 28px;"}
-`r fa('chalkboard-user')` Visiting Assistant Professor in the [QTM](https://qtm.emory.edu)
+`r fa('chalkboard-user')` Visiting Assistant Professor in the [Department of Data and Decision Sciences](https://quantitative.emory.edu)
 
 `r fa('graduation-cap')` MA from the Graduate Institute Geneva, PhD from King's College London, Postdoc at Brown University, Senior Lecturer at the University of Lincoln, UK
 
@@ -497,7 +497,7 @@ Guides: <https://danilofreire.github.io/qtm385/guides.html>
 
 ::: {style="font-size: 28px;"}
 - **Syllabus**: Available on our [course repository](https://github.com/danilofreire/qtm385/blob/main/syllabus.pdf) and [website](https://danilofreire.github.io/qtm385/syllabus.html). The course is designed to be self-contained. The syllabus includes links to slides and code we will use in class, along with recommended readings, and problem sets. I will upload slides throughout the term as we progress.
-- **Schedule**: Lectures are on Mondays and Wednesdays from 2:30 to 3:45 pm in the Psychology Building, Room 250
+- **Schedule**: Lectures are on Mondays and Wednesdays from 5:30 to 6:45 pm in the Psychology Building, Room 220
 - **Office Hours**: I'm available to meet you [at any time.]{.alert} Please reach out some time in advance and we can schedule a meeting
 
 - **Materials**:

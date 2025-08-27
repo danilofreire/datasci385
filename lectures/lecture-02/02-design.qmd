@@ -5,7 +5,7 @@ author:
   - name: Danilo Freire
     orcid: 0000-0002-4712-6810
     email: danilo.freire@emory.edu
-    affiliations: Emory University
+    affiliations: Department of Data and Decision Sciences <br> Emory University
 format:
   clean-revealjs:
     self-contained: true

@@ -4,7 +4,7 @@ subtitle: Lecture 17 - Texts for Discussion about Interference and Spillovers
 author:
   - name: Danilo Freire
     email: danilo.freire@emory.edu
-    affiliations: Emory University
+    affiliations: Department of Data and Decision Sciences <br> Emory University
 format:
   clean-revealjs:
     self-contained: true
