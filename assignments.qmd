@@ -14,16 +14,16 @@ You will find the questions in the `assignments` folder on [the course repositor
 
 | Assignment | Topic | Due Date | Link |
 |------------|-------|----------|------|
-| 1          | Theory | xx xxx | [Assignment 01](https://github.com/danilofreire/qtm385/blob/main/assignments/01-assignment) |
-| 2          | Potential Outcomes | xx xxx | [Assignment 02](https://github.com/danilofreire/qtm385/blob/main/assignments/02-assignment) |
-| 3          | Sampling Distributions | xx xxx | [Assignment 03](https://github.com/danilofreire/qtm385/blob/main/assignments/03-assignment) |
-| 4          | RI, Blocking, Clustering, and Power | xx xxx | [Assignment 04](https://github.com/danilofreire/qtm385/blob/main/assignments/04-assignment) |
-| 5          | Non-Compliance | xx xxx | [Assignment 05](https://github.com/danilofreire/qtm385/blob/main/assignments/05-assignment) |
-| 6          | Attrition | xx xxx | [Assignment 06](https://github.com/danilofreire/qtm385/blob/main/assignments/06-assignment) |
-| 7          | Quarto, DeclareDesign, and Natural Experiments | xx xxx | [Assignment 07](https://github.com/danilofreire/qtm385/blob/main/assignments/07-assignment) |
-| 8          | Interference and Spillovers | xx xxx | [Assignment 08](https://github.com/danilofreire/qtm385/blob/main/assignments/08-assignment) |
-| 9          | Heterogeneous Effects | xx xxx | [Assignment 09](https://github.com/danilofreire/qtm385/blob/main/assignments/09-assignment) |
-| 10          | Sensitive Topics | xx xxx | [Assignment 10](https://github.com/danilofreire/qtm385/blob/main/assignments/10-assignment) |
+| 1          | Theory | 10 September | [Assignment 01](https://github.com/danilofreire/qtm385/blob/main/assignments/01-assignment) |
+| 2          | Potential Outcomes | 17 September | [Assignment 02](https://github.com/danilofreire/qtm385/blob/main/assignments/02-assignment) |
+| 3          | Sampling Distributions | 24 September | [Assignment 03](https://github.com/danilofreire/qtm385/blob/main/assignments/03-assignment) |
+| 4          | RI, Blocking, Clustering, and Power | 1 October | [Assignment 04](https://github.com/danilofreire/qtm385/blob/main/assignments/04-assignment) |
+| 5          | Non-Compliance | 8 October | [Assignment 05](https://github.com/danilofreire/qtm385/blob/main/assignments/05-assignment) |
+| 6          | Attrition | 15 October | [Assignment 06](https://github.com/danilofreire/qtm385/blob/main/assignments/06-assignment) |
+| 7          | Quarto, DeclareDesign, and Natural Experiments | 22 October | [Assignment 07](https://github.com/danilofreire/qtm385/blob/main/assignments/07-assignment) |
+| 8          | Interference and Spillovers | 29 October | [Assignment 08](https://github.com/danilofreire/qtm385/blob/main/assignments/08-assignment) |
+| 9          | Heterogeneous Effects | 12 November | [Assignment 09](https://github.com/danilofreire/qtm385/blob/main/assignments/09-assignment) |
+| 10         | Sensitive Topics | 19 November | [Assignment 10](https://github.com/danilofreire/qtm385/blob/main/assignments/10-assignment) |
 
 ## Pre-Analysis Plan
 

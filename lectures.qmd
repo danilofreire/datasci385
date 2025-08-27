@@ -218,8 +218,8 @@ Suggested readings:
 - FEDAI: Chapter 08: Interference between Experimental Units.
 - EGAP: [Spillovers](https://egap.org/resource/10-things-to-know-about-spillovers/).
 - [Kahoot Quiz](https://play.kahoot.it/v2/?quizId=aa1d54d4-1501-4fee-9f91-a21c1bbf962f&hostId=05eb977d-4f8a-440e-9e45-95212b29d103).
-- Problem Set 06 due.
-- [Problem Set 07 assigned.](https://github.com/danilofreire/qtm385/tree/main/assignments/07-assignment)
+- Problem Set 07 due.
+- [Problem Set 08 assigned](https://github.com/danilofreire/qtm385/tree/main/assignments/08-assignment).
 
 Suggested readings:
 
@@ -240,8 +240,7 @@ Suggested readings:
 
 - Lecture slides: [Heterogeneous Treatment Effects](https://raw.githack.com/danilofreire/qtm385/main/lectures/lecture-18/18-hte.html).
 - FEDAI: Chapter 09: Heterogeneous Treatment Effects.
-- Problem Set 07 due.
-- [Problem Set 08 assigned](https://github.com/danilofreire/qtm385/tree/main/assignments/08-assignment).
+- Problem Set 08 due.
 - Pre-Analysis Plan due.
 
 Suggested readings:
@@ -265,7 +264,6 @@ Suggested readings:
 - Lecture slides: [Mediation Analysis](https://raw.githack.com/danilofreire/qtm385/main/lectures/lecture-20/20-mediation.html).
 - FEDAI: Chapter 10: Mediation.
 - [KaHoot Quiz](https://play.kahoot.it/v2/?quizId=e02f1d98-9af7-449f-8a32-dddb6cc94575&hostId=05eb977d-4f8a-440e-9e45-95212b29d103)
-- Problem Set 08 due.
 - [Problem Set 09 assigned.](https://github.com/danilofreire/qtm385/tree/main/assignments/09-assignment)
 
 Suggested readings:
