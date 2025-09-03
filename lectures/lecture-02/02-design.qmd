@@ -39,7 +39,7 @@ editor:
 - All materials, including lectures, code, and assignments, are available online
   - Course website: <https://danilofreire.github.io/qtm385/>
   - GitHub repository: <https://github.com/danilofreire/qtm385>
-- About me: Danilo Freire, VAP in QTM
+- About me: Danilo Freire, VAP in the Department of Data and Decision Sciences
   - Email: <danilo.freire@emory.edu>
   - Office hours: At your convenience, just send me an email first
 - Teaching philosophy: Learning by doing, participation is always welcome, and I'm here to help you out! 😉
