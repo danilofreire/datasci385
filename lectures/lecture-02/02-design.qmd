@@ -783,7 +783,7 @@ Amy Cuddy demonstrating her theory of "power posing". It could never be replicat
 
 ## The MIDA framework
 
-:::{style="margin-top: 30px; font-size: 24px;"}
+:::{style="margin-top: 30px; font-size: 28px;"}
 
 - Finally, we will briefly introduce the [MIDA framework]{.alert}
 - As we have seen, a good research design is a practical plan for research that makes the best use of available resources and produces a credible answer
@@ -796,7 +796,7 @@ Amy Cuddy demonstrating her theory of "power posing". It could never be replicat
 
 ## Introduction to DeclareDesign
 
-:::{style="margin-top: 30px; font-size: 24px;"}
+:::{style="margin-top: 30px; font-size: 28px;"}
 - See <https://declaredesign.org/>
 
 - Regardless of the method, research designs have four components
@@ -814,7 +814,7 @@ Amy Cuddy demonstrating her theory of "power posing". It could never be replicat
 
 ## Model
 
-:::{style="margin-top: 30px; font-size: 24px;"}
+:::{style="margin-top: 30px; font-size: 27px;"}
 - A model of how [we think the world works]{.alert}, including:
   - $T$s and $X$s (treatments or focal causal variables like policy interventions and other background variables)
   - $Y$s (dependent variables)
@@ -831,7 +831,7 @@ Amy Cuddy demonstrating her theory of "power posing". It could never be replicat
 
 ## Inquiry
 
-:::{style="margin-top: 30px; font-size: 24px;"}
+:::{style="margin-top: 30px; font-size: 28px;"}
 - [An answerable question]{.alert} about the model:
 
 - What is the effect of a treatment $T$ on an outcome $Y$ ?
@@ -850,7 +850,7 @@ Amy Cuddy demonstrating her theory of "power posing". It could never be replicat
 
 ## Data
 
-:::{style="margin-top: 30px; font-size: 24px;"}
+:::{style="margin-top: 30px; font-size: 32px;"}
 - [Realise (generate) data on the set of variables]{.alert} (all $X$s, $T$s and $Y$s)
 
 - A function of your model
@@ -862,23 +862,23 @@ Amy Cuddy demonstrating her theory of "power posing". It could never be replicat
 
 ## Answer
 
-:::{style="margin-top: 30px; font-size: 24px;"}
-- Given a realization of the data, generate an answer -- an estimate of the quantity of interest (inquiry)
+:::{style="margin-top: 30px; font-size: 32px;"}
+- Given a realisation of the data, generate an answer -- an estimate of the quantity of interest (inquiry)
 
-- This is your estimator or test:
+- This is your [estimator or test]{.alert}:
   - Difference-in-means
   - $t$-test
   - Regression methods
   - etc.
 
-- Answer is an estimate of the quantity of interest or $p$-value (inquiry/estimand/test)
+- Answer is an [estimate of the quantity of interest or $p$-value]{.alert} (inquiry/estimand/test)
 :::
 
 # Let's see an example: Two-arm trial {background-color="#2d4563"}
 
 ## Two-arm trial
 
-:::{style="margin-top: 30px; font-size: 24px;"}
+:::{style="margin-top: 30px; font-size: 28px;"}
 - [Two-arm trial]{.alert}: A common design in which units are randomly assigned to one of two conditions (treatment and control)
 - [Model]{.alert}: We have a treatment $T$ that we think might affect an outcome $Y$. We have $N$ units, which we can sample in many ways (simple random sampling, stratified sampling, etc.). We can include background variables $X$ that we think might affect $Y$, but let's keep it simple for now
 - [Inquiry]{.alert}: What is the effect of $T$ on $Y$?
