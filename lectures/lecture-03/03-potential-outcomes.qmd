@@ -15,8 +15,6 @@ transition: slide
 transition-speed: default
 scrollable: true
 engine: jupyter
-revealjs-plugins:
-  - multimodal
 editor:
   render-on-save: true
 ---
@@ -66,7 +64,7 @@ editor:
 :::{.columns}
 :::{.column width=50%}
 - The concept of [potential outcomes]{.alert} and how it helps us understand causal inference
-- The [fundamental problem of causal inference]{.alert} 
+- The [fundamental problem of causal inference]{.alert}
 - The [Rubin Causal Model]{.alert}
 - The [Stable Unit Treatment Value Assumption (SUTVA)]{.alert} and its importance in causal inference
 - Why [random assignment]{.alert} removes selection bias and allows us to estimate causal effects
@@ -85,16 +83,16 @@ editor:
 
 ## Imagine you are a health economist...
 
-:::{style="margin-top: 30px; font-size: 24px;"}
+:::{style="margin-top: 30px; font-size: 23px;"}
 - ... and you want to know whether the government should invest in building more hospitals
 - You measure the sample's health status: poor, fair, good, very good, or excellent? (the higher, the better)
 - And you find this:
 
-|              | Hospital | No Hospital | Difference |
-|--------------|----------|-------------|------------|
-| Health status| 3.21     | 3.93        | −0.72∗∗∗   |
-|              | (0.014)  | (0.003)     |            |
-| Observations | 7,774    | 90,049      |            |
+|                 | Hospital | No Hospital | Difference |
+|-----------------|----------|-------------|------------|
+| Health status   | 3.21     | 3.93        | −0.72∗∗∗   |
+|                 | (0.014)  | (0.003)     |            |
+| Observations    | 7,774    | 90,049      |            |
 
 <br>
 
@@ -158,10 +156,10 @@ editor:
 - For any individual, we can only observe [one potential outcome]{.alert}:
 
 $$
-Y_i = 
-\begin{cases} 
+Y_i =
+\begin{cases}
 Y_{0i} & \text{if } T_i = 0 \\
-Y_{1i} & \text{if } T_i = 1 
+Y_{1i} & \text{if } T_i = 1
 \end{cases}
 $$
 
@@ -224,13 +222,13 @@ $$
 :::{style="margin-top: 20px;"}
 :::
 
-**Difference in group means**
+[Difference in group means]{.alert}:
 
 - Average causal effect of program on participants + selection bias
 
 Even in a large sample:
 
-- People will choose to participate in a program when they expect the program to make them better off (i.e., when $Y_{1,i} - Y_{0,i} > 0$).
+- People will choose to participate in a programme when they expect the program to make them better off (i.e., when $Y_{1,i} - Y_{0,i} > 0$).
 
 - The people who choose to participate are likely to be different than those who choose not to... *even in the absence of the program*
 :::
@@ -255,24 +253,22 @@ Even in a large sample:
 
 ## Mathematically speaking...
 
-:::{style="margin-top: 30px; font-size: 22px;"}
-- The [mathematical expectation]{.alert} of $Y_i$ is $E[Y_i]$
-- Equivalent to sample average in an infinite population
-  - Example: probability coin flipped lands heads = 0.5
+:::{style="margin-top: 30px; font-size: 23px;"}
+- The [mathematical expectation]{.alert} of $Y$ is $E[Y]$
+- The theoretical, probability-weighted average of a variable in a population (the "long-run average").
+  - Example: probability a coin flipped lands heads = 0.5
   - A six-sided die rolled = 3.5 (although no side has 3.5 dots)
-  - Equivalent to fraction heads after a (very) large number of flips ("long-run average")
-  - $E[Y_i] = \sum_{i=1}^{N} Y_i/N$
 
 - [Law of large numbers]{.alert}: sample average converges to population average as sample size increases
-  - $E[Y_i] = \lim_{N \to \infty} \sum_{i=1}^{N} Y_i/N$
-  - $E[Y_i] = \lim_{N \to \infty} \bar{Y}$
+  - $\bar{Y} \xrightarrow{p} E[Y]$ as $N \to \infty$
+  - Where $\xrightarrow{p}$ denotes convergence in probability
 - In small samples, average of $Y_i$ might be anything
-- Average of $Y_i$ gets very close to $E[Y_i]$ as number of observations (that we are averaging over) gets large
-- [Bias]{.alert} = difference between expected value of an estimator and the true value of the parameter being estimated
+- Average of $Y_i$ gets very close to $E[Y]$ as number of observations (that we are averaging over) gets large
+- [Bias]{.alert}: difference between expected value of an estimator and the true value of the parameter being estimated
   - $Bias = E[\hat{\theta}] - \theta$
 :::
 
-## The Central Limit Theorem visualised
+## The Law of Large Numbers visualised
 
 :::{style="margin-top: 30px; font-size: 24px;"}
 - Imagine we simulate a uniform distribution of numbers from 0 to 9
@@ -291,7 +287,7 @@ Source: [r/dataisbeautiful](https://www.reddit.com/r/dataisbeautiful/comments/bf
 :::{style="margin-top: 30px; font-size: 24px;"}
 - [Conditional expectation]{.alert} of $Y_i$ given $X_i$ is $E[Y_i|X_i]$
 - The conditional expectation of $Y_i$ given a variable $X_i = x$, is the average of $Y_i$ in an infinite population that has $X_i = x$
-- $E[Y_i|X_i = x] = \sum_{i=1}^{N} Y_i/N$ for all $i$ such that $X_i = x$
+- In a sample, we estimate this with: $\hat{E}[Y_i|X_i = x] = \frac{1}{N_x}\sum_{i: X_i = x} Y_i$
 
 <br>
 
@@ -299,22 +295,51 @@ Source: [r/dataisbeautiful](https://www.reddit.com/r/dataisbeautiful/comments/bf
   - $X_i =1$ if individual $i$ is treated, 0 otherwise
   - $E[Y_i|X_i = 1]$ = average outcome for treated individuals
   - $E[Y_i|X_i = 0]$ = average outcome for untreated individuals
-  - $E[Y_i|X_i = 1] - E[Y_i|X_i = 0]$ = average treatment effect
+  - $E[Y_i|X_i = 1] - E[Y_i|X_i = 0]$ gives us the average treatment effect if treatment is randomly assigned
 :::
 
 ## Selection bias (this time with maths)
 
 :::{style="margin-top: 30px; font-size: 24px;"}
-- When we compare (many) participants to (many) non-participants:
+- When we compare participants to non-participants, the [observed difference]{.alert} in outcomes is a [combination of the true treatment effect and selection bias]{.alert}.
 
 :::{style="margin-top: 20px; text-align: center;"}
 ![](figures/selection-bias.png){width=90%}
 :::
 :::
 
+## Explaining the formula 🏥
+
+:::{style="margin-top: 30px; font-size: 25px;"}
+Let's break down the equation using the hospital example
+
+-   [Observed Difference]{.alert}: This is the simple comparison we can calculate
+    -   It's the average health of hospital-goers ($\mathbb{E}(Y_i|T_i=1) = 3.21$) minus the average health of non-hospital-goers ($\mathbb{E}(Y_i|T_i=0) = 3.93$)
+    -   $3.21 - 3.93 = -0.72$. This naive result suggests hospitals are harmful
+
+-   [Average Treatment Effect on the Treated (ATT)]{.alert}: The true effect of the hospital *on those who went*
+    -   It compares their actual health ($\mathbb{E}(Y_{1i}|T_i=1) = 3.21$) with their [unseen counterfactual]{.alert}: what their health would have been if they hadn't gone ($\mathbb{E}(Y_{0i}|T_i=1)$)
+    -   Since they were already sick, their counterfactual health would have been poor (e.g., hypothetically 2.5)
+    -   **True Effect**: $3.21 - 2.5 = +0.71$. The hospital had a positive effect!
+:::
+
+## Explaining the formula 🏥
+
+:::{style="margin-top: 30px; font-size: 27px;"}
+-   [Selection Bias]{.alert}: The pre-existing difference between the groups
+    -   It compares the counterfactual health of the hospital-goers (2.5) with the health of the non-hospital-goers (3.93)
+    -   **Bias**: $2.5 - 3.93 = -1.43$. The hospital group was much sicker to begin with
+
+-   [Putting It All Together]{.alert}:
+    -   Observed Difference = ATT + Selection Bias
+    -   $-0.72 = (+0.71) + (-1.43)$
+    -   The large negative selection bias completely masked the positive effect of the hospital
+    -   [Randomisation eliminates this bias]{.alert}
+:::
+
 # The experimental ideal 👩🏻‍🔬 {background-color="#2d4563"}
 
-## Two types of counterfactuals
+## Two common (but often flawed) comparisons
 
 :::{style="margin-top: 60px; font-size: 30px;"}
 - Participant vs. Non-Participant comparisons (we just saw why this is problematic)
@@ -325,7 +350,7 @@ Source: [r/dataisbeautiful](https://www.reddit.com/r/dataisbeautiful/comments/bf
 
 <br>
 
-- Extremely strong (read: often completely unreasonable) assumptions are required to make either of these impact evaluation approaches credible
+- [Extremely strong]{.alert} (read: often *completely unreasonable* 😅) assumptions are required to make either of these impact evaluation approaches credible
 :::
 
 ## Pre- vs. post-treatment comparisons
@@ -354,14 +379,14 @@ Source: [r/dataisbeautiful](https://www.reddit.com/r/dataisbeautiful/comments/bf
 
 ## Millennium development villages
 
-:::{style="margin-top: 30px; font-size: 21px;"}
+:::{style="margin-top: 30px; font-size: 23px;"}
 - [Millennium Villages Project (MVP)](https://www.un.org/esa/coordination/Alliance/Earth%20Institute%20-%20The%20Millennium%20Villages%20Project.htm) (2004-2015) was a UN project to demonstrate that integrated, community-led development could improve health, education, and agriculture in rural Africa
-- First evaluation relied on data on pre-treatment and post-treatment outcomes in Bar Sauri, Kenya
+- First evaluation relied on data on pre-treatment and post-treatment outcomes in [Bar Sauri, Kenya](https://en.wikipedia.org/wiki/Sauri_Millennium_Village) and comparison villages in the same region
 - On most outcomes people living in the MDV looked better after a 3-5 years
 - But have a look at this 🤨
 
 :::{style="margin-top: 20px; text-align: center;"}
-![](figures/mvp.png){width=50%}
+![](figures/mvp.png){width=45%}
 :::
 :::
 
@@ -419,23 +444,22 @@ Source: [r/dataisbeautiful](https://www.reddit.com/r/dataisbeautiful/comments/bf
   - Example: The population of all eligible applicants for the program.
 
 - Expected outcomes
-- In the absence of the program, [expected outcomes]{.alert} are equal for both groups
-  - Formally: $E[Y_i | \text{Treatment}] = E[Y_i | \text{Control}]$
+- In the absence of the program, the [expected outcome]{.alert} would be the same for both groups.
+  - Formally: $E[Y_{0,i} | T_i=1] = E[Y_{0,i} | T_i=0]$
 :::
 
 ## Random assignment
 
 :::{style="margin-top: 30px; font-size: 24px;"}
-- Randomisation does not eliminating individual difference (we still can’t identify [individual treatment effects]{.alert}) 
-- On average, individuals in treatment/control are similar (in large samples)
+- Randomisation does not eliminating individual difference (we still can’t identify [individual treatment effects]{.alert})
+- On average, individuals in treatment/control are similar (in large samples)
 - Need [Stable Unit Treatment Value Assumption (SUTVA)]{.alert}: Potential outcomes for any unit do not vary with the treatments assigned to other units (more later)
 - See [Imbens and Rubin (2015)](https://www.cambridge.org/core/books/causal-inference-for-statistics-social-and-biomedical-sciences/71126BE90C58F1A431FE9B2DD07938AB?utm_campaign=shareaholic&utm_medium=copy_link&utm_source=bookmark) for more details
 - When is SUTVA violated?
-  - Spillovers
-  - Non-compliance
-  - Interference
-  - Contamination
-  - Heterogeneous treatment effects
+  - Spillovers (one person's treatment affects another's outcome)
+  - Interference (units' treatments affect each other)
+  - Contamination (control group gets the treatment)
+  - Non-compliance (some people don't follow their assignment)
 - We will see all that in the next lectures! 🤓
 :::
 
@@ -447,8 +471,8 @@ Source: [r/dataisbeautiful](https://www.reddit.com/r/dataisbeautiful/comments/bf
 ### SUTVA: “stable unit” part
 - Individuals are receiving [the same treatment]{.alert} – i.e., the “dose” of the treatment to
 each member of the treatment group is the same
-- If we are estimating the effect of hospitalisation on health status, [we assume everyone is getting the same dose of the hospitalisation treatment]{.alert} 
-- Easy to imagine violations if hospital quality varies across individuals 
+- If we are estimating the effect of hospitalisation on health status, [we assume everyone is getting the same dose of the hospitalisation treatment]{.alert}
+- Easy to imagine violations if hospital quality varies across individuals
 - Have to be careful what we are and are not defining as the treatment
 :::
 
@@ -485,16 +509,16 @@ each member of the treatment group is the same
 
 - [Heterogeneous treatment effects]{.alert}: treatments work differently for different people
   - Sick people benefit more from hospitals (e.g., broken bones, infections)
-  - Healthy people might even be *harmed* by hospitals (e.g., stress, exposure to germs) 
+  - Healthy people might even be *harmed* by hospitals (e.g., stress, exposure to germs)
 
-- Real-World Example:  
-  - Imagine two people:  
-    - *Alejandro* (sick): Hospital fixes his broken leg → improves his health  
-    - *Benicio* (healthy): Hospital visit causes anxiety → slightly worsens his health  
+- Real-World Example:
+  - Imagine two people:
+    - *Alejandro* (sick): Hospital fixes his broken leg → improves his health
+    - *Benicio* (healthy): Hospital visit causes anxiety → slightly worsens his health
 
-- [Takeaway]{.alert}:  
-  - Treatments don’t work the same way for everyone 
-  - If we only study people who *choose* treatment (like sick people), results are misleading.  
+- [Takeaway]{.alert}:
+  - Treatments don’t work the same way for everyone
+  - If we only study people who *choose* treatment (like sick people), results are misleading.
 :::
 
 ## Potential outcomes for hospital visits
@@ -506,10 +530,10 @@ each member of the treatment group is the same
 
 <br>
 
-  | **Person** | **Outcome if Hospitalised** | **Outcome if Not Hospitalised** |  
-  |------------|------------------------------|----------------------------------|  
-  | Sick       | Health improves slightly      | Health stays poor                |  
-  | Healthy    | Health slightly worsens       | Health stays fine                |  
+  | **Person** | **Outcome if Hospitalised** | **Outcome if Not Hospitalised** |
+  |------------|-----------------------------|---------------------------------|
+  | Sick       | Health improves slightly    | Health stays poor               |
+  | Healthy    | Health slightly worsens     | Health stays fine               |
 
 <br>
 
@@ -527,10 +551,10 @@ each member of the treatment group is the same
 - (An absurd) experiment:
   - [What if we randomly assign *everyone* (sick and healthy) to two groups]{.alert}?
     - **Treatment group**: Must go to the hospital
-    - **Control group**: Cannot go to the hospital  
-  - Afterward, compare average health of both groups  
+    - **Control group**: Cannot go to the hospital
+  - Afterward, compare average health of both groups
 
-- Randomisation ensures groups are *similar* on average (similar mix of sick/healthy people)  
+- Randomisation ensures groups are *similar* on average (similar mix of sick/healthy people)
 - Any difference in outcomes is *caused by the hospital*, not pre-existing health
 
 - But [what are we measuring here?]{.alert}
@@ -545,18 +569,18 @@ each member of the treatment group is the same
 :::{style="margin-top: 30px; font-size: 24px;"}
 - [What if we only randomise treatment for people who need it?]{.alert}
 
-- **Better Experiment**:  
-  - Only include *sick people* in the study  
-  - Randomly assign half to hospitals, half to stay home  
+- **Better Experiment**:
+  - Only include *sick people* in the study
+  - Randomly assign half to hospitals, half to stay home
 
-- **Result**:  
-  - Compare health of hospitalised sick people vs. non-hospitalised sick people 
+- **Result**:
+  - Compare health of hospitalised sick people vs. non-hospitalised sick people
 
 - [What are we measuring now? Is this the ideal experiment?]{.alert}
 
 :::{.incremental}
 - The average effect of hospitalisation on sick people
-- **Limitation**:  
+- **Limitation**:
   - Doesn’t tell us how hospitals affect healthy people (but they don’t need hospitals anyway!)
 :::
 :::
@@ -569,17 +593,17 @@ each member of the treatment group is the same
 
 - But what if people ignore their random assignment?
 
-- **Example**:  
-  - Assign 100 sick people to hospitals, but 40 refuse to go 
+- **Example**:
+  - Assign 100 sick people to hospitals, but 40 refuse to go
   - Assign 100 sick people to stay home, but 20 go to hospitals anyway
 
-- **Problem**:  
+- **Problem**:
   - The “treated” group now includes *only those who complied* (e.g., the most severe cases)
-  - The “control” group includes some people who sought treatment 
+  - The “control” group includes some people who sought treatment
 
-- **Result**:  
+- **Result**:
   - The measured effect applies only to *compliers* (e.g., very sick people)
-  - The effect might not apply to everyone 
+  - The effect might not apply to everyone
 
 - This is the [compliance problem]{.alert} in experiments
 :::
@@ -587,21 +611,21 @@ each member of the treatment group is the same
 ## Why compliance matters for real-world policy
 
 :::{style="margin-top: 30px; font-size: 24px;"}
-- Even with random assignment, human behaviour (often) complicates things 
+- Even with random assignment, human behaviour (often) complicates things
 
 - Example: A government offers free training to help people find jobs
   - Random assignment: Some people get training, others do not
   - Reality: Only 30% of the treatment group actually attend the training and get jobs
 
 - [Should we continue the programme?]{.alert}
-  
-- Two ways to analyse:
-  - [Intent-to-Treat (ITT)]{.alert}: Compare *all* people assigned to treatment vs. control (even if they didn’t go).  
-     - Shows the effect of *offering* the program.  
-  - [Treatment-on-the-Treated (TOT)]{.alert}: Compare only those who *actually took* the treatment vs. control
-     - Shows the effect for *compliers* 
 
-- **Takeaway**: Compliance affects how we interpret results and design policies.  
+- Two ways to analyse:
+  - [Intent-to-Treat (ITT)]{.alert}: Compare *all* people assigned to treatment vs. control (even if they didn’t go).
+      - Shows the effect of *offering* the program.
+  - [Treatment-on-the-Treated (TOT)]{.alert}: Compare only those who *actually took* the treatment vs. control
+      - Shows the effect for *compliers*
+
+- **Takeaway**: Compliance affects how we interpret results and design policies.
 :::
 
 ## To sum up...
