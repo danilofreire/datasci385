@@ -224,13 +224,13 @@ $$
 
 [Difference in group means]{.alert}:
 
-- Average causal effect of program on participants + selection bias
+- Average causal effect of programme on participants + selection bias
 
 Even in a large sample:
 
-- People will choose to participate in a programme when they expect the program to make them better off (i.e., when $Y_{1,i} - Y_{0,i} > 0$).
+- People will choose to participate in a programme when they expect the programme to make them better off (i.e., when $Y_{1,i} - Y_{0,i} > 0$).
 
-- The people who choose to participate are likely to be different than those who choose not to... *even in the absence of the program*
+- The people who choose to participate are likely to be different than those who choose not to... *even in the absence of the programme*
 :::
 
 ## Selection bias: example
@@ -350,7 +350,7 @@ Let's break down the equation using the hospital example
 
 <br>
 
-- [Extremely strong]{.alert} (read: often *completely unreasonable* 😅) assumptions are required to make either of these impact evaluation approaches credible
+- [Extremely strong]{.alert} (read: *often unreasonable* 😅) assumptions are required to make either of these impact evaluation approaches credible
 :::
 
 ## Pre- vs. post-treatment comparisons
@@ -432,7 +432,7 @@ Let's break down the equation using the hospital example
 :::{style="margin-top: 30px; font-size: 21px;"}
 
 - Random assignment to treatment
-  - Eligibility for program is determined at random, e.g., via [pulling names out of a hat]{.alert}
+  - Eligibility for programme is determined at random, e.g., via [pulling names out of a hat]{.alert}
 
 - The Law of Large Numbers
   - A [sample average]{.alert} can be brought as close as we like to the [population mean]{.alert} just by enlarging the sample
@@ -441,10 +441,10 @@ Let's break down the equation using the hospital example
 - Treatment and control groups
 - When treatment status is randomly assigned:
   - Treatment and control groups are [random samples]{.alert} of a single population
-  - Example: The population of all eligible applicants for the program.
+  - Example: The population of all eligible applicants for the programme.
 
 - Expected outcomes
-- In the absence of the program, the [expected outcome]{.alert} would be the same for both groups.
+- In the absence of the programme, the [expected outcome]{.alert} would be the same for both groups.
   - Formally: $E[Y_{0,i} | T_i=1] = E[Y_{0,i} | T_i=0]$
 :::
 
@@ -620,12 +620,12 @@ each member of the treatment group is the same
 - [Should we continue the programme?]{.alert}
 
 - Two ways to analyse:
-  - [Intent-to-Treat (ITT)]{.alert}: Compare *all* people assigned to treatment vs. control (even if they didn’t go).
-      - Shows the effect of *offering* the program.
+  - [Intent-to-Treat (ITT)]{.alert}: Compare *all* people assigned to treatment vs. control (even if they didn’t go)
+      - Shows the effect of *offering* the programme
   - [Treatment-on-the-Treated (TOT)]{.alert}: Compare only those who *actually took* the treatment vs. control
       - Shows the effect for *compliers*
 
-- **Takeaway**: Compliance affects how we interpret results and design policies.
+- **Takeaway**: Compliance affects how we interpret results and design policies
 :::
 
 ## To sum up...
