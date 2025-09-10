@@ -44,7 +44,7 @@ editor:
 - [SUTVA]{.alert} (Stable Unit Treatment Value Assumption) 
 - [Violations of SUTVA]{.alert}: spillovers, contamination
 - [External validity]{.alert}: generalising results to other settings
-- [Heterogeneous treatment effects]{.alert}: effects vary across people
+- [Heterogeneous treatment effects]{.alert}: effects vary across units
 - [Compliance problem]{.alert}: people may not follow random assignment
 - [Intent-to-Treat (ITT)]{.alert} analyses address compliance
 :::
@@ -105,7 +105,7 @@ Source: [xkcd](https://xkcd.com/2618/) (who else? 😄)
 :::{style="margin-top: 30px; font-size: 22px;"}
 :::{.columns}
 :::{.column width=50%}
-- [Selection bias]{.alert} occurs when the groups are systematically different, often before the treatment (but not exclusively!)
+- [Selection bias]{.alert} occurs when the groups are systematically different before treatment
 - Using an example from [Angrist and Pischke (2021)](https://www.masteringmetrics.com/), let's say we have a student called [Khuzdar]{.alert} from Kazakhstan, who is considering studying in the US and is worried about the cold weather
 - Should he get health insurance? 🤔
 - Let's imagine that, without insurance, Khuzdar has a potential outcome of $Y_{0,i} = 3$ and, with insurance, $Y_{1,i} = 4$. So the treatment effect is $\tau_i = 1$, that is, he gains 1 "health point" by getting insurance
@@ -252,7 +252,7 @@ Angrist and Pischke (2021), pp. 20 (selected parts)
 :::{.columns}
 :::{.column width=50%}
 - [Understanding the Bias:]{.alert}
-  - In the diagram, both **L** (symptoms) and **U** (immunosuppression) cause patients to drop out (**C**). A variable that has two arrows pointing into it is called a **collider**
+  - In the diagram, both **L** (symptoms) and **U** (immunosuppression) cause patients to drop out (**C**). A variable that has two arrows pointing into it is called a [collider]{.alert}
   - When we analyse only the people who complete the study, we are "conditioning on the collider"
   - This action distorts the estimated relationship between the therapy (**E**) and the outcome (**D**), leading to [selection bias]{.alert}
 - [How can we correct for this?]{.alert}
@@ -342,9 +342,9 @@ Source: [Elwert and Winship (2014)](https://www.annualreviews.org/content/journa
 :::{style="text-align: left;"}
 - If we add the number of job applications **(M)** to our regression model, we are asking:
   - *"What is the effect of training, holding the number of applications constant?"*
-- This blocks the indirect causal path. We are left with an [underestimate of the programme's total effect]{.alert}.
+- This blocks the indirect causal path. We are left with an [underestimate of the programme's total effect]{.alert}
 - Is there a statistical fix? [Not really!]{.alert}
-- The solution is theoretical: [think carefully about your causal model and do not control for mediators]{.alert} when you want to estimate the total effect.
+- The solution is theoretical: [think carefully about your causal model and do not control for mediators]{.alert} when you want to estimate the total effect
 :::
 :::
 :::
@@ -411,7 +411,7 @@ Source: [Elwert and Winship (2014)](https://www.annualreviews.org/content/journa
 :::{.column width=50%}
 - [Example]{.alert}: Suppose you measure the IQ of 50 students
   - You find the average IQ is $\bar{IQ} = 100$
-  - You calculate the [Standard Deviation (SD) = 15]
+  - You calculate the $SD = 15$
 
 - [What does this mean?]{.alert}
   - It describes the spread of IQs *in your sample*
@@ -456,7 +456,7 @@ Source: [Elwert and Winship (2014)](https://www.annualreviews.org/content/journa
 ### The concept: Precision of the treatment effect
 
 - In an experiment, we don't just care about one mean; we care about the [difference in means]{.alert} ($\bar{Y}_{1} - \bar{Y}_{0}$)
-- Just as each sample mean has its own precision (its SE), the *difference between them* also has a measure of precision
+- Just as each sample mean has its own precision (its SE), the [difference between them also has a measure of precision]{.alert}
 - The [standard error of the difference]{.alert} tells us how much we'd expect our estimated treatment effect to vary if we repeated the experiment
 - [Analogy:]{.alert} Imagine trying to measure the height difference between two platforms, but both are a bit wobbly. The uncertainty in your final measurement comes from the wobbliness of *both* platforms
 - The SE of the difference combines the uncertainty from both the treatment and control group means
@@ -678,6 +678,7 @@ head(data2)
 - The same way we do in any regression:
   - $Y_i = \alpha + \beta \text{T}_i + \gamma \text{X}_i + \epsilon_i$
 - [Freedman (2008)](https://doi.org/10.1214/07-AOAS143) demonstrated that pre-treatment covariate adjustment may bias estimates of average treatment effects in small samples
+  - In small samples, covariates and treatment assignment may not be perfectly independent
 - [Lin (2013)](https://doi.org/10.1214/12-AOAS583) proposed that if covariate correlations differ between treatment and control groups, centering and interacting covariates with the treatment variable will balance the groups
 - This adjusts for covariates separately in each group, which is equivalent to including treatment-by-covariate interactions
   - $Y_i = \alpha + \beta \text{T}_i + \gamma \text{W}_i + \delta \text{T}_i \times \text{W}_i + \epsilon_i$
@@ -753,7 +754,7 @@ summary(model_interaction)
 - [Interpretation]{.alert}: The treatment effect for the high-education subgroup (`high_edu = 1`) is 0.097 larger than for the low-education subgroup 
 - Total treatment effect for `high_edu = 1: 5.101 + 0.097 = 5.198` 
 - [Significance]{.alert}: The interaction is not significant (CI: -0.395 to 0.590), meaning there’s no evidence the treatment effect differs between education subgroups
-- This is expected, as we simulated the data to have the same treatment effect for all individuals
+- This is expected, as we simulated the data to have the same treatment effect for all individuals (5)
 - But it is good to know how to do it, right? 😉
 :::
 
