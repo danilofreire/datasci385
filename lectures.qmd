@@ -52,7 +52,7 @@ Required readings:
 
 Required readings:
 
-- Lecture slides: [Potential Outcomes Continued and Regression Analysis](https://raw.githack.com/danilofreire/qtm385/main/lectures/lecture-04/04-selection-bias.html).
+- Lecture slides: [Selection Bias, Variability, and Regression Analysis](https://raw.githack.com/danilofreire/qtm385/main/lectures/lecture-04/04-selection-bias.html).
 - Angrist, J. D., & Pischke, J. S. (2014). [Mastering 'Metrics: The Path from Cause to Effect](https://assets.press.princeton.edu/chapters/s10363.pdf). Princeton University Press. Chapter 01: Randomized Trials. The appendix is also worth reading.
 - [Kahoot Quiz](https://play.kahoot.it/v2/?quizId=8fba8529-e672-4116-8a74-23f78df26cb1&hostId=05eb977d-4f8a-440e-9e45-95212b29d103)
 - Problem Set 01 due.
