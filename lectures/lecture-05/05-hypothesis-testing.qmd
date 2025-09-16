@@ -201,6 +201,8 @@ summary(model)
 ```{r}
 #| echo: true
 #| eval: true
+set.seed(385)
+ 
 data2 <- fabricate(
   N = 1000,
   treat = complete_ra(N, m = 500),
