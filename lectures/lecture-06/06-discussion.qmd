@@ -28,12 +28,12 @@ editor:
 
 :::{style="margin-top: 30px; font-size: 26px;"}
 - Covered adding [covariates]{.alert} with `lm_lin()`, [centring]{.alert}, and sub-group analysis with [interaction terms]{.alert} using `lm_robust`.
-- Compared the [Neyman-Rubin model]{.alert} (ATE) with the Fisherian model (sharp null hypothesis)
+- Compared the [Neyman-Rubin model]{.alert} (ATE) with the [Ronald Fisher model]{.alert} (sharp null hypothesis)
 - Talked about [type I and type II errors]{.alert} 
-- Discussed [sampling variability]{.alert}, how it relates to sampling distributions, and how it affects the interpretation of experimental estimates
-- Introduced [randomisation inference]{.alert} with the `ri2` package, which uses the `randomizr` package
+- Discussed [sampling variability]{.alert} and how it affects the interpretation of experimental estimates
+- Introduced [randomisation inference]{.alert} with the `ri2` package
 - Demonstrated RI with two examples, including one about [female council heads]{.alert} and the other about [runoff elections]{.alert}
-- [Real Experiment]{.alert}: Analysed a paper using linear regression models as well as Randomisation Inference
+- [Real experiment]{.alert}: Analysed a paper using linear regression models as well as randomisation inference
 :::
 
 ## Today, we will...
@@ -50,32 +50,32 @@ editor:
 ## Group Work 🤝
 ### What I have in mind...
 
-:::{style="margin-top: 30px; font-size: 22px;"}
-- Now that you have your groups, I'd like you to start working on your pre-analysis plan
+:::{style="margin-top: 30px; font-size: 23px;"}
+- I'd like you to start working on your pre-analysis plan as soon as possible 🤓
 - I'll give you some time to discuss your ideas and start writing your plan
 - My plan is that you should slowly think about your final project, one step at a time
 - What do you think about having two weeks to write the following:
-  - Submit at most 2 paragraphs summarising an experiment that you want to develop in this course. At minimum, your summary should include a research question, why the question is important, and a rough sketch of how you plan to answer the question.
+  - Submit at most 2 paragraphs summarising an experiment that you want to develop in this course. At minimum, your summary should include a research question, why the question is important, and a rough sketch of how you plan to answer the question
 - In three weeks:
-  - Write a title and abstract for a paper you imagine writing based on your proposed experiment. Assume that your findings align with your theoretical predictions. Remember to establish why the findings matter for your intended audience.
+  - Write a title and abstract for a paper you imagine writing based on your proposed experiment. Assume that your findings align with your theoretical predictions. Remember to establish why the findings matter for your intended audience
 - In four weeks:
-  - Outline your pre-analysis plan. Your outline should include sections on the research question, the experimental design, the data you will collect, and the analysis you will conduct. 
+  - Outline your pre-analysis plan. Your outline should include sections on the research question, the experimental design, the data you will collect, and the analysis you will conduct
 :::
 
 ## What I have in mind...
 
-:::{style="margin-top: 30px; font-size: 21px;"}
+:::{style="margin-top: 30px; font-size: 22px;"}
 - In five weeks:
   - Use `Quarto` and `DeclareDesign` to write your report and simulate your experiment
 - In six weeks:
-  - Revised outline, now including a new section titled "Potential Threats." In this section, diagnose threats and briefly describe potential countermeasures. This new section should discuss false positives, statistical power, demand effects, noncompliance, spillover, and attrition.
+  - Revised outline, now including a new section titled "Potential Threats." In this section, diagnose threats and briefly describe potential countermeasures. This new section should discuss false positives, statistical power, demand effects, noncompliance, spillover, and attrition
 - In seven weeks:
-  - Revised outline, now included a new section on "Heterogeneous Treatment Effects." In this section, discuss how you might explore heterogeneity in treatment effects. This section should include a discussion of how you might use covariates to explore heterogeneity.
+  - Revised outline, now included a new section on "Heterogeneous Treatment Effects." In this section, discuss how you might explore heterogeneity in treatment effects. This section should include a discussion of how you might use covariates to explore heterogeneity
 - In eight weeks:
-  - I will give you feedback on your outline and provide you with the simulated data for your experiment.
-  - You will have two weeks to write your final report.
+  - I will give you feedback on your outline and provide you with the simulated data for your experiment
+  - You will have two weeks to write your final report
 - Last week of class:
-  - You will present your findings to the class.
+  - You will present your findings to the class
 :::
 
 # R packages 📦 {background-color="#2d4563"}
@@ -86,7 +86,7 @@ editor:
 - `fabricatr` is a very useful package!
 - You guys have no idea how much time (and money) it has saved me 😅
 - It is straightforward to use and has _a bunch_ of functions
-- They even have a tutorial showing how to [create common social science data structures](https://declaredesign.org/r/fabricatr/articles/common_social.html)
+- They even have a tutorial showing how to [create common social science data structures](https://declaredesign.org/r/fabricatr/articles/common_social.html) (and more!)
 - So I recommend you to check it out and play around with it 😉
 - The source code is available at <https://github.com/DeclareDesign/fabricatr>
 :::
@@ -104,8 +104,7 @@ voters <- fabricate(
   group_id = rep(1:10, 100),
   ideology = draw_normal_icc(mean = 0, N = N, clusters = group_id, ICC = 0.7),
   ideological_label = draw_ordered(
-    x = ideology,
-    break_labels = c("Very Conservative", "Conservative", "Liberal", "Very Liberal")
+    x = ideology, break_labels = c("Very Conservative", "Conservative", "Liberal", "Very Liberal")
   ),
   Q1_immigration = draw_likert(x = ideology, min = -5, max = 5, bins = 7),
   Q2_defence = draw_likert(x = ideology + 0.5, min = -5, max = 5, bins = 7),
@@ -141,9 +140,19 @@ head(voters)
 #| eval: TRUE
 library(randomizr)
 
+# Simple randomisation
+set.seed(42)
 N <- 100
-Z <- complete_ra(N = N, num_arms = 2)
-head(Z)
+Z <- simple_ra(N = N, prob = 0.5)
+table(Z)
+```
+
+```{r}
+#| echo: TRUE
+#| eval: TRUE
+# Complete randomisation 
+Z <- complete_ra(N = N, m = 50)
+table(Z)
 ```
 :::
 
@@ -151,15 +160,35 @@ head(Z)
 ```{r}
 #| echo: TRUE
 #| eval: TRUE
-# This makes a cluster variable: one unit in cluster "a", two in "b"...
-clust_var <- rep(letters[1:15], times = 1:15)
+# Block randomisation 
+set.seed(42)
+N <- 100
+participants <- data.frame(
+  id = 1:N,
+  gender = sample(c("Female", "Male"), N, replace = TRUE)
+)
 
-Z <- cluster_ra(
-  clusters = clust_var,
-  m_each = c(4, 4, 7),
-  conditions = c("control", "placebo", "treatment")
-  )
-table(Z, clust_var)
+participants$assignment <- block_ra(
+  blocks = participants$gender
+)
+table(participants$assignment, participants$gender)
+```  
+```{r}
+#| echo: TRUE
+#| eval: TRUE
+# Cluster randomisation
+set.seed(42) 
+students <- data.frame(
+  student_id = 1:2000,
+  school_id = rep(1:10, each = 200) 
+  # Each school (10) is a cluster of 200 students
+)
+
+# `m = 5` to assign 5 clusters to the treatment condition
+students$assignment <- cluster_ra(
+  clusters = students$school_id, m = 5
+)
+table(students$assignment)
 ```
 :::
 :::
@@ -301,7 +330,7 @@ plot(ri_out)
 
 ## Overview
 
-:::{style="margin-top: 30px; font-size: 20px;"}
+:::{style="margin-top: 30px; font-size: 18px;"}
 :::{.columns}
 :::{.column width="50%"}
 - [Overview]{.alert}
@@ -318,6 +347,10 @@ plot(ri_out)
 :::
 
 :::{.column width="50%"}
+- [Hypotheses]{.alert}
+  - H1: Senior policy makers will make themselves available more often when they know that prospective attendees are political donors
+  - H2: That knowing about donations matters more when scheduling meetings with higher level officials
+
 - [Why Should We Care?]{.alert}
   - Political Inequality: Campaign donations may amplify the voices of the wealthy
   - Policy Decisions: Understanding who has access informs how policies are made
@@ -327,32 +360,6 @@ plot(ri_out)
   - Campaign finance reform: Findings can inform debates about the necessity of these reforms
   - Regulation: This study helps to clarify the relationship between campaign donations and access to power
   - Supreme Court decisions: Results bear on recent deregulation (at the time)
-:::
-:::
-:::
-
-## Key Debates
-
-:::{style="margin-top: 30px; font-size: 21px;"}
-:::{.columns}
-:::{.column width="50%"}
-- [Key Questions]{.alert}
-  - Are campaign contributions a form of speech, or a form of exchange/contract?
-  - Does the 'marketplace of ideas' become skewed when one side is better funded?
-
-- [Primary Hypotheses]{.alert}
-  - The Core Idea: Revealing that prospective attendees are donors will increase the likelihood of meetings with senior officials.
-  - H1: Senior policy makers will make themselves available more often when they know that prospective attendees are political donors.
-  - H2: That knowing about donations matters more when scheduling meetings with higher level officials.
-:::
-
-:::{.column width="50%"}
-- [The Logic]{.alert}
-  - Access is a Resource: Policymakers' time is a finite and scarce resource
-  - Donors Signal Value: Donations can be perceived as signals of shared interests, expertise, or future support
-  - Potential for Reciprocity: Policymakers may see potential gains in meeting with those who have demonstrated political activity
-  - Conditional effects: The effect may be stronger when meetings are requested with the most senior staff
-  - More senior staff means more important political power
 :::
 :::
 :::
@@ -404,12 +411,6 @@ plot(ri_out)
 ## Results (cont.)
 
 :::{style="margin-top: 30px; font-size: 21px; text-align: center;"}
-![](figures/results-kalla2.png){width=65%}
-:::
-
-## Results (cont.)
-
-:::{style="margin-top: 30px; font-size: 21px; text-align: center;"}
 ![](figures/results-kalla3.png){width=65%}
 :::
 
@@ -456,6 +457,10 @@ plot(ri_out)
 :::
 
 :::{.column width="50%"}
+- [Hypotheses]{.alert}
+  - H1:  White names will receive a significantly higher callback rate
+  - H2:  The racial gap in callback rates will persist even for higher quality resumes
+
 - [Why Should We Care?]{.alert}
   - Racial Inequality: Persistent racial disparities in the labour market
   - Discrimination: Understanding the mechanisms of racial discrimination
@@ -469,36 +474,9 @@ plot(ri_out)
 :::
 :::
 
-## Key Debates
-
-:::{style="margin-top: 30px; font-size: 21px;"}
-:::{.columns}
-:::{.column width="50%"}
-- [Key Questions]{.alert}
-    - Do employers treat observably similar applicants from different races differently?
-    - Is differential treatment due to employer prejudice or statistical discrimination?
-    - Are affirmative action programs effective in eliminating racial bias?
-
-- [Primary Hypotheses]{.alert}
-  - Core Idea:  Resumes with White-sounding names will receive more callbacks than equivalent resumes with African-American-sounding names
-  - H1:  White names will receive a significantly higher callback rate
-  - H2:  The racial gap in callback rates will persist even for higher quality resumes
-
-:::
-
-:::{.column width="50%"}
-- [The Logic]{.alert}
-  - Employer Bias:  Potential for both conscious and unconscious bias in hiring decisions
-  - Statistical Discrimination: Employers may use race as a proxy for unobservable skills or productivity
-  - Testing for Pure Discrimination: The randomised design helps isolate the effect of race, independent of qualifications
-  - Exploring Nuances: Varying resume quality and analysing by job/employer characteristics helps understand the nature of discrimination
-:::
-:::
-:::
-
 ## Intervention
 
-:::{style="margin-top: 30px; font-size: 21px;"}
+:::{style="margin-top: 30px; font-size: 18px;"}
 :::{.columns}
 :::{.column width="50%"}
 - [Experimental Design]{.alert}
@@ -537,13 +515,6 @@ plot(ri_out)
 :::{style="margin-top: 30px; font-size: 21px; text-align: center;"}
 ![](figures/results-bertrand.png){width=75%}
 :::
-
-## Results
-
-:::{style="margin-top: 30px; font-size: 21px; text-align: center;"}
-![](figures/results-bertrand2.png){width=75%}
-:::
-
 
 ## Results
 
@@ -589,7 +560,7 @@ plot(ri_out)
 
 ## Overview
 
-:::{style="margin-top: 30px; font-size: 20px;"}
+:::{style="margin-top: 30px; font-size: 19px;"}
 :::{.columns}
 :::{.column width="50%"}
 - [Overview]{.alert}
@@ -606,6 +577,10 @@ plot(ri_out)
 :::
 
 :::{.column width="50%"}
+- [Hypotheses]{.alert}
+  - H1:  Leaders will invest more in infrastructure that is directly relevant to the needs of their own genders
+  - H2:  The effect of reservation is caused by gender, and not other characteristics of women leaders
+
 - [Why Should We Care?]{.alert}
   - Underrepresentation: Women are underrepresented in political positions worldwide
   - Policy Impact: Understanding if women make different policy choices
@@ -615,32 +590,6 @@ plot(ri_out)
   - Affirmative Action: Findings inform debates about the necessity of affirmative action in politics
   - Decentralisation: Results shed light on the consequences of decentralising power in India
   - Institutions: Helps understand how the design of political institutions can affect outcomes
-:::
-:::
-:::
-
-## Key Debates
-
-:::{style="margin-top: 30px; font-size: 21px;"}
-:::{.columns}
-:::{.column width="50%"}
-- [Key Questions]{.alert}
-    - Do quotas rapidly enhance women's ability to participate in policymaking?
-   - Do women and men have different policy preferences?
-    - Does a politician's gender influence policy decisions?
-
-- [Primary Hypotheses]{.alert}
-  - Core Idea: The reservation of a council seat affects the types of public goods provided
-  - H1:  Leaders will invest more in infrastructure that is directly relevant to the needs of their own genders
-  - H2:  The effect of reservation is caused by gender, and not other characteristics of women leaders
-:::
-
-:::{.column width="50%"}
-- [The Logic]{.alert}
-  - Gendered Preferences: Men and women may prioritise different types of public goods
-  - Political Identity: the identity of a decision maker can influence policy decisions
-  - Representation Matters: Women's representation may lead to different policy outcomes than those chosen by men.
-    -  Affirmative action may be a way of counteracting the preference of those in power
 :::
 :::
 :::
@@ -668,7 +617,7 @@ plot(ri_out)
     - Secondary Outcome: requests and complaints made by different genders
 
 - [The Process]{.alert}
-    - Allocation of GPs for reservation:  This was done based on specific pre-existing lists, and the selection was effectively random.
+    - Allocation of GPs for reservation:  This was done based on specific pre-existing lists, and the selection was effectively random
     - Implementation: A specific set of rules ensures the random selection
     - Data collection: Surveys of the investment made in the villages, and interviews with the village leaders
     - Surveys collected in the summer of 2000 (West Bengal and Rajasthan) and in the end of 2002 (Rajasthan)
@@ -694,6 +643,12 @@ plot(ri_out)
 ![](figures/results-duflo2.png){width=80%}
 :::
 
+## Results (cont.)
+
+:::{style="margin-top: 30px; font-size: 21px; text-align: center;"}
+![](figures/results-duflo3.png){width=80%}
+:::
+
 ## Discussion
 
 :::{style="margin-top: 30px; font-size: 21px;"}
@@ -703,11 +658,11 @@ plot(ri_out)
   - This effect is causal, and not driven by characteristics of women leaders, but their gender per se
  - [Theoretical Contribution]{.alert}
     - Evidence of the effect of identity on the policy making process
-    - Contradicts Downsian models of policy preferences.
-    - Shows the importance of design of political institutions in ensuring the representation of different social groups.
+    - Contradicts Downsian models of policy preferences (which assume that politicians are purely self-interested)
+    - Shows the importance of design of political institutions in ensuring the representation of different social groups
 - [Limitations]{.alert}
   - The study focuses on local governance in India, and may not generalise to other contexts
-  - The model does not consider dynamic effects of the policy.
+  - The model does not consider dynamic effects of the policy
   - Mechanisms: the exact mechanisms of the decision process is still not fully clear
 :::
 
