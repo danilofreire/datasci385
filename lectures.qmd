@@ -88,6 +88,7 @@ Suggested readings:
 - Chattopadhyay, R., & Duflo, E. (2004). [Women as Policy Makers: Evidence from a Randomized Policy Experiment in India](https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1468-0262.2004.00539.x). Econometrica, 72(5), 1409-1443. (_if time allows_)
 - Problem Set 02 due.
 - [Problem Set 03 assigned](https://github.com/danilofreire/qtm385/tree/main/assignments/03-assignment).
+- [Kahoot quiz](https://play.kahoot.it/v2/?quizId=cc81a6a5-96d8-413d-aaca-cd89d70ba9f3&hostId=05eb977d-4f8a-440e-9e45-95212b29d103).
 
 ## Lecture 07: Blocking, Clustering, and Covariate Adjustment (September 22, 2025)
 
@@ -125,7 +126,7 @@ Suggested readings:
 
 - Lecture slides: [Non-Compliance II](https://raw.githack.com/danilofreire/qtm385/main/lectures/lecture-10/10-non-compliance2.html).
 - FEDAI: Chapter 06: Two-Sided Non-Compliance.
-- [KaHoot Quiz](https://play.kahoot.it/v2/?quizId=93cf500f-015b-4dd6-9c11-b3142b06f905&hostId=05eb977d-4f8a-440e-9e45-95212b29d103)
+- [Kahoot Quiz](https://play.kahoot.it/v2/?quizId=93cf500f-015b-4dd6-9c11-b3142b06f905&hostId=05eb977d-4f8a-440e-9e45-95212b29d103)
 - Problem Set 04 due.
 - [Problem Set 05 assigned](https://github.com/danilofreire/qtm385/tree/main/assignments/05-assignment).
 - Two paragraphs (maximum) summarising an experiment that you wish to develop in this course. At a minimum, your summary should include a research question, why the question is important, and a rough outline of how you plan to answer the question. Please send me an email by Wednesday with this information.
@@ -263,7 +264,7 @@ Suggested readings:
 
 - Lecture slides: [Mediation Analysis](https://raw.githack.com/danilofreire/qtm385/main/lectures/lecture-20/20-mediation.html).
 - FEDAI: Chapter 10: Mediation.
-- [KaHoot Quiz](https://play.kahoot.it/v2/?quizId=e02f1d98-9af7-449f-8a32-dddb6cc94575&hostId=05eb977d-4f8a-440e-9e45-95212b29d103)
+- [Kahoot Quiz](https://play.kahoot.it/v2/?quizId=e02f1d98-9af7-449f-8a32-dddb6cc94575&hostId=05eb977d-4f8a-440e-9e45-95212b29d103)
 - [Problem Set 09 assigned.](https://github.com/danilofreire/qtm385/tree/main/assignments/09-assignment)
 
 Suggested readings:
