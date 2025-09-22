@@ -99,26 +99,23 @@ Source: [Data Science Discovery - University of Illinois](https://discovery.cs.i
 # Group project 👥 {background-color="#2d4563"}
 
 ## Group project
-### The list is ready!
 
 :::{style="margin-top: 30px; font-size: 28px;"}
 - Thanks to everyone who emailed me with their group preferences 😉
-- I took all your preferences into account and tried to make the groups as balanced as possible
-- If you didn't email me, I assigned you to a group randomly, as we agreed in class
+- If you haven't emailed me yet, I will soon assign you to a group randomly
 - Group numbers were also randomised to avoid any selection bias! 😂
 - I will also create the groups on Canvas in case you need to refer to it later
-- If you are happy with your group, that's great! If not, please let me know and I will try to accommodate your request 🥳
+- Please let me know if you have already formed a group and want to keep it!
 :::
 
-# Questions? <br> Did I miss anyone? 😅 {background-color="#2d4563"}
+# Questions? {background-color="#2d4563"}
 
 ## Group project 🤝
 ### Next steps (from our previous lecture)
 
 :::{style="margin-top: 30px; font-size: 24px;"}
-- Now that you have your groups, I'd like you to start working on your pre-analysis plan
 - I'll give you some time to discuss your ideas and start writing your plan
-- What do you think about sending this to me [next week]{.alert}?
+- What do you think about sending this to me [next week/in two weeks]{.alert}?
   - Submit at most 2 paragraphs summarising an experiment that you want to develop in this course. At minimum, your summary should include a research question, why the question is important, and a rough sketch of how you plan to answer the question
 - [In two weeks]{.alert}:
   - Write a title and abstract for a paper you imagine writing based on your proposed experiment. Assume that your findings align with your theoretical predictions. Remember to establish why the findings matter for your intended audience
@@ -393,7 +390,8 @@ Source: [DeclareDesign (2018)](https://declaredesign.org/blog/posts/biased-fixed
 
 ## What is clustering?
 
-:::{style="margin-top: 30px; font-size: 28px;"}
+:::{style="margin-top: 30px; font-size: 21px;"}
+:::{.column width="50%"}
 - So far, we have only allocated individual units to treatment and control groups
 - But in some cases, we might want to allocate [whole groups of units to treatment and control conditions]{.alert}
 - Usually, the main reason why we do this is because of [practical issues]{.alert}
@@ -404,52 +402,116 @@ Source: [DeclareDesign (2018)](https://declaredesign.org/blog/posts/biased-fixed
 - Let's see how that impacts our analyses 😉
 :::
 
+:::{.column width="50%"}
+:::{style="text-align: center;"}
+![](figures/clusters.jpeg){width=100%}
+
+Source: [TMG Research](https://tgmresearch.com/cluster-sampling.html)
+:::
+:::
+:::
+:::
+
 ## Clustering
 
-:::{style="margin-top: 30px; font-size: 28px;"}
+:::{style="margin-top: 30px; font-size: 20px;"}
+:::{.column width="50%"}
 - A common example is an [education experiment]{.alert} in which the treatment is randomised at the classroom level
 - All students in a classroom are assigned to either treatment or control together, as it is impossible for students in the same classroom to be assigned to different conditions (different teachers, materials, etc)
 - Assignments do not vary within the classroom
 - Clusters can be localities, like [villages, precincts, or neighbourhoods]{.alert}
 - When clusters are all the same size, the standard difference-in-means estimator we usually employ is unbiased
 - However, caution is needed when clusters have different numbers of units or when there are very few clusters, as the treatment effects could be correlated with cluster size
-- When cluster size is related to potential outcomes, the usual difference-in-means estimator is often biased
+- When [cluster size is related to potential outcomes, the usual difference-in-means estimator is often biased]{.alert}
 :::
+
+:::{.column width="50%"}
+:::{style="text-align: center;"}
+![](figures/clusters02.jpg){width=100%}
+
+Source: [Patterson et al (2022)](https://pubs.asha.org/doi/10.1044/2022_JSLHR-21-00522)
+:::
+:::
+:::
+:::
+
+## Differences between blocking and clustering
+
+:::{style="margin-top: 30px; font-size: 30px;"}
+| Aspect | Blocking | Clustering |
+|--------|----------|------------|
+| **Purpose** | To reduce variance and increase precision | Practical necessity, not choice |
+| **Unit of randomisation** | Individual units | Groups of units |
+| **Grouping** | Based on pre-treatment characteristics | Based on natural or administrative groups |
+| **Analysis** | Compare within blocks, then weight | Must account for within-cluster similarity |
+| **Example** | Block by age, then randomise individuals within age groups | Randomise schools, but measure student outcomes |
+:::
+
 
 ## Intra-cluster correlation
 
-:::{style="margin-top: 30px; font-size: 26px;"}
+:::{style="margin-top: 30px; font-size: 21px;"}
+:::{.column width="50%"}
 - Typically, cluster randomised trials have higher variance than individually randomised trials
 - Why? Because individuals within the same cluster [tend to be more similar to each other than to individuals in different clusters]{.alert}
-- How much higher variance depends on a statistic that can be hard to think about, the [intra-cluster correlation (ICC) of the outcome]{.alert}
-- The total variance can be decomposed into the variance of the cluster means $\sigma^2_{between}$ plus the individual variance of the cluster-demeaned outcome $\sigma^2_{within}$
-- The ICC is a number between 0 and 1 that describes the fraction of the total variance that is due to the between variance: $\rho = \frac{\sigma^2_{between}}{\sigma^2_{between} + \sigma^2_{within}}$
-- Let me explain the ICC in more detail 😊
+- How much higher variance depends on a statistic that can be hard to think about, the [intra-cluster correlation (ICC) of the outcome]{.alert} ($\rho$)
+- Intra-cluster correlation (ICC) measures [how similar individuals are within the same cluster compared to individuals in different clusters]{.alert}
+
+### Key Points:
+- Ranges from 0 to 1
+- Higher values indicate greater similarity within clusters
+- Formula: $\rho = \frac{\sigma^2_{between}}{\sigma^2_{between} + \sigma^2_{within}}$
 :::
 
-## Intra-cluster correlation
+:::{.column width="50%"}
+### Intuitive Explanation:
+- **ICC = 0**: Individuals within clusters are no more similar than individuals from different clusters
+- **ICC = 1**: All individuals within a cluster are identical to each other
+- **Typical values**: Usually between 0.01 and 0.2 in social science research
 
-:::{style="margin-top: 30px; font-size: 25px;"}
-- Think of a cluster as a group of individuals who share some common characteristic or environment
-- For example, all students in a class experience the same teacher and facilities
-- Intra-cluster correlation tells us [how similar individuals within the same group are in relation to individuals from different groups]{.alert}
-- If everyone in a group is very alike (like students who all perform similarly on a test), the correlation is high. If they’re quite different, it’s low
-- $\sigma^2_{between}$: Some classrooms might be better than others because of different teaching styles or resources
-- $\sigma^2_{within}$: Even within the same classroom, students might perform differently due to their own unique abilities or efforts
-- The [_total variance_ is the sum of these two components]{.alert}, and the ICC tells us how much of the total variance is due to differences between classrooms
-- [When ICC is 1, the effective sample size is equal to the number of clusters. When ICC is 0, the effective sample size is equal to the number of individuals.]{.alert}
+### Example:
+Imagine we're studying student test scores in 10 schools with 30 students each:
+
+- Between-school variance ($\sigma^2_{between}$) = 25
+- Within-school variance ($\sigma^2_{within}$) = 75
+- ICC = $\frac{25}{25 + 75} = 0.25$
+
+This means 25% of the total variance in test scores is due to differences between schools, and 75% is due to differences between students within the same school
+:::
 :::
 
 ## Information reduction
 
-:::{style="margin-top: 30px; font-size: 26px;"}
-- The ICC is a measure of how much [information we lose by clustering]{.alert}
-- Imagine an impact evaluation with 10 people, where 5 are assigned to the treatment group and 5 to control
-- In one version of the experiment, the treatment is assigned to individuals
-- In another version, the 5 individuals with black hair and the 5 individuals with some other color of hair are assigned to treatment as a group
-- This design has two clusters: ‘black hair’ and ‘other color’ 
-- In the first version, the randomisation procedure allows for [252 different combinations]{.alert} of people as the treatment and control groups
-- However, in the second version, the randomisation procedure assigns all the black-haired subjects either to treatment or to control, and thus only ever produces [two ways]{.alert} of combining people to estimate an effect
+:::{style="margin-top: 30px; font-size: 20px;"}
+:::{.column width="50%"}
+[Clustering reduces the number of possible treatment assignments]{.alert}, which reduces statistical information
+
+### Example:
+With 10 individuals (5 with black hair, 5 with other colors):
+
+**Individual Randomisation:**
+- Each person can be independently assigned to treatment or control
+- Total possible assignments: $\binom{10}{5} = 252$ different combinations
+
+**Cluster Randomisation:**
+- All individuals in a cluster receive the same treatment
+- Only 2 possible assignments:
+
+  1. Black hair cluster = treatment, Other color cluster = control
+  2. Black hair cluster = control, Other color cluster = treatment
+:::
+
+:::{.column width="50%"}
+- The more clustered our design, the fewer possible randomisation combinations we have, leading to less statistical information for estimating treatment effects
+
+- This is why [clustered designs typically require larger sample sizes]{.alert} to achieve the same statistical power as individually randomised experiments
+
+:::{style="margin-top: 20px; font-size: 22px; text-align: center;"}
+![](figures/power-twomeans_stcolor.svg){width=100%}
+
+Source: [Stata Guide](https://www.stata.com/features/overview/power-and-sample-size/)
+:::
+:::
 :::
 
 ## Information reduction
@@ -466,38 +528,141 @@ Source: [DeclareDesign (2018)](https://declaredesign.org/blog/posts/biased-fixed
 :::
 :::
 
+## Design Effects in Clustered Designs
+
+:::{style="margin-top: 30px; font-size: 21px;"}
+- The design effect (DEFF) quantifies [how much clustering increases the variance of our estimates compared to simple random sampling]{.alert}
+
+$$DEFF = 1 + (m - 1) \times \rho$$
+
+- Where $m$ = average cluster size and $\rho$ = intra-cluster correlation (ICC)
+
+- **DEFF = 1**: Clustering has no effect on variance
+- **DEFF > 1**: Clustering increases variance; need larger sample size
+- **DEFF < 1**: Clustering decreases variance (rare)
+
+### Example:
+- Average cluster size: 30 students per classroom
+- ICC: 0.1 (10% of total variance is between classrooms)
+- DEFF = 1 + (30 - 1) × 0.1 = 3.9
+
+This means we need nearly 4 times as many observations as in a simple random sample to achieve the same statistical power!
+:::
+## Practical Recommendations for Clustered Designs
+
+:::{style="margin-top: 30px; font-size: 24px;"}
+### Before Conducting the Experiment:
+1. [Estimate the ICC]{.alert} from previous studies or pilot data
+2. [Calculate required sample size]{.alert} accounting for design effects
+3. [Plan for adequate cluster numbers]{.alert} (typically need at least 15-20 clusters per arm)
+4. [Consider blocking at higher levels]{.alert} to improve precision
+
+### During Analysis:
+1. [Always use clustered standard errors]{.alert} at the level of randomisation
+2. [Report both clustered and unclustered standard errors]{.alert} for comparison
+3. [Check balance across clusters]{.alert} to ensure randomisation worked
+4. [Consider heterogeneous treatment effects]{.alert} across clusters
+
+### Reporting Results:
+1. [Clearly state the unit of randomisation]{.alert}
+2. [Report the ICC and design effect]{.alert}
+3. [Describe the clustering structure]{.alert} in your methodology
+4. [Explain how standard errors were calculated]{.alert}
+:::
+
 ## What to do about information reduction
 ### Robust clustered standard errors
 
-:::{style="margin-top: 30px; font-size: 28px;"}
-- In many cases of clustered assignment, we will have to make sure that [our estimates of uncertainty about treatment effects reflect information loss]{.alert} 
-- This is because [classical standard error estimators assume that the data are independent]{.alert}, thus biasing downwards our results
-- We would have [type I errors more often than we should]{.alert}, and we would be more likely to conclude that a treatment effect is statistically significant than we should be
-- [But fear not]{.alert}! There is a solution:
-  - [Robust clustered standard errors]{.alert} (RCSE)
-  - Think of it as calculating a variance for each cluster first and then combining these in a way that reflects the true variability across the clusters
+:::{style="margin-top: 30px; font-size: 25px;"}
+When dealing with clustered data, we need to adjust our standard errors to account for the within-cluster correlation
+
+- Classical standard errors assume independent observations
+- In clustered data, observations within clusters are correlated
+- This leads to underestimated standard errors and inflated Type I error rates
+
+- [Solution: Robust Clustered Standard Errors]{.alert}
+  - Adjust standard errors to account for clustering
+  - Use the "sandwich" estimator to correct for within-cluster correlation
+  - More conservative and accurate inference
+  - Implemented in the `estimatr` package in R
 :::
 
-## Blocking and clustering
+## R example
 
-:::{style="margin-top: 30px; font-size: 28px;"}
-- One of the ways which can do to improve clustered designs is to use [blocking]{.alert}
-- Imagine villages nested within discrete regions, or classrooms nested within discrete schools
-- Usually we do have some information about the clusters, so we can use it to reduce variance and add more effective information
-- [But that is something we will see next time]{.alert} 😉
+:::{style="margin-top: 30px; font-size: 22px;"}
+```{r}
+#| echo: true
+#| eval: true
+library(estimatr)
+
+# Simulate clustered data
+set.seed(123)
+n_clusters <- 20
+n_per_cluster <- 30
+total_n <- n_clusters * n_per_cluster
+
+# Create cluster IDs
+cluster_id <- rep(1:n_clusters, each = n_per_cluster)
+
+# Treatment assigned at cluster level
+treatment <- rep(rbinom(n_clusters, 1, 0.5), each = n_per_cluster)
+
+# Create outcome with cluster effects
+cluster_effect <- rnorm(n_clusters, 0, 2)
+individual_effect <- rnorm(total_n, 0, 1)
+outcome <- 2 * treatment + rep(cluster_effect, each = n_per_cluster) + individual_effect
+
+# Create data frame
+data <- data.frame(
+  cluster_id = factor(cluster_id),
+  treatment = treatment,
+  outcome = outcome
+)
+
+# Compare standard errors
+model_naive <- lm_robust(outcome ~ treatment, data = data)
+model_clustered <- lm_robust(outcome ~ treatment, clusters = cluster_id, data = data)
+
+# Display results
+summary(model_naive)
+summary(model_clustered)
+```
+:::
+
+## Combining blocking and clustering
+
+:::{style="margin-top: 30px; font-size: 24px;"}
+We can improve the efficiency of clustered designs by incorporating blocking at a higher level
+
+### Example:
+- [Clusters]{.alert}: Classrooms (level where treatment is assigned)
+- [Blocks]{.alert}: Schools (higher-level grouping)
+- [Blocking strategy]{.alert}: Stratify randomisation by school characteristics
+
+### Benefits:
+- Reduces variance by ensuring similar schools are distributed across treatment arms
+- Improves precision of treatment effect estimates
+- Accounts for both clustering and heterogeneity between blocks
+
+### Implementation:
+1. Group clusters into blocks based on relevant characteristics
+2. Randomise treatment within each block
+3. Analyse using appropriate clustered standard errors
 :::
 
 ## Summary
 
-:::{style="margin-top: 30px; font-size: 28px;"}
-- Blocking is a procedure that involves grouping experimental units based on certain characteristics
-- It helps to ensure that the treatment and control groups are comparable within each block, reducing the potential for confounding variables to affect the results
-- Blocking can also help us ensure that an equal number of people from each group are assigned to the treatment and control groups
-- Blocking reduces variance and increases precision
-- Clustering is a procedure that involves grouping experimental units based on some common characteristic or environment
-- It is useful when it is impossible to randomly assign individuals to treatment and control groups
-- But it is often not the ideal solution:
-  - We are usually _required_ to use clusters, not because we want to
+:::{style="margin-top: 30px; font-size: 24px;"}
+- Blocking is a technique to reduce variance and increase precision by grouping similar units before randomisation
+- It is especially useful in small samples or when important covariates are known
+- We run a series of mini-experiments within blocks, then combine results
+- Results can be estimated using weighted averages of block-specific ATEs
+- Clustering is a practical necessity when randomising groups of units together
+- It requires adjusting standard errors to account for within-cluster correlation
+- The intra-cluster correlation (ICC) quantifies similarity within clusters and impacts variance
+- Design effects from clustering often require larger sample sizes
+- Always use robust clustered standard errors when analysing clustered data
+- Combining blocking and clustering can further improve efficiency in experimental designs
 :::
 
 ## Next time
