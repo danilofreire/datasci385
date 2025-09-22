@@ -9,7 +9,7 @@ format:
   clean-revealjs:
     self-contained: true
     code-overflow: wrap
-    footer: "[Blocking](https://raw.githack.com/danilofreire/qtm385/main/lectures/lecture-07/07-blocking.html)"
+    footer: "[Blocking and Clustering](https://raw.githack.com/danilofreire/qtm385/main/lectures/lecture-07/07-blocking.html)"
 transition: slide
 transition-speed: default
 scrollable: true
@@ -79,9 +79,10 @@ editor:
 :::{.columns}
 :::{.column width="50%"}
 - Understand how to improve our experiments by using blocking 
-- Learn why blocking reduces variance and increases precision 
+- Learn why [blocking reduces variance and increases precision]{.alert}
 - See how blocking solves some practical issues in field experiments
-- Learn about, and how to deal with, clustering and intra-cluster correlation
+- Learn about, and how to deal with, [clustering and intra-cluster correlation]{.alert}
+- Understand why [clustering increases variance and reduces statistical power]{.alert}
 - Differences between blocking and clustering
 - [But first...]{.alert}, let's talk about your group work again!
 :::
@@ -100,10 +101,10 @@ Source: [Data Science Discovery - University of Illinois](https://discovery.cs.i
 
 ## Group project
 
-:::{style="margin-top: 30px; font-size: 28px;"}
-- Thanks to everyone who emailed me with their group preferences 😉
-- If you haven't emailed me yet, I will soon assign you to a group randomly
-- Group numbers were also randomised to avoid any selection bias! 😂
+:::{style="margin-top: 30px; font-size: 29px;"}
+- Thanks to everyone who has emailed me with their group preferences 😉
+- If you haven't emailed me yet, I will soon assign you to a group (randomly)
+- Group numbers have also been randomised to avoid any selection bias! 😂
 - I will also create the groups on Canvas in case you need to refer to it later
 - Please let me know if you have already formed a group and want to keep it!
 :::
@@ -142,7 +143,7 @@ Source: [Data Science Discovery - University of Illinois](https://discovery.cs.i
 :::{style="margin-top: 30px; font-size: 28px;"}
 - Blocking can also help us ensure that an [equal number of people from each group]{.alert} are assigned to the treatment and control groups
 - For instance, imagine an experiment that includes 20 people, 10 men and 10 women
-- If we randomly assign people to the treatment and control groups, we might end up with 15 women in the experiment, or even only men in our sample (although the chance of this happening is low)
+- If we randomly assign people to the treatment and control groups, we might end up with 15 women in the experiment, or even only men in our sample (although the chance of this happening is quite low)
 - [Blocking removes this risk entirely]{.alert}
 - And as groups will be more homogeneous, blocking also [reduces variance]{.alert} and [increases precision]{.alert}
 - ["Block what you can, and randomise what you cannot"]{.alert} (Gerber and Green 2012, p. 110)
@@ -202,7 +203,7 @@ choose(6, 3) * choose(6, 3)
 - Those “extreme” assignments produce estimates that are [in the tails of the sampling distribution]{.alert} 
 - The figure shows the sampling distribution of the difference-in-means estimator under complete random assignment
 - The histogram is shaded according to whether the particular random assignment is permissible under a procedure that blocks on the binary covariate $X$ (`age`, in our case)
-- After many simulations, we see that blocking [rules out by design those assignments that are not perfectly balanced]{.alert}
+- After many simulations, we see that blocking [rules out by design those assignments that are not well balanced]{.alert}
 :::
 
 :::{.column width="50%"}
@@ -248,7 +249,7 @@ Source: [Blair et al (2023)](https://book.declaredesign.org/library/experimental
 
 ## How to define ATE in blocked experiments?
 
-:::{style="margin-top: 30px; font-size: 21px;"}
+:::{style="margin-top: 30px; font-size: 22px;"}
 - If we consider the ATE at the unit level: 
 
 $$ATE = \frac{1}{N}\sum_{i=1}^N y_{i,1} - y_{i,0}$$
@@ -450,9 +451,9 @@ Source: [Patterson et al (2022)](https://pubs.asha.org/doi/10.1044/2022_JSLHR-21
 
 ## Intra-cluster correlation
 
-:::{style="margin-top: 30px; font-size: 21px;"}
+:::{style="margin-top: 30px; font-size: 20px;"}
 :::{.column width="50%"}
-- Typically, cluster randomised trials have higher variance than individually randomised trials
+- Typically, [cluster randomised trials have higher variance than individually randomised trials]{.alert}
 - Why? Because individuals within the same cluster [tend to be more similar to each other than to individuals in different clusters]{.alert}
 - How much higher variance depends on a statistic that can be hard to think about, the [intra-cluster correlation (ICC) of the outcome]{.alert} ($\rho$)
 - Intra-cluster correlation (ICC) measures [how similar individuals are within the same cluster compared to individuals in different clusters]{.alert}
@@ -465,8 +466,8 @@ Source: [Patterson et al (2022)](https://pubs.asha.org/doi/10.1044/2022_JSLHR-21
 
 :::{.column width="50%"}
 ### Intuitive Explanation:
-- **ICC = 0**: Individuals within clusters are no more similar than individuals from different clusters
-- **ICC = 1**: All individuals within a cluster are identical to each other
+- **ICC = 0**: Individuals within clusters are no more similar than individuals from different clusters ($\sigma^2_{between} = 0$)
+- **ICC = 1**: All individuals within a cluster are identical to each other ($\sigma^2_{within} = 0$)
 - **Typical values**: Usually between 0.01 and 0.2 in social science research
 
 ### Example:
@@ -482,7 +483,7 @@ This means 25% of the total variance in test scores is due to differences betwee
 
 ## Information reduction
 
-:::{style="margin-top: 30px; font-size: 20px;"}
+:::{style="margin-top: 30px; font-size: 18px;"}
 :::{.column width="50%"}
 [Clustering reduces the number of possible treatment assignments]{.alert}, which reduces statistical information
 
@@ -490,15 +491,17 @@ This means 25% of the total variance in test scores is due to differences betwee
 With 10 individuals (5 with black hair, 5 with other colors):
 
 **Individual Randomisation:**
+
 - Each person can be independently assigned to treatment or control
 - Total possible assignments: $\binom{10}{5} = 252$ different combinations
 
 **Cluster Randomisation:**
+
 - All individuals in a cluster receive the same treatment
 - Only 2 possible assignments:
 
-  1. Black hair cluster = treatment, Other color cluster = control
-  2. Black hair cluster = control, Other color cluster = treatment
+  1. Black hair cluster = treatment, Other colour cluster = control
+  2. Black hair cluster = control, Other colour cluster = treatment
 :::
 
 :::{.column width="50%"}
@@ -537,7 +540,7 @@ $$DEFF = 1 + (m - 1) \times \rho$$
 
 - Where $m$ = average cluster size and $\rho$ = intra-cluster correlation (ICC)
 
-- **DEFF = 1**: Clustering has no effect on variance
+- **DEFF = 1**: Clustering has no effect on variance ($\rho = 0$)
 - **DEFF > 1**: Clustering increases variance; need larger sample size
 - **DEFF < 1**: Clustering decreases variance (rare)
 
@@ -665,7 +668,7 @@ We can improve the efficiency of clustered designs by incorporating blocking at 
 - Combining blocking and clustering can further improve efficiency in experimental designs
 :::
 
-## Next time
+## Next lecture
 
 :::{style="margin-top: 30px; font-size: 28px;"}
 - We will see more on blocking and clustering in `R` with the `estimatr` package
