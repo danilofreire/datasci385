@@ -292,7 +292,7 @@ ggplot(simulations, aes(estimate)) +
 ### Loss of power due to clustering
 
 :::{style="margin-top: 30px; font-size: 26px;"}
-- The [effective sample size]{.alert} is a concept that helps us understand the impact of clustering on our statistical power ([Kish (1965)](https://www.jstor.org/stable/2091346))
+- The [effective sample size]{.alert} is a concept that helps us understand the impact of clustering on our statistical power ([Kish 1965](https://www.jstor.org/stable/2091346))
 - It is defined as:
 
 $$n_{ESS} = \frac{n}{1 + (k - 1) \cdot ICC}$$
@@ -319,12 +319,12 @@ $$n_{ESS} = \frac{n}{1 + (k - 1) \cdot ICC}$$
 :::{.column width="70%"}
 :::{style="margin-top: 30px;"}
 :::
-- Numerator ($n$): Sample size. If there were no clustering effect ($ICC = 0$), the denominator would be 1, and ESS would equal $n$
-- Denominator: [$1 + (k - 1) * ICC$] - The "variance inflation factor": This is the key part that adjusts for clustering
+- Numerator ($n$): Sample size
+- Denominator: [$1 + (k - 1) * ICC$]. The "variance inflation factor": This is the key part that adjusts for clustering
 - Let's look at it piece by piece:
   - $(k - 1)$: This reflects the fact that the "loss" of information increases with cluster size ($k$). If $k=1$ (clusters of size 1, i.e., no clustering), then $(k-1) = 0$, and the denominator becomes 1. As $k$ increases, more redundancy is introduced, and the denominator increases 
   - $(k - 1) \cdot ICC$: Total amount of correlation effect within a cluster. ICC multiplied by approximately $k-1$ because each individual is correlated with $k-1$ other individuals in their cluster 
-  - Dividing by the denominator: By dividing the nominal sample size $n$ by this variance inflation factor, we indicate that our clustered sample provides less independent information
+  - Dividing by the denominator: By dividing the nominal sample size $n$ by this variance inflation factor, we indicate that our clustered sample provides less independent information. If there were no clustering effect ($ICC = 0$), the denominator would be 1, and ESS would equal $n$
 :::
 :::
 :::
