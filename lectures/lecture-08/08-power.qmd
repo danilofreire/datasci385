@@ -1,6 +1,6 @@
 ---
 title: QTM 385 - Experimental Methods
-subtitle: Lecture 08 - Blocking and Clustering (cont.), and Statistical Power
+subtitle: Lecture 08 - Blocking, Clustering, and Statistical Power
 author:
   - name: Danilo Freire
     email: danilo.freire@emory.edu
@@ -54,7 +54,7 @@ Source: [Bobbit (2020)](https://www.statology.org/blocking-statistics/)
 :::{.columns}
 :::{.column width="50%"}
 - **Clustering** involves assigning [whole groups of units to treatment and control]{.alert}, often due to practical constraints
-- Common in experiments where individual randomisation is impossible (e.g., classrooms, villages)
+- Common in experiments where [individual randomisation is impossible]{.alert} (e.g., classrooms, villages)
 - Clustering introduces [intra-cluster correlation (ICC)]{.alert}, which measures how similar individuals within the same cluster are
 - Challenges:
   - [Higher variance]{.alert} compared to individual randomisation
@@ -86,8 +86,8 @@ Source: [Zhai and Gutman (2018)](https://dcricollab.dcri.duke.edu/sites/NIHKR/KR
 ## Community gardening programme
 ### Declare Model
 
-:::{style="margin-top: 30px; font-size: 22px;"}
-- Simulating our experiment using `DeclareDesign`:
+:::{style="margin-top: 30px; font-size: 20px;"}
+- Simulating our experiment using `DeclareDesign`. First, we use [declare_model()](https://declaredesign.org/r/declaredesign/reference/declare_model.html) to specify our data-generating process
 
 ```{r}
 #| echo: true
@@ -127,6 +127,8 @@ model_blocks <- declare_model(
 ### Declare Inquiry
 
 :::{style="margin-top: 30px; font-size: 26px;"}
+
+- Next, we use [declare_inquiry()](https://declaredesign.org/r/declaredesign/reference/declare_inquiry.html) to specify our estimand of interest
 ```{r}
 #| echo: true
 #| eval: true
@@ -141,6 +143,7 @@ inquiry_blocks <- declare_inquiry(ATE = mean(social_cohesion_Z_1 - social_cohesi
 ### Declare Assignment
 
 :::{style="margin-top: 30px; font-size: 26px;"}
+- Now, we use [declare_assignment()](https://declaredesign.org/r/declaredesign/reference/declare_assignment.html) to specify our random assignment mechanism
 ```{r}
 #| echo: true
 #| eval: true
@@ -155,6 +158,8 @@ assignment_blocks  <- declare_assignment(Z = block_ra(blocks = blocks))
 ### Declare Measurement
 
 :::{style="margin-top: 30px; font-size: 24px;"}
+
+- Here we use [declare_measurement()](https://declaredesign.org/r/declaredesign/reference/declare_measurement.html) to specify how we measure our outcomes
 ```{r}
 #| echo: true
 #| eval: true
@@ -168,6 +173,8 @@ measurement_blocks <- declare_measurement(social_cohesion = reveal_outcomes(soci
 ### Declare Estimator
 
 :::{style="margin-top: 30px; font-size: 26px;"}
+
+- Finally, we use [declare_estimator()](https://declaredesign.org/r/declaredesign/reference/declare_estimator.html) to specify our estimation strategy (how we estimate the treatment effect)
 ```{r}
 #| echo: true
 #| eval: true
@@ -192,6 +199,8 @@ design_blocks <- model_blocks + inquiry_blocks +
 ### Model without blocking
 
 :::{style="margin-top: 30px; font-size: 26px;"}
+
+- We just reuse the same model and inquiry for a fair comparison, but now we do not block in the assignment step
 ```{r}
 #| echo: true
 #| eval: true
@@ -211,6 +220,9 @@ design_no_blocks <- model_no_blocks + inquiry_no_blocks +
 ### Simulate and compare
 
 :::{style="margin-top: 30px; font-size: 26px;"}
+
+- `simulate_design()` allows us to simulate multiple designs and compare their performance
+- We will simulate both designs (with and without blocking) 1000 times each and compare the distribution of estimated treatment effects
 ```{r}
 #| echo: true
 #| eval: true
@@ -320,10 +332,10 @@ $$n_{ESS} = \frac{n}{1 + (k - 1) \cdot ICC}$$
 :::{style="margin-top: 30px;"}
 :::
 - Numerator ($n$): Sample size
-- Denominator: [$1 + (k - 1) * ICC$]. The "variance inflation factor": This is the key part that adjusts for clustering
+- Denominator: [$1 + (k - 1) * ICC$]. The [variance inflation factor]{.alert}: This is the key part that adjusts for clustering
 - Let's look at it piece by piece:
   - $(k - 1)$: This reflects the fact that the "loss" of information increases with cluster size ($k$). If $k=1$ (clusters of size 1, i.e., no clustering), then $(k-1) = 0$, and the denominator becomes 1. As $k$ increases, more redundancy is introduced, and the denominator increases 
-  - $(k - 1) \cdot ICC$: Total amount of correlation effect within a cluster. ICC multiplied by approximately $k-1$ because each individual is correlated with $k-1$ other individuals in their cluster 
+  - $(k - 1) \cdot ICC$: Total amount of correlation effect within a cluster. ICC multiplied by $k-1$ because each individual is correlated with $k-1$ other individuals in their cluster 
   - Dividing by the denominator: By dividing the nominal sample size $n$ by this variance inflation factor, we indicate that our clustered sample provides less independent information. If there were no clustering effect ($ICC = 0$), the denominator would be 1, and ESS would equal $n$
 :::
 :::
