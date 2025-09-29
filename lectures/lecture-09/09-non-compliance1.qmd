@@ -401,22 +401,29 @@ Source: [Blackwell (2021)](https://mattblackwell.github.io/gov2003-f21-site/file
 ```{r}
 #| echo: true
 #| eval: true
-# Load the dataset
+# Load the raw dataset from the Gerber & Green (2012) experiment
 data1 <- read.csv("canvassing.csv", head=TRUE, sep=",")
+
+# Inspect the variable names and dimensions of the full dataset
 colnames(data1)
 dim(data1)
 
-# Select one-person households that were either pure controls or canvass only
+# Create a filter 'sel' to isolate a clean comparison group. We select only
+# single-person households (persons==1) that were assigned to either the 
+# canvassing-only group (onetreat==1 & mailings==0 & phongotv==0) or the pure control group.
 sel <-  data1$onetreat==1 & data1$mailings==0 & data1$phongotv==0 & data1$persons==1
 
-# Verify the number of observations
+# Verify the number of observations that meet the criteria
 table(sel)
+
+# Create a new, smaller dataframe 'data2' using the filter
 data2 <- data1[sel,]
 
-# Rename variables
-data2$VOTED    <- data2$v98
-data2$ASSIGNED <- data2$persngrp
-data2$TREATED  <- data2$cntany
+# Rename cryptic variables to be explicit for the causal analysis.
+# This aligns the data with the potential outcomes notation.
+data2$VOTED    <- data2$v98      # Y: The outcome variable (Voted in '98 election)
+data2$ASSIGNED <- data2$persngrp # Z: The treatment assignment (Intent-to-treat)
+data2$TREATED  <- data2$cntany   # D: The actual treatment status (Successfully contacted)
 ```
 :::
 
