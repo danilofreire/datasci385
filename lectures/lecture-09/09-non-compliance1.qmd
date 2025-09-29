@@ -27,12 +27,10 @@ editor:
 ## Group work 
 ### This week's task
 
-:::{style="margin-top: 30px; font-size: 28px;"}
+:::{style="margin-top: 30px; font-size: 32px;"}
 
-- Please send me an email (<danilo.freire@emory.edu>) by Wednesday with the following content:
+- Please send me an email (<danilo.freire@emory.edu>) by Friday with the following content:
   - Two paragraphs (maximum) summarising an experiment that you wish to develop in this course. At a minimum, your summary should include a research question, why the question is important, and a rough outline of how you plan to answer the question.
-
-- We’ll be working on a little bit of the task each week during class, and I’ll be posting the week’s assignments on the website. It will be fun! 😊
 :::
 
 # Brief recap 📚 {background-color="#2d4563"}
@@ -206,7 +204,7 @@ Source: [Spotify R&D Engineering (2023)](https://engineering.atspotify.com/2023/
 - The benefit of IV is that it allows us to [recover the true effect of the programme]{.alert} instead of only the effect of being offered the programme
 - The downside is that [IV does not allow us to recover the true ATE]{.alert} in the whole population
 - This is because it only measures the effect of the programme on the [compliers]{.alert}, that is, those who took the treatment when it was assigned to them
-- This is the best approach 👍
+- [This is the best approach]{.alert} 👍
 - But first, some definitions and concepts... 🤓
 :::
 
@@ -343,7 +341,7 @@ $$ITT_{Y} = E[ITT_{Y}] = E[Y_i(z = 1, d(1))] - E[Y_i(z = 0, d(0))]$$
 ## Complier average causal effect (CACE)
 ### The effect of the treatment on the compliers
 
-:::{style="margin-top: 30px; font-size: 22px;"}
+:::{style="margin-top: 30px; font-size: 25px;"}
 - As we cannot correctly estimate the ATE with non-compliance, we focus on the [complier average causal effect (CACE)]{.alert}
 - CACE tries to answer this question: "[For those individuals who actually heard the message, what is the effect of the message on their likelihood of voting?]{.alert}"
 - Formally, the CACE is defined as:
@@ -385,7 +383,7 @@ Source: [Blackwell (2021)](https://mattblackwell.github.io/gov2003-f21-site/file
 
 ## Estimating the regressions
 
-:::{style="margin-top: 30px; font-size: 26px;"}
+:::{style="margin-top: 30px; font-size: 28px;"}
 - Let's go back to our example of canvassing
 - We have the following regressions to estimate the CACE:
   - First stage: $TREATED_i = \alpha_0 + \alpha_1 ASSIGNED + \epsilon_i$
@@ -510,7 +508,7 @@ cace_fit2
 
 ## Large-$n$ designs
 
-:::{style="margin-top: 30px; font-size: 26px;"}
+:::{style="margin-top: 30px; font-size: 28px;"}
 - Non-compliance not only prevents us from estimating the true ATE, [it also makes CACE estimation more challenging]{.alert}.
 - While 2SLS is a consistent estimator for the CACE, the estimator becomes [much less precise if the proportion of compliers is small]{.alert}
 - So the first advice is to [design experiments with large sample sizes]{.alert} to increase the number of compliers
@@ -533,7 +531,7 @@ cace_fit2
 
 ## Placebo designs
 
-:::{style="margin-top: 30px; font-size: 26px;"}
+:::{style="margin-top: 30px; font-size: 28px;"}
 - Why does this work?
 - Because the main problem in one-sided compliance is [the existence of never-takers]{.alert}
 - But if we randomise the treatment amongst the compliers, [we screen-out the never-takers by design]{.alert}
@@ -545,7 +543,7 @@ cace_fit2
 
 ## Partial treatment
 
-:::{style="margin-top: 30px; font-size: 26px;"}
+:::{style="margin-top: 30px; font-size: 28px;"}
 - Finally, what to do when we have [partial treatment]{.alert}?
 - For instance, a subject interrupts the medical treatment before the end
 - The easiest and most widely used approach is to [classify the partially-treated subject as untreated]{.alert}, estimate the CACE, and then [classify the subject as treated]{.alert} and estimate the CACE again
