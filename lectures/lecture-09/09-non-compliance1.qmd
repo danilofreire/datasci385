@@ -341,7 +341,7 @@ $$ITT_{Y} = E[ITT_{Y}] = E[Y_i(z = 1, d(1))] - E[Y_i(z = 0, d(0))]$$
 ## Complier average causal effect (CACE)
 ### The effect of the treatment on the compliers
 
-:::{style="margin-top: 30px; font-size: 25px;"}
+:::{style="margin-top: 30px; font-size: 21px;"}
 - As we cannot correctly estimate the ATE with non-compliance, we focus on the [complier average causal effect (CACE)]{.alert}
 - CACE tries to answer this question: "[For those individuals who actually heard the message, what is the effect of the message on their likelihood of voting?]{.alert}"
 - Formally, the CACE is defined as:
@@ -351,8 +351,9 @@ CACE \equiv \frac{\sum_{i=1}^{N}(Y_i(1) - Y_i(0))d_i(1)}{\sum_{i=1}^{N}d_i(1)} =
 $$
 
 - In other words, it is [the treatment effect, but only coming from the compliers, divided by the number of compliers]{.alert}
+- Why do we need to divide by $ITT_D$? Because the treatment group is a mix of compliers (who take the treatment) and never-takers (who do not)
+- If we include both, we are underestimating the treatment effect, because never-takers do not receive the treatment and their outcomes are not affected by it
 - CACE is also know as [Local Average Treatment Effects]{.alert} (LATE)
-
 :::
 
 ## CACE and instrumental variables
