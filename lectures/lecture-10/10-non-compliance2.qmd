@@ -160,19 +160,38 @@ Source: [Alves (2022)](https://matheusfacure.github.io/python-causality-handbook
 ## Quantifying compliance
 ### Estimating group sizes
 
-:::{style="margin-top: 30px; font-size: 19px;"}
+:::{style="margin-top: 30px; font-size: 22px;"}
 - Let $\pi_{AT}$, $\pi_{NT}$, $\pi_{C}$, $\pi_{D}$ denote proportions of Always-Takers, Never-Takers, Compliers, and Defiers
 
-- Formulas to estimate these proportions:
-  - Always-Takers' share ($\pi_{AT}$): 
-  $$ \pi_{AT} = \frac{1}{N} \sum_{i=1}^{N} d_i(1)d_i(0) $$
-  - Never-Takers' share ($\pi_{NT}$):
-  $$ \pi_{NT} = \frac{1}{N} \sum_{i=1}^{N} (1-d_i(1))(1-d_i(0)) $$
-  - Compliers' share ($\pi_{C}$):
-  $$ \pi_{C} = \frac{1}{N} \sum_{i=1}^{N} d_i(1)z_i(1-d_i(0)) $$
-  - Defiers' share ($\pi_{D}$):
-  $$ \pi_{D} = 1 - \pi_{AT} - \pi_{NT} - \pi_{C} $$
+- [Always-Takers' share ($\pi_{AT}$):]{.alert}
+    $$ \pi_{AT} = \frac{1}{N} \sum_{i=1}^{N} d_i(1)d_i(0) $$
+
+- The term is 1 only for individuals who would take the treatment regardless of their assignment ($d_i(1)=1$ and $d_i(0)=1$)
+
+- [Never-Takers' share ($\pi_{NT}$):]{.alert}
+
+    $$ \pi_{NT} = \frac{1}{N} \sum_{i=1}^{N} (1-d_i(1))(1-d_i(0)) $$
+
+- The term is 1 only for those who would refuse the treatment regardless of their assignment ($d_i(1)=0$ and $d_i(0)=0$)
 :::
+
+## Quantifying compliance
+### Estimating group sizes
+
+:::{style="margin-top: 30px; font-size: 24px;"}
+- These are the remaining formulas for the Compliers and Defiers
+
+- [Compliers' share ($\pi_{C}$):]{.alert}
+    $$ \pi_{C} = \frac{1}{N} \sum_{i=1}^{N} d_i(1)(1-d_i(0)) $$
+
+- The term is 1 only for those who follow their assignment—taking the treatment if offered ($d_i(1)=1$) and not otherwise ($d_i(0)=0$).
+
+- [Defiers' share ($\pi_{D}$):]{.alert}
+    $$ \pi_{D} = 1 - \pi_{AT} - \pi_{NT} - \pi_{C} $$
+
+- This is an accounting identity. Since everyone must be in one of the four groups, their shares must sum to 1
+:::
+
 
 ## Quantifying compliance
 ### Numbers from the debate study
@@ -183,7 +202,7 @@ Source: [Alves (2022)](https://matheusfacure.github.io/python-causality-handbook
 - [In the control group]{.alert}, the untreated subjects are either Never-Takers or Compliers
   - The study of the New York City mayoral debates found that 84% of the control group reported not watching the debate, so $\hat{\pi}_{NT} + \hat{\pi}_{C} = 0.84$
   - Subjects in the control group who watched the debate are either Always-Takers or Defiers, and $\hat{\pi}_{AT} + \hat{\pi}_{D} = 0.16$
-- In the treatment group, 37% of the subjects reported watching the debate
+- [In the treatment group]{.alert}, 37% of the subjects reported watching the debate
   - These subjects must be either Always-Takers or Compliers, so $\hat{\pi}_{AT} + \hat{\pi}_{C} = 0.37$
   - The remaining 63% are either Never-Takers or Defiers, so $\hat{\pi}_{NT} + \hat{\pi}_{D} = 0.63$
 - But we don't know how many people are in each group, as mentioned before
@@ -202,6 +221,15 @@ Source: [Alves (2022)](https://matheusfacure.github.io/python-causality-handbook
 - But if we assume that is the case, all problems are solved! 😂
 - In our previous example:
   - If we assume that no one watched the debate when they were told not to, we can estimate the proportions of each group
+
+- [Always-Takers ($\hat{\pi}_{AT}$)]{.alert} are estimated by the share of people in the control group who took the treatment
+        $$ \hat{\pi}_{AT} = \text{Proportion}(Treatment=Yes \,|\, Assigned=Control) $$
+
+- [Never-Takers ($\hat{\pi}_{NT}$)]{.alert} are estimated by the share of people in the treatment group who did _not_ take the treatment
+        $$ \hat{\pi}_{NT} = \text{Proportion}(Treatment=No \,|\, Assigned=Treatment) $$
+
+- [Compliers ($\hat{\pi}_{C}$)]{.alert} are the rest of the population.
+        $$ \hat{\pi}_{C} = 1 - \hat{\pi}_{AT} - \hat{\pi}_{NT} $$
 :::
 
 ## Monotonicity assumption
@@ -209,16 +237,14 @@ Source: [Alves (2022)](https://matheusfacure.github.io/python-causality-handbook
 
 :::{style="margin-top: 30px; font-size: 27px;"}
 - Assume [no Defiers]{.alert} ($\pi_{D} = 0$) to simplify estimation
-- With $\pi_{D} = 0$, we can estimate other proportions:
-    - Always-Takers ($\hat{\pi}_{AT}$):
+- With $\pi_{D} = 0$, we can estimate all proportions using observed data:
+    - [Always-Takers]{.alert} ($\hat{\pi}_{AT}$), people who watch the debate regardless of assignment:
     - $\hat{\pi}_{AT} + \hat{\pi}_{D} = 0.16 \implies \hat{\pi}_{AT} = 0.16$
-    - Never-Takers ($\hat{\pi}_{NT}$):
+    - [Never-Takers]{.alert} ($\hat{\pi}_{NT}$), those who never watch the debate:
     - $\hat{\pi}_{NT} + \hat{\pi}_{D} = 0.63 \implies \hat{\pi}_{NT} = 0.63$
-    - Compliers ($\hat{\pi}_{C}$): 
+    - [Compliers]{.alert} ($\hat{\pi}_{C}$), those who watch the debate only when encouraged:
     - $\hat{\pi}_{AT} + \hat{\pi}_{C} = 0.37 \implies \hat{\pi}_{C} = 0.37 - \hat{\pi}_{AT} = 0.37 - 0.16 = 0.21$
-    - Alternatively, using: 
-    - $\hat{\pi}_{NT} + \hat{\pi}_{C} = 0.84 \implies \hat{\pi}_{C} = 0.84 - \hat{\pi}_{NT} = 0.84 - 0.63 = 0.21$
-- Both formulas yield approximately $\hat{\pi}_{C} \approx 0.2$
+    - Alternatively, $\hat{\pi}_{C} = 1 - \hat{\pi}_{AT} - \hat{\pi}_{NT} = 1 - 0.16 - 0.63 = 0.21$
 :::
 
 # Now the easy part, CACE estimation 🤓 {background-color="#2d4563"}
@@ -229,31 +255,8 @@ Source: [Alves (2022)](https://matheusfacure.github.io/python-causality-handbook
 :::{style="margin-top: 30px; font-size: 29px;"}
 - Once we [eliminated Defiers]{.alert}, we can estimate the [CACE]{.alert} using the same formula as before
 - The [CACE]{.alert} is the [difference in observed treatment and control group outcomes by the proportion of subjects who are Compliers]{.alert}
-- Although two-sided noncompliance introduces the [possibility that some subjects are Always-Takers]{.alert}, they pose [no identification problems]{.alert}
-- [Always-Takers have no effect on the $ITT$]{.alert}, and the share of Always-Takers is differenced away when we calculate the $ITT_D$
-- Why so? Because they are treated regardless of assignment, so they don't affect the treatment effect!
-:::
-
-## ITT decomposition with no defiers
-
-:::{style="margin-top: 30px; font-size: 24px;"}
-- Intent-to-treat effect on outcome ($ITT_Y$) can be decomposed:
-
-  $$
-  ITT_Y = ITT_{Y,co} \pi_{co} + \underbrace{ITT_{Y,at} \pi_{at}}_{=0} + \underbrace{ITT_{Y,nt} \pi_{nt}}_{=0} + \underbrace{ITT_{Y,de} \pi_{de}}_{=0 \text{ (mono)}}
-  $$
-
-- Under Exclusion Restriction (ER) and Monotonicity (mono) assumptions, ITT simplifies to:
-
-  $$
-  ITT_Y = ITT_{co} \pi_{co}
-  $$
-
-- Same identification result:
-
-  $$
-  \tau_{LATE} = \frac{ITT_Y}{ITT_D}
-  $$
+- Although two-sided noncompliance introduces the possibility that some subjects are Always-Takers, they pose [no identification problems]{.alert}
+- As the share of Always-Takers is the same in both treatment and control groups, they [do not affect the difference in outcomes between groups]{.alert}
 :::
 
 # Back to our example 📊 {background-color="#2d4563"}
@@ -290,7 +293,7 @@ Download the data from [our GitHub repository](https://github.com/danilofreire/q
 :::{style="margin-top: 30px; font-size: 24px;"}
 - The study $N$ is 1000, with 505 in the treatment group and 495 in the control group
   - These are the total $N$ in each group, in parentheses, last row of the table
-- What wbout those who were actually treated?
+- What about those who were actually treated?
   - 185 in the treatment group and 80 in the control group (huge non-compliance!) 
   - These are the $N$ treated, in parentheses, first row of the table
 - And those who were not treated?
@@ -481,7 +484,7 @@ ITT/ITT_D
 ## Discussing the assumptions in this model
 ### And how to deal with them in practice (in your own experiments!)
 
-:::{style="margin-top: 30px; font-size: 20px;"}
+:::{style="margin-top: 30px; font-size: 21px;"}
 :::{.columns}
 :::{.column width=50%}
 - Let's start with the [monotonicity assumption]{.alert}
@@ -495,11 +498,9 @@ ITT/ITT_D
 :::{.column width=50%}
 - If the ratio of defiers is small, the [bias introduced by defiers is small too]{.alert} and CACE is still a good estimate
 - So what to do?
-  - Gerber and Green argue that if you have a large sample size, [the ATE amongst defiers will probably be close to that of compliers]{.alert}. [Do you agree?]{.alert}
   - [Create treatments that more closely align with the preferences of the subjects]{.alert}
   - Check if any [reverse psychology]{.alert} or [reason to resist the treatment]{.alert} exists
-  - Check if the [control condition seems unfair]{.alert} or [unattractive]{.alert}, so that people would resist them
-  - Finally, [check if you have a very small $ITT_D$]{.alert}, as this may indicate that defiers are not a big problem
+  - Finally, check if the [control condition seems unfair]{.alert} or [unattractive]{.alert}, so that people would resist them
 :::
 :::
 :::
@@ -541,25 +542,12 @@ ITT/ITT_D
 - Think about your own experiments: [How would you deal with these issues]{.alert}?
 :::
 
-# That's all for today! 🥳 {background-color="#2d4563"}
-
-## Summary
-
-:::{style="margin-top: 30px; font-size: 24px;"}
-- Today we discussed [two-sided non-compliance]{.alert}, which is even more complex than one-sided non-compliance
-- We have four compliance types: [Compliers]{.alert}, [Never-takers]{.alert}, [Always-takers]{.alert}, and [Defiers]{.alert}
-- We also discussed the [monotonicity assumption]{.alert}, which states that no one does the opposite of their assignment
-- We saw how to estimate the [CACE]{.alert} using [IV methods]{.alert} and how to interpret the results (again!)
-- Finally, we discussed the [exclusion restriction]{.alert} and how to deal with it in practice
-- [Do you have any questions]{.alert}? [Let's me know!]{.alert} 😉
-:::
-
 ## Next class
 
 :::{style="margin-top: 30px; font-size: 24px;"}
 - Next class, we will discuss [attrition]{.alert} (missing data in the outcome)
 - We will see how to deal with [missing data]{.alert} in experiments and how to [impute missing values]{.alert} (should you do it?)
-- Please also send me your ideas for the [final project]{.alert}! I'm looking forward to hearing from you! 🤓
+- Please also send me your ideas for the [group project]{.alert}! I'm looking forward to hearing from you! 🤓
 - Thanks to all of you who have already done so! You're awesome! 🥳
 :::
 
