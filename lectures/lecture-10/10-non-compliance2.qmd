@@ -89,7 +89,7 @@ Source: [Alves (2022)](https://matheusfacure.github.io/python-causality-handbook
 - We also learned how to estimate the [CACE]{.alert} using [IV methods]{.alert}, and it is [the difference in observed treatment and control group outcomes by the proportion of subjects who are Compliers]{.alert}
 - Today, we will discuss two-sided non-compliance, which is even more complex
 - In this scenario, some subjects in the treatment group do not receive treatment, while some in the control group do
-- [Underestimation of treatment effect (usually)]{.alert}: If some in the treatment group don't comply, and some in the control group get treatment, the difference between the groups in terms of [actual treatment received becomes smaller]{.alert} 
+- [Underestimation of treatment effect]{.alert}: If some in the treatment group don't comply, and some in the control group get treatment, the difference between the groups in terms of [actual treatment received becomes smaller]{.alert} 
 - This can make it look like the treatment is [less effective than it actually is]{.alert}. We "dilute" the treatment effect 🤓
 :::
 
@@ -238,9 +238,9 @@ Source: [Alves (2022)](https://matheusfacure.github.io/python-causality-handbook
 :::{style="margin-top: 30px; font-size: 27px;"}
 - Assume [no Defiers]{.alert} ($\pi_{D} = 0$) to simplify estimation
 - With $\pi_{D} = 0$, we can estimate all proportions using observed data:
-    - [Always-Takers]{.alert} ($\hat{\pi}_{AT}$), people who watch the debate regardless of assignment:
+    - [Always-Takers]{.alert} ($\hat{\pi}_{AT}$), people who watch the debate while in the control group:
     - $\hat{\pi}_{AT} + \hat{\pi}_{D} = 0.16 \implies \hat{\pi}_{AT} = 0.16$
-    - [Never-Takers]{.alert} ($\hat{\pi}_{NT}$), those who never watch the debate:
+    - [Never-Takers]{.alert} ($\hat{\pi}_{NT}$), those who never watch the debate even when in the treatment group:
     - $\hat{\pi}_{NT} + \hat{\pi}_{D} = 0.63 \implies \hat{\pi}_{NT} = 0.63$
     - [Compliers]{.alert} ($\hat{\pi}_{C}$), those who watch the debate only when encouraged:
     - $\hat{\pi}_{AT} + \hat{\pi}_{C} = 0.37 \implies \hat{\pi}_{C} = 0.37 - \hat{\pi}_{AT} = 0.37 - 0.16 = 0.21$
@@ -252,11 +252,12 @@ Source: [Alves (2022)](https://matheusfacure.github.io/python-causality-handbook
 ## Estimating CACE
 ### Now we know what to do! 😉
 
-:::{style="margin-top: 30px; font-size: 29px;"}
+:::{style="margin-top: 30px; font-size: 25px;"}
 - Once we [eliminated Defiers]{.alert}, we can estimate the [CACE]{.alert} using the same formula as before
 - The [CACE]{.alert} is the [difference in observed treatment and control group outcomes by the proportion of subjects who are Compliers]{.alert}
-- Although two-sided noncompliance introduces the possibility that some subjects are Always-Takers, they pose [no identification problems]{.alert}
-- As the share of Always-Takers is the same in both treatment and control groups, they [do not affect the difference in outcomes between groups]{.alert}
+- Why do we need to divide by $ITT_D$? Because the treatment group is a mix of compliers (who take the treatment) and never-takers (who do not)
+- If we include both, we are underestimating the treatment effect, because never-takers do not receive the treatment and their outcomes are not affected by it
+- In two-sided non-compliance, we also have always-takers in the control group, who receive the treatment regardless of assignment. We have to account for them too
 :::
 
 # Back to our example 📊 {background-color="#2d4563"}
@@ -308,7 +309,7 @@ Download the data from [our GitHub repository](https://github.com/danilofreire/q
 ## Calculating CACE
 ### Let's do the maths again! 😉
 
-:::{style="margin-top: 30px; font-size: 26px;"}
+:::{style="margin-top: 30px; font-size: 23px;"}
 - $ITT_Y = 0.057$, right?
 - Now let's calculate $ITT_D$:
   - $ITT_D = 36.6 - 16.2 = 20.4$, or $0.204$ in percentage points
@@ -459,7 +460,7 @@ ITT/ITT_D
 
 ## CACE interpretation
 
-:::{style="margin-top: 30px; font-size: 24px;"}
+:::{style="margin-top: 30px; font-size: 28px;"}
 :::{.columns}
 :::{.column width=50%}
 - Our final table indicates that:
@@ -544,7 +545,7 @@ ITT/ITT_D
 
 ## Next class
 
-:::{style="margin-top: 30px; font-size: 24px;"}
+:::{style="margin-top: 30px; font-size: 28px;"}
 - Next class, we will discuss [attrition]{.alert} (missing data in the outcome)
 - We will see how to deal with [missing data]{.alert} in experiments and how to [impute missing values]{.alert} (should you do it?)
 - Please also send me your ideas for the [group project]{.alert}! I'm looking forward to hearing from you! 🤓
