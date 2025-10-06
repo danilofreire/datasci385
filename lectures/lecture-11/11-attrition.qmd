@@ -65,7 +65,7 @@ editor:
 
 ## Handling Attrition
 
-:::{style="margin-top: 30px; font-size: 27px;"}
+:::{style="margin-top: 30px; font-size: 29px;"}
 - Analysis methods:
   - [Inverse probability weighting]{.alert} (IPW)
   - [Extreme bounds analysis]{.alert} (EBA)
@@ -109,7 +109,7 @@ editor:
 - [RAND Health Insurance Experiment]{.alert} (HIE) was a large-scale study in the 1970s that randomly assigned families to different insurance plans
 - The goal was to assess the impact of insurance on health outcomes
 - The experiment covered 5%, 50%, 75%, or 100% of each family’s health costs, with the remaining covered by the family
-- to insure families in the first three experimental groups against catastrophic financial loss, costs over $1,000 were covered by the experimental insurance plan
+- To insure families in the first three experimental groups against catastrophic financial loss, costs over $1,000 were covered by the experimental insurance plan
 - The study found that insurance coverage [did not significantly affect health outcomes]{.alert}
 - The conclusion was that [public health insurance]{.alert} was not cost-effective, thus the government did not need to expand it
 - Overall, the study cost about $550 million in today’s dollars 😮
@@ -194,13 +194,27 @@ $$r_i = r_i(0)(1 - z_i) + r_i(1)z_i $$
 :::
 :::
 
+## Four (latent) types of respondents
+
+:::{style="margin-top: 30px; font-size: 28px;"}
+- We can classify individuals into four types based on their response behaviour [(Lee 2009)](https://academic.oup.com/restud/article/76/3/1071/1590707):
+
+  - [Always-reporters:]{.alert} $r_i(0) = 1$ and $r_i(1) = 1$. They always report their outcomes regardless of treatment assignment
+  - [Never-reporters:]{.alert} $r_i(0) = 0$ and $r_i(1) = 0$. Regardless of treatment status, always attrite on the outcome
+  - [If-treated reporters:]{.alert} $r_i(0) = 0$ and $r_i(1) = 1$. They report their outcomes only if assigned to treatment
+  - [If-untreated reporters:]{.alert} $r_i(0) = 1$ and $r_i(1) = 0$. They report their outcomes only if assigned to control
+
+- While this new framework is helpful, it has the same issue we discussed in our previous class: [we cannot know know whether individuals are one type or another]{.alert} (more on this later!)
+::: 
+
+
+
 ## When does bias occur?
 
-:::{style="margin-top: 30px; font-size: 26px;"}
-- Bias arises if the [characteristics of those who stay in the study]{.alert} $(R_i(z) = 1)$ [are systematically different from those who drop out]{.alert} ($R_i(z) = 0)$, and if these differences are [related to the potential outcomes]{.alert} $Y_i(z)$
+:::{style="margin-top: 30px; font-size: 29px;"}
+- Bias arises if the [characteristics of those who stay in the study]{.alert} $(r_i(z) = 1)$ [are systematically different from those who drop out]{.alert} $(r_i(z) = 0)$, and if these differences are [related to the potential outcomes]{.alert} $Y_i(z)$
 - In other words, if [attrition is non-random]{.alert}, we have a problem!
-- We are essentially [missing a piece of the puzzle (the dropouts)]{.alert}, and that missing piece can distort our view of the true treatment effect
-- Sadly, if there's non-random attrition, the [difference-in-means estimator not recover the ATE for the entire subject pool, and it will not recover the ATE for any meaningful subgroup either!]{.alert}
+- The [difference-in-means estimator does not recover the ATE for the entire subject pool, and it will not recover the ATE for any meaningful subgroup either!]{.alert}
 - Why? 
   - Attrition might be [non-random within each of these baseline subgroups]{.alert}
   - For example, maybe younger people in the treatment group drop out more than older people, but the opposite can be true in the control group!
@@ -221,7 +235,7 @@ $$r_i = r_i(0)(1 - z_i) + r_i(1)z_i $$
 $$Y_i(z) \perp R_i(z)$$
 
 - In some cases this may be true, such as a computer malfunction that causes data loss to some participants
-- We can actually test that using randomisation inference!
+- We can actually test that using regression or randomisation inference!
   - Just regress $r_i$ on the covariates and treatment assignment and you should find no significant relationship
 :::
 
@@ -266,7 +280,7 @@ more likely to benefit from the intervention
 ## Inverse probability weighting
 ### A way to handle missing related to observed variables
 
-:::{style="margin-top: 30px; font-size: 24px;"}
+:::{style="margin-top: 30px; font-size: 26px;"}
 - We can compensate for missing data by [weighting the observed data]{.alert}
 - The idea is to [upweight the observations that are similar to the missing ones]{.alert}
 - Let me give you a simple example:
@@ -294,7 +308,7 @@ $$E[Y_i(1)] = \frac{1}{N} \sum_{i=1}^{N} \frac{Y_i(1) r_i(1)}{\pi_i(z = 1, x)},$
   - Missing outcomes have no effect on sum
   - Reported outcomes weighted by $1/\pi_i(z = 1, x)$
   - Weights replace missing values with copies of non-missing values
-- Weighting scheme called inverse probability weighting because [observations weighted by inverse probability of being observed]{.alert}
+- It's called inverse probability weighting because [observations are weighted by inverse probability of being observed]{.alert}
 :::
 
 ## Motivating example for IPW
@@ -434,29 +448,25 @@ group and 0 for the missing value in the control group]{.alert}
 ## Trimming the bounds with stronger assumptions
 ### Monotonicity revisited
 
-:::{style="margin-top: 30px; font-size: 23px;"}
+:::{style="margin-top: 30px; font-size: 30px;"}
 - [Lee (2009)](https://academic.oup.com/restud/article/76/3/1071/1590707) suggested that we can [trim the bounds]{.alert} to make them more informative (and narrower)
 - The key assumption of Lee is [monotonicty]{.alert}, similar to what we discussed in the context of non-compliance
-- Lee proposed that we have [four types of respondents]{.alert}, defined with respect to specific post-treatment outcomes (some observed, others not):
-  - [Never-reporters]{.alert}: Those who would never report their outcomes ($R(1) = 0$ and $R(0) = 0$)
-  - [Always-reporters]{.alert}: Those who would always report their outcomes ($R(1) = 1$ and $R(0) = 1$)
-  - [If-treated reporters]{.alert}: Those who would report their outcomes if treated ($R(1) = 1$ and $R(0) = 0$)
-  - [If-untreated reporters]{.alert}: Those who would report their outcomes if in the control group ($R(1) = 0$ and $R(0) = 1$)
-- The assumption is that [there are no if-untreated reporters]{.alert}, similar to the "no defiers" assumption in non-compliance
+- Remember our four types of respondents? Always-Reporters, Never-Reporters, If-Treated Reporters, and If-Untreated Reporters
+- The assumption is that [there are no If-Untreated reporters]{.alert}, similar to the "no defiers" assumption in non-compliance
+- For example, receiving a job-training programme might make someone more likely to respond (and thus more likely to be surveyed about their wages), but [it will not make anyone less likely]{.alert} to respond
 :::
 
 ## Trimming the bounds with stronger assumptions
 ### Monotonicty revisited
 
-:::{style="margin-top: 30px; font-size: 23px;"}
+:::{style="margin-top: 30px; font-size: 24px;"}
 - Under monotonicity, [we can bound the average treatment effect for Always-Reporters]{.alert} 
 - For them, the ATE is defined as:
 
 $$E[Y_i(1) | R_i(1) = 1, R_i(0) = 1] - E[Y_i(0) | R_i(1) = 1, R_i(0) = 1]$$
 
 - That is, we observe $Y(0)$ only for the Always-Reporters, as If-Treated-Reporters and Never-Reporters produce only missing values, and under monotonicity we assume there are no If-Untreated-Reporters
-- It sounds a bit confusing, because it is! 😅
-- The difficult part is to estimate the ATE for Always-Reporters, as we observe $Y(1)$ for both Always-Reporters and If-Treated-Reporters
+- The difficult part is to estimate the ATE for Always-Reporters, as [we observe $Y(1)$ for both Always-Reporters and If-Treated-Reporters]{.alert}
 - We can estimate the share of Always-Reporters by assuming that the share of Always-Reporters in the control group is the same as in the treatment group
 - The difference is the share of If-Treated-Reporters in the treatment group, we can use the lower and upper bound of the distribution of outcomes to estimate the ATE for Always-Reporters
 :::
@@ -464,13 +474,44 @@ $$E[Y_i(1) | R_i(1) = 1, R_i(0) = 1] - E[Y_i(0) | R_i(1) = 1, R_i(0) = 1]$$
 ## Trimming the bounds with stronger assumptions
 
 :::{style="margin-top: 30px; font-size: 27px;"}
-- We can bound the effect for always-responders by [taking the means of trimmed versions of the treated outcome distribution]{.alert}
+- We can bound the effect for Always-Responders by [taking the means of trimmed versions of the treated outcome distribution]{.alert}
 - A lower bound comes from trimming off the share of compliers from the top of the distribution, and an upper bound comes from trimming this share from the bottom
 - There are several `R` packages that calculate Lee bounds
   - Have a look at <https://github.com/lbassan/attritevis>
 - Although this is a good solution to attrition, [it has received some criticism too](https://blogs.worldbank.org/en/impactevaluations/dealing-attrition-field-experiments)
 - For instance, [McKenzie (2024)](https://blogs.worldbank.org/en/impactevaluations/lee-bounds-in-practice) argues that it's not clear how to use Lee bounds with binary variables, that incorporating covariates isn't straightforward ([paper proposing a solution here](https://arxiv.org/abs/2309.08985)), and that bounds are not easy to use with clustered data
 :::
+
+## How Lee bounds work 
+
+:::{style="margin-top: 30px; font-size: 22px;"}
+:::{.columns}
+:::{.column width=50%}
+- [Step 1:]{.alert} Figure out who the always-reporters are
+  - If 90% of control group stays and 95% of treatment group stays
+  - Then at least 90% must be always-reporters
+  - The extra 5% in treatment group are if-treated reporters
+- [Step 2:]{.alert} Trim extreme values
+  - Remove the same proportion of extreme values from treatment group
+  - This accounts for the if-treated reporters
+- [Step 3:]{.alert} Calculate the bounds
+  - [Lower bound]{.alert}: We remove the 5% with the highest wages in the treatment group
+  - [Upper bound]{.alert}: We remove the 5% with the lowest wages in the treatment group
+:::
+
+:::{.column width=50%}
+- [What if the control group has less attrition?]{.alert}
+  - Monotonicity assumes that [there is no if-untreated reporters]{.alert}
+  - If the treatment group has better retention, we assume those extra participants are people who were "saved" from dropping out by the treatment 
+  - But if the control group has better retention, [we assume the extra participants are people who would have dropped out if they had received the treatment]{.alert}
+  - So we trim the control group to match the treatment group
+  - [Lower bound:]{.alert} we remove the 5% with the highest wages in the control group
+  - [Upper bound:]{.alert} we remove the 5% with the lowest wages in the control group
+:::
+:::
+:::
+
+
 
 # Handling attrition in R {background-color="#2d4563"}
 
@@ -491,7 +532,7 @@ $$E[Y_i(1) | R_i(1) = 1, R_i(0) = 1] - E[Y_i(0) | R_i(1) = 1, R_i(0) = 1]$$
 :::{style="margin-top: 30px; font-size: 22px;"}
 :::{.columns}
 :::{.column width=50%}
-- The experiment manipulates peer-praise and measures empathy in a behavioral task
+- The experiment manipulates peer-praise and measures empathy in a behavioural task
 - There are two arms in the peer-praise randomisation: peer-praise and no praise (control)
 - In the first arm, a word cloud of praise, drawn from real praise collected in a pilot study, is given for people who behave empathetically, with a line of text about peer group average thermometer ratings towards people who are empathetic 
   - “Peers of yours on this platform have said they hold favorable feelings towards people who engage in empathetic behavior, with an average of 7.9, on a scale of 0 (least favorable) to 10 (most favorable), That same peer group provided real feedback for empathetic behavior which is pictured in the word cloud below” 
@@ -528,15 +569,16 @@ names(test_data)
 
 ## Attrition dataframe
 
-:::{style="margin-top: 30px; font-size: 26px;"}
+:::{style="margin-top: 30px; font-size: 23px;"}
 
 - The `attrition()` function creates a frame that indicates, per question: 
   - `attrited` -- how many respondents attrited (left the survey) at each question
-  - `proportion` -- number of attrited respondents / number of respondents who entered survey  
   - `prop_q` -- number of attrited respondents / number of respondents entering into the question
+  - `proportion` -- number of attrited respondents / number of respondents who entered survey  
   - `questions` -- question names
   - `responded` -- how many respondents responded in each question  
-  - `prop_r` -- number of respondents who responded / number of respondents who entered survey
+  - `prop_r` -- number of respondents who responded / number of respondents who started the survey
+- "Skippers" are respondents who did not answer a question but continued with the survey. They are not considered attrited
 
 ```{r}
 #| echo: true
@@ -552,7 +594,7 @@ sum(attrition_data$attrited)/nrow(test_data) #What proportion of the overall sam
 ## Visualising the attrition process
 
 :::{style="margin-top: 30px; font-size: 24px;"}
-- The `plot_attrition()` function shows the attrition process for the post-treatment questions
+- The `plot_attrition()` function shows the attrition process
 
 ```{r}
 #| echo: true
@@ -564,7 +606,7 @@ plot_attrition(test_data)
 ## Visualising the attrition process
 
 :::{style="margin-top: 30px; font-size: 24px;"}
-- We can specify `y="resonded"` to account for response, rather than attrition
+- We can specify `y="responded"` to account for response, rather than attrition
 
 ```{r}
 #| echo: true
@@ -646,7 +688,8 @@ attritevis::balance_attrite(data = test_data,
 # devtools::install_github("acoppock/attrition")
 attritevis::bounds(data = test_data, 
         treatment = "treat1", 
-        DV = "cards1")
+        DV = "cards1",
+        type = "Manski")
 ```
 
 ```{r}
