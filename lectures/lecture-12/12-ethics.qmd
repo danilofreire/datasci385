@@ -39,7 +39,7 @@ editor:
 :::{.column width="50%"}
 - Analysis methods:
   - [Inverse probability weighting]{.alert} (IPW): Upweights observations similar to missing ones
-  - [Extreme bounds analysis]{.alert} (EBA): Evaluates sensitivity by assuming best/worst case scenarios
+  - [Extreme bounds analysis / Manski bounds]{.alert} (EBA): Evaluates sensitivity by assuming best/worst case scenarios
   - [Lee bounds]{.alert}: Narrows bounds using monotonicity assumption
 - [R implementation]{.alert}: `attritevis` package for visualising and analysing attrition patterns
 :::
@@ -98,14 +98,15 @@ More on the [Stanford Prison Experiment](https://en.wikipedia.org/wiki/Stanford_
 
 ## The Tuskegee Syphilis Study (1932-1972)
 
-:::{style="margin-top: 30px; font-size: 21px;"}
+:::{style="margin-top: 30px; font-size: 19px;"}
 :::{.columns}
 :::{.column width="50%"}
-- The [Tuskegee Study of Untreated Syphillis]{.alert} was a clinical study conducted between 1932 and 1972 by the U.S. Public Health Service, the Centers for Disease Control and Prevention, and the Tuskegee Institute
+- The [Tuskegee Study of Untreated Syphillis]{.alert} was a clinical study conducted between 1932 and 1972 by the U.S. Public Health Service, the Centers for Disease Control and Prevention, and the Tuskegee Institute in Alabama
 - The goal was to observe the natural progression of untreated syphilis in rural African Americans who thought they were receiving free health care from the US government
 - 399 men had syphilis, 201 did not, and [none were informed of their diagnosis or the study's true purpose]{.alert}
-- The study was [terminated in 1972]{.alert} after its unethical nature was exposed
+- The study was [terminated in 1972]{.alert} after its unethical nature was exposed (40 years later!)
 - By the end of the study, [28 participants had died of syphilis, 100 were dead of related complications,]{.alert} 40 of their wives had been infected, and 19 of their children were born with congenital syphilis
+- Participants did not receive treatment even after penicillin became the standard of care in 1947
 - In 1997, President Bill Clinton [apologised on behalf of the US government]{.alert} for the study
 :::
 
@@ -174,7 +175,7 @@ Full text of the [Belmont Report](https://www.hhs.gov/ohrp/sites/default/files/t
 :::
 :::
 
-# Ethical considerations in experimental research 🤔 {background-color="#2d4563"}
+# Ethical considerations in experimental research 😇 {background-color="#2d4563"}
 
 ## Ethical research is good research
 
@@ -358,15 +359,25 @@ Source: [Bursztyn et al. (2021)](https://www.aeaweb.org/articles?id=10.1257/aeri
 
 ## Beneficence: "Do no harm, maximise benefit"
 
-:::{style="margin-top: 30px; font-size: 30px;"}
+:::{style="margin-top: 30px; font-size: 24px;"}
+:::{.columns}
+:::{.column width="50%"}
 - Two key points: 
   - [Do no harm]{.alert} (non-maleficence) 
   - [Maximise benefits, minimise risks]{.alert} (beneficence)
 
 - [Risk-benefit assessment]{.alert} is important for every study and [it is your responsibility]{.alert} to ensure that the benefits of the research outweigh the risks 
-- Consider [Equipoise]{.alert}: Genuine uncertainty about best approach 
+- Consider "equipoise" ([Freedman 1987](https://pubmed.ncbi.nlm.nih.gov/3600702/)): Genuine uncertainty about best approach 
 - [Knowledge gain]{.alert} is great, but only if research is credible and well-designed
 - [Sometimes it is better not to run the experiment at all!]{.alert}
+:::
+
+:::{.column width="50%"}
+:::{style="margin-top: -20px; text-align: center;"}
+![](figures/equipoise.png)
+:::
+:::
+:::
 :::
 
 ## Do parachutes save lives?
