@@ -1,5 +1,5 @@
 ---
-title: "QTM 385 - Experimental Methods"
+title: "DATASCI 385 - Experimental Methods"
 date: "Fall 2025"
 lang: en-GB
 author: 
@@ -314,11 +314,12 @@ Suggested readings:
 - Asiedu, E., Dean, E., Karlan, D., & Osei, R. (2021). [Ethics and Society Review: Ethics Reflection as a Precondition to Research Funding](https://doi.org/10.1073/pnas.2117261118). Proceedings of the National Academy of Sciences, 118(52), e2117261118.
 - ASAB Ethical Committee/ABS Animal Care Committee. (2024). [Guidelines for the Ethical Treatment of Nonhuman Animals in Behavioural Research and Teaching](https://www.sciencedirect.com/science/article/pii/S0003347223003172). Animal Behaviour, 207, I-XI.
 
-## Lecture 13: Introduction to Quarto and DeclareDesign (October 13, 2025)
+## Lecture 13: Introduction to Quarto and DeclareDesign (October 15, 2025)
 
 - Lecture slides: [Introduction to Quarto and DeclareDesign](https://raw.githack.com/danilofreire/qtm385/main/lectures/lecture-13/13-quarto.html).
 - Quarto official website: <https://quarto.org/>.
 - DeclareDesign official website: <https://declaredesign.org/>.
+- Problem Set 06 due.
 
 Suggested readings:
 
@@ -331,14 +332,12 @@ Suggested readings:
 - Nosek, B.A., Alter, G., Banks, G.C., Borsboom, D., Bowman, S.D., Breckler, S.J., Buck, S., Chambers, C.D., Chin, G., Christensen, G. and Contestabile, M., 2015. [Promoting an Open Research Culture](https://www.science.org/doi/10.1126/science.aab2374). Science, 348(6242), pp.1422-1425.
 - [A Gentle Introduction to DeclareDesign (YouTube)](https://youtu.be/8Y0p_ar59tQ/). Video tutorial by the authors of the book.
 
-## Lecture 14: Writing Pre-Analysis Plans (October 15, 2025)
+## Lecture 14: Writing Pre-Analysis Plans (October 20, 2025)
 
 - Lecture slides: [How to Write a Pre-Analysis Plan](https://raw.githack.com/danilofreire/qtm385/main/lectures/lecture-14/14-pap.html).
 - EGAP: [Pre-Analysis Plans](https://egap.org/resource/10-things-to-know-about-pre-analysis-plans/).
 - Olken, B. A. (2015). [Promises and perils of pre-analysis plans](https://www.aeaweb.org/articles?id=10.1257/jep.29.3.61). Journal of Economic Perspectives, 29(3), 61-80.
 - [Kahoot Quiz](https://play.kahoot.it/v2/?quizId=da50f0e5-b3a6-450e-ad99-95ed2be461d3&hostId=05eb977d-4f8a-440e-9e45-95212b29d103)
-- Problem Set 06 due.
-- [Problem Set 07 assigned](https://github.com/danilofreire/qtm385/tree/main/assignments/07-assignment).
 
 Suggested readings:
 
@@ -347,11 +346,12 @@ Suggested readings:
 - Coffman, L. C., & Niederle, M. (2015). [Pre-Analysis Plans Have Limited Upside, Especially where Replications Are Feasible](https://www.aeaweb.org/articles?id=10.1257/jep.29.3.81). Journal of Economic Perspectives, 29(3), 81-98.
 - Even-Tov, Omri and Valentine, K. (2025). [The Research Paper Playbook: A PhD Student's Guide to Writing and Presenting](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5379056). 
 
-## Lecture 15: When Experiments are Not Possible (October 20, 2025)
+## Lecture 15: When Experiments are Not Possible (October 22, 2025)
 
 - Lecture slides: [Natural and Quasi-Experiments](https://raw.githack.com/danilofreire/qtm385/main/lectures/lecture-15/15-quasi.html).
 - [Kahoot Quiz](https://play.kahoot.it/v2/?quizId=438409d4-2db5-4641-b210-1f9aede6db5b&hostId=05eb977d-4f8a-440e-9e45-95212b29d103).
 - Dunning, T. (2012). [Natural Experiments in the Social Sciences: A Design-Based Approach](https://www.cambridge.org/core/books/natural-experiments-in-the-social-sciences/96A64CBDC2A2952DC1C68AF77DE675AF). Cambridge University Press. Chapter 01: Introduction.
+- [Problem Set 07 assigned](https://github.com/danilofreire/qtm385/tree/main/assignments/07-assignment).
 
 Suggested readings:
 
@@ -360,14 +360,12 @@ Suggested readings:
 - Petticrew, M., Cummins, S., Ferrell, C., Findlay, A., Higgins, C., Hoy, C., ... & Sparks, L. (2005). [Natural Experiments: An Underused Tool for Public Health?](https://www.sciencedirect.com/science/article/abs/pii/S0033350605000296). Public Health, 119(9), 751-757.
 - Grosz, M. P., Ayaita, A., Arslan, R. C., Buecker, S., Ebert, T., Hünermund, P., ... & Rohrer, J. M. (2024). [Natural Experiments: Missed Opportunities for Causal Inference in Psychology](https://journals.sagepub.com/doi/full/10.1177/25152459231218610). Advances in Methods and Practices in Psychological Science, 7(1), 25152459231218610.
 
-## Lecture 16: Interference in Experiments (October 22, 2025)
+## Lecture 16: Interference in Experiments (October 27, 2025)
 
 - Lecture slides: [Interference in Experiments](https://raw.githack.com/danilofreire/qtm385/main/lectures/lecture-16/16-interference.html).
 - FEDAI: Chapter 08: Interference between Experimental Units.
 - EGAP: [Spillovers](https://egap.org/resource/10-things-to-know-about-spillovers/).
 - [Kahoot Quiz](https://play.kahoot.it/v2/?quizId=aa1d54d4-1501-4fee-9f91-a21c1bbf962f&hostId=05eb977d-4f8a-440e-9e45-95212b29d103).
-- Problem Set 07 due.
-- [Problem Set 08 assigned](https://github.com/danilofreire/qtm385/tree/main/assignments/08-assignment).
 
 Suggested readings:
 
@@ -376,20 +374,20 @@ Suggested readings:
 - Benjamin-Chung, J., Arnold, B. F., Berger, D., Luby, S. P., Miguel, E., Colford Jr, J. M., & Hubbard, A. E. (2018). [Spillover Effects in Epidemiology: Parameters, Study Designs and Methodological Considerations](https://academic.oup.com/ije/article-abstract/47/1/332/4583505). International Journal of Epidemiology, 47(1), 332-347.
 - Imbens, G. (2024). [Interference and Spillovers in Randomized Experiments](https://www.youtube.com/watch?v=i5kyzT_CpwQ) (Video). A short lecture on recent advances and new designs to deal with interference in experiments. A little technical.
 
-## Lecture 17: Texts for Discussion (October 27, 2025)
+## Lecture 17: Texts for Discussion (October 29, 2025)
 
 - Lecture slides: [Texts for Discussion](https://raw.githack.com/danilofreire/qtm385/main/lectures/lecture-17/17-discussion.html).
 - [Kahoot Quiz](https://play.kahoot.it/v2/?quizId=008403a1-cea0-48f8-b9fb-3c0b60214da9&hostId=05eb977d-4f8a-440e-9e45-95212b29d103).
 - Centola, D. (2010). [The spread of behavior in an online social network experiment](https://www.science.org/doi/abs/10.1126/science.1185231). Science, 329(5996), 1194-1197.
 - Paluck, B. L., Shepherd, H., and Aronow, P. 2016. [Changing climates of conflict: A social network experiment in 56 schools.](https://www.pnas.org/doi/abs/10.1073/pnas.1514483113) Proceedings of the National Academy of Sciences, 113(3): 566-571
 - Gerber, A. S., & Green, D. P. (2000). [The effects of canvassing, telephone calls, and direct mail on voter turnout: A field experiment](https://doi.org/10.2307/2585837). American Political Science Review, 94(3), 653-663.
+- Problem Set 07 due.
+- [Problem Set 08 assigned](https://github.com/danilofreire/qtm385/tree/main/assignments/08-assignment).
 
-## Lecture 18: Heterogeneous Treatment Effects (October 29, 2025)
+## Lecture 18: Heterogeneous Treatment Effects (November 3, 2025)
 
 - Lecture slides: [Heterogeneous Treatment Effects](https://raw.githack.com/danilofreire/qtm385/main/lectures/lecture-18/18-hte.html).
 - FEDAI: Chapter 09: Heterogeneous Treatment Effects.
-- Problem Set 08 due.
-- Pre-Analysis Plan due.
 
 Suggested readings:
 
@@ -401,18 +399,20 @@ Suggested readings:
 - Coppock, A. (2015). [10 Things to Know about Multiple Comparisons](https://egap.org/resource/10-things-to-know-about-multiple-comparisons/). EGAP Methods Guide.
 - Frandsen, B. (2025). [Machine Learning and Heterogeneous Treatment Effects](https://github.com/Mixtape-Sessions/Heterogeneous-Effects/tree/main). Slides and coding labs from a workshop on this topic. Available on GitHub.
 
-## Lecture 19: Texts for Discussion (November 3, 2025)
+## Lecture 19: Texts for Discussion (November 5, 2025)
 
 - Lecture slides: [Texts for Discussion](https://raw.githack.com/danilofreire/qtm385/main/lectures/lecture-19/19-discussion.html).
 - Munshi, K. (2003). [Networks in the modern economy: Mexican migrants in the US labor market.](https://academic.oup.com/qje/article-abstract/118/2/549/1899587?login=false) The Quarterly Journal of Economics, 118(2), 549-599.
 - Miguel, E., & Kremer, M. (2004). [Worms: identifying impacts on education and health in the presence of treatment externalities.](https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1468-0262.2004.00481.x) Econometrica, 72(1), 159-217.
+- Pre-Analysis Plan due.
+- Problem Set 08 due.
+- [Problem Set 09 assigned.](https://github.com/danilofreire/qtm385/tree/main/assignments/09-assignment).
 
-## Lecture 20: Mediation Analysis (November 5, 2025)
+## Lecture 20: Mediation Analysis (November 10, 2025)
 
 - Lecture slides: [Mediation Analysis](https://raw.githack.com/danilofreire/qtm385/main/lectures/lecture-20/20-mediation.html).
 - FEDAI: Chapter 10: Mediation.
 - [KaHoot Quiz](https://play.kahoot.it/v2/?quizId=e02f1d98-9af7-449f-8a32-dddb6cc94575&hostId=05eb977d-4f8a-440e-9e45-95212b29d103)
-- [Problem Set 09 assigned.](https://github.com/danilofreire/qtm385/tree/main/assignments/09-assignment)
 
 Suggested readings:
 
@@ -421,11 +421,13 @@ Suggested readings:
 - Acharya, A., Blackwell, M., & Sen, M. (2018). [Analyzing Causal Mechanisms in Survey Experiments](https://doi.org/10.1017/pan.2018.19). Political Analysis, 26(4), 357–378.
 - MacKinnon, D. P., Fairchild, A. J., & Fritz, M. S. (2007). [Mediation Analysis.](https://www.annualreviews.org/content/journals/10.1146/annurev.psych.58.110405.085542) Annual Review of Psychology, 58(1), 593-614.
 
-## Lecture 21: Survey Experiments (November 10, 2025)
+## Lecture 21: Survey Experiments (November 12, 2025)
 
 - Lecture slides: [Survey Experiments](https://raw.githack.com/danilofreire/qtm385/main/lectures/lecture-21/21-survey.html).
 - EGAP: [Survey Experiments](https://egap.org/resource/10-things-to-know-about-survey-experiments/).
 - Stantcheva, S. (2023). [How to run surveys: A guide to creating your own identifying variation and revealing the invisible](https://www.annualreviews.org/content/journals/10.1146/annurev-economics-091622-010157). Annual Review of Economics, 15(1), 205-234.
+- Problem Set 09 due.
+- [Problem Set 10 assigned.](https://github.com/danilofreire/qtm385/tree/main/assignments/10-assignment)
 
 Suggested readings:
 
@@ -434,12 +436,10 @@ Suggested readings:
 - Clifford, S., Sheagley, G., & Piston, S. (2021). [Increasing Precision Without Altering Treatment Effects: Repeated Measures Designs in Survey Experiments](https://doi.org/10.1017/S0003055421000241). American Political Science Review, 115(3), 1048-1065.
 - Kane, J. V. (2024). [More Than Meets the ITT: A Guide for Anticipating and Investigating Nonsignificant Results in Survey Experiments.](https://www.cambridge.org/core/journals/journal-of-experimental-political-science/article/more-than-meets-the-itt-a-guide-for-anticipating-and-investigating-nonsignificant-results-in-survey-experiments/C01250EB50598D6328B6065F1DF86BA7) Journal of Experimental Political Science, 1-16.
 
-## Lecture 22: Survey Methods for Sensitive Topics (November 12, 2025)
+## Lecture 22: Survey Methods for Sensitive Topics (November 17, 2025)
 
 - Lecture slides: [Survey Methods for Sensitive Topics](https://raw.githack.com/danilofreire/qtm385/main/lectures/lecture-22/22-survey2.html).
 - Bursztyn, L., Haaland, I. K., Röver, N., & Roth, C. (2025). [The Social Desirability Atlas](https://www.nber.org/papers/w33920). NBER Working Paper No. 33920.
-- Problem Set 09 due.
-- [Problem Set 10 assigned.](https://github.com/danilofreire/qtm385/tree/main/assignments/10-assignment)
 
 Suggested readings:
 
@@ -448,39 +448,35 @@ Suggested readings:
 - Riambau, G., & Ostwald, K. (2021). [Placebo Statements in List Experiments: Evidence from a Face-to-Face Survey in Singapore](https://doi.org/10.1017/psrm.2020.18). Political Science Research and Methods, 9(1), 172-179.
 - Gosciak, J., Molitor, D., & Lundberg, I. (2025). [Adaptive Randomization in Conjoint Survey Experiments](https://osf.io/preprints/socarxiv/69y2j_v1). Retrieved from <osf.io/preprints/socarxiv/69y2j_v1>.
 
-## Lecture 23: Texts for Discussion (Related to Survey Experiments) (November 17, 2025)
+## Lecture 23: Texts for Discussion (Related to Survey Experiments) (November 19, 2025)
 
 - Lecture slides: [Texts for Discussion](https://raw.githack.com/danilofreire/qtm385/main/lectures/lecture-23/23-discussion.html).
 - Druckman, J. N., Gilli, M., Klar, S., & Robison, J. (2015). [Measuring drug and alcohol use among college student‐athletes.](https://onlinelibrary.wiley.com/doi/abs/10.1111/ssqu.12135) Social Science Quarterly, 96(2), 369-380.
 - Blair, G., Imai, K., & Lyall, J. (2014). [Comparing and Combining List and Endorsement Experiments: Evidence from Afghanistan.](https://onlinelibrary.wiley.com/doi/abs/10.1111/ajps.12086) American Journal of Political Science, Vol. 58, No. 4 (October), pp. 1043-1063. 
 - Rosenfeld, B, Imai, K., & Shapiro, J. (2016). [An Empirical Validation Study of Popular Survey Methodologies for Sensitive Questions.](https://onlinelibrary.wiley.com/doi/abs/10.1111/ajps.12205) American Journal of Political Science, 60(3), 783-802.
 - Freire, D., & Skarbek, D. (2023). [Vigilantism and Institutions: Understanding Attitudes Toward Lynching in Brazil.](https://journals.sagepub.com/doi/full/10.1177/20531680221150389) Research & Politics, 10(1), 1-8.
+- Problem Set 10 due.
 
-## Lecture 24: Meta-Analysis and Integration of Research Findings (November 19, 2025)
+## Lecture 24: Meta-Analysis and Integration of Research Findings (November 24, 2025)
 
 - Lecture slides: [Meta-Analysis and Integration of Research Findings.](https://raw.githack.com/danilofreire/qtm385/main/lectures/lecture-24/24-meta-analysis.html)
 - FEDAI: Chapter 11: Integration of Research Findings.
-- Problem Set 10 due.
 
 Suggested readings:
 
 - Borenstein, M., Hedges, L. V., Higgins, J. P., & Rothstein, H. R. (2011). [Introduction to Meta-analysis.](https://www.wiley.com/en-us/Introduction+to+Meta+Analysis%2C+2nd+Edition-p-9780470057247) John Wiley & Sons. A whole book dedicated to the topic. A bit technical but very good.
 - Harrer, M., Cuijpers, P., Furukawa, T., & Ebert, D. (2021). [Doing Meta-Analysis with R: A Hands-On Guide.](https://doi.org/10.1201/9781003107347) Chapman and Hall/CRC.
 - Hansen, C., Steinmetz, H., & Block, J. (2022). [How to Conduct a Meta-Analysis in Eight Steps: A Practical Guide.](https://link.springer.com/article/10.1007/s11301-021-00247-4) Management Review Quarterly, 1-19.
-- Moher, D., Shamseer, L., Clarke, M., Ghersi, D., Liberati, A., Petticrew, M., ... & Prisma-P Group. (2015). [Preferred Reporting Items for Systematic Review and Meta-Analysis Protocols (PRISMA-P) 2015 Statement.](https://link.springer.com/article/10.1186/2046-4053-4-1) Systematic Reviews, 4, 1-9.
+- Page, M. J., McKenzie, J. E., Bossuyt, P. M., Boutron, I., Hoffmann, T. C., Mulrow, C. D., ... & Moher, D. (2021). [The PRISMA 2020 Statement: An Updated Guideline for Reporting Systematic Reviews](https://www.bmj.com/content/372/bmj.n71.short). BMJ, 372.
 
-## Lecture 25: Course Revision (November 24, 2025)
+## Lecture 25: Course Revision (December 1, 2025)
 
 - Lecture slides: [Course Revision](https://raw.githack.com/danilofreire/qtm385/main/lectures/lecture-25/25-revision.html).
 
-## Lecture 26: Drop-In Session (December 1, 2025)
-
-- No specific agenda; students can drop in for help with their projects.
-
-## Lecture 27: Presentations (December 3, 2025)
+## Lecture 26: Presentations (December 3, 2025)
 
 - Presentations of final projects.
 
-## Lecture 28: Final Presentations (December 8, 2025)
+## Lecture 27: Presentations (December 8, 2025)
 
-- Final presentations of experimental projects.
+- Presentations of final projects.
