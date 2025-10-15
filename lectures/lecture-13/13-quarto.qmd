@@ -399,7 +399,7 @@ g.set_ylabels('Body Mass');
 - A `bibtex` file is a plain text file with `.bib` extension
 - You can add references to your YAML header
 - Use `@key` to cite a reference, `[@key]` to cite in parentheses
-- The key is the first line of the reference in the `.bib` file (e.g., `@article{nash1950equilibrium,`)
+- The key is the first line of the reference in the `.bib` file (e.g., `@article{nash1950equilibrium,...}`). The key here is `nash1950equilibrium`
 - More information [here](https://quarto.org/docs/authoring/references.html)
 :::
 
@@ -491,7 +491,7 @@ bibliography: references.bib
 
 ## Six components of a DeclareDesign study
 
-:::{style="margin-top: 30px; font-size: 22px;"}
+:::{style="margin-top: 30px; font-size: 24px;"}
 - [Population]{.alert}: Set of units about which inferences are sought and their characteristics
   - Where should the theory apply? Who are the units of interest?
 - [Potential outcomes]{.alert}: Outcomes each unit might exhibit depending on how causal process changes the world
@@ -882,6 +882,30 @@ cluster_sampling_design <- cluster_sampling_designer(
 
 cluster_sampling_design
 ```
+:::
+
+# DesignWizard 🧙 {background-color="#2d4563"}
+
+## DesignWizard
+
+:::{style="margin-top: 30px; font-size: 23px;"}
+:::{.columns}
+:::{.column width="40%"}
+- Our friends at DeclareDesign have created a tool called [DesignWizard](https://eos.wzb.eu/ipi/DDWizard/) that can help you create and diagnose designs interactively
+- It's a great way to get started with DeclareDesign [without writing any code!]{.alert}
+- DesignWizard asks a few questions about your research goals and then generates the corresponding DeclareDesign code for you
+- It even generates the simulations and diagnoses for you automatically!
+- [Give it a try!]{.alert} 🧙
+:::
+
+:::{.column width="60%"}
+:::{style="text-align: center;"}
+![](figures/designwizard.png){width=90%}
+
+<https://eos.wzb.eu/ipi/DDWizard/>
+:::
+:::
+:::
 :::
 
 # Summary 📚 {background-color="#2d4563"}

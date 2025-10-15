@@ -1,5 +1,5 @@
 ---
-title: "DATASCI 385 - Experimental Methods"
+title: "QTM 385 - Experimental Methods"
 date: "Fall 2025"
 lang: en-GB
 author: 
