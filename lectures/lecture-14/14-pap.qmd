@@ -84,7 +84,7 @@ Source: [Open Science Framework](https://files.osf.io/v1/resources/e7ghj/provide
 :::{.columns}
 :::{.column width="50%"}
 - The idea of PAPs is actually [more recent than you might think]{.alert}
-- While RCTs have been around for decades, the first PAPs were written in the early 2000s in response to a growing concern about false results in medicine
+- While RCTs have been around for decades, the first PAPs were written in the early 2000s in response to a [growing concern about false results in medicine]{.alert}
 - In 1997, the US. Food and Drug Administration Modernization Act (FDAMA) mandated the public registration of clinical trials, [including protocols for data collection and analysis]{.alert}
 - This led to [ClinicalTrials.gov](https://clinicaltrials.gov/) in 2000, a registry requiring researchers to outline primary outcomes, sample sizes, and statistical methods before patient enrollment
 - As you expect, these [statistical analysis plans (SAPs)]{.alert} were designed to prevent data mining and selective reporting
@@ -155,7 +155,7 @@ Source: [Ofosu and Posner (2021)](https://www.cambridge.org/core/journals/perspe
   
 ## Responding to criticisms
 
-:::{style="margin-top: 30px; font-size: 28px;"}
+:::{style="margin-top: 30px; font-size: 30px;"}
 - [PAPs are time-consuming]{.alert}: True, but the authors mention that 64% of respondents said that writing a PAP was useful
 - [They are inflexible]{.alert}: Not necessarily
   - A good approach can be ["to freely undertake exploratory investigations that go beyond the PAP, clearly labeling the results of such investigations in the paper as coming from analyses that were not pre-specified, with an explanation provided for why they were added"]{.alert}
@@ -208,7 +208,7 @@ Source: [Lin et al (2016)](https://alexandercoppock.com/Green-Lab-SOP/Green_Lab_
 ## Group activity
 ### How would you organise your PAP?
 
-:::{style="margin-top: 30px; font-size: 25px;"}
+:::{style="margin-top: 30px; font-size: 32px;"}
 - Together with your group members, you will work on the EGAP template
 - The idea is to discuss how you would organise your PAP and fill out the template
 - You don't need to complete all of it, just a brief summary of each section
@@ -528,7 +528,7 @@ Source: [Lin et al (2016)](https://alexandercoppock.com/Green-Lab-SOP/Green_Lab_
 
 ## Some examples
 
-:::{style="margin-top: 30px; font-size: 23px;"}
+:::{style="margin-top: 30px; font-size: 28px;"}
 - Fortunately, there are many examples of PAPs available online
 - If you need some guidance, you can check the following resources:
   - [OSF](https://osf.io/)
@@ -544,14 +544,15 @@ Source: [Lin et al (2016)](https://alexandercoppock.com/Green-Lab-SOP/Green_Lab_
 
 # Dates for your PAPs 📅 {background-color="#2d4563"}
 
-## Important dates
+## Important dates (tentative)
 
-:::{style="margin-top: 30px; font-size: 30px;"}
-- [Wednesday, March 26]{.alert}: PAP draft due (10-15 pages)
-- [Monday, March 31]{.alert}: You will receive feedback on your PAP
-- [Monday, April 7]{.alert}: Final version of your PAP due
-- [Monday, April 14]{.alert}: You will receive your dataset
-- [Wednesday, April 24 and Monday, April 28]{.alert}: You will present your results in class (about 15 minutes) and submit your final report (about 15 pages)
+:::{style="margin-top: 30px; font-size: 34px;"}
+- [Wednesday, November 5th]{.alert}: Pre-analysis plan due
+- [Wednesday, November 12th]{.alert}: Feedback on your PAP
+- [Monday, November 17th]{.alert}: Simulated data based on your PAP
+- [Monday, December 1st]{.alert}: Final report due
+- [Wednesday, December 3rd]{.alert}: Presentations
+- [Monday, December 8th]{.alert}: Presentations
 :::
 
 # And that's all for today! 🎉 {background-color="#2d4563"}
