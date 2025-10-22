@@ -51,13 +51,13 @@ editor:
 - Good research questions produce [knowledge people care about]{.alert}, solving problems or helping policy
 - Research questions should be [clear, specific, and answerable]{.alert}
 - [No experiment is theory-free]{.alert}, even if not explicitly stated
-- [Operationalisation]{.alert} involves translating abstract concepts (e.g, social isolation) into measurable variables (e.g, frequency of social interactions)
+- [Operationalisation]{.alert} involves translating abstract concepts (e.g., social isolation) into measurable variables (e.g., frequency of social interactions)
   - [Construct validity]{.alert} ensures the measure accurately reflects the concept
 - Credible designs yield practical answers, are transparent via pre-registration ([PAPs]{.alert}), and are replicable
 :::
 
 :::{.column width="40%"}
-::: {style="text-align: center; margin-top: -30px;"}
+:::{style="text-align: center; margin-top: -30px;"}
 ![](figures/keynes01.jpg){width="100%"}
 ![](figures/keynes02.jpg){width="100%"}
 
@@ -74,11 +74,12 @@ Recommended reading: [Esther Duflo - The Economist as Plumber (2017)](https://ww
 :::{.column width="55%"}
 - The [MIDA framework]{.alert} provides a structure for declaring and diagnosing any research design:
     - [M]{.alert}odel: Assumptions about how the world works (potential outcomes, relationships)
-    - [I]{.alert}nquiry: The specific question (estimand) we want to answer (e.g, ATE)
+    - [I]{.alert}nquiry: The specific question (estimand) we want to answer (e.g., ATE)
     - [D]{.alert}ata Strategy: How data are generated (sampling, treatment assignment)
-    - [A]{.alert}nswer Strategy: The estimator used to answer the inquiry from the data (e.g, difference-in-means, regression)
-- Using MIDA in code (with `DeclareDesign`) allows simulating the design to understand its properties (bias, power, etc) *before* implementation
+    - [A]{.alert}nswer Strategy: The estimator used to answer the inquiry from the data (e.g., difference-in-means, regression)
+- Using MIDA in code (with `DeclareDesign`) allows simulating the design to understand its properties (bias, power, etc.) *before* implementation
 :::
+
 :::{.column width="45%"}
 ::: {style="text-align: center; margin-top: -30px;"}
 ![](figures/mida.svg){width="100%"}
@@ -103,7 +104,7 @@ Source: [DeclareDesign](https://declaredesign.org/)
 :::
 
 :::{.column width="40%"}
-::: {style="text-align: center; margin-top: -30px;"}
+:::{style="text-align: center; margin-top: -30px;"}
 ![](figures/potential_outcomes.png){width="100%"}
 
 [Wikipedia: Jorge Luis Borges - The garden of forking paths](https://en.wikipedia.org/wiki/The_Garden_of_Forking_Paths)
@@ -117,15 +118,16 @@ Source: [DeclareDesign](https://declaredesign.org/)
 :::{style="font-size: 20px; margin-top: 20px;"}
 :::{.columns}
 :::{.column width="40%"}
-- [Selection bias]{.alert} arises when comparing groups that differ systematically *before* treatment (e.g, sicker people choosing hospitals), biasing simple comparisons
+- [Selection bias]{.alert} arises when comparing groups that differ systematically *before* treatment (e.g., sicker people choosing hospitals), biasing simple comparisons
 - Randomisation breaks the link between potential outcomes and treatment receipt, making groups comparable on average (in expectation) on all pre-treatment characteristics
 - This allows unbiased ATE estimation via difference-in-means
 - [SUTVA]{.alert} (Stable Unit Treatment Value Assumption):
     - [No interference]{.alert} between units (one unit's treatment doesn't affect another's outcome)
     - [Consistent treatment value]{.alert} (the treatment is the same for all units receiving it)
 :::
+
 :::{.column width="60%"}
-::: {style="text-align: center; margin-top: -30px;"}
+:::{style="text-align: center; margin-top: -30px;"}
 ![](figures/dag-1.png){width="100%"}
 
 a) Confounding: Underlying illness ($Z$) causes both taking a specific drug ($X$) and experiencing a bad outcome ($Y$)
@@ -168,6 +170,7 @@ c) Collision: A student's talent ($X$) influences their grades ($Y$); both talen
 - Relies on [large sample approximations]{.alert} (Central Limit Theorem)
 - Considers Type I ($\alpha$) and Type II ($\beta$) errors; [Power = 1 - $\beta$]{.alert}
 :::
+
 :::{.column width="50%"}
 ### Fisher Approach (Randomisation Inference)
 - Uses the random assignment process itself as the basis for inference
@@ -202,7 +205,6 @@ Source: [Myself (2020) 😂](https://journals.sagepub.com/doi/full/10.1177/20531
 :::
 :::
 :::
-
 
 ## Key experimental findings (Lec 06)
 
@@ -242,6 +244,7 @@ Source: [Data Collada (2016)](https://datacolada.org/51)
 - Often necessary due to practical constraints or spillovers
 - **Challenge:** [Intra-Cluster Correlation (ICC)]{.alert} violates independence ($\rho = \frac{\sigma^2_{between}}{\sigma^2_{between} + \sigma^2_{within}}$)
 :::
+
 :::{.column width="50%"}
 ### Clustering Consequences & Power
 - Use [Cluster-Robust Standard Errors (CRSE)]{.alert} (`estimatr::lm_robust(..., clusters = ...)`), requires sufficient clusters
@@ -285,6 +288,7 @@ Source: [NIH Collaboratory (2020)](https://dcricollab.dcri.duke.edu/sites/NIHKR/
 - $CACE = ITT_Y / ITT_D$
 - Requires relevance, exclusion, independence assumptions
 :::
+
 :::{.column width="50%"}
 :::{style="text-align: center; margin-top: 50px; font-size: 35px;"}
 |          | Wᵢ(0) = 0   | Wᵢ(0) = 1    |
@@ -303,7 +307,7 @@ Table: Compliance types
 :::{style="font-size: 23px; margin-top: 20px;"}
 :::{.columns}
 :::{.column width="50%"}
-- Non-compliance occurs in both arms: some $Z=1$ don't get $D=1$; some $Z=0$ *do* get $D=1$ (e.g, control group finds alternative access)
+- Non-compliance occurs in both arms: some $Z=1$ don't get $D=1$; some $Z=0$ *do* get $D=1$ (e.g., control group finds alternative access)
 - Adds potential for [Always-takers]{.alert} ($D_i(1)=1, D_i(0)=1$) and [Defiers]{.alert} ($D_i(1)=0, D_i(0)=1$)
 - Observed groups become mixtures of compliance types
 - Requires the [Monotonicity Assumption]{.alert} (assume no Defiers) to identify CACE; this implies $D_i(1) \ge D_i(0)$ for all $i$
@@ -326,13 +330,14 @@ Source: [Facure (2022)](https://matheusfacure.github.io/python-causality-handboo
 :::{style="font-size: 23px; margin-top: 20px;"}
 :::{.columns}
 :::{.column width="55%"}
-- Attrition involves [missing outcome data post-randomisation]{.alert} (e.g, participants drop out)
+- Attrition involves [missing outcome data post-randomisation]{.alert} (e.g., participants drop out)
 - Bias occurs if attrition is [non-random]{.alert} (differential attrition related to treatment or potential outcomes)
 - Handling Options:
     - Assume MCAR (unlikely); analyse complete cases (reduces power)
     - Assume MAR / Conditional Ignorability ($MIPO|X$): Missingness depends only on *observed* pre-treatment $X$; use [Inverse Probability Weighting (IPW)]{.alert} to upweight observed units similar to missing ones
     - Assume MNAR: Missingness depends on unobservables; use [Bounds Analysis]{.alert} to estimate range of possible ATEs under worst-case ([Manski bounds]{.alert}) or monotonicity assumptions ([Lee bounds]{.alert})
 :::
+
 :::{.column width="45%"}
 ::: {style="text-align: center; margin-top: 80px;"}
 ![](figures/missing.png){width="100%"}
@@ -420,8 +425,8 @@ Source: [DeclareDesign](https://declaredesign.org/)
 - Used when RCTs aren't feasible/ethical, leveraging "as-if" random assignment
 - Natural Experiments rely on assignment outside researcher control (e.g, lotteries); require strong exogeneity arguments
 - Quasi-Experiments are a broader category; common designs include:
-    - [Regression Discontinuity (RDD)]{.alert}: Exploits sharp cutoff rules (e.g, Mignozzetti et al); assumes continuity of potential outcomes at cutoff
-    - [Difference-in-Differences (DID)]{.alert}: Compares changes over time for treated vs control (e.g, Card & Krueger); assumes [parallel trends]{.alert} in absence of treatment
+    - [Regression Discontinuity (RDD)]{.alert}: Exploits sharp cut-off rules (e.g., Mignozzetti et al); assumes continuity of potential outcomes at the cut-off
+    - [Difference-in-Differences (DID)]{.alert}: Compares changes over time for treated vs control (e.g., Card & Krueger); assumes [parallel trends]{.alert} in the absence of treatment
 - Validity depends heavily on the plausibility of underlying assumptions
 :::
 
@@ -445,7 +450,7 @@ Source: [DeclareDesign](https://declaredesign.org/)
 - Requires expanding potential outcomes notation (e.g, $Y_{i}(Z_i, Z_{-i})$)
 - Designs to address/estimate interference:
     - [Clustered randomisation:]{.alert} Randomise at a level high enough to contain spillovers
-    - [Multi-level designs:]{.alert} Randomise at multiple levels (e.g, household & individual) to separate direct/indirect effects
+    - [Multi-level designs:]{.alert} Randomise at multiple levels (e.g., household & individual) to separate direct/indirect effects
 :::
 :::{.column width="50%"}
 ::: {style="text-align: center; margin-top: -30px;"}
@@ -592,7 +597,7 @@ Source: [Freire & Skarbek (2022)](https://journals.sagepub.com/doi/10.1177/20531
 :::{.columns}
 :::{.column width="55%"}
 - Generalising results ([extrapolation]{.alert}) is challenging; distinguish Sample ATE (SATE) from Population ATE (PATE); PATE estimation adds sampling uncertainty
-- The [Bayesian framework]{.alert} formally updates prior beliefs with new evidence, can incorporate beliefs about potential bias (e.g, sampling bias); posterior is precision-weighted average
+- The [Bayesian framework]{.alert} formally updates prior beliefs with new evidence, can incorporate beliefs about potential bias (e.g., sampling bias); posterior is precision-weighted average
 - [Meta-Analysis]{.alert} pools results from multiple studies
     - Fixed Effects assumes one true effect; weights by precision ($1/SE^2$)
     - Random Effects allows true effect to vary across studies (more realistic); accounts for between-study heterogeneity

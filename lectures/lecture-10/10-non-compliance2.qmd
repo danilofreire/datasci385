@@ -41,7 +41,7 @@ editor:
 - [Instrumental variables (IV)]{.alert} methods like [two-stage least squares (2SLS)]{.alert} are preferred for estimation: 
   - Regress treatment receipt on assignment (`D ~ Z`)
   - Use predicted treatment status to estimate outcome effects (`Y ~ D_hat`)
-  - `estimatr:::iv_robust(Y ~ D | Z, data = data)`
+  - `estimatr::iv_robust(Y ~ D | Z, data = data)`
 - [Placebo designs]{.alert} help validate IV assumptions by testing compliers against non-treatment conditions
 - We should anticipate non-compliance through [large sample sizes]{.alert} and [robust experimental designs]{.alert} to maintain internal validity
 :::
@@ -65,7 +65,7 @@ editor:
   - [Defiers]{.alert}: Do opposite of assignment
 - [Non-ignorable selection]{.alert} and [cross-contamination]{.alert} between arms
 - [Monotonicity]{.alert} (no defiers)
-- [Encouragement designs]{.alert}, [double randomisation]{.alert}, and [noncompliance-adjusted power calculations]{.alert} 
+- [Encouragement designs]{.alert}, [double randomisation]{.alert}, and [non-compliance-adjusted power calculations]{.alert}
 :::
 
 :::{.column width=50%}
@@ -86,7 +86,7 @@ Source: [Alves (2022)](https://matheusfacure.github.io/python-causality-handbook
 :::{style="margin-top: 30px; font-size: 25px;"}
 - Last class, we discussed one-sided non-compliance
 - We saw that [ATE is not estimable]{.alert} in this scenario, as treatment and control groups are no longer comparable ([selection bias risk]{.alert})
-- We also learned how to estimate the [CACE]{.alert} using [IV methods]{.alert}, and it is [the difference in observed treatment and control group outcomes by the proportion of subjects who are Compliers]{.alert}
+- We also learned how to estimate the [CACE]{.alert} using [IV methods]{.alert}, which is [the difference in observed treatment and control group outcomes divided by the proportion of subjects who are compliers]{.alert}
 - Today, we will discuss two-sided non-compliance, which is even more complex
 - In this scenario, some subjects in the treatment group do not receive treatment, while some in the control group do
 - [Underestimation of treatment effect]{.alert}: If some in the treatment group don't comply, and some in the control group get treatment, the difference between the groups in terms of [actual treatment received becomes smaller]{.alert} 
@@ -140,7 +140,7 @@ Source: [Alves (2022)](https://matheusfacure.github.io/python-causality-handbook
 :::{style="margin-top: 30px; font-size: 24px;"}
 :::{.columns}
 :::{.column width=50%}
-- [Mullainathan et al (2010)](https://sendhil.org/wp-content/uploads/2019/08/Book-Chapter-5.pdf) designed a study to measure the impact of watching a political debate on voting intentions
+- [Mullainathan et al. (2010)](https://sendhil.org/wp-content/uploads/2019/08/Book-Chapter-5.pdf) designed a study to measure the impact of watching a political debate on voting intentions
 - [Treatment group]{.alert}: Encouraged to watch debate
 - [Control group]{.alert}: Encouraged to watch non-political programme
 - [Treatment defined as self-reported debate viewing]{.alert}
@@ -218,7 +218,7 @@ Source: [Alves (2022)](https://matheusfacure.github.io/python-causality-handbook
 - [Monotonicity]{.alert} is a key assumption in two-sided non-compliance
 - It states that no subject is a [Defier]{.alert}: No one does the opposite of their assignment
 - This is a [strong assumption too]{.alert}, as it is possible that _someone_ does the opposite of what they were told
-- But if we assume that is the case, all problems are solved! 😂
+- But if we assume that's not the case (no defiers), all problems are solved! 😂
 - In our previous example:
   - If we assume that no one watched the debate when they were told not to, we can estimate the proportions of each group
 
@@ -253,8 +253,8 @@ Source: [Alves (2022)](https://matheusfacure.github.io/python-causality-handbook
 ### Now we know what to do! 😉
 
 :::{style="margin-top: 30px; font-size: 25px;"}
-- Once we [eliminated Defiers]{.alert}, we can estimate the [CACE]{.alert} using the same formula as before
-- The [CACE]{.alert} is the [difference in observed treatment and control group outcomes by the proportion of subjects who are Compliers]{.alert}
+ - Once we [eliminate defiers]{.alert}, we can estimate the [CACE]{.alert} using the same formula as before
+ - The [CACE]{.alert} is the [difference in observed treatment and control group outcomes divided by the proportion of subjects who are compliers]{.alert}
 - Why do we need to divide by $ITT_D$? Because the treatment group is a mix of compliers (who take the treatment) and never-takers (who do not)
 - If we include both, we are underestimating the treatment effect, because never-takers do not receive the treatment and their outcomes are not affected by it
 - In two-sided non-compliance, we also have always-takers in the control group, who receive the treatment regardless of assignment. We have to account for them too
@@ -266,7 +266,7 @@ Source: [Alves (2022)](https://matheusfacure.github.io/python-causality-handbook
 ### Let's see how all this works in practice! 😉
 
 :::{style="margin-top: 30px; font-size: 24px;"}
-- Remember [Mullainathan et al's (2010)](https://sendhil.org/wp-content/uploads/2019/08/Book-Chapter-5.pdf) initial experimental design:
+- Remember [Mullainathan et al. (2010)](https://sendhil.org/wp-content/uploads/2019/08/Book-Chapter-5.pdf) initial experimental design:
   - [Treatment group]{.alert}: Encouraged to watch debate
   - [Control group]{.alert}: Encouraged to watch non-political programme
   - [Treatment defined as self-reported debate viewing]{.alert}
@@ -315,7 +315,7 @@ Download the data from [our GitHub repository](https://github.com/danilofreire/q
   - $ITT_D = 36.6 - 16.2 = 20.4$, or $0.204$ in percentage points
 - [Wait a minute!]{.alert} Where do these numbers come from?
   - Remember that only 185 people were treated in the treatment group
-  - $\frac{185}{505} \times 100 \approx 36.6$% reported change in the treatment group! [Aha!]{.alert} 😂
+  - $\frac{185}{505} \times 100 \approx 36.6$% were treated in the treatment group [Aha!]{.alert} 😂
 - Control group "treatment" rate (non-compliance):
   - $\frac{80}{495} \times 100 \approx 16.2$% reported change in the control group
 - So, $ITT_D = 20.4$ or $0.204$ in percentage points. Let's keep it in percentage points for now 😉
@@ -331,10 +331,10 @@ Download the data from [our GitHub repository](https://github.com/danilofreire/q
 - Remember that I said we could use [IV methods]{.alert} to estimate the [CACE]{.alert}?
 - It works the same way as in one-sided non-compliance, but with the ["no defiers" (monotonicity)]{.alert} assumption
 - We regress treatment receipt on assignment, and then use predicted treatment status to estimate outcome effects
-- The formula is the same: `estimatr:::iv_robust(Y ~ D | Z, data = data)`
+- The formula is the same: `estimatr::iv_robust(Y ~ D | Z, data = data)`
 - The `estimatr` package is your friend here once again! 😉
 - Since we don't live in the Stone Age any longer, we can use [R](https://www.r-project.org/) to do all the hard work for us! 😂
-- The script is [also avaliable in our GitHub repository](https://github.com/danilofreire/qtm385/blob/main/lectures/lecture-10/iv_estimation.R)
+- The script is [also available in our GitHub repository](https://github.com/danilofreire/qtm385/blob/main/lectures/lecture-10/iv_estimation.R)
 - Let's do it together, step-by-step, to make sure we all understand what the coefficients mean 🤓
 :::
 
@@ -425,7 +425,7 @@ ITT_D <- coef(itt_d_model)[2]
   - Estimate: 0.1625
   - The intercept is the predicted value of `TREATED` when `ASSIGNED = 0` (control group)
   - This is approximately the [average rate of watching the debate in the control group]{.alert}
-  - Looking back at our table, the "% Reporting change (total N)" in the control group was 16.2% or 0.162 indeed!
+  - Looking back at the counts, $80/495 \approx 0.162$ indeed
 :::
 
 :::{.column width=50%}
@@ -434,7 +434,7 @@ ITT_D <- coef(itt_d_model)[2]
   - This is the coefficient for `ASSIGNED = 1`
   - It's the [estimated difference in the average value of TREATED between those assigned to the treatment condition and those who were not]{.alert}
   - This is our [regression estimate of the ITT_D]{.alert}! 
-  - So those who were assigned to the treatment group were 20% more watch the debate than those who were not
+  - So those who were assigned to the treatment group were [about 20 percentage points more likely to watch the debate]{.alert} than those who were not
   - The p-values are quite low this time, so the results are statistically significant
 :::
 :::

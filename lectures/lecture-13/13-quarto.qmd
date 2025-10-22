@@ -1,6 +1,6 @@
 ---
 title: QTM 385 - Experimental Methods
-subtitle: Lecture 13 - Introduction to Quarto and Declare Design
+subtitle: Lecture 13 - Introduction to Quarto and DeclareDesign
 author:
   - name: Danilo Freire
     email: danilo.freire@emory.edu
@@ -35,7 +35,7 @@ editor:
 - Considerations for [anonymity and confidentiality]{.alert} in research data
 - How [Institutional Review Boards (IRBs)]{.alert} protect human subjects
 - Ethical controversies in [recent studies]{.alert} like Facebook's emotional contagion study
-- [Adaptive research designs]{.alert} that maximise benefits and minimize harm
+- [Adaptive research designs]{.alert} that maximise benefits and minimise harm
 :::
 
 :::{.column width="50%"}
@@ -394,9 +394,9 @@ g.set_ylabels('Body Mass');
 :::{style="margin-top: 30px; font-size: 23px;"}
 :::{.columns}
 :::{.column width="50%"}
-- You can add academic references to your documents using `bibtex`
+- You can add academic references to your documents using `BibTeX`
 - `BibTeX` is a reference management software developed for LaTeX
-- A `bibtex` file is a plain text file with `.bib` extension
+- A `BibTeX` file is a plain text file with `.bib` extension
 - You can add references to your YAML header
 - Use `@key` to cite a reference, `[@key]` to cite in parentheses
 - The key is the first line of the reference in the `.bib` file (e.g., `@article{nash1950equilibrium,...}`). The key here is `nash1950equilibrium`
@@ -404,7 +404,7 @@ g.set_ylabels('Body Mass');
 :::
 
 :::{.column width="50%"}
-- The easiest way to manage references is with a reference manager like [Zotero](https://www.zotero.org/) or download a BibTex reference from Google Scholar
+- The easiest way to manage references is with a reference manager like [Zotero](https://www.zotero.org/) or download a BibTeX reference from Google Scholar
 - Just search for a paper and click on the `cite` button
 - Then click on `BibTeX` and copy the reference to your `.bib` file
 :::
@@ -483,7 +483,7 @@ bibliography: references.bib
 - DeclareDesign can be thought of in 2 parts
   - [The data fabrication step]{.alert} (this is the bulk of the code)
   - [The evaluation step]{.alert}, where users can change initial assumptions and see how well their design actually worked (this is the computationally intensive part of the code)
-- The great thing about DeclareDesign is that, as far as I understand, you can simulate [any kind of design]{.alert} you can think of (e.g., experiments, regression discontinuity, difference-in-differences, even qualitative research!)
+- The great thing about DeclareDesign is that you can simulate [any kind of design]{.alert} you can think of (e.g., experiments, regression discontinuity, difference-in-differences, even qualitative research!)
 - However, most studies are not that complex, so you will rarely need to use all of DeclareDesign's capabilities
 - The authors have written a [book](https://declaredesign.org/library/) that explains the package in detail
 - And they have also created a companion package, [DesignLibrary](https://declaredesign.org/r/designlibrary/), with pre-built designs that you can use right away! 🤓
@@ -928,7 +928,7 @@ cluster_sampling_design
 - Many templates are available in the Quarto Gallery: <https://quarto.org/gallery/>
 - I have a personal collection of PDF templates available at <https://github.com/danilofreire/quarto-templates>
 - Familiarise yourself with `fabricatr` at <https://declaredesign.org/r/fabricatr/>
-- If you want to dive deeper on the MIDA framework, please read chapters 5-13 here: <https://book.declaredesign.org/declaration-diagnosis-redesign/declaring-designs.html>
+- If you want to dive deeper into the MIDA framework, please read chapters 5–13 here: <https://book.declaredesign.org/declaration-diagnosis-redesign/declaring-designs.html>
 - And if you want to learn more about the DesignLibrary, please visit <https://declaredesign.org/r/designlibrary/>
 :::
 

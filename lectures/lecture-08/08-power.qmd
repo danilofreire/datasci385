@@ -80,7 +80,7 @@ Source: [Zhai and Gutman (2018)](https://dcricollab.dcri.duke.edu/sites/NIHKR/KR
 :::{style="margin-top: 30px; font-size: 28px;"}
 - Imagine that we are evaluating a "Community Gardening Programme" (treatment) that is designed to increase social cohesion within a city
 - We believe that different neighbourhoods start with varying levels of social cohesion
-- So we will block by "Neighbourhood Type" (i.e. established versus new development) to improve the precision of our estimated programme effect
+- So we will block by "Neighbourhood Type" (i.e., established versus new development) to improve the precision of our estimated programme effect
 :::
 
 ## Community gardening programme
@@ -292,7 +292,7 @@ ggplot(simulations, aes(estimate)) +
 - The [intra-cluster correlation (ICC)]{.alert} is a measure of the similarity of individuals within the same cluster, compared to individuals in different clusters
 - The ICC is defined as:
   - $ICC = \frac{\sigma^2_{between}}{\sigma^2_{between} + \sigma^2_{within}}$
-- The measure goes from 0 to 1. When it is closer to 0, it means that clusters have [no influence]{.alert} on the outcome, so we can treat individuals as independent
+- The measure ranges from 0 to 1. When it is closer to 0, it means that clusters have [no influence]{.alert} on the outcome, so we can treat individuals as independent
   - This is the ideal situation!
 - When it is closer to 1, it means that all units within the same cluster have [the same outcome]{.alert}
   - This is not good because it implies that units are so similar that the [effective sample size is equal to the number of clusters]{.alert}
@@ -379,7 +379,7 @@ $$n_{ESS} = \frac{1000}{1 + (20 - 1) \cdot 0.2} = \frac{1000}{1 + 3.8} = \frac{1
 ### Pair matching
 
 :::{style="margin-top: 30px; font-size: 24px;"}
-- [Imai et al (2009)](https://projecteuclid.org/journals/statistical-science/volume-24/issue-1/The-Essential-Role-of-Pair-Matching-in-Cluster-Randomized-Experiments/10.1214/08-STS274.pdf) proposed a design suggestion to improve the efficiency of cluster randomised trials
+- [Imai et al. (2009)](https://projecteuclid.org/journals/statistical-science/volume-24/issue-1/The-Essential-Role-of-Pair-Matching-in-Cluster-Randomized-Experiments/10.1214/08-STS274.pdf) proposed a design suggestion to improve the efficiency of cluster randomised trials
 - The strategy has three steps:
   - First, choose the causal quantity of interest (usually, individual difference in means)
   - Then, [identify available pre-treatment covariates]{.alert} likely to affect the outcome variable ([blocks]{.alert}), and, if possible, [pair clusters based on the similarity of these covariates and cluster sizes]{.alert}
@@ -419,7 +419,7 @@ N_clusters <- 12
 cluster_design <- 
   # M: Model
   declare_model(clusters = add_level(N = N_clusters, 
-                                          cl_size = rep(c(100, 10), c(N/6, N - N/6)),
+                                          cl_size = rep(c(100, 10), c(N_clusters/6, N_clusters - N_clusters/6)),
                                           effect = ifelse(cl_size == 100, 0, 3)),
                      units    = add_level(N = cl_size, u = rnorm(N, sd = .2),
                                           Y_Z_0 = u, Y_Z_1 = u + effect)) +
@@ -450,7 +450,7 @@ cluster_design <-
 matched_cluster_design <- 
   # M: Model
   declare_model(clusters = add_level(N = N_clusters, 
-                                     cl_size = rep(c(100, 10), c(N/6, N - N/6)),
+                                     cl_size = rep(c(100, 10), c(N_clusters/6, N_clusters - N_clusters/6)),
                                      # ATE = 1
                                      effect = ifelse(cl_size == 100, 0, 3)),
                 units    = add_level(N = cl_size, 
@@ -627,7 +627,7 @@ ggplot(diagnosis, aes(sample_size, estimate)) +
 :::{style="margin-top: 30px; font-size: 21px;"}
 - Now we will test many estimations at the same time!
 - We start with two-arm trial with 40 units in which 20 units are assigned to treatment, blocking on a binary pre-treatment covariate $W$
-- We’ll let the treatment effects vary according to $W$, but the true average treatment effect (our estimand in this case) is equal to 1.
+- We’ll let the treatment effects vary according to $W$, but the true average treatment effect (our estimand in this case) is equal to 1
 
 ```{r}
 #| echo: true
@@ -658,7 +658,7 @@ diagnose_design(design)
 
 :::{style="margin-top: 30px; font-size: 22px;"}
 - Let’s consider two additional estimation strategies
-- The first controls for the pre-treatment covariate $W$ in an OLS  
+- The first controls for the pre-treatment covariate $W$ in OLS  
 - An alternative is the "Lin estimator", which centres and interacts the variables
 
 ```{r}

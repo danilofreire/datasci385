@@ -59,9 +59,9 @@ editor:
 :::{.column width="50%"}
 - We have briefly discussed the importance of PAPs before
 - Today, we will dive a little deeper into the topic
-- Discuss their pros and cons
-- We will talk about its components
-  - Research questions, hypotheses, variables, estimations, threats to validity
+- We will discuss their pros and cons
+- We will talk about their components
+  - Research questions, hypotheses, variables, estimation, threats to validity
 - In your group, you will work on a PAP template and discuss how its components apply to your research project
 - Finally, we will see some examples of PAPs you can use as a reference
 :::
@@ -85,9 +85,9 @@ Source: [Open Science Framework](https://files.osf.io/v1/resources/e7ghj/provide
 :::{.column width="50%"}
 - The idea of PAPs is actually [more recent than you might think]{.alert}
 - While RCTs have been around for decades, the first PAPs were written in the early 2000s in response to a [growing concern about false results in medicine]{.alert}
-- In 1997, the US. Food and Drug Administration Modernization Act (FDAMA) mandated the public registration of clinical trials, [including protocols for data collection and analysis]{.alert}
+- In 1997, the U.S. Food and Drug Administration Modernization Act (FDAMA) mandated the public registration of clinical trials, [including protocols for data collection and analysis]{.alert}
 - This led to [ClinicalTrials.gov](https://clinicaltrials.gov/) in 2000, a registry requiring researchers to outline primary outcomes, sample sizes, and statistical methods before patient enrollment
-- As you expect, these [statistical analysis plans (SAPs)]{.alert} were designed to prevent data mining and selective reporting
+- As you might expect, these [statistical analysis plans (SAPs)]{.alert} were designed to prevent data mining and selective reporting
 - The [International Council for Harmonisation (ICH)](https://www.ich.org/) in Madrid further expanded these requirements to [include handling of missing data and statistical models]{.alert} to reduce [Type I errors]{.alert}
 :::
 
@@ -112,7 +112,7 @@ Source: [ClinicalTrials.gov](https://clinicaltrials.gov/){target="_blank"}
 - The [American Economic Association (AEA)](https://www.aeaweb.org/) launched the [RCT Registry](https://www.socialscienceregistry.org/) in 2013
 - [Casey et al. (2012)](https://doi.org/10.1093/qje/qje027) demonstrated how PAPs could "bind researchers’ hands" against data mining by pre-specifying outcomes, covariates, and subgroup analyses
 - [Olken (2015)](https://pubs.aeaweb.org/doi/pdfplus/10.1257/jep.29.3.61) argued that comprehensive PAPs, like a "Ulysses pact", were necessary to limit researcher discretion
-- [Simmons et al (2011)](https://journals.sagepub.com/doi/10.1177/0956797611417632) mention the idea of "researchers degrees of freedom", since ["it is unacceptably easy to publish “statistically significant” evidence consistent with any hypothesis"]{.alert}
+- [Simmons et al. (2011)](https://journals.sagepub.com/doi/10.1177/0956797611417632) mention the idea of "researchers' degrees of freedom", since ["it is unacceptably easy to publish “statistically significant” evidence consistent with any hypothesis"]{.alert}
 :::
 
 :::{.column width="50%"}
@@ -145,7 +145,7 @@ Ulysses/Odysseus and the Sirens
 :::{style="margin-top: -30px; text-align: center;"}
 ![](figures/ofosu.png){width=90%}
 
-More than 50 hypothesis specified? Really? How can this prevent data mining?
+ More than 50 hypotheses specified? Really? How can this prevent data mining?
 
 Source: [Ofosu and Posner (2021)](https://www.cambridge.org/core/journals/perspectives-on-politics/article/preanalysis-plans-an-early-stocktaking/94E7FAE76001C45A04E8F5E272C773CE){target="_blank"}
 :::
@@ -160,16 +160,16 @@ Source: [Ofosu and Posner (2021)](https://www.cambridge.org/core/journals/perspe
 - [They are inflexible]{.alert}: Not necessarily
   - A good approach can be ["to freely undertake exploratory investigations that go beyond the PAP, clearly labeling the results of such investigations in the paper as coming from analyses that were not pre-specified, with an explanation provided for why they were added"]{.alert}
 - [PAPs are worthless without policing]{.alert}: About 40% of respondents said the reviewers mentioned the PAP in their reviews
-- [People can steal your work]{.alert}: This seems to be a little concern, as only 15% of respondents said they cared about this
+- [People can steal your work]{.alert}: This seems to be of little concern, as only 15% of respondents said they cared about this
 :::
 
 ## SOPs as a flexible alternative to PAPs?
 
 :::{style="margin-top: 30px; font-size: 27px;"}
-- [Lin and Green (2016)](https://www.stat.berkeley.edu/~winston/sop-safety-net.pdf) argue that we should adopt a SOP as much as possible to avoid the pitfalls of PAPs
+- [Lin and Green (2016)](https://www.stat.berkeley.edu/~winston/sop-safety-net.pdf) argue that we should adopt an SOP as much as possible to avoid the pitfalls of PAPs
 - SOPs are more flexible in the way that they [only specify what you plan to do if something happens]{.alert}, that is, you don't need to specify all the details of your analysis
 - They are more like a "safety net" for your research
-- It can save time if you work in a research group, as you can share the same SOP with your colleagues and avoid writing multiple PAPs
+- They can save time if you work in a research group, as you can share the same SOP with your colleagues and avoid writing multiple PAPs
 - You can see an example here: <https://github.com/acoppock/Green-Lab-SOP>
 - While interesting in practice, apparently [SOPs never really took off]{.alert}
 - [Ofosu and Posner (2021)](https://www.cambridge.org/core/journals/perspectives-on-politics/article/preanalysis-plans-an-early-stocktaking/94E7FAE76001C45A04E8F5E272C773CE) mention that only 3% of respondents said they used SOPs
@@ -181,7 +181,7 @@ Source: [Ofosu and Posner (2021)](https://www.cambridge.org/core/journals/perspe
 :::{style="margin-top: 30px; font-size: 26px; text-align: center;"}
 ![](figures/sop.png){width=70%}
 
-Source: [Lin et al (2016)](https://alexandercoppock.com/Green-Lab-SOP/Green_Lab_SOP.pdf)
+Source: [Lin et al. (2016)](https://alexandercoppock.com/Green-Lab-SOP/Green_Lab_SOP.pdf)
 :::
 
 # Components of a PAP 📝 {background-color="#2d4563"}
@@ -196,7 +196,7 @@ Source: [Lin et al (2016)](https://alexandercoppock.com/Green-Lab-SOP/Green_Lab_
   - This is the one we will use in this class!
 - From experience, PAPs can be [as short as 2 pages or as long as 50 pages]{.alert}
   - The average is probably between [10-20 pages]{.alert}
-- At the mininum, PAPs should include [4 sections]{.alert}:
+- At the minimum, PAPs should include [4 sections]{.alert}:
   - Unit of analysis, population, and inclusion/exclusion criteria
   - Method (observational, experimental, quasi-experimental)
   - Experimental intervention or explanatory variable
@@ -238,7 +238,7 @@ Source: [Lin et al (2016)](https://alexandercoppock.com/Green-Lab-SOP/Green_Lab_
 |     question**    |                                                  |
 +-------------------+--------------------------------------------------+
 | 4.  **General     | i. Why should someone who is not an academic care|
-|     motivation**  | care about the results of this research? [1      |
+|     motivation**  | about the results of this research? [1           |
 |                   | paragraph]                                       |
 |                   | ii. What policy decision(s) will your research   |
 |                   | help inform? [1 paragraph]                       |
@@ -260,16 +260,16 @@ Source: [Lin et al (2016)](https://alexandercoppock.com/Green-Lab-SOP/Green_Lab_
 +===================+==================================================+
 | 6.  **Primary     | i. What are the key parameter/estimands the      |
 |     hypotheses**  | research design seeks to estimate? What sign     |
-|                   | and/or magnitude is predicted by primary         |
+|                   | and/or magnitude are predicted by the primary    |
 |                   | hypotheses for each parameter/estimand? [1-2     |
 |                   | paragraphs]                                      |
 |                   | ii. What is the logic or theory of change behind |
-|                   | the primary hypotheses [1-2 paragraphs]          |
+|                   | the primary hypotheses? [1-2 paragraphs]         |
 |                   | iii. What are the key pieces in the relevant     |
 |                   | academic literature that inform your hypotheses? |
 |                   | [2-3 pieces]                                     |
 +-------------------+--------------------------------------------------+
-| 7. **Secondary    | i. What are the secondary paramater/estimands the|
+| 7. **Secondary    | i. What are the secondary parameter/estimands the|
 |    hypotheses**   | research design seeks to estimate? What sign     |
 |                   | and/or magnitude is predicted by the secondary   |
 |                   | hypotheses for each parameter/estimand [These may|
@@ -351,7 +351,7 @@ Source: [Lin et al (2016)](https://alexandercoppock.com/Green-Lab-SOP/Green_Lab_
 | 17. **Control**   | i. Describe the control condition                |
 |                   | ii. Is the control condition a pure control (no  |
 |                   | intervention at all) or a placebo? What is the   |
-|                   | placebo contition designed to control for?       |
+|                   | placebo condition designed to control for?       |
 +-------------------+--------------------------------------------------+
 | 18. **Units**     | i. To what units (level) will the intervention be|
 |                   | applied? Individual, classroom, school, village, |
@@ -370,11 +370,11 @@ Source: [Lin et al (2016)](https://alexandercoppock.com/Green-Lab-SOP/Green_Lab_
 | **Section 3:      |                                                  |
 | Intervention**    |                                                  |
 +===================+==================================================+
-| 19. **Compliance**| i. What does it mean to "take" (comply with) the | 
+| 19. **Compliance**| i. What does it mean to "take" (comply with)     | 
 |                   | the intervention?                                |
-|                   | ii. If the intervention is a program, how much   |
-|                   | someone need to attend (showing up once?         |
-|                   | finishing the program?) in order to count as     |
+|                   | ii. If the intervention is a programme, how much |
+|                   | does someone need to attend (showing up once?    |
+|                   | finishing the programme?) in order to count as   |
 |                   | having attended?                                 |
 +-------------------+--------------------------------------------------+
 | 20. **Non-        | i. Is there any concern with non-compliance      |
@@ -386,7 +386,7 @@ Source: [Lin et al (2016)](https://alexandercoppock.com/Green-Lab-SOP/Green_Lab_
 |                   | status quo, according to the best evidence       |
 |                   | available?                                       |
 |                   | ii. Are there concerns that participants may be  |
-|                   | forced to comply wiht the intervention?          |
+|                   | forced to comply with the intervention?          |
 |                   | iii. What are the risks and magnitude of         |
 |                   | potentially negative effects of the treatment?   |
 |                   | Are such risks concentrated on a particular      |
@@ -399,7 +399,7 @@ Source: [Lin et al (2016)](https://alexandercoppock.com/Green-Lab-SOP/Green_Lab_
 :::{style="margin-top: 30px; font-size: 21px;"}
 +-------------------+--------------------------------------------------+
 | **Section 4:      |                                                  |
-| Outcome and       |                                                  |
+| Outcomes and      |                                                  |
 | Covariates**      |                                                  |
 +===================+==================================================+
 | 22. **Primary     | i. What is your primary outcome?                 |
@@ -424,13 +424,13 @@ Source: [Lin et al (2016)](https://alexandercoppock.com/Green-Lab-SOP/Green_Lab_
 |                   | iii. Will you collect multiple waves of endline  |
 |                   | measurement?                                     |
 |                   | iv. If you will collect a baseline or midline,   |
-|                   | how will you find the same respondents (minimize |
+|                   | how will you find the same respondents (minimise |
 |                   | attrition?)                                      |
 +-------------------+--------------------------------------------------+
 | 27. **Covariates**| i. What covariate data do you need, including for|
 |                   | subgroup analysis? How will covariates be        |
 |                   | measured?                                        |
-|                   | ii. What addtional covariates (if any) will you  |
+|                   | ii. What additional covariates (if any) will you |
 |                   | measure?                                         |
 |                   | iii. What additional outcomes or covariates will |
 |                   | you collect to distinguish between your          |
@@ -441,7 +441,7 @@ Source: [Lin et al (2016)](https://alexandercoppock.com/Green-Lab-SOP/Green_Lab_
 |                   | or painful (physically, emotionally) for any     |
 |                   | respondents?                                     |
 |                   | ii. Are these costs necessary? Have they been    |
-|                   | minimized?                                       |
+|                   | minimised?                                       |
 |                   | iii. Are they outweighed by the potential        |
 |                   | benefits of the research to society?             |
 +-------------------+--------------------------------------------------+
@@ -454,7 +454,7 @@ Source: [Lin et al (2016)](https://alexandercoppock.com/Green-Lab-SOP/Green_Lab_
 | **Section 5:      |                                                  |
 | Randomisation**   |                                                  |
 +===================+==================================================+
-| 29.               | i. Complete/simple, block, cluster, factorial    |
+| 29.               | i. Complete/simple, block, cluster, factorial,   |
 | **Randomisation   | etc.                                             |
 | strategy**        |                                                  |
 +-------------------+--------------------------------------------------+
@@ -466,7 +466,7 @@ Source: [Lin et al (2016)](https://alexandercoppock.com/Green-Lab-SOP/Green_Lab_
 |                   | ii. If you have clusters, what is the intra-class|
 |                   | correlation (ICC)?                               |
 |                   | iii. Is clustering strictly necessary, or could  |
-|                   | you randomize at the individual level?           |
+|                   | you randomise at the individual level?           |
 +-------------------+--------------------------------------------------+
 :::
 
@@ -491,7 +491,7 @@ Source: [Lin et al (2016)](https://alexandercoppock.com/Green-Lab-SOP/Green_Lab_
 +-------------------+--------------------------------------------------+
 | 36. **Effect      | i. What is the expected effect size? What is the |
 |     size**        | minimum effect size that would make the study    |
-|                   | worth running? what effect sizes have similar    |
+|                   | worth running? What effect sizes have similar    |
 |                   | studies found?                                   |
 +-------------------+--------------------------------------------------+
 | 37. **What is your|                                                  |
@@ -512,7 +512,7 @@ Source: [Lin et al (2016)](https://alexandercoppock.com/Green-Lab-SOP/Green_Lab_
 +-------------------+--------------------------------------------------+
 | 39.               | i. Who will implement the intervention?          |                
 | **Implementation**| ii. Are there any dangers to your research team, |
-|                   | including enumerators? How will you minimize     |
+|                   | including enumerators? How will you minimise     |
 |                   | them?                                            |
 |                   | iii. How will you track the quality of the       |
 |                   | implementation of the intervention?              |

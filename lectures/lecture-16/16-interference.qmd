@@ -110,7 +110,7 @@ Source: <https://www.caliper.com/Maptitude/Crime/default.htm>
 :::{style="text-align: center;"}
 ![](figures/dag.png){width=100%}
 
-Source: [Arronow et al. (2021)](https://arxiv.org/pdf/2001.05444)
+Source: [Aronow et al. (2021)](https://arxiv.org/pdf/2001.05444)
 :::
 :::
 :::
@@ -122,7 +122,7 @@ Source: [Arronow et al. (2021)](https://arxiv.org/pdf/2001.05444)
 - Imagine you are trying to improve school grades
 - You think that [awarding a prize to students]{.alert} will help motivate them
 - You randomly assign students to treatment and control groups
-- You find a [positive effect]{.alert} of the program on test scores
+- You find a [positive effect]{.alert} of the programme on test scores
 - But you also find that [depending on who gets the treatment]{.alert}, the [effect varies]{.alert}
 
 :::{style="margin-top: 50px; text-align: center;"}
@@ -376,8 +376,7 @@ Source: [Collazos et al. (2021)](https://link.springer.com/article/10.1007/s1129
 ## Potential outcomes
 
 :::{style="margin-top: 20px; font-size: 26px;"}
-- Second, the [probability of assignment to each treatment condition varies
-from one observation to the next]{.alert}
+- Second, the [probability of assignment to each treatment condition varies from one observation to the next]{.alert}
 - For instance, village A has a 0.20 probability of being exposed to spillovers from an adjacent treated location, whereas the village at location B has a 0.40 probability
 - As we have seen previously, we should [weight observations by inverse probability of assigned experimental condition]{.alert}, excluding subjects with zero probability (e.g., F)
 
@@ -470,7 +469,7 @@ period's effects to dissipate
 ## Variations of repeated-measures experiments
 
 :::{style="margin-top: 30px; font-size: 28px;"}
-- [Clifford et al (2021)](https://doi.org/10.1017/S0003055421000241) evaluate how different "pre-post" designs can improve experimental estimates, mainly by reducing standard errors
+- [Clifford et al. (2021)](https://doi.org/10.1017/S0003055421000241) evaluate how different "pre-post" designs can improve experimental estimates, mainly by reducing standard errors
 - Regular experiments ("post only") have relatively low precision because [the outcome is measured just once]{.alert}
 - This is particularly problematic when the outcome is [noisy]{.alert} or if the experiment involves [multiple treatment arms, moderators, or small treatment effects]{.alert}
 - Pre-post designs measure the outcome prior to the experimental manipulation at point $t_0$ and after the manipulation at point $t_1$ (as we've just seen)
@@ -483,7 +482,7 @@ period's effects to dissipate
 :::{.columns}
 :::{.column width="50%"}
 - Some scholars worry that measuring the outcome prior to the experiment could [alter estimated treatment effects]{.alert}
-- This is true in some cases: [the no-persistence assumption is likely violated]{.alert} when you the treatment is giving information or training, for example
+- This is true in some cases: [the no-persistence assumption is likely violated]{.alert} when the treatment gives information or training, for example
 - The [quasi-pretest-posttest design]{.alert} is a variation of the pre-post design that tries to avoids this problem by providing a [similar, but not identical, treatment]{.alert} in the pretest phase
 - The authors decided to test these designs in a [replication of six studies]{.alert} to see how they perform in practice
 - If different designs yield largely the same results, researchers can be more confident in the external validity of these findings and choose designs based [on other features, like precision]{.alert}
@@ -493,7 +492,7 @@ period's effects to dissipate
 :::{style="text-align: center;"}
 ![](figures/pre-post.png){width=100%}
 
-Source: [Clifford et al (2021)](https://doi.org/10.1017/S0003055421000241)
+Source: [Clifford et al. (2021)](https://doi.org/10.1017/S0003055421000241)
 :::
 :::
 :::
@@ -530,7 +529,7 @@ Source: [Clifford et al (2021)](https://doi.org/10.1017/S0003055421000241)
 :::{style="margin-top: 20px; font-size: 23px; text-align: center;"}
 ![](figures/sw.png){width=80%}
 
-Source: [Hemming et al (2014)](https://doi.org/10.1136/bmj.h391)
+Source: [Hemming et al. (2014)](https://doi.org/10.1136/bmj.h391)
 :::
 
 ## Example: TV advertising and candidate support
@@ -640,8 +639,8 @@ $$
 - They can be [positive or negative]{.alert}, and they can be [modelled explicitly]{.alert} in our analysis
 - There are several methods to deal with spillovers, such as [multi-level designs]{.alert}, [within-subject designs]{.alert}, [repeated-measures experiments]{.alert}, and [waitlist designs]{.alert}
 - Each design has its [advantages and disadvantages]{.alert}, and the choice of design should be based on the [research question]{.alert} and the [context]{.alert}
-- You can use [DeclareDesign](https://declaredesign.org/r/designlibrary/) to simulate spillover designs and pretest posttest designs
-- The statistical analysis of waitlist designs are a little tricky, but you can use the [swCRTdesign](https://cran.r-project.org/web/packages/swCRTdesign/index.html) package in R to help you with that
+- You can use [DeclareDesign](https://declaredesign.org/r/designlibrary/) to simulate spillover designs and pretest–posttest designs
+- The statistical analysis of waitlist designs is a little tricky, but you can use the [swCRTdesign](https://cran.r-project.org/web/packages/swCRTdesign/index.html) package in R to help you with that
 
 :::
 

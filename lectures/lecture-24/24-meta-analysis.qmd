@@ -557,7 +557,7 @@ $$SE_{pooled} = \sqrt{Var(ATE_{pooled})}$$
 
 # Case study: Legislature size and government spending 💰 {background-color="#2d4563"}
 
-## Step 01: Scrap data
+## Step 01: Scrape data
 
 :::{style="font-size: 21px; margin-top: 30px;"}
 :::{.columns}
@@ -591,7 +591,7 @@ Source: [Freire et al (2022)](https://doi.org/10.1017/S0007123422000552)
   - We excluded articles by title, then by abstract, then by full text (two independent coders)
   - The paper should (i) conduct a quantitative analysis, (ii) report data on the number of legislators, and (iii) also include data on public expenditure
 - We then extracted all ATEs and standard errors from the articles to conduct two analyses:
-  - One with the [most strict model]{.alert} and one with [all models]{.alert}
+  - One with the [strictest model]{.alert} and one with [all models]{.alert}
 - We ended up with 30 articles, with 45 estimates in the strict sample, 162 in the complete sample
 :::
 
@@ -639,7 +639,7 @@ Part of the data extraction process
 
 $$\tau = \mu + \xi_i + \varepsilon_i$$
 
--  We added two levels to the models: publication ID for each paper, and a a common index for papers that share the
+-  We added two levels to the models: publication ID for each paper, and a common index for papers that share the
 same data 
 - We found [a lot of heterogeneity]{.alert} in the data! 
 - But the meta-regressions also helped us understand the main drivers of the differences in the ATE 🤓

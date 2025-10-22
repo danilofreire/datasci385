@@ -32,19 +32,19 @@ editor:
 - We discussed two interesting papers (I hope so 😂!)
 
 - [**Paper 1: Munshi (2003)**](https://doi.org/10.1162/003355303321675455)
-  - [Topic]{.alert}: Identifying network effects in the labour market.
-  - [Context]{.alert}: Mexican migrants in the U.S.
-  - [Challenge]{.alert}: Endogeneity and selection bias.
-  - [Method]{.alert}: Instrumental Variables (IV) using rainfall.
+  - [Topic]{.alert}: Identifying network effects in the labour market
+  - [Context]{.alert}: Mexican migrants in the US
+  - [Challenge]{.alert}: Endogeneity and selection bias
+  - [Method]{.alert}: Instrumental Variables (IV) using rainfall
 :::
 
 ::: {.column width="50%"}
-- [**Paper 2: Miguel & Kramer (2004)**](https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1468-0262.2004.00481.x)
-  - [Topic]{.alert}: Identifying treatment impacts with externalities.
-  - [Context]{.alert}: Deworming programme in Kenyan schools.
-  - [Challenge]{.alert}: Standard methods underestimate effects due to spillovers (SUTVA violation).
-  - [Method]{.alert}: Randomised phase-in design.
-- The [focus]{.alert} of last class was on clever identification strategies when standard RCT assumptions are violated or RCTs are not feasible (and how to think about them).
+- [**Paper 2: Miguel & Kremer (2004)**](https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1468-0262.2004.00481.x)
+  - [Topic]{.alert}: Identifying treatment impacts with externalities
+  - [Context]{.alert}: Deworming programme in Kenyan schools
+  - [Challenge]{.alert}: Standard methods underestimate effects due to spillovers (SUTVA violation)
+  - [Method]{.alert}: Randomised phase-in design
+- The [focus]{.alert} of last class was on clever identification strategies when standard RCT assumptions are violated or RCTs are not feasible (and how to think about them)
 :::
 :::
 :::
@@ -80,10 +80,10 @@ editor:
 :::{style="margin-top: 30px; font-size: 21px;"}
 :::{.columns}
 :::{.column width=50%}
-- Experiments often tell us *that* a treatment ($Z$) affects an outcome ($Y$).
-- [Mediation analysis]{.alert} asks *how* or *why* this effect occurs.
-- It investigates the role of [intermediate variables (mediators, $M$)]{.alert} that lie on the causal path between $Z$ and $Y$.
-- The core idea: [$Z$ causes $M$, and $M$ causes $Y$]{.alert}.
+- Experiments often tell us *that* a treatment ($Z$) affects an outcome ($Y$)
+- [Mediation analysis]{.alert} asks *how* or *why* this effect occurs
+- It investigates the role of [intermediate variables (mediators, $M$)]{.alert} that lie on the causal path between $Z$ and $Y$
+- The core idea: [$Z$ causes $M$, and $M$ causes $Y$]{.alert}
 - Examples:
   - Limes ($Z$) → Vitamin C intake ($M$) → Reduced scurvy ($Y$)
   - Reserving council seats for women ($Z$) → Female incumbency/Changed attitudes ($M$) → Election of women later ($Y$) (Bhavnani 2009)
@@ -148,12 +148,12 @@ Source: [Righetti (2023)](https://nicolarighetti.github.io/mediation-moderation-
 :::{style="margin-top: 30px; font-size: 23px;"}
 :::{.columns}
 :::{.column width=50%}
-- If we assume [constant treatment effects]{.alert} (a, b, c, d are the same for everyone) and certain other conditions hold...
+- If we assume [constant treatment effects]{.alert} (a, b, c, d are the same for everyone) and certain other conditions hold
 - The total effect (c) can be decomposed:
-  - [Total Effect (c)]{.alert}: How much $Y$ changes for a one-unit change in $Z$. Estimated from Eq. (2).
-  - [Direct Effect (d)]{.alert}: How much $Y$ changes for a one-unit change in $Z$, *holding $M$ constant*. Estimated from Eq. (3).
-  - [Indirect Effect (ab)]{.alert}: How much of $Z$'s effect on $Y$ is transmitted *through* $M$. Calculated as $\hat{a} \times \hat{b}$ (or $\hat{c} - \hat{d}$).
-- This decomposition ($c = d + ab$) is the cornerstone of traditional mediation analysis.
+  - [Total Effect (c)]{.alert}: How much $Y$ changes for a one-unit change in $Z$. Estimated from Eq. (2)
+  - [Direct Effect (d)]{.alert}: How much $Y$ changes for a one-unit change in $Z$, *holding $M$ constant*. Estimated from Eq. (3)
+  - [Indirect Effect (ab)]{.alert}: How much of $Z$'s effect on $Y$ is transmitted *through* $M$. Calculated as $\hat{a} \times \hat{b}$ (or $\hat{c} - \hat{d}$)
+- This decomposition ($c = d + ab$) is the cornerstone of traditional mediation analysis
 - **BUT:** This [relies heavily on the constant effects assumption.]{.alert}
 :::
 
@@ -171,18 +171,18 @@ Source: [Righetti (2023)](https://nicolarighetti.github.io/mediation-moderation-
 - Remember from heterogeneous effects: [causal effects often vary!]{.alert}
 - If $a_i$ and $b_i$ vary across individuals, then the average indirect effect is $E[a_i b_i]$
 - $E[a_i b_i] = E[a_i] E[b_i] + Cov(a_i, b_i)$
-- Simply multiplying the average effect of $Z$ on $M$ ($\hat{a} \approx E[a_i]$) by the average effect of $M$ on $Y$ ($\hat{b} \approx E[b_i]$) only gives the average indirect effect if $[Cov(a_i, b_i) = 0]$.
-- This covariance term is generally [not zero and not identifiable]{.alert}.
-- So, the simple $c = d + ab$ decomposition breaks down with heterogeneous effects.
+- Simply multiplying the average effect of $Z$ on $M$ ($\hat{a} \approx E[a_i]$) by the average effect of $M$ on $Y$ ($\hat{b} \approx E[b_i]$) only gives the average indirect effect if $[Cov(a_i, b_i) = 0]$
+- This covariance term is generally [not zero and not identifiable]{.alert}
+- So, the simple $c = d + ab$ decomposition breaks down with heterogeneous effects
 :::
 
 ## The Problem with Equation (3): Endogeneity of $M$
 
 :::{style="margin-top: 30px; font-size: 30px;"}
-- Even if we ignore heterogeneous effects for a moment... Equation (3) is problematic: $Y_i = \alpha_3 + d Z_i + b M_i + e_{3i}$
-- $Z$ is random, but [$M$ is an outcome variable]{.alert}. It's very likely correlated with the error term $e_{3i}$.
-- Why? [Unobserved confounders]{.alert} might affect both M and Y.
-- **Example (Bhavnani):** Unmeasured local 'egalitarianism' ($e_{3i}$) might encourage women to run for office ($M$) *and* make voters more likely to elect women ($Y$), independently of the reservation policy ($Z$).
+ - Even if we ignore heterogeneous effects for a moment, Equation (3) is problematic: $Y_i = \alpha_3 + d Z_i + b M_i + e_{3i}$
+ - $Z$ is random, but [$M$ is an outcome variable]{.alert}. It's very likely correlated with the error term $e_{3i}$
+ - Why? [Unobserved confounders]{.alert} might affect both M and Y
+ - **Example (Bhavnani):** Unmeasured local 'egalitarianism' ($e_{3i}$) might encourage women to run for office ($M$) *and* make voters more likely to elect women ($Y$), independently of the reservation policy ($Z$)
 - Including $M$ in the regression is [like including a post-treatment variable]{.alert} that is correlated with the error term!
 :::
 
@@ -192,9 +192,9 @@ Source: [Righetti (2023)](https://nicolarighetti.github.io/mediation-moderation-
 - Relies on [strong, often implausible assumptions]{.alert}:
   - Constant treatment effects (for $c = d + ab$)
   - No unobserved confounding between $M$ and $Y$ (for unbiased $\hat{b}$ and $\hat{d}$)
-- These assumptions are [not guaranteed by random assignment of $Z$]{.alert} alone.
-- Prone to bias that exaggerates the mediator's role and downplays the treatment's direct effect.
-- [Use with extreme caution, if at all]{.alert}, for causal mediation claims based solely on $Z$ randomisation.
+- These assumptions are [not guaranteed by random assignment of $Z$]{.alert} alone
+- Prone to bias that exaggerates the mediator's role and downplays the treatment's direct effect
+- [Use with extreme caution, if at all]{.alert}, for causal mediation claims based solely on $Z$ randomisation
 :::
 
 # A Potential Outcomes View {background-color="#2d4563"}
@@ -211,18 +211,18 @@ Source: [Righetti (2023)](https://nicolarighetti.github.io/mediation-moderation-
   - $Y_i = Y_i(Z_i)$
 - Average Treatment Effect (Total Effect): $ATE = E[Y_i(1) - Y_i(0)]$
 - Effect of $Z$ on $M$: $E[M_i(1) - M_i(0)]$
-- These are estimable from a standard experiment randomising $Z$.
+- These are estimable from a standard experiment randomising $Z$
 :::
 
 ## Expanding Potential Outcomes: $Y_i(m, z)$
 
 :::{style="margin-top: 30px; font-size: 30px;"}
 - To formally define direct and indirect effects, [we need a more complex notation]{.alert} (Imai, Keele, Yamamoto 2010; Robins & Greenland 1992):
-- $Y_i(m, z)$: Potential outcome for individual $i$ if their mediator were set to value $m$ AND they were assigned treatment $z$.
+- $Y_i(m, z)$: Potential outcome for individual $i$ if their mediator were set to value $m$ AND they were assigned treatment $z$
 - This allows us to think about hypothetical scenarios:
-  - What would $Y$ be if we gave the treatment ($z=1$) but somehow forced the mediator to the level it would have taken under control ($m=M_i(0)$)? This would be $Y_i(M_i(0), 1)$.
-  - These are [complex potential outcomes]{.alert} because they involve situations that can never happen in reality (more on that soon!).
-- Linking back: $Y_i(1) = Y_i(M_i(1), 1)$ and $Y_i(0) = Y_i(M_i(0), 0)$.
+  - What would $Y$ be if we gave the treatment ($z=1$) but somehow forced the mediator to the level it would have taken under control ($m=M_i(0)$)? This would be $Y_i(M_i(0), 1)$
+  - These are [complex potential outcomes]{.alert} because they involve situations that can never happen in reality (more on that soon!)
+- Linking back: $Y_i(1) = Y_i(M_i(1), 1)$ and $Y_i(0) = Y_i(M_i(0), 0)$
 :::
 
 ## Defining Effects with $Y(m, z)$
@@ -236,7 +236,7 @@ Source: [Righetti (2023)](https://nicolarighetti.github.io/mediation-moderation-
   - $NDE = E[Y_i(M_i(0), 1) - Y_i(M_i(0), 0)]$
 - **Natural Indirect Effect (NIE):** Effect of $M$ changing from $M_i(0)$ to $M_i(1)$, holding $Z$ fixed (usually at $Z=1$ for policy relevance).
   - $NIE = E[Y_i(M_i(1), 1) - Y_i(M_i(0), 1)]$
-- Under certain assumptions, $ATE = NDE + NIE$.
+- Under certain assumptions, $ATE = NDE + NIE$
 :::
 
 ## The Challenge: Complex Potential Outcomes
@@ -245,20 +245,20 @@ Source: [Righetti (2023)](https://nicolarighetti.github.io/mediation-moderation-
 - Look closely at the definitions of NDE and NIE:
   - NDE involves $Y_i(M_i(0), 1)$
   - NIE involves $Y_i(M_i(0), 1)$
-- [These are "complex" or "counterfactual" potential outcomes]{.alert}.
+- [These are "complex" or "counterfactual" potential outcomes]{.alert}
   - $Y_i(M_i(0), 1)$ represents the outcome under treatment ($Z=1$), but with the mediator at the level it would take under control ($M=M(0)$).
 - [This state can never happen in reality!]{.alert} If $Z_i=1$, we observe $M_i(1)$, not $M_i(0)$.
-- These potential outcomes are [fundamentally unobservable]{.alert} from any single experiment just randomising $Z$.
+- These potential outcomes are [fundamentally unobservable]{.alert} from any single experiment just randomising $Z$
 - Now you see why [mediation analysis is so tricky and why we don't do it often!]{.alert}
 :::
 
 ## Fundamental Problem Recap
 
 :::{style="margin-top: 30px; font-size: 29px;"}
-- Estimating the theoretically precise Natural Direct Effect (NDE) and Natural Indirect Effect (NIE) requires knowing the values of complex potential outcomes like $Y_i(M_i(0), 1)$.
-- Since these are unobservable, [we cannot estimate NDE and NIE without making strong assumptions]{.alert}.
-- Common assumptions include versions of "sequential ignorability" (Imai et al.), essentially assuming M is "as-if randomised" conditional on Z and pre-treatment covariates – very similar to the assumption needed for the regression approach to be unbiased.
-- Just randomising Z is [not sufficient]{.alert} to identify mediation pathways without these extra assumptions.
+- Estimating the theoretically precise Natural Direct Effect (NDE) and Natural Indirect Effect (NIE) requires knowing the values of complex potential outcomes like $Y_i(M_i(0), 1)$
+- Since these are unobservable, [we cannot estimate NDE and NIE without making strong assumptions]{.alert}
+- Common assumptions include versions of "sequential ignorability" (Imai et al.), essentially assuming M is "as-if randomised" conditional on Z and pre-treatment covariates – very similar to the assumption needed for the regression approach to be unbiased
+- Just randomising Z is [not sufficient]{.alert} to identify mediation pathways without these extra assumptions
 :::
 
 # Can We Address This? 🤔 {background-color="#2d4563"}
@@ -267,12 +267,12 @@ Source: [Righetti (2023)](https://nicolarighetti.github.io/mediation-moderation-
 
 :::{style="margin-top: 30px; font-size: 28px;"}
 - What if we can show that $Z$ has *no effect* on $M$?
-- If $M_i(1) = M_i(0)$ for *all* individuals $i$ (the [sharp null hypothesis]{.alert}), then $M$ cannot possibly mediate the effect of Z.
-- In this case, the complex potential outcomes simplify: $Y_i(M_i(0), 1) = Y_i(M_i(1), 1) = Y_i(1)$. The NIE becomes zero.
+- If $M_i(1) = M_i(0)$ for *all* individuals $i$ (the [sharp null hypothesis]{.alert}), then $M$ cannot possibly mediate the effect of Z
+- In this case, the complex potential outcomes simplify: $Y_i(M_i(0), 1) = Y_i(M_i(1), 1) = Y_i(1)$. The NIE becomes zero
 - **How to test this?**
   - Estimate the average effect: $E[M_i(1) - M_i(0)]$. If it's precisely zero...
-  - Test for heterogeneity: Check if $Var(M_i(1))$ differs from $Var(M_i(0))$. (As discussed in Lecture 18). If variances are similar and ATE is zero, it lends *support* to the sharp null.
-- [Ruling out mediators is easier than quantifying mediation]{.alert}. Useful for eliminating hypotheses.
+  - Test for heterogeneity: Check if $Var(M_i(1))$ differs from $Var(M_i(0))$. (As discussed in Lecture 18). If variances are similar and ATE is zero, it lends *support* to the sharp null
+- [Ruling out mediators is easier than quantifying mediation]{.alert}. Useful for eliminating hypotheses
 :::
 
 ## Manipulating the Mediator Directly?
@@ -284,32 +284,32 @@ Source: [Righetti (2023)](https://nicolarighetti.github.io/mediation-moderation-
   - Group 2: $Z=0$, $M=1$ (Manipulate $M$ only)
   - Group 3: $Z=1$, $M=0$ (Manipulate $Z$, block $M$?)
   - Group 4: $Z=1$, $M=1$ (Manipulate $Z$ and $M$)
-- This helps estimate Controlled Direct Effects (CDEs). E.g., Effect of $Z$ holding $M$ at 0 is (Group 3 - Group 1). Effect of $M$ holding $Z$ at 1 is (Group 4 - Group 3).
+- This helps estimate Controlled Direct Effects (CDEs). E.g., Effect of $Z$ holding $M$ at 0 is (Group 3 - Group 1). Effect of $M$ holding $Z$ at 1 is (Group 4 - Group 3)
 - **BUT:** This still [doesn't directly estimate the NDE or NIE]{.alert}, because $M$ is *set* experimentally, not allowed to take its "natural" value $M_i(z)$. But why is this important?
-- [Manipulating $M$ might be hard or artificial]{.alert} (e.g., giving Vitamin C tablets vs. limes might have different effects beyond Vitamin C).
+- [Manipulating $M$ might be hard or artificial]{.alert} (e.g., giving Vitamin C tablets vs. limes might have different effects beyond Vitamin C)
 :::
 
 ## The Encouragement Design Analogy
 
 :::{style="margin-top: 30px; font-size: 27px;"}
-- Often, we can't directly set $M$. Instead, we use an "encouragement" $Z$ to try and influence $M$.
+- Often, we can't directly set $M$. Instead, we use an "encouragement" $Z$ to try and influence $M$
 - Think back to non-compliance and Instrumental Variables (IV):
   - $Z$ = Assignment/Encouragement (e.g., offer tutoring)
   - $M$ = Treatment Received (e.g., actually attend tutoring)
   - $Y$ = Outcome (e.g., test score)
-- We can use $Z$ as an instrument for $M$ to estimate the effect of $M$ on $Y$ for Compliers (CACE/LATE).
-- [This is sometimes framed as a mediation analysis]{.alert}: $Z$ affects $Y$ *through* its effect on $M$.
+- We can use $Z$ as an instrument for $M$ to estimate the effect of $M$ on $Y$ for Compliers (CACE/LATE)
+- [This is sometimes framed as a mediation analysis]{.alert}: $Z$ affects $Y$ *through* its effect on $M$
 - Formula: $CACE_{M \to Y} = \frac{ITT_{Y}}{ITT_{M}} = \frac{E[Y|Z=1] - E[Y|Z=0]}{E[M|Z=1] - E[M|Z=0]}$
 :::
 
 ## The Excludability Problem for IV/Mediation
 
 :::{style="margin-top: 30px; font-size: 27px;"}
-- For the IV estimate of the effect of $M$ on $Y$ to be valid, we need the [exclusion restriction]{.alert}.
-- In the mediation context, this means [$Z$ must affect $Y$ *only* through $M$]{.alert}. There can be no direct path from $Z$ to $Y$ ($d=0$).
+- For the IV estimate of the effect of $M$ on $Y$ to be valid, we need the [exclusion restriction]{.alert}
+- In the mediation context, this means [$Z$ must affect $Y$ *only* through $M$]{.alert}. There can be no direct path from $Z$ to $Y$ ($d=0$)
 - [This is a very strong assumption!]{.alert} Often, the encouragement ($Z$) might affect the outcome ($Y$) through other channels besides the intended mediator ($M$).
-- Example (Bhavnani): Seat reservations ($Z$) might affect future elections ($Y$) not just by creating incumbents ($M1$), but also by changing voter attitudes ($M2$) or mobilising different voters ($M3$).
-- If $Z$ has a direct effect or affects multiple mediators, the simple IV approach doesn't isolate the effect through one specific $M$.
+- Example (Bhavnani): Seat reservations ($Z$) might affect future elections ($Y$) not just by creating incumbents ($M1$), but also by changing voter attitudes ($M2$) or mobilising different voters ($M3$)
+- If $Z$ has a direct effect or affects multiple mediators, the simple IV approach doesn't isolate the effect through one specific $M$
 - Identifying effects through multiple mediators requires multiple encouragements (instruments) with different effects on the mediators – very complex!
 :::
 
@@ -319,41 +319,41 @@ Source: [Righetti (2023)](https://nicolarighetti.github.io/mediation-moderation-
 
 :::{style="margin-top: 30px; font-size: 26px;"}
 - Given the challenges of formally estimating direct/indirect effects or using IV with strong assumptions...
-- An alternative: [Implicit Mediation Analysis]{.alert}.
+- An alternative: [Implicit Mediation Analysis]{.alert}
 - Instead of trying to measure M and model the Z → M → Y pathway explicitly...
-- [Focus on the treatment Z itself]{.alert}. Many treatments are "bundles" of different components.
-- Design experiments that [add or subtract specific components]{.alert} of the treatment bundle.
-- Compare the effects of these different treatment variations.
-- This implicitly tests the importance of the components (and the mediators they likely affect) without needing to measure M or make strong assumptions about unobservables.
+- [Focus on the treatment Z itself]{.alert}. Many treatments are "bundles" of different components
+- Design experiments that [add or subtract specific components]{.alert} of the treatment bundle
+- Compare the effects of these different treatment variations
+- This implicitly tests the importance of the components (and the mediators they likely affect) without needing to measure M or make strong assumptions about unobservables
 :::
 
 ## Example: Conditional Cash Transfers (CCTs)
 
 :::{style="margin-top: 30px; font-size: 25px;"}
-- CCT programmes give cash to poor families if they meet certain conditions (e.g., school attendance, health check-ups).
+- CCT programmes give cash to poor families if they meet certain conditions (e.g., school attendance, health check-ups)
 - Potential mediators: Increased income (cash effect), Changed behaviour due to rules (conditionality effect).
 - **Implicit Mediation Design:** (e.g., Baird et al. 2009)
   - Group 1: Control (no programme)
   - Group 2: Unconditional Cash Transfer (UCT - gets cash, no rules)
   - Group 3: Conditional Cash Transfer (CCT - gets cash + rules)
 - **Comparisons:**
-  - (Group 2 - Group 1): Effect of cash alone.
-  - (Group 3 - Group 1): Effect of cash + conditions.
-  - (Group 3 - Group 2): Effect of conditions (holding cash constant).
-- This tells us about the importance of the *conditions* (likely mediator: behaviour change) vs. the *cash* (likely mediator: income) without directly measuring parental behaviour or income changes and modelling them.
+  - (Group 2 - Group 1): Effect of cash alone
+  - (Group 3 - Group 1): Effect of cash + conditions
+  - (Group 3 - Group 2): Effect of conditions (holding cash constant)
+- This tells us about the importance of the *conditions* (likely mediator: behaviour change) vs. the *cash* (likely mediator: income) without directly measuring parental behaviour or income changes and modelling them
 :::
 
 ## Example: Voter Turnout Postcards (Gerber, Green, Larimer 2008)
 
 :::{style="margin-top: 30px; font-size: 28px;"}
-- Famous experiment testing social pressure effects on voting.
+- Famous experiment testing social pressure effects on voting
 - Treatment "ingredients" gradually added:
   - Group 1: Control (no mail)
   - Group 2: "Civic Duty" mailer (basic encouragement)
   - Group 3: "Hawthorne" mailer (Civic Duty + told they are being studied)
   - Group 4: "Self" mailer (Hawthorne + shown own household's past voting record)
-  - Group 5: "Neighbors" mailer (Self + shown neighbours' past voting records)
-- Implicit mediators: Sense of duty, being watched, accountability for own record, comparison to neighbours.
+  - Group 5: "Neighbours" mailer (Self + shown neighbours' past voting records)
+- Implicit mediators: Sense of duty, being watched, accountability for own record, comparison to neighbours
 :::
 
 ## Voter Turnout Results (Table 10.2)
@@ -367,33 +367,33 @@ Source: [Righetti (2023)](https://nicolarighetti.github.io/mediation-moderation-
 | 2. Civic Duty       | Encouragement                            | 31.5%   |     [+1.8%]{.alert}    |
 | 3. Hawthorne        | Encouragement + Monitoring             | 32.2%   |     [+2.5%]{.alert}    |
 | 4. Self             | Encouragement + Monitoring + Own Record  | 34.5%   |     [+4.8%]{.alert}    |
-| 5. Neighbors        | Encouragement + Monitoring + All Records | 37.8%   |     [+8.1%]{.alert}    |
+| 5. Neighbours       | Encouragement + Monitoring + All Records | 37.8%   |     [+8.1%]{.alert}    |
 
 *(Based on Gerber, Green, and Larimer 2008)*
 
-- [Clear pattern: Adding social pressure components significantly increases turnout]{.alert}.
-- Comparing Group 5 vs 4 suggests disclosing neighbours' records adds ~3.3% effect.
-- Comparing Group 4 vs 3 suggests disclosing own record adds ~2.3% effect.
-- Tells us *which ingredients matter* without modelling psychological states.
+- [Clear pattern: Adding social pressure components significantly increases turnout]{.alert}
+- Comparing Group 5 vs 4 suggests disclosing neighbours' records adds ~3.3% effect
+- Comparing Group 4 vs 3 suggests disclosing own record adds ~2.3% effect
+- Tells us *which ingredients matter* without modelling psychological states
 :::
 
 ## Interpreting Implicit Mediation
 
 :::{style="margin-top: 30px; font-size: 29px;"}
-- This approach identifies [which aspects of a complex intervention drive the effect]{.alert}.
-- It suggests the likely importance of different mediating *processes* (e.g., social comparison is powerful for turnout) without needing to directly measure or model the mediator variable (e.g., feelings of shame/pride).
-- It's inherently [design-based]{.alert} and stays within the clean framework of comparing randomly assigned groups.
+- This approach identifies [which aspects of a complex intervention drive the effect]{.alert}
+- It suggests the likely importance of different mediating *processes* (e.g., social comparison is powerful for turnout) without needing to directly measure or model the mediator variable (e.g., feelings of shame/pride)
+- It's inherently [design-based]{.alert} and stays within the clean framework of comparing randomly assigned groups
 - Very useful for [programme evaluation and refinement]{.alert}. What are the active ingredients?
 :::
 
 ## Strengths of Implicit Mediation
 
 :::{style="margin-top: 30px; font-size: 29px;"}
-- [Avoids bias]{.alert} inherent in regression-based mediation with non-randomised mediators.
-- Stays within the [unbiased statistical framework]{.alert} of comparing randomised groups.
-- Lends itself to [exploration and discovery]{.alert} of effective treatment variations.
-- Relies on [weaker, design-based assumptions]{.alert} rather than statistical assumptions about unobservables.
-- Often more [practical and feasible]{.alert} than trying to perfectly manipulate or measure mediators in field settings.
+- [Avoids bias]{.alert} inherent in regression-based mediation with non-randomised mediators
+- Stays within the [unbiased statistical framework]{.alert} of comparing randomised groups
+- Lends itself to [exploration and discovery]{.alert} of effective treatment variations
+- Relies on [weaker, design-based assumptions]{.alert} rather than statistical assumptions about unobservables
+- Often more [practical and feasible]{.alert} than trying to perfectly manipulate or measure mediators in field settings
 :::
 
 # Conclusion {background-color="#2d4563"}
@@ -403,24 +403,24 @@ Source: [Righetti (2023)](https://nicolarighetti.github.io/mediation-moderation-
 :::{style="margin-top: 20px; font-size: 22px;"}
 :::{.columns}
 :::{.column width="50%"}
-- Mediation analysis seeks to understand *how* a treatment Z affects an outcome Y through an intermediate variable M ([causal mechanisms]{.alert}).
+- Mediation analysis seeks to understand *how* a treatment Z affects an outcome Y through an intermediate variable M ([causal mechanisms]{.alert})
 - Traditional [regression approaches are widespread but problematic]{.alert}:
-  - Rely on constant effects assumption.
-  - Suffer from bias due to unobserved confounding between M and Y.
-  - Tend to overestimate M's role and underestimate Z's direct role.
+  - Rely on constant effects assumption
+  - Suffer from bias due to unobserved confounding between M and Y
+  - Tend to overestimate M's role and underestimate Z's direct role
 - The [potential outcomes framework reveals fundamental challenges]{.alert}:
-  - Estimating natural direct/indirect effects requires observing complex potential outcomes that are inherently unobservable.
-  - Randomising Z alone is insufficient; strong assumptions are needed.
+  - Estimating natural direct/indirect effects requires observing complex potential outcomes that are inherently unobservable
+  - Randomising Z alone is insufficient; strong assumptions are needed
 :::
 
 ::: {.column width="50%"}
-- [Experimentally manipulating M]{.alert} helps estimate controlled effects but doesn't fully solve the problem and may be artificial.
-- Using Z as an [instrument for M requires the strong exclusion restriction]{.alert} (no direct Z->Y path), often violated.
-- [Ruling out mediators]{.alert} (showing Z doesn't affect M) is a more modest but achievable goal.
+- [Experimentally manipulating M]{.alert} helps estimate controlled effects but doesn't fully solve the problem and may be artificial
+- Using Z as an [instrument for M requires the strong exclusion restriction]{.alert} (no direct Z->Y path), often violated
+- [Ruling out mediators]{.alert} (showing Z doesn't affect M) is a more modest but achievable goal
 - [Implicit mediation analysis]{.alert} is a pragmatic, design-based alternative:
-  - Varies treatment components experimentally.
-  - Compares effects to infer which components (and likely mechanisms) matter.
-  - Avoids modelling M directly, relies on fewer assumptions.
+  - Varies treatment components experimentally
+  - Compares effects to infer which components (and likely mechanisms) matter
+  - Avoids modelling M directly, relies on fewer assumptions
 :::
 :::
 :::
@@ -428,10 +428,10 @@ Source: [Righetti (2023)](https://nicolarighetti.github.io/mediation-moderation-
 ## Final Thoughts
 
 :::{style="margin-top: 30px; font-size: 30px;"}
-- Be [critical of causal mediation claims]{.alert}, especially those based solely on standard regression methods after randomising only Z.
-- Ask about the [assumptions]{.alert} being made (constant effects? no confounding? exclusion restriction?).
-- Favour [design-based approaches]{.alert} where possible.
-- [Implicit mediation]{.alert} offers a robust way to gain insights into mechanisms by comparing different versions of a treatment.
+- Be [critical of causal mediation claims]{.alert}, especially those based solely on standard regression methods after randomising only Z
+- Ask about the [assumptions]{.alert} being made (constant effects? no confounding? exclusion restriction?)
+- Favour [design-based approaches]{.alert} where possible
+- [Implicit mediation]{.alert} offers a robust way to gain insights into mechanisms by comparing different versions of a treatment
 - Understanding mechanisms is crucial, but requires careful thought about identification strategies!
 :::
 

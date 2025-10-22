@@ -29,7 +29,7 @@ editor:
 :::{style="margin-top: 30px; font-size: 26px;"}
 - Covered adding [covariates]{.alert} with `lm_lin()`, [centring]{.alert}, and sub-group analysis with [interaction terms]{.alert} using `lm_robust`.
 - Compared the [Neyman-Rubin model]{.alert} (ATE) with the [Ronald Fisher model]{.alert} (sharp null hypothesis)
-- Talked about [type I and type II errors]{.alert} 
+- Talked about [Type I and Type II errors]{.alert} 
 - Discussed [sampling variability]{.alert} and how it affects the interpretation of experimental estimates
 - Introduced [randomisation inference]{.alert} with the `ri2` package
 - Demonstrated RI with two examples, including one about [female council heads]{.alert} and the other about [runoff elections]{.alert}
@@ -42,8 +42,8 @@ editor:
 - Discuss the next steps of your pre-analysis plan and the final project
 - Discuss three papers 
   - Kalla, J. & Broockman, D. (2015). [Campaign Contributions Facilitate Access to Congressional Officials: A Randomized Field Experiment](https://onlinelibrary.wiley.com/doi/full/10.1111/ajps.12180). American Journal of Political Science, 60(3): 545–558
-  - Bertrand, M., & Mullainathan, S. (2004). [Are Emily and Greg more employable than Lakisha and Jamal? A field experiment on labor market discrimination](https://www.aeaweb.org/articles?id=10.1257%2F0002828042002561&ref=exo-insight). American economic review, 94(4), 991-1013.
-  - Chattopadhyay, R., & Duflo, E. (2004). [Women as policy makers: Evidence from a randomized policy experiment in India](https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1468-0262.2004.00539.x). Econometrica, 72(5), 1409-1443.
+  - Bertrand, M., & Mullainathan, S. (2004). [Are Emily and Greg more employable than Lakisha and Jamal? A field experiment on labor market discrimination](https://www.aeaweb.org/articles?id=10.1257%2F0002828042002561&ref=exo-insight). American Economic Review, 94(4), 991-1013
+  - Chattopadhyay, R., & Duflo, E. (2004). [Women as policy makers: Evidence from a randomized policy experiment in India](https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1468-0262.2004.00539.x). Econometrica, 72(5), 1409-1443
 - [But first...]{.alert}, let's talk about your group work
 :::
 
@@ -87,7 +87,7 @@ editor:
 - You guys have no idea how much time (and money) it has saved me 😅
 - It is straightforward to use and has _a bunch_ of functions
 - They even have a tutorial showing how to [create common social science data structures](https://declaredesign.org/r/fabricatr/articles/common_social.html) (and more!)
-- So I recommend you to check it out and play around with it 😉
+- So I recommend that you check it out and play around with it 😉
 - The source code is available at <https://github.com/DeclareDesign/fabricatr>
 :::
 
@@ -121,7 +121,7 @@ head(voters)
 :::{style="margin-top: 30px; font-size: 26px;"}
 - `randomizr` is another package that I use a lot
 - It is the easiest way to randomise your treatment assignment
-- It also has all types of randomisation we use in experiments
+- It also has all the types of randomisation we use in experiments
   - [Simple randomisation]{.alert} with `simple_ra()`
   - [Complete randomisation]{.alert} with `complete_ra()`
   - [Block randomisation]{.alert} with `block_ra()`
@@ -257,7 +257,7 @@ fit %>%
 :::{.columns}
 :::{.column width="50%"}
 - The last package we have seen is `ri2`
-- Easy way to estimate sharp null hypothesis tests
+- An easy way to estimate sharp null hypothesis tests
 - Source code: <https://github.com/acoppock/ri2>
 
 ```{r}
@@ -334,10 +334,10 @@ plot(ri_out)
 :::{.columns}
 :::{.column width="50%"}
 - [Overview]{.alert}
-  - Do campaign donations secure preferential treatment from policy makers?
+  - Do campaign donations secure preferential treatment from policymakers?
   - Challenge: It is hard to isolate the effect of donations on policymakers' behaviour
   - First randomised field experiment on campaign contributions and access
-  - Do donations *facilitate access* to influential policy makers?
+  - Do donations *facilitate access* to influential policymakers?
 
 - [The Experiment]{.alert}
   - A political organisation tried to schedule meetings between congressional offices and their members (who were donors)
@@ -372,19 +372,19 @@ plot(ri_out)
 - [Intervention]{.alert}
   - A grassroots political organisation attempts to schedule meetings with congressional offices
   - Whether congressional offices are informed that attendees are political donors
-  - Control Condition: Offices are informed the meeting attendees are “local constituents"
+  - Control Condition: Offices are informed that the meeting attendees are “local constituents”
 
 - [Outcome Measurement]{.alert}
   - Primary Outcome: The seniority/level of the official who agreed to attend the meeting
   - Rank Order: The access level was ranked from 1 (most desirable: member of Congress) to 6 (least desirable: no meeting)
-  - Data Collection:  The level of staff that agreed to the meeting was collected
+  - Data Collection:  The level of staff who agreed to the meeting was recorded
   - Meeting:  Attendees confirmed that the promised staffer attended the meeting
 :::
 
 :::{.column width="50%"}
 - [Random Assignment]{.alert}
   - Blocking: The researchers blocked congressional offices into triplets based on factors that could be associated with legislative access (prior voting record, cosponsorship of the bill, years of service, ideology, local population)
-  - Randomisation: within the blocks, offices were randomly assigned to the 'donor revealed' condition.
+  - Within the blocks, offices were randomly assigned to the 'donor revealed' condition
   - 191 congressional offices were contacted, 96 in the treatment group and 95 in the control group
 :::
 :::
@@ -573,7 +573,7 @@ plot(ri_out)
   - Randomised:  One-third of Village Council head positions were randomly reserved for women
   - Dataset collected in 265 Village Councils in West Bengal and Rajasthan
   - Comparison: type of public goods in reserved and unreserved Village Councils
-  - Key Finding: Reservation affects the types of public goods provided, with leaders investing more in infrastructure relevant to their own genders
+  - Key Finding: Reservation affects the types of public goods provided, with leaders investing more in infrastructure relevant to their own gender
 :::
 
 :::{.column width="50%"}
@@ -606,7 +606,7 @@ plot(ri_out)
 
 - [Intervention]{.alert}
     - Randomisation: GPs were randomly selected to be reserved for women
-    - Treatment: Whether the village council was randomly reserved for a women leader
+  - Treatment: Whether the village council was randomly reserved for a woman leader
     - Control Condition: The council is open to all candidates
 :::
 
@@ -620,7 +620,7 @@ plot(ri_out)
     - Allocation of GPs for reservation:  This was done based on specific pre-existing lists, and the selection was effectively random
     - Implementation: A specific set of rules ensures the random selection
     - Data collection: Surveys of the investment made in the villages, and interviews with the village leaders
-    - Surveys collected in the summer of 2000 (West Bengal and Rajasthan) and in the end of 2002 (Rajasthan)
+  - Surveys collected in the summer of 2000 (West Bengal and Rajasthan) and at the end of 2002 (Rajasthan)
 :::
 :::
 :::
@@ -654,16 +654,16 @@ plot(ri_out)
 :::{style="margin-top: 30px; font-size: 21px;"}
 - [Implications]{.alert}
   - Policy choices are affected by the gender of the decision maker
-  - Women leaders invest more in public goods aligned with women's priorities, and vice-versa
+  - Women leaders invest more in public goods aligned with women's priorities, and vice versa
   - This effect is causal, and not driven by characteristics of women leaders, but their gender per se
  - [Theoretical Contribution]{.alert}
-    - Evidence of the effect of identity on the policy making process
+    - Evidence of the effect of identity on the policymaking process
     - Contradicts Downsian models of policy preferences (which assume that politicians are purely self-interested)
-    - Shows the importance of design of political institutions in ensuring the representation of different social groups
+    - Shows the importance of the design of political institutions in ensuring the representation of different social groups
 - [Limitations]{.alert}
   - The study focuses on local governance in India, and may not generalise to other contexts
   - The model does not consider dynamic effects of the policy
-  - Mechanisms: the exact mechanisms of the decision process is still not fully clear
+  - Mechanisms: the exact mechanisms of the decision-making process are still not fully clear
 :::
 
 # Questions? 😉 {background-color="#2d4563"}

@@ -105,7 +105,7 @@ editor:
 ## Potential outcomes
 
 :::{style="margin-top: 30px; font-size: 24px;"}
-- We are interested in the relationship between [treatment]{.alert} $T$ and some outcome that may be impacted by the treatment (eg. health)
+- We are interested in the relationship between [treatment]{.alert} $T$ and some outcome that may be impacted by the treatment (e.g., health)
 
 :::{style="margin-top: 20px;"}
 :::
@@ -179,7 +179,7 @@ $$
 Y_i = Y_{0i} + (Y_{1i} - Y_{0i}) T_i
 $$
 
-**Example:** Alejandro goes to the hospital, Benicio does not.
+**Example:** Alejandro goes to the hospital, Benicio does not
 :::
 
 ## Establishing causality
@@ -217,7 +217,7 @@ $$
 ## Average causal effects
 
 :::{style="margin-top: 30px; font-size: 24px;"}
-- What we actually want to know is the [average causal effect]{.alert}, but that is not what we get from a difference in means comparison.
+- What we actually want to know is the [average causal effect]{.alert}, but that is not what we get from a difference in means comparison
 
 :::{style="margin-top: 20px;"}
 :::
@@ -228,7 +228,7 @@ $$
 
 Even in a large sample:
 
-- People will choose to participate in a programme when they expect the programme to make them better off (i.e., when $Y_{1,i} - Y_{0,i} > 0$).
+- People will choose to participate in a programme when they expect the programme to make them better off (i.e., when $Y_{1,i} - Y_{0,i} > 0$)
 
 - The people who choose to participate are likely to be different than those who choose not to... *even in the absence of the programme*
 :::
@@ -255,7 +255,7 @@ Even in a large sample:
 
 :::{style="margin-top: 30px; font-size: 23px;"}
 - The [mathematical expectation]{.alert} of $Y$ is $E[Y]$
-- The theoretical, probability-weighted average of a variable in a population (the "long-run average").
+- The theoretical, probability-weighted average of a variable in a population (the "long-run average")
   - Example: probability a coin flipped lands heads = 0.5
   - A six-sided die rolled = 3.5 (although no side has 3.5 dots)
 
@@ -301,7 +301,7 @@ Source: [r/dataisbeautiful](https://www.reddit.com/r/dataisbeautiful/comments/bf
 ## Selection bias (this time with maths)
 
 :::{style="margin-top: 30px; font-size: 24px;"}
-- When we compare participants to non-participants, the [observed difference]{.alert} in outcomes is a [combination of the true treatment effect and selection bias]{.alert}.
+- When we compare participants to non-participants, the [observed difference]{.alert} in outcomes is a [combination of the true treatment effect and selection bias]{.alert}
 
 :::{style="margin-top: 20px; text-align: center;"}
 ![](figures/selection-bias.png){width=90%}
@@ -382,7 +382,7 @@ Let's break down the equation using the hospital example
 :::{style="margin-top: 30px; font-size: 23px;"}
 - [Millennium Villages Project (MVP)](https://www.un.org/esa/coordination/Alliance/Earth%20Institute%20-%20The%20Millennium%20Villages%20Project.htm) (2004-2015) was a UN project to demonstrate that integrated, community-led development could improve health, education, and agriculture in rural Africa
 - First evaluation relied on data on pre-treatment and post-treatment outcomes in [Bar Sauri, Kenya](https://en.wikipedia.org/wiki/Sauri_Millennium_Village) and comparison villages in the same region
-- On most outcomes people living in the MDV looked better after a 3-5 years
+- On most outcomes, people living in the MDV looked better after 3–5 years
 - But have a look at this 🤨
 
 :::{style="margin-top: 20px; text-align: center;"}
@@ -441,17 +441,17 @@ Let's break down the equation using the hospital example
 - Treatment and control groups
 - When treatment status is randomly assigned:
   - Treatment and control groups are [random samples]{.alert} of a single population
-  - Example: The population of all eligible applicants for the programme.
+  - Example: The population of all eligible applicants for the programme
 
 - Expected outcomes
-- In the absence of the programme, the [expected outcome]{.alert} would be the same for both groups.
+- In the absence of the programme, the [expected outcome]{.alert} would be the same for both groups
   - Formally: $E[Y_{0,i} | T_i=1] = E[Y_{0,i} | T_i=0]$
 :::
 
 ## Random assignment
 
 :::{style="margin-top: 30px; font-size: 24px;"}
-- Randomisation does not eliminating individual difference (we still can’t identify [individual treatment effects]{.alert})
+- Randomisation does not eliminate individual differences (we still can’t identify [individual treatment effects]{.alert})
 - On average, individuals in treatment/control are similar (in large samples)
 - Need [Stable Unit Treatment Value Assumption (SUTVA)]{.alert}: Potential outcomes for any unit do not vary with the treatments assigned to other units (more later)
 - See [Imbens and Rubin (2015)](https://www.cambridge.org/core/books/causal-inference-for-statistics-social-and-biomedical-sciences/71126BE90C58F1A431FE9B2DD07938AB?utm_campaign=shareaholic&utm_medium=copy_link&utm_source=bookmark) for more details
@@ -518,7 +518,7 @@ each member of the treatment group is the same
 
 - [Takeaway]{.alert}:
   - Treatments don’t work the same way for everyone
-  - If we only study people who *choose* treatment (like sick people), results are misleading.
+  - If we only study people who *choose* treatment (like sick people), results are misleading
 :::
 
 ## Potential outcomes for hospital visits

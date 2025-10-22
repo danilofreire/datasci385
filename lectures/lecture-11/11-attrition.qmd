@@ -123,7 +123,7 @@ editor:
 
 Column (1) shows the average for the group assigned catastrophic coverage. Columns (2)–(5) compare averages in the deductible, cost-sharing, free care, and any insurance groups with the average in column (1).
 
-Source: Angrist and Piscke (2014, 19)
+Source: Angrist and Pischke (2014, 19)
 :::
 
 ## Attrition in RAND HIE
@@ -131,10 +131,10 @@ Source: Angrist and Piscke (2014, 19)
 :::{style="margin-top: 30px; font-size: 24px;"}
 :::{.columns}
 :::{.column width=50%}
-- Statistical analyses found out that [researchers excluded people who dropped out]{.alert}
+- Statistical analyses found that [researchers excluded people who dropped out]{.alert}
 - Initial refusal rates differed significantly:
-    -  [8% of those assigned to the free care group refused]{.alert} to enroll after the baseline survey
-    - [25% of those assigned to cost-sharing plans refused]{.alert} to enrol after the baseline survey.
+    -  [8% of those assigned to the free care group refused]{.alert} to enrol after the baseline survey
+    - [25% of those assigned to cost-sharing plans refused]{.alert} to enrol after the baseline survey
 - Among those who enrolled, further attrition occurred during the 3- to 5-year study
 :::
 
@@ -177,7 +177,7 @@ Source: Angrist and Piscke (2014, 19)
 - It represents whether [the outcome for person $i$ is reported]{.alert} (i.e., they stay in the study and we get their data) if they were assigned to treatment $z$
 - $r_i(1)$: Whether the [outcome for person $i$ would be reported if they were in the treatment group]{.alert} 
   - $r_i(1) = 1$: Outcome is reported (person stays in the study) 
-  - $r_i(1) = 0$: Outcome is missing (person drops out).
+  - $r_i(1) = 0$: Outcome is missing (person drops out)
 :::
 
 :::{.column width=50%}
@@ -188,7 +188,7 @@ Source: Angrist and Piscke (2014, 19)
 $$r_i = r_i(0)(1 - z_i) + r_i(1)z_i $$
 
 - If they are in the control group, their reporting outcome is just $r_i(0)$, and if they are in the treatment group, it is $r_i(1)$
-- [Attrition occurs when some values are $r_i = 0$]{.alert}!
+- [Attrition occurs when some values are $r_i = 0$]{.alert}
 - A bit formal, but just stating the obvious 😅
 :::
 :::
@@ -199,12 +199,12 @@ $$r_i = r_i(0)(1 - z_i) + r_i(1)z_i $$
 :::{style="margin-top: 30px; font-size: 28px;"}
 - We can classify individuals into four types based on their response behaviour [(Lee 2009)](https://academic.oup.com/restud/article/76/3/1071/1590707):
 
-  - [Always-reporters:]{.alert} $r_i(0) = 1$ and $r_i(1) = 1$. They always report their outcomes regardless of treatment assignment
-  - [Never-reporters:]{.alert} $r_i(0) = 0$ and $r_i(1) = 0$. Regardless of treatment status, always attrite on the outcome
-  - [If-treated reporters:]{.alert} $r_i(0) = 0$ and $r_i(1) = 1$. They report their outcomes only if assigned to treatment
-  - [If-untreated reporters:]{.alert} $r_i(0) = 1$ and $r_i(1) = 0$. They report their outcomes only if assigned to control
+  - [Always-reporters:]{.alert} $r_i(0) = 1$ and $r_i(1) = 1$ — they always report their outcomes regardless of treatment assignment
+  - [Never-reporters:]{.alert} $r_i(0) = 0$ and $r_i(1) = 0$ — regardless of treatment status, they always attrite on the outcome
+  - [If-treated reporters:]{.alert} $r_i(0) = 0$ and $r_i(1) = 1$ — they report their outcomes only if assigned to treatment
+  - [If-untreated reporters:]{.alert} $r_i(0) = 1$ and $r_i(1) = 0$ — they report their outcomes only if assigned to control
 
-- While this new framework is helpful, it has the same issue we discussed in our previous class: [we cannot know know whether individuals are one type or another]{.alert} (more on this later!)
+- While this new framework is helpful, it has the same issue we discussed in our previous class: [we cannot know whether individuals are one type or another]{.alert} (more on this later!)
 ::: 
 
 
@@ -269,7 +269,7 @@ $$Y_i(z) \perp R_i(z) | X_i$$
 - Suppose that students with poor attendance are both more likely to be missing on the day of the assessment and
 more likely to benefit from the intervention
 - $MIPO|X$ means that if one [partitions the experimental sample by prior attendance, missingness is random within each subgroup]{.alert}
-- There is, among students whose record of attendance is poor, there is no relationship between missing school on the day of the assessment and the subjects potential outcomes
+- Among students whose record of attendance is poor, there is no relationship between missing school on the day of the assessment and the subjects' potential outcomes
 - The same goes for students with a good record of attendance
 :::
 :::
@@ -315,10 +315,10 @@ $$E[Y_i(1)] = \frac{1}{N} \sum_{i=1}^{N} \frac{Y_i(1) r_i(1)}{\pi_i(z = 1, x)},$
 
 :::{style="margin-top: 30px; font-size: 26px;"}
 - Treatment: [Educational programme at a community centre]{.alert}
-- $X_i$: Covariate indicating proximity to the center
-    - $X_i = 1$: Lives near the community center
+- $X_i$: Covariate indicating proximity to the centre
+    - $X_i = 1$: Lives near the community centre
     - $X_i = 0$: Lives far away
-- Follow-up evaluation at the community center
+- Follow-up evaluation at the community centre
 - [Attrition is related to $X_i$]{.alert}: People living far are less likely to show up
 - [Potential outcomes differ by $X_i$]{.alert}: People living far away have higher potential outcomes
 - Let's see how it can recover ATE when $MIPO|X$ holds!
@@ -422,7 +422,7 @@ $$E[Y_i(1)] - E[Y_i(0)] = 3.5.$$
   - Average for the treatment group: $\frac{(7 + 10 + ? + ?)}{4} = ?$
   - Average for the control group: $\frac{(? + 7 + 5 + 6)}{4} = ?$
 
-- Assume that out collected outcomes show that the possible values for the missing data are between 0 and 10
+- Assume that our collected outcomes show that the possible values for the missing data are between 0 and 10
 - Let's see how to calculate the bounds for the ATE!
 :::
 :::
@@ -450,14 +450,14 @@ group and 0 for the missing value in the control group]{.alert}
 
 :::{style="margin-top: 30px; font-size: 30px;"}
 - [Lee (2009)](https://academic.oup.com/restud/article/76/3/1071/1590707) suggested that we can [trim the bounds]{.alert} to make them more informative (and narrower)
-- The key assumption of Lee is [monotonicty]{.alert}, similar to what we discussed in the context of non-compliance
+- The key assumption of Lee is [monotonicity]{.alert}, similar to what we discussed in the context of non-compliance
 - Remember our four types of respondents? Always-Reporters, Never-Reporters, If-Treated Reporters, and If-Untreated Reporters
 - The assumption is that [there are no If-Untreated reporters]{.alert}, similar to the "no defiers" assumption in non-compliance
 - For example, receiving a job-training programme might make someone more likely to respond (and thus more likely to be surveyed about their wages), but [it will not make anyone less likely]{.alert} to respond
 :::
 
 ## Trimming the bounds with stronger assumptions
-### Monotonicty revisited
+### Monotonicity revisited
 
 :::{style="margin-top: 30px; font-size: 24px;"}
 - Under monotonicity, [we can bound the average treatment effect for Always-Reporters]{.alert} 
@@ -474,7 +474,7 @@ $$E[Y_i(1) | R_i(1) = 1, R_i(0) = 1] - E[Y_i(0) | R_i(1) = 1, R_i(0) = 1]$$
 ## Trimming the bounds with stronger assumptions
 
 :::{style="margin-top: 30px; font-size: 27px;"}
-- We can bound the effect for Always-Responders by [taking the means of trimmed versions of the treated outcome distribution]{.alert}
+- We can bound the effect for Always-Reporters by [taking the means of trimmed versions of the treated outcome distribution]{.alert}
 - A lower bound comes from trimming off the share of compliers from the top of the distribution, and an upper bound comes from trimming this share from the bottom
 - There are several `R` packages that calculate Lee bounds
   - Have a look at <https://github.com/lbassan/attritevis>
@@ -521,7 +521,7 @@ $$E[Y_i(1) | R_i(1) = 1, R_i(0) = 1] - E[Y_i(0) | R_i(1) = 1, R_i(0) = 1]$$
 :::{style="margin-top: 30px; font-size: 27px;"}
 - The `attritevis` package has several useful functions to [visualise the attrition process]{.alert}, [calculate the bounds]{.alert}, and [estimate the ATE]{.alert}
 - It has very few assumptions:
-  - Data must be ordered by survey questions, i.e. if respondents answered Q1 before Q2, the variable Q1 must appear before Q2 (i.e. in an earlier column) in the dataframe
+  - Data must be ordered by survey questions, i.e., if respondents answered Q1 before Q2, the variable Q1 must appear before Q2 (i.e., in an earlier column) in the dataframe
   - Attrition is defined as completely leaving the survey, not just skipping a question.
   - For balance tests, treatment and control conditions must be defined
 - The package is available on GitHub: <https://github.com/lbassan/attritevis>
@@ -534,8 +534,8 @@ $$E[Y_i(1) | R_i(1) = 1, R_i(0) = 1] - E[Y_i(0) | R_i(1) = 1, R_i(0) = 1]$$
 :::{.column width=50%}
 - The experiment manipulates peer-praise and measures empathy in a behavioural task
 - There are two arms in the peer-praise randomisation: peer-praise and no praise (control)
-- In the first arm, a word cloud of praise, drawn from real praise collected in a pilot study, is given for people who behave empathetically, with a line of text about peer group average thermometer ratings towards people who are empathetic 
-  - “Peers of yours on this platform have said they hold favorable feelings towards people who engage in empathetic behavior, with an average of 7.9, on a scale of 0 (least favorable) to 10 (most favorable), That same peer group provided real feedback for empathetic behavior which is pictured in the word cloud below” 
+- In the first arm, a word cloud of praise, drawn from real praise collected in a pilot study, is given for people who behave empathetically, with a line of text about peer group average thermometer ratings towards people who are empathetic
+  - “Peers of yours on this platform have said they hold favourable feelings towards people who engage in empathetic behaviour, with an average of 7.9, on a scale of 0 (least favourable) to 10 (most favourable). That same peer group provided real feedback for empathetic behaviour which is pictured in the word cloud below” 
 :::
 
 :::{.column width=50%}

@@ -30,8 +30,8 @@ editor:
 :::{.columns}
 :::{.column width="50%"}
 - [7-section structure]{.alert}: Introduction, Hypotheses, Population, Intervention, Outcomes, Analysis, Implementation (EGAP template)
-- [Key historical roots]{.alert}: FDA Modernization Act 1997, reproducibility crisis
-- [Critical elements]{.alert}:
+- [Key historical roots]{.alert}: FDA Modernization Act of 1997, reproducibility crisis
+- [Important elements]{.alert}:
   - Clear [primary/secondary hypotheses]{.alert} with theoretical basis
   - [Power analysis]{.alert} for sample size determination
   - [Ethical safeguards]{.alert} for vulnerable populations
@@ -40,8 +40,8 @@ editor:
 :::{.column width="50%"}
 - [PAPs increase transparency]{.alert} and reduce publication bias
 - [PAPs can (and should!) be flexible]{.alert}
-- Some scholars say [PAPs are overrated]{.alert}, but they are here to stay
-- Best practices:
+- Some scholars say [PAPs are overrated]{.alert}, but they do help with credibility
+- Best practices for writing PAPs:
   - Use [OSF/AEA/EGAP registries]{.alert} to host your PAP
   - Include [randomisation code]{.alert} snippets
   - Pre-specify [attrition handling]{.alert} methods
@@ -81,7 +81,7 @@ Source: <https://egap.org/resource/10-things-to-know-about-pre-analysis-plans/>
 
 ## When experiments are not possible
 
-:::{style="font-size: 20px; margin-top: 30px;"}
+:::{style="font-size: 21px; margin-top: 30px;"}
 :::{.columns}
 :::{.column width="50%"}
 - The [experimental ideal]{.alert} is not always feasible
@@ -89,9 +89,9 @@ Source: <https://egap.org/resource/10-things-to-know-about-pre-analysis-plans/>
 - [Natural experiments]{.alert}: When "nature" (broadly speaking) does the randomisation
   - [Examples]{.alert}: Earthquakes, hurricanes, pandemics, lottery wins
 - [Quasi-experiments]{.alert}: Broader term than natural experiments, sometimes we can control the treatment but not the assignment
-  - [Examples]{.alert}: School vouchers, minimum wage laws, health interventions, politicy changes
+  - [Examples]{.alert}: School vouchers, minimum wage laws, health interventions, policy changes
   - [Methods to estimate causal effects]{.alert}: Difference-in-differences, regression discontinuity, instrumental variables
-- They are [somewhere between observational and experimental studies]{.alert}, and have received increased attention in the last decades
+- They are [somewhere between observational and experimental studies]{.alert}, and have received increased attention in recent decades
 :::
 
 :::{.column width="50%"}
@@ -121,7 +121,7 @@ Source: <https://egap.org/resource/10-things-to-know-about-pre-analysis-plans/>
 :::{.column width="50%"}
 - [Natural and quasi-experiments]{.alert} are attempts to [approximate the conditions of an RCT when true randomisation is not possible]{.alert}
 - They are ["second-best" in terms of internal validity]{.alert} compared to a well-executed RCT
-- But often the best available or only feasible options
+- But they are often the best available or only feasible options
 - [Both RCTs and natural/quasi-experiments are driven by the same goal]{.alert}: to establish causal relationships
 - The core logic of experiments, that is, [of counterfactuals and potential outcomes]{.alert}, is the same
 - Natural and quasi-experiments often have [higher external validity]{.alert} than RCTs, as they are closer to real-world conditions
@@ -179,17 +179,17 @@ Source: <https://www.aeaweb.org/articles?id=10.1257/app.5.4.1>
 :::{.columns}
 :::{.column width="50%"}
 - [Research question]{.alert}: What is the *causal effect* of attending charter schools in Massachusetts on student test scores?
-- [The challenge]{.alert}: Students who choose to attend charter schools are likely different from those who don't
-    -  Maybe more motivated families, different prior academic preparation, etc
-    -  This is [selection bias]{.alert}! 
--  Need a way to isolate the causal effect of charter schools, not just correlation
+- [The challenge]{.alert}: Students who choose to attend charter schools are likely to be different from those who don't
+    -  Maybe more motivated families, different prior academic preparation, etc.
+    -  This is [selection bias!]{.alert}
+-  We need a way to isolate the causal effect of charter schools, not just correlation
 :::
 
 :::{.column width="50%"}
 - [The clever idea]{.alert}:  Many charter schools are oversubscribed and use lotteries to decide who gets in
-- [Instrumental Variable (IV) Approach]{.alert}:  Use lottery win as an instrument to estimate the causal effect of charter attendance.
-    -  Lottery win $\rightarrow$ Charter Attendance $\rightarrow$ Test Scores
-    -  Lottery win is related to charter attendance, but ideally *only* affects test scores through charter attendance.
+- [Instrumental Variable (IV) Approach]{.alert}:  Use a lottery win as an instrument to estimate the causal effect of charter attendance.
+-  Lottery win $\rightarrow$ Charter Attendance $\rightarrow$ Test Scores
+-  Lottery win is related to charter attendance, but ideally *only* affects test scores through charter attendance.
 :::
 :::
 :::
@@ -206,11 +206,11 @@ $Y_{igt} = \alpha_{2t} + \beta_{2g} + \sum_{j} \delta_{j} d_{ij} + X_{i}' \theta
 -  $Y_{igt}$: Test score for student *i*, grade *g*, year *t*
 -  $S_{igt}$: Years spent in charter school (our treatment)
 -  $\tau$:  [Causal effect of charter attendance]{.alert} (what we want to find!)
--  Lots of control variables ($X_i$, year and grade fixed effects, etc) to account for other factors
+-  Lots of control variables (year ($\alpha_{2t}$) and grade ($\beta_{2g}$) fixed effects, dummies for combinations of charter school lotteries ($d_{ij}$), demographic characteristics ($X_i$), etc.) to account for other factors
 :::
 
 :::{.column width="50%"}
-- [Equation (2)]{.alert}: First Stage (How lottery affects attendance)
+- [Equation (2)]{.alert}: First Stage (How the lottery affects attendance)
 
 $S_{igt} = \alpha_{1t} + \beta_{1g} + \sum_{j} \kappa_{ij} d_{ij} + X_{i}' \mu + \pi Z_{i} + \eta_{igt}$
 
@@ -240,7 +240,7 @@ $S_{igt} = \alpha_{1t} + \beta_{1g} + \sum_{j} \kappa_{ij} d_{ij} + X_{i}' \mu +
 ##  "As-If" randomness: The core assumption of natural experiments
 
 :::{style="margin-top: 30px; font-size: 25px;"}
-- The validity of most natural/quasi experiments hinges on the assumption of ["as-if" randomness]{.alert}
+- The validity of most natural/quasi-experiments hinges on the assumption of ["as-if" randomness]{.alert}
 - We need to argue for the [plausibility that the natural assignment mechanism is exogenous]{.alert}
     - Independent of other factors that influence the outcome
 - Consider:
@@ -307,12 +307,12 @@ Source: <https://doi.org/10.1017/S1537592716002863>
 
 ## Quasi-experiments: A broader toolkit for approximation
 
-:::{style="margin-top: 30px; font-size: 26px;"}
+:::{style="margin-top: 30px; font-size: 24px;"}
 - Quasi-experiments encompass a [wider range of designs]{.alert} that lack full random assignment by the researcher
 - Often involve some researcher manipulation of the research design, but not direct treatment randomisation
 - Includes natural experiments as a subset, but also encompasses designs where researchers [actively construct comparison groups]{.alert}
 - Key feature: [strategic use of design and statistical techniques]{.alert} to address confounding and selection bias
-- Examples of Quasi-Experimental Designs:
+- Examples of Quasi-Experimental Designs (we also use them to analyse natural experiments!):
     - [Regression Discontinuity Design (RDD)]{.alert}
     - [Difference-in-Differences (DID)]{.alert}
     - [Instrumental Variables (IV)]{.alert}
@@ -322,7 +322,7 @@ Source: <https://doi.org/10.1017/S1537592716002863>
 ## Regression discontinuity design (RDD)
 
 :::{style="margin-top: 30px; font-size: 26px;"}
-- RDD exploits sharp discontinuities in treatment assignment based on a [threshold or cutoff score]{.alert}
+- RDD exploits sharp or fuzzy discontinuities in treatment assignment based on a [threshold or cutoff score]{.alert}
 - Units are assigned to treatment or control based on whether they fall above or below a specific cutoff point on a [continuous assignment variable (running variable)]{.alert}
 - Compares units [just above the threshold to units just below]{.alert}
   - For the linear case, $Y = \beta_{0} + \beta_{1}X + \beta_{2}(X > X_{0}) + \epsilon$
@@ -354,7 +354,7 @@ Source: [Nick Huntington-Klein](https://www.nickchk.com/causalgraphs.html)
 - [Continuity assumption]{.alert}: Smooth relationship between X and Y, except for the treatment effect at the cutoff
 - [Fuzzy RDD]{.alert}: When treatment assignment is not perfectly determined by the cutoff (some non-compliance)
 - [Manipulation]{.alert} of assignment variable can invalidate RDD
-- [Local Average Treatment Effect (LATE)]{.alert}: RDD estimates effect for those near the cutoff
+- [Local Average Treatment Effect (LATE)]{.alert}: RDD estimates the effect for those near the cutoff
 - Extrapolation beyond the cutoff is [generally not recommended]{.alert}
 :::
 :::
@@ -365,7 +365,7 @@ Source: [Nick Huntington-Klein](https://www.nickchk.com/causalgraphs.html)
 :::{style="font-size: 21px; margin-top: 30px; text-align: center;"}
 ![](figures/mignozzetti.png){width=70%}
 
-Source: [Mignozzetti, U., & al. (2024). Legislature size and welfare: Evidence from Brazil, American Journal of Political Science](https://doi.org/10.1111/ajps.12843)
+Source: [Mignozzetti, U., et al. (2024). Legislature size and welfare: Evidence from Brazil, American Journal of Political Science](https://doi.org/10.1111/ajps.12843)
 :::
 
 ## Mignozzetti et al. (2024)
@@ -428,7 +428,7 @@ Source: [Nick Huntington-Klein](https://www.nickchk.com/causalgraphs.html)
 :::{style="font-size: 21px; margin-top: 30px; text-align: center;"}
 ![](figures/card.png){width=70%}
 
-Source: [Card, D., & Krueger, A. B. (1994). Minimum Wages and Employment: A Case Study of the Fast-Food Industry in New Jersey and Pennsylvania. The American Economic Review, 84(4), 772-793.](https://doi.org/10.1257/aer.84.4.772)
+Source: [Card, D., & Krueger, A. B. (1994). Minimum Wages and Employment: A Case Study of the Fast-Food Industry in New Jersey and Pennsylvania. The American Economic Review, 84(4), 772-793.](https://www.mattblackwell.org/files/teaching/CarKru94.pdf)
 :::
 
 ## Card and Krueger (1994)
@@ -441,7 +441,7 @@ Source: [Card, D., & Krueger, A. B. (1994). Minimum Wages and Employment: A Case
 
 ##  Major threats to validity in quasi-experiments
 
-:::{style="margin-top: 30px; font-size: 26px;"}
+:::{style="margin-top: 30px; font-size: 24px;"}
 - [Confounding (selection bias):]{.alert}
     - Pre-existing differences between treatment and control groups that are related to both treatment and outcome
     - Can bias estimates in any quasi-experimental design

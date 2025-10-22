@@ -191,7 +191,7 @@ Source: [Spotify R&D Engineering (2023)](https://engineering.atspotify.com/2023/
 :::{style="margin-top: 30px; font-size: 28px;"}
 - The problem with this approach is that it [underestimates the treatment effect]{.alert}
 - The [average treatment effect]{.alert} is the difference between the outcome of the people who were actually canvassed and the outcome of the people who were not canvassed
-- But the this analysis compares the outcome of the people who were [assigned]{.alert} to be canvassed with the outcome of the people who were [not assigned]{.alert} to be canvassed
+- But this analysis compares the outcome of the people who were [assigned]{.alert} to be canvassed with the outcome of the people who were [not assigned]{.alert} to be canvassed
 - This is not the same as [receiving the treatment]{.alert} or not!
 - So this approach is [not recommended]{.alert} either 👎
 :::
@@ -200,7 +200,7 @@ Source: [Spotify R&D Engineering (2023)](https://engineering.atspotify.com/2023/
 ### A clever way to deal with non-compliance
 
 :::{style="margin-top: 30px; font-size: 28px;"}
-- The fourth option is to use [instrumental variables (IV)]{.alert} (or two-stage least squares - 2SLS)
+ - The fourth option is to use [instrumental variables (IV)]{.alert} (or two-stage least squares (2SLS))
 - The benefit of IV is that it allows us to [recover the true effect of the programme]{.alert} instead of only the effect of being offered the programme
 - The downside is that [IV does not allow us to recover the true ATE]{.alert} in the whole population
 - This is because it only measures the effect of the programme on the [compliers]{.alert}, that is, those who took the treatment when it was assigned to them
@@ -259,9 +259,9 @@ Source: [Spotify R&D Engineering (2023)](https://engineering.atspotify.com/2023/
 - Let the experimental assignment of subject $i$ be $z_i$
 - When $z_i = 1$, the subject is assigned to the treatment group, and when $z_i = 0$, the subject is assigned to the control group
 - Let $d_i(z)$ represent whether subject $i$ is actually treated, given the assignment $z_i$
-- To make it short, let's write $d_i(z = 1)$ as $d_i(1)$ and $d_i(z = 0)$ as $d_i(0)$
-- If a subject receives no treatment when assigned to the control groups, we represent them as $d_i(0) = 0$
-- For one-sided non-compliance, $d_i(0)$ is always 0 for all people in the control groups, but $d_i(1)$ can be 0 or 1
+- For brevity, let's write $d_i(z = 1)$ as $d_i(1)$ and $d_i(z = 0)$ as $d_i(0)$
+- If a subject receives no treatment when assigned to the control group, we write $d_i(0) = 0$
+- For one-sided non-compliance, $d_i(0)$ is always 0 for all people in the control group, but $d_i(1)$ can be 0 or 1
 - If $d_i(1) = 1$, [I would open the door]{.alert} if canvassed, but if $d_i(1) = 0$, [I would not open the door]{.alert}
 :::
 
@@ -276,9 +276,9 @@ Source: [Spotify R&D Engineering (2023)](https://engineering.atspotify.com/2023/
   - These are the [never-takers]{.alert}
   - For them, $d_i(1) = d_i(0) = 0$
 - Thus, the expression $ATE | d_i(1)$ means the average treatment effect [(ATE) for the compliers]{.alert}
-- Keep in mind that the names "compliers" and "never-takers" are unrelated with the outcomes $Y_i$, just with the treatment assignment $d_i(z)$
+- Keep in mind that the names "compliers" and "never-takers" are unrelated to the outcomes $Y_i$, just to the treatment assignment $d_i(z)$
 - It is not always easy to define who is a complier in an experiment
-  - What if canvassing is done in the weekends but some people are at home only during the week? Compliers or never-takers?
+-   - What if canvassing is done on weekends but some people are at home only during the week? Compliers or never-takers?
   - If we canvass them during the week instead, are they compliers or never-takers?
 :::
 
@@ -353,7 +353,7 @@ $$
 - In other words, it is [the treatment effect, but only coming from the compliers, divided by the number of compliers]{.alert}
 - Why do we need to divide by $ITT_D$? Because the treatment group is a mix of compliers (who take the treatment) and never-takers (who do not)
 - If we include both, we are underestimating the treatment effect, because never-takers do not receive the treatment and their outcomes are not affected by it
-- CACE is also know as [Local Average Treatment Effects]{.alert} (LATE)
+ - CACE is also known as [Local Average Treatment Effect]{.alert} (LATE)
 :::
 
 ## CACE and instrumental variables
@@ -363,7 +363,7 @@ $$
 :::{.columns}
 :::{.column width="50%"}
 - The good thing about CACE/LATE is that we have a consistent estimator for it
-- Equivalent to [two-stage least square estimators]{.alert}
+- Equivalent to [two-stage least squares estimators]{.alert}
   - Regress $D_i$ on $Z_i$ to get fitted values $\hat{D_i}$
   - Regress $Y_i$ on $\hat{D_i}$
 - But remember the assumptions:
@@ -429,12 +429,12 @@ data2$TREATED  <- data2$cntany   # D: The actual treatment status (Successfully 
 :::
 
 ## Estimating the regressions
-### First stage: $ITT_d$ with robust standard errors
+### First stage: $ITT_D$ with robust standard errors
 
 :::{style="margin-top: 30px; font-size: 21px;"}
-- The intercept of zero in this equation indicates that [no one in the control group was contacted]{.alert}, in keeping with the definition of one-sided noncompliance
+- The intercept of zero in this equation indicates that [no one in the control group was contacted]{.alert}, in keeping with the definition of one-sided non-compliance
 - The coefficient 0.273 indicates that [assignment to the treatment group caused 27.3% of the targeted subjects to be treated]{.alert}
-- In other words, the estimated share of [Compliers in the treatment group is 27.3%]{.alert}. The 95% CI suggests that this proportion ranges from 25.0% to 29.6%
+- In other words, the estimated share of [compliers in the treatment group is 27.3%]{.alert}. The 95% CI suggests that this proportion ranges from 25.0% to 29.6%
 
 ```{r}
 #| echo: true
@@ -454,13 +454,12 @@ coeftest(itt_d_fit, vcovHC(itt_d_fit))
 ### $ITT_Y$ with robust standard errors
 
 :::{style="margin-top: 30px; font-size: 22px;"}
-- Here we estimate the [ITT of the whole population]{.alert}
+- Here we estimate the [ITT for the whole population]{.alert}
 - This model accounts for the possibility that `ASSIGNED` is not a perfect measure of treatment status
 - It can be "endogenous", that is, related to unobserved factors ($u_i$) that affect outcomes
 - Those [assigned to the treatment group were 3.84 percentage points more likely to vote]{.alert}
 - The estimated ITT may be a useful thing to know!
-- If you are conducting an evaluation of a programme, you can use the ITT to assess the programs output in relation
-to its costs
+- If you are conducting an evaluation of a programme, you can use the ITT to assess the programme's output relative to its costs
 
 ```{r}
 #| echo: true
@@ -477,8 +476,8 @@ coeftest(itt_fit, vcovHC(itt_fit))
 :::{style="margin-top: 30px; font-size: 22px;"}
 - Finally, here we estimate the [CACE]{.alert}
 - It is the effect of the treatment on the [compliers]{.alert}
-- So we could just have used the formula: $CACE = \frac{ITT_Y}{ITT_D} = \frac{0.038464}{0.2734} \approx 0.1407$
-- The estimated average treatment effect of the canvassing treatment among Compliers is a [14.07 percentage point increase]{.alert} in the probability of voting
+- So we could have just used the formula: $CACE = \frac{ITT_Y}{ITT_D} = \frac{0.038464}{0.2734} \approx 0.1407$
+- The estimated average treatment effect of the canvassing treatment among compliers is a [14.07 percentage point increase]{.alert} in the probability of voting
 - We could have estimated the CACE using the `ivreg` function from the `AER` package and gotten the same result
 
 ```{r}
@@ -496,7 +495,7 @@ coeftest(cace_fit, vcovHC(cace_fit))
 :::{style="margin-top: 30px; font-size: 22px;"}
 - There's no need to learn how to use `ivreg` if you don't want to!
 - Our familiar `estimatr` package has a function called `iv_robust` that does the same thing
-- The results are the same as before, and we also see that the 95% confidence interval ranges from 0.038 to 0.24, that is, canvassing increses the probability of voting by [3.8 to 24 percentage points]{.alert}
+- The results are the same as before, and we also see that the 95% confidence interval ranges from 0.038 to 0.24, that is, canvassing increases the probability of voting by [3.8 to 24 percentage points]{.alert}
 - The effect is [positive and statistically significant]{.alert}
 
 ```{r}
@@ -512,12 +511,12 @@ cace_fit2
 ```
 :::
 
-# Designs that antecipate non-compliance 🤓 {background-color="#2d4563"}
+# Designs that anticipate non-compliance 🤓 {background-color="#2d4563"}
 
 ## Large-$n$ designs
 
 :::{style="margin-top: 30px; font-size: 28px;"}
-- Non-compliance not only prevents us from estimating the true ATE, [it also makes CACE estimation more challenging]{.alert}.
+- Non-compliance not only prevents us from estimating the true ATE, [it also makes CACE estimation more challenging]{.alert}
 - While 2SLS is a consistent estimator for the CACE, the estimator becomes [much less precise if the proportion of compliers is small]{.alert}
 - So the first advice is to [design experiments with large sample sizes]{.alert} to increase the number of compliers
 - This is not always feasible, though, as it can be [expensive]{.alert}
@@ -542,8 +541,8 @@ cace_fit2
 :::{style="margin-top: 30px; font-size: 28px;"}
 - Why does this work?
 - Because the main problem in one-sided compliance is [the existence of never-takers]{.alert}
-- But if we randomise the treatment amongst the compliers, [we screen-out the never-takers by design]{.alert}
-- Compliers in the treated state can then be [compared directly to Compliers in the untreated state]{.alert}, which eliminates the noise generated by the never-takers
+- But if we randomise the treatment amongst the compliers, [we screen out the never-takers by design]{.alert}
+- Compliers in the treated state can then be [compared directly to compliers in the untreated state]{.alert}, which eliminates the noise generated by the never-takers
 - Thus, we are back to [full compliance]{.alert} and can estimate the [true ATE]{.alert}!
 - This is a [very powerful tool]{.alert} in experimental research
 - Think about it when designing your experiments! 😊
@@ -558,7 +557,7 @@ cace_fit2
 - Those two estimates provide [bounds for the CACE]{.alert}
   - The [lower bound]{.alert} is the estimate when the subject is classified as treated
   - The [upper bound]{.alert} is the estimate when the subject is classified as untreated
-- While not perfect, this strategy at least provides a [range of possible values]{.alert} for the CACE and allows us to [quantity the uncertainty]{.alert} in our estimates
+- While not perfect, this strategy at least provides a [range of possible values]{.alert} for the CACE and allows us to [quantify the uncertainty]{.alert} in our estimates
 :::
 
 # Conclusion 📚 {background-color="#2d4563"}

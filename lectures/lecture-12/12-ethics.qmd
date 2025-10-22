@@ -75,7 +75,7 @@ Source: [XKCD](https://xkcd.com/1390/)
 # A brief history of research ethics 📜 {background-color="#2d4563"}
 
 ## In the beginning...
-### ...there was no ethics!
+### ...there was no ethical oversight!
 
 :::{style="margin-top: 30px; font-size: 28px;"}
 :::{.columns}
@@ -83,7 +83,7 @@ Source: [XKCD](https://xkcd.com/1390/)
 - Early research often proceeded with [little formal ethical oversight]{.alert}
 - Harmful experiments on humans were conducted [without consent or consideration for subject well-being]{.alert}
 - The focus was exclusively on [scientific advancement]{.alert}, sometimes at the expense of [human rights]{.alert}
-- Examples of unethical research existed throughout history, but the [scale and insensitive nature]{.alert} of some events in the 20th century prompted change
+- Examples of unethical research existed throughout history, but the [scale and inhumane nature]{.alert} of some events in the 20th century prompted change
 :::
 
 :::{.column width="50%"}
@@ -101,13 +101,13 @@ More on the [Stanford Prison Experiment](https://en.wikipedia.org/wiki/Stanford_
 :::{style="margin-top: 30px; font-size: 19px;"}
 :::{.columns}
 :::{.column width="50%"}
-- The [Tuskegee Study of Untreated Syphillis]{.alert} was a clinical study conducted between 1932 and 1972 by the U.S. Public Health Service, the Centers for Disease Control and Prevention, and the Tuskegee Institute in Alabama
-- The goal was to observe the natural progression of untreated syphilis in rural African Americans who thought they were receiving free health care from the US government
+- The [Tuskegee Study of Untreated Syphilis]{.alert} was a clinical study conducted between 1932 and 1972 by the U.S. Public Health Service, the Centers for Disease Control and Prevention, and the Tuskegee Institute in Alabama
+- The goal was to observe the natural progression of untreated syphilis in rural African Americans who thought they were receiving free health care from the U.S. government
 - 399 men had syphilis, 201 did not, and [none were informed of their diagnosis or the study's true purpose]{.alert}
 - The study was [terminated in 1972]{.alert} after its unethical nature was exposed (40 years later!)
 - By the end of the study, [28 participants had died of syphilis, 100 were dead of related complications,]{.alert} 40 of their wives had been infected, and 19 of their children were born with congenital syphilis
 - Participants did not receive treatment even after penicillin became the standard of care in 1947
-- In 1997, President Bill Clinton [apologised on behalf of the US government]{.alert} for the study
+- In 1997, President Bill Clinton [apologised on behalf of the U.S. government]{.alert} for the study
 :::
 
 :::{.column width="50%"}
@@ -154,13 +154,13 @@ More on the [Tuskegee Syphilis Study](https://en.wikipedia.org/wiki/Tuskegee_Syp
 :::{style="margin-top: 30px; font-size: 22px;"}
 :::{.columns}
 :::{.column width="50%"}
-- The [Belmont Report]{.alert} was written by the National Commission for the Protection of Human Subjects of Biomedical and Behavioral Research
+- The [Belmont Report]{.alert} was written by the National Commission for the Protection of Human Subjects of Biomedical and Behavioural Research
 - The background was the [Tuskegee Syphilis Study]{.alert} and other unethical research
 - The report outlines [three fundamental ethical principles]{.alert} for research involving human subjects:
   - Respect for persons
   - Beneficence
   - Justice
-- These principles are the basis for the [Common Rule]{.alert}, which governs federally funded research in the US
+- These principles are the basis for the [Common Rule]{.alert}, which governs federally funded research in the U.S.
   - The Common Rule requires [institutional review boards]{.alert} to review research proposals
 - The report also introduced the concept of [informed consent]{.alert}
 :::
@@ -283,13 +283,13 @@ By signing below, you are confirming that:
 :::{style="margin-top: 30px; font-size: 25px;"}
 :::{.columns}
 :::{.column width="50%"}
-- [Anonymity must be used by definition]{.alert} (with all [identifying information of the subjects destroyed]{.alert} after the study), as it provides the greatest protection to those subjects
+- [Anonymity means, by definition, that all identifying information about subjects is destroyed after the study]{.alert}; as it provides the greatest protection to those subjects
 
 - [Sometimes anonymity is not possible]{.alert}
   - Example: elite interviews
 - But bear in mind that promises of confidentiality from researchers to subjects can be [overridden by court orders]{.alert}
 
-- For example: Boston College and oral history tapes of Northern Ireland's Troubles (<https://www.bbc.com/news/uk-northern-ireland-27238797>).
+- For example: Boston College and oral history tapes of Northern Ireland's Troubles (<https://www.bbc.com/news/uk-northern-ireland-27238797>)
 
 - [What would you do in this situation?]{.alert}
 :::
@@ -310,12 +310,12 @@ Members of the Irish Republican Army (IRA) in Northern Ireland
 
 :::{style="margin-top: 30px; font-size: 27px;"}
 - [Institutional Review Boards]{.alert} (IRBs) are committees that review research proposals to ensure they meet ethical standards
-- IRBs are [required for federally funded research]{.alert} in the US and in many other countries
+- IRBs are [required for federally funded research]{.alert} in the U.S. and in many other countries
 - They are composed of [scientists, ethicists, and community members]{.alert} who evaluate the risks and benefits of research
 - There is a [formal (standard) application]{.alert} for the approval of research with human beings
 - [This is not optional]{.alert}. You cannot interact with human research subjects before this is approved
-- The board may consider that your research is enabled to continue, but it is the board that decides this (not you)
-- You are obliged to [inform the board]{.alert} about "adverse events" of the research
+- The board may determine that your research can continue, but it is the board that decides this (not you)
+- You are obliged to [inform the board]{.alert} about "adverse events" in the research
 :::
 
 ## What do IRBs consider?
@@ -329,7 +329,7 @@ Members of the Irish Republican Army (IRA) in Northern Ireland
 - How you will ensure the confidentiality, anonymity, and security of the data
 :::
 
-## Ethical Review Committees Outside the US
+## Ethical Review Committees Outside the U.S.
 
 :::{style="margin-top: 30px; font-size: 29px;"}
 - In some countries, the ethical review committee is located in a [ministry of technology/science]{.alert} and will be more accustomed to dealing with medical research than with social science research
@@ -367,7 +367,7 @@ Source: [Bursztyn et al. (2021)](https://www.aeaweb.org/articles?id=10.1257/aeri
   - [Maximise benefits, minimise risks]{.alert} (beneficence)
 
 - [Risk-benefit assessment]{.alert} is important for every study and [it is your responsibility]{.alert} to ensure that the benefits of the research outweigh the risks 
-- Consider "equipoise" ([Freedman 1987](https://pubmed.ncbi.nlm.nih.gov/3600702/)): Genuine uncertainty about best approach 
+- Consider "equipoise" ([Freedman 1987](https://pubmed.ncbi.nlm.nih.gov/3600702/)): Genuine uncertainty about the best approach 
 - [Knowledge gain]{.alert} is great, but only if research is credible and well-designed
 - [Sometimes it is better not to run the experiment at all!]{.alert}
 :::
@@ -400,7 +400,7 @@ Source: [Yeh et al. (2018)](https://www.bmj.com/content/363/bmj.k5094)
 - That is, the [randomisation probabilities]{.alert} can be adjusted during the study, usually to include [more people in the group that is performing better]{.alert}
 - No more 50/50 randomisation!
 - This procedure is quite popular [in clinical trials]{.alert} and can be used to [maximise the benefits]{.alert} of the research
-- But it requires that the [best solution is found quickly]{.alert} and that the [researchers are able to adapt]{.alert} to the new information
+- But it requires that the [best solution be found quickly]{.alert} and that the [researchers are able to adapt]{.alert} to the new information
 :::
 
 :::{.column width="50%"}
@@ -452,7 +452,7 @@ Source: [Pallman et al. (2018)](https://bmcmedicine.biomedcentral.com/articles/1
 - [Randomisation can promote justice]{.alert}, as it ensures:
   - Equal expected inclusion in research
   - Equal expected access to intervention
-  - Promotes procedural fairness: everyone has equal chance and there's no favouritism
+  - Promotes procedural fairness: everyone has an equal chance and there is no favouritism
 - [Limitations of randomisation]{.alert}
   - Doesn't address broader societal inequalities: [should everyone have equal chance?]{.alert}
   - May not be "just" if some populations are over-researched (India, Kenya, etc)
@@ -473,12 +473,12 @@ Source: [Pallman et al. (2018)](https://bmcmedicine.biomedcentral.com/articles/1
 - [Avoid exclusion]{.alert} for convenience
   - Resist excluding groups due to logistics/cost
   - Exclusion biases data, perpetuates inequities
-  - Example: Accommodating participants without internet
+  - Example: Accommodating participants without internet access
 :::
 
 :::{.column width="50%"}
 - [Consider Heterogeneous Effects]{.alert}
-  - Power study to detect subgroup impacts
+  - Power the study to detect subgroup impacts
   - Understand equity implications
 - [Carefully Justify Sampling]{.alert}
   - Ethical reasons for oversampling subgroups
@@ -506,12 +506,12 @@ Source: [Bertrand et al. (2006)](https://www.nber.org/system/files/working_paper
 - Belmont principles focus on [participants, not staff]{.alert}
 - Research staff also face [ethical risks and burdens]{.alert}
 - Ignoring staff well-being is [unethical and harms research]{.alert}
-- [Physical sisks]{.alert}: Violence, accidents, health hazards
+- [Physical risks]{.alert}: Violence, accidents, health hazards
   - Example: Enumerators in high-crime areas
 :::
 
 :::{.column width="50%"}
-- [Psychological sisks]{.alert}: Emotional burden, secondary trauma
+- [Psychological risks]{.alert}: Emotional burden, secondary trauma
   - From sensitive topics (trauma, poverty)
   - Example: Surveyors interviewing abuse survivors
 - [Staff well-being is crucial]{.alert}
@@ -532,7 +532,7 @@ Source: [Bertrand et al. (2006)](https://www.nber.org/system/files/working_paper
   - Example: Responding to aggressive respondents
 - [Debriefing and support]{.alert}
   - Regular sessions for processing emotional burden
-  - Counseling access for secondary trauma/burnout
+  - Counselling access for secondary trauma/burnout
   - Supportive team environment
   - Example: Weekly team meetings for surveyors
 :::
@@ -542,7 +542,7 @@ Source: [Bertrand et al. (2006)](https://www.nber.org/system/files/working_paper
   - Explain study rationale, protocols to staff
   - Address moral dilemmas, staff concerns
   - Equip staff to explain study to participants
-  - Example: Workshops explaining randomization ethics
+  - Example: Workshops explaining randomisation ethics
 - [Fair compensation and working conditions]{.alert}
   - Fair wages, benefits, reasonable workload
   - Prevent burnout, ensure well-being

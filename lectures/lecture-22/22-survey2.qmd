@@ -231,7 +231,7 @@ where $N_1 = \sum_{i=1}^{N} T_i$ is the size of the treatment group and $N_0 = N
 :::{style="font-size: 20px; margin-top: 30px;"}
 :::{.columns}
 :::{.column width="50%"}
-- List experiements have several advantages, as they are [easy to implement]{.alert} and [clear to respondents]{.alert}
+- List experiments have several advantages, as they are [easy to implement]{.alert} and [clear to respondents]{.alert}
 - But they have some issues as well:
   - [Limited power]{.alert} to detect small effects
   - [Floor effects]{.alert}: If many respondents [disagree with all or most items]{.alert}, it is hard to estimate the prevalence of the sensitive item
@@ -332,7 +332,7 @@ Source: [Chapovski (2022)](https://journals.sagepub.com/doi/full/10.1177/2053168
 :::
 
 :::{.column width="50%"}
-- While it is easy to estimate them when there [one group is involved]{.alert}, it is more difficult when there are [multiple groups]{.alert}
+- While it is easy to estimate them when there is [one group involved]{.alert}, it is more difficult when there are [multiple groups]{.alert}
 - It is a little hard to combine the items, but it is possible
 - A solution is to use [Bayesian hierarchical models]{.alert}, which is described in this (very technical) paper: [Bullock et al (2011)](https://imai.fas.harvard.edu/research/files/support.pdf)
 - We can also use conjoint experiments, as we'll see in a bit!
@@ -347,9 +347,9 @@ Source: [Chapovski (2022)](https://journals.sagepub.com/doi/full/10.1177/2053168
 :::{.columns}
 :::{.column width="50%"}
 - Militant violence in Pakistan is a serious international problem, yet little is known about who supports militant organisations and why
-- There is a strong incentives for locals to [falsify information to avoid repercussions]{.alert}
+- There is a strong incentive for locals to [falsify information to avoid repercussions]{.alert}
 - Also, [asking respondents directly poses safety risks]{.alert} for researchers and participants alike 
-- Unlike a direct measure, nonresponse and social desirability biases are minimised since [respondents are reacting to the policy and not directly to the group itself]{.alert} (or so it seems! 😅)
+- Unlike a direct measure, non-response and social desirability biases are minimised since [respondents are reacting to the policy and not directly to the group itself]{.alert} (or so it seems! 😅)
 - The authors asked respondents about their level of support for polio vaccinations, curriculum reforms, crime regulations, and border disputes
 :::
 
@@ -423,25 +423,25 @@ Source: [Gadarian et al (2021)](https://doi.org/10.1080/17457289.2021.1924727)
 :::{style="font-size: 23px; margin-top: 30px;"}
 :::{.columns}
 :::{.column width="50%"}
-- This is a old technique (Werner 1965, Boruch 1971) that is used to [reduce social desirability bias]{.alert}
+- This is an old technique (Werner 1965, Boruch 1971) that is used to [reduce social desirability bias]{.alert}
 - The main idea is the following:
-  - The respondent roll a die or other randomising device out of view of the enumerator
+  - The respondent rolls a die or other randomising device out of view of the enumerator
   - The enumerator does not know the outcome of the randomisation
-  - For instance, if 1 shows in the die, the respondent says no
-  - If 6 shows, the respondent says yes
+  - For instance, if a 1 shows on the die, the respondent says no
+  - If a 6 shows, the respondent says yes
   - If any other number shows, the respondent answers truthfully
   - The enumerator sees the answer, but does not know if it is true or random
 :::
 
 :::{.column width="50%"}
-- The methods works because [the probabilities are known]{.alert} so we can estimate the true proportion of respondents who agree with the sensitive item
+- The method works because [the probabilities are known]{.alert} so we can estimate the true proportion of respondents who agree with the sensitive item
 - However, the method is [a little confusing to respondents]{.alert} and it is important to either [run the experiment in person]{.alert} or [provide clear instructions]{.alert} if running it online
 - Believe it or not, this is [the most effective]{.alert} method to reduce social desirability bias!
 :::
 :::
 :::
 
-## Xenophobia and anti-semitism in Germany
+## Xenophobia and antisemitism in Germany
 
 :::{style="font-size: 23px; margin-top: 30px; text-align: center;"}
 :::{.columns}
@@ -457,7 +457,7 @@ Source: [Gadarian et al (2021)](https://doi.org/10.1080/17457289.2021.1924727)
 Source: [Krumpal (2012)](https://www.sciencedirect.com/science/article/abs/pii/S0049089X12001172)
 :::
 
-## Xenophobia and anti-semitism in Germany
+## Xenophobia and antisemitism in Germany
 
 :::{style="font-size: 24px; margin-top: 30px; text-align: center;"}
 ![](figures/germany-results.png){width=100%}
@@ -473,7 +473,7 @@ Source: [Krumpal (2012)](https://www.sciencedirect.com/science/article/abs/pii/S
 - Conjoint analysis measures preferences for [multiple attributes]{.alert} of a product, service, or policy
 - The method aims to understand how different factors influence decision-making
 - It is also used to study [trade-offs]{.alert} between different attributes
-- As the other experiments we discussed, conjoint analysis [provides a plausible deniability]{.alert} for respondents
+- As with the other experiments we discussed, conjoint analysis [provides plausible deniability]{.alert} for respondents
 - Why is that? Because [respondents are not asked about their preferences directly]{.alert}
 - Instead, they are presented with a series of hypothetical scenarios and asked to choose their preferred option
 :::

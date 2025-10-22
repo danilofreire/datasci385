@@ -38,11 +38,11 @@ editor:
 :::
 
 ::: {.column width="50%"}
-**Paluk et al. (2021): Conflict Climate Change**
+**Paluck et al. (2021): Conflict Climate Change**
 
-- Field experiment in [56 US middle schools]{.alert} using social networks to reduce conflict
+- Field experiment in [56 U.S. middle schools]{.alert} using social networks to reduce conflict
 - Randomly assigned schools to intervention or control
-- Intervention: [Student-nominated "social referents"]{.alert} to model anti-conflict norms.
+- Intervention: [Student-nominated "social referents"]{.alert} to model anti-conflict norms
 - [Finding]{.alert}: Targeting influential [social referents]{.alert} was effective in reducing overall student conflict (by ~30%) than targeting random students
 - [Mechanism]{.alert}: Changed perceived social norms around conflict within the school network ([spillover effect]{.alert})
 :::
@@ -87,7 +87,7 @@ editor:
 - [Reality]{.alert}: Interventions rarely affect everyone identically. Effects often vary across individuals, groups, or contexts
 - [Practical Value]{.alert}: Policymakers want to know *who* benefits most (or least) from an intervention and *under what conditions*
   - Targeting resources effectively
-  - Tailoring programs
+  - Tailoring programmes
 - [Scientific Value]{.alert}: Understanding *why* effects vary helps uncover causal mechanisms
   - What makes an intervention work (or not)?
 :::
@@ -96,7 +96,7 @@ editor:
 
 :::{style="margin-top: 30px; font-size: 30px;"}
 - [School Choice]{.alert}: Policies allowing school choice might benefit children whose parents prioritise academic quality more than those whose parents prioritise proximity
-- [Job Training]{.alert}: Programs might increase earnings for voluntary participants but have no effect on those required to attend for public assistance eligibility
+- [Job Training]{.alert}: Programmes might increase earnings for voluntary participants but have no effect on those required to attend for public assistance eligibility
 - [Tax Compliance]{.alert}: Efforts to increase compliance might work differently depending on whether taxpayers can easily conceal income
 - [Advertising]{.alert}: A campaign targeting teenagers might alienate older consumers
 :::
@@ -114,7 +114,7 @@ editor:
 $$Var(\tau) = Var(Y_i(1) - Y_i(0))$$
 $$Var(\tau) = Var(Y_i(1)) + Var(Y_i(0)) - 2Cov(Y_i(1), Y_i(0))$$
 
-- This equation highlights the challenge...
+- This equation highlights the challenge
 :::
 
 ## What Experimental Data Tell Us (and What They Don't)
@@ -155,7 +155,7 @@ $$Var(\tau) = Var(Y_i(1)) + Var(Y_i(0)) - 2Cov(Y_i(1), Y_i(0))$$
 ## Bounding the Variance of Treatment Effects
 
 :::{style="margin-top: 30px; font-size: 24px;"}
-- Since we can't estimate $Cov(Y(1), Y(0))$, we can't pinpoint $Var(\tau)$.
+- Since we can't estimate $Cov(Y(1), Y(0))$, we can't pinpoint $Var(\tau)$
 - However, we can [estimate bounds on $Var(\tau)$]{.alert} by considering the most extreme possible correlations (Heckman, Smith, Clements 1997)
 - **Procedure (for equal group sizes):**
   1. Sort observed $Y(0)$ values ascendingly
@@ -186,7 +186,7 @@ $$Var(\tau) = Var(Y_i(1)) + Var(Y_i(0)) - 2Cov(Y_i(1), Y_i(0))$$
 - Observed variances:
   - Control group: $\hat{Var}(Y(0)) = 59.29$
   - Treatment group: $\hat{Var}(Y(1)) = 91.20$
-- Observed difference: $|91.20 - 59.29| = 31.91$. Is this difference large enough to reject $H_0$?
+- Observed difference: $|91.20 - 59.29| = 31.91$; is this difference large enough to reject $H_0$?
 - **Randomisation Inference:**
   1. Assume constant treatment effect (ATE = 3.50) for all schools (generate full potential outcomes schedule)
   2. Repeat random assignment to treatment/control 100,000 times
@@ -230,7 +230,7 @@ $$Var(\tau) = Var(Y_i(1)) + Var(Y_i(0)) - 2Cov(Y_i(1), Y_i(0))$$
 - **Estimated CATEs:**
   - Low Literacy Schools: CATE = 11.14 - 7.83 = [3.31]{.alert}
   - High Literacy Schools: CATE = 12.26 - 8.57 = [3.69]{.alert}
-- **Interaction Effect:** 3.69 - 3.31 = 0.38.
+- **Interaction Effect:** 3.69 - 3.31 = 0.38
 - **Hypothesis Test:** Is this difference statistically significant?
   - Using randomisation inference (or regression F-test), p = 0.88
   - **Conclusion:** [No significant evidence]{.alert} that the treatment effect differs based on parental literacy levels in the school
@@ -301,8 +301,8 @@ $$Var(\tau) = Var(Y_i(1)) + Var(Y_i(0)) - 2Cov(Y_i(1), Y_i(0))$$
 :::{style="margin-top: 30px; font-size: 26px;"}
 - To make *causal* claims about *why* treatment effects vary, we need to experimentally manipulate the hypothesised moderating factors
 - **Factorial Design:** An experimental design that includes two or more "factors" (independent variables), where subjects are randomly assigned to a combination of the levels of these factors
-- Example: Factor A (Treatment vs. Control), Factor B (Context 1 vs. Context 2).
-- Subjects randomly assigned to one of four groups: (Treat, Cxt 1), (Treat, Cxt 2), (Control, Cxt 1), (Control, Cxt 2).
+- Example: Factor A (Treatment vs. Control), Factor B (Context 1 vs. Context 2)
+- Subjects randomly assigned to one of four groups: (Treat, Cxt 1), (Treat, Cxt 2), (Control, Cxt 1), (Control, Cxt 2)
 - Allows us to estimate:
   - Main effect of Factor A
   - Main effect of Factor B
@@ -321,7 +321,7 @@ $$Var(\tau) = Var(Y_i(1)) + Var(Y_i(0)) - 2Cov(Y_i(1), Y_i(0))$$
 ## Rosen (2010) Example: Ethnicity and Grammar
 
 :::{style="margin-top: 20px; font-size: 23px;"}
-**Research Question:** Do US state legislators respond differently to constituent emails based on perceived ethnicity and writing quality?
+**Research Question:** Do U.S. state legislators respond differently to constituent emails based on perceived ethnicity and writing quality?
 
 **2x2 Factorial Design:**
 - Factor 1: Sender Name (Colin Smith vs. José Ramirez)
@@ -362,10 +362,10 @@ $$Var(\tau) = Var(Y_i(1)) + Var(Y_i(0)) - 2Cov(Y_i(1), Y_i(0))$$
 ## Extending the Regression Framework
 
 :::{style="margin-top: 30px; font-size: 27px;"}
-- Regression is a powerful tool for modelling both treatment-by-covariate and treatment-by-treatment interactions.
-- **Systematic Heterogeneity:** Variation in $\tau$ that can be predicted by observed covariates or experimental factors (modelled by interaction terms).
-- **Idiosyncratic Heterogeneity:** Residual variation in $\tau$ not explained by the model (part of the error term $u_i$).
-- We use interaction terms to capture systematic heterogeneity.
+- Regression is a powerful tool for modelling both treatment-by-covariate and treatment-by-treatment interactions
+- **Systematic Heterogeneity:** Variation in $\tau$ that can be predicted by observed covariates or experimental factors (modelled by interaction terms)
+- **Idiosyncratic Heterogeneity:** Residual variation in $\tau$ not explained by the model (part of the error term $u_i$)
+- We use interaction terms to capture systematic heterogeneity
 :::
 
 ## Modelling Treatment-by-Treatment Interaction
@@ -390,8 +390,8 @@ $$Var(\tau) = Var(Y_i(1)) + Var(Y_i(0)) - 2Cov(Y_i(1), Y_i(0))$$
 ## Automating the Search for Interactions
 
 :::{style="margin-top: 30px; font-size: 27px;"}
-- Manually specifying and testing interactions becomes infeasible with many covariates/factors.
-- **Machine Learning Approaches:** Algorithms designed to automatically search for interactions.
+- Manually specifying and testing interactions becomes infeasible with many covariates/factors
+- **Machine Learning Approaches:** Algorithms designed to automatically search for interactions
   - E.g., [Generalised Random Forests (Athey & Imbens)](https://github.com/grf-labs/grf)
   - Methodically partition the data based on covariates to find subgroups with different treatment effects
   - Often use techniques like cross-validation to avoid overfitting and false discoveries

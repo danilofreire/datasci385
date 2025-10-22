@@ -89,7 +89,7 @@ Click on the image to access the course website! 🌐
 :::
 :::
 
-Lots of additional readings included [in the syllabus](https://github.com/danilofreire/qtm385/blob/main/syllabus.pdf) 😊
+Lots of additional readings are included [in the syllabus](https://github.com/danilofreire/qtm385/blob/main/syllabus.pdf) 😊
 :::
 
 ## Today's lecture 📅
@@ -171,11 +171,11 @@ Source: University of Cambridge
 -  As researchers, we are interested in research questions [about how the world works]{.alert}
 - There are a number of different types of questions that we may want to answer. In academia, they are often divided into two broad categories:
 
-  - [Descriptive questions]{.alert}: Descriptions of a given phenomena: e.g., “_how do teachers allocate their time during a school day?_”
+  - [Descriptive questions]{.alert}: Descriptions of a given phenomenon: e.g., “_how do teachers allocate their time during a school day?_”
   - [Causal questions]{.alert}: Questions about _how_ $X$ affects $Y$: e.g., “_Does providing vocational training to migrants improve their economic integration in the receiving country?_”
 
-- Then we can move on to questions about why? $\rightarrow$ i.e., knowing the effect of a cause is necessary before moving on to understanding the causes of an effect.
-- (Next sessions: more on about what we mean by causality and how experiments give us leverage to make causal claims.)
+- Then we can move on to questions about why? $\rightarrow$ i.e., knowing the effect of a cause is necessary before moving on to understanding the causes of an effect
+- (Next sessions: more about what we mean by causality and how experiments give us leverage to make causal claims)
 :::
 
 ## Theory
@@ -218,11 +218,11 @@ Source: <https://www.sciencedirect.com/topics/materials-science/statistical-desi
 :::{.incremental}
 - [There is no such thing as "just doing an experiment"]{.alert} 🧐
 - All research design involves theory, whether [implicit or explicit]{.alert}
-- Our questions are value laden: For example, social scientists studied marijuana use in the 1950s as a form of "deviance", the questions focused on "why are people making such bad decisions?" or "how can policy makers prevent marijuana use?"
+- Our questions are value-laden: For example, social scientists studied marijuana use in the 1950s as a form of "deviance", the questions focused on "why are people making such bad decisions?" or "how can policy makers prevent marijuana use?"
    
 - Why do the research? We might want to change how scientists explain the world and/or change the policy decisions in (a) one place and time and/or (b) in other places and times
   
-- Research focused on learning the causal effect of $T$ on $Y$ requires a [model of the world]{.alert}: *how* might intervention $T$ might have an effect on some outcome $Y$, and *why*, and *how large* might be the effect.  It helps us think about how a different intervention or targeting different recipients might lead to different results.
+- Research focused on learning the causal effect of $T$ on $Y$ requires a [model of the world]{.alert}: *how* might intervention $T$ might have an effect on some outcome $Y$, and *why*, and *how large* might be the effect.  It helps us think about how a different intervention or targeting different recipients might lead to different results
 
 - Our theories and models are important not just for generating hypotheses, but for informing [design]{.alert} and [strategies for inference]{.alert}
 
@@ -242,7 +242,7 @@ Source: <https://www.sciencedirect.com/topics/materials-science/statistical-desi
 
 :::{style="margin-top: 40px; font-size: 24px;"}
 
-- [Operationalisation]{.alert}: The process of translating theoretical concepts into measurable variables.
+- [Operationalisation]{.alert}: The process of translating theoretical concepts into measurable variables
   - Example: Turning the concept of "social isolation" into a measurable variable such as the frequency of social interactions
 - [Key Questions]{.alert}:
   - How will we measure our outcomes?
@@ -262,7 +262,7 @@ Source: <https://www.sciencedirect.com/topics/materials-science/statistical-desi
 
 - What is the cause of interest ($T$)?
 
-- What can be a theory that yields to this experimental design?
+- What theory could lead to this experimental design?
 
 - What can be the main hypothesis?
 
@@ -323,7 +323,7 @@ Source: World Health Organization, 2003
   - Days without food (indicators) for hunger (the actual phenomenon)
   - Reports of bribes (indicators) for corruption (the actual phenomenon)
   
-- Moreover, the underlying outcome concept [may be even under debate]{.alert} (e.g., democracy)
+- Moreover, the underlying outcome concept [may even be under debate]{.alert} (e.g., democracy)
 
 -  If our indicators don’t measure the underlying concept that we’re interested in, then [we may not be able to learn very much, even if we have an otherwise very sound experiment]{.alert}
 :::
@@ -338,8 +338,8 @@ Source: World Health Organization, 2003
 
 - In pairs or groups of three:
 
-  - Generate hypothesis on potential heterogeneous effects 
-  - Generate expected effect size 
+  - Generate hypotheses on potential heterogeneous effects 
+  - Generate an expected effect size 
   - Discuss theories behind the hypothesis and expected effect size, with emphasis on the importance of theory 
   - Other ways of measuring the outcome or mode of administering the treatment?
 :::
@@ -364,7 +364,7 @@ Source: World Health Organization, 2003
   null results are never submitted for review or put away in a ["file drawer"
   after several rejections]{.alert}
   
-- We all face [incentives to change your specifications]{.alert}, measurements, or even
+- We all face [incentives to change our specifications]{.alert}, measurements, or even
   hypotheses to get a statistically significant result ($p$-hacking) to improve
   chances of publication
 
@@ -534,7 +534,7 @@ Amy Cuddy demonstrating her theory of "power posing". It could never be replicat
 |     question**    |                                                  |
 +-------------------+--------------------------------------------------+
 | 4.  **General     | i. Why should someone who is not an academic care|
-|     motivation**  | care about the results of this research? [1      |
+|     motivation**  | about the results of this research? [1           |
 |                   | paragraph]                                       |
 |                   | ii. What policy decision(s) will your research   |
 |                   | help inform? [1 paragraph]                      |
@@ -556,7 +556,7 @@ Amy Cuddy demonstrating her theory of "power posing". It could never be replicat
 |                   | academic literature that inform your hypotheses? |
 |                   | [2-3 pieces]                                     |
 +-------------------+--------------------------------------------------+
-| 7. **Secondary    | i. What are the secondary paramater/estimands the|
+| 7. **Secondary    | i. What are the secondary parameter/estimands the|
 |    hypotheses**   | research design seeks to estimate? What sign     |
 |                   | and/or magnitude is predicted by the secondary   |
 |                   | hypotheses for each parameter/estimand [These may|
@@ -630,7 +630,7 @@ Amy Cuddy demonstrating her theory of "power posing". It could never be replicat
 | 17. **Control**   | i. Describe the control condition                |
 |                   | ii. Is the control condition a pure control (no  |
 |                   | intervention at all) or a placebo? What is the   |
-|                   | placebo contition designed to control for?       |
+|                   | placebo condition designed to control for?       |
 +-------------------+--------------------------------------------------+
 | 18. **Units**     | i. To what units (level) will the intervention be|
 |                   | applied? Individual, classroom, school, village, |
@@ -640,10 +640,10 @@ Amy Cuddy demonstrating her theory of "power posing". It could never be replicat
 |                   | different levels if they do not perfectly        |
 |                   | overlap?                                         |
 +-------------------+--------------------------------------------------+
-| 19. **Compliance**| i. What does it mean to "take" (comply with) the | 
+| 19. **Compliance**| i. What does it mean to "take" (comply with)     | 
 |                   | the intervention?                                |
-|                   | ii. If the intervention is a prgram, how much    |
-|                   | someone need to attend (showing up once?         |
+|                   | ii. If the intervention is a program, how much   |
+|                   | does someone need to attend (showing up once?    |
 |                   | finishing the program?) in order to count as     |
 |                   | having attended?                                 |
 +-------------------+--------------------------------------------------+
@@ -656,7 +656,7 @@ Amy Cuddy demonstrating her theory of "power posing". It could never be replicat
 |                   | status quo, according to the best evidence       |
 |                   | available?                                       |
 |                   | ii. Are there concerns that participants may be  |
-|                   | forced to comply wiht the intervention?          |
+|                   | forced to comply with the intervention?          |
 |                   | iii. What are the risks and magnitude of         |
 |                   | potentially negative effects of the treatment?   |
 |                   | Are such risks concentrated on a particular      |
@@ -665,7 +665,7 @@ Amy Cuddy demonstrating her theory of "power posing". It could never be replicat
 
 +-------------------+--------------------------------------------------+
 | **Section 4:      |                                                  |
-| Outcome and       |                                                  |
+| Outcomes and      |                                                  |
 | Covariates**      |                                                  |
 +===================+==================================================+
 | 22. **Primary     | i. What is your primary outcome?                 |
@@ -696,7 +696,7 @@ Amy Cuddy demonstrating her theory of "power posing". It could never be replicat
 | 27. **Covariates**| i. What covariate data do you need, including for|
 |                   | subgroup analysis? How will covariates be        |
 |                   | measured?                                        |
-|                   | ii. What addtional covariates (if any) will you  |
+|                   | ii. What additional covariates (if any) will you |
 |                   | measure?                                         |
 |                   | iii. What additional outcomes or covariates will |
 |                   | you collect to distinguish between your          |
@@ -750,7 +750,7 @@ Amy Cuddy demonstrating her theory of "power posing". It could never be replicat
 +-------------------+--------------------------------------------------+
 | 36. **Effect      | i. What is the expected effect size? What is the |
 |     size**        | minimum effect size that would make the study    |
-|                   | worth running? what effect sizes have similar    |
+|                   | worth running? What effect sizes have similar    |
 |                   | studies found?                                   |
 +-------------------+--------------------------------------------------+
 | 37. **What is your|                                                  |
@@ -789,9 +789,9 @@ Amy Cuddy demonstrating her theory of "power posing". It could never be replicat
 - As we have seen, a good research design is a practical plan for research that makes the best use of available resources and produces a credible answer
 - [But how can we assess the quality of a research design before we implement it?]{.alert}
 - [Simulate it!]{.alert}
-- Luckly, there is a package that does all the hard work for us: [DeclareDesign](https://declaredesign.org/)
+- Luckily, there is a package that does all the hard work for us: [DeclareDesign](https://declaredesign.org/)
 - Helps us be concrete about the stages of research design by allowing us
-  to represent them in code, which then allows us to simulate the stages of research design in order to understand the properties of the statistical estimators and tests that we use.
+  to represent them in code, which then allows us to simulate the stages of research design in order to understand the properties of the statistical estimators and tests that we use
 :::
 
 ## Introduction to DeclareDesign
@@ -819,7 +819,7 @@ Amy Cuddy demonstrating her theory of "power posing". It could never be replicat
   - $T$s and $X$s (treatments or focal causal variables like policy interventions and other background variables)
   - $Y$s (dependent variables)
   - Relations between variables (potential outcomes, functional forms, auxiliary variables and contexts)
-  - Probability distribution over $X$s if not also over $Y$s.
+  - Probability distribution over $X$s if not also over $Y$s
 
 - [This is the theory!]{.alert}
   - Codified numerically
@@ -837,7 +837,7 @@ Amy Cuddy demonstrating her theory of "power posing". It could never be replicat
 - What is the effect of a treatment $T$ on an outcome $Y$ ?
 
 - Usually a quantity of interest, some summary of the data:
-  - Descriptive: What is the mean of $Y$ in treatment, formally.
+  - Descriptive: What is the mean of $Y$ in treatment, formally
   - Causal: What would be the average difference of $Y$ if we switched treatment
     to control? If we claimed that $T$ cannot cause $Y$, how much evidence do we
     have about this claim?
@@ -869,7 +869,7 @@ Amy Cuddy demonstrating her theory of "power posing". It could never be replicat
   - Difference-in-means
   - $t$-test
   - Regression methods
-  - etc.
+  - etc
 
 - Answer is an [estimate of the quantity of interest or $p$-value]{.alert} (inquiry/estimand/test)
 :::
@@ -921,7 +921,7 @@ Source: [Blair et al. (2023)](https://book.declaredesign.org/library/experimenta
 ![](figures/design.png){width="100%"}
 :::
 
-## Avaliable models
+## Available models
 
 :::{style="margin-top: 30px; font-size: 24px; text-align: center;"}
 [![](figures/models.png)](#){data-modal-type="iframe" data-modal-url="https://declaredesign.org/"}
@@ -940,7 +940,7 @@ Source: [Blair et al. (2023)](https://book.declaredesign.org/library/experimenta
 - Theory: Essential for generating hypotheses, informing design, and guiding inference
 - Operationalisation: Translating theoretical concepts into measurable variables (e.g., social isolation → frequency of interactions)
 - Pre-registration: Filing research designs and hypotheses publicly to reduce bias and improve credibility
-- Reproducibility: Ensuring research can be replicated, addressing the reproducibility crisis in science.
+- Reproducibility: Ensuring research can be replicated, addressing the reproducibility crisis in science
 :::
 
 :::{.column width="50%"}

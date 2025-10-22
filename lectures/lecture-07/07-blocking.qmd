@@ -20,7 +20,7 @@ editor:
   render-on-save: true
 ---
 
-# Hi, there! <br> Hope all is well 😉{background-color="#2d4563"}
+# Hi, there! <br> Hope all is well 😉 {background-color="#2d4563"}
 
 # Brief recap 📚 {background-color="#2d4563"}
 
@@ -40,8 +40,8 @@ editor:
 :::{style="margin-top: 30px; font-size: 22px; text-align: center;"}
 ![](figures/abstract-kalla.png){width=80%}
 
-
 [Article link](https://doi.org/10.1111/ajps.12180) and [replication data](https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/28582)
+<br>
 :::
 :::
 :::
@@ -54,15 +54,15 @@ editor:
 :::{.column width="50%"}
 - Also discussed another experiment by Bertrand and Mullainathan (2004): [Are Emily and Greg More Employable Than Lakisha and Jamal? A Field Experiment on Labor Market Discrimination](https://www.nber.org/papers/w9873)
 - This was a field experiment that sent out resumes with different names to test for racial discrimination in the job market
-- The results were striking: resumes with white-sounding names received 50% more callbacks than those with African American-sounding names
-- The experiment was widely reported in the media and sparked a lot of discussions about racial discrimination
+- The results were striking: resumes with White-sounding names received 50% more callbacks than those with African-American-sounding names
+- The experiment was widely reported in the media and sparked a lot of discussion about racial discrimination
   - [YouTube video with Mullainathan discussing discrimination by algorithms and people](https://www.youtube.com/watch?v=ys2sMv_JHqA)
 :::
 
 :::{.column width="50%"}
-- The findings replicate elsewhere, too: For instance, 14% more callbacks for German- vs Turkish-sounding names ([Kaas and Munger (2019)](https://www.degruyter.com/document/doi/10.1111/j.1468-0475.2011.00538.x/html)) 
+- The findings replicate elsewhere, too: For instance, 14% more callbacks for German- vs. Turkish-sounding names ([Kaas and Munger (2019)](https://www.degruyter.com/document/doi/10.1111/j.1468-0475.2011.00538.x/html))
   - But the effect disappears when recommendation letters are provided. Why? [Statistical discrimination?](https://en.wikipedia.org/wiki/Statistical_discrimination_(economics))
-- [Yemane and Reino (2019)](https://www.tandfonline.com/doi/full/10.1080/1369183X.2019.1622806#abstract) find that Latinos are also discriminated against in the US labor market, but not in Spain. Why is that?
+- [Yemane and Reino (2019)](https://www.tandfonline.com/doi/full/10.1080/1369183X.2019.1622806#abstract) find that Latinos are also discriminated against in the U.S. labour market, but not in Spain. Why is that?
 
 :::{style="margin-top: 30px; font-size: 24px; text-align: center;"}
 ![](figures/abstract-bertrand.png){width=80%}
@@ -155,7 +155,7 @@ Source: [Data Science Discovery - University of Illinois](https://discovery.cs.i
 - With enough time and resources, we could create a block for every possible characteristic that might affect the outcome of the experiment
 - But this would be impractical and unnecessary
 - Instead, we should focus on the [most important characteristics]{.alert} that are likely to have the greatest impact on the outcome
-- But [how to we know which characteristics are important]{.alert} if we haven't run the experiment yet?
+- But [how do we know which characteristics are important]{.alert} if we haven't run the experiment yet?
 - Two strategies:
   - Use [previous research]{.alert} (quantitative or qualitative) to identify important characteristics
   - [Pilot the experiment]{.alert} with a small sample to test for important characteristics
@@ -200,7 +200,7 @@ choose(6, 3) * choose(6, 3)
 :::{.columns}
 :::{.column width="50%"}
 - The assignments that are ruled out are those in which [too many or too few units in a block are assigned to treatment]{.alert}
-- Those “extreme” assignments produce estimates that are [in the tails of the sampling distribution]{.alert} 
+- Those “extreme” assignments produce estimates that are [in the tails of the sampling distribution]{.alert}
 - The figure shows the sampling distribution of the difference-in-means estimator under complete random assignment
 - The histogram is shaded according to whether the particular random assignment is permissible under a procedure that blocks on the binary covariate $X$ (`age`, in our case)
 - After many simulations, we see that blocking [rules out by design those assignments that are not well balanced]{.alert}
@@ -210,7 +210,7 @@ choose(6, 3) * choose(6, 3)
 :::{style="text-align: center;"}
 ![](figures/blocking-helps.png){width=100%}
 
-Source: [Blair et al (2023)](https://book.declaredesign.org/library/experimental-causal.html#block-randomized-experiments)
+Source: [Blair et al. (2023)](https://book.declaredesign.org/library/experimental-causal.html#block-randomized-experiments)
 :::
 :::
 :::
@@ -318,7 +318,7 @@ head(dat)
 with(dat, table(b, Z))
 ```
 
-As we can see, we have 6 units in block $a$, 2 of which are assigned to the treatment, and 4 units in block $b$, 2 of which are assigned to the treatment.
+As we can see, we have 6 units in block $a$, 2 of which are assigned to the treatment, and 4 units in block $b$, 2 of which are assigned to the treatment
 :::
 
 ## Estimating ATE in blocked experiments
@@ -334,17 +334,13 @@ library(estimatr)
 lm_robust(Y ~ Z, data = dat)
 ```
 
-:::{style="margin-top: 20px;"}
-:::
-
 ```{r}
 #| echo: true
 #| eval: true
-lm_robust(Y ~ Z + block, data = dat)
+lm_robust(Y ~ Z + b, data = dat)
 ```
 
-:::{style="margin-top: 20px;"}
-:::
+<br>
 
 - How are they different?
 :::
@@ -359,7 +355,7 @@ lm_robust(Y ~ Z + block, data = dat)
 ```{r}
 #| echo: true
 #| eval: true
-lm_lin(Y ~ Z, covariates = ~ block, data = dat)
+lm_lin(Y ~ Z, covariates = ~ b, data = dat)
 ```
 
 - Which one should we use? Any thoughts? 
@@ -392,6 +388,7 @@ Source: [DeclareDesign (2018)](https://declaredesign.org/blog/posts/biased-fixed
 ## What is clustering?
 
 :::{style="margin-top: 30px; font-size: 21px;"}
+:::{.columns}
 :::{.column width="50%"}
 - So far, we have only allocated individual units to treatment and control groups
 - But in some cases, we might want to allocate [whole groups of units to treatment and control conditions]{.alert}
@@ -416,6 +413,7 @@ Source: [TMG Research](https://tgmresearch.com/cluster-sampling.html)
 ## Clustering
 
 :::{style="margin-top: 30px; font-size: 20px;"}
+:::{.columns}
 :::{.column width="50%"}
 - A common example is an [education experiment]{.alert} in which the treatment is randomised at the classroom level
 - All students in a classroom are assigned to either treatment or control together, as it is impossible for students in the same classroom to be assigned to different conditions (different teachers, materials, etc)
@@ -448,10 +446,10 @@ Source: [Patterson et al (2022)](https://pubs.asha.org/doi/10.1044/2022_JSLHR-21
 | **Example** | Block by age, then randomise individuals within age groups | Randomise schools, but measure student outcomes |
 :::
 
-
 ## Intra-cluster correlation
 
 :::{style="margin-top: 30px; font-size: 20px;"}
+:::{.columns}
 :::{.column width="50%"}
 - Typically, [cluster randomised trials have higher variance than individually randomised trials]{.alert}
 - Why? Because individuals within the same cluster [tend to be more similar to each other than to individuals in different clusters]{.alert}
@@ -484,11 +482,12 @@ This means 25% of the total variance in test scores is due to differences betwee
 ## Information reduction
 
 :::{style="margin-top: 30px; font-size: 18px;"}
+:::{.columns}
 :::{.column width="50%"}
 [Clustering reduces the number of possible treatment assignments]{.alert}, which reduces statistical information
 
 ### Example:
-With 10 individuals (5 with black hair, 5 with other colors):
+With 10 individuals (5 with black hair, 5 with other colours):
 
 **Individual Randomisation:**
 
@@ -527,6 +526,7 @@ Source: [Stata Guide](https://www.stata.com/features/overview/power-and-sample-s
 
 :::{.column width="50%"}
 ![](figures/icc02.png){width=100%}
+:::
 :::
 :::
 :::
@@ -630,6 +630,7 @@ model_clustered <- lm_robust(outcome ~ treatment, clusters = cluster_id, data = 
 summary(model_naive)
 summary(model_clustered)
 ```
+:::
 :::
 
 ## Combining blocking and clustering

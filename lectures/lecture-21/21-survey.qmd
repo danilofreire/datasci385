@@ -85,7 +85,7 @@ Using these data, calculate the following quantities:
 - Village A is treated. So we have this (from the table): 
   - $Y_{01}^{(A)} = 0$ and $Pr(treat) = 0.2$
 - Treated part of the equation: $$ \frac{0 / 0.2}{1 / 0.2} = \frac{0}{5} = 0 $$
-- Villages C, D, and F are untreated and not next to A ($Y_{00}$. So:
+- Villages C, D, and F are untreated and not next to A ($Y_{00}$). So:
   - $Y_{00}^{(C)} = 0, \quad Pr(control) = 0.4$
   - $Y_{00}^{(D)} = 6, \quad Pr(control) = 0.6$ 
   - $Y_{00}^{(F)} = 6, \quad Pr(control) = 0.8$
@@ -103,8 +103,8 @@ $$
 :::{.column width="50%"}
 ### Question 03
 
-- Estimate $E[Y_{10} - Y_{00}]$ for the random assignment that places the treatment at location A, restricting the sample to the set of villages that have a non-zero probability of expressing both of these potential outcomes.
-- Village B is the only with spillovers ($Y_{10}$)
+- Estimate $E[Y_{10} - Y_{00}]$ for the random assignment that places the treatment at location A, restricting the sample to the set of villages that have a non-zero probability of expressing both of these potential outcomes
+- Village B is the only village with spillovers ($Y_{10}$)
   - $Y_{10}^{(B)} = 2$, $Pr(spillover) = 0.4$
   - $\frac{2/0.4}{1/0.4} = \frac{5}{2.5} = 2.0$
 - Villages C and D are neither treated nor next to A ($Y_{00}$) 
@@ -130,8 +130,8 @@ $$
 :::{style="font-size: 17px; margin-top: 30px;"}
 ### Question 04
 
-- Estimate $E[Y_{01} - Y_{00}]$ restricting the sample to the same set of villages as in question 3.
-- Village F cannot express $Y_{01}$ because we're limiting the analysis to villages as in question 3.
+- Estimate $E[Y_{01} - Y_{00}]$ restricting the sample to the same set of villages as in question 3
+- Village F cannot express $Y_{01}$ because we're limiting the analysis to villages as in question 3
 - Village A: 
   - $Y_{01}^{(A)} = 0$, $Pr(treat) = 0.2$ 
   - $\frac{0/0.2}{1/0.2} = \frac{0}{5} = 0$
@@ -454,13 +454,13 @@ The "Hitler effect" is 9%!
 - Include an experimental condition that [does not manipulate the variable of interest]{.alert} (but might affect the outcome)
 - Example: 
   - Study whether risk-related arguments about climate change increase support for a climate change policy 
-  - Placebo condition: control article with risk-related arguments about non-environmental issue (eg., terrorism)
+  - Placebo condition: control article with risk-related arguments about non-environmental issue (e.g., terrorism)
 :::
 
 :::{.column width="50%"}
 ### Non-equivalent outcomes
 
-- Measures an outcome that [should not be affected by independent variable]{.alert} 
+- Measures an outcome that [should not be affected by the independent variable]{.alert} 
 - Example: 
   - Assess effect of some treatment on attitudes toward group A 
   - Focal outcome: attitudes toward group A 
@@ -539,7 +539,7 @@ Concealed handgun laws have recently received national attention. [Some people h
   - Battery of 5 “rights” questions, or 
   - Battery of 5 “life” questions 
   - Measure support for legalised abortion 
-  - If answers to manipulated questions matter, can measure rest post-outcome
+  - If answers to manipulated questions matter, we can measure the rest post-outcome
 :::
 
 ## Question-as-treatment designs
@@ -672,7 +672,7 @@ Imagine that you were living in a village in another district in Uttar Pradesh a
   - Control and validate
 - Examples:
   - Television Advertisements
-  - News Programs
+  - News Programmes
 :::
 
 :::{.column width="50%"}

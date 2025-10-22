@@ -33,8 +33,8 @@ editor:
 - They can be [positive or negative]{.alert}, and they can be [modelled explicitly]{.alert} in our analysis
 - There are several methods to deal with spillovers, such as [multi-level designs]{.alert}, [within-subject designs]{.alert}, [repeated-measures experiments]{.alert}, and [waitlist designs]{.alert}
 - Each design has its [advantages and disadvantages]{.alert}, and the choice of design should be based on the [research question]{.alert} and the [context]{.alert}
-- You can use [DeclareDesign](https://declaredesign.org/r/designlibrary/) to simulate spillover designs and pretest posttest designs
-- The statistical analysis of waitlist designs are a little tricky, but you can use the [swCRTdesign](https://cran.r-project.org/web/packages/swCRTdesign/index.html) package in R to help you with that
+- You can use [DeclareDesign](https://declaredesign.org/r/designlibrary/) to simulate spillover designs and pretest–posttest designs
+- The statistical analysis of waitlist designs is a little tricky, but you can use the [swCRTdesign](https://cran.r-project.org/web/packages/swCRTdesign/index.html) package in R to help you with that
 :::
 
 ::: {.column width="50%"}
@@ -56,7 +56,7 @@ Source: [Forbes (2022)](https://www.forbes.com/councils/forbesbusinesscouncil/20
 :::{.column width="50%"}
 - Three readings for today:
   - [Centola (2010)](https://www.science.org/doi/abs/10.1126/science.1185231): "The Spread of Behavior in an Online Social Network Experiment"
-  - [Paluk et al (2016)](https://www.pnas.org/doi/abs/10.1073/pnas.1514483113): "Changing climates of conflict: A social network experiment in 56 schools"
+  - [Paluck et al. (2016)](https://www.pnas.org/doi/abs/10.1073/pnas.1514483113): "Changing climates of conflict: A social network experiment in 56 schools"
   - [Gerber and Green (2000)](https://doi.org/10.2307/2585837): "The Effects of Canvassing, Telephone Calls, and Direct Mail on Voter Turnout: A Field Experiment"
 :::
 
@@ -106,9 +106,8 @@ Source: [Centola (2010)](https://www.science.org/doi/abs/10.1126/science.1185231
 - Not always, but you can use [random assignment to create different network structures]{.alert}
 - The author [created an online health community]{.alert} with 1528 participants recruited from internet forums
 - All participants were anonymous and were partnered with "health buddies" to share information about health behaviours
-- Participants made decisions about whether or not to adopt a health behaviour based on the adoption patterns of their
-health buddies
-- The health behavior used for this study was the decision to register for an Internet-based health forum 
+- Participants made decisions about whether or not to adopt a health behaviour based on the adoption patterns of their health buddies
+- The health behaviour used for this study was the decision to register for an Internet-based health forum 
 - [What do you think of this design so far?]{.alert}
 :::
 
@@ -119,7 +118,7 @@ health buddies
   - [Clustered network]{.alert} with highly connected participants
   - [Random network]{.alert} with weak ties between participants
 - Treatment was assigned before the experiment started and [participants were not aware of their treatment assignment]{.alert}
-- The author claim the design is better than observational studies because it [eliminates confounding variables]{.alert} such as
+- The author claims the design is better than observational studies because it [eliminates confounding variables]{.alert} such as
   - Personality traits
   - Geographic location
   - Advertising and pricing
@@ -133,7 +132,7 @@ health buddies
 - Diffusion was initiated by [selecting a random “seed node”,]{.alert} which sent signals to its network neighbours encouraging them to adopt a health-related behaviour
 - Every time a participant adopted the behaviour (i.e., registered for the health forum), [messages were sent to their health buddies inviting them to adopt]{.alert}
 - If a participant had multiple health buddies who adopted the behaviour, then they would receive multiple signals, one from each neighbour
-- The more neighbors who adopted, the more reinforcing signals a participant received
+- The more neighbours who adopted, the more reinforcing signals a participant received
 - The author [measured the fraction of participants who adopted the behaviour]{.alert}
 :::
 
@@ -160,7 +159,7 @@ health buddies
 - [Can you think of policy implications?]{.alert}
 :::
 
-## Paluk et al (2016)
+## Paluck et al. (2016)
 ### Changing climates of conflict: A social network experiment in 56 schools
 
 :::{style="margin-top: 20px; font-size: 22px;"}
@@ -179,7 +178,7 @@ health buddies
 :::{style="text-align: center;"}
 ![](figures/paluk.png){width=100%}
 
-Source: [Paluk et al (2021)](https://www.pnas.org/doi/abs/10.1073/pnas.1514483113)
+Source: [Paluck et al. (2016)](https://www.pnas.org/doi/abs/10.1073/pnas.1514483113)
 :::
 :::
 :::
@@ -188,7 +187,7 @@ Source: [Paluk et al (2021)](https://www.pnas.org/doi/abs/10.1073/pnas.151448311
 ## Research design
 
 :::{style="margin-top: 20px; font-size: 27px;"} 
-- [Multilevel experiment]{.alert} across 56 US middle schools (24,191 students) 
+- [Multilevel experiment]{.alert} across 56 U.S. middle schools (24,191 students) 
   - [Randomised at school level]{.alert} (treatment vs. control) 
   - [Randomised at student level within treatment schools]{.alert} (seed students) 
 - Comprehensive measurement of [school social networks]{.alert} before intervention 
@@ -437,7 +436,7 @@ Source: [Gerber and Green (2000)](https://doi.org/10.2307/2585837)
 :::{.column width="50%"}
 - [Centola (2010)]{.alert}
     - Showed *how* network structure (clustered vs. random) impacts spillovers
-- [Paluck et al. (2021)]{.alert}
+- [Paluck et al. (2016)]{.alert}
     - Addressed interference by focusing on *network positions* (social referents) as key spillover agents
     - Multilevel design (school & student) managed school-level vs. peer-to-peer influence spillovers
 - [Gerber & Green (2000)]{.alert}

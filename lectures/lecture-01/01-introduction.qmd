@@ -73,11 +73,11 @@ if (!require("fontawesome", character.only = TRUE)) {
 
 `r fa('globe')` Course website: <https://danilofreire.github.io/qtm385>
 
-All course materials, including lectures, code, discussions, assignments, and project guidelines, are available on our [GitHub repository](https://github.com/danilofreire/qtm385).
+All course materials, including lectures, code, discussions, assignments, and project guidelines, are available on our [GitHub repository](https://github.com/danilofreire/qtm385)
 
 We will use Canvas for course administration, including submitting assignments, accessing grades, and receiving announcements
 
-Please take some time to get to know both platforms, and reach out if you have any questions.
+Please take some time to get to know both platforms, and reach out if you have any questions
 
 ::: {.callout-note}
 Please remember to check the course repository regularly for updates and announcements!
@@ -144,7 +144,7 @@ Tell us your name, your major, one thing you really like, and something we don't
 - I love teaching and aim to make learning fun 
 - Classes where students participate are the best
 - Hands-on activities help you learn better
-- I am always available to help and answer questions. And I mean it
+- I am always available to help and answer questions. [And I mean it]{.alert}
 - Your feedback helps me improve my teaching. Please let me know what is working and what is not
 
 ## Teaching assistants
@@ -159,7 +159,7 @@ Tell us your name, your major, one thing you really like, and something we don't
 - We are here to help you! So feel free to ask questions during class, office hours, or via email 😃
 
 ## Office hours
-### What for and what not for
+### What for and what not
 
 :::{style="margin-top: 60px;"}
 :::
@@ -172,7 +172,7 @@ Tell us your name, your major, one thing you really like, and something we don't
 :::{.fragment .fade-in}
 - What these sessions are [not]{.alert} meant for: 
     - Solving the assignments for you
-    - Taking care of developing your coding or stats skills
+    - Developing your coding or stats skills for you
 :::
 
 ## Class etiquette
@@ -202,7 +202,7 @@ Tell us your name, your major, one thing you really like, and something we don't
 :::{style="margin-top: 50px; font-size: 22px; text-align: center;"}
 ![](figures/rct.png){width="70%"}
 
-Source: [Liakos et al (2024)](https://journals.sagepub.com/doi/abs/10.1177/15347346241236385?journalCode=ijla)
+Source: [Liakos et al. (2024)](https://journals.sagepub.com/doi/abs/10.1177/15347346241236385?journalCode=ijla)
 :::
 
 ## What are randomised controlled trials (RCTs)?
@@ -211,7 +211,7 @@ Source: [Liakos et al (2024)](https://journals.sagepub.com/doi/abs/10.1177/15347
 :::{.columns}
 :::{.column width=50%}
 - **Randomised controlled trials (RCTs)** are a type of scientific experiment that aim to [reduce bias when testing a new treatment or intervention]{.alert}
-- In its simplest form, a RCT consists of [a control group and a treatment group]{.alert}, with the treatment group randomly receiving the intervention and the control group not receiving it
+- In its simplest form, an RCT consists of [a control group and a treatment group]{.alert}, with the treatment group randomly receiving the intervention and the control group not receiving it
 - They are often used in medicine, psychology, and social sciences to evaluate the effectiveness of new treatments or interventions
 - It is easy to take them for granted, [but these trials have transformed our understanding of cause and effect]{.alert}
 - They are [the best tool we have]{.alert} to illuminate what is unknown or uncertain, and [to discern whether something works and how well it works]{.alert}
@@ -227,7 +227,7 @@ From [xkcd](https://xkcd.com/2530/)
 :::
 
 ## History of experiments
-### Francis Pretrarch
+### Francesco Petrarch
 
 :::{style="margin-top: 50px; font-size: 24px;"}
 :::{.columns}
@@ -329,7 +329,7 @@ From [xkcd](https://xkcd.com/2530/)
 :::{style="margin-top: 50px; font-size: 24px; text-align: center;"}
 ![](figures/correlation_causation_example1.png){width="90%"}
 
-Source [Tyler Vigen](https://www.tylervigen.com/spurious-correlations)
+Source: [Tyler Vigen](https://www.tylervigen.com/spurious-correlations)
 :::
 
 ## Correlation versus causation
@@ -337,7 +337,7 @@ Source [Tyler Vigen](https://www.tylervigen.com/spurious-correlations)
 :::{style="margin-top: 50px; font-size: 24px; text-align: center;"}
 ![](figures/correlation_causation_example2.png){width="90%"}
 
-Source [Tyler Vigen](https://www.tylervigen.com/spurious-correlations)
+Source: [Tyler Vigen](https://www.tylervigen.com/spurious-correlations)
 :::
 
 ## Correlation versus causation
@@ -345,7 +345,7 @@ Source [Tyler Vigen](https://www.tylervigen.com/spurious-correlations)
 :::{style="margin-top: 50px; font-size: 24px; text-align: center;"}
 ![](figures/correlation_causation_example3.jpg){width="90%"}
 
-Source [Tyler Vigen](https://www.tylervigen.com/spurious-correlations)
+Source: [Tyler Vigen](https://www.tylervigen.com/spurious-correlations)
 :::
 
 ## Correlation versus causation
@@ -460,7 +460,7 @@ From [xkcd](https://xkcd.com/552/)
 :::
 :::
 
-Lots of additional readings included [in the syllabus](https://github.com/danilofreire/qtm385/blob/main/syllabus.pdf) 😊
+Lots of additional readings are included [in the syllabus](https://github.com/danilofreire/qtm385/blob/main/syllabus.pdf) 😊
 :::
 
 ## Key tools
@@ -496,11 +496,10 @@ Guides: <https://danilofreire.github.io/qtm385/guides.html>
 :::
 
 ::: {style="font-size: 28px;"}
-- **Syllabus**: Available on our [course repository](https://github.com/danilofreire/qtm385/blob/main/syllabus.pdf) and [website](https://danilofreire.github.io/qtm385/syllabus.html). The course is designed to be self-contained. The syllabus includes links to slides and code we will use in class, along with recommended readings, and problem sets. I will upload slides throughout the term as we progress.
-- **Schedule**: Lectures are on Mondays and Wednesdays from 5:30 to 6:45 pm in the Psychology Building, Room 220
-- **Office Hours**: I'm available to meet you [at any time.]{.alert} Please reach out some time in advance and we can schedule a meeting
-
-- **Materials**:
+- [Syllabus:]{.alert} Available on our [course repository](https://github.com/danilofreire/qtm385/blob/main/syllabus.pdf) and [website](https://danilofreire.github.io/qtm385/syllabus.html). The course is designed to be self-contained. The syllabus includes links to slides and code we will use in class, along with recommended readings, and problem sets. I will upload slides throughout the term as we progress
+- [Schedule:]{.alert} Lectures are on Mondays and Wednesdays from 5:30 to 6:45 pm in the Psychology Building, Room 220
+- [Office Hours:]{.alert} I'm available to meet you [at any time.]{.alert} Please reach out some time in advance and we can schedule a meeting
+- [Materials:]{.alert}
     - Course repository: <https://github.com/danilofreire/qtm385>
     - Canvas
 :::
@@ -515,7 +514,7 @@ Guides: <https://danilofreire.github.io/qtm385/guides.html>
 - [Pre-Analysis Plan]{.alert}: Due mid-term (20%)
 - [Final project]{.alert}: Due on the last day of class (30%)
 - [Late policy]{.alert}: 10% off per day late
-- [Collaboration]{.alert}: You can discuss assignments with your classmates, but you must write your own code and submit your own work. AI is allowed.
+- [Collaboration]{.alert}: You can discuss assignments with your classmates, but you must write your own code and submit your own work. AI is allowed
 - [Academic integrity]{.alert}: Please refer to the syllabus for the university's policy on academic integrity
 
 ## Next class

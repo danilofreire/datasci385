@@ -41,7 +41,7 @@ This course is designed to be both applied and interactive, featuring lectures a
 
 # Course Information
 
-We will meet on Mondays and Wednesdays from 5:30pm to 6:45pm in the [Psychology Building 220](https://maps.app.goo.gl/DNg6qa2APjBj8E5MA). The course will be a mix of lectures, discussions, and hands-on activities. Therefore, it is important that you read the assigned readings before class. Students are encouraged to participate and are most welcome to express their views openly and freely. I would suggest you to bring some notes to the class so that we can discuss together the topics you find most interesting. 
+We will meet on Mondays and Wednesdays from 5:30pm to 6:45pm in the [Psychology Building 220](https://maps.app.goo.gl/DNg6qa2APjBj8E5MA). The course will be a mix of lectures, discussions, and hands-on activities. Therefore, it is important that you read the assigned readings before class. Students are encouraged to participate and are most welcome to express their views openly and freely. I suggest you bring notes to class so we can discuss together the topics you find most interesting. 
 
 All information about the course will be available at <http://danilofreire.github.io/qtm385>. The syllabus will be updated periodically according to the progress of the class. Please remember to visit the website regularly.
 
@@ -59,11 +59,11 @@ By the end of this course, students will be able to:
 
 # Prerequisites
 
-This course is designed for students who have taken or are currently taking an introductory course in statistics. Some understanding of hypothesis testing, confidence intervals, and regression analysis is beneficial. However, if you have not taken such courses, that is also fine. The course is not math-heavy, and all concepts will be explained in detail in class. Some familiarity with `R` or `Python` is required, as we will use these tools for data analysis. We can adjust the course accordingly if you need assistance. If you are unsure whether you meet the prerequisites, please contact me to discuss your background.
+This course is designed for students who have taken or are currently taking an introductory course in statistics. Some understanding of hypothesis testing, confidence intervals, and regression analysis is beneficial. However, if you have not taken such courses, that is also fine. The course is not maths-heavy, and all concepts will be explained in detail in class. Some familiarity with `R` or `Python` is required, as we will use these tools for data analysis. We can adjust the course accordingly if you need assistance. If you are unsure whether you meet the prerequisites, please contact me to discuss your background.
 
 # Software
 
-We will use `R` for all data analysis in this course. `R` is a free and open-source software environment for statistical computing and graphics. You can download `R` from the [Comprehensive R Archive Network (CRAN)](https://cran.r-project.org/). You are free to use any text editor to write your `R` code, but I recommend using [RStudio](https://www.rstudio.com/products/rstudio/download/), [VSCode](https://code.visualstudio.com/), or [Jupyter Notebooks](https://jupyter.org/) with the `R` kernel. If you are feeling brave or want to learn some new skills, you can also use [Neovim](https://neovim.io/) with the [Nvim-R](https://github.com/jalvesaq/Nvim-R) plugin. That is, if [you can exit the editor](https://stackoverflow.blog/2017/05/23/stack-overflow-helping-one-million-developers-exit-vim/). :)
+We will use `R` for all data analysis in this course. `R` is a free and open-source software environment for statistical computing and graphics. You can download `R` from the [Comprehensive R Archive Network (CRAN)](https://cran.r-project.org/). You are free to use any text editor to write your `R` code, but I recommend using [RStudio](https://www.rstudio.com/products/rstudio/download/), [VS Code](https://code.visualstudio.com/), or [Jupyter Notebooks](https://jupyter.org/) with the `R` kernel. If you are feeling brave or want to learn some new skills, you can also use [Neovim](https://neovim.io/) with the [Nvim-R](https://github.com/jalvesaq/Nvim-R) plugin. That is, if [you can exit the editor](https://stackoverflow.blog/2017/05/23/stack-overflow-helping-one-million-developers-exit-vim/). :)
 
 We will also use [Quarto](https://quarto.org/) to write the reports. Quarto is a new document format that combines the best features of [Markdown](https://www.markdownguide.org/), [\LaTeX](https://www.overleaf.com/learn/latex/Learn_LaTeX_in_30_minutes), and [R Markdown](https://rmarkdown.rstudio.com). It is easy to use, very versatile, and allows you to write reports, slides, books, and even websites in a single document. You can install Quarto from the [Quarto website](https://quarto.org/). We will have a hands-on session on how to use Quarto in the course, and I have prepared templates for your [pre-analysis plan](https://github.com/danilofreire/qtm385/pre-analysis-plan-template) and [presentation](https://github.com/danilofreire/quarto-presentation). However, you are free to use any other template you prefer or even write your own.
 
@@ -73,7 +73,7 @@ I am very flexible with office hours, but it is easier to contact me via email. 
 
 # Academic Integrity
 
-Upon every individual who is a part of Emory University falls the responsibility for maintaining in the life of Emory a standard of unimpeachable honour in all academic work. The [Honour Code of Emory College](http://catalog.college.emory.edu/academic/policies-regulations/honor-code.html) is based on the fundamental assumption that every loyal person of the University not only will conduct his or her own life according to the dictates of the highest honor, but will also refuse to tolerate in others action which would sully the good name of the institution. Academic misconduct is an offense generally defined as any action or inaction which is offensive to the integrity and honesty of the members of the academic community. The typical sanction for a violation of the Emory Honor Code is an F in the course. Any suspected case of academic misconduct will be referred to the Emory Honour Council.
+Upon every individual who is a part of Emory University falls the responsibility for maintaining in the life of Emory a standard of unimpeachable honour in all academic work. The [Honour Code of Emory College](http://catalog.college.emory.edu/academic/policies-regulations/honor-code.html) is based on the fundamental assumption that every loyal person of the University not only will conduct his or her own life according to the dictates of the highest honour, but will also refuse to tolerate in others action that would sully the good name of the institution. Academic misconduct is an offence generally defined as any action or inaction which is offensive to the integrity and honesty of the members of the academic community. The typical sanction for a violation of the Emory Honor Code is an F in the course. Any suspected case of academic misconduct will be referred to the Emory Honour Council.
 
 # Artificial Intelligence
 
@@ -102,7 +102,7 @@ Emory University welcomes students from around the country and the world, and th
 
 A guide for writing the PAP will be available in the course GitHub repository and webpage. This assignment will help students develop skills in planning and pre-registering experiments, a crucial practice in modern experimental research. 
 
-**Final Project: 30%.** The final project will consist of a short presentation, created using Quarto, based on the pre-analysis plans developed earlier in the course. For this assignment, I will simulate data based on each group's PAP, intentionally introducing challenges such as missing data on covariates and non-compliance. Students will need to analyse this simulated data as if it were the true results of their proposed experiments, addressing any issues that arise in light of their original PAP. The presentation should include:
+**Final Project: 30%.** The final project will consist of a short presentation, created using Quarto, based on the pre-analysis plans developed earlier in the course. For this assignment, I will simulate data based on each group's PAP, intentionally introducing challenges such as missing data on covariates and non-compliance. Students will need to analyse this simulated data as if they were the true results of their proposed experiments, addressing any issues that arise in light of their original PAP. The presentation should include:
 
 - A brief overview of the experimental design.
 - Results of the primary and secondary analyses.
@@ -142,7 +142,7 @@ Students are encouraged to make use of the library's resources, including its [r
 
 # Subject to Change Policy
 
-While I will try to adhere to the course schedule as much as possible, I also want to adapt to your learning pace and style. The syllabus and course plan may change in the semester. Again, please visit [the course website](https://danilofreire.github.io/qtm385) regularly to check for updates. I will also announce any changes in class and via email.
+While I will try to adhere to the course schedule as much as possible, I also want to adapt to your learning pace and style. The syllabus and course plan may change during the semester. Again, please visit [the course website](https://danilofreire.github.io/qtm385) regularly to check for updates. I will also announce any changes in class and via email.
 
 # Course Outline and Readings
 
@@ -472,6 +472,7 @@ Suggested readings:
 ## Lecture 25: Course Revision (December 1, 2025)
 
 - Lecture slides: [Course Revision](https://raw.githack.com/danilofreire/qtm385/main/lectures/lecture-25/25-revision.html).
+- Final report due.
 
 ## Lecture 26: Presentations (December 3, 2025)
 

@@ -83,7 +83,7 @@ editor:
 
 :::{.column width="50%"}
 - All four papers are about sensitive topics and use the methods we discussed in class
-- The first uses a [list experiment]{.alert} to measure underreporting of drug and alcohol use amongst atheletes (a major problem in athletics!)
+- The first uses a [list experiment]{.alert} to measure underreporting of drug and alcohol use amongst athletes (a major problem in athletics!)
 - The second paper is a more sophisticated one: the authors use two methods to measure support for NATO forces in Afghanistan (a sensitive topic indeed!)
 - The third paper uses a clever design, leveraging a referendum in the US to see which method is better to measure sensitive topics (spoiler: randomised response is the best one!)
 - The last one, by yours truly, addresses a major problem in developing countries: support for extralegal violence
@@ -148,9 +148,9 @@ whereas only 46 percent of our student-athlete sample say the same_ ($z = 20.55;
 ### Drug use
 
 :::{style="font-size: 27px; margin-top: 30px;"}
-Below is a list of activities that you may have engaged in over your time in college. 
-We are interested in HOW MANY of these activities you have engaged – NOT which ones. 
-Thus, please simply choose the number at the end of the list. 
+Below is a list of activities that you may have engaged in over your time in college 
+We are interested in HOW MANY of these activities you have engaged in – NOT which ones 
+Thus, please simply choose the number at the end of the list 
 
 * Sustained an injury during a practice or game that prevented you from playing at least one other game
 
@@ -170,10 +170,10 @@ Thus, please simply choose the number at the end of the list.
 - Note that the authors asked about [knowingly taking a drug banned by the NCAA]{.alert}
 - [The results were stark]{.alert}:
   -  Control group = mean response of 3.31 (SD = 0.78; n = 553) 
-  -  Treatment group = mean response of 3.68 (SD = 0.98; n = 510). 
+  -  Treatment group = mean response of 3.68 (SD = 0.98; n = 510) 
   -  The difference between the two groups is statistically significant ($t_{1061}$ = 6.90; p < 0.01)
   -  The authors conclude that the list experiment "_suggests that 37 percent of respondents have knowingly taken banned drugs_" (p. 377)
-- [Direct question]{.alert} =  4.9 percent 😂
+- [Direct question]{.alert} =  4.9 per cent 😂
 - [What do you think about this result?]{.alert}
 :::
 
@@ -181,9 +181,9 @@ Thus, please simply choose the number at the end of the list.
 ### Alcohol use
 
 :::{style="font-size: 27px; margin-top: 30px;"}
-Below is a list of activities that you may have engaged in over your time in college. 
-We are interested in HOW MANY of these activities you have engaged – NOT which ones. 
-Thus, please simply choose the number at the end of the list. 
+Below is a list of activities that you may have engaged in over your time in college 
+We are interested in HOW MANY of these activities you have engaged in – NOT which ones 
+Thus, please simply choose the number at the end of the list 
 
 * Your choice of which University to attend was determined largely by the sports opportunities (e.g., it weighed in at least in 50% of your decision)
 * Stayed up past 1 AM, on average, during the season of your sport
@@ -198,9 +198,9 @@ Thus, please simply choose the number at the end of the list.
 :::{style="font-size: 28px; margin-top: 30px;"}
 - Again, [large statistical difference]{.alert}:
   - Control group = mean response of 2.76 (SD = 0.85; n = 544) 
-  - Treatment group = mean response of 3.22 (SD = 1.10; n = 556). 
-  - [46 percent consumed more than five drinks a week]{.alert}
-- Less than [3 percent]{.alert} of athletes reported that they consumed more than five drinks a week when asked directly
+  - Treatment group = mean response of 3.22 (SD = 1.10; n = 556) 
+  - [46 per cent consumed more than five drinks a week]{.alert}
+- Less than [3 per cent]{.alert} of athletes reported that they consumed more than five drinks a week when asked directly
 :::
 
 # Combining list and endorsement experiments {background-color="#2d4563"}
@@ -310,11 +310,11 @@ Source: [Rosenfeld et al. (2016)](https://onlinelibrary.wiley.com/doi/abs/10.111
 :::{.columns}
 :::{.column width="50%"}
 - In 2011, Mississippi voters were asked to vote on a [proposition to define life as beginning at conception]{.alert} - Most commentators expected the initiative to pass easily, but the opposite happened
-- The amendment was defeated 57.6% to 42.4%, a [15 percent-age point swing from the pre-election poll]{.alert}
+- The amendment was defeated 57.6% to 42.4%, a [15 percentage point swing from the pre-election poll]{.alert}
 - No similar deviations from the poll were observed elsewhere on the ballot
 - Sample size: [2,655 respondents who already voted in the referendum]{.alert}
 - [Why after the referendum?]{.alert}
-- They sample [only from counties who had an unexpectedly number of "no" votes]{.alert}
+- They sampled [only from counties that had an unexpected number of "no" votes]{.alert}
 :::
 
 :::{.column width="50%"}
@@ -436,7 +436,7 @@ Refused
 :::{style="font-size: 30px; margin-top: 30px;"}
 - The first question was [pre-tested]{.alert} in a pilot study and was just included to see if the respondent was being honest
 - People mainly gave honest answers to the first question (about 90% of the time)
-- The rest was maybe [confused by the procedure]{.alert}, which is indeed one of the [disadvantages of this method]{.alert}
+- The rest were maybe [confused by the procedure]{.alert}, which is indeed one of the [disadvantages of this method]{.alert}
 :::
 
 ## Results
@@ -497,7 +497,7 @@ Source: [Freire & Skarbek (2023)](https://journals.sagepub.com/doi/full/10.1177/
 :::{style="font-size: 24px; margin-top: 30px;"}
 :::{.columns}
 :::{.column width="50%"}
-- We run the survey online with [Qualtrics]{.alert}
+- We ran the survey online with [Qualtrics]{.alert}
 - The sample was [randomly selected from a panel]{.alert} (N=2406)
 - We stratified the sample using quota sampling with demographic variables (gender, race, region, and education)
 - We also included many pre-treatment questions to [measure potential heterogeneous effects of the treatment]{.alert}
@@ -511,7 +511,7 @@ Source: [Freire & Skarbek (2023)](https://journals.sagepub.com/doi/full/10.1177/
 :::
 
 - Respondents read a vignette about lynchings in Brazil and were asked to choose between 5 pairs of profiles
-- The profiles included the information above and was about hypothetical scenarios
+- The profiles included the information above and were about hypothetical scenarios
 :::
 :::
 :::
