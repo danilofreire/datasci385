@@ -20,7 +20,7 @@ editor:
   render-on-save: true
 ---
 
-# How are you doing? 😊 {background-color="#2d4563"}
+# Hello! How are you doing? 😊 {background-color="#2d4563"}
 
 # Brief recap 📚 {background-color="#2d4563"}
 
@@ -96,8 +96,8 @@ Source: <https://www.caliper.com/Maptitude/Crime/default.htm>
 :::{.columns}
 :::{.column width="50%"}
 - Remember [SUTVA]{.alert}?
-  - [Stable unit treatment value assumption]{.alert}
-- The [stable]{.alert} part means that [potential outcomes should be independent of the treatment]{.alert}
+  - [Stable Unit Treatment Value Assumption]{.alert}
+- The [stable]{.alert} part means that [potential outcomes for any unit are unaffected by the treatment status of other units]{.alert}
 - As you can imagine, this [poses risks to causal identification]{.alert}
 - This happens quite often in [social and public health interventions]{.alert}:
   - [Peer effects]{.alert} in education
@@ -238,7 +238,7 @@ Source: [Collazos et al. (2021)](https://link.springer.com/article/10.1007/s1129
   - [Neither receives mail]{.alert}
   - [Mail with untreated housemate]{.alert}
   - [Untreated with treated housemate]{.alert}
-- [*Multi-level design*]{.alert} features:
+- So we have:
   - [Two-stage randomisation]{.alert} (household then individual)
   - Expandable to [additional levels like postcode]{.alert}
 :::
@@ -248,9 +248,35 @@ Source: [Collazos et al. (2021)](https://link.springer.com/article/10.1007/s1129
 ## An example
 ### Get-out-to-vote campaign
 
+:::{style="margin-top: 20px; font-size: 26px; text-align: center"}
+```{mermaid}
+graph TD
+    A["Household<br/>Randomisation"] --> B["Both voters<br/>treated"]
+    A --> C["Neither voter<br/>treated"]
+    A --> D["One voter<br/>treated"]
+    
+    B --> E["Y₁₁:<br/>Combined effects"]
+    C --> F["Y₀₀:<br/>Baseline"]
+    D --> G["Y₁₀:<br/>Spillover to untreated"]
+    D --> H["Y₀₁:<br/>Direct effect"]
+    
+    style A fill:#e1f5fe,stroke:#01579b,stroke-width:2px,width:170px,height:80px,font-size:18px
+    style B fill:#f3e5f5,stroke:#4a148c,stroke-width:2px,width:200px,height:80px,font-size:18px
+    style C fill:#f3e5f5,stroke:#4a148c,stroke-width:2px,width:200px,height:80px,font-size:18px
+    style D fill:#f3e5f5,stroke:#4a148c,stroke-width:2px,width:160px,height:80px,font-size:18px
+    style E fill:#e8f5e8,stroke:#1b5e20,stroke-width:2px,width:250px,height:80px,font-size:18px
+    style F fill:#e8f5e8,stroke:#1b5e20,stroke-width:2px,width:180px,height:80px,font-size:18px
+    style G fill:#e8f5e8,stroke:#1b5e20,stroke-width:2px,width:250px,height:80px,font-size:18px
+    style H fill:#e8f5e8,stroke:#1b5e20,stroke-width:2px,width:200px,height:80px,font-size:18px
+```
+:::
+
+## An example
+### Get-out-to-vote campaign
+
 :::{style="margin-top: 20px; font-size: 26px;"}
 - [Potential outcomes depend on both own and housemate's treatment status]{.alert}
-- Revised notation system accounts for [dual treatment influences]{.alert} ($Y_{ab}$ where):
+- Revised notation system accounts for [dual treatment influences]{.alert} ($Y_{ab}$) where:
   - `a` = [housemate's treatment status (0=control, 1=treated)]{.alert}
   - `b` = [own treatment status (0=control, 1=treated)]{.alert}
 
@@ -269,7 +295,7 @@ Source: [Collazos et al. (2021)](https://link.springer.com/article/10.1007/s1129
 ## Defining causal effects
 
 :::{style="margin-top: 20px; font-size: 26px;"}
-- From the [four potential outcomes]{.alert}, key estimands emerge:
+- From the [four potential outcomes]{.alert}, some interesting estimands emerge:
   - $Y_{01} - Y_{00}$: [Direct effect]{.alert} of treatment when housemate is untreated
   - $Y_{11} - Y_{10}$: [Treatment effect]{.alert} when housemate receives mail
   - $Y_{10} - Y_{00}$: [Spillover effect]{.alert} on untreated with treated housemate
@@ -377,8 +403,8 @@ Source: [Collazos et al. (2021)](https://link.springer.com/article/10.1007/s1129
 
 :::{style="margin-top: 20px; font-size: 26px;"}
 - Second, the [probability of assignment to each treatment condition varies from one observation to the next]{.alert}
-- For instance, village A has a 0.20 probability of being exposed to spillovers from an adjacent treated location, whereas the village at location B has a 0.40 probability
-- As we have seen previously, we should [weight observations by inverse probability of assigned experimental condition]{.alert}, excluding subjects with zero probability (e.g., F)
+- For instance, village A has a 0.20 probability of being exposed to spillovers from B, whereas village B has a 0.40 probability because of A and C
+- As we have seen previously, when the treatment assignment probabilities vary across units, we should [weight observations by inverse probability of assigned experimental condition]{.alert}, excluding subjects with zero probability (e.g., F)
 
 
 :::{style="margin-top: 20px; text-align: center;"}
@@ -387,7 +413,7 @@ Source: [Collazos et al. (2021)](https://link.springer.com/article/10.1007/s1129
 | 1 | $Y_{01}$ | $Y_{10}$ | $Y_{00}$ | $Y_{00}$ | $Y_{00}$ | 0.6 | 0.2 | 0.2 |
 | 2 | $Y_{10}$ | $Y_{01}$ | $Y_{10}$ | $Y_{00}$ | $Y_{00}$ | 0.4 | 0.4 | 0.2 |
 | 3 | $Y_{00}$ | $Y_{10}$ | $Y_{01}$ | $Y_{10}$ | $Y_{00}$ | 0.4 | 0.4 | 0.2 |
-| 4 | $Y_{00}$ | $Y_{00}$ | $Y_{00}$ | $Y_{10}$ | $Y_{01}$ | 0.6 | 0.2 | 0.2 |
+| 4 | $Y_{00}$ | $Y_{00}$ | $Y_{10}$ | $Y_{01}$ | $Y_{00}$ | 0.6 | 0.2 | 0.2 |
 | 5 | $Y_{00}$ | $Y_{00}$ | $Y_{00}$ | $Y_{00}$ | $Y_{01}$ | 0.8 | 0   | 0.2 |
 :::
 :::
@@ -473,7 +499,7 @@ period's effects to dissipate
 - Regular experiments ("post only") have relatively low precision because [the outcome is measured just once]{.alert}
 - This is particularly problematic when the outcome is [noisy]{.alert} or if the experiment involves [multiple treatment arms, moderators, or small treatment effects]{.alert}
 - Pre-post designs measure the outcome prior to the experimental manipulation at point $t_0$ and after the manipulation at point $t_1$ (as we've just seen)
--  The pre-post design [can also be a between-subjects design]{.alert} because [some respondents are never exposed to the treatment]{.alert}; respondents difference scores are compared between groups
+-  The pre-post design [can also be a between-subjects design]{.alert} if [some respondents are never exposed to the treatment]{.alert}; respondents difference scores are compared between groups
 :::
 
 ## Variations of time-series experiments
@@ -483,7 +509,8 @@ period's effects to dissipate
 :::{.column width="50%"}
 - Some scholars worry that measuring the outcome prior to the experiment could [alter estimated treatment effects]{.alert}
 - This is true in some cases: [the no-persistence assumption is likely violated]{.alert} when the treatment gives information or training, for example
-- The [quasi-pretest-posttest design]{.alert} is a variation of the pre-post design that tries to avoids this problem by providing a [similar, but not identical, treatment]{.alert} in the pretest phase
+- The [quasi-pre-post design]{.alert} is a variation of the pre-post design that tries to avoids this problem by providing a [similar, but not identical, treatment]{.alert} in the pretest phase
+  - For instance, a training session on a related but different topic
 - The authors decided to test these designs in a [replication of six studies]{.alert} to see how they perform in practice
 - If different designs yield largely the same results, researchers can be more confident in the external validity of these findings and choose designs based [on other features, like precision]{.alert}
 :::
@@ -611,7 +638,7 @@ Source: [Hemming et al. (2014)](https://doi.org/10.1136/bmj.h391)
 $$
 \begin{aligned}
 \widehat{E}[Y_{01} - Y_{00}] &= \frac{\frac{7 + 10}{0.25} + \frac{2 + 1}{0.25} + \frac{7 + 10}{0.25}}{\frac{2}{0.25} + \frac{2}{0.25} + \frac{2}{0.25}} \\
-&- \frac{\frac{7 + 1 + 4 + 4 + 3 + 2 + 3}{0.75} + \frac{5 + 3 + 3 + 3}{0.50} + \frac{3 + 4}{0.25}}{\frac{6}{0.75} + \frac{4}{0.50} + \frac{2}{0.25}} = 2.72.
+&- \frac{\frac{7 + 1 + 4 + 3 + 2 + 3}{0.75} + \frac{5 + 3 + 3 + 3}{0.50} + \frac{3 + 4}{0.25}}{\frac{6}{0.75} + \frac{4}{0.50} + \frac{2}{0.25}} = 2.72.
 \end{aligned}
 $$
 :::
