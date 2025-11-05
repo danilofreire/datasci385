@@ -256,6 +256,7 @@ Suggested readings:
 - Lecture slides: [Texts for Discussion](https://raw.githack.com/danilofreire/qtm385/main/lectures/lecture-19/19-discussion.html).
 - Munshi, K. (2003). [Networks in the modern economy: Mexican migrants in the US labor market.](https://academic.oup.com/qje/article-abstract/118/2/549/1899587?login=false) The Quarterly Journal of Economics, 118(2), 549-599.
 - Miguel, E., & Kremer, M. (2004). [Worms: identifying impacts on education and health in the presence of treatment externalities.](https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1468-0262.2004.00481.x) Econometrica, 72(1), 159-217.
+- [Kahoot Quiz](https://play.kahoot.it/v2/?quizId=e02f1d98-9af7-449f-8a32-dddb6cc94575&hostId=05eb977d-4f8a-440e-9e45-95212b29d103).
 - Pre-Analysis Plan due.
 - Problem Set 08 due.
 - [Problem Set 09 assigned.](https://github.com/danilofreire/qtm385/tree/main/assignments/09-assignment).
