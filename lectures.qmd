@@ -299,7 +299,7 @@ Suggested readings:
 - Blair, G., Imai, K., & Zhou, Y. Y. (2015). [Design and Analysis of the Randomized Response Technique.](https://www.tandfonline.com/doi/abs/10.1080/01621459.2015.1050028) Journal of the American Statistical Association, 110(511), 1304-1319.
 - Blair, G., & Imai, K. (2012). [Statistical Analysis of List Experiments.](https://www.cambridge.org/core/journals/political-analysis/article/statistical-analysis-of-list-experiments/6AEE6C9D3AB6DA410D602CB035D5959A) Political Analysis, 20(1), 47-77.
 - Riambau, G., & Ostwald, K. (2021). [Placebo Statements in List Experiments: Evidence from a Face-to-Face Survey in Singapore](https://doi.org/10.1017/psrm.2020.18). Political Science Research and Methods, 9(1), 172-179.
-- Gosciak, J., Molitor, D., & Lundberg, I. (2025). [Adaptive Randomization in Conjoint Survey Experiments](https://osf.io/preprints/socarxiv/69y2j_v1). Retrieved from <osf.io/preprints/socarxiv/69y2j_v1>.
+- Gosciak, J., Molitor, D., & Lundberg, I. (2025). [Adaptive Randomization in Conjoint Survey Experiments](https://osf.io/preprints/socarxiv/69y2j_v1). Retrieved from <https://osf.io/preprints/socarxiv/69y2j_v1>.
 
 ## Lecture 23: Texts for Discussion (Related to Survey Experiments) (November 19, 2025)
 
