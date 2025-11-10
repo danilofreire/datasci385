@@ -53,14 +53,17 @@ editor:
 
 ## Mediation: unpacking the black box 
 
-:::{style="margin-top: 30px; font-size: 28px;"}
+:::{style="margin-top: 30px; font-size: 27px;"}
 :::{.columns}
 :::{.column width=50%}
 - What is [mediation analysis]{.alert}? The search for causal mechanisms
 - The classic [regression-based approach]{.alert} (and why it's often problematic)
 - Thinking about mediation with [potential outcomes]{.alert}
 - The challenge of [complex potential outcomes]{.alert}
-- Can we [experimentally manipulate mediators]{.alert}? (Encouragement designs & excludability)
+- Can we [experimentally manipulate mediators]{.alert}? 
+  - Factorial designs
+  - Encouragement designs
+  - The excludability problem
 :::
 
 :::{.column width=50%}
@@ -87,7 +90,7 @@ editor:
 - Examples:
   - Limes ($Z$) → Vitamin C intake ($M$) → Reduced scurvy ($Y$)
   - Reserving council seats for women ($Z$) → Female incumbency/Changed attitudes ($M$) → Election of women later ($Y$) (Bhavnani 2009)
-- Goal: [Identify the pathways]{.alert} through which $Z$ transmits its influence to $Y$
+- Goal: [Identify the pathways]{.alert} through which $Z$ influences $Y$
 :::
 
 :::{.column width=50%}
@@ -145,10 +148,10 @@ Source: [Righetti (2023)](https://nicolarighetti.github.io/mediation-moderation-
 
 ## Decomposing effects (under strong assumptions)
 
-:::{style="margin-top: 30px; font-size: 23px;"}
+:::{style="margin-top: 30px; font-size: 22px;"}
 :::{.columns}
 :::{.column width=50%}
-- If we assume [constant treatment effects]{.alert} (a, b, c, d are the same for everyone) and certain other conditions hold
+- If we assume [constant treatment effects]{.alert} (a, b, c, d are the same for everyone) and assume no unobserved confounding between $M$ and $Y$)...
 - The total effect (c) can be decomposed:
   - [Total Effect (c)]{.alert}: How much $Y$ changes for a one-unit change in $Z$. Estimated from Eq. (2) (not shown in the figure)
   - [Direct Effect (d)]{.alert}: How much $Y$ changes for a one-unit change in $Z$, *holding $M$ constant*. Estimated from Eq. (3)
@@ -160,6 +163,8 @@ Source: [Righetti (2023)](https://nicolarighetti.github.io/mediation-moderation-
 :::{.column width=50%}
 :::{style="text-align: center; margin-top: 130px;"}
 ![](figures/mediators02.png){width=100%}
+
+Source: Gerber & Green (2012, 323), *Field Experiments*, Figure 10.1
 :::
 :::
 :::
@@ -167,10 +172,9 @@ Source: [Righetti (2023)](https://nicolarighetti.github.io/mediation-moderation-
 
 ## The constant effects assumption
 
-:::{style="margin-top: 30px; font-size: 29px;"}
+:::{style="margin-top: 30px; font-size: 31px;"}
 - Remember from our class on heterogeneous effects: [causal effects often vary because people are different!]{.alert}
-- If $a_i$ and $b_i$ vary across individuals, then the average indirect effect is $E[a_i b_i]$
-- $E[a_i b_i] = E[a_i] E[b_i] + Cov(a_i, b_i)$
+- If $a_i$ and $b_i$ vary across individuals, then the average indirect effect is $E[a_i b_i] = E[a_i] E[b_i] + Cov(a_i, b_i)$
 - Simply multiplying the average effect of $Z$ on $M$ ($\hat{a} \approx E[a_i]$) by the average effect of $M$ on $Y$ ($\hat{b} \approx E[b_i]$) only gives the average indirect effect if $[Cov(a_i, b_i) = 0]$
 - This covariance term is generally [not zero and not identifiable]{.alert}
 - So, the simple $c = d + ab$ decomposition breaks down with heterogeneous effects
@@ -178,7 +182,7 @@ Source: [Righetti (2023)](https://nicolarighetti.github.io/mediation-moderation-
 
 ## Why covariance matters: an example
 
-:::{style="margin-top: 30px; font-size: 20px;"}
+:::{style="margin-top: 30px; font-size: 21px;"}
 :::{.columns}
 :::{.column width=50%}
 - Let's make this concrete with a job training programme example:
@@ -222,7 +226,7 @@ Source: [Righetti (2023)](https://nicolarighetti.github.io/mediation-moderation-
   - Constant treatment effects (for $c = d + ab$)
   - No unobserved confounding between $M$ and $Y$ (for unbiased $\hat{b}$ and $\hat{d}$)
 - These assumptions are [not guaranteed by random assignment of $Z$]{.alert} alone
-- Prone to bias that exaggerates the mediator's role and downplays the treatment's direct effect
+- Prone to bias because $M$ is not randomised
 - [Use with extreme caution, if at all]{.alert}, for causal mediation claims based solely on $Z$ randomisation
 :::
 
@@ -250,7 +254,7 @@ Source: [Righetti (2023)](https://nicolarighetti.github.io/mediation-moderation-
 - $Y_i(m, z)$: Potential outcome for individual $i$ if their mediator were set to value $m$ AND they were assigned treatment $z$
 - This allows us to think about hypothetical scenarios:
   - What would $Y$ be if we gave the treatment ($z=1$) but somehow forced the mediator to the level it would have taken under control ($m=M_i(0)$)? This would be $Y_i(M_i(0), 1)$
-  - These are [complex potential outcomes]{.alert} because they involve situations that can never happen in reality (more on that soon!)
+  - These are called [complex potential outcomes]{.alert} because they involve situations that can never happen in reality (more on that soon!)
 - Linking back: $Y_i(1) = Y_i(M_i(1), 1)$ and $Y_i(0) = Y_i(M_i(0), 0)$
 :::
 
@@ -274,9 +278,8 @@ Source: [Righetti (2023)](https://nicolarighetti.github.io/mediation-moderation-
 - Look closely at the definitions of NDE and NIE:
   - NDE involves $Y_i(M_i(0), 1)$
   - NIE involves $Y_i(M_i(0), 1)$
-- [These are "complex" or "counterfactual" potential outcomes]{.alert}
-  - $Y_i(M_i(0), 1)$ represents the outcome under treatment ($Z=1$), but with the mediator at the level it would take under control ($M=M(0)$).
-- [This state can never happen in reality!]{.alert} If $Z_i=1$, we observe $M_i(1)$, not $M_i(0)$
+- $Y_i(M_i(0), 1)$ represents the outcome under treatment ($Z=1$), but with the mediator at the level it would take under control ($M=M(0)$).
+- Again, [this can never happen in reality!]{.alert} If $Z_i=1$, we always observe $M_i(1)$, not $M_i(0)$
 - These potential outcomes are [fundamentally unobservable]{.alert} from any single experiment just randomising $Z$
 - Now you see why [mediation analysis is so tricky and why we don't do it often!]{.alert} 😅
 :::
@@ -398,7 +401,7 @@ Source: [Righetti (2023)](https://nicolarighetti.github.io/mediation-moderation-
 
 :::{style="margin-top: 30px; font-size: 25px;"}
 - CCT programmes give cash to poor families if they meet certain conditions (e.g., school attendance, health check-ups)
-- Potential mediators: Increased income (cash effect), Changed behaviour due to rules (conditionality effect).
+- Potential mediators: Increased income (cash effect), Changed behaviour due to rules (conditionality effect)
 - [Implicit Mediation Design:]{.alert} (e.g., Baird et al. 2009)
   - Group 1: Control (no programme)
   - Group 2: Unconditional Cash Transfer (UCT - gets cash, no rules)
@@ -474,7 +477,6 @@ Source: [Righetti (2023)](https://nicolarighetti.github.io/mediation-moderation-
 - Traditional [regression approaches are widespread but problematic]{.alert}:
   - Rely on constant effects assumption
   - Suffer from bias due to unobserved confounding between $M$ and $Y$
-  - Tend to overestimate $M$'s role and underestimate $Z$'s direct role
 - The [potential outcomes framework reveals fundamental challenges]{.alert}:
   - Estimating natural direct/indirect effects requires observing complex potential outcomes that are inherently unobservable
   - Randomising $Z$ alone is insufficient; strong assumptions are needed
