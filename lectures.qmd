@@ -274,6 +274,7 @@ Suggested readings:
 - VanderWeele, T. J. (2016). [Mediation Analysis: A Practitioner's Guide.](https://www.annualreviews.org/content/journals/10.1146/annurev-publhealth-032315-021402) Annual Review of Public Health, 37(1), 17-32.
 - Acharya, A., Blackwell, M., & Sen, M. (2018). [Analyzing Causal Mechanisms in Survey Experiments](https://doi.org/10.1017/pan.2018.19). Political Analysis, 26(4), 357–378.
 - MacKinnon, D. P., Fairchild, A. J., & Fritz, M. S. (2007). [Mediation Analysis.](https://www.annualreviews.org/content/journals/10.1146/annurev.psych.58.110405.085542) Annual Review of Psychology, 58(1), 593-614.
+- Righetti, N. (2023). [Mediation, Moderation, and Conditional Process Analysis with R](https://nicolarighetti.github.io/mediation-moderation-and-conditional-process-analysis-with-r/). A comprehensive online book with R code examples.
 
 ## Lecture 21: Survey Experiments (November 12, 2025)
 
