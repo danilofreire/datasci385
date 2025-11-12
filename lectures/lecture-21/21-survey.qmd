@@ -25,134 +25,30 @@ editor:
 # Brief recap 📚 {background-color="#2d4563"}
 
 ## Mediation analysis
-### Core components
 
-:::{style="font-size: 21px; margin-top: 30px;"}
+:::{style="margin-top: 20px; font-size: 22px"}
 :::{.columns}
 :::{.column width="50%"}
-- [Mediation analysis]{.alert} is a statistical technique to understand the mechanism through which an independent variable affects a dependent variable
-- It identifies [intermediate variables (mediators)]{.alert} that lie on the causal pathway between the intervention and the outcome
-- Divides total effect: direct (intervention → outcome) and indirect (via mediator)
-- Mediation analysis is based on the counterfactual framework and [requires strong assumptions]{.alert} to identify causal effects
-- An important set of assumptions is [sequential ignorability]{.alert}: The mediator is not affected by the treatment after controlling for confounders
-  - This is a strong assumption that is often violated in practice
-  - When this assumption is violated, the direct and indirect effects are not identified
+- Mediation analysis seeks to understand *how* a treatment $Z$ affects an outcome $Y$ through an intermediate variable $M$ ([causal mechanisms]{.alert})
+- Traditional [regression approaches are widespread but problematic]{.alert}:
+  - Rely on constant effects assumption
+  - Suffer from bias due to unobserved confounding between $M$ and $Y$
+- The [potential outcomes framework reveals fundamental challenges]{.alert}:
+  - Estimating natural direct/indirect effects requires observing complex potential outcomes that are inherently unobservable
+  - Randomising $Z$ alone is insufficient; strong assumptions are needed
 :::
 
 :::{.column width="50%"}
--  Mediation analysis can be [extended to include multiple mediators]{.alert}, either acting in parallel (independent pathways) or in sequence (a chain of mediators)
-   - [Even stronger assumptions]{.alert}!
-- Longitudinal RCTs allow for the examination of [time-varying mediators and outcomes]{.alert}
-- Even in well-conducted RCTs, [mediation analysis is still observational with respect to the mediator]{.alert}
-- [Sensitivity analysis]{.alert} can be used to assess the robustness of the results to violations of the assumptions
+- [Experimentally manipulating $M$]{.alert} helps estimate controlled effects but doesn't fully solve the problem and may be artificial
+- Using $Z$ as an [instrument for $M$ requires the strong exclusion restriction]{.alert} (no direct $Z \to Y$ path), often violated
+- [Ruling out mediators]{.alert} (showing $Z$ doesn't affect $M$) is a more modest but achievable goal
+- [Implicit mediation analysis]{.alert} is a pragmatic, design-based alternative:
+  - Varies treatment components experimentally
+  - Compares effects to infer which components (and likely mechanisms) matter
+  - Avoids modelling $M$ directly, relies on fewer assumptions
 :::
 :::
 :::
-
-## Last assignment
-
-:::{style="font-size: 23px; margin-top: 30px;"}
-
-| Village   | Untreated ($Y_{00}$) | Adjacent village treated ($Y_{10}$) | Treated ($Y_{01}$) |
-|-----------|----------------------|-------------------------------------|--------------------|
-| A         | 0                    | 2                                   | 0                  |
-| B         | 6                    | 2                                   | 10                 |
-| C         | 0                    | 4                                   | 4                  |
-| D         | 6                    | 6                                   | 6                  |
-| F         | 6                    | NA                                  | 3                  |
-
-Table: Probability of receiving treatment, spillover, and control
-
-| Village | A         | B         | C         | D         | F         | Pr(control) | Pr(spillover) | Pr(treatment) |
-|---------|-----------|-----------|-----------|-----------|-----------|-------------|---------------|---------------|
-| 1       | $Y_{01}$  | $Y_{10}$  | $Y_{00}$  | $Y_{00}$  | $Y_{00}$  | 0.6         | 0.2           | 0.2           |
-| 2       | $Y_{10}$  | $Y_{01}$  | $Y_{10}$  | $Y_{00}$  | $Y_{00}$  | 0.4         | 0.4           | 0.2           |
-| 3       | $Y_{00}$  | $Y_{10}$  | $Y_{01}$  | $Y_{10}$  | $Y_{00}$  | 0.4         | 0.4           | 0.2           |
-| 4       | $Y_{00}$  | $Y_{00}$  | $Y_{00}$  | $Y_{10}$  | $Y_{01}$  | 0.6         | 0.2           | 0.2           |
-| 5       | $Y_{00}$  | $Y_{00}$  | $Y_{00}$  | $Y_{00}$  | $Y_{01}$  | 0.8         | 0             | 0.2           |
-
-Using these data, calculate the following quantities:
-:::
-
-## Questions
-
-:::{style="font-size: 15px; margin-top: 30px;"}
-:::{.columns}
-:::{.column width="50%"}
-### Question 02
-
-- Estimate $E[Y_{01} - Y_{00}]$ for the random assignment that places the treatment at location A
-- Village A is treated. So we have this (from the table): 
-  - $Y_{01}^{(A)} = 0$ and $Pr(treat) = 0.2$
-- Treated part of the equation: $$ \frac{0 / 0.2}{1 / 0.2} = \frac{0}{5} = 0 $$
-- Villages C, D, and F are untreated and not next to A ($Y_{00}$). So:
-  - $Y_{00}^{(C)} = 0, \quad Pr(control) = 0.4$
-  - $Y_{00}^{(D)} = 6, \quad Pr(control) = 0.6$ 
-  - $Y_{00}^{(F)} = 6, \quad Pr(control) = 0.8$
-$$
-\frac{0/0.4 + 6/0.6 + 6/0.8}{1/0.4 + 1/0.6 + 1/0.8} = \frac{0 + 10 + 7.5}{2.5 + 1.667 + 1.25} = \frac{17.5}{5.417} \approx 3.23
-$$
-
-- And the result is:
-
-$$
-\hat{E}[Y_{01} - Y_{00}] = 0 - 3.23 = -3.23
-$$
-:::
-
-:::{.column width="50%"}
-### Question 03
-
-- Estimate $E[Y_{10} - Y_{00}]$ for the random assignment that places the treatment at location A, restricting the sample to the set of villages that have a non-zero probability of expressing both of these potential outcomes
-- Village B is the only village with spillovers ($Y_{10}$)
-  - $Y_{10}^{(B)} = 2$, $Pr(spillover) = 0.4$
-  - $\frac{2/0.4}{1/0.4} = \frac{5}{2.5} = 2.0$
-- Villages C and D are neither treated nor next to A ($Y_{00}$) 
-  - $Y_{00}^{(C)} = 0$, $Pr(control) = 0.4$  
-  - $Y_{00}^{(D)} = 6$, $Pr(control) = 0.6$
-
-- Thus, for the control part of the equation:
-$$
-\frac{0/0.4 + 6/0.6}{1/0.4 + 1/0.6} = \frac{0 + 10}{2.5 + 1.667} = \frac{10}{4.167} \approx 2.4
-$$
-
-- Final result: 
-
-$$
-\hat{E}[Y_{10} - Y_{00}] = 2.0 - 2.4 = -0.40
-$$
-:::
-:::
-:::
-
-## Questions
-
-:::{style="font-size: 17px; margin-top: 30px;"}
-### Question 04
-
-- Estimate $E[Y_{01} - Y_{00}]$ restricting the sample to the same set of villages as in question 3
-- Village F cannot express $Y_{01}$ because we're limiting the analysis to villages as in question 3
-- Village A: 
-  - $Y_{01}^{(A)} = 0$, $Pr(treat) = 0.2$ 
-  - $\frac{0/0.2}{1/0.2} = \frac{0}{5} = 0$
-
-- Villages C and D (controls): 
-  - $Y_{00}^{(C)} = 0$, $Pr(control) = 0.4$  
-  - $Y_{00}^{(D)} = 6$, $Pr(control) = 0.6$
-
-- Control part of the equation:
-
-$$
-\frac{0/0.4 + 6/0.6}{1/0.4 + 1/0.6} = \frac{0 + 10}{2.5 + 1.667} = \frac{10}{4.167} \approx 2.4
-$$
-
-- Result:
-
-$$
-\hat{E}[Y_{01} - Y_{00}] = 0 - 2.4 = -2.4
-$$
-:::
-
 
 # Today's plan 📅 {background-color="#2d4563"}
 
@@ -190,25 +86,10 @@ Source: [Bailenson et al (2006)](https://onlinelibrary.wiley.com/doi/abs/10.1111
 ## Activity!
 ### Group 01
 
-:::{style="font-size:35px; margin-top: 30px;"}
-:::{.columns}
-:::{.column width="50%"}
-Think about whether the population
-of Madrid is more or less than
-500,000 people. 
+:::{style="font-size:35px; margin-top: 34px;"}
+Think about whether the population of Madrid is more or less than 500,000 people. 
 
-What do you think
-the population of Madrid is?
-:::
-
-:::{.column width="50%"}
-- [Answer here]{.alert}: <https://tinyurl.com/qtm385-survey>
-
-:::{style="text-align: center;"}
-![](figures/qtm385-survey-400.png){width=50%}
-:::
-:::
-:::
+What do you think the population of Madrid is?
 :::
 
 ## Activity!
@@ -223,25 +104,10 @@ the population of Madrid is?
 ## Activity!
 ### Group 02
 
-:::{style="font-size: 35px; margin-top: 30px;"}
-:::{.columns}
-:::{.column width="50%"}
-Think about whether the population
-of Madrid is more or less than
-20,000,000 people. 
+:::{style="font-size: 35px; margin-top: 34px;"}
+Think about whether the population of Madrid is more or less than 20,000,000 people. 
 
-What do you think
-the population of Madrid is?
-:::
-
-:::{.column width="50%"}
-- [Answer here]{.alert}: <https://tinyurl.com/qtm385-survey>
-
-:::{style="text-align: center;"}
-![](figures/qtm385-survey-400.png){width=50%}
-:::
-:::
-:::
+What do you think the population of Madrid is?
 :::
 
 ## Results
@@ -249,11 +115,12 @@ the population of Madrid is?
 :::{style="font-size: 30px; margin-top: 30px;"}
 :::{.columns}
 :::{.column width="50%"}
-- What did you guess? (See Responses)
+- [The population of Madrid is approximately 3.3 million people]{.alert}
+- What did you guess?
 - What’s going on here?  
   - A survey experiment!  
   - Demonstrates [“anchoring” heuristic]{.alert}
-- Experiments are easy to analyse, but [only if designed and implemented well!]{.alert}
+- Survey experiments are easy to analyse, but [only if designed and implemented well!]{.alert}
 :::
 
 :::{.column width="50%"}
@@ -379,7 +246,7 @@ The "Hitler effect" is 9%!
 
 :::{.column width="50%"}
 :::{.incremental}
-- Significant results
+- Significant results?
 - Face validity
 - Coherent for respondents
 - Non-obvious to respondents
@@ -426,7 +293,7 @@ The "Hitler effect" is 9%!
 :::{style="font-size: 27px; margin-top: 30px;"}
 :::{.columns}
 :::{.column width="50%"}
-- [Manipulation checks]{.alert} are items [added post-treatment, post-outcome]{.alert} that assess whether the [independent variable was affected by treatment]{.alert}
+- [Manipulation checks]{.alert} are items [added post-treatment and/or post-outcome]{.alert} that assess whether the [independent variable was affected by treatment]{.alert}
 - We typically talk about manipulations as directly setting the value of $X$, but in practice we are typically manipulating something that we think [strongly modifies $X$]{.alert}
 - Example: information manipulations aim to [modify knowledge or beliefs]{.alert}, but are necessarily [imperfect]{.alert} at doing so
 :::
