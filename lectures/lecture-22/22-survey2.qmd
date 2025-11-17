@@ -22,41 +22,31 @@ editor:
 
 # Hello, everyone! 😉 {background-color="#2d4563"}
 
-# Notes about assignment 09 and group project {background-color="#2d4563"}
+# Notes about the group project {background-color="#2d4563"}
 
-## Notes
+## Group project presentations
 
-:::{style="font-size: 21px; margin-top: 30px;"}
+:::{style="font-size: 24px; margin-top: 30px;"}
+- The simulated datasets have been sent to you by email
+- [Please check if the data are complete and let me know if you have any issues]{.alert}
+  - It's possible that I did not include some variables that you need. [Please let me know]{.alert} 😉
+- You will have [about 15 minutes]{.alert} to present your project, with [5 minutes for questions]{.alert}
+- The order of the presentations has also been randomised:
+
 :::{.columns}
-:::{.column width=50%}
-### Assignment 09
-
-- Some of you reported issues with the table in [question 03 in assignment 09]()
-- The table was coded correctly, but it does not render properly in RStudio Visual Mode
-- It has been fixed 🤓
-
-| City    | Resume Quality | Race  | % Received call | (N)   |
-| :------ | :------------- | :---- | :-------------- | :---- |
-| Boston  | Low-quality    | Black | 7.01            | (542) |
-| Boston  | Low-quality    | White | 10.15           | (542) |
-| Boston  | High-quality   | Black | 8.50            | (541) |
-| Boston  | High-quality   | White | 13.12           | (541) |
-| Chicago | Low-quality    | Black | 5.52            | (670) |
-| Chicago | Low-quality    | White | 7.16            | (670) |
-| Chicago | High-quality   | Black | 5.28            | (682) |
-| Chicago | High-quality   | White | 8.94            | (682) |
+:::{.column width="50%"}
+- [Wednesday, December 03:]{.alert}
+- Caffeine consumption and cognitive performance: Max, Sherelle, Ari, and William
+- Causal Alignment Prompting: Mingke, Nicole, Anny, and Zixuan
+- Effect of Monitoring on Perfomance: Lucy, Francisco, Gina, Bert, Tiger, and Toni
+- Music and Vocabulary: Peter, Oscar, Sarah, and Vera
 :::
 
-:::{.column width=50%}
-### Group project
-
-- The simulated datasets and codebooks are available on our GitHub repository
-- <https://github.com/danilofreire/qtm385/tree/main/simulated-pap-data>
-- Each folder contains a file with the codebook and a description of the dataset, and the data in `.csv` format
-- The order of the presentations has also been randomised:
-- Wednesday, the 23rd of April: Groups 1, 4, 5 and 6
-- Monday, the 28th of April: Groups 2, 3, 7 and 8
-- Each group will have about 10 minutes to present their projects, with about 5 minutes for questions
+:::{.column width="50%"}
+- [Monday, December 08:]{.alert}
+- Sleep and Stress: Rola, Sissi, Chrissy, and Selena
+- AI and Assessment Scores: Tammy, Rami, Tiffany, Tashfia, and Aadit
+- Framing Effects and Student Choices: Katie, Yoonsuh, Krishang, and Vidhant
 :::
 :::
 :::
@@ -171,7 +161,7 @@ them upset you. (I don’t want to know which ones, just how many.)
 > (1) the federal government increasing the tax on gasoline
 > (2) professional athletes getting million-dollar-plus salaries
 > (3) large corporations polluting the environment
-> (4) a Muslim family moving next door to you
+> (4) **a black family moving next door to you**
 >
 > How many, if any, of these things upset you?
 :::
@@ -250,6 +240,24 @@ where $N_1 = \sum_{i=1}^{N} T_i$ is the size of the treatment group and $N_0 = N
 :::
 :::
 :::
+i
+## Example of a list experiment
+### Measuring prejudice
+
+:::{style="font-size: 32px; margin-top: 30px;"}
+- Let's revisit the previous example:
+
+> Now I’m going to read you four things that sometimes make people
+angry or upset. After I read all four, just tell me HOW MANY of
+them upset you. (I don’t want to know which ones, just how many.)
+>
+> (1) the federal government increasing the tax on gasoline
+> (2) professional athletes getting million-dollar-plus salaries
+> (3) large corporations polluting the environment
+> (4) **a black family moving next door to you**
+>
+> How many, if any, of these things upset you?
+:::
 
 ## R example
 
@@ -267,6 +275,39 @@ lm.results <- ictreg(y ~ south + age + male + college, data = race,
 treat = "treat", J=3, method = "ml")
 summary(lm.results)
 ```
+:::
+
+## Interpreting the results
+:::{style="font-size: 21px; margin-top: 30px;"}
+:::{.columns}
+:::{.column width="50%"}
+- The estimates have two panels: sensitive item (top) and control items (bottom)
+
+- The ICT regression estimates:
+  - **Sensitive item model** - How covariates affect agreement with the sensitive item
+  - **Control items model** - How covariates affect responses to non-sensitive control items
+
+- The top panel shows how each variable affects the [log-odds of agreeing with the sensitive item]{.alert}
+
+- **south (1.68)**: Southerners have significantly higher odds of agreeing with the sensitive item (exp(1.68) = 5.4 times higher)
+- **age (0.64)**: Each additional decade increases the odds by exp(0.64) = 1.9 times
+- **male (0.85)**: Men have exp(0.85) = 2.3 times higher odds than women
+- **college (-0.32)**: College-educated individuals have slightly lower odds (exp(-0.32) = 0.73)
+:::
+
+:::{.column width="50%"}
+- The bottom panel shows how each variable affects the [average number of control items agreed with]{.alert}
+
+
+- **Intercept (1.19138)**: - Baseline log-odds of endorsing control items
+- **south (-0.29202)**: Being from the south decreases the log-odds of endorsing control items
+- **age (0.03323)**: Each unit increase in age slightly increases the log-odds
+- **male (-0.25059)**: Being male decreases the log-odds
+- **college (-0.51641)**: College education decreases the log-odds
+
+- The negative intercept (-5.51) for the sensitive item indicates low baseline prevalence of the attitude being measured
+:::
+:::
 :::
 
 # Did hidden Trump voters exist? {background-color="#2d4563"}
@@ -321,7 +362,7 @@ Source: [Chapovski (2022)](https://journals.sagepub.com/doi/full/10.1177/2053168
 
 ## What is an endorsement experiment?
 
-:::{style="font-size: 23px; margin-top: 30px;"}
+:::{style="font-size: 25px; margin-top: 30px;"}
 :::{.columns}
 :::{.column width="50%"}
 - Endorsement experiments are a type of survey experiment that measure [support for a policy or candidate]{.alert}
@@ -370,9 +411,9 @@ such a plan?
 ```{verbatim}
 The World Health Organization recently announced 
 a plan to introduce universal polio vaccination 
-across Pakistan. Pakistani militant groups 
+across Pakistan. **Pakistani militant groups 
 fighting in Kashmir have voiced support for 
-this program. How much do you support such a plan?
+this program.** How much do you support such a plan?
 (1) A great deal; (2) A lot; (3) A moderate amount; 
 (4) A little; (5) Not at all.
 ```
@@ -484,7 +525,7 @@ Source: [Krumpal (2012)](https://www.sciencedirect.com/science/article/abs/pii/S
 - It also [increases sample size significantly]{.alert} as respondents are presented with several scenarios
 - However, it can be [time-consuming]{.alert} to design and analyse, but that's pretty much the only con 😉
 - Ah, software to implement it is [quite difficult to use as well!]{.alert}
-- See [my own experiment](https://github.com/danilofreire/lynching-experiment-brazil) for an example
+- See [my own experiment](https://github.com/danilofreire/lynching-experiment-brazil) for an example (we will discuss it in the next lecture!)
 :::
 :::
 :::
@@ -557,7 +598,7 @@ Source [Hainmueller et al (2014)](https://www.researchgate.net/profile/Jens-Hain
 - [`rr`](https://cran.r-project.org/web/packages/rr/index.html)
 - [`cregg`](https://github.com/leeper/cregg)
 - Visit the website <http://sensitivequestions.org/> for more information
-- And let me know if you'd like to learn more about these methods! 🤓
+- And let me know if you'd like to learn more about this topic! 🤓
 :::
 :::
 :::
