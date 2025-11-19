@@ -20,38 +20,6 @@ editor:
 
 # Hello, everyone! 😉 {background-color="#2d4563"}
 
-# More about the group project {background-color="#2d4563"}
-
-## Some suggestions for the presentation
-
-:::{style="font-size: 21px; margin-top: 30px;"}
-:::{.columns}
-:::{.column width=50%}
-- The presentation should be [about 10 minutes long]{.alert}
-- You can use as many slides as you want, but please try to keep it short (most slides should be 1-2 minutes long)
-- You can use any software you want (PowerPoint, Google Slides, etc.), but Quarto is preferred 😉
-- My suggestion is to use the following format for your slides:
-  - Title
-  - Introduction
-  - Research question and hypotheses
-  - Methods
-  - Results
-  - Discussion
-  - Conclusion
-- But these are just suggestions, so feel free to change the format if you want 😊
-:::
-
-:::{.column width=50%}
-- Please remember the order of the group presentations:
-  - [Wednesday, the 23rd of April: Groups 1, 4, 5 and 6]{.alert}
-  - [Monday, the 28th of April: Groups 2, 3, 7 and 8]{.alert}
-- We will also have about [5 minutes for questions after each presentation]{.alert}
-- Please remember to [submit your slides]{.alert} by the day of the presentation. If you can [do it the day before]{.alert}, that would be great!
-- Best of luck with your presentations! I am sure you will do great! 😊
-:::
-:::
-:::
-
 # Brief recap 📚 {background-color="#2d4563"}
 
 ## Survey experiments for sensitive topics
@@ -84,11 +52,11 @@ editor:
 :::{.column width="50%"}
 - All four papers are about sensitive topics and use the methods we discussed in class
 - The first uses a [list experiment]{.alert} to measure underreporting of drug and alcohol use amongst athletes (a major problem in athletics!)
-- The second paper is a more sophisticated one: the authors use two methods to measure support for NATO forces in Afghanistan (a sensitive topic indeed!)
-- The third paper uses a clever design, leveraging a referendum in the US to see which method is better to measure sensitive topics (spoiler: randomised response is the best one!)
-- The last one, by yours truly, addresses a major problem in developing countries: support for extralegal violence
-- And I can say that the issue seems not to be that sensitive to a lot of respondents 😅
-- I hope they are useful and interesting for you! 😊
+- The second paper is a more sophisticated one: the authors use [two methods]{.alert} to measure support for NATO forces in Afghanistan (a sensitive topic indeed!)
+- The third paper uses a clever design, leveraging a referendum in the US to see which method is better to measure sensitive topics (spoiler: [randomised response]{.alert} is the best one!)
+- The last one, by yours truly, uses a [conjoint experiment]{.alert} to address a major problem in developing countries: support for extralegal violence
+- And I can say that [the issue seems not to be that sensitive to a lot of respondents]{.alert} 😅
+- I hope you find them useful and interesting! 😊
 :::
 :::
 :::
@@ -97,7 +65,7 @@ editor:
 
 ## Measuring drug and alcohol use
 
-:::{style="font-size: 23px; margin-top: 30px;"}
+:::{style="font-size: 25px; margin-top: 30px;"}
 :::{.columns}
 :::{.column width="40%"}
 - Do young athletes really tell how much they drink and use drugs?
@@ -108,7 +76,7 @@ editor:
 :::
 
 :::{.column width="60%"}
-:::{style="text-align: center;"}
+:::{style="text-align: center; margin-top: -30px;"}
 ![](figures/druckman-abstract.png){width=100%}
 
 Source: [Druckman et al. (2015)](https://onlinelibrary.wiley.com/doi/abs/10.1111/ssqu.12135)
@@ -117,12 +85,22 @@ Source: [Druckman et al. (2015)](https://onlinelibrary.wiley.com/doi/abs/10.1111
 :::
 :::
 
+## Context
+
+:::{style="font-size: 28px; margin-top: 30px;"}
+- The NCAA has a strict policy against drug use amongst athletes
+- However, [there is widespread concern that athletes underreport their drug and alcohol use in surveys]{.alert}
+- "[...] _among male student-athletes, 9.7 percent say they use “banned performance enhancers” and 55.8 percent say they used “performance-enhancing drugs” (which might include legal nutritional supplements). Among female student-athletes, no one said they use “banned performance enhancers” and 29.8 percent said they used “performance-enhancing drugs.”_" (p. 370)
+- In an official NCAA survey, [only 0.4 per cent of athletes self-reported using anabolic steroids]{.alert}
+- The authors argue that [list experiments can help uncover the true prevalence of drug and alcohol use]{.alert} (or at least get closer to it)
+- Why do you think athletes underreport substance use?
+:::
+
 ## Experimental design
 
-:::{style="font-size: 23px; margin-top: 30px;"}
-- As you can expect, the authors use a [list experiment in this article]{.alert}
+:::{style="font-size: 24px; margin-top: 30px;"}
 - Their sample comes from [12 major universities competing in the Division I NCAA Athletics]{.alert}
-- They accessed the athletic websites of all 12 Big Ten schools and obtained [the full rosters for all sports at every school]{.alert}
+- They accessed the athletic websites of all 12 Big Ten universities (yes, the "Big Ten" includes 12 universities!) and obtained [the full rosters for all sports at every school]{.alert}
 - The authors located 6,375 names on rosters, and after discarding emails that bounced back, ended up with [4,093 e-mail addresses]{.alert}
 - They sent the survey to all of these athletes, and received [1,303 responses]{.alert} (~31% response rate, not bad!)
 - [Questions]{.alert}:
@@ -147,20 +125,16 @@ whereas only 46 percent of our student-athlete sample say the same_ ($z = 20.55;
 ## List experiment
 ### Drug use
 
-:::{style="font-size: 27px; margin-top: 30px;"}
-Below is a list of activities that you may have engaged in over your time in college 
-We are interested in HOW MANY of these activities you have engaged in – NOT which ones 
-Thus, please simply choose the number at the end of the list 
-
-* Sustained an injury during a practice or game that prevented you from playing at least one other game
-
-* Joined a social club whose majority of members did/does not include varsity athletes
-
-* Skipped a class because you felt so tired from a practice or a game
-
-* Was unable to take a class that you hoped to take because of your practice or game schedule
-
-* [Knowingly took a drug banned by the NCAA that may improve your athletic performance]{.alert}
+:::{style="font-size: 26px; margin-top: 30px;"}
+> Below is a list of activities that you may have engaged in over your time in college. 
+> We are interested in HOW MANY of these activities you have engaged in – NOT which ones. 
+> Thus, please simply choose the number at the end of the list: 
+>
+> * Sustained an injury during a practice or game that prevented you from playing at least one other game
+> * Joined a social club whose majority of members did/does not include varsity athletes
+> * Skipped a class because you felt so tired from a practice or a game
+> * Was unable to take a class that you hoped to take because of your practice or game schedule
+> * [Knowingly took a drug banned by the NCAA that may improve your athletic performance]{.alert}
 :::
 
 ## Results
@@ -181,15 +155,15 @@ Thus, please simply choose the number at the end of the list
 ### Alcohol use
 
 :::{style="font-size: 27px; margin-top: 30px;"}
-Below is a list of activities that you may have engaged in over your time in college 
-We are interested in HOW MANY of these activities you have engaged in – NOT which ones 
-Thus, please simply choose the number at the end of the list 
-
-* Your choice of which University to attend was determined largely by the sports opportunities (e.g., it weighed in at least in 50% of your decision)
-* Stayed up past 1 AM, on average, during the season of your sport
-* Plan to continue playing your sport after college, although not necessarily on the professional level
-* Play other sports during the school year at least once a month
-* [In the typical week during the past academic year, consumed more than five alcoholic drinks]{.alert}
+> Below is a list of activities that you may have engaged in over your time in college. 
+> We are interested in HOW MANY of these activities you have engaged in – NOT which ones. 
+> Thus, please simply choose the number at the end of the list: 
+>
+> * Your choice of which University to attend was determined largely by the sports opportunities (e.g., it weighed in at least in 50% of your decision)
+> * Stayed up past 1 AM, on average, during the season of your sport
+> * Plan to continue playing your sport after college, although not necessarily on the professional level
+> * Play other sports during the school year at least once a month
+> * [In the typical week during the past academic year, consumed more than five alcoholic drinks]{.alert}
 :::
 
 ## Results
@@ -201,6 +175,8 @@ Thus, please simply choose the number at the end of the list
   - Treatment group = mean response of 3.22 (SD = 1.10; n = 556) 
   - [46 per cent consumed more than five drinks a week]{.alert}
 - Less than [3 per cent]{.alert} of athletes reported that they consumed more than five drinks a week when asked directly
+- The difference is [even larger than for drug use]{.alert}
+- [What do you think about this result?]{.alert}
 :::
 
 # Combining list and endorsement experiments {background-color="#2d4563"}
@@ -214,8 +190,8 @@ Thus, please simply choose the number at the end of the list
 - The setting is pretty challenging, too: [Afghanistan]{.alert}
 - Motivation: regime change, "hearts and minds" campaign, and the Taliban
 - Outcome: [support for the Taliban and foreign (NATO) forces]{.alert} (ISAF)
-- Here, for the sake of time, we will focus on [their experimental design]{.alert}, but I encourage you to read the paper! 🤓
-- Note: all models were estimated with the [list](https://list.sensitivequestions.org/) and [endorse](https://endorse.sensitivequestions.org/) R packages
+- Here, for the sake of time, we will focus on [their experimental design]{.alert}, but I encourage you to read the paper and see how the authors developed their estimators! 🤓
+- Note: all models were estimated with the [list](https://list.sensitivequestions.org/) and [endorse](https://endorse.sensitivequestions.org/) `R` packages
 :::
 
 ## Experimental design
@@ -225,17 +201,17 @@ Thus, please simply choose the number at the end of the list
 :::{.column width="50%"}
 ### List experiment
 
-I’m going to read you a list with the names of different groups and individuals on it.  After I read the entire list, I’d like you to tell me how many of these groups and individuals you broadly support, meaning that you generally agree with the goals and policies of the group or individual. Please don’t tell me which ones you generally agree with; only tell me how many groups or individuals you broadly support.
-
-Karzai Government; National Solidarity Program; Local Farmers; [Foreign Forces]{.alert}
+>I’m going to read you a list with the names of different groups and individuals on it.  After I read the entire list, I’d like you to tell me how many of these groups and individuals you broadly support, meaning that you generally agree with the goals and policies of the group or individual. Please don’t tell me which ones you generally agree with; only tell me how many groups or individuals you broadly support.
+>
+>Karzai Government; National Solidarity Program; Local Farmers; [Foreign Forces]{.alert}
 :::
 
 :::{.column width="50%"}
 ### Endorsement experiment
 
-A recent proposal [by ISAF]{.alert} calls for the sweeping reform of the Afghan prison system, including the construction of new prisons in every district to help alleviate overcrowding in existing facilities. Though expensive, new programs for inmates would also be offered, and new judges and prosecutors would be trained. How do you feel about this proposal?
-
-- From strongly disagree to strongly agree (5-point scale)
+> A recent proposal [by ISAF]{.alert} calls for the sweeping reform of the Afghan prison system, including the construction of new prisons in every district to help alleviate overcrowding in existing facilities. Though expensive, new programs for inmates would also be offered, and new judges and prosecutors would be trained. How do you feel about this proposal?
+>
+> - From strongly disagree to strongly agree (5-point scale)
 :::
 :::
 
@@ -253,6 +229,27 @@ Source: [Blair et al. (2014)](https://onlinelibrary.wiley.com/doi/abs/10.1111/aj
 
 ## Results
 
+:::{style="font-size: 26px; margin-top: 30px;"}
+:::{.columns}
+:::{.column width="50%"}
+:::{style="text-align: center; margin-top: -30px;"}
+![](figures/blair-figure01a.png){width=70%}
+
+Source: [Blair et al. (2014)](https://onlinelibrary.wiley.com/doi/abs/10.1111/ajps.12086)
+:::
+:::
+
+:::{.column width="50%"}
+- [Both methods yield similar results!]{.alert}
+- Despite being different methods, it is interesting that they converge to similar estimates
+- ISAF support: about 16.5% in the list experiment, 17% in the endorsement experiment, and 19% in the combined model
+- The result indicates that the efforts to win "hearts and minds" had [limited success]{.alert}
+:::
+:::
+:::
+
+## Results
+
 :::{style="font-size: 26px; margin-top: 30px; text-align: center;"}
 ![](figures/blair-figure02.png){width=100%}
 
@@ -264,16 +261,25 @@ Source: [Blair et al. (2014)](https://onlinelibrary.wiley.com/doi/abs/10.1111/aj
 :::{style="font-size: 29px; margin-top: 30px;"}
 - These are [very interesting results]{.alert}!
 - Taliban victimisation leads to a [modest increase in support for ISAF]{.alert}
-- [ISAF victimisation is associated with a consistently negative effect across all models]{.alert}
+- [ISAF victimisation is associated with a consistently negative effect across all three models]{.alert}
 - List experiment model estimates a modest positive effect, suggesting that Taliban post-harm efforts may actually be associated with an increase in ISAF support; the endorsement experiment model suggests the opposite!
-- Interestingly, [the authors don't know exactly why this happens]{.alert} 😂
-- So maybe we need a "cleaner" design to understand this better?
+- [The authors don't know exactly why this happens]{.alert} 
+- ISAF post-harm efforts appear to have a [positive effect on ISAF support]{.alert}
+- The amount of aid seems to increase support for ISAF in the list experiment, but not in the endorsement experiment 
 :::
 
 ## Results
 
 :::{style="font-size: 26px; margin-top: 30px; text-align: center;"}
-![](figures/blair-figure03.png){width=60%}
+![](figures/blair-figure04.png){width=80%}
+
+Source: [Blair et al. (2014)](https://onlinelibrary.wiley.com/doi/abs/10.1111/ajps.12086)
+:::
+
+## Results
+
+:::{style="font-size: 26px; margin-top: 30px; text-align: center;"}
+![](figures/blair-figure03.png){width=70%}
 
 Source: [Blair et al. (2014)](https://onlinelibrary.wiley.com/doi/abs/10.1111/ajps.12086)
 :::
@@ -306,10 +312,11 @@ Source: [Rosenfeld et al. (2016)](https://onlinelibrary.wiley.com/doi/abs/10.111
 
 ## Setting
 
-:::{style="font-size: 26px; margin-top: 30px;"}
+:::{style="font-size: 24px; margin-top: 30px;"}
 :::{.columns}
 :::{.column width="50%"}
-- In 2011, Mississippi voters were asked to vote on a [proposition to define life as beginning at conception]{.alert} - Most commentators expected the initiative to pass easily, but the opposite happened
+- In 2011, Mississippi voters were asked to vote on a [proposition to define life as beginning at conception]{.alert} 
+- Most commentators expected the initiative to pass easily, but the opposite happened
 - The amendment was defeated 57.6% to 42.4%, a [15 percentage point swing from the pre-election poll]{.alert}
 - No similar deviations from the poll were observed elsewhere on the ballot
 - Sample size: [2,655 respondents who already voted in the referendum]{.alert}
@@ -334,99 +341,80 @@ Source: [Rosenfeld et al. (2016)](https://onlinelibrary.wiley.com/doi/abs/10.111
 :::{.column width="50%"}
 - [Direct question]{.alert}:
 
-```verbatim
-Did you vote YES or NO on the Personhood
-Initiative, which appeared on the November 2011
-Mississippi General Election ballot?
-
-Voted Yes
-Voted No
-Did not vote
-Don’t know
-Refused
-```
+> Did you vote YES or NO on the Personhood Initiative, which appeared on the November 2011 Mississippi General Election ballot?
+>
+> Voted Yes
+>
+> Voted No
+>
+> Did not vote
+>
+> Don’t know
+>
+> Refused
 :::
 
 :::{.column width="50%"}
 - [List experiment]{.alert}:
 
-```verbatim
-Here is a list of four things that some people have
-done and some people have not. Please listen to
-them and then tell me HOW MANY of them you
-have done in the past two years. Do not tell me
-which you have and have not done. Just tell me
-how many:
-– Discussed politics with family or friends;
-– Cast a ballot for Governor Phil Bryant;
-– Paid dues to a union;
-– Given money to a Tea Party candidate or orga-
-nization.
-– **Voted ‘YES’ on the ‘Personhood’ Initiative on
-the November 2011 Mississippi**
-```
+> Here is a list of four things that some people have done and some people have not. Please listen to them and then tell me HOW MANY of them you have done in the past two years. Do not tell me which you have and have not done. Just tell me how many:
+>
+> * Discussed politics with family or friends;
+> * Cast a ballot for Governor Phil Bryant;
+> * Paid dues to a union;
+> * Given money to a Tea Party candidate or organization.
+> * [Voted ‘YES’ on the ‘Personhood’ Initiative on the November 2011]{.alert}
 :::
 :::
 :::
 
 ## Experimental design
 
-:::{style="font-size: 20px; margin-top: 30px;"}
+:::{style="font-size: 18px; margin-top: 30px;"}
 :::{.columns}
 :::{.column width="50%"}
 - [Endorsement experiment]{.alert}:
   
-```verbatim
-We’d like to get your overall opinion of some
-people in the news. As I read each name, please
-say if you have a very favorable, somewhat favor-
-able, somewhat unfavorable, or very unfavorable
-opinion of each person.
-
-Phil Bryant, Governor of Mississippi,
-**who campaigned in favor of the ‘Personhood’ 
-Initiative on the 2011 Mississippi General Election 
-ballot?**
-
-Very favorable
-Somewhat favorable
-Don’t know/no opinion
-Somewhat unfavorable
-Very unfavorable
-Refused
-```
+> We’d like to get your overall opinion of some people in the news. As I read each name, please say if you have a very favorable, somewhat favorable, somewhat unfavorable, or very unfavorable opinion of each person.
+>
+> Phil Bryant, Governor of Mississippi, [who campaigned in favor of the ‘Personhood’ Initiative on the 2011 Mississippi General Election
+ballot?]{.alert}
+>
+>Very favorable
+>
+>Somewhat favorable
+>
+>Don’t know/no opinion
+>
+>Somewhat unfavorable
+>
+>Very unfavorable
+>
+>Refused
 :::
 
 :::{.column width="50%"}
 - [Randomised response]{.alert}:
 
-```verbatim
-Please toss the coin two times and note the results 
-of those tosses (heads or tails) one after the other 
-on a sheet of paper. Do not reveal to me whether your 
-coin lands on heads or tails. [...] First, we will 
-practice.  To ensure that your answer is confidential 
-and known only to you, please answer ‘yes’ if either 
-your first coin toss came up heads or you voted in 
-the November 2011 Mississippi General Election, 
-otherwise answer ‘no’.
-
-Yes
-No
-Don’t know
-Refused
-
-Now, please answer ‘yes’ if either your second
-coin toss came up heads or you voted ‘YES’ on
-the ‘Personhood’ Initiative, which appeared on
-the November 2011 Mississippi General Election
-ballot.
-
-Yes
-No
-Don’t know
-Refused
-```
+> Please toss the coin two times and note the results of those tosses (heads or tails) one after the other on a sheet of paper. Do not reveal to me whether your coin lands on heads or tails. [...] First, we will practice.  To ensure that your answer is confidential and known only to you, please answer ‘yes’ if either your first coin toss came up heads or you voted in the November 2011 Mississippi General Election, otherwise answer ‘no’.
+>
+>Yes
+>
+>No
+>
+>Don’t know
+>
+>Refused
+>
+> Now, please answer ‘yes’ if either your second coin toss came up heads or you voted ‘YES’ on the ‘Personhood’ Initiative, which appeared on the November 2011 Mississippi General Election ballot.
+>
+>Yes
+>
+>No
+>
+>Don’t know
+>
+>Refused
 :::
 :::
 :::
@@ -461,7 +449,7 @@ Source: [Rosenfeld et al. (2016)](https://onlinelibrary.wiley.com/doi/abs/10.111
 ### Experimental methods
 
 :::{style="font-size: 26px; margin-top: 30px; text-align: center;"}
-![](figures/rosenfeld-figure05.png){width=50%}
+![](figures/rosenfeld-figure05.png){width=60%}
 
 Source: [Rosenfeld et al. (2016)](https://onlinelibrary.wiley.com/doi/abs/10.1111/ajps.12205)
 :::
@@ -494,7 +482,7 @@ Source: [Freire & Skarbek (2023)](https://journals.sagepub.com/doi/full/10.1177/
 
 ## Experimental design
 
-:::{style="font-size: 24px; margin-top: 30px;"}
+:::{style="font-size: 23px; margin-top: 30px;"}
 :::{.columns}
 :::{.column width="50%"}
 - We ran the survey online with [Qualtrics]{.alert}
