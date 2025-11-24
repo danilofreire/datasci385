@@ -46,13 +46,13 @@ editor:
 
 ## Integration of research findings
 
-:::{style="font-size: 22px; margin-top: 30px;"}
+:::{style="font-size: 22px; margin-top: 32px;"}
 :::{.columns}
 :::{.column width="50%"}
 - Discuss the challenge of [generalising experimental results]{.alert}
 - Distinguish between [Sample ATE (SATE)]{.alert} and [Population ATE (PATE)]{.alert}
 - Understand the calculation and interpretation of [standard errors for the PATE]{.alert}
-- Introduce a [Bayesian framework]{.alert} for formally updating beliefs with new experimental evidence
+- Introduce a [Bayesian framework]{.alert} for updating beliefs with new experimental evidence
 - Consider how to incorporate potential [bias]{.alert} (like sampling bias) into our analysis and uncertainty estimates
 - Introduce [meta-analysis]{.alert} as a technique for pooling results from multiple studies
 - Examine the [assumptions and limitations]{.alert} of common meta-analytic approaches
@@ -100,7 +100,7 @@ Source: [xkcd (2025)](https://xkcd.com/3042/)
 :::{.columns}
 :::{.column width="50%"}
 - Extrapolation can also introduce systematic [bias]{.alert}:
-  - [Sampling bias]{.alert}: Convenience samples (common in field experiments) might not represent the broader population of interest
+  - [Sampling bias]{.alert}: Convenience samples (common in experiments) might not represent the broader population of interest
   - [Publication bias]{.alert}: Statistically significant or 'interesting' results are often more likely to be published, skewing the available literature
   - [Contextual changes]{.alert}: Underlying conditions governing cause and effect might shift over time or across locations
   - [Measurement bias]{.alert}: Variations in how outcomes are measured can lead to inconsistencies in reported effects
@@ -117,16 +117,16 @@ Source: [Nature (2016,](https://www.nature.com/articles/533452a) [2025)](https:/
 :::
 :::
 
-## Replication vs. verification
+## Verification vs. replication
 
 :::{style="font-size: 23px; margin-top: 30px;"}
 :::{.columns}
 :::{.column width="50%"}
-- [Replication]{.alert}: Conducting a *new* experiment that uses the [same design]{.alert} (treatments, outcome measures, general procedures) as an earlier study, often in a similar setting with similar subjects
-  - The goal is to assess the [robustness and generalisability]{.alert} of the original finding
-
 - [Verification]{.alert}: Taking the [original data]{.alert} from a completed study and attempting to [reproduce the reported statistical results]{.alert}.
   - Here, the goal is to check for [clerical errors]{.alert}, understand the impact of specific analytical choices, and assess the sensitivity of results to different modelling decisions
+
+- [Replication]{.alert}: Conducting a *new* experiment that uses the [same design]{.alert} (treatments, outcome measures, general procedures) as an earlier study, often in a similar setting with similar subjects
+  - The goal is to assess the [robustness and generalisability]{.alert} of the original finding
 :::
 
 :::{.column width="50%"}
@@ -147,12 +147,12 @@ Source: [Gelman and Loken (2014)](https://sites.stat.columbia.edu/gelman/researc
 :::{.columns}
 :::{.column width="50%"}
 - [Sample Average Treatment Effect (SATE)]{.alert}: Average causal effect specifically within the group of individuals included in our experiment
-- Often, our real interest lies in the [Population Average Treatment Effect (PATE)]{.alert}: This represents the average effect we would expect if [the treatment were applied to the entire population]{.alert} from which our sample was drawn
-- Thinking about [replication studies]{.alert} (which involve drawing new samples) highlights the shift from considering only within-sample randomisation variability (for SATE) to considering [sample-to-sample variability]{.alert} (for PATE).
+- Often, our real interest lies in the [Population Average Treatment Effect (PATE)]{.alert}: The average effect we would expect if [the treatment were applied to the entire population]{.alert} from which our sample was drawn
+- [Replication studies]{.alert} (which involve drawing new samples) highlight the shift from considering only within-sample randomisation variability (for SATE) to considering [sample-to-sample variability]{.alert} (for PATE)
 :::
 
 :::{.column width="50%"}
-- If experimental subjects are selected via [random sampling]{.alert} from a well-defined, large population, we can statistically estimate the PATE and quantify the uncertainty around that estimate
+- If subjects are selected via [random sampling]{.alert} from a well-defined, large population, we can statistically estimate the PATE and quantify the uncertainty around that estimate
 - This involves an [additional layer of uncertainty]{.alert} compared to just estimating the SATE, because our specific sample might not perfectly mirror the population due to random chance
   - The [standard error of the PATE is usually larger]{.alert} than that of the SATE, reflecting this added uncertainty
 :::
@@ -161,23 +161,26 @@ Source: [Gelman and Loken (2014)](https://sites.stat.columbia.edu/gelman/researc
 
 ## Quantifying uncertainty
 
-:::{style="font-size: 24px; margin-top: 30px;"}
+:::{style="font-size: 23px; margin-top: 30px;"}
 - Under ideal conditions ([independent random sampling]{.alert} from a fixed, large population $N*$), the standard error of the estimated PATE ($SE(\widehat{PATE})$) is given by:
 
   $$SE(\widehat{PATE}) = \sqrt{ \frac{Var(Y_i(1))}{m} + \frac{Var(Y_i(0))}{N-m} } \quad$$
 
 - $Var(Y_i(1))$ and $Var(Y_i(0))$ are the [variances of potential outcomes in the population]{.alert} under treatment and control
-- These are typically estimated using the variances observed in the treatment and control groups of our sample
 - $m$ is the number of subjects in the treatment group, and $N-m$ is the number in the control group
-- This formula differs from the SATE standard error because it relies on population variances and, due to the assumption of a large population $N*$, the covariance between potential outcomes is assumed to be zero
+- As you can see, the variance of both groups goes down as sample sizes increase, reducing the overall standard error
+- However, these are typically [estimated using the variances observed in the treatment and control groups]{.alert} of our sample 
+- This formula differs from the SATE standard error because [it relies on population variances]{.alert} and, due to the assumption of a large population $N*$, [the covariance between potential outcomes is assumed to be zero]{.alert}
 :::
 
 # A Bayesian framework for interpretation 📈 {background-color="#2d4563"}
 
 ## Updating beliefs with evidence
 
-:::{style="font-size: 26px; margin-top: 30px;"}
-- Because generalisation involves inference beyond the data at hand, a [Bayesian approach]{.alert} provides a useful conceptual and analytical framework
+:::{style="font-size: 25px; margin-top: 30px;"}
+- [Convenience samples tend to be clustered]{.alert}, drawing all of the subjects from a common location or period of time
+- So we need [a framework to reason about generalisation]{.alert}
+- Because generalisation involves inference beyond the data at hand, a [Bayesian approach]{.alert} is useful here
 - Bayesian inference views probability as representing a [subjective degree of belief]{.alert} about a hypothesis or parameter value
 - The process involves the following steps:
   1.  Starting with [prior beliefs]{.alert} about the parameter (e.g., the PATE) before seeing the current study's results
@@ -193,14 +196,14 @@ Source: [Gelman and Loken (2014)](https://sites.stat.columbia.edu/gelman/researc
 :::{.columns}
 :::{.column width="50%"}
 - [**Prior Beliefs**]{.alert}: Our knowledge or belief about a parameter (like the PATE) *before* considering the evidence from the current experiment
-  - Often expressed as a probability distribution (e.g., assuming the PATE follows a normal distribution with a certain mean and variance)
-  - The mean reflects the best guess, and the variance reflects the degree of prior uncertainty
+  - Often expressed as [a probability distribution]{.alert} (e.g., assuming the PATE follows a normal distribution with a certain mean and variance)
+  - [The mean reflects the best guess, and the variance reflects the degree of prior uncertainty]{.alert}
   - Can be based on previous studies, theory, or expert judgement
 :::
 :::{.column width="50%"}
 - [**Posterior Beliefs**]{.alert}: Our [updated]{.alert} state of knowledge or belief *after* incorporating the evidence from the experiment
-  - Also expressed as a probability distribution
-  - Mathematically derived by combining the prior distribution and the likelihood of the observed data (which reflects the experimental result and its precision)
+  - [Also expressed as a probability distribution]{.alert}
+  - Mathematically derived by [combining the prior distribution and the likelihood of the observed data]{.alert} (which reflects the experimental result and its precision)
   - Represents a [compromise (weighed average) between prior beliefs and the new evidence]{.alert}. Stronger priors or less precise evidence lead to smaller updates
 :::
 :::
@@ -209,17 +212,37 @@ Source: [Gelman and Loken (2014)](https://sites.stat.columbia.edu/gelman/researc
 ## Bayes' rule for discrete outcomes
 ### Updating beliefs about a hypothesis
 
-:::{style="font-size: 23px; margin-top: 30px;"}
-- Consider a simple hypothesis $H$ (e.g., the treatment has a positive effect) and evidence $E$ from an experiment (e.g., the result is statistically significant at the $0.05$ level)
-- We need:
-  - [Prior P(H)]{.alert}: Our belief in $H$ before the experiment
-  - [P(E|H)]{.alert}: The probability of observing evidence $E$ if $H$ is true (this is related to the statistical power of the test)
-  - [P(E|~H)]{.alert}: The probability of observing $E$ if $H$ is false (this is the Type I error rate, e.g., $0.05$)
-- Bayes' Rule gives the [Posterior P(H|E)]{.alert}, our belief in $H$ after observing $E$:
+:::{style="font-size: 21px; margin-top: 30px;"}
+- Imagine that we ran an RCT that gave us a statistically significant result and we want to update our belief about whether the treatment has a positive effect
+- We have our hypothesis $H$ (the treatment has a positive effect) and evidence $E$ from an experiment (the result is statistically significant at the $0.05$ level)
+- Bayes' rule tells us how to update our belief in $H$ after observing $E$ (the posterior probability, $P(H|E)$):
+
+  $$ P(H|E) = \frac{P(E|H)P(H)}{P(E)} = \frac{P(E|H)P(H)}{P(E|H)P(H) + P(E|\neg H)(1-P(H))} $$
+
+- The numerator, $P(E|H)P(H)$, represents the probability $E$ occurs assuming $H$ is true, multiplied by the probability $H$ is true in the first place
+- Now we need $P(E)$, the total probability of seeing the evidence
+- Why? $E$ can occur in two mutually exclusive ways: either $H$ is true or $H$ is false
+- Thus, we have the denominator: $P(E|H)P(H) + P(E|\neg H)(1-P(H))$
+- If $H$ was unlikely to begin with (low $P(H)$), you need very strong evidence (high $P(E|H)$) to believe it now
+- Conversely, if $H$ was already very likely, even weak evidence can reinforce that belief
+:::
+
+## Bayes' rule for discrete outcomes
+### Updating beliefs about a hypothesis
+
+:::{style="font-size: 22px; margin-top: 30px;"}
+- To solve the equation, we need three components:
+  - [P(H)]{.alert}: Our prior belief in $H$ before the experiment. Imagine we thought there was a 50/50 chance the treatment worked
+  - [P(E|H)]{.alert}: The probability of observing evidence $E$ if $H$ is true (the statistical power of the test)
+  - [P(E|~H)]{.alert}: The probability of observing $E$ if $H$ is false (Type I error rate, $0.05$)
+- We can then plug these values into Bayes' rule to get the updated (posterior) belief:
 
   $$ P(H|E) = \frac{P(E|H)P(H)}{P(E|H)P(H) + P(E|\neg H)(1-P(H))} $$
 
-- *Example:* If $P(H)=0.5$ (50/50 prior), $P(E|H)=0.45$ (power), and $P(E|~H)=0.05$ (sig. level), then $P(H|E) = 0.90$
+  $$ = \frac{0.45 \times 0.5}{0.45 \times 0.5 + 0.05 \times 0.5} $$
+  $$ = \frac{0.225}{0.225 + 0.025} = \frac{0.225}{0.25} = 0.90 $$
+
+- So after seeing a significant result, our belief that the treatment has a positive effect jumps [from 50% to 90%!]{.alert}
 :::
 
 ## Bayesian updating with normal distributions
@@ -228,10 +251,10 @@ Source: [Gelman and Loken (2014)](https://sites.stat.columbia.edu/gelman/researc
 :::{style="font-size: 24px; margin-top: 30px;"}
 :::{.columns}
 :::{.column width="50%"}
-- Let's apply this to estimate a continuous parameter, the PATE, denoted $\tau$
+- Now let's apply this to estimate a continuous parameter, the PATE, denoted $\tau$
 - [**Prior beliefs**]{.alert}: Assume our prior beliefs about $\tau$ can be represented by a normal distribution with mean $g$ (our best guess) and variance $\sigma^2_g$
 - [**Experimental result**]{.alert}: The experiment yields an estimate $x_e$ with a standard error $\sigma_{xe}$, so its variance is $\sigma^2_{xe}$
-- [**Likelihood**]{.alert}: Assuming the experimental estimate $X_e$ follows a normal sampling distribution centred on the true PATE ($\tau$), the likelihood is also normal (conjugate priors)
+- [**Likelihood**]{.alert}: Assuming the experimental estimate $x_e$ follows a normal sampling distribution centred on the true PATE ($\tau$), the likelihood is also normal (conjugate priors)
 :::
 :::{.column width="50%"}
 - [**Posterior beliefs**]{.alert}: When both the prior and the likelihood are normal, the resulting posterior distribution for $\tau$ is also normal
@@ -493,7 +516,7 @@ print_results(results_C, "C: High Bias Uncertainty (SE=10)")
 :::{style="font-size: 23px; margin-top: 30px;"}
 :::{.columns}
 :::{.column width="50%"}
-- [Meta-analysis]{.alert} is a set of statistical techniques designed to synthesise or pool results from multiple related studies
+- [Meta-analysis]{.alert} is a set of statistical techniques designed to pool results from multiple related studies
 - Often, individual studies might be small or lack statistical power, but [combining their results can lead to a more precise and clearer conclusion]{.alert}
 - It is a [widely used method]{.alert} for summarising research literatures across many disciplines, mainly in the health sciences
 - The most basic form, known as [fixed effects meta-analysis]{.alert}, has strong parallels with the Bayesian updating process described earlier, particularly under the assumption of no bias
@@ -514,9 +537,9 @@ Source: [Freire et al (2022)](https://doi.org/10.1017/S0007123422000552)
 :::{style="font-size: 22px; margin-top: 30px;"}
 :::{.columns}
 :::{.column width="55%"}
-- [Assumption]{.alert}: All studies ($k=1, ..., K$) included in the analysis are estimating the [exact same underlying true population treatment effect]{.alert}, $\tau$. Any variation in results is due purely to random sampling error.
-- [Method]{.alert}: Calculate a pooled estimate ($ ATE_{pooled} $) as a weighted average of the individual study estimates ($ ATE_k $).
-- [Weighting]{.alert}: Each study's contribution is weighted by its [precision]{.alert}. Studies with smaller standard errors (higher precision) receive more weight.
+- [Assumption]{.alert}: All studies ($k=1, ..., K$) included in the analysis are estimating the [exact same underlying true population treatment effect]{.alert}, $\tau$. Any variation in results is due purely to random sampling error
+- [Method]{.alert}: Calculate a pooled estimate ($ATE_{pooled}$) as a weighted average of the individual study estimates ($ATE_k$)
+- [Weighting]{.alert}: Each study's contribution is weighted by its [precision]{.alert}. Studies with smaller standard errors (higher precision) receive more weight
 
 $$ATE_{pooled} = \frac{\sum_{k=1}^{K} w_k ATE_k}{\sum_{k=1}^{K} w_k} = \frac{\sum_{k=1}^{K} (ATE_k / SE_k^2)}{\sum_{k=1}^{K} (1 / SE_k^2)}$$
 :::
@@ -527,7 +550,7 @@ $$Var(ATE_{pooled}) = \frac{1}{\sum_{k=1}^{K} w_k} = \frac{1}{\sum_{k=1}^{K} (1 
 
 $$SE_{pooled} = \sqrt{Var(ATE_{pooled})}$$
 
-- The resulting [pooled standard error will be smaller]{.alert} than the standard error of any individual study included in the meta-analysis, reflecting the gain in precision from combining evidence
+- The resulting [pooled standard error]{.alert} reflects the gain in precision from combining evidence
 :::
 :::
 :::
@@ -568,7 +591,7 @@ $$SE_{pooled} = \sqrt{Var(ATE_{pooled})}$$
 - `("upper chamber size" OR "lower chamber size" OR "council size" OR "parliament size"
 OR "legislature size" OR "number of legislators" OR "legislative size") AND ("spending" OR "expenditure"
 OR "government size")`
-- We also searched all articles that cited the original work on the effects of legislature size on government spending, and ended up with [5,705 records]{.alert}
+- We also searched all articles that cited the original work on the effects of legislature size on government spending, and ended up with [2664 records]{.alert}
 :::
 
 :::{.column width="50%"}
@@ -592,7 +615,7 @@ Source: [Freire et al (2022)](https://doi.org/10.1017/S0007123422000552)
   - The paper should (i) conduct a quantitative analysis, (ii) report data on the number of legislators, and (iii) also include data on public expenditure
 - We then extracted all ATEs and standard errors from the articles to conduct two analyses:
   - One with the [strictest model]{.alert} and one with [all models]{.alert}
-- We ended up with 30 articles, with 45 estimates in the strict sample, 162 in the complete sample
+- We ended up with 30 articles (2 included manually), with 45 estimates in the strict sample, 162 in the complete sample
 :::
 
 :::{.column width="50%"}
@@ -634,13 +657,11 @@ Part of the data extraction process
 :::{.columns}
 :::{.column width="50%"}
 - We used the [`meta`](https://cran.r-project.org/web/packages/meta/index.html) `R` package to conduct the meta-analysis
-- Although we did estimate fixed effect models, the main models had [random effects], which are more appropriate for our data
+- Although we did estimate fixed effect models, the main models had random effects, which are more appropriate for our data
 - Instead of having $\tau = \theta + \varepsilon$ (true effect + within study error), we assumed that $\theta$ varies across studies, having a true parameter $\mu$ and a between-study error $\xi_i$: 
 
 $$\tau = \mu + \xi_i + \varepsilon_i$$
 
--  We added two levels to the models: publication ID for each paper, and a common index for papers that share the
-same data 
 - We found [a lot of heterogeneity]{.alert} in the data! 
 - But the meta-regressions also helped us understand the main drivers of the differences in the ATE 🤓
 :::
@@ -669,21 +690,21 @@ Here is one of the many figures we produced. As you can see, the main effect is 
 
 # Conclusion 📝 {background-color="#2d4563"}
 
-## Key takeaways
+## Conclusion
 
-:::{style="font-size: 22px; margin-top: 20px;"}
+:::{style="font-size: 24px; margin-top: 20px;"}
 :::{.columns}
 :::{.column width="50%"}
 - [Generalising experimental findings]{.alert} is surely challenging, as it introduces uncertainty and the potential for bias
-- It's important to distinguish between the [SATE]{.alert} (effect in the sample) and the [PATE]{.alert} (effect in the target population). Estimating the PATE requires accounting for sampling variability.
-- [Convenience sampling]{.alert} complicates PATE estimation and makes standard error calculation based on random sampling assumptions inappropriate.
+- It's important to distinguish between the [SATE]{.alert} (effect in the sample) and the [PATE]{.alert} (effect in the target population). Estimating the PATE requires accounting for sampling variability
+- [Convenience sampling]{.alert} complicates PATE estimation and makes standard error calculation based on random sampling assumptions inappropriate
 - The [Bayesian framework]{.alert} offers a coherent way to integrate prior knowledge with new evidence and explicitly model uncertainty about potential biases
 :::
 
 :::{.column width="50%"}
-- [Meta-analysis]{.alert} provides tools for pooling study results, but standard methods (like fixed effects) rely on strong, often unmet, assumptions (e.g., homogeneity of effects, no publication bias, no sampling bias).
-- [Statistical models]{.alert} facilitate interpolation and extrapolation but depend on correct specification [Prediction uncertainty escalates rapidly]{.alert} as one moves further from the range of observed data
-- Transparency about [assumptions is required]{.alert} when integrating findings or extrapolating results
+- [Meta-analysis]{.alert} provides tools for pooling study results, but standard methods (like fixed effects) rely on strong, often unmet, assumptions (e.g., homogeneity of effects, no publication bias, no sampling bias)
+- [Statistical models]{.alert} facilitate interpolation and extrapolation but depend on correct specification 
+- Transparency about [assumptions is important]{.alert} when integrating findings or extrapolating results
 :::
 :::
 :::
