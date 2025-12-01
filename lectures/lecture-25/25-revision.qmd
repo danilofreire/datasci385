@@ -21,7 +21,39 @@ editor:
 
 # Welcome back! 🤓 <br> Course revision session 📚 {background-color="#2d4563"}
 
-## Today's goal: connecting the dots
+## Course evaluation
+
+:::{style="margin-top: 30px; font-size: 34px;"}
+- Please take a moment to complete the course evaluation form!
+- Your feedback is important for improving the course in the future
+- If there's anything you liked about the course, please share it too!
+- Please go to Canvas and select Account → Profile → Course Evaluations
+- Thank you for your time and input! 🙏
+:::
+
+## Data Science Club workshop
+
+:::{style="margin-top: 30px; font-size: 26px;"}
+:::{.columns}
+:::{.column width="50%"}
+- The Emory Data Science Club is hosting a GitHub portfolio workshop tomorrow!
+- The speaker is... *drumroll*... me! 🥁
+- If you're interested in using GitHub to better showcase your projects, come join us!
+- When: Tomorrow (Tuesday) at 6 PM
+- Where: Math and Science Center in room W301
+- Presentation slides: <https://github.com/danilofreire/dsc-2025/>
+- All are welcome! 🎉
+:::
+
+:::{.column width="50%"}
+:::{style="text-align: center; margin-top: -30px;"}
+![](figures/workshop.png){width=80%}
+:::
+:::
+:::
+:::
+
+## Connecting the dots
 
 :::{style="margin-top: 30px; font-size: 28px;"}
 :::{.columns}
