@@ -119,8 +119,8 @@ Source: [DeclareDesign](https://declaredesign.org/)
 :::{.columns}
 :::{.column width="40%"}
 - [Selection bias]{.alert} arises when comparing groups that differ systematically *before* treatment (e.g., sicker people choosing hospitals), biasing simple comparisons
-- Randomisation breaks the link between potential outcomes and treatment receipt, making groups comparable on average (in expectation) on all pre-treatment characteristics
-- This allows unbiased ATE estimation via difference-in-means
+- [Randomisation breaks the link between potential outcomes and treatment receipt]{.alert}, making groups comparable on average (in expectation) on all pre-treatment characteristics
+- This allows [unbiased ATE estimation]{.alert} via difference-in-means
 - [SUTVA]{.alert} (Stable Unit Treatment Value Assumption):
     - [No interference]{.alert} between units (one unit's treatment doesn't affect another's outcome)
     - [Consistent treatment value]{.alert} (the treatment is the same for all units receiving it)
@@ -130,9 +130,9 @@ Source: [DeclareDesign](https://declaredesign.org/)
 :::{style="text-align: center; margin-top: -30px;"}
 ![](figures/dag-1.png){width="100%"}
 
-a) Confounding: Underlying illness ($Z$) causes both taking a specific drug ($X$) and experiencing a bad outcome ($Y$)
-b) Mediation: Smoking ($X$) causes lung damage ($Z$), which then leads to breathing difficulties ($Y$)
-c) Collision: A student's talent ($X$) influences their grades ($Y$); both talent ($X$) and grades ($Y$) influence getting a scholarship ($Z$) – selecting only scholarship winners ($Z$) distorts the observed talent-grade relationship
+a) [Confounding]{.alert}: Underlying illness ($Z$) causes both taking a specific drug ($X$) and experiencing a bad outcome ($Y$)
+b) [Mediation]{.alert}: Smoking ($X$) causes lung damage ($Z$), which then leads to breathing difficulties ($Y$)
+c) [Collision]{.alert}: A student's talent ($X$) influences their grades ($Y$); both talent ($X$) and grades ($Y$) influence getting a scholarship ($Z$) – selecting only scholarship winners ($Z$) distorts the observed talent-grade relationship
 :::
 :::
 :::
@@ -149,11 +149,11 @@ c) Collision: A student's talent ($X$) influences their grades ($Y$); both talen
    $= E[Y_i(1)|Z_i=1] - E[Y_i(0)|Z_i=1] + E[Y_i(0)|Z_i=1] - E[Y_i(0)|Z_i=0]$
 4. Group the terms: $= \{ E[Y_i(1)|Z_i=1] - E[Y_i(0)|Z_i=1] \} + \{ E[Y_i(0)|Z_i=1] - E[Y_i(0)|Z_i=0] \}$
 5. Identify the components: $= ATT + \text{Selection Bias}$
-   - Where [ATT]{.alert} is the Average Treatment effect on the Treated
+   - Where [ATT]{.alert} is the Average Treatment Effect on the Treated
    - And [Selection Bias]{.alert} is $\{ E[Y_i(0)|Z_i=1] - E[Y_i(0)|Z_i=0] \}$, which is the difference in the *potential untreated outcomes* between those who selected treatment and those who did not
 6. Under randomisation, $ATT = ATE$, and the [selection bias term averages to zero]{.alert}
 
-- Balance tests check pre-treatment covariate balance; useful diagnostic, but doesn't guarantee balance on *unobservables*
+- [Balance tests]{.alert} check pre-treatment covariate balance; useful diagnostic, but doesn't guarantee balance on *unobservables*
 - Beware common biases like [attrition bias]{.alert}, [survivorship bias]{.alert}, and [post-treatment bias]{.alert} (controlling for mediators)
 :::
 
@@ -212,9 +212,9 @@ Source: [Myself (2020) 😂](https://journals.sagepub.com/doi/full/10.1177/20531
 :::{.columns}
 :::{.column width="50%"}
 - Discussed influential studies applying experimental methods:
-    - **Kalla & Broockman (2015):** Used a field experiment (blocked randomisation) to show revealing donor status significantly increased political access to US congressional officials
-    - **Bertrand & Mullainathan (2004):** Employed a correspondence study (field experiment) randomising names on CVs, finding significant callback gaps favouring White-sounding names in the US labour market
-    - **Chattopadhyay & Duflo (2004):** Leveraged a natural experiment (randomised council seat reservations in India) showing female leaders prioritised different public goods (water vs roads) compared to male leaders
+    - [Kalla & Broockman (2015)]{.alert}: Used a field experiment (blocked randomisation) to show revealing donor status significantly increased political access to US congressional officials
+    - [Bertrand & Mullainathan (2004)]{.alert}: Employed a correspondence study (field experiment) randomising names on CVs, finding significant callback gaps favouring White-sounding names in the US labour market
+    - [Chattopadhyay & Duflo (2004)]{.alert}: Leveraged a natural experiment (randomised council seat reservations in India) showing female leaders prioritised different public goods (water vs roads) compared to male leaders
 :::
 
 :::{.column width="50%"}
@@ -235,12 +235,12 @@ Source: [Data Collada (2016)](https://datacolada.org/51)
 :::{.columns}
 :::{.column width="50%"}
 ### Blocking
-- Group units by pre-treatment covariates ($X$) related to outcome ($Y$); randomise *within* blocks
+- [Group units by pre-treatment covariates]{.alert} ($X$) related to outcome ($Y$); randomise *within* blocks
 - Increases precision (removes between-block variance), ensures balance on $X$
 - Include block fixed effects or use interaction estimators (`lm_lin`)
 
 ### Clustering
-- Treatment assigned at group level (village, school); outcomes measured at individual level
+- [Treatment assigned at group level]{.alert} (village, school); outcomes measured at individual level
 - Often necessary due to practical constraints or spillovers
 - **Challenge:** [Intra-Cluster Correlation (ICC)]{.alert} violates independence ($\rho = \frac{\sigma^2_{between}}{\sigma^2_{between} + \sigma^2_{within}}$)
 :::
@@ -267,7 +267,7 @@ Source: [NIH Collaboratory (2020)](https://dcricollab.dcri.duke.edu/sites/NIHKR/
 - Conventionally aim for power $\ge 0.80$
 - Power depends on:
     - [Effect size:]{.alert} Larger effects are easier to detect
-    - [Sample size (N):]{.alert} Larger N increases power
+    - [Sample size ($N$):]{.alert} Larger $N$ increases power
     - [Significance level ($\alpha$):]{.alert} Lower $\alpha$ reduces power
     - [Outcome variance ($\sigma^2$):]{.alert} Lower variance increases power
     - [Proportion treated:]{.alert} Power is maximised with equal group sizes (50/50 split)
@@ -284,7 +284,7 @@ Source: [NIH Collaboratory (2020)](https://dcricollab.dcri.duke.edu/sites/NIHKR/
 - [Compliers]{.alert} ($D_i(1)=1, D_i(0)=0$) and [Never-takers]{.alert} ($D_i(1)=0, D_i(0)=0$)
 - [Intent-to-Treat (ITT)]{.alert} effect ($E[Y|Z=1] - E[Y|Z=0]$) estimates the effect of *assignment*; it's unbiased but diluted
 - [Complier Average Causal Effect (CACE/LATE)]{.alert} ($E[Y_i(1) - Y_i(0) | D_i(1)>D_i(0)]$) estimates the effect of treatment *on compliers*
-- Estimation uses Instrumental Variables (IV) / 2SLS, with assignment ($Z$) as instrument for treatment receipt ($D$)
+- Estimation uses [Instrumental Variables]{.alert} (IV) / 2SLS, with assignment ($Z$) as instrument for treatment receipt ($D$)
 - $CACE = ITT_Y / ITT_D$
 - Requires relevance, exclusion, independence assumptions
 :::
@@ -373,7 +373,7 @@ Source: [Belmont Report (1979)](https://www.hhs.gov/ohrp/regulations-and-policy/
 
 ## Six components of a `DeclareDesign` study (Lec 13)
 
-:::{style="font-size: 21px; margin-top: 20px;"}
+:::{style="font-size: 23px; margin-top: 20px;"}
 :::{.columns}
 :::{.column width="55%"}
 - DeclareDesign formalises research plans using six key components, specified using `declare_*` functions:
@@ -403,12 +403,12 @@ Source: [DeclareDesign](https://declaredesign.org/)
 - PAPs detail the research plan (hypotheses, design, analysis) *before* data analysis
 - Aim to increase transparency, reduce bias ([p-hacking, HARKing]{.alert}), enhance credibility
 - Stemmed from reproducibility crisis
-- Key components: Motivation, Hypotheses, Population/Sampling, Intervention, Outcomes/Covariates, Randomisation, Analysis Plan (estimators, SEs, power, missing data, subgroups), Implementation details
+- [Main components]{.alert}: Motivation, Hypotheses, Population/Sampling, Intervention, Outcomes/Covariates, Randomisation, Analysis Plan (estimators, SEs, power, missing data, subgroups), Implementation details
 - Should distinguish confirmatory (pre-specified) from exploratory analyses
 :::
 :::{.column width="50%"}
-- Pros: Credibility, transparency, limits researcher degrees of freedom
-- Cons: Time-consuming, potentially inflexible (mitigated by allowing pre-specified exploratory analysis or clear justifications for deviations)
+- [Pros]{.alert}: Credibility, transparency, limits researcher degrees of freedom
+- [Cons]{.alert}: Time-consuming, potentially inflexible (mitigated by allowing pre-specified exploratory analysis or clear justifications for deviations)
 - Registries like OSF, AEA, EGAP host PAPs
 - SOPs (Standard Operating Procedures) offer a potentially more flexible alternative but are less common
 :::
@@ -470,8 +470,8 @@ Source: [DeclareDesign](https://declaredesign.org/)
 - Effects often vary; ATE is just the average; understanding variability is key
 - Challenge: $Var(\tau)$ depends on unidentifiable $Cov(Y(1), Y(0))$
 - Exploring HTE:
-    - **Treatment-by-Covariate Interactions (CATEs):** Estimate ATE within subgroups based on pre-treatment $X$; use regression interactions ($Y \sim Z * X$); [Caution:]{.alert} Correlational re: HTE source; multiple comparisons risk
-    - **Treatment-by-Treatment Interactions (Factorial Designs):** Experimentally manipulate multiple factors ($Z_1, Z_2$); allows causal inference about interactions; requires larger N
+    - [Treatment-by-Covariate Interactions (CATEs)]{.alert}: Estimate ATE within subgroups based on pre-treatment $X$; use regression interactions ($Y \sim Z * X$); [Caution:]{.alert} Correlational re: HTE source; multiple comparisons risk
+    - [Treatment-by-Treatment Interactions (Factorial Designs)]{.alert}: Experimentally manipulate multiple factors ($Z_1, Z_2$); allows causal inference about interactions; requires larger N
 - Beware the [multiple comparisons problem]{.alert} when testing many subgroups; use corrections (Bonferroni) or pre-specification
 :::
 :::{.column width="45%"}
@@ -492,7 +492,7 @@ Source: [University of Minnesota (2020)](https://courses.lumenlearning.com/suny-
 - Seeks to understand *how* $Z$ affects $Y$ via mediator $M$ ($Z \to M \to Y$)
 - Traditional regression methods are often biased due to $M \leftrightarrow Y$ confounding (omitted variables affecting both $M$ and $Y$)
 - Potential outcomes approach reveals fundamental identification problem requiring strong 'sequential ignorability' assumptions ($M$ is 'as-if' random conditional on $Z$ and $X$)
-- Randomising $Z$ alone is insufficient
+- Randomising $Z$ alone is insufficient or impossible
 - Using $Z$ as an IV for $M$ requires the strong [exclusion restriction]{.alert} (no direct $Z \leftrightarrow Y$ path), often violated
 :::
 :::{.column width="45%"}
@@ -569,23 +569,23 @@ Source: [Freire & Skarbek (2022)](https://journals.sagepub.com/doi/10.1177/20531
 
 # Discussions & Integration 🌍 {background-color="#2d4563"}
 
-## Key paper discussions (Lec 06, 17, 19, 23)
+## Paper discussions (Lec 06, 17, 19, 23)
 
 :::{style="font-size: 27px; margin-top: 20px;"}
 :::{.columns}
 :::{.column width="50%"}
 ### Foundational Ideas & Design
-- **Lec 06:** Kalla & Broockman (access), Bertrand & Mullainathan (discrimination), Chattopadhyay & Duflo (representation) 
+- [Lec 06]{.alert}: Kalla & Broockman (access), Bertrand & Mullainathan (discrimination), Chattopadhyay & Duflo (representation) 
   - Classic examples of field & natural experiments demonstrating core concepts
-- **Lec 17:** Centola (networks/contagion), Paluck (network intervention/climate), Gerber & Green (GOTV/interference/IV) 
+- [Lec 17]{.alert}: Centola (networks/contagion), Paluck (network intervention/climate), Gerber & Green (GOTV/interference/IV) 
   - Focused on exploring interference, network structure, and spillover effects experimentally and analytically
 
 :::
 :::{.column width="50%"}
 ### Identification & Complex Settings
-- **Lec 19:** Munshi (networks/IV/FE), Miguel & Kremer (externalities/cluster RCT/spillovers) 
+- [Lec 19]{.alert}: Munshi (networks/IV/FE), Miguel & Kremer (externalities/cluster RCT/spillovers) 
   - Showcased clever identification strategies using IVs and cluster-randomisation for observational data and spillovers
-- **Lec 23:** Druckman (list/sensitive), Blair (list+endorsement/sensitive), Rosenfeld (validation/sensitive), Freire & Skarbek (conjoint/sensitive) 
+- [Lec 23]{.alert}: Druckman (list/sensitive), Blair (list+endorsement/sensitive), Rosenfeld (validation/sensitive), Freire & Skarbek (conjoint/sensitive) 
   - Illustrated application and validation of methods for sensitive topics
 :::
 :::
