@@ -1,5 +1,5 @@
 ---
-title: QTM 385 - Experimental Methods
+title: DATASCI 385 - Experimental Methods
 subtitle: Lecture 03 - Potential Outcomes Framework
 author:
   - name: Danilo Freire
@@ -10,11 +10,11 @@ format:
   clean-revealjs:
     self-contained: true
     code-overflow: wrap
-    footer: "[Potential Outcomes](https://raw.githack.com/danilofreire/qtm385/main/lectures/lecture-03/03-potential-outcomes.html)"
+    footer: "[Potential Outcomes](https://raw.githack.com/danilofreire/datasci385/main/lectures/lecture-03/03-potential-outcomes.html)"
 transition: slide
 transition-speed: default
 scrollable: true
-engine: jupyter
+engine: python3
 editor:
   render-on-save: true
 ---

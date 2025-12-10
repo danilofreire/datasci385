@@ -1,5 +1,5 @@
 ---
-title: QTM 385 - Experimental Methods
+title: DATASCI 385 - Experimental Methods
 subtitle: Lecture 10 - Two-sided non-compliance
 author:
   - name: Danilo Freire
@@ -9,7 +9,7 @@ format:
   clean-revealjs:
     self-contained: true
     code-overflow: wrap
-    footer: "[Non-Compliance 2](https://raw.githack.com/danilofreire/qtm385/main/lectures/lecture-10/10-non-compliance2.html)"
+    footer: "[Non-Compliance 2](https://raw.githack.com/danilofreire/datasci385/main/lectures/lecture-10/10-non-compliance2.html)"
 transition: slide
 transition-speed: default
 scrollable: true
@@ -283,7 +283,7 @@ Source: [Alves (2022)](https://matheusfacure.github.io/python-causality-handbook
 :::{style="font-size: 22px; text-align: center;"}
 *Source: Mullainathan, Washington, and Azari 2010.*
 
-Download the data from [our GitHub repository](https://github.com/danilofreire/qtm385/blob/main/lectures/lecture-10/mullainathan.csv)
+Download the data from [our GitHub repository](https://github.com/danilofreire/datasci385/blob/main/lectures/lecture-10/mullainathan.csv)
 :::
 :::
 :::
@@ -334,7 +334,7 @@ Download the data from [our GitHub repository](https://github.com/danilofreire/q
 - The formula is the same: `estimatr::iv_robust(Y ~ D | Z, data = data)`
 - The `estimatr` package is your friend here once again! 😉
 - Since we don't live in the Stone Age any longer, we can use [R](https://www.r-project.org/) to do all the hard work for us! 😂
-- The script is [also available in our GitHub repository](https://github.com/danilofreire/qtm385/blob/main/lectures/lecture-10/iv_estimation.R)
+- The script is [also available in our GitHub repository](https://github.com/danilofreire/datasci385/blob/main/lectures/lecture-10/iv_estimation.R)
 - Let's do it together, step-by-step, to make sure we all understand what the coefficients mean 🤓
 :::
 

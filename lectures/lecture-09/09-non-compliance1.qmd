@@ -1,5 +1,5 @@
 ---
-title: QTM 385 - Experimental Methods
+title: DATASCI 385 - Experimental Methods
 subtitle: Lecture 09 - One-Sided Non-Compliance
 author:
   - name: Danilo Freire
@@ -9,7 +9,7 @@ format:
   clean-revealjs:
     self-contained: true
     code-overflow: wrap
-    footer: "[Non-Compliance 1](https://raw.githack.com/danilofreire/qtm385/main/lectures/lecture-09/09-non-compliance1.html)"
+    footer: "[Non-Compliance 1](https://raw.githack.com/danilofreire/datasci385/main/lectures/lecture-09/09-non-compliance1.html)"
 transition: slide
 transition-speed: default
 scrollable: true

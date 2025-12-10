@@ -1,5 +1,5 @@
 ---
-title: "Welcome to QTM 385 - Experimental Methods"
+title: "Welcome to DATASCI 385 - Experimental Methods"
 subtitle: "Lecture 01: Introduction"
 author:
   - name: Danilo Freire
@@ -9,7 +9,7 @@ author:
 format:
   clean-revealjs:
     self-contained: true
-    footer: "[Introduction](https://raw.githack.com/danilofreire/qtm385/main/lectures/lecture-01/01-introduction.html)"
+    footer: "[Introduction](https://raw.githack.com/danilofreire/datasci385/main/lectures/lecture-01/01-introduction.html)"
 transition: slide
 transition-speed: default
 scrollable: true
@@ -49,7 +49,7 @@ if (!require("fontawesome", character.only = TRUE)) {
 }
 ```
 
-# Welcome to QTM 385 <br> Experimental Methods! 🎉 {background-color="#2d4563"}
+# Welcome to DATASCI 385 <br> Experimental Methods! 🎉 {background-color="#2d4563"}
 
 ## Lecture overview
 ### Today's agenda
@@ -69,11 +69,11 @@ if (!require("fontawesome", character.only = TRUE)) {
 ### Important links
 
 ::: {style="font-size: 24px;"}
-`r fa('github')` Course repository: <https://github.com/danilofreire/qtm385>
+`r fa('github')` Course repository: <https://github.com/danilofreire/datasci385>
 
-`r fa('globe')` Course website: <https://danilofreire.github.io/qtm385>
+`r fa('globe')` Course website: <https://danilofreire.github.io/datasci385>
 
-All course materials, including lectures, code, discussions, assignments, and project guidelines, are available on our [GitHub repository](https://github.com/danilofreire/qtm385)
+All course materials, including lectures, code, discussions, assignments, and project guidelines, are available on our [GitHub repository](https://github.com/danilofreire/datasci385)
 
 We will use Canvas for course administration, including submitting assignments, accessing grades, and receiving announcements
 
@@ -460,7 +460,7 @@ From [xkcd](https://xkcd.com/552/)
 :::
 :::
 
-Lots of additional readings are included [in the syllabus](https://github.com/danilofreire/qtm385/blob/main/syllabus.pdf) 😊
+Lots of additional readings are included [in the syllabus](https://github.com/danilofreire/datasci385/blob/main/syllabus.pdf) 😊
 :::
 
 ## Key tools
@@ -486,7 +486,7 @@ Lots of additional readings are included [in the syllabus](https://github.com/da
 :::
 :::
 
-Guides: <https://danilofreire.github.io/qtm385/guides.html>
+Guides: <https://danilofreire.github.io/datasci385/guides.html>
 :::
 
 ## Logistics
@@ -496,11 +496,11 @@ Guides: <https://danilofreire.github.io/qtm385/guides.html>
 :::
 
 ::: {style="font-size: 28px;"}
-- [Syllabus:]{.alert} Available on our [course repository](https://github.com/danilofreire/qtm385/blob/main/syllabus.pdf) and [website](https://danilofreire.github.io/qtm385/syllabus.html). The course is designed to be self-contained. The syllabus includes links to slides and code we will use in class, along with recommended readings, and problem sets. I will upload slides throughout the term as we progress
+- [Syllabus:]{.alert} Available on our [course repository](https://github.com/danilofreire/datasci385/blob/main/syllabus.pdf) and [website](https://danilofreire.github.io/datasci385/syllabus.html). The course is designed to be self-contained. The syllabus includes links to slides and code we will use in class, along with recommended readings, and problem sets. I will upload slides throughout the term as we progress
 - [Schedule:]{.alert} Lectures are on Mondays and Wednesdays from 5:30 to 6:45 pm in the Psychology Building, Room 220
 - [Office Hours:]{.alert} I'm available to meet you [at any time.]{.alert} Please reach out some time in advance and we can schedule a meeting
 - [Materials:]{.alert}
-    - Course repository: <https://github.com/danilofreire/qtm385>
+    - Course repository: <https://github.com/danilofreire/datasci385>
     - Canvas
 :::
 

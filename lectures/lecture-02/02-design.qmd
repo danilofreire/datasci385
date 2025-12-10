@@ -1,5 +1,5 @@
 ---
-title: QTM 385 - Experimental Methods
+title: DATASCI 385 - Experimental Methods
 subtitle: Lecture 02 - The Research Design Process
 author:
   - name: Danilo Freire
@@ -10,12 +10,12 @@ format:
   clean-revealjs:
     self-contained: true
     code-overflow: wrap
-    footer: "[Research Design](https://raw.githack.com/danilofreire/qtm385/main/lectures/lecture-02/02-design.html/)"
+    footer: "[Research Design](https://raw.githack.com/danilofreire/datasci385/main/lectures/lecture-02/02-design.html/)"
 bibliography: references.bib
 transition: slide
 transition-speed: default
 scrollable: true
-engine: jupyter
+engine: python3
 revealjs-plugins:
   - fontawesome
   - multimodal
@@ -37,8 +37,8 @@ editor:
 
 - This is an applied course on experimental methods! 🤓
 - All materials, including lectures, code, and assignments, are available online
-  - Course website: <https://danilofreire.github.io/qtm385/>
-  - GitHub repository: <https://github.com/danilofreire/qtm385>
+  - Course website: <https://danilofreire.github.io/datasci385/>
+  - GitHub repository: <https://github.com/danilofreire/datasci385>
 - About me: Danilo Freire, VAP in the Department of Data and Decision Sciences
   - Email: <danilo.freire@emory.edu>
   - Office hours: At your convenience, just send me an email first
@@ -65,11 +65,11 @@ editor:
 
 :::{style="margin-top:30px; font-size:22px; text-align:center;"}
 
-[![](figures/website.png)](#){data-modal-type="iframe" data-modal-url="https://danilofreire.github.io/qtm385/"}
+[![](figures/website.png)](#){data-modal-type="iframe" data-modal-url="https://danilofreire.github.io/datasci385/"}
 
 Click on the image to access the course website! 🌐
 
-<https://danilofreire.github.io/qtm385/>
+<https://danilofreire.github.io/datasci385/>
 :::
 
 ## Textbooks
@@ -89,7 +89,7 @@ Click on the image to access the course website! 🌐
 :::
 :::
 
-Lots of additional readings are included [in the syllabus](https://github.com/danilofreire/qtm385/blob/main/syllabus.pdf) 😊
+Lots of additional readings are included [in the syllabus](https://github.com/danilofreire/datasci385/blob/main/syllabus.pdf) 😊
 :::
 
 ## Today's lecture 📅
@@ -105,7 +105,7 @@ Lots of additional readings are included [in the syllabus](https://github.com/da
 - How to interpret your findings carefully
 - The importance of transparency and reproducibility
 - The research design process
-- [EGAP research design form](https://danilofreire.github.io/qtm385/design-form.html): A guide to help you think through the key components of your research design
+- [EGAP research design form](https://danilofreire.github.io/datasci385/design-form.html): A guide to help you think through the key components of your research design
 - Introduction to [DeclareDesign](https://declaredesign.org/) and the [MIDA]{.alert} framework
 - Brief overview of pre-registration and pre-analysis plans
 :::
@@ -507,7 +507,7 @@ Amy Cuddy demonstrating her theory of "power posing". It could never be replicat
 :::{style="margin-top: 30px; font-size: 24px;"}
 - The [EGAP research design form](https://egap.github.io/learningdays-resources/Exercises/design-form.html) is a guide to help you think through the key components of your research design
 - It shows the main parts of a pre-analysis plan, and it is a good blueprint for your own future experiments
-- We will be using it in our course, and you can access it [here](https://egap.github.io/learningdays-resources/Exercises/design-form.html) or [on our website](https://danilofreire.github.io/qtm385/design-form.html)
+- We will be using it in our course, and you can access it [here](https://egap.github.io/learningdays-resources/Exercises/design-form.html) or [on our website](https://danilofreire.github.io/datasci385/design-form.html)
 - We will have a few sessions dedicated to discussing pre-analysis plans, but I would like to introduce you to the form today (so you can start thinking about your final project!)
 :::
 

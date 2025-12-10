@@ -1,5 +1,5 @@
 ---
-title: QTM 385 - Experimental Methods
+title: DATASCI 385 - Experimental Methods
 subtitle: Lecture 11 - Attrition
 author:
   - name: Danilo Freire
@@ -9,7 +9,7 @@ format:
   clean-revealjs:
     self-contained: true
     code-overflow: wrap
-    footer: "[Attrition](https://raw.githack.com/danilofreire/qtm385/main/lectures/lecture-11/11-attrition.html)"
+    footer: "[Attrition](https://raw.githack.com/danilofreire/datasci385/main/lectures/lecture-11/11-attrition.html)"
 transition: slide
 transition-speed: default
 scrollable: true

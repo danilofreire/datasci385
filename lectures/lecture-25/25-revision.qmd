@@ -1,5 +1,5 @@
 ---
-title: QTM 385 - Experimental Methods
+title: DATASCI 385 - Experimental Methods
 subtitle: Lecture 25 - Course Revision
 author:
   - name: Danilo Freire
@@ -10,7 +10,7 @@ format:
   clean-revealjs:
     self-contained: true
     code-overflow: wrap
-    footer: "[Course Revision](https://raw.githack.com/danilofreire/qtm385/main/lectures/lecture-25/25-revision.html)"
+    footer: "[Course Revision](https://raw.githack.com/danilofreire/datasci385/main/lectures/lecture-25/25-revision.html)"
 transition: slide
 transition-speed: default
 scrollable: true

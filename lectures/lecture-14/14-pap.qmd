@@ -1,5 +1,5 @@
 ---
-title: QTM 385 - Experimental Methods
+title: DATASCI 385 - Experimental Methods
 subtitle: Lecture 14 - Writing Pre-Analysis Plans
 author:
   - name: Danilo Freire
@@ -9,7 +9,7 @@ format:
   clean-revealjs:
     self-contained: true
     code-overflow: wrap
-    footer: "[PAPs](https://raw.githack.com/danilofreire/qtm385/main/lectures/lecture-14/14-pap.html)"
+    footer: "[PAPs](https://raw.githack.com/danilofreire/datasci385/main/lectures/lecture-14/14-pap.html)"
 transition: slide
 transition-speed: default
 scrollable: true
@@ -202,7 +202,7 @@ Source: [Lin et al. (2016)](https://alexandercoppock.com/Green-Lab-SOP/Green_Lab
   - Experimental intervention or explanatory variable
   - Outcomes of interest
 - Let's see the EGAP template in more detail
-- Available at <https://danilofreire.github.io/qtm385/design-form.html>
+- Available at <https://danilofreire.github.io/datasci385/design-form.html>
 :::
 
 ## Group activity

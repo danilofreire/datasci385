@@ -1,5 +1,5 @@
 ---
-title: QTM 385 - Experimental Methods
+title: DATASCI 385 - Experimental Methods
 subtitle: Lecture 05 - Sampling Distributions, Statistical Inference, and Hypothesis Testing
 author:
   - name: Danilo Freire
@@ -9,7 +9,7 @@ format:
   clean-revealjs:
     self-contained: true
     code-overflow: wrap
-    footer: "[Hypothesis Testing](https://raw.githack.com/danilofreire/qtm385/main/lectures/lecture-05/05-hypothesis-testing.html)"
+    footer: "[Hypothesis Testing](https://raw.githack.com/danilofreire/datasci385/main/lectures/lecture-05/05-hypothesis-testing.html)"
 transition: slide
 transition-speed: default
 scrollable: true
@@ -597,7 +597,7 @@ summary(ri2_out)
 :::
 
 ## Outline of the paper: Introduction
-### Based on the [EGAP Research Design Form](https://danilofreire.github.io/qtm385/design-form.html)
+### Based on the [EGAP Research Design Form](https://danilofreire.github.io/datasci385/design-form.html)
 
 :::{style="margin-top: 50px; font-size: 19px;"}
 :::{.columns}
@@ -620,7 +620,7 @@ summary(ri2_out)
 :::
 
 ## Outline of the paper: Introduction
-### Based on the [EGAP Research Design Form](https://danilofreire.github.io/qtm385/design-form.html)
+### Based on the [EGAP Research Design Form](https://danilofreire.github.io/datasci385/design-form.html)
 
 :::{style="margin-top: 50px; font-size: 23px;"}
 - [Alternative explanations if results are consistent with hypotheses]{.alert}:

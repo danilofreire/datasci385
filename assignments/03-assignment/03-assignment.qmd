@@ -1,5 +1,5 @@
 ---
-title: "QTM 385 - Experimental Methods"
+title: "DATASCI 385 - Experimental Methods"
 subtitle: Assignment 03
 ---
 

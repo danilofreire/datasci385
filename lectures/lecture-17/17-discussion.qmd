@@ -1,5 +1,5 @@
 ---
-title: QTM 385 - Experimental Methods
+title: DATASCI 385 - Experimental Methods
 subtitle: Lecture 17 - Texts for Discussion about Interference and Spillovers
 author:
   - name: Danilo Freire
@@ -9,7 +9,7 @@ format:
   clean-revealjs:
     self-contained: true
     code-overflow: wrap
-    footer: "[Discussion](https://raw.githack.com/danilofreire/qtm385/main/lectures/lecture-17/17-discussion.html)"
+    footer: "[Discussion](https://raw.githack.com/danilofreire/datasci385/main/lectures/lecture-17/17-discussion.html)"
 transition: slide
 transition-speed: default
 scrollable: true

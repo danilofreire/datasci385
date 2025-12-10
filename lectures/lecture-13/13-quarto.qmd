@@ -1,5 +1,5 @@
 ---
-title: QTM 385 - Experimental Methods
+title: DATASCI 385 - Experimental Methods
 subtitle: Lecture 13 - Introduction to Quarto and DeclareDesign
 author:
   - name: Danilo Freire
@@ -9,7 +9,7 @@ format:
   clean-revealjs:
     self-contained: true
     code-overflow: wrap
-    footer: "[Quarto and DD](https://raw.githack.com/danilofreire/qtm385/main/lectures/lecture-13/13-quarto.html)"
+    footer: "[Quarto and DD](https://raw.githack.com/danilofreire/datasci385/main/lectures/lecture-13/13-quarto.html)"
 transition: slide
 transition-speed: default
 scrollable: true

@@ -1,5 +1,5 @@
 ---
-title: "QTM 385 - Experimental Methods"
+title: "DATASCI 385 - Experimental Methods"
 date: "Fall 2025"
 lang: en-GB
 author: 
@@ -43,7 +43,7 @@ This course is designed to be both applied and interactive, featuring lectures a
 
 We will meet on Mondays and Wednesdays from 5:30pm to 6:45pm in the [Psychology Building 220](https://maps.app.goo.gl/DNg6qa2APjBj8E5MA). The course will be a mix of lectures, discussions, and hands-on activities. Therefore, it is important that you read the assigned readings before class. Students are encouraged to participate and are most welcome to express their views openly and freely. I suggest you bring notes to class so we can discuss together the topics you find most interesting. 
 
-All information about the course will be available at <http://danilofreire.github.io/qtm385>. The syllabus will be updated periodically according to the progress of the class. Please remember to visit the website regularly.
+All information about the course will be available at <http://danilofreire.github.io/datasci385>. The syllabus will be updated periodically according to the progress of the class. Please remember to visit the website regularly.
 
 # Learning Objectives
 
@@ -65,7 +65,7 @@ This course is designed for students who have taken or are currently taking an i
 
 We will use `R` for all data analysis in this course. `R` is a free and open-source software environment for statistical computing and graphics. You can download `R` from the [Comprehensive R Archive Network (CRAN)](https://cran.r-project.org/). You are free to use any text editor to write your `R` code, but I recommend using [RStudio](https://www.rstudio.com/products/rstudio/download/), [VS Code](https://code.visualstudio.com/), or [Jupyter Notebooks](https://jupyter.org/) with the `R` kernel. If you are feeling brave or want to learn some new skills, you can also use [Neovim](https://neovim.io/) with the [Nvim-R](https://github.com/jalvesaq/Nvim-R) plugin. That is, if [you can exit the editor](https://stackoverflow.blog/2017/05/23/stack-overflow-helping-one-million-developers-exit-vim/). :)
 
-We will also use [Quarto](https://quarto.org/) to write the reports. Quarto is a new document format that combines the best features of [Markdown](https://www.markdownguide.org/), [\LaTeX](https://www.overleaf.com/learn/latex/Learn_LaTeX_in_30_minutes), and [R Markdown](https://rmarkdown.rstudio.com). It is easy to use, very versatile, and allows you to write reports, slides, books, and even websites in a single document. You can install Quarto from the [Quarto website](https://quarto.org/). We will have a hands-on session on how to use Quarto in the course, and I have prepared templates for your [pre-analysis plan](https://github.com/danilofreire/qtm385/pre-analysis-plan-template) and [presentation](https://github.com/danilofreire/quarto-presentation). However, you are free to use any other template you prefer or even write your own.
+We will also use [Quarto](https://quarto.org/) to write the reports. Quarto is a new document format that combines the best features of [Markdown](https://www.markdownguide.org/), [\LaTeX](https://www.overleaf.com/learn/latex/Learn_LaTeX_in_30_minutes), and [R Markdown](https://rmarkdown.rstudio.com). It is easy to use, very versatile, and allows you to write reports, slides, books, and even websites in a single document. You can install Quarto from the [Quarto website](https://quarto.org/). We will have a hands-on session on how to use Quarto in the course, and I have prepared templates for your [pre-analysis plan](https://github.com/danilofreire/datasci385/pre-analysis-plan-template) and [presentation](https://github.com/danilofreire/quarto-presentation). However, you are free to use any other template you prefer or even write your own.
 
 # Office Hours
 
@@ -142,7 +142,7 @@ Students are encouraged to make use of the library's resources, including its [r
 
 # Subject to Change Policy
 
-While I will try to adhere to the course schedule as much as possible, I also want to adapt to your learning pace and style. The syllabus and course plan may change during the semester. Again, please visit [the course website](https://danilofreire.github.io/qtm385) regularly to check for updates. I will also announce any changes in class and via email.
+While I will try to adhere to the course schedule as much as possible, I also want to adapt to your learning pace and style. The syllabus and course plan may change during the semester. Again, please visit [the course website](https://danilofreire.github.io/datasci385) regularly to check for updates. I will also announce any changes in class and via email.
 
 # Course Outline and Readings
 
@@ -150,15 +150,15 @@ It is important to read the required materials before class. Please feel free to
 
 ## Course Schedule
 
-Please find below the schedule of our lectures. Each lecture includes a brief description, required readings, and suggested readings for further exploration. The lecture slides and additional resources are available [on the course website](https://danilofreire.github.io/qtm385/lectures.html) and [GitHub repository](https://github.com/danilofreire/qtm385). Please remember that the schedule may change during the course. If you have any questions or need further assistance, please let me know!
+Please find below the schedule of our lectures. Each lecture includes a brief description, required readings, and suggested readings for further exploration. The lecture slides and additional resources are available [on the course website](https://danilofreire.github.io/datasci385/lectures.html) and [GitHub repository](https://github.com/danilofreire/datasci385). Please remember that the schedule may change during the course. If you have any questions or need further assistance, please let me know!
 
 ## Lecture 01: Introduction to Experimental Design (August 27, 2025)
 
 Required readings:
 
-- Syllabus and course website: <http://danilofreire.github.io/qtm385>.
-- GitHub repository: <https://github.com/danilofreire/qtm385>.
-- Lecture slides: [Welcome to QTM 385: Introduction / Why Experiments?](https://raw.githack.com/danilofreire/qtm385/main/lectures/lecture-01/01-introduction.html)
+- Syllabus and course website: <http://danilofreire.github.io/datasci385>.
+- GitHub repository: <https://github.com/danilofreire/datasci385>.
+- Lecture slides: [Welcome to DATASCI 385: Introduction / Why Experiments?](https://raw.githack.com/danilofreire/datasci385/main/lectures/lecture-01/01-introduction.html)
 - FEDAI: Chapter 01: Introduction.
 
 Suggested readings:
@@ -175,10 +175,10 @@ Suggested readings:
 
 Required readings:
 
-- Lecture slides: [The Research Design Process: Testing Theories with Experiments](https://raw.githack.com/danilofreire/qtm385/main/lectures/lecture-02/02-design.html).
+- Lecture slides: [The Research Design Process: Testing Theories with Experiments](https://raw.githack.com/danilofreire/datasci385/main/lectures/lecture-02/02-design.html).
 - Card, D., DellaVigna, S., & Malmendier, U. (2011). [The Role of Theory in Field Experiments](https://pubs.aeaweb.org/doi/pdf/10.1257%2Fjep.25.3.39). Journal of Economic Perspectives, 25(3), 39-62.
 - Blair, G., Cooper, J., Coppock, A., & Humphreys, M. (2019). [Declaring and Diagnosing Research Designs](https://doi.org/10.1017/S0003055419000194). American Political Science Review, 113(3), 838-859.
-- [Problem Set 01 assigned](https://github.com/danilofreire/qtm385/blob/main/assignments/01-assignment).
+- [Problem Set 01 assigned](https://github.com/danilofreire/datasci385/blob/main/assignments/01-assignment).
 
 Suggested readings:
 
@@ -191,7 +191,7 @@ Suggested readings:
 
 Required readings:
 
-- Lecture slides: [Potential Outcomes Framework](https://raw.githack.com/danilofreire/qtm385/main/lectures/lecture-03/03-potential-outcomes.html).
+- Lecture slides: [Potential Outcomes Framework](https://raw.githack.com/danilofreire/datasci385/main/lectures/lecture-03/03-potential-outcomes.html).
 - FEDAI: Chapter 02: Causal Inference and Experimentation.
 - Rubin, D. B. (2005). [Causal Inference using Potential Outcomes: Design, Modeling, Decisions](https://www.tandfonline.com/doi/abs/10.1198/016214504000001880). Journal of the American Statistical Association, 100(469), 322-331.
 - [Kahoot Quiz](https://play.kahoot.it/v2/?quizId=c6a69c01-0bb4-4e2a-aca1-60e0f11fdb5b&hostId=05eb977d-4f8a-440e-9e45-95212b29d103)
@@ -200,11 +200,11 @@ Required readings:
 
 Required readings:
 
-- Lecture slides: [Potential Outcomes Continued and Regression Analysis](https://raw.githack.com/danilofreire/qtm385/main/lectures/lecture-04/04-selection-bias.html).
+- Lecture slides: [Potential Outcomes Continued and Regression Analysis](https://raw.githack.com/danilofreire/datasci385/main/lectures/lecture-04/04-selection-bias.html).
 - Angrist, J. D., & Pischke, J. S. (2014). [Mastering 'Metrics: The Path from Cause to Effect](https://assets.press.princeton.edu/chapters/s10363.pdf). Princeton University Press. Chapter 01: Randomized Trials. The appendix is also worth reading.
 - [Kahoot Quiz](https://play.kahoot.it/v2/?quizId=8fba8529-e672-4116-8a74-23f78df26cb1&hostId=05eb977d-4f8a-440e-9e45-95212b29d103)
 - Problem Set 01 due.
-- [Problem Set 02 assigned](https://github.com/danilofreire/qtm385/blob/main/assignments/02-assignment).
+- [Problem Set 02 assigned](https://github.com/danilofreire/datasci385/blob/main/assignments/02-assignment).
 
 Suggested readings:
 
@@ -215,7 +215,7 @@ Suggested readings:
 
 ## Lecture 05: Statistical Inference for Randomised Experiments (September 15, 2025)
 
-- Lecture slides: [Sampling Distributions, Statistical Inference, and Hypothesis Testing](https://raw.githack.com/danilofreire/qtm385/main/lectures/lecture-05/05-hypothesis-testing.html).
+- Lecture slides: [Sampling Distributions, Statistical Inference, and Hypothesis Testing](https://raw.githack.com/danilofreire/datasci385/main/lectures/lecture-05/05-hypothesis-testing.html).
 - FEDAI: Chapter 03: Sampling Distributions, Statistical Inference, and Hypothesis Testing (up to section 3.5).
 - EGAP Methods Guides: [Hypothesis Testing](https://egap.org/resource/10-things-to-know-about-hypothesis-testing/), [Randomisation Inference](https://egap.org/resource/10-things-to-know-about-randomization-inference/), and [Cluster Randomisation](https://egap.org/resource/10-things-to-know-about-cluster-randomization/). These short guides provide a good overview of the topics we will cover in class, as well as example code in `R`.
 - [Kahoot Quiz](https://play.kahoot.it/v2/?quizId=2ff88efc-8164-446d-a088-bcd4d4fe5313&hostId=05eb977d-4f8a-440e-9e45-95212b29d103).
@@ -230,26 +230,26 @@ Suggested readings:
 
 ### Lecture 06: Texts for discussion (September 17, 2025)
 
-- Lecture slides: [Texts for Discussion](https://raw.githack.com/danilofreire/qtm385/main/lectures/lecture-06/06-discussion.html).
+- Lecture slides: [Texts for Discussion](https://raw.githack.com/danilofreire/datasci385/main/lectures/lecture-06/06-discussion.html).
 - Kalla, J. & D. Broockman. 2016. [Campaign Contributions Facilitate Access to Congressional Officials: A Randomized Field Experiment](https://onlinelibrary.wiley.com/doi/full/10.1111/ajps.12180). American Journal of Political Science, 60(3): 545–558
 - Bertrand, M., & Mullainathan, S. (2004). [Are Emily and Greg More Employable than Lakisha and Jamal? A Field Experiment on Labor Market Discrimination](https://www.aeaweb.org/articles?id=10.1257%2F0002828042002561&ref=exo-insight). American Economic Review, 94(4), 991-1013.
 - Chattopadhyay, R., & Duflo, E. (2004). [Women as Policy Makers: Evidence from a Randomized Policy Experiment in India](https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1468-0262.2004.00539.x). Econometrica, 72(5), 1409-1443. (_if time allows_)
 - Problem Set 02 due.
-- [Problem Set 03 assigned](https://github.com/danilofreire/qtm385/tree/main/assignments/03-assignment).
+- [Problem Set 03 assigned](https://github.com/danilofreire/datasci385/tree/main/assignments/03-assignment).
 
 ## Lecture 07: Blocking, Clustering, and Covariate Adjustment (September 22, 2025)
 
-- Lecture slides: [Blocking and Clustering](https://raw.githack.com/danilofreire/qtm385/main/lectures/lecture-07/07-blocking.html).
+- Lecture slides: [Blocking and Clustering](https://raw.githack.com/danilofreire/datasci385/main/lectures/lecture-07/07-blocking.html).
 - FEDAI: Section 3.6: Sampling Distributions for Experiments That Use Block or Cluster Random Assignment.
 - FEDAI: Chapter 04: Using Covariates in Experimental Design and Analysis.
 
 ## Lecture 08: Blocking and Clustering (Cont.), Statistical Power, and Sample Calculations (September 24, 2025)
 
-- Lecture slides: [Blocking and Clustering (Cont.), Statistical Power, and Sample Calculations](https://raw.githack.com/danilofreire/qtm385/main/lectures/lecture-08/08-power.html).
+- Lecture slides: [Blocking and Clustering (Cont.), Statistical Power, and Sample Calculations](https://raw.githack.com/danilofreire/datasci385/main/lectures/lecture-08/08-power.html).
 - FEDAI Appendix 3.1 on Power
 - [EGAP Methods Guide on Power Calculations](https://egap.org/resource/10-things-to-know-about-statistical-power/).
 - Problem Set 03 due.
-- [Problem Set 04 assigned](https://github.com/danilofreire/qtm385/tree/main/assignments/04-assignment).
+- [Problem Set 04 assigned](https://github.com/danilofreire/datasci385/tree/main/assignments/04-assignment).
 
 Suggested readings:
 
@@ -265,17 +265,17 @@ Suggested readings:
 
 ## Lecture 09: Non-Compliance I (September 29, 2025)
 
-- Lecture slides: [Non-Compliance I](https://raw.githack.com/danilofreire/qtm385/main/lectures/lecture-09/09-non-compliance1.html).
+- Lecture slides: [Non-Compliance I](https://raw.githack.com/danilofreire/datasci385/main/lectures/lecture-09/09-non-compliance1.html).
 - FEDAI: Chapter 05: One-Sided Non-Compliance.
 - [Kahoot Quiz](https://play.kahoot.it/v2/?quizId=a6f1c5fa-f06d-41d1-ab82-f5db73b6d18f&hostId=05eb977d-4f8a-440e-9e45-95212b29d103)
   
 ## Lecture 10: Non-Compliance II (October 1, 2025)
 
-- Lecture slides: [Non-Compliance II](https://raw.githack.com/danilofreire/qtm385/main/lectures/lecture-10/10-non-compliance2.html).
+- Lecture slides: [Non-Compliance II](https://raw.githack.com/danilofreire/datasci385/main/lectures/lecture-10/10-non-compliance2.html).
 - FEDAI: Chapter 06: Two-Sided Non-Compliance.
 - [KaHoot Quiz](https://play.kahoot.it/v2/?quizId=93cf500f-015b-4dd6-9c11-b3142b06f905&hostId=05eb977d-4f8a-440e-9e45-95212b29d103)
 - Problem Set 04 due.
-- [Problem Set 05 assigned](https://github.com/danilofreire/qtm385/tree/main/assignments/05-assignment).
+- [Problem Set 05 assigned](https://github.com/danilofreire/datasci385/tree/main/assignments/05-assignment).
 - Two paragraphs (maximum) summarising an experiment that you wish to develop in this course. At a minimum, your summary should include a research question, why the question is important, and a rough outline of how you plan to answer the question. Please send me an email by Wednesday with this information.
 
 Suggested readings:
@@ -288,7 +288,7 @@ Suggested readings:
 
 ## Lecture 11: Attrition and Missing Outcomes (October 6, 2025)
 
-- Lecture slides: [Attrition](https://raw.githack.com/danilofreire/qtm385/main/lectures/lecture-11/11-attrition.html).
+- Lecture slides: [Attrition](https://raw.githack.com/danilofreire/datasci385/main/lectures/lecture-11/11-attrition.html).
 - FEDAI: Chapter 07: Attrition.
 - Lo, A., Renshon, J., & Bassan-Nygate, L. (2024). [A Practical Guide to Dealing with Attrition in Political Science Experiments](https://www.cambridge.org/core/journals/journal-of-experimental-political-science/article/practical-guide-to-dealing-with-attrition-in-political-science-experiments/0E2B475CE9B082EE5AF8680E6BB1E985). Journal of Experimental Political Science, 11(2), 147-161. 
 - [Kahoot quiz](https://play.kahoot.it/v2/?quizId=64c27dc8-89cb-4d27-8062-11054deb7849&hostId=05eb977d-4f8a-440e-9e45-95212b29d103)
@@ -302,12 +302,12 @@ Suggested readings:
 
 ## Lecture 12: Ethical Considerations in Experimental Research (October 8, 2025)
 
-- Lecture slides: [Ethical Considerations in Experimental Research](https://raw.githack.com/danilofreire/qtm385/main/lectures/lecture-12/12-ethics.html).
+- Lecture slides: [Ethical Considerations in Experimental Research](https://raw.githack.com/danilofreire/datasci385/main/lectures/lecture-12/12-ethics.html).
 - Humphreys, M. (2015). [Reflections on the Ethics of Social Experimentation](https://doi.org/10.1515/jgd-2014-0016). Journal of Globalization and Development, 6(1), 87-112.
 - Cronin-Furman, K., & Lake, M. (2018). [Ethics Abroad: Fieldwork in Fragile and Violent Contexts](https://doi.org/10.1017/S1049096518000379). PS: Political Science & Politics, 51(3), 607-614.
 - Poverty Action Lab (2022). [Ethical Conduct of Randomized Evaluations](https://www.povertyactionlab.org/resource/ethical-conduct-randomized-evaluations). J-PAL.
 - Problem Set 05 due.
-- [Problem Set 06 assigned](https://github.com/danilofreire/qtm385/tree/main/assignments/06-assignment)
+- [Problem Set 06 assigned](https://github.com/danilofreire/datasci385/tree/main/assignments/06-assignment)
 
 Suggested readings:
 
@@ -316,7 +316,7 @@ Suggested readings:
 
 ## Lecture 13: Introduction to Quarto and DeclareDesign (October 15, 2025)
 
-- Lecture slides: [Introduction to Quarto and DeclareDesign](https://raw.githack.com/danilofreire/qtm385/main/lectures/lecture-13/13-quarto.html).
+- Lecture slides: [Introduction to Quarto and DeclareDesign](https://raw.githack.com/danilofreire/datasci385/main/lectures/lecture-13/13-quarto.html).
 - Quarto official website: <https://quarto.org/>.
 - DeclareDesign official website: <https://declaredesign.org/>.
 - Problem Set 06 due.
@@ -334,7 +334,7 @@ Suggested readings:
 
 ## Lecture 14: Writing Pre-Analysis Plans (October 20, 2025)
 
-- Lecture slides: [How to Write a Pre-Analysis Plan](https://raw.githack.com/danilofreire/qtm385/main/lectures/lecture-14/14-pap.html).
+- Lecture slides: [How to Write a Pre-Analysis Plan](https://raw.githack.com/danilofreire/datasci385/main/lectures/lecture-14/14-pap.html).
 - EGAP: [Pre-Analysis Plans](https://egap.org/resource/10-things-to-know-about-pre-analysis-plans/).
 - Olken, B. A. (2015). [Promises and perils of pre-analysis plans](https://www.aeaweb.org/articles?id=10.1257/jep.29.3.61). Journal of Economic Perspectives, 29(3), 61-80.
 - [Kahoot Quiz](https://play.kahoot.it/v2/?quizId=da50f0e5-b3a6-450e-ad99-95ed2be461d3&hostId=05eb977d-4f8a-440e-9e45-95212b29d103)
@@ -348,10 +348,10 @@ Suggested readings:
 
 ## Lecture 15: When Experiments are Not Possible (October 22, 2025)
 
-- Lecture slides: [Natural and Quasi-Experiments](https://raw.githack.com/danilofreire/qtm385/main/lectures/lecture-15/15-quasi.html).
+- Lecture slides: [Natural and Quasi-Experiments](https://raw.githack.com/danilofreire/datasci385/main/lectures/lecture-15/15-quasi.html).
 - [Kahoot Quiz](https://play.kahoot.it/v2/?quizId=438409d4-2db5-4641-b210-1f9aede6db5b&hostId=05eb977d-4f8a-440e-9e45-95212b29d103).
 - Dunning, T. (2012). [Natural Experiments in the Social Sciences: A Design-Based Approach](https://www.cambridge.org/core/books/natural-experiments-in-the-social-sciences/96A64CBDC2A2952DC1C68AF77DE675AF). Cambridge University Press. Chapter 01: Introduction.
-- [Problem Set 07 assigned](https://github.com/danilofreire/qtm385/tree/main/assignments/07-assignment).
+- [Problem Set 07 assigned](https://github.com/danilofreire/datasci385/tree/main/assignments/07-assignment).
 
 Suggested readings:
 
@@ -362,7 +362,7 @@ Suggested readings:
 
 ## Lecture 16: Interference in Experiments (October 27, 2025)
 
-- Lecture slides: [Interference in Experiments](https://raw.githack.com/danilofreire/qtm385/main/lectures/lecture-16/16-interference.html).
+- Lecture slides: [Interference in Experiments](https://raw.githack.com/danilofreire/datasci385/main/lectures/lecture-16/16-interference.html).
 - FEDAI: Chapter 08: Interference between Experimental Units.
 - EGAP: [Spillovers](https://egap.org/resource/10-things-to-know-about-spillovers/).
 - [Kahoot Quiz](https://play.kahoot.it/v2/?quizId=aa1d54d4-1501-4fee-9f91-a21c1bbf962f&hostId=05eb977d-4f8a-440e-9e45-95212b29d103).
@@ -376,17 +376,17 @@ Suggested readings:
 
 ## Lecture 17: Texts for Discussion (October 29, 2025)
 
-- Lecture slides: [Texts for Discussion](https://raw.githack.com/danilofreire/qtm385/main/lectures/lecture-17/17-discussion.html).
+- Lecture slides: [Texts for Discussion](https://raw.githack.com/danilofreire/datasci385/main/lectures/lecture-17/17-discussion.html).
 - [Kahoot Quiz](https://play.kahoot.it/v2/?quizId=008403a1-cea0-48f8-b9fb-3c0b60214da9&hostId=05eb977d-4f8a-440e-9e45-95212b29d103).
 - Centola, D. (2010). [The spread of behavior in an online social network experiment](https://www.science.org/doi/abs/10.1126/science.1185231). Science, 329(5996), 1194-1197.
 - Paluck, B. L., Shepherd, H., and Aronow, P. 2016. [Changing climates of conflict: A social network experiment in 56 schools.](https://www.pnas.org/doi/abs/10.1073/pnas.1514483113) Proceedings of the National Academy of Sciences, 113(3): 566-571
 - Gerber, A. S., & Green, D. P. (2000). [The effects of canvassing, telephone calls, and direct mail on voter turnout: A field experiment](https://doi.org/10.2307/2585837). American Political Science Review, 94(3), 653-663.
 - Problem Set 07 due.
-- [Problem Set 08 assigned](https://github.com/danilofreire/qtm385/tree/main/assignments/08-assignment).
+- [Problem Set 08 assigned](https://github.com/danilofreire/datasci385/tree/main/assignments/08-assignment).
 
 ## Lecture 18: Heterogeneous Treatment Effects (November 3, 2025)
 
-- Lecture slides: [Heterogeneous Treatment Effects](https://raw.githack.com/danilofreire/qtm385/main/lectures/lecture-18/18-hte.html).
+- Lecture slides: [Heterogeneous Treatment Effects](https://raw.githack.com/danilofreire/datasci385/main/lectures/lecture-18/18-hte.html).
 - FEDAI: Chapter 09: Heterogeneous Treatment Effects.
 
 Suggested readings:
@@ -401,16 +401,16 @@ Suggested readings:
 
 ## Lecture 19: Texts for Discussion (November 5, 2025)
 
-- Lecture slides: [Texts for Discussion](https://raw.githack.com/danilofreire/qtm385/main/lectures/lecture-19/19-discussion.html).
+- Lecture slides: [Texts for Discussion](https://raw.githack.com/danilofreire/datasci385/main/lectures/lecture-19/19-discussion.html).
 - Munshi, K. (2003). [Networks in the modern economy: Mexican migrants in the US labor market.](https://academic.oup.com/qje/article-abstract/118/2/549/1899587?login=false) The Quarterly Journal of Economics, 118(2), 549-599.
 - Miguel, E., & Kremer, M. (2004). [Worms: identifying impacts on education and health in the presence of treatment externalities.](https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1468-0262.2004.00481.x) Econometrica, 72(1), 159-217.
 - Pre-Analysis Plan due.
 - Problem Set 08 due.
-- [Problem Set 09 assigned.](https://github.com/danilofreire/qtm385/tree/main/assignments/09-assignment).
+- [Problem Set 09 assigned.](https://github.com/danilofreire/datasci385/tree/main/assignments/09-assignment).
 
 ## Lecture 20: Mediation Analysis (November 10, 2025)
 
-- Lecture slides: [Mediation Analysis](https://raw.githack.com/danilofreire/qtm385/main/lectures/lecture-20/20-mediation.html).
+- Lecture slides: [Mediation Analysis](https://raw.githack.com/danilofreire/datasci385/main/lectures/lecture-20/20-mediation.html).
 - FEDAI: Chapter 10: Mediation.
 - [KaHoot Quiz](https://play.kahoot.it/v2/?quizId=e02f1d98-9af7-449f-8a32-dddb6cc94575&hostId=05eb977d-4f8a-440e-9e45-95212b29d103)
 
@@ -423,11 +423,11 @@ Suggested readings:
 
 ## Lecture 21: Survey Experiments (November 12, 2025)
 
-- Lecture slides: [Survey Experiments](https://raw.githack.com/danilofreire/qtm385/main/lectures/lecture-21/21-survey.html).
+- Lecture slides: [Survey Experiments](https://raw.githack.com/danilofreire/datasci385/main/lectures/lecture-21/21-survey.html).
 - EGAP: [Survey Experiments](https://egap.org/resource/10-things-to-know-about-survey-experiments/).
 - Stantcheva, S. (2023). [How to run surveys: A guide to creating your own identifying variation and revealing the invisible](https://www.annualreviews.org/content/journals/10.1146/annurev-economics-091622-010157). Annual Review of Economics, 15(1), 205-234.
 - Problem Set 09 due.
-- [Problem Set 10 assigned.](https://github.com/danilofreire/qtm385/tree/main/assignments/10-assignment)
+- [Problem Set 10 assigned.](https://github.com/danilofreire/datasci385/tree/main/assignments/10-assignment)
 
 Suggested readings:
 
@@ -438,7 +438,7 @@ Suggested readings:
 
 ## Lecture 22: Survey Methods for Sensitive Topics (November 17, 2025)
 
-- Lecture slides: [Survey Methods for Sensitive Topics](https://raw.githack.com/danilofreire/qtm385/main/lectures/lecture-22/22-survey2.html).
+- Lecture slides: [Survey Methods for Sensitive Topics](https://raw.githack.com/danilofreire/datasci385/main/lectures/lecture-22/22-survey2.html).
 - Bursztyn, L., Haaland, I. K., Röver, N., & Roth, C. (2025). [The Social Desirability Atlas](https://www.nber.org/papers/w33920). NBER Working Paper No. 33920.
 
 Suggested readings:
@@ -450,7 +450,7 @@ Suggested readings:
 
 ## Lecture 23: Texts for Discussion (Related to Survey Experiments) (November 19, 2025)
 
-- Lecture slides: [Texts for Discussion](https://raw.githack.com/danilofreire/qtm385/main/lectures/lecture-23/23-discussion.html).
+- Lecture slides: [Texts for Discussion](https://raw.githack.com/danilofreire/datasci385/main/lectures/lecture-23/23-discussion.html).
 - Druckman, J. N., Gilli, M., Klar, S., & Robison, J. (2015). [Measuring drug and alcohol use among college student‐athletes.](https://onlinelibrary.wiley.com/doi/abs/10.1111/ssqu.12135) Social Science Quarterly, 96(2), 369-380.
 - Blair, G., Imai, K., & Lyall, J. (2014). [Comparing and Combining List and Endorsement Experiments: Evidence from Afghanistan.](https://onlinelibrary.wiley.com/doi/abs/10.1111/ajps.12086) American Journal of Political Science, Vol. 58, No. 4 (October), pp. 1043-1063. 
 - Rosenfeld, B, Imai, K., & Shapiro, J. (2016). [An Empirical Validation Study of Popular Survey Methodologies for Sensitive Questions.](https://onlinelibrary.wiley.com/doi/abs/10.1111/ajps.12205) American Journal of Political Science, 60(3), 783-802.
@@ -459,7 +459,7 @@ Suggested readings:
 
 ## Lecture 24: Meta-Analysis and Integration of Research Findings (November 24, 2025)
 
-- Lecture slides: [Meta-Analysis and Integration of Research Findings.](https://raw.githack.com/danilofreire/qtm385/main/lectures/lecture-24/24-meta-analysis.html)
+- Lecture slides: [Meta-Analysis and Integration of Research Findings.](https://raw.githack.com/danilofreire/datasci385/main/lectures/lecture-24/24-meta-analysis.html)
 - FEDAI: Chapter 11: Integration of Research Findings.
 
 Suggested readings:
@@ -471,7 +471,7 @@ Suggested readings:
 
 ## Lecture 25: Course Revision (December 1, 2025)
 
-- Lecture slides: [Course Revision](https://raw.githack.com/danilofreire/qtm385/main/lectures/lecture-25/25-revision.html).
+- Lecture slides: [Course Revision](https://raw.githack.com/danilofreire/datasci385/main/lectures/lecture-25/25-revision.html).
 - Final report due.
 
 ## Lecture 26: Presentations (December 3, 2025)

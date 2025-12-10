@@ -1,5 +1,5 @@
 ---
-title: QTM 385 - Experimental Methods
+title: DATASCI 385 - Experimental Methods
 subtitle: Lecture 15 - Natural and Quasi-Experiments
 author:
   - name: Danilo Freire
@@ -9,7 +9,7 @@ format:
   clean-revealjs:
     self-contained: true
     code-overflow: wrap
-    footer: "[Quasi-Experiments](https://raw.githack.com/danilofreire/qtm385/main/lectures/lecture-15/15-quasi.html)"
+    footer: "[Quasi-Experiments](https://raw.githack.com/danilofreire/datasci385/main/lectures/lecture-15/15-quasi.html)"
 transition: slide
 transition-speed: default
 scrollable: true
