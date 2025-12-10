@@ -2,7 +2,7 @@
 title: "Quarto Guide"
 ---
 
-Welcome to the Quarto guide for QTM 385! This guide provides an introduction to [Quarto](https://quarto.org), a document authoring system that supports Markdown, LaTeX, R, Python, and more. Quarto is designed to help you create reproducible research documents and presentations, making it a great tool for academic writing and data analysis.
+Welcome to the Quarto guide for [DATASCI 385](https://github.com/danilofreire/datasci385)! This guide provides an introduction to [Quarto](https://quarto.org), a document authoring system that supports Markdown, LaTeX, R, Python, and more. Quarto is designed to help you create reproducible research documents and presentations, making it a great tool for academic writing and data analysis.
 
 Quarto is very versatile and easy to use. If you are familiar with [Jupyter Notebooks](https://jupyter.org/), you will be right at home with Quarto. [R Markdown](https://rmarkdown.rstudio.com/) users will find Quarto even easier, as it is only a more powerful version of R Markdown, which supports multiple programming languages (such as Python) and output formats.
 
@@ -43,7 +43,7 @@ For more detailed installation instructions, refer to the [Quarto documentation]
 
 Quarto uses the `.qmd` file extension for Quarto Markdown files. These files can be converted into various output formats, such as HTML, PDF, Word documents, slides, and even websites. This website, the syllabus, and all class slides were created using Quarto!
 
-Here you will not need to use Quarto for anything other than your pre-analysis plans (and slides if you are feeling adventurous). So you can simply use the [PAP Template](https://github.com/danilofreire/qtm385/pap-template) to create your PAPs. But you will need to install a few things to make sure you can compile your PAPs into PDFs.
+Here you will not need to use Quarto for anything other than your pre-analysis plans (and slides if you are feeling adventurous). So you can simply use the [PAP Template](https://github.com/danilofreire/datasci385/pap-template) to create your PAPs. But you will need to install a few things to make sure you can compile your PAPs into PDFs.
 
 First, you need to install [Pandoc](https://pandoc.org/), a universal document converter that Quarto uses to generate output formats. Pandoc is available for Windows, macOS, and Linux. You can download the installer from the [Pandoc website](https://pandoc.org/installing.html) or install it using Homebrew on macOS:
 

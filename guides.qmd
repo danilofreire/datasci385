@@ -2,7 +2,7 @@
 title: " Course Guides"
 ---
 
-Below you will find a list of available guides for QTM 385. These guides are designed to help you prepare your pre-analysis plans and use [Quarto](https://quarto.org/) to create reproducible research documents and presentations. If you have any questions or suggestions for new guides, please feel free to reach out to the course instructor.
+Below you will find a list of available guides for [DATASCI 385](https://github.com/danilofreire/datasci385). These guides are designed to help you prepare your pre-analysis plans and use [Quarto](https://quarto.org/) to create reproducible research documents and presentations. If you have any questions or suggestions for new guides, please feel free to reach out to the course instructor.
 
 ## Available Guides
 
@@ -37,8 +37,8 @@ Below you will find a list of available guides for QTM 385. These guides are des
 
 ## Feedback and Questions
 
-For any questions or issues regarding these tutorials, please [open a GitHub issue](https://github.com/danilofreire/qtm385/issues), [submit a pull request](https://github.com/danilofreire/qtm385/pulls), or [create a discussion post](https://github.com/danilofreire/qtm385/discussions). 
+For any questions or issues regarding these tutorials, please [open a GitHub issue](https://github.com/danilofreire/datasci385/issues), [submit a pull request](https://github.com/danilofreire/datasci385/pulls), or [create a discussion post](https://github.com/danilofreire/datasci385/discussions). 
 
-Please do not forget that, in addition to the guides, the [course syllabus](https://danilofreire.github.io/qtm385/syllabus.html#course-outline-and-suggested-readings) also contains a list of recommended weekly readings and additional resources.
+Please do not forget that, in addition to the guides, the [course syllabus](https://danilofreire.github.io/datasci385/syllabus.html#course-outline-and-suggested-readings) also contains a list of recommended weekly readings and additional resources.
 
 I hope you like the guides and find them useful! 

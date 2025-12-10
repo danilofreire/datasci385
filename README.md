@@ -1,6 +1,6 @@
-# QTM 385 - Experimental Methods
+# DATASCI 385 - Experimental Methods
 
-This branch hosts the website for the course [QTM 385 - Experimental Methods](http://danilofreire.github.io/qtm385) at [Emory University](http://www.emory.edu). The course provides an introduction to randomised controlled trials and causal inference to undergraduate students.
+This branch hosts the website for the course [QTM 385 - Experimental Methods](http://danilofreire.github.io/datasci385) at [Emory University](http://www.emory.edu). The course provides an introduction to randomised controlled trials and causal inference to undergraduate students.
 
 ## Building the website
 
@@ -12,7 +12,7 @@ I then built the website with `quarto render` and pushed the changes to the `gh-
 
 For further information on how to build a website with Quarto, please refer to <https://quarto.org/docs/websites/>.
 
-If you have any questions, please feel free to [open an issue](https://github.com/danilofreire/qtm385/issues) or [create a pull request](https://github.com/danilofreire/qtm385/pulls).
+If you have any questions, please feel free to [open an issue](https://github.com/danilofreire/datasci385/issues) or [create a pull request](https://github.com/danilofreire/datasci385/pulls).
 
 ## License
 
