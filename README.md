@@ -35,6 +35,33 @@ This repository is organised as follows:
 
 The course website is available at <https://danilofreire.github.io/datasci385/>.
 
+## Downloading the Repository
+
+The quickest way to download the course materials is a **shallow clone**, which fetches only the current files without the full history of past changes. This keeps the download small and works well on slow connections:
+
+```bash
+git clone --depth 1 https://github.com/danilofreire/datasci385.git
+```
+
+If you would like the complete history (for example, to see how the materials evolved over the semester), omit the flag:
+
+```bash
+git clone https://github.com/danilofreire/datasci385.git
+```
+
+The full clone takes longer and uses more disk space, but it is not required for the course.
+
+### Updating Your Copy
+
+When new lectures or fixes are added, pull the latest changes from inside the repository folder:
+
+```bash
+cd datasci385
+git pull
+```
+
+This works the same way on shallow and full clones.
+
 ## Getting Help
 
 If you encounter any issues with the course materials or have questions about the content, please:
