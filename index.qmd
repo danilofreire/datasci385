@@ -1,5 +1,8 @@
 ---
 title: "DATASCI 385 - Experimental Methods"
+subtitle: "Emory University, Spring 2026"
+title-block-banner: "#7B2D26"
+title-block-banner-color: "white"
 ---
 
 Welcome to [DATASCI 385](https://github.com/danilofreire/datasci385)! Experimental methods are gaining popularity in social and biological sciences, providing a more reliable approach to evidence-based research. This course introduces the essentials of experimental design, focusing on testing causal hypotheses. You will learn about causal inference, blocking, covariate adjustment, non-compliance, attrition, heterogeneous treatment effects, reproducible presentation, and research ethics. Through lectures and hands-on sessions, you will design and implement experiments, critically evaluate existing research, and improve your writing and presentation skills by creating your own experimental research project.
@@ -40,11 +43,11 @@ If you encounter any issues with the course materials or have questions about th
 
 ## Contributing to the Repository
 
-While this repository is primarily maintained by the course instructor, everyone is welcome to contribute. Please feel free to suggest improvements or report issues by [opening a GitHub issue](https://github.com/danilofreire/qtm350/issues), [submitting a pull request](https://github.com/danilofreire/qtm350/pulls), [creating a discussion post](https://github.com/danilofreire/qtm350/discussions), or [contacting the instructor directly](mailto:danilo.freire@emory.edu).
+While this repository is primarily maintained by the course instructor, everyone is welcome to contribute. Please feel free to suggest improvements or report issues by [opening a GitHub issue](https://github.com/danilofreire/datasci385/issues), [submitting a pull request](https://github.com/danilofreire/datasci385/pulls), [creating a discussion post](https://github.com/danilofreire/datasci385/discussions), or [contacting the instructor directly](mailto:danilo.freire@emory.edu).
 
 ## License
 
-This repository is licensed under the [MIT License](https://github.com/danilofreire/qtm350/blob/main/LICENSE.md). You are free to use, modify, and distribute the materials as needed, with appropriate attribution to the original source.
+This repository is licensed under the [MIT License](https://github.com/danilofreire/datasci385/blob/main/LICENSE.md). You are free to use, modify, and distribute the materials as needed, with appropriate attribution to the original source.
 
 -----
 
