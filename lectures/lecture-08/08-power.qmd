@@ -9,7 +9,7 @@ format:
   clean-revealjs:
     self-contained: true
     code-overflow: wrap
-    footer: "[Power](https://raw.githack.com/danilofreire/datasci385/main/lectures/lecture-08/08-power.html)"
+    footer: "[Power](https://danilofreire.github.io/datasci385/lectures/lecture-08/08-power.html)"
 transition: slide
 transition-speed: default
 scrollable: true

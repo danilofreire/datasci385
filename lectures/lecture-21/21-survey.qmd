@@ -9,7 +9,7 @@ format:
   clean-revealjs:
     self-contained: true
     code-overflow: wrap
-    footer: "[Survey Experiments](https://raw.githack.com/danilofreire/datasci385/main/lectures/lecture-21/21-survey.html)"
+    footer: "[Survey Experiments](https://danilofreire.github.io/datasci385/lectures/lecture-21/21-survey.html)"
 transition: slide
 transition-speed: default
 scrollable: true

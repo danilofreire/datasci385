@@ -9,7 +9,7 @@ format:
   clean-revealjs:
     self-contained: true
     code-overflow: wrap
-    footer: "[Blocking and Clustering](https://raw.githack.com/danilofreire/datasci385/main/lectures/lecture-07/07-blocking.html)"
+    footer: "[Blocking and Clustering](https://danilofreire.github.io/datasci385/lectures/lecture-07/07-blocking.html)"
 transition: slide
 transition-speed: default
 scrollable: true

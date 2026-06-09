@@ -9,7 +9,7 @@ format:
   clean-revealjs:
     self-contained: true
     code-overflow: wrap
-    footer: "[Texts for Discussion](https://raw.githack.com/danilofreire/datasci385/main/lectures/lecture-19/19-discussion.html)"
+    footer: "[Texts for Discussion](https://danilofreire.github.io/datasci385/lectures/lecture-19/19-discussion.html)"
 transition: slide
 transition-speed: default
 scrollable: true

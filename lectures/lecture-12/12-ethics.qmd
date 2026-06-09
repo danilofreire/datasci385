@@ -9,7 +9,7 @@ format:
   clean-revealjs:
     self-contained: true
     code-overflow: wrap
-    footer: "[Ethics](https://raw.githack.com/danilofreire/datasci385/main/lectures/lecture-12/12-ethics.html)"
+    footer: "[Ethics](https://danilofreire.github.io/datasci385/lectures/lecture-12/12-ethics.html)"
 transition: slide
 transition-speed: default
 scrollable: true

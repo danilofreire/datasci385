@@ -9,7 +9,7 @@ format:
   clean-revealjs:
     self-contained: true
     code-overflow: wrap
-    footer: "[Quasi-Experiments](https://raw.githack.com/danilofreire/datasci385/main/lectures/lecture-15/15-quasi.html)"
+    footer: "[Quasi-Experiments](https://danilofreire.github.io/datasci385/lectures/lecture-15/15-quasi.html)"
 transition: slide
 transition-speed: default
 scrollable: true

@@ -10,7 +10,7 @@ format:
   clean-revealjs:
     self-contained: true
     code-overflow: wrap
-    footer: "[Course Revision](https://raw.githack.com/danilofreire/datasci385/main/lectures/lecture-25/25-revision.html)"
+    footer: "[Course Revision](https://danilofreire.github.io/datasci385/lectures/lecture-25/25-revision.html)"
 transition: slide
 transition-speed: default
 scrollable: true

@@ -10,7 +10,7 @@ format:
   clean-revealjs:
     self-contained: true
     code-overflow: wrap
-    footer: "[Research Design](https://raw.githack.com/danilofreire/datasci385/main/lectures/lecture-02/02-design.html/)"
+    footer: "[Research Design](https://danilofreire.github.io/datasci385/lectures/lecture-02/02-design.html/)"
 bibliography: references.bib
 transition: slide
 transition-speed: default

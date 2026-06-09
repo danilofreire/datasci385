@@ -9,7 +9,7 @@ format:
   clean-revealjs:
     self-contained: true
     code-overflow: wrap
-    footer: "[Interference](https://raw.githack.com/danilofreire/datasci385/main/lectures/lecture-16/16-interference.html)"
+    footer: "[Interference](https://danilofreire.github.io/datasci385/lectures/lecture-16/16-interference.html)"
 transition: slide
 transition-speed: default
 scrollable: true
