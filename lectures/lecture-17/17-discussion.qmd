@@ -20,9 +20,9 @@ editor:
   render-on-save: true
 ---
 
-# Olá! How are you doing? 😊 {background-color="#2d4563"}
+# Olá! How are you doing? 😊 {background-color="#1B3A6B"}
 
-# Brief recap 📚 {background-color="#2d4563"}
+# Brief recap 📚 {background-color="#1B3A6B"}
 
 ## Brief recap 📚
 
@@ -47,7 +47,7 @@ Source: [Forbes (2022)](https://www.forbes.com/councils/forbesbusinesscouncil/20
 :::
 :::
 
-# Today's plan 📅 {background-color="#2d4563"}
+# Today's plan 📅 {background-color="#1B3A6B"}
 
 ## Interference and spillovers
 
@@ -70,7 +70,7 @@ Source: [Centola (2010)](https://www.science.org/doi/abs/10.1126/science.1185231
 :::
 :::
 
-# Discussion 💬 {background-color="#2d4563"}
+# Discussion 💬 {background-color="#1B3A6B"}
 
 ## Centola (2010)
 ### The Spread of Behavior in an Online Social Network Experiment
@@ -512,7 +512,7 @@ Source: [Gerber and Green (2000)](https://doi.org/10.2307/2585837)
 :::
 :::
 
-# Conclusion {background-color="#2d4563"}
+# Conclusion {background-color="#1B3A6B"}
 
 ## Conclusion
 
@@ -540,6 +540,6 @@ Source: [Gerber and Green (2000)](https://doi.org/10.2307/2585837)
 :::
 :::
 
-# And that's all for today! 🎉 {background-color="#2d4563"}
+# And that's all for today! 🎉 {background-color="#1B3A6B"}
 
-# See you next time! 😉 {background-color="#2d4563"}
+# See you next time! 😉 {background-color="#1B3A6B"}

@@ -20,9 +20,9 @@ editor:
   render-on-save: true
 ---
 
-# Hi, there! <br> Hope all is well! 😉 {background-color="#2d4563"}
+# Hi, there! <br> Hope all is well! 😉 {background-color="#1B3A6B"}
 
-# Brief recap 📚 {background-color="#2d4563"}
+# Brief recap 📚 {background-color="#1B3A6B"}
 
 ## Last class
 
@@ -48,7 +48,7 @@ editor:
 :::
 :::
 
-# Today's plan 📋 {background-color="#2d4563"}
+# Today's plan 📋 {background-color="#1B3A6B"}
 
 ## Two-sided non-compliance
 
@@ -78,7 +78,7 @@ Source: [Alves (2022)](https://matheusfacure.github.io/python-causality-handbook
 :::
 :::
 
-# Two-sided non-compliance 🤔 {background-color="#2d4563"}
+# Two-sided non-compliance 🤔 {background-color="#1B3A6B"}
 
 ## Non-compliance: You already know it's a problem
 ### Now it will get worse 😂
@@ -93,7 +93,7 @@ Source: [Alves (2022)](https://matheusfacure.github.io/python-causality-handbook
 - This can make it look like the treatment is [less effective than it actually is]{.alert}. We "dilute" the treatment effect 🤓
 :::
 
-# Compliance types 📊 {background-color="#2d4563"}
+# Compliance types 📊 {background-color="#1B3A6B"}
 
 ## Four types of compliance
 
@@ -209,7 +209,7 @@ Source: [Alves (2022)](https://matheusfacure.github.io/python-causality-handbook
 - We can estimate these proportions with a trick...
 :::
 
-# Monotonicity 📏 {background-color="#2d4563"}
+# Monotonicity 📏 {background-color="#1B3A6B"}
 
 ## Monotonicity assumption
 ### No defiers allowed! 😂
@@ -247,7 +247,7 @@ Source: [Alves (2022)](https://matheusfacure.github.io/python-causality-handbook
     - Alternatively, $\hat{\pi}_{C} = 1 - \hat{\pi}_{AT} - \hat{\pi}_{NT} = 1 - 0.16 - 0.63 = 0.21$
 :::
 
-# Now the easy part, CACE estimation 🤓 {background-color="#2d4563"}
+# Now the easy part, CACE estimation 🤓 {background-color="#1B3A6B"}
 
 ## Estimating CACE
 ### Now we know what to do! 😉
@@ -260,7 +260,7 @@ Source: [Alves (2022)](https://matheusfacure.github.io/python-causality-handbook
 - In two-sided non-compliance, we also have always-takers in the control group, who receive the treatment regardless of assignment. We have to account for them too
 :::
 
-# Back to our example 📊 {background-color="#2d4563"}
+# Back to our example 📊 {background-color="#1B3A6B"}
 
 ## Estimating CACE in the debate study
 ### Let's see how all this works in practice! 😉
@@ -480,7 +480,7 @@ ITT/ITT_D
 :::
 :::
 
-# Now you're experts in non-compliance 😎 {background-color="#2d4563"}
+# Now you're experts in non-compliance 😎 {background-color="#1B3A6B"}
 
 ## Discussing the assumptions in this model
 ### And how to deal with them in practice (in your own experiments!)
@@ -531,7 +531,7 @@ ITT/ITT_D
 :::
 :::
 
-# How would you improve the experiment? 🤓 {background-color="#2d4563"}
+# How would you improve the experiment? 🤓 {background-color="#1B3A6B"}
 
 ## Let's discuss the debate study for a bit
 
@@ -552,6 +552,6 @@ ITT/ITT_D
 - Thanks to all of you who have already done so! You're awesome! 🥳
 :::
 
-# Thank you! 🙏 {background-color="#2d4563"}
+# Thank you! 🙏 {background-color="#1B3A6B"}
 
-# See you next time! 😉 {background-color="#2d4563"}
+# See you next time! 😉 {background-color="#1B3A6B"}

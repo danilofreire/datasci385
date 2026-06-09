@@ -20,9 +20,9 @@ editor:
   render-on-save: true
 ---
 
-# Hi, there! <br> Hope all is well! 😉 {background-color="#2d4563"}
+# Hi, there! <br> Hope all is well! 😉 {background-color="#1B3A6B"}
 
-# Group work 👥 {background-color="#2d4563"}
+# Group work 👥 {background-color="#1B3A6B"}
 
 ## Group work 
 ### This week's task
@@ -33,7 +33,7 @@ editor:
   - Two paragraphs (maximum) summarising an experiment that you wish to develop in this course. At a minimum, your summary should include a research question, why the question is important, and a rough outline of how you plan to answer the question.
 :::
 
-# Brief recap 📚 {background-color="#2d4563"}
+# Brief recap 📚 {background-color="#1B3A6B"}
 
 ## Last class
 
@@ -63,7 +63,7 @@ editor:
 :::
 :::
 
-# Today's plan 📋 {background-color="#2d4563"}
+# Today's plan 📋 {background-color="#1B3A6B"}
 
 ## One-sided non-compliance
 
@@ -89,7 +89,7 @@ Source: [Chris Said (2021)](https://chris-said.io/2021/03/28/youre-measuring-wro
 :::
 :::
 
-# Non-compliance 🤔 {background-color="#2d4563"}
+# Non-compliance 🤔 {background-color="#1B3A6B"}
 
 ## Non-compliance: A big problem!
 
@@ -208,7 +208,7 @@ Source: [Spotify R&D Engineering (2023)](https://engineering.atspotify.com/2023/
 - But first, some definitions and concepts... 🤓
 :::
 
-# New definitions and assumptions 🤓 {background-color="#2d4563"}
+# New definitions and assumptions 🤓 {background-color="#1B3A6B"}
 
 ## Full compliance
 
@@ -336,7 +336,7 @@ $$ITT_{Y} = E[ITT_{Y}] = E[Y_i(z = 1, d(1))] - E[Y_i(z = 0, d(0))]$$
 - This assumption is also [strong]{.alert}, and the main reason why we have [placebos]{.alert} in science!
 :::
 
-# CACE and IVs 🤓 {background-color="#2d4563"}
+# CACE and IVs 🤓 {background-color="#1B3A6B"}
 
 ## Complier average causal effect (CACE)
 ### The effect of the treatment on the compliers
@@ -511,7 +511,7 @@ cace_fit2
 ```
 :::
 
-# Designs that anticipate non-compliance 🤓 {background-color="#2d4563"}
+# Designs that anticipate non-compliance 🤓 {background-color="#1B3A6B"}
 
 ## Large-$n$ designs
 
@@ -560,7 +560,7 @@ cace_fit2
 - While not perfect, this strategy at least provides a [range of possible values]{.alert} for the CACE and allows us to [quantify the uncertainty]{.alert} in our estimates
 :::
 
-# Conclusion 📚 {background-color="#2d4563"}
+# Conclusion 📚 {background-color="#1B3A6B"}
 
 ## Conclusion
 
@@ -574,6 +574,6 @@ cace_fit2
 - ...and we will see how to deal with it! 😊
 :::
 
-# ...and that's all for today! 🎉 {background-color="#2d4563"}
+# ...and that's all for today! 🎉 {background-color="#1B3A6B"}
 
-# Thank you! 🙏 {background-color="#2d4563"}
+# Thank you! 🙏 {background-color="#1B3A6B"}

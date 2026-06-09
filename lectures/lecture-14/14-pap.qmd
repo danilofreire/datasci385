@@ -20,9 +20,9 @@ editor:
   render-on-save: true
 ---
 
-# Hello, everyone! 😊 {background-color="#2d4563"}
+# Hello, everyone! 😊 {background-color="#1B3A6B"}
 
-# Brief recap 📚 {background-color="#2d4563"}
+# Brief recap 📚 {background-color="#1B3A6B"}
 
 ## Last class, we discussed...
 
@@ -49,7 +49,7 @@ editor:
 :::
 :::
 
-# Today's plan 📅 {background-color="#2d4563"}
+# Today's plan 📅 {background-color="#1B3A6B"}
 
 ## A closer look at pre-analysis plans
 ### Writing and executing PAPs
@@ -76,7 +76,7 @@ Source: [Open Science Framework](https://files.osf.io/v1/resources/e7ghj/provide
 :::
 :::
 
-# The brief history of PAPs 📜 {background-color="#2d4563"}
+# The brief history of PAPs 📜 {background-color="#1B3A6B"}
 
 ## Why do we bother with PAPs?
 
@@ -184,7 +184,7 @@ Source: [Ofosu and Posner (2021)](https://www.cambridge.org/core/journals/perspe
 Source: [Lin et al. (2016)](https://alexandercoppock.com/Green-Lab-SOP/Green_Lab_SOP.pdf)
 :::
 
-# Components of a PAP 📝 {background-color="#2d4563"}
+# Components of a PAP 📝 {background-color="#1B3A6B"}
 
 ## What should a PAP contain?
 
@@ -524,7 +524,7 @@ Source: [Lin et al. (2016)](https://alexandercoppock.com/Green-Lab-SOP/Green_Lab
 +-------------------+--------------------------------------------------+
 :::
 
-# PAP examples you can use 📝 {background-color="#2d4563"}
+# PAP examples you can use 📝 {background-color="#1B3A6B"}
 
 ## Some examples
 
@@ -542,7 +542,7 @@ Source: [Lin et al. (2016)](https://alexandercoppock.com/Green-Lab-SOP/Green_Lab
 - [Leight et al. (2020)](https://oes.gsa.gov/projects/sms-mozambique/) about the impact of SMS messages on clinic visits in Mozambique
 :::
 
-# Dates for your PAPs 📅 {background-color="#2d4563"}
+# Dates for your PAPs 📅 {background-color="#1B3A6B"}
 
 ## Important dates (tentative)
 
@@ -555,6 +555,6 @@ Source: [Lin et al. (2016)](https://alexandercoppock.com/Green-Lab-SOP/Green_Lab
 - [Monday, December 8th]{.alert}: Presentations
 :::
 
-# And that's all for today! 🎉 {background-color="#2d4563"}
+# And that's all for today! 🎉 {background-color="#1B3A6B"}
 
-# Have a great week! 🎉 {background-color="#2d4563"}
+# Have a great week! 🎉 {background-color="#1B3A6B"}

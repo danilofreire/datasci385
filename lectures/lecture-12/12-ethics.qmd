@@ -20,9 +20,9 @@ editor:
   render-on-save: true
 ---
 
-# Hello, everyone! <br> Nice to see you! 😉 {background-color="#2d4563"}
+# Hello, everyone! <br> Nice to see you! 😉 {background-color="#1B3A6B"}
 
-# Brief recap 📚 {background-color="#2d4563"}
+# Brief recap 📚 {background-color="#1B3A6B"}
 ## Last class
 
 :::{style="margin-top: 30px; font-size: 26px;"}
@@ -46,7 +46,7 @@ editor:
 :::
 :::
 
-# Today's plan 📅 {background-color="#2d4563"}
+# Today's plan 📅 {background-color="#1B3A6B"}
 
 ## Ethics in experimental research
 ### What should we consider when conducting experiments?
@@ -72,7 +72,7 @@ Source: [XKCD](https://xkcd.com/1390/)
 :::
 :::
 
-# A brief history of research ethics 📜 {background-color="#2d4563"}
+# A brief history of research ethics 📜 {background-color="#1B3A6B"}
 
 ## In the beginning...
 ### ...there was no ethical oversight!
@@ -175,7 +175,7 @@ Full text of the [Belmont Report](https://www.hhs.gov/ohrp/sites/default/files/t
 :::
 :::
 
-# Ethical considerations in experimental research 😇 {background-color="#2d4563"}
+# Ethical considerations in experimental research 😇 {background-color="#1B3A6B"}
 
 ## Ethical research is good research
 
@@ -304,7 +304,7 @@ Members of the Irish Republican Army (IRA) in Northern Ireland
 :::
 :::
 
-# Institutional Review Boards (IRBs) 🏛️ {background-color="#2d4563"}
+# Institutional Review Boards (IRBs) 🏛️ {background-color="#1B3A6B"}
 
 ## What are IRBs?
 
@@ -389,7 +389,7 @@ Source: [Bursztyn et al. (2021)](https://www.aeaweb.org/articles?id=10.1257/aeri
 Source: [Yeh et al. (2018)](https://www.bmj.com/content/363/bmj.k5094)
 :::
 
-# Adaptive research design 🔄 {background-color="#2d4563"}
+# Adaptive research design 🔄 {background-color="#1B3A6B"}
 
 ## Adaptive randomisation
 
@@ -496,7 +496,7 @@ Source: [Pallman et al. (2018)](https://bmcmedicine.biomedcentral.com/articles/1
 Source: [Bertrand et al. (2006)](https://www.nber.org/system/files/working_papers/w12274/w12274.pdf)
 :::
 
-# Research staff ethics 🧑‍🔬 {background-color="#2d4563"}
+# Research staff ethics 🧑‍🔬 {background-color="#1B3A6B"}
 
 ## Ethical considerations for research staff
 
@@ -558,7 +558,7 @@ Source: [Bertrand et al. (2006)](https://www.nber.org/system/files/working_paper
 Source: [The PREVAIL II Writing Group (2016)](https://www.nejm.org/doi/full/10.1056/NEJMoa1604330)
 :::
 
-# Community ethics 🏘️ {background-color="#2d4563"}
+# Community ethics 🏘️ {background-color="#1B3A6B"}
 
 ## Ethical considerations for the community
 
@@ -595,7 +595,7 @@ Source: [The PREVAIL II Writing Group (2016)](https://www.nejm.org/doi/full/10.1
 Source: [Banerjee et al. (2008)](https://www.jstor.org/stable/40282658)
 :::
 
-# Conclusion 🎓 {background-color="#2d4563"}
+# Conclusion 🎓 {background-color="#1B3A6B"}
 
 ## Conclusion
 
@@ -621,6 +621,6 @@ Source: [Banerjee et al. (2008)](https://www.jstor.org/stable/40282658)
 :::
 :::
 
-# And that's all for today! 🎉 {background-color="#2d4563"}
+# And that's all for today! 🎉 {background-color="#1B3A6B"}
 
-# Thank you! 🙏 {background-color="#2d4563"}
+# Thank you! 🙏 {background-color="#1B3A6B"}

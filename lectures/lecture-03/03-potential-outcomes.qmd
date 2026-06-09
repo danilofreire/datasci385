@@ -19,9 +19,9 @@ editor:
   render-on-save: true
 ---
 
-# Hello, everyone! 👋 <br> Hope you're all doing well! 😉 {background-color="#2d4563"}
+# Hello, everyone! 👋 <br> Hope you're all doing well! 😉 {background-color="#1B3A6B"}
 
-# Brief recap 📚 {background-color="#2d4563"}
+# Brief recap 📚 {background-color="#1B3A6B"}
 
 ## Last time, we saw that...
 
@@ -79,7 +79,7 @@ editor:
 :::
 :::
 
-# Do hospitals make people sicker? 🏥 {background-color="#2d4563"}
+# Do hospitals make people sicker? 🏥 {background-color="#1B3A6B"}
 
 ## Imagine you are a health economist...
 
@@ -337,7 +337,7 @@ Let's break down the equation using the hospital example
     -   [Randomisation eliminates this bias]{.alert}
 :::
 
-# The experimental ideal 👩🏻‍🔬 {background-color="#2d4563"}
+# The experimental ideal 👩🏻‍🔬 {background-color="#1B3A6B"}
 
 ## Two common (but often flawed) comparisons
 
@@ -500,7 +500,7 @@ each member of the treatment group is the same
   - The effect might be different if the population is different
 :::
 
-# Recap: back to our hospital example 🏥 {background-color="#2d4563"}
+# Recap: back to our hospital example 🏥 {background-color="#1B3A6B"}
 
 ## Potential outcomes revisited
 
@@ -641,6 +641,6 @@ each member of the treatment group is the same
 - [External validity]{.alert} is the extent to which the results of a study can be generalised to other populations, settings, and times
 :::
 
-# That's all for today! 🎉 {background-color="#2d4563"}
+# That's all for today! 🎉 {background-color="#1B3A6B"}
 
-# Thank you for your attention! 🙏 <br> See you all soon! 😊 {background-color="#2d4563"}
+# Thank you for your attention! 🙏 <br> See you all soon! 😊 {background-color="#1B3A6B"}

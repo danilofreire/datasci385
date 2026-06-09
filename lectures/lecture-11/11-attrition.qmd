@@ -20,9 +20,9 @@ editor:
   render-on-save: true
 ---
 
-# Hello, everyone! <br> How are you doing today? 😉 {background-color="#2d4563"}
+# Hello, everyone! <br> How are you doing today? 😉 {background-color="#1B3A6B"}
 
-# Brief recap 📚 {background-color="#2d4563"}
+# Brief recap 📚 {background-color="#1B3A6B"}
 
 ## Last class
 
@@ -37,7 +37,7 @@ editor:
 - [IV methods]{.alert} estimate CACE: $\tau_{LATE} = \frac{ITT_Y}{ITT_D}$
 :::
 
-# Today's plan 📋 {background-color="#2d4563"}
+# Today's plan 📋 {background-color="#1B3A6B"}
 
 ## Attrition in experiments
 ### Another missing data problem
@@ -75,7 +75,7 @@ editor:
 - [Lee bounds]{.alert} are a way to trim the bounds to make them more informative
 :::
 
-# Attrition in Experiments 🧩 {background-color="#2d4563"}
+# Attrition in Experiments 🧩 {background-color="#1B3A6B"}
 
 ## Attrition in experiments
 ### Missing outcome data
@@ -149,7 +149,7 @@ Source: Angrist and Pischke (2014, 19)
 :::
 :::
 
-# Some notation 📝 {background-color="#2d4563"}
+# Some notation 📝 {background-color="#1B3A6B"}
 
 ## Attrition in experiments
 ### Using the potential outcomes framework
@@ -220,7 +220,7 @@ $$r_i = r_i(0)(1 - z_i) + r_i(1)z_i $$
   - For example, maybe younger people in the treatment group drop out more than older people, but the opposite can be true in the control group!
 :::
 
-# Special cases of attrition {background-color="#2d4563"}
+# Special cases of attrition {background-color="#1B3A6B"}
 
 ## Special cases of attrition
 ### Missing independent of potential outcomes
@@ -275,7 +275,7 @@ more likely to benefit from the intervention
 :::
 :::
 
-# Inverse probability weighting {background-color="#2d4563"}
+# Inverse probability weighting {background-color="#1B3A6B"}
 
 ## Inverse probability weighting
 ### A way to handle missing related to observed variables
@@ -379,7 +379,7 @@ $$E[Y_i(1)] - E[Y_i(0)] = 3.5.$$
 - Evaluating $MIPO|X$: [detective work and speculation]{.alert} 🕵️‍♂️
 :::
 
-# ATE Bounds {background-color="#2d4563"}
+# ATE Bounds {background-color="#1B3A6B"}
 
 ## Extreme bounds analysis
 ### A robustness check for attrition
@@ -513,7 +513,7 @@ $$E[Y_i(1) | R_i(1) = 1, R_i(0) = 1] - E[Y_i(0) | R_i(1) = 1, R_i(0) = 1]$$
 
 
 
-# Handling attrition in R {background-color="#2d4563"}
+# Handling attrition in R {background-color="#1B3A6B"}
 
 ## Handling attrition in `R`
 ### `attritevis` package
@@ -714,6 +714,6 @@ attritevis::bounds(data = test_data,
 - Consider using these functions in your next experiment! 🤓
 :::
 
-# ...and that's it! 🎉 {background-color="#2d4563"}
+# ...and that's it! 🎉 {background-color="#1B3A6B"}
 
-# See you next time! 😉 {background-color="#2d4563"}
+# See you next time! 😉 {background-color="#1B3A6B"}

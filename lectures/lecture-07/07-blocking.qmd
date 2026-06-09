@@ -20,9 +20,9 @@ editor:
   render-on-save: true
 ---
 
-# Hi, there! <br> Hope all is well 😉 {background-color="#2d4563"}
+# Hi, there! <br> Hope all is well 😉 {background-color="#1B3A6B"}
 
-# Brief recap 📚 {background-color="#2d4563"}
+# Brief recap 📚 {background-color="#1B3A6B"}
 
 ## Last time, we...
 
@@ -97,7 +97,7 @@ Source: [Data Science Discovery - University of Illinois](https://discovery.cs.i
 :::
 :::
 
-# Group project 👥 {background-color="#2d4563"}
+# Group project 👥 {background-color="#1B3A6B"}
 
 ## Group project
 
@@ -109,7 +109,7 @@ Source: [Data Science Discovery - University of Illinois](https://discovery.cs.i
 - Please let me know if you have already formed a group and want to keep it!
 :::
 
-# Questions? {background-color="#2d4563"}
+# Questions? {background-color="#1B3A6B"}
 
 ## Group project 🤝
 ### Next steps (from our previous lecture)
@@ -124,7 +124,7 @@ Source: [Data Science Discovery - University of Illinois](https://discovery.cs.i
   - Outline your pre-analysis plan. Your outline should include sections on the research question, the experimental design, the data you will collect, and the analysis you will conduct
 :::
 
-# Blocking and Clustering {background-color="#2d4563"}
+# Blocking and Clustering {background-color="#1B3A6B"}
 
 ## What is blocking?
 
@@ -383,7 +383,7 @@ Source: [DeclareDesign (2018)](https://declaredesign.org/blog/posts/biased-fixed
 :::
 :::
 
-# Clustering {background-color="#2d4563"}
+# Clustering {background-color="#1B3A6B"}
 
 ## What is clustering?
 
@@ -679,6 +679,6 @@ We can improve the efficiency of clustered designs by incorporating blocking at 
 - [And more!]{.alert} 😂 
 :::
 
-# Thanks very much! 😊 {background-color="#2d4563"}
+# Thanks very much! 😊 {background-color="#1B3A6B"}
 
-# See you next time! 👋 {background-color="#2d4563"}
+# See you next time! 👋 {background-color="#1B3A6B"}

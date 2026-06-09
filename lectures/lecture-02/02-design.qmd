@@ -23,9 +23,9 @@ editor:
   render-on-save: true
 ---
 
-# Hello, everyone! 👋 <br> Nice to meet you again! 😊 {background-color="#2d4563"}
+# Hello, everyone! 👋 <br> Nice to meet you again! 😊 {background-color="#1B3A6B"}
 
-# Recap and lecture overview 📚 {background-color="#2d4563"}
+# Recap and lecture overview 📚 {background-color="#1B3A6B"}
 
 ## Welcome back! 🎉
 
@@ -120,7 +120,7 @@ Lots of additional readings are included [in the syllabus](https://github.com/da
 :::
 :::
 
-# But first... <br><br> Let's do an experiment right now! 😄 {background-color="#2d4563"}
+# But first... <br><br> Let's do an experiment right now! 😄 {background-color="#1B3A6B"}
 
 ## Instructions
 
@@ -135,9 +135,9 @@ Lots of additional readings are included [in the syllabus](https://github.com/da
 <span style="color: white;">https://forms.gle/xUL39k7ngY2kXYJC7</span>
 :::
 
-# Let's discuss the results! 📊 {background-color="#2d4563"}
+# Let's discuss the results! 📊 {background-color="#1B3A6B"}
 
-# What makes a research question good? 🤔 {background-color="#2d4563"}
+# What makes a research question good? 🤔 {background-color="#1B3A6B"}
 
 ## The importance of a good research question
 
@@ -352,7 +352,7 @@ Source: World Health Organization, 2003
 :::
 :::
 
-# Pre-registration and pre-analysis plans 📝 {background-color="#2d4563"}
+# Pre-registration and pre-analysis plans 📝 {background-color="#1B3A6B"}
 
 ## Bias in published research against null results
 
@@ -779,7 +779,7 @@ Amy Cuddy demonstrating her theory of "power posing". It could never be replicat
 +-------------------+--------------------------------------------------+
 :::
 
-# The MIDA framework 📊 {background-color="#2d4563"}
+# The MIDA framework 📊 {background-color="#1B3A6B"}
 
 ## The MIDA framework
 
@@ -874,7 +874,7 @@ Amy Cuddy demonstrating her theory of "power posing". It could never be replicat
 - Answer is an [estimate of the quantity of interest or $p$-value]{.alert} (inquiry/estimand/test)
 :::
 
-# Let's see an example: Two-arm trial {background-color="#2d4563"}
+# Let's see an example: Two-arm trial {background-color="#1B3A6B"}
 
 ## Two-arm trial
 
@@ -927,7 +927,7 @@ Source: [Blair et al. (2023)](https://book.declaredesign.org/library/experimenta
 [![](figures/models.png)](#){data-modal-type="iframe" data-modal-url="https://declaredesign.org/"}
 :::
 
-# Wrap-up 🤓 {background-color="#2d4563"}
+# Wrap-up 🤓 {background-color="#1B3A6B"}
 
 ## Summary
 
@@ -993,6 +993,6 @@ Source: [Blair et al. (2023)](https://book.declaredesign.org/library/experimenta
 - [... and that's it for today!]{.alert} 😊🎉
 :::
 
-# Questions? {background-color="#2d4563"}
+# Questions? {background-color="#1B3A6B"}
 
-# Thank you very much! 👏 <br> See you soon! 😊 {background-color="#2d4563"}
+# Thank you very much! 👏 <br> See you soon! 😊 {background-color="#1B3A6B"}

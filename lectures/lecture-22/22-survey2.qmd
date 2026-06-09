@@ -20,9 +20,9 @@ editor:
   render-on-save: true
 ---
 
-# Hello, everyone! 😉 {background-color="#2d4563"}
+# Hello, everyone! 😉 {background-color="#1B3A6B"}
 
-# Notes about the group project {background-color="#2d4563"}
+# Notes about the group project {background-color="#1B3A6B"}
 
 ## Group project presentations
 
@@ -51,7 +51,7 @@ editor:
 :::
 :::
 
-# Brief recap 📚 {background-color="#2d4563"}
+# Brief recap 📚 {background-color="#1B3A6B"}
 
 ## Survey experiments
 ### Core components
@@ -80,7 +80,7 @@ editor:
 :::
 :::
 
-# Today's plan 📅 {background-color="#2d4563"}
+# Today's plan 📅 {background-color="#1B3A6B"}
 
 ## Survey experiments with a twist
 
@@ -106,7 +106,7 @@ editor:
 :::
 :::
 
-# List experiments 📋 {background-color="#2d4563"}
+# List experiments 📋 {background-color="#1B3A6B"}
 
 ## What is a list experiment?
 
@@ -294,7 +294,7 @@ summary(lm.results)
 ```
 :::
 
-# Did hidden Trump voters exist? {background-color="#2d4563"}
+# Did hidden Trump voters exist? {background-color="#1B3A6B"}
 
 ## Did hidden Trump voters exist?
 
@@ -320,7 +320,7 @@ Source: [Coppock (2017)](https://alexandercoppock.com/coppock_2017a.pdf)
 ![](figures/trump-results.png){width=100%}
 :::
 
-# Do Russians support the war in Ukraine? {background-color="#2d4563"}
+# Do Russians support the war in Ukraine? {background-color="#1B3A6B"}
 
 ## Do Russians support the war in Ukraine?
 
@@ -342,7 +342,7 @@ Source: [Chapovski (2022)](https://journals.sagepub.com/doi/full/10.1177/2053168
 ![](figures/russia-results.png){width=100%}
 :::
 
-# Endorsement experiments {background-color="#2d4563"}
+# Endorsement experiments {background-color="#1B3A6B"}
 
 ## What is an endorsement experiment?
 
@@ -411,7 +411,7 @@ this program.** How much do you support such a plan?
 ![](figures/endorsement-results.png){width=100%}
 :::
 
-# Did political endorsement influence mass opinion during COVID-19? {background-color="#2d4563"}
+# Did political endorsement influence mass opinion during COVID-19? {background-color="#1B3A6B"}
 
 ## Did political endorsement influence mass opinion during COVID-19?
 
@@ -441,7 +441,7 @@ Source: [Gadarian et al (2021)](https://doi.org/10.1080/17457289.2021.1924727)
 ![](figures/covid-results02.png){width=100%}
 :::
 
-# Randomised response techniques 🎲 {background-color="#2d4563"}
+# Randomised response techniques 🎲 {background-color="#1B3A6B"}
 
 ## Randomised response
 
@@ -488,7 +488,7 @@ Source: [Krumpal (2012)](https://www.sciencedirect.com/science/article/abs/pii/S
 ![](figures/germany-results.png){width=100%}
 :::
 
-# Conjoint analysis {background-color="#2d4563"}
+# Conjoint analysis {background-color="#1B3A6B"}
 
 ## Conjoint experiments
 
@@ -557,7 +557,7 @@ Source [Hainmueller et al (2014)](https://www.researchgate.net/profile/Jens-Hain
 ![](figures/hainmueller-results02.png){width=100%}
 :::
 
-# Conclusion {background-color="#2d4563"}
+# Conclusion {background-color="#1B3A6B"}
 
 ## Conclusion
 
@@ -587,6 +587,6 @@ Source [Hainmueller et al (2014)](https://www.researchgate.net/profile/Jens-Hain
 :::
 :::
 
-# ...And that's all for today! 🎉 {background-color="#2d4563"}
+# ...And that's all for today! 🎉 {background-color="#1B3A6B"}
 
-# Thank you for your attention! 🙏 {background-color="#2d4563"}
+# Thank you for your attention! 🙏 {background-color="#1B3A6B"}

@@ -20,9 +20,9 @@ editor:
   render-on-save: true
 ---
 
-# Hello, everyone! 😊 {background-color="#2d4563"}
+# Hello, everyone! 😊 {background-color="#1B3A6B"}
 
-# Brief recap 📚 {background-color="#2d4563"}
+# Brief recap 📚 {background-color="#1B3A6B"}
 
 ## Pre-analysis plans
 ### Core Components
@@ -77,7 +77,7 @@ Source: <https://egap.org/resource/10-things-to-know-about-pre-analysis-plans/>
 :::
 :::
 
-# Today's plan 📅 {background-color="#2d4563"}
+# Today's plan 📅 {background-color="#1B3A6B"}
 
 ## When experiments are not possible
 
@@ -102,7 +102,7 @@ Source: <https://egap.org/resource/10-things-to-know-about-pre-analysis-plans/>
 :::
 :::
 
-# The experimental ideal and its limits 🌟 {background-color="#2d4563"}
+# The experimental ideal and its limits 🌟 {background-color="#1B3A6B"}
 
 ## Why we should think about observational studies with RCTs in mind
 
@@ -130,7 +130,7 @@ Source: <https://egap.org/resource/10-things-to-know-about-pre-analysis-plans/>
 :::
 :::
 
-# Natural experiments 🌍 {background-color="#2d4563"}
+# Natural experiments 🌍 {background-color="#1B3A6B"}
 
 ## Definition
 
@@ -303,7 +303,7 @@ Source: <https://doi.org/10.1017/S1537592716002863>
 :::
 :::
 
-# Quasi-experiments 📊 {background-color="#2d4563"}
+# Quasi-experiments 📊 {background-color="#1B3A6B"}
 
 ## Quasi-experiments: A broader toolkit for approximation
 
@@ -437,7 +437,7 @@ Source: [Card, D., & Krueger, A. B. (1994). Minimum Wages and Employment: A Case
 ![](figures/card-results.png){width=80%}
 :::
 
-# Threats to validity and mitigation strategies {background-color="#2d4563"}
+# Threats to validity and mitigation strategies {background-color="#1B3A6B"}
 
 ##  Major threats to validity in quasi-experiments
 
@@ -482,7 +482,7 @@ Source: [Card, D., & Krueger, A. B. (1994). Minimum Wages and Employment: A Case
 - Ethical review boards may still be involved in quasi-experimental research, especially if it involves human subjects data
 :::
 
-# Conclusion 🌟 {background-color="#2d4563"}
+# Conclusion 🌟 {background-color="#1B3A6B"}
 
 ## Key takeaways
 
@@ -508,6 +508,6 @@ Source: <https://doi.org/10.1017/CBO9781139084444>
 :::
 :::
 
-# Thanks very much! 😊 {background-color="#2d4563"}
+# Thanks very much! 😊 {background-color="#1B3A6B"}
 
-# See you next time! 👋 {background-color="#2d4563"}
+# See you next time! 👋 {background-color="#1B3A6B"}

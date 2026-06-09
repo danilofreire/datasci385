@@ -20,9 +20,9 @@ editor:
   render-on-save: true
 ---
 
-# Hello, everyone! 👋 <br> Nice to see you all again! 😉 {background-color="#2d4563"}
+# Hello, everyone! 👋 <br> Nice to see you all again! 😉 {background-color="#1B3A6B"}
 
-# Brief recap 📚 {background-color="#2d4563"}
+# Brief recap 📚 {background-color="#1B3A6B"}
 
 ## Last time, we saw that...
 
@@ -84,7 +84,7 @@ Source: [xkcd](https://xkcd.com/2618/) (who else? 😄)
 ![](figures/correlation.png){width=80%}
 :::
 
-# Let's get started! 🚀 {background-color="#2d4563"}
+# Let's get started! 🚀 {background-color="#1B3A6B"}
 
 ## Potential outcomes revisited
 
@@ -183,9 +183,9 @@ Angrist and Pischke (2021), pp. 20 (selected parts)
 :::
 :::
 
-# Questions? 🤔 {background-color="#2d4563"}
+# Questions? 🤔 {background-color="#1B3A6B"}
 
-# Different types of selection bias 🎯 {background-color="#2d4563"}
+# Different types of selection bias 🎯 {background-color="#1B3A6B"}
 
 ## Causal diagrams and associations
 
@@ -393,7 +393,7 @@ Source: [Elwert and Winship (2014)](https://www.annualreviews.org/content/journa
   - When you ask socially sensitive questions in a survey
 :::
 
-# Measuring variability 📏 {background-color="#2d4563"}
+# Measuring variability 📏 {background-color="#1B3A6B"}
 
 ## Measuring variability (part 1): Standard deviation
 
@@ -477,7 +477,7 @@ Source: [Elwert and Winship (2014)](https://www.annualreviews.org/content/journa
 :::
 :::
 
-# Regression analysis of experiments 📊 {background-color="#2d4563"}
+# Regression analysis of experiments 📊 {background-color="#1B3A6B"}
 
 ## Regression analysis of experiments
 
@@ -777,9 +777,9 @@ summary(model_interaction)
 :::
 :::
 
-# Cool, isn't it? 😎 {background-color="#2d4563"}
+# Cool, isn't it? 😎 {background-color="#1B3A6B"}
 
-# Questions? {background-color="#2d4563"}
+# Questions? {background-color="#1B3A6B"}
 
 ## Summary
 
@@ -804,4 +804,4 @@ summary(model_interaction)
 :::
 :::
 
-# Thank you and see you soon! 😃 {background-color="#2d4563"}
+# Thank you and see you soon! 😃 {background-color="#1B3A6B"}

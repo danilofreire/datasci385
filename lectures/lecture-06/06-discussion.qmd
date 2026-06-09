@@ -20,9 +20,9 @@ editor:
   render-on-save: true
 ---
 
-# Hi, there! 👋 <br> Tudo bem? 😄🇧🇷 {background-color="#2d4563"}
+# Hi, there! 👋 <br> Tudo bem? 😄🇧🇷 {background-color="#1B3A6B"}
 
-# Brief recap 📚 {background-color="#2d4563"}
+# Brief recap 📚 {background-color="#1B3A6B"}
 
 ## Last time, we...
 
@@ -78,7 +78,7 @@ editor:
   - You will present your findings to the class
 :::
 
-# R packages 📦 {background-color="#2d4563"}
+# R packages 📦 {background-color="#1B3A6B"}
 
 ## `fabricatr`: Simulating data for experiments
 
@@ -314,9 +314,9 @@ plot(ri_out)
 :::
 :::
 
-# Questions? 😉 {background-color="#2d4563"}
+# Questions? 😉 {background-color="#1B3A6B"}
 
-# Papers for Discussion 📚 {background-color="#2d4563"}
+# Papers for Discussion 📚 {background-color="#1B3A6B"}
 
 ## Kalla, J. & D. Broockman. 2015 
 ### [Campaign Contributions Facilitate Access to Congressional Officials: A Randomized Field Experiment](https://onlinelibrary.wiley.com/doi/full/10.1111/ajps.12180)
@@ -427,7 +427,7 @@ plot(ri_out)
   - Generalisability: More studies with different actors, organisations and contexts are required
 :::
 
-# Bertrand and Mullainathan (2004) 🇺🇸 {background-color="#2d4563"}
+# Bertrand and Mullainathan (2004) 🇺🇸 {background-color="#1B3A6B"}
 
 ## Bertrand, M., & Mullainathan, S. (2004)
 ### Are Emily and Greg More Employable than Lakisha and Jamal? A Field Experiment on Labor Market Discrimination
@@ -546,7 +546,7 @@ plot(ri_out)
   - Generalisability: Focus on specific job categories and cities (Boston & Chicago)
 :::
 
-# Chattopadhyay and Duflo (2004) 🇮🇳 {background-color="#2d4563"}
+# Chattopadhyay and Duflo (2004) 🇮🇳 {background-color="#1B3A6B"}
 
 ## Chattopadhyay, R., & Duflo, E. (2004)
 ### Women as Policy Makers: Evidence from a Randomized Policy Experiment in India
@@ -666,8 +666,8 @@ plot(ri_out)
   - Mechanisms: the exact mechanisms of the decision-making process are still not fully clear
 :::
 
-# Questions? 😉 {background-color="#2d4563"}
+# Questions? 😉 {background-color="#1B3A6B"}
 
-# And that's it for today! 🎉 {background-color="#2d4563"}
+# And that's it for today! 🎉 {background-color="#1B3A6B"}
 
-# All the very best! <br> See you soon! 🚀 {background-color="#2d4563"}
+# All the very best! <br> See you soon! 🚀 {background-color="#1B3A6B"}

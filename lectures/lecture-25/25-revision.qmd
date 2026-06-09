@@ -19,7 +19,7 @@ editor:
   render-on-save: true
 ---
 
-# Welcome back! 🤓 <br> Course revision session 📚 {background-color="#2d4563"}
+# Welcome back! 🤓 <br> Course revision session 📚 {background-color="#1B3A6B"}
 
 ## Course evaluation
 
@@ -73,7 +73,7 @@ editor:
 :::
 :::
 
-# Foundations 🏗️ {background-color="#2d4563"}
+# Foundations 🏗️ {background-color="#1B3A6B"}
 
 ## The research design process (Lec 02)
 
@@ -259,7 +259,7 @@ Source: [Data Collada (2016)](https://datacolada.org/51)
 :::
 :::
 
-# Design Challenges & Solutions 🛠️ {background-color="#2d4563"}
+# Design Challenges & Solutions 🛠️ {background-color="#1B3A6B"}
 
 ## Blocking and clustering (Lec 07 & 08)
 
@@ -447,7 +447,7 @@ Source: [DeclareDesign](https://declaredesign.org/)
 :::
 :::
 
-# Advanced Methods & Applications 🔬 {background-color="#2d4563"}
+# Advanced Methods & Applications 🔬 {background-color="#1B3A6B"}
 
 ## Natural & quasi-experiments (Lec 15)
 
@@ -599,7 +599,7 @@ Source: [Freire & Skarbek (2022)](https://journals.sagepub.com/doi/10.1177/20531
 :::
 :::
 
-# Discussions & Integration 🌍 {background-color="#2d4563"}
+# Discussions & Integration 🌍 {background-color="#1B3A6B"}
 
 ## Paper discussions (Lec 06, 17, 19, 23)
 
@@ -676,4 +676,4 @@ Source: [Freire et al (2022)](https://doi.org/10.1017/S0007123422000552)
 :::
 :::
 
-# Thank you for your attention! 🙏 {background-color="#2d4563"}
+# Thank you for your attention! 🙏 {background-color="#1B3A6B"}

@@ -20,9 +20,9 @@ editor:
   render-on-save: true
 ---
 
-# Hello, everyone! 👋 <br> How are you doing today? 😁 {background-color="#2d4563"}
+# Hello, everyone! 👋 <br> How are you doing today? 😁 {background-color="#1B3A6B"}
 
-# Brief recap 📚 {background-color="#2d4563"}
+# Brief recap 📚 {background-color="#1B3A6B"}
 
 ## Last time, we saw that...
 
@@ -95,7 +95,7 @@ Source: [Knittel et al. (2024)](https://www.nber.org/papers/w33118)
 - [And I have a few questions for you]{.alert} (don't worry, they're easy! 😂)
 :::
 
-# Regression analysis in R (recap) 📊 {background-color="#2d4563"}
+# Regression analysis in R (recap) 📊 {background-color="#1B3A6B"}
 
 ## Simulating data in `R`
 
@@ -259,7 +259,7 @@ summary(model_interaction)
 :::
 :::
 
-# Hypothesis Testing 👩🏻‍🔬 {background-color="#2d4563"}
+# Hypothesis Testing 👩🏻‍🔬 {background-color="#1B3A6B"}
 
 ## What is a hypothesis test? 🤔
 
@@ -585,9 +585,9 @@ summary(ri2_out)
 :::
 :::
 
-# So far, so good? 😃 {background-color="#2d4563"}
+# So far, so good? 😃 {background-color="#1B3A6B"}
 
-# Let's discuss a real experiment! 🤓 {background-color="#2d4563"}
+# Let's discuss a real experiment! 🤓 {background-color="#1B3A6B"}
 
 ## Bottom-up accountability and public service provision: Evidence from a field experiment in Brazil
 ### By yours truly! 😊 <https://doi.org/10.1177/2053168020914444>
@@ -810,6 +810,6 @@ summary(ri2_out)
 ![](figures/results03.png){width=85%}
 :::
 
-# ...and that's it! 😊 {background-color="#2d4563"}
+# ...and that's it! 😊 {background-color="#1B3A6B"}
 
-# Thank you, and see you soon! 🙏🏼 {background-color="#2d4563"}
+# Thank you, and see you soon! 🙏🏼 {background-color="#1B3A6B"}

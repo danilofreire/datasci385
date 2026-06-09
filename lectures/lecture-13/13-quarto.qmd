@@ -20,9 +20,9 @@ editor:
   render-on-save: true
 ---
 
-# Hello, everyone! 😊 {background-color="#2d4563"}
+# Hello, everyone! 😊 {background-color="#1B3A6B"}
 
-# Brief recap 📚 {background-color="#2d4563"}
+# Brief recap 📚 {background-color="#1B3A6B"}
 
 ## Last class, we discussed...
 
@@ -48,7 +48,7 @@ editor:
 :::
 :::
 
-# Today's plan 📅 {background-color="#2d4563"}
+# Today's plan 📅 {background-color="#1B3A6B"}
 
 ## Introduction to Quarto and DeclareDesign
 ### Two useful tools for experimental research (and beyond)
@@ -100,7 +100,7 @@ editor:
 :::
 :::
 
-# Quarto 📝 {background-color="#2d4563"}
+# Quarto 📝 {background-color="#1B3A6B"}
 
 ## What is Quarto?
 
@@ -155,7 +155,7 @@ Click on the image to visit [the Quarto installation page](https://quarto.org/do
 :::
 :::
 
-# Writing a Quarto document 📝 {background-color="#2d4563"}
+# Writing a Quarto document 📝 {background-color="#1B3A6B"}
 
 ## How to write a Quarto document?
 
@@ -264,7 +264,7 @@ This is a horizontal rule.
 :::
 :::
 
-# Quarto engines {background-color="#2d4563"}
+# Quarto engines {background-color="#1B3A6B"}
 
 ## knitr
 
@@ -472,7 +472,7 @@ bibliography: references.bib
 :::
 :::
 
-# DeclareDesign 📊 {background-color="#2d4563"}
+# DeclareDesign 📊 {background-color="#1B3A6B"}
 
 ## What is DeclareDesign?
 ### A package for designing and analysing data
@@ -828,7 +828,7 @@ block_cluster_icc |>
 ```
 :::
 
-# DesignLibrary 📚 {background-color="#2d4563"}
+# DesignLibrary 📚 {background-color="#1B3A6B"}
 
 ## DesignLibrary
 ### Making your life easier!
@@ -884,7 +884,7 @@ cluster_sampling_design
 ```
 :::
 
-# DesignWizard 🧙 {background-color="#2d4563"}
+# DesignWizard 🧙 {background-color="#1B3A6B"}
 
 ## DesignWizard
 
@@ -908,7 +908,7 @@ cluster_sampling_design
 :::
 :::
 
-# Summary 📚 {background-color="#2d4563"}
+# Summary 📚 {background-color="#1B3A6B"}
 
 ## Today we learned...
 
@@ -948,6 +948,6 @@ Source: <https://raw.githubusercontent.com/rstudio/cheatsheets/master/quarto.pdf
 Source: <https://raw.githubusercontent.com/rstudio/cheatsheets/master/declaredesign.pdf>
 :::
 
-# And that's all for today! 🎉 {background-color="#2d4563"}
+# And that's all for today! 🎉 {background-color="#1B3A6B"}
 
-# Have a great week! 🎉 {background-color="#2d4563"}
+# Have a great week! 🎉 {background-color="#1B3A6B"}

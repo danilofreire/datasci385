@@ -20,9 +20,9 @@ editor:
   render-on-save: true
 ---
 
-# Hello! How are you doing? 😊 {background-color="#2d4563"}
+# Hello! How are you doing? 😊 {background-color="#1B3A6B"}
 
-# Brief recap 📚 {background-color="#2d4563"}
+# Brief recap 📚 {background-color="#1B3A6B"}
 
 ## Brief recap 📚
 
@@ -63,7 +63,7 @@ editor:
 :::
 :::
 
-# Today's plan 📅 {background-color="#2d4563"}
+# Today's plan 📅 {background-color="#1B3A6B"}
 
 ## Interference and spillovers
 
@@ -87,7 +87,7 @@ Source: <https://www.caliper.com/Maptitude/Crime/default.htm>
 :::
 :::
 
-# Interference {background-color="#2d4563"}
+# Interference {background-color="#1B3A6B"}
 
 ## Interference 
 ### When treatment effects spill over
@@ -184,7 +184,7 @@ Source: [Collazos et al. (2021)](https://link.springer.com/article/10.1007/s1129
 :::
 :::
 
-# How to deal with interference? (good and bad!) {background-color="#2d4563"}
+# How to deal with interference? (good and bad!) {background-color="#1B3A6B"}
 
 ## How to deal with interference?
 
@@ -344,7 +344,7 @@ graph TD
 :::
 :::
 
-# Spatial spillovers {background-color="#2d4563"}
+# Spatial spillovers {background-color="#1B3A6B"}
 
 ## Spatial spillovers
 
@@ -450,7 +450,7 @@ $$
 :::
 :::
 
-# Within-subject designs and repeated-measures experiments {background-color="#2d4563"}
+# Within-subject designs and repeated-measures experiments {background-color="#1B3A6B"}
 
 ## Within-subject designs
 
@@ -539,7 +539,7 @@ Source: [Clifford et al. (2021)](https://doi.org/10.1017/S0003055421000241)
 ![](figures/clifford02.png){width=60%}
 :::
 
-# Waitlist designs {background-color="#2d4563"}
+# Waitlist designs {background-color="#1B3A6B"}
 
 ## Waitlist designs
 
@@ -671,6 +671,6 @@ $$
 
 :::
 
-# And that's all for today! 🎉 {background-color="#2d4563"}
+# And that's all for today! 🎉 {background-color="#1B3A6B"}
 
-# See you next time! 😉 {background-color="#2d4563"}
+# See you next time! 😉 {background-color="#1B3A6B"}

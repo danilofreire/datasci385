@@ -20,9 +20,9 @@ editor:
   render-on-save: true
 ---
 
-# Hi, there! <br> Nice to see you again! 😉{background-color="#2d4563"}
+# Hi, there! <br> Nice to see you again! 😉{background-color="#1B3A6B"}
 
-# Brief recap 📚 {background-color="#2d4563"}
+# Brief recap 📚 {background-color="#1B3A6B"}
 
 ## Blocking recap
 
@@ -72,7 +72,7 @@ Source: [Zhai and Gutman (2018)](https://dcricollab.dcri.duke.edu/sites/NIHKR/KR
 :::
 :::
 
-# Blocking (cont.) {background-color="#2d4563"}
+# Blocking (cont.) {background-color="#1B3A6B"}
 
 ## Let's declare the design of a hypothetical experiment!
 ### Community gardening programme
@@ -268,9 +268,9 @@ ggplot(simulations, aes(estimate)) +
 ::: 
 
 
-# Cool, isn't it? 🤓 {background-color="#2d4563"}
+# Cool, isn't it? 🤓 {background-color="#1B3A6B"}
 
-# Clustering (cont.) {background-color="#2d4563"}
+# Clustering (cont.) {background-color="#1B3A6B"}
 
 ## Clustering (cont.)
 
@@ -493,7 +493,7 @@ ggplot(simulations, aes(estimate)) +
 ```
 :::
 
-# Statistical power 💪 {background-color="#2d4563"}
+# Statistical power 💪 {background-color="#1B3A6B"}
 
 ## Statistical power
 ### What is it?
@@ -707,7 +707,7 @@ diagnoses$diagnosands_df %>%
 ```
 :::
 
-# Final thoughts 💭 {background-color="#2d4563"}
+# Final thoughts 💭 {background-color="#1B3A6B"}
 
 ## Final thoughts
 
@@ -720,5 +720,5 @@ diagnoses$diagnosands_df %>%
 - And that's all for today! 🎉
 :::
 
-# Have a great day! 👋 {background-color="#2d4563"}
+# Have a great day! 👋 {background-color="#1B3A6B"}
 

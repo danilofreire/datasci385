@@ -18,9 +18,9 @@ editor:
   render-on-save: true
 ---
 
-# Hello, everyone! 😉 {background-color="#2d4563"}
+# Hello, everyone! 😉 {background-color="#1B3A6B"}
 
-# Brief recap 📚 {background-color="#2d4563"}
+# Brief recap 📚 {background-color="#1B3A6B"}
 
 ## Texts for discussion
 
@@ -42,7 +42,7 @@ editor:
 :::
 :::
 
-# Today's plan 📅 {background-color="#2d4563"}
+# Today's plan 📅 {background-color="#1B3A6B"}
 
 ## Integration of research findings
 
@@ -68,7 +68,7 @@ Source: [Freire et al (2022)](https://doi.org/10.1017/S0007123422000552)
 :::
 :::
 
-# The challenge of generalisation 🤔 {background-color="#2d4563"}
+# The challenge of generalisation 🤔 {background-color="#1B3A6B"}
 
 ## Extrapolation from experiments
 
@@ -139,7 +139,7 @@ Source: [Gelman and Loken (2014)](https://sites.stat.columbia.edu/gelman/researc
 :::
 :::
 
-# Estimating population average treatment effects (PATE) 🌎 {background-color="#2d4563"}
+# Estimating population average treatment effects (PATE) 🌎 {background-color="#1B3A6B"}
 
 ## From sample to population
 
@@ -173,7 +173,7 @@ Source: [Gelman and Loken (2014)](https://sites.stat.columbia.edu/gelman/researc
 - This formula differs from the SATE standard error because [it relies on population variances]{.alert} and, due to the assumption of a large population $N*$, [the covariance between potential outcomes is assumed to be zero]{.alert}
 :::
 
-# A Bayesian framework for interpretation 📈 {background-color="#2d4563"}
+# A Bayesian framework for interpretation 📈 {background-color="#1B3A6B"}
 
 ## Updating beliefs with evidence
 
@@ -508,7 +508,7 @@ print_results(results_C, "C: High Bias Uncertainty (SE=10)")
 - To do this rigorously, you must explicitly state your prior beliefs about the [bias of the observational study]{.alert} ($\beta, \sigma^2_B$)
 :::
 
-# Meta-Analysis 📊 {background-color="#2d4563"}
+# Meta-Analysis 📊 {background-color="#1B3A6B"}
 
 ## Meta-Analysis
 ### Systematically combining results
@@ -578,7 +578,7 @@ $$SE_{pooled} = \sqrt{Var(ATE_{pooled})}$$
 :::
 :::
 
-# Case study: Legislature size and government spending 💰 {background-color="#2d4563"}
+# Case study: Legislature size and government spending 💰 {background-color="#1B3A6B"}
 
 ## Step 01: Scrape data
 
@@ -688,7 +688,7 @@ Here is one of the many figures we produced. As you can see, the main effect is 
 ![](figures/legislature06.png){width=100%}
 :::
 
-# Conclusion 📝 {background-color="#2d4563"}
+# Conclusion 📝 {background-color="#1B3A6B"}
 
 ## Conclusion
 
@@ -709,6 +709,6 @@ Here is one of the many figures we produced. As you can see, the main effect is 
 :::
 :::
 
-# Thanks very much! 😊 {background-color="#2d4563"}
+# Thanks very much! 😊 {background-color="#1B3A6B"}
 
-# See you next time! 👋 {background-color="#2d4563"}
+# See you next time! 👋 {background-color="#1B3A6B"}

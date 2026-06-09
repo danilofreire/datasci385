@@ -49,7 +49,7 @@ if (!require("fontawesome", character.only = TRUE)) {
 }
 ```
 
-# Welcome to DATASCI 385 <br> Experimental Methods! 🎉 {background-color="#2d4563"}
+# Welcome to DATASCI 385 <br> Experimental Methods! 🎉 {background-color="#1B3A6B"}
 
 ## Lecture overview
 ### Today's agenda
@@ -84,7 +84,7 @@ Please remember to check the course repository regularly for updates and announc
 :::
 :::
 
-# Nice to meet you! 😊 {background-color="#2d4563"}
+# Nice to meet you! 😊 {background-color="#1B3A6B"}
 
 ## Instructor
 ### A bit about me
@@ -193,9 +193,9 @@ Tell us your name, your major, one thing you really like, and something we don't
 :::
 ::::
 
-# Questions? {background-color="#2d4563"}
+# Questions? {background-color="#1B3A6B"}
 
-# What are randomised controlled trials? 🎲🧪 {background-color="#2d4563"}
+# What are randomised controlled trials? 🎲🧪 {background-color="#1B3A6B"}
 
 ## Randomised controlled trials (RCTs): diagram
 
@@ -320,9 +320,9 @@ From [xkcd](https://xkcd.com/2530/)
 :::
 :::
 
-# Questions? {background-color="#2d4563"}
+# Questions? {background-color="#1B3A6B"}
 
-# Causality 🔍🔗 {background-color="#2d4563"}
+# Causality 🔍🔗 {background-color="#1B3A6B"}
 
 ## Correlation versus causation
 
@@ -417,9 +417,9 @@ From [xkcd](https://xkcd.com/552/)
 :::
 :::
 
-# Questions? {background-color="#2d4563"}
+# Questions? {background-color="#1B3A6B"}
 
-# Course overview and logistics `r emo::ji('open_book')` `r emo::ji('books')` `r emo::ji('computer')` {background-color="#2d4563"}
+# Course overview and logistics `r emo::ji('open_book')` `r emo::ji('books')` `r emo::ji('computer')` {background-color="#1B3A6B"}
 
 ## Course objectives
 
@@ -533,6 +533,6 @@ Guides: <https://danilofreire.github.io/datasci385/guides.html>
 :::
 :::
 
-# Questions? {background-color="#2d4563"}
+# Questions? {background-color="#1B3A6B"}
 
-# Thank you very much for your attention! 🙏🏻 <br><br> Have a great day! 😊 {background-color="#2d4563"}
+# Thank you very much for your attention! 🙏🏻 <br><br> Have a great day! 😊 {background-color="#1B3A6B"}

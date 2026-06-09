@@ -20,9 +20,9 @@ editor:
   render-on-save: true
 ---
 
-# Hello again! 👋 {background-color="#2d4563"}
+# Hello again! 👋 {background-color="#1B3A6B"}
 
-# Brief recap 📚 {background-color="#2d4563"}
+# Brief recap 📚 {background-color="#1B3A6B"}
 
 ## Last class: Interference
 
@@ -49,7 +49,7 @@ editor:
 :::
 :::
 
-# Today's plan 📅 {background-color="#2d4563"}
+# Today's plan 📅 {background-color="#1B3A6B"}
 
 ## Mediation: unpacking the black box 
 
@@ -76,7 +76,7 @@ editor:
 :::
 :::
 
-# What is mediation? 🤔 {background-color="#2d4563"}
+# What is mediation? 🤔 {background-color="#1B3A6B"}
 
 ## The causal chain: Z → M → Y
 
@@ -131,7 +131,7 @@ Source: [Righetti (2023)](https://nicolarighetti.github.io/mediation-moderation-
 Source: [Righetti (2023)](https://nicolarighetti.github.io/mediation-moderation-and-conditional-process-analysis-with-r/mediation.html)
 :::
 
-# The traditional approach: regression 📈 {background-color="#2d4563"}
+# The traditional approach: regression 📈 {background-color="#1B3A6B"}
 
 ## The three-equation system
 
@@ -230,7 +230,7 @@ Source: Gerber & Green (2012, 323), *Field Experiments*, Figure 10.1
 - [Use with extreme caution, if at all]{.alert}, for causal mediation claims based solely on $Z$ randomisation
 :::
 
-# A potential outcomes view {background-color="#2d4563"}
+# A potential outcomes view {background-color="#1B3A6B"}
 
 ## Defining potential outcomes for mediation
 
@@ -293,7 +293,7 @@ Source: Gerber & Green (2012, 323), *Field Experiments*, Figure 10.1
 - Just randomising $Z$ is [not sufficient]{.alert} to identify mediation pathways without these extra assumptions
 :::
 
-# Can we address this? 🤔 {background-color="#2d4563"}
+# Can we address this? 🤔 {background-color="#1B3A6B"}
 
 ## Ruling out mediators (a modest goal)
 
@@ -383,7 +383,7 @@ Source: Gerber & Green (2012, 323), *Field Experiments*, Figure 10.1
 - Identifying effects through multiple mediators requires multiple encouragements (instruments) with different effects on the mediators – very complex!
 :::
 
-# A different approach: implicit mediation 💡 {background-color="#2d4563"}
+# A different approach: implicit mediation 💡 {background-color="#1B3A6B"}
 
 ## Scaling back ambitions: focus on treatment components
 
@@ -466,7 +466,7 @@ Source: Gerber & Green (2012, 323), *Field Experiments*, Figure 10.1
 - Often more [practical and feasible]{.alert} than trying to perfectly manipulate or measure mediators in field settings
 :::
 
-# Conclusion {background-color="#2d4563"}
+# Conclusion {background-color="#1B3A6B"}
 
 ## Key takeaways on mediation
 
@@ -504,6 +504,6 @@ Source: Gerber & Green (2012, 323), *Field Experiments*, Figure 10.1
 - Understanding mechanisms is crucial, but requires careful thought about identification strategies!
 :::
 
-# Thanks very much! 😊 {background-color="#2d4563"}
+# Thanks very much! 😊 {background-color="#1B3A6B"}
 
-# See you next time! 👋 {background-color="#2d4563"}
+# See you next time! 👋 {background-color="#1B3A6B"}

@@ -20,9 +20,9 @@ editor:
   render-on-save: true
 ---
 
-# Hello, everyone! 👋 <br> How are you today? {background-color="#2d4563"}
+# Hello, everyone! 👋 <br> How are you today? {background-color="#1B3A6B"}
 
-# Brief recap 📚 {background-color="#2d4563"}
+# Brief recap 📚 {background-color="#1B3A6B"}
 
 ## Brief recap 📚
 
@@ -49,7 +49,7 @@ editor:
 :::
 :::
 
-# Today's plan 📅 {background-color="#2d4563"}
+# Today's plan 📅 {background-color="#1B3A6B"}
 
 ## Heterogeneous treatment effects (HTE)
 ### Moving beyond the average
@@ -77,7 +77,7 @@ editor:
 :::
 :::
 
-# Why look beyond the ATE? {background-color="#2d4563"}
+# Why look beyond the ATE? {background-color="#1B3A6B"}
 
 ## The limits of averages
 
@@ -101,7 +101,7 @@ editor:
 - [Advertising]{.alert}: A campaign targeting teenagers might alienate older consumers
 :::
 
-# The fundamental problem of HTE inference {background-color="#2d4563"}
+# The fundamental problem of HTE inference {background-color="#1B3A6B"}
 
 ## Defining treatment effect heterogeneity
 
@@ -164,7 +164,7 @@ $$Var(\tau) = Var(Y_i(1)) + Var(Y_i(0)) - 2Cov(Y_i(1), Y_i(0))$$
 - Experimental data alone do not distinguish these scenarios!
 :::
 
-# Detecting heterogeneity: bounds & tests {background-color="#2d4563"}
+# Detecting heterogeneity: bounds & tests {background-color="#1B3A6B"}
 
 ## Bounding the variance of treatment effects
 
@@ -222,7 +222,7 @@ $$Var(\tau) = Var(Y_i(1)) + Var(Y_i(0)) - 2Cov(Y_i(1), Y_i(0))$$
 ➡️ Need approaches that examine variation across specific subgroups or conditions
 :::
 
-# Treatment-by-Covariate Interactions (CATEs) 📊 {background-color="#2d4563"}
+# Treatment-by-Covariate Interactions (CATEs) 📊 {background-color="#1B3A6B"}
 
 ## Conditional Average Treatment Effects (CATEs)
 
@@ -269,7 +269,7 @@ $$Var(\tau) = Var(Y_i(1)) + Var(Y_i(0)) - 2Cov(Y_i(1), Y_i(0))$$
 - In the teacher incentive example, the F-test yields $p = 0.88$, matching the randomisation inference
 :::
 
-# Cautions with CATEs ⚠️ {background-color="#2d4563"}
+# Cautions with CATEs ⚠️ {background-color="#1B3A6B"}
 
 ## The multiple comparisons problem
 
@@ -311,7 +311,7 @@ $$Var(\tau) = Var(Y_i(1)) + Var(Y_i(0)) - 2Cov(Y_i(1), Y_i(0))$$
 - The subgroup analysis conflated the type of person with the content of the message. Direct experimental manipulation was needed to isolate the causal effect of the message content
 :::
 
-# Treatment-by-Treatment Interactions (Factorial Designs) 🧪 {background-color="#2d4563"}
+# Treatment-by-Treatment Interactions (Factorial Designs) 🧪 {background-color="#1B3A6B"}
 
 ## Beyond covariates: manipulating multiple factors
 
@@ -375,7 +375,7 @@ $$Var(\tau) = Var(Y_i(1)) + Var(Y_i(0)) - 2Cov(Y_i(1), Y_i(0))$$
   - [Non-compliance]{.alert} can be problematic: estimating effects for those receiving *multiple* treatments requires sufficient compliers in those specific cells, which can be rare
 :::
 
-# Modelling HTE with regression 📈 {background-color="#2d4563"}
+# Modelling HTE with regression 📈 {background-color="#1B3A6B"}
 
 ## Extending the regression framework
 
@@ -418,7 +418,7 @@ $$Var(\tau) = Var(Y_i(1)) + Var(Y_i(0)) - 2Cov(Y_i(1), Y_i(0))$$
 - Beyond the scope of this lecture, but good to be aware of! 🤓
 :::
 
-# Summary {background-color="#2d4563"}
+# Summary {background-color="#1B3A6B"}
 
 ## Investigating heterogeneous treatment effects
 
@@ -448,9 +448,9 @@ $$Var(\tau) = Var(Y_i(1)) + Var(Y_i(0)) - 2Cov(Y_i(1), Y_i(0))$$
 :::
 :::
 
-# And that's all for today! 🎉 {background-color="#2d4563"}
+# And that's all for today! 🎉 {background-color="#1B3A6B"}
 
-# See you next time! 😉 {background-color="#2d4563"}
+# See you next time! 😉 {background-color="#1B3A6B"}
 
 ## Appendix 01: why $- 2Cov$?
 
