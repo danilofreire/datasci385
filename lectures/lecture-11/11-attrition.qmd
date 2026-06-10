@@ -556,6 +556,15 @@ $$E[Y_i(1) | R_i(1) = 1, R_i(0) = 1] - E[Y_i(0) | R_i(1) = 1, R_i(0) = 1]$$
 - To install and load the package, run the following code:
 
 ```{r}
+#| echo: false
+#| eval: true
+#| message: false
+#| warning: false
+# attritevis calls Hmisc::Lag() internally without importing it; load Hmisc so the package works
+suppressPackageStartupMessages(library(Hmisc))
+```
+
+```{r}
 #| echo: true
 #| eval: true
 # devtools::install_github("lbassan/attritevis", dependencies = TRUE)
