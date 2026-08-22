@@ -636,3 +636,10 @@ $RECYCLE.BIN/
 ### Quarto ###
 .quarto
 .aider*
+
+# Claude and AI agent configuration files
+CLAUDE.md
+AGENTS.md
+agents.md
+humaniser-skill.md
+.claude/
